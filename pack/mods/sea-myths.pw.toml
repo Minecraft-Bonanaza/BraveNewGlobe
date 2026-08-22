@@ -1,0 +1,13 @@
+name = "Sea Myths: Legendary Ocean Monsters & Bosses Creatures"
+filename = "seaeater-2.0.0+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8d16bc7d0248da9040087e348a242b8349e2606f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8650184
+project-id = 1394035

@@ -1,0 +1,13 @@
+name = "Food Spoilage"
+filename = "foodspoil-neoforge-1.21.1-1.1.7.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a8b047d9d6050f1626b8582765503ad73978063f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8618230
+project-id = 1467201

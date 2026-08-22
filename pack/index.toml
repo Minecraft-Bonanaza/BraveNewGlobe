@@ -74,6 +74,11 @@ hash = "22d9510588b081cf9905f6549d24bc11012aa8d9c7d38a8619ab9db5ccb7b9a8"
 metafile = true
 
 [[files]]
+file = "mods/cbc-terminal-ballistics.pw.toml"
+hash = "c68f977d3b1af3a2e075e1c5af80533db934bcad1f85c5ff01fd4102eead9ef5"
+metafile = true
+
+[[files]]
 file = "mods/cgs.pw.toml"
 hash = "dae8f38fa94bb1ce2108bf60fcce95eed3b5e9a3deb6759093a217e9b192f5ac"
 metafile = true
@@ -116,6 +121,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "d438d05c61167c95de2b282bb3839a290f819f70c9d313c5e61177d69a29c704"
+metafile = true
+
+[[files]]
+file = "mods/create-better-high-seas.pw.toml"
+hash = "5206a845aa3cdc8594ce8afaccf7c68eb48932c3e3992713167ea894a243b049"
 metafile = true
 
 [[files]]
@@ -236,6 +246,11 @@ metafile = true
 [[files]]
 file = "mods/farmers-delight.pw.toml"
 hash = "7f837101645afe275564c75605e3950352db2e3dc18e0ebcf7460bac272afde4"
+metafile = true
+
+[[files]]
+file = "mods/food-spoilage.pw.toml"
+hash = "76425a46bc8b58e81306bbd07b599d19e683547a4151e59cc8c61df414b7725f"
 metafile = true
 
 [[files]]
@@ -436,6 +451,11 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "a1fa121ed5d0207e4cdd3f545d043f68f9a4bb38dcb21278b968fad5e4cefe4a"
+metafile = true
+
+[[files]]
+file = "mods/sea-myths.pw.toml"
+hash = "7364a4a7a0eb5b5ccace5ead6e1177b27c0fa87fc635e5c50aae76db8b845400"
 metafile = true
 
 [[files]]
