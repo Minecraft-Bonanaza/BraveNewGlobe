@@ -1,13 +1,13 @@
 name = "Social Player Mobs"
-filename = "playermob-neoforge-0.86.0+1.21.1.jar"
+filename = "playermob-neoforge-0.89.0+1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "485ab794bb3eb0ac47374a495da1dd80470de093"
+hash = "f080f679f793cb9cacd1b71698e8bfd8702d59e1"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8517180
+file-id = 8705348
 project-id = 1559379

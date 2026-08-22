@@ -1,13 +1,13 @@
 name = "Create: Warnautics"
-filename = "Create_Warnautics-1.0.2+mc.1.21.1.jar"
+filename = "Create_Warnautics-1.0.3+mc.1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "9452681542d38621bf04e6841310a7004a33a63f"
+hash = "75d0832286322ee7d8cad5b558e42ea4baf4d74b"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8660801
+file-id = 8697281
 project-id = 1620378

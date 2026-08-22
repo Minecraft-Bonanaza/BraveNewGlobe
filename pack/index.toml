@@ -749,6 +749,11 @@ file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 
 [[files]]
+file = "mods/aeronautics-camera-sync.pw.toml"
+hash = "fee4aee20aa5cce41fbb32ad9b2fa48b123216729e691061970aa54e5f100fc6"
+metafile = true
+
+[[files]]
 file = "mods/animal-weight.pw.toml"
 hash = "f242021cede5b517982508fc308c90005b42b2be444e2bd81921d5eb5754ba02"
 metafile = true
@@ -761,6 +766,11 @@ metafile = true
 [[files]]
 file = "mods/architectury-api.pw.toml"
 hash = "657a01a86bbf8617e4726c77df08f708e43a3db12db74b837eebd8eb1d93faae"
+metafile = true
+
+[[files]]
+file = "mods/azimuth-api.pw.toml"
+hash = "0a52f6f8c287ca852cce533742ae800dac58a816966e1a491eec68c9e1a63305"
 metafile = true
 
 [[files]]
@@ -830,7 +840,7 @@ metafile = true
 
 [[files]]
 file = "mods/copycats.pw.toml"
-hash = "e3d0e6da51df08d87c9b88fd6b4011de711d95497263b9ecfd1466cbd34b98d5"
+hash = "945d25438f4692fbb8493cfd85d2e1ff4cf7d73ba775c886cc55be2f8aab2566"
 metafile = true
 
 [[files]]
@@ -846,6 +856,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics-compatability.pw.toml"
 hash = "889d2c573f46e94318761c1e26d84e3c0520425cf12187f4b97ad3d51fd26363"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-gyroscope-stabilizers.pw.toml"
+hash = "516e15291b98bc41be9da35ed4108baf0b20defe424b12e36904c6a184c6769c"
 metafile = true
 
 [[files]]
@@ -874,6 +889,16 @@ hash = "b6ac94e91f766466186d350ed45a79fdcf7805f34d9170ccc8612ff47983a5f5"
 metafile = true
 
 [[files]]
+file = "mods/create-bits-n-bobs.pw.toml"
+hash = "6963af5a5042eeca534ba83209bbd006f46b9536059f19349d940f2ce7d2ecb0"
+metafile = true
+
+[[files]]
+file = "mods/create-cardan-shafts.pw.toml"
+hash = "b6885c1deebb96c592047334c24851f35c9c3308eb2b58babd091fee6d06e8aa"
+metafile = true
+
+[[files]]
 file = "mods/create-cotton.pw.toml"
 hash = "1d3e6324d94c33e8ede396064fe662cd9a4609010191b296f8ba23942d2b1fdb"
 metafile = true
@@ -890,7 +915,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-enchantment-industry.pw.toml"
-hash = "1e01471bf55881e9176a9d761da83d6995686fd417fb324d651305235e1cd28f"
+hash = "c0ad1113a9e301fc8bef016ac5677686029d02da3c37f9d75723d05d329900d6"
 metafile = true
 
 [[files]]
@@ -910,7 +935,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-power-chip.pw.toml"
-hash = "99bd66ea9154631524bb4ef4080f2cd4196d0f11dcb0f9c2fe592c8ff6414e2f"
+hash = "254c240a66cbf6945e2bf9a8c95413664cba40cc76829b13ed39906cdd774bae"
 metafile = true
 
 [[files]]
@@ -939,8 +964,8 @@ hash = "5b38747d6ac0f9b216885a6a1d45508354a0ab6077d72510c73b65e147210ca5"
 metafile = true
 
 [[files]]
-file = "mods/create-track.pw.toml"
-hash = "752abab4519ca9ac1d19f4f11e2abf2323c1ef2947f1f1398781febe7dd68271"
+file = "mods/create-tracks.pw.toml"
+hash = "6652073f815bed51608dc9d6a9e769ec783a131526054b35e8de6f47c8745fa2"
 metafile = true
 
 [[files]]
@@ -950,7 +975,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-warnautics.pw.toml"
-hash = "83c965fc54a6a1537be2cdf1a9436d91478a0f789fb1d887515292a1b1e5ab84"
+hash = "0aa7d3442a8addd73e7f6adc7f20811b83143f72ade631f47f3f6731c278fffa"
 metafile = true
 
 [[files]]
@@ -1005,7 +1030,7 @@ metafile = true
 
 [[files]]
 file = "mods/gabous-libs.pw.toml"
-hash = "9cd36d85862c224d3e8a9cc252d725d4d4eac15fa84193fc4e733dc168b6b361"
+hash = "4ecf1e9c05d18cb06867f01f73a63e44fba3be697334db909b1259edb454d375"
 metafile = true
 
 [[files]]
@@ -1040,7 +1065,7 @@ metafile = true
 
 [[files]]
 file = "mods/interactive-player-mobs.pw.toml"
-hash = "1e799fc147ea222ae8e6651186cbfdc46dcc4da18b83181e631a3b170f2e031e"
+hash = "977485e145228172aecc47c4106429b67a352ae287cbd29da3a76cd8fac60184"
 metafile = true
 
 [[files]]
@@ -1115,7 +1140,7 @@ metafile = true
 
 [[files]]
 file = "mods/more-diseases-and-treatments.pw.toml"
-hash = "4e0ab5948b7c2ec63ecacc3949228f5480c22d4519e70a3595d7a829fb691321"
+hash = "d565806020a42ff9ab1810e1f7fd574dc2bf6be88d4be9999fca36224df1d461"
 metafile = true
 
 [[files]]
@@ -1220,7 +1245,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "ddcc2fd889f5bd73c2b3c8c9f5b798cc26c0c5b6c068da264ffa44bb401a0cf7"
+hash = "8770f5990ed9e37aa0ff2b4bda34dd6036c5ff9ca78d7b5c07d7011471cbca26"
 metafile = true
 
 [[files]]
@@ -1249,8 +1274,13 @@ hash = "086fed2b206352cce639ec0344e4e96e8e9fed8af5c550d4d4b50771312dc1a7"
 metafile = true
 
 [[files]]
+file = "mods/strut-your-stuff.pw.toml"
+hash = "9b3918803de451245463401c572fbb58c7bbf176e8d6e0e0381c61dbe4a502bb"
+metafile = true
+
+[[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "894b0fa0df38f01cb838621b3823e152fa7477c45fb6ab52d2b50b68c21d4b1e"
+hash = "1cb429276e440bbb9b9b1a0007422e3c4edb9569290ab9a19809ad11f66a6b75"
 metafile = true
 
 [[files]]
@@ -1270,5 +1300,5 @@ metafile = true
 
 [[files]]
 file = "mods/yungs-api-neoforge.pw.toml"
-hash = "7cb2156566e58df780f1e1248bc7c336fda5be86d8e5828e3485b951e3934471"
+hash = "1e326549d08f0f793d3972da239ec81b40c28498f87cf507a8dc7aa2bbea6550"
 metafile = true

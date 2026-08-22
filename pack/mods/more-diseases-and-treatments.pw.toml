@@ -1,13 +1,13 @@
 name = "More Diseases & Treatments"
-filename = "more_diseases_and_treatments-1.0.0-neoforge-1.21.1.jar"
+filename = "more_diseases_and_treatments-1.0.1-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "dfa25c153d11282f2704d222076fcfb9b65650dd"
+hash = "6453901b38e1475e95d2157ce6eebff8da850e78"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8506148
+file-id = 8707737
 project-id = 1624703
