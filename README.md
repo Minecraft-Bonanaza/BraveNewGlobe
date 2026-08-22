@@ -100,3 +100,7 @@ git add -A && git commit -m "update: ..." && git push
 
 > ⚠️ Always `packwiz refresh` before committing, or `index.toml` won't match the tree and every player's
 > launch will fail the hash check.
+
+
+### Derek's Notes
+Under config, need to enable hyperspeed generation in big globe's config to support DH API usage when generating LODs. Otherwise DH doesnt recognize the renderer and will memorky leak. 
