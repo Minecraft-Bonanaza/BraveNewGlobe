@@ -1,0 +1,13 @@
+name = "Numismatic Overhaul: Neoforged"
+filename = "numismaticoverhaul-4.0.0.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/7Msy6aQw/versions/IgK2IHom/numismaticoverhaul-4.0.0.jar"
+hash-format = "sha512"
+hash = "fd23bf0d61a4c67dd6d33c0e95c544978553da4fc15cf0ba03695ef42c4bade366e87cd72b2b9ad9f64b67d7719a97c6bf7c8d272b7ef4ae516efeec610bf260"
+
+[update]
+[update.modrinth]
+mod-id = "7Msy6aQw"
+version = "IgK2IHom"

@@ -1,0 +1,13 @@
+name = "Oculus/Iris For Simple Clouds"
+filename = "oculus_for_simpleclouds-1.1.2.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/8WzyyTkv/versions/Jh1XtQpY/oculus_for_simpleclouds-1.1.2.jar"
+hash-format = "sha512"
+hash = "6e851a4af0dc1ea731a25d80df4e8446fa86c91dfd4d1b324698f660d8f412a3ca0489b705c0a356ec3574fb60125dcba3752f21a43136fb1308bfc12e4f31eb"
+
+[update]
+[update.modrinth]
+mod-id = "8WzyyTkv"
+version = "Jh1XtQpY"

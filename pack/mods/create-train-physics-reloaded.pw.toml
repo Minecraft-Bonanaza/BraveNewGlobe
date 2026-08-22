@@ -1,0 +1,13 @@
+name = "Create Train Physics Reloaded"
+filename = "create_train_physics-0.2.0-beta.2.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/sOs1Eq2b/versions/cKkqankx/create_train_physics-0.2.0-beta.2.jar"
+hash-format = "sha512"
+hash = "c3ccb06c7fae69365237ca59a1f279ddacb3a0e1b559dee70c420a7ac213811adb88da2c4f1966f6939a8eac779759264837fea2f69fecd0f7ded4eb941d708b"
+
+[update]
+[update.modrinth]
+mod-id = "sOs1Eq2b"
+version = "cKkqankx"

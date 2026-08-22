@@ -1,0 +1,13 @@
+name = "Numismatic Bounties (Numismatic Overhaul)"
+filename = "Numismatic-Bounties-universal.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/lpAhb7VK/versions/zUtAGhyU/Numismatic-Bounties-universal.jar"
+hash-format = "sha512"
+hash = "37d362ccb493bf6df0e399acfdc855f53608b872ca2127883f0a94dd67f8d7c6cf4c3ca4bf450080a421237e93653af3757142c237505cfd61aa554bdbd12bc2"
+
+[update]
+[update.modrinth]
+mod-id = "lpAhb7VK"
+version = "zUtAGhyU"

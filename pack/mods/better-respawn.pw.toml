@@ -1,0 +1,13 @@
+name = "Better Respawn"
+filename = "better-respawn-neoforge-1.21.1-2.0.6.jar"
+side = "server"
+
+[download]
+url = "https://cdn.modrinth.com/data/ZUQINcGy/versions/Sb4rhlG1/better-respawn-neoforge-1.21.1-2.0.6.jar"
+hash-format = "sha512"
+hash = "1f47a23ff3eb902cb141991787a5ba3ee973df02d39cf6e531ac1f2cf7df290bf2574d680506250675d10f76f515c11d09b10f591e1a49d9088da03475ef7bb0"
+
+[update]
+[update.modrinth]
+mod-id = "ZUQINcGy"
+version = "Sb4rhlG1"
