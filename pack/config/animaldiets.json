@@ -1,0 +1,22 @@
+{
+  "minecraft:cow": "HERBIVORE",
+  "reanimal:pigeon": "HERBIVORE",
+  "minecraft:chicken": "OMNIVORE",
+  "minecraft:pig": "HERBIVORE",
+  "reanimal:butterfly": "HERBIVORE",
+  "reanimal:ostrich": "HERBIVORE",
+  "minecraft:armadillo": "OMNIVORE",
+  "minecraft:horse": "HERBIVORE",
+  "minecraft:sheep": "HERBIVORE",
+  "reanimal:giraffe": "HERBIVORE",
+  "minecraft:donkey": "HERBIVORE",
+  "reanimal:sea_urchin": "HERBIVORE",
+  "reanimal:starfish": "HERBIVORE",
+  "minecraft:fox": "OMNIVORE",
+  "minecraft:frog": "CARNIVORE",
+  "minecraft:wolf": "CARNIVORE",
+  "reanimal:kiwi": "HERBIVORE",
+  "minecraft:camel": "HERBIVORE",
+  "reanimal:hedgehog": "HERBIVORE",
+  "minecraft:parrot": "HERBIVORE"
+}

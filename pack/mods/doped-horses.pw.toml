@@ -3,11 +3,11 @@ filename = "dopedhorses-neoforge-1.2.4-1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/ZR0ex1Rl/versions/Ws1vos64/dopedhorses-neoforge-1.2.4-1.21.1.jar"
-hash-format = "sha512"
-hash = "86e58840c8d7ede5f838f59c3a435a48bc4df6dc572dbeab8e60abd96d6161c743930bfec7b258171aaf162ede9824944d2700d22d4be261b60b9c81e4640d98"
+hash-format = "sha1"
+hash = "f09b15ecc7133f62447e885dd52350d0ba417ebd"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "ZR0ex1Rl"
-version = "Ws1vos64"
+[update.curseforge]
+file-id = 8138039
+project-id = 1215648

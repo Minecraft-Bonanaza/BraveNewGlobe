@@ -1,0 +1,10 @@
+#Server-side settings for Create: Signalworks.
+[andesite_pulser]
+	#Minimum random delay between pulses, in ticks.
+	# Default: 10
+	# Range: 1 ~ 1200
+	minimumDelay = 10
+	#Maximum random delay between pulses, in ticks.
+	# Default: 30
+	# Range: 1 ~ 1200
+	maximumDelay = 30

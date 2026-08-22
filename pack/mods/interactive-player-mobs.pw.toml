@@ -3,11 +3,11 @@ filename = "playermob-neoforge-0.86.0+1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/KeY5Fc8p/versions/uqYt1KFW/playermob-neoforge-0.86.0%2B1.21.1.jar"
-hash-format = "sha512"
-hash = "b91c6f26b78cbf0cbfaa53b6eebdf57c378668c11b22dc5ec1f2ab3501437f86db5412c187b158536adae69aa08fbf37f5cc779461b340b75ee13b6c9cfbff1c"
+hash-format = "sha1"
+hash = "485ab794bb3eb0ac47374a495da1dd80470de093"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "KeY5Fc8p"
-version = "uqYt1KFW"
+[update.curseforge]
+file-id = 8517180
+project-id = 1559379

@@ -3,11 +3,11 @@ filename = "explosionoverhaul-0.2.3.0-neoforge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/sOxnTLKl/versions/mxfQE01f/explosionoverhaul-0.2.3.0-neoforge.jar"
-hash-format = "sha512"
-hash = "5d1428678e5cbfed79d61c2fc1afbca0414d78b387e2f2d5d6ef0e989dd71d5366d9d62a627f7c6a0ec532627c0e3fdd9914f88955a1efee65811bd392f96170"
+hash-format = "sha1"
+hash = "26c0313b1cb937e6a730144f3d74df941c6cea0f"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "sOxnTLKl"
-version = "mxfQE01f"
+[update.curseforge]
+file-id = 8478789
+project-id = 1296203

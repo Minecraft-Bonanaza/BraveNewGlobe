@@ -3,11 +3,11 @@ filename = "create-enchantment-industry-2.5.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/JWGBpFUP/versions/LOammszO/create-enchantment-industry-2.5.2.jar"
-hash-format = "sha512"
-hash = "e5c049bf06fe231d44f37a2427a95a327d6327b1d2547d3f086a22342a03a3c618c9df9c26d3fd04be5b029b20764eee33425ab7bd523e8b96a65c7d76930705"
+hash-format = "sha1"
+hash = "2ff3e1584512c205f17db923a22082c317a12f32"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "JWGBpFUP"
-version = "LOammszO"
+[update.curseforge]
+file-id = 8678456
+project-id = 688768

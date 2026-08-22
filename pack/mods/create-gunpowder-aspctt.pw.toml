@@ -1,0 +1,13 @@
+name = "Create: Gunpowder [aspctt]"
+filename = "creategunpowder-1.21.1-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d1c332f4a24e3eda79e883df94969a193b046076"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7425523
+project-id = 1422148

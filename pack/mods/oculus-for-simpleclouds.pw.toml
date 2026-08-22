@@ -1,0 +1,18 @@
+name = "Iris/Oculus For Simple Clouds"
+filename = "oculus_for_simpleclouds-1.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1f2eed8b52970c6b6baa059246ac7bd1f2cd240d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8234239
+project-id = 1386686
+
+[option]
+optional = true
+default = false
+description = "Shader/Simple Clouds compatibility. No point without the shader rendering stack enabled."

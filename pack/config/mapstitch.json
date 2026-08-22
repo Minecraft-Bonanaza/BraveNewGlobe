@@ -1,0 +1,14 @@
+{
+  "minimapDisplayCondition": "INVENTORY",
+  "minimapPosition": "TOP_RIGHT",
+  "minimapSize": 19,
+  "minimapBackground": "CLEAR",
+  "minimapBackgroundOpacity": 50,
+  "minimapPreventEffectOverlap": true,
+  "minimapXOffset": 0,
+  "minimapYOffset": 0,
+  "worldMapTextHighlightColor": "YELLOW",
+  "worldMapTextBackgroundOpacity": 50,
+  "worldMapButtons": true,
+  "worldMapHelp": true
+}

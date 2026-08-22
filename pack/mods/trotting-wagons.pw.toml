@@ -3,11 +3,11 @@ filename = "trotting_wagons-21.0.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/X8CywXiK/versions/mpGWRAjg/trotting_wagons-21.0.2.jar"
-hash-format = "sha512"
-hash = "c272741ef216bf9132334c180899dd16e00b623ee193e50c5f7cb8d6e8ec2803ad4bc7f7faa172826169fded6b147c5b36bbb583a9398211a97d2a78123ef266"
+hash-format = "sha1"
+hash = "a8de79b97d0d7cf638674e563b2ac1e3b0cc7447"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "X8CywXiK"
-version = "mpGWRAjg"
+[update.curseforge]
+file-id = 7659858
+project-id = 1313811

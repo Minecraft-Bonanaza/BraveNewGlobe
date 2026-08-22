@@ -1,0 +1,5 @@
+	["Food Spoilage Client Configuration".tooltip]
+		#Show color-coded freshness in item tooltips
+		#true = Green/Orange/Red colors based on freshness level
+		#false = Always white text
+		showFreshnessColors = true

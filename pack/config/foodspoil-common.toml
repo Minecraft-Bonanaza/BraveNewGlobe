@@ -1,0 +1,150 @@
+	["Food Spoilage Configuration".decay]
+		#Base decay rate (percentage per Minecraft minute)
+		# Default: 0.3
+		# Range: 0.0 ~ 100.0
+		baseDecayRate = 0.3
+		#Blocks below sea level (Y=63) for underground preservation bonus
+		#Example: 10 means food stored at Y=53 or lower decays slower
+		# Default: 10
+		# Range: 0 ~ 256
+		depthThreshold = 10
+		#Decay multiplier when stored underground (below sea level - depth threshold)
+		#0.7 = 30% slower decay, 0.5 = 50% slower, 1.0 = no bonus
+		# Default: 0.7
+		# Range: 0.0 ~ 1.0
+		depthMultiplier = 0.7
+
+	["Food Spoilage Configuration".stacking]
+		#Allow manually stacking food items with different freshness levels
+		#true = Players can combine stacks manually (averaged freshness + penalty)
+		#false = Items with different freshness cannot be combined (hardcore mode)
+		allowStacking = true
+		#Percentage of items lost when merging fresh with spoiled food (only if difference > 30%)
+		# Default: 20
+		# Range: 0 ~ 100
+		mergePenalty = 20
+
+	["Food Spoilage Configuration".freezing]
+		#Time in Minecraft minutes for food to thaw
+		# Default: 7
+		# Range: 1 ~ 60
+		thawTimeMinutes = 7
+		#Ice blocks consumed per Minecraft hour
+		# Default: 1.0
+		# Range: 0.1 ~ 10.0
+		iceConsumptionRate = 1.0
+		#Packed ice blocks consumed per Minecraft hour
+		# Default: 0.5
+		# Range: 0.1 ~ 10.0
+		packedIceConsumptionRate = 0.5
+		#Blue ice blocks consumed per Minecraft hour
+		# Default: 0.2
+		# Range: 0.1 ~ 10.0
+		blueIceConsumptionRate = 0.2
+		#Snowballs consumed per Minecraft hour (least efficient option)
+		#Default: 4.0 = 4 snowballs per hour (16 snowballs = 1 block of snow)
+		# Default: 4.0
+		# Range: 0.1 ~ 64.0
+		snowballConsumptionRate = 4.0
+		#Blocks that act as refrigerators (freeze food without requiring ice)
+		#Add modded fridge blocks here if you want them to freeze food automatically
+		#Format: 'modid:block_name'
+		#Examples:
+		#  - MrCrayfish's Furniture Mod: 'cfm:fridge', 'cfm:freezer'
+		#  - Cooking for Blockheads: 'cookingforblockheads:fridge'
+		#  - Refurbished Furniture: 'refurbished_furniture:light_fridge'
+		fridgeBlocks = []
+		#Custom items that act as cooling agents (like ice) when placed in containers
+		#Format: 'modid:itemid|consumption_rate|decay_multiplier'
+		#Consumption rate = units consumed per Minecraft hour (higher = consumed faster)
+		#Decay multiplier = how much slower food decays while salted (0.3 = 70% slower, default if omitted)
+		#Examples:
+		#  'mekanism:salt|2.0|0.3' - Salt: 2 units/hour, food decays at 30% normal rate
+		#  'minecraft:clay_ball|1.0|0.5' - Clay: 1 unit/hour, food decays at 50% normal rate
+		#  'thermal:ice_charge|0.5|0.2' - Ice charge: 0.5 units/hour, food decays at 20% normal rate
+		customCoolingItems = []
+
+	["Food Spoilage Configuration".seasons]
+		#Seasonal decay multipliers (compatible with Serene Seasons and Ecliptic Seasons)
+		#Both mods use these same values for their seasonal effects.
+		#If both mods are installed, Ecliptic Seasons takes priority (more advanced system).
+		#Decay multiplier during Spring
+		#Lower = slower decay. Default 0.7 = 30% slower decay
+		# Default: 0.7
+		# Range: 0.0 ~ 5.0
+		springMultiplier = 0.7
+		#Decay multiplier during Summer
+		#Higher = faster decay. Default 1.8 = 80% faster decay
+		# Default: 1.8
+		# Range: 0.0 ~ 5.0
+		summerMultiplier = 1.8
+		#Decay multiplier during Autumn
+		#Lower = slower decay. Default 0.8 = 20% slower decay
+		# Default: 0.8
+		# Range: 0.0 ~ 5.0
+		autumnMultiplier = 0.8
+		#Decay multiplier during Winter
+		#Lower = slower decay. Default 0.3 = 70% slower decay
+		# Default: 0.3
+		# Range: 0.0 ~ 5.0
+		winterMultiplier = 0.3
+
+	["Food Spoilage Configuration".food_detection]
+		#When enabled, ONLY items in the whitelist will spoil.
+		#All other food items (even vanilla ones) will be ignored.
+		#Useful for modpacks with many food mods where you only want specific items to spoil.
+		#false = Auto-detect all food + whitelist additions (default)
+		#true = Only items explicitly listed in the whitelist will spoil
+		whitelistOnlyMode = false
+		#Items to force as spoilable (format: 'modid:itemid' or 'modid:itemid|rate')
+		#Rate is a decay multiplier (1.0 = normal, 2.0 = twice as fast, 0.5 = half speed, 0.0 = never spoils)
+		#Examples:
+		#  'minecraft:egg|1.5' - Eggs spoil 50% faster than normal
+		#  'minecraft:honey_bottle|0.0' - Honey never spoils
+		#  'minecraft:milk_bucket|2.0' - Milk spoils twice as fast
+		#  'cratesdelight:apple_crate' - Apple crate spoils at normal rate
+		#NOTE: When whitelistOnlyMode=true, this list defines ALL items that spoil
+		whitelist = []
+		#Items to exclude from spoilage (format: 'modid:itemid')
+		#NOTE: Blacklist is ignored when whitelistOnlyMode=true
+		blacklist = ["minecraft:golden_apple", "minecraft:enchanted_golden_apple"]
+
+	["Food Spoilage Configuration".rotten_conversion]
+		#Enable automatic conversion of completely spoiled food to rotten item
+		#When food reaches 0% freshness, it will be replaced by the rotten item
+		enableRottenConversion = true
+		#Default item to convert spoiled food into
+		#Format: 'modid:itemid'
+		#Examples:
+		#  'minecraft:rotten_flesh' - Default, vanilla rotten flesh
+		#  'minecraft:poisonous_potato' - For a different effect
+		#  'farmersdelight:rotten_tomato' - If you have Farmer's Delight
+		#Note: The item must exist in the game or conversion will be disabled
+		rottenItem = "minecraft:rotten_flesh"
+		#Map specific food items to specific rotten items when they spoil.
+		#Format: 'modid:food_item|modid:rotten_item'
+		#Items not listed here use the default rottenItem above.
+		#Examples:
+		#  'minecraft:apple|minecraft:poisonous_potato'
+		#  'minecraft:porkchop|minecraft:rotten_flesh'
+		#  'minecraft:potato|minecraft:poisonous_potato'
+		#  'minecraft:spider_eye|minecraft:fermented_spider_eye'
+		customRottenItems = []
+
+	["Food Spoilage Configuration".containers]
+		#Decay multipliers for different container types
+		#Format: 'modid:blockid|multiplier'
+		#Multiplier < 1.0 = slower decay (better preservation)
+		#Multiplier > 1.0 = faster decay (worse preservation)
+		#
+		#IMPORTANT: These stack multiplicatively with depth-based preservation!
+		#Example: Barrel (0.7x) underground at Y=50 (0.7x) = 0.49x total decay
+		#
+		#RECOMMENDED: Leave vanilla containers OUT of this list.
+		#Let them use only depth-based preservation for simplicity.
+		#Add only special modded containers here (like ice boxes, coolers, etc.)
+		#
+		#Examples if you want to use them:
+		#  'minecraft:barrel|0.7' - Barrels preserve 30% better
+		#  'minecraft:shulker_box|0.5' - Shulker boxes preserve 50% better
+		containerMultipliers = []

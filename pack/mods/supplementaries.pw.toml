@@ -1,13 +1,13 @@
 name = "Supplementaries"
-filename = "supplementaries-1.21.1-3.8.10-fabric.jar"
+filename = "supplementaries-1.21.1-3.8.10-neoforge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/fFEIiSDQ/versions/9UlfVS6z/supplementaries-1.21.1-3.8.10-fabric.jar"
-hash-format = "sha512"
-hash = "b383796b239e05abbfa38089b1a51b19e7b5356c98d8b2ef1bb6380de459916586300d3256488d7b331ed197fb300d016a084b5d99867c3ef9b0719bab1e230f"
+hash-format = "sha1"
+hash = "9d0c9a0c97021f1fa8e7bfcc6b89337ecc009033"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "fFEIiSDQ"
-version = "9UlfVS6z"
+[update.curseforge]
+file-id = 8668121
+project-id = 412082

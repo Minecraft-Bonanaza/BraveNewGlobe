@@ -3,11 +3,11 @@ filename = "create_aeronautics_automated_logistics-0.6.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/73ZXeRfx/versions/EgPi4wq9/create_aeronautics_automated_logistics-0.6.2.jar"
-hash-format = "sha512"
-hash = "153f19bb6a8d1e7f78fbe2a9fbc825a30935c66ab0f0b15bda835071ec03c7f6b1f45d82edff75e431b3718f67712e4555c0af75057fca126dfe7afc84807299"
+hash-format = "sha1"
+hash = "1954f5c4f72620942851241bd18217197ed59b46"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "73ZXeRfx"
-version = "EgPi4wq9"
+[update.curseforge]
+file-id = 8673342
+project-id = 1537420

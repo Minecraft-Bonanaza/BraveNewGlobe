@@ -3,11 +3,11 @@ filename = "stattinkerer-neoforge-1.21.1-21.1.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/UAfajCcY/versions/vMZ7g5MY/stattinkerer-neoforge-1.21.1-21.1.1.jar"
-hash-format = "sha512"
-hash = "02e08139f2ccf1b8ebe2d17f9b6c19783812d29406ec194493071b34045dd007954d5fe4a4776ecc1a92ea218dadb9611f0fa54d079784d9911695d6f1480bcc"
+hash-format = "sha1"
+hash = "24d17fda81b0d1dba6f3c8e241e7fc8c00ac83c4"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "UAfajCcY"
-version = "vMZ7g5MY"
+[update.curseforge]
+file-id = 8535350
+project-id = 258168

@@ -3,11 +3,11 @@ filename = "mapstitch-1.0.12+1.21.1-neoforge.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/etdHQJ0B/versions/P3rHeCcz/mapstitch-1.0.12%2B1.21.1-neoforge.jar"
-hash-format = "sha512"
-hash = "1b87c0c2d95d9fd26934a0742ca5f2bc1d25be2cad7635b08f3b6820327635376b12beddc4199e20aea661e4387edd23e31b37e75f3a7e4240e371c7c79cb01c"
+hash-format = "sha1"
+hash = "572d023f734b96ee2fb523add186dc6e9221f918"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "etdHQJ0B"
-version = "P3rHeCcz"
+[update.curseforge]
+file-id = 8501263
+project-id = 1595069

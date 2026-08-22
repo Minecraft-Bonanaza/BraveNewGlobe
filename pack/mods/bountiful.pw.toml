@@ -3,11 +3,11 @@ filename = "bountiful-neoforge-8.0.0-beta.2.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/BpwWFOVM/versions/swTb6NU9/bountiful-neoforge-8.0.0-beta.2.jar"
-hash-format = "sha512"
-hash = "a30c55813348a1f1f2869996e627f7357b9a47de478c477ef02b767d36a33f4ffad8836c60974146d4c6be3e75e42eba9285a84ad95e544c6f0549a12ceb08fb"
+hash-format = "sha1"
+hash = "8c1786d2850bd15c3a2dd0f50fccfda09125faa5"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "BpwWFOVM"
-version = "swTb6NU9"
+[update.curseforge]
+file-id = 7919197
+project-id = 309516

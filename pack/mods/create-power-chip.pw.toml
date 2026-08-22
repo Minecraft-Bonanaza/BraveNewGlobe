@@ -1,0 +1,13 @@
+name = "Create: Power Chip"
+filename = "powerchip-2.0.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4d4cd5d2084b5f12fe1dfef4f130d3e253b58fa2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8704309
+project-id = 1614619

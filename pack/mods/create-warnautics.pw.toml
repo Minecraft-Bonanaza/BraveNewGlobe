@@ -3,11 +3,11 @@ filename = "Create_Warnautics-1.0.2+mc.1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/DtRY2QQN/versions/kDsngVoG/Create_Warnautics-1.0.2%2Bmc.1.21.1.jar"
-hash-format = "sha512"
-hash = "3b14ebc5d6857e0bb16be23778fbabcd495389d510f03f5d26750622d82a65bf9ce06e4cbb5b4bae16baa56a2947c13338a0537e9ac2bb45b613032fa5c85301"
+hash-format = "sha1"
+hash = "9452681542d38621bf04e6841310a7004a33a63f"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "DtRY2QQN"
-version = "kDsngVoG"
+[update.curseforge]
+file-id = 8660801
+project-id = 1620378
