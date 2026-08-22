@@ -1,13 +1,18 @@
 name = "Particle Rain"
 filename = "particlerain-4.0.0-beta.10+1.21.1-neoforge.jar"
-side = "client"
+side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/nrikgvxm/versions/CJeVXIae/particlerain-4.0.0-beta.10%2B1.21.1-neoforge.jar"
-hash-format = "sha512"
-hash = "9bff41758d0a63621512a3ce4d9c8f2e5a16937ac1ccac766f24d2baaded2a0475a0478a61062ebc861414443826480235a6f5c7cfe14f4ee26bd057188ff5b0"
+hash-format = "sha1"
+hash = "df2800c721e8a588dde48bc4b426707eccf712b6"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "nrikgvxm"
-version = "CJeVXIae"
+[update.curseforge]
+file-id = 8055433
+project-id = 421897
+
+[option]
+optional = true
+default = false
+description = "Primarily enhanced precipitation visuals. Safe to leave off, especially on low-spec machines."

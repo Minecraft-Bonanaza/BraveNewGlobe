@@ -1,0 +1,21 @@
+name = "Iris Shaders"
+filename = "iris-neoforge-1.8.14-beta.1+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "1bd129cf7bce65d6b1c0543045f0620c98a0f885"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8242804
+project-id = 455508
+
+# LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, and Distant Horizons
+# must be enabled/disabled TOGETHER (all ON or all OFF). Running Iris without Distant
+# Horizons alongside our mandatory rendering mods (Flywheel/Create) causes buggy rendering.
+[option]
+optional = true
+default = false
+description = "Only needed if you want shaders. Keep this in sync with Distant Horizons + Iris Flywheel Compat: all ON or all OFF together."

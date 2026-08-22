@@ -1,0 +1,3 @@
+#Client-side settings for Create: Signalworks.
+#Show Signalworks information while wearing Create goggles.
+showGoggleOverlay = true

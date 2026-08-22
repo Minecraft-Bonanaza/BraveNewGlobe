@@ -3,11 +3,11 @@ filename = "more_diseases_and_treatments-1.0.0-neoforge-1.21.1.jar"
 side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/QM2kvhyJ/versions/W2AlwPMb/more_diseases_and_treatments-1.0.0-neoforge-1.21.1.jar"
-hash-format = "sha512"
-hash = "4039fc3ca89d3bd3c2be60dc4d976447a419040b90d125103883df7481495bb4fe29ede50fd25600bcbcb17708997b2215edda01a9f23ca27e8c25ba429bc507"
+hash-format = "sha1"
+hash = "dfa25c153d11282f2704d222076fcfb9b65650dd"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "QM2kvhyJ"
-version = "W2AlwPMb"
+[update.curseforge]
+file-id = 8506148
+project-id = 1624703

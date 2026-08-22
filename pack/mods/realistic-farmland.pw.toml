@@ -1,13 +1,13 @@
 name = "Realistic Farmland"
 filename = "realistic-farmland-1.0+1.21.jar"
-side = "server"
+side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/dS1RzxTl/versions/VO9sGnfJ/realistic-farmland-1.0%2B1.21.jar"
-hash-format = "sha512"
-hash = "72e9dfa8fef16675b2f2da399e25dd7619b06378a5cd8c111e9e024b6a88c1b9799937bcaa916c5f1331a1ea8b6ac697959a867beeb18d7af3df27cfe7601c63"
+hash-format = "sha1"
+hash = "4f5a99fac909f2f6478f4fe44e9aaa671778d9bd"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "dS1RzxTl"
-version = "VO9sGnfJ"
+[update.curseforge]
+file-id = 5847437
+project-id = 1128448
