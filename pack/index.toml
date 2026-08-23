@@ -1155,7 +1155,7 @@ metafile = true
 
 [[files]]
 file = "mods/mapstitch.pw.toml"
-hash = "0c33a82bc8e40f66f0a45a9d333fad898727d6fab737eb4818d69c6cb0723046"
+hash = "52c0185fc314ccbe07adb7a23dd67000d53ec190d9d966631901087473c54eb8"
 metafile = true
 
 [[files]]
