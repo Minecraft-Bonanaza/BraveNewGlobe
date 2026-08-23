@@ -1349,6 +1349,11 @@ hash = "c0b6adc03be5c19aef44474e14fa31bc8e578a60cbb43cabbaaef24f622c95b8"
 metafile = true
 
 [[files]]
+file = "mods/villagerapi.pw.toml"
+hash = "c048a9c57424f85a39a8ed14e2fd72a3bdfdd1e734133e73ca075f9ed29fc4ad"
+metafile = true
+
+[[files]]
 file = "mods/xaeros-minimap.pw.toml"
 hash = "03b30d68893aff0507d36044ab3b43e586f4412274b5de0abe193b9f4a754905"
 metafile = true

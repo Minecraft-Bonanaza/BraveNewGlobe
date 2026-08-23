@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5.1] — 2026-08-23
+
+Hotfix: restore **Villager API**. In 0.5 it was removed as an assumed Better-Village-only dependency,
+but **Numismatic Overhaul (Numismatic Bounties) also requires it** — its absence crashed mod loading
+(`Mod numismaticoverhaul requires villagerapi 1.0 or above ... not installed`). Better Village stays removed.
+
+### Added (mods)
+- **Villager API** (`villagerapi`, CurseForge project 1396381 / file 7533486) — re-added; required by
+  Numismatic Overhaul (and previously by the now-removed Better Village).
+
+### Config / pack
+- Restored `pack/mods/villagerapi.pw.toml`. `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.5] — 2026-08-23
 
 Village overhaul + glacier tuning. CTOV becomes the sole village system (biased toward large walled
