@@ -31,6 +31,99 @@ loaded chunks and Distant Horizons).
 - Pack version → **0.6-beta**.
 - `pack/index.toml` + `pack/pack.toml` re-indexed (`packwiz refresh`).
 
+### Documentation
+- **Notes** — living shallow-overworld bounds / compacted deep tiers; Vertigo is Fabric via
+  Connector, `side = "both"`, and still needs Connector networking-mixin + DH verification.
+- **README / client install** — pack is **0.6-beta**; existing worlds from before this version
+  cannot be reused (dimension bounds change). Vertigo installs on clients and dedicated servers.
+- **Maintainer** — `bigglobe_shallow_overworld.zip` is a dimension-bounds datapack; do not expect
+  old worlds to load correctly after it is applied.
+
+## [0.5.6] — 2026-08-23
+
+Added **Too Fast**. The author commit (`added too fast mod`) did not give this its own
+version number; documented here as 0.5.6.
+
+**Too Fast** (`toofast-1.21.0-0.4.3.5.jar`, Modrinth `w6JSkKSH` / version `pDkjMI8q`)
+removes the server-side player speed cap that produces `moved too quickly` console
+warnings and rubber-banding. It is the pack's first `side = "server"` mod: packwiz
+installs it on dedicated-server syncs and skips it on the default PrismLauncher
+client install (`--side client`). The integrated singleplayer server only gets the
+fix if the jar is actually present.
+
+### Added (mods)
+- **Too Fast** `0.4.3.5` — `pack/mods/too-fast.pw.toml`, `side = "server"`.
+
+### Config / pack
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.5] — 2026-08-23
+
+Removed **MapStitch**. The author commit (`Removed MapStitch`) did not give this its own
+version number; documented here as 0.5.5.
+
+MapStitch (`mapstitch-1.0.12+1.21.1-neoforge.jar`, CurseForge project 1595069 / file 8501263)
+is no longer in the pack. It had been `side = "both"` as of 0.5.4. **Xaero's Minimap** and
+**Xaero's World Map** stay. packwiz will delete the MapStitch jar on the next player launch.
+
+### Removed (mods)
+- **MapStitch** `1.0.12+1.21.1` — deleted `pack/mods/mapstitch.pw.toml`.
+
+### Leftover (unused)
+- `pack/config/mapstitch.json` and `pack/config/mapstitch_state` are still shipped and
+  indexed; they do nothing without the mod. JEI's `ingredient-list-mod-sort-order.ini`
+  still lists MapStitch.
+
+### Config / pack
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.4] — 2026-08-23
+
+Moved **MapStitch** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; MapStitch should install on dedicated servers as well
+as clients (same reason as JEI in 0.5.3).
+
+Also includes the immediately preceding **Fix packwiz file hashes** commit (author did
+not give it its own version number). Git was rewriting line endings (CRLF ↔ LF) on
+checkout, which changed file bytes under `pack/` so `index.toml` hashes no longer
+matched. Players then failed the packwiz installer hash check on launch. No mods,
+configs, or datapack *content* changed in that hash-fix commit.
+
+### Changed
+- **MapStitch** `side = "client"` → `side = "both"`.
+
+### Changed — packwiz hashes / Git line endings
+- Added `.gitattributes` with `* -text` so Git stores and checks out every file as-is
+  (no end-of-line conversion). Do not remove this; it is what keeps packwiz hashes stable.
+
+### Config / pack
+- `pack/mods/mapstitch.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.3] — 2026-08-23
+
+Moved **Just Enough Items (JEI)** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; JEI should install on dedicated servers as well as clients.
+
+### Changed
+- **JEI** `side = "client"` → `side = "both"`.
+
+### Config / pack
+- `pack/mods/jei.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.2] — 2026-08-23
+
+Sorted client-side-only mods: packwiz `side = "client"` so dedicated servers skip them. Player
+(PrismLauncher) installs are unchanged.
+
+### Changed — packwiz side (client-only)
+- **ImmediatelyFast**, **Iris Shaders**, **Iris & Oculus Flywheel Compat**,
+  **Iris/Oculus For Simple Clouds**, **MapStitch**, **Mod Menu**, **Particle Rain**, **Sodium**,
+  and (briefly) **JEI**: `side = "both"` → `side = "client"`.
+- JEI was reverted in **0.5.3**. MapStitch was reverted in **0.5.4**.
+
+### Config / pack
+- Updated the listed `pack/mods/*.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.5.1] — 2026-08-23
 
 Hotfix: restore **Villager API**. In 0.5 it was removed as an assumed Better-Village-only dependency,
@@ -44,6 +137,13 @@ but **Numismatic Overhaul (Numismatic Bounties) also requires it** — its absen
 ### Config / pack
 - Restored `pack/mods/villagerapi.pw.toml`. `pack/index.toml` + `pack/pack.toml` re-indexed.
 
+### Documentation
+- **Notes** — Villager API stays in the pack (Numismatic Overhaul dependency); Better Village stays
+  removed. Village weights/biomes and `bigglobe_less_glacier` rules recorded as living notes.
+- **README** — CTOV is the sole village system; glacier ice is noted as smaller/sparser.
+- **Maintainer + client install** — datapacks live in `pack/datapacks/` → instance `datapacks/`
+  (Paxi loads that folder); not `config/paxi/datapacks/`.
+
 ## [0.5] — 2026-08-23
 
 Village overhaul + glacier tuning. CTOV becomes the sole village system (biased toward large walled
@@ -53,6 +153,7 @@ ice is made smaller and sparser.
 ### Removed (mods)
 - **Better Villages** + its dependency **Villager API** — Better Village only reskins *vanilla*
   village jigsaw pools, which are now disabled (below), so it produced nothing under Big Globe.
+  *(Villager API restored in 0.5.1 — Numismatic Overhaul still needs it.)*
 
 ### Changed — CTOV village generation (`bigglobe_ctov_compat`)
 - **Vanilla villages disabled** — `bigglobe:villages` structure_set emptied (placement kept as an
