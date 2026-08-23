@@ -1154,11 +1154,6 @@ hash = "0c52b34fc435e7fe4b2fb6e51897a150d79353e01ab95290387d250e0585950c"
 metafile = true
 
 [[files]]
-file = "mods/mapstitch.pw.toml"
-hash = "52c0185fc314ccbe07adb7a23dd67000d53ec190d9d966631901087473c54eb8"
-metafile = true
-
-[[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "1e7a69de13ee96b512350358c746a7b3bf67b07bc532fe5b26f7b3b3f7ee8117"
 metafile = true
