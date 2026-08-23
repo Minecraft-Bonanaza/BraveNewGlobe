@@ -61,9 +61,15 @@ so you always get the latest mods, configs, and datapacks. Updates are usually a
   ```
   "$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
   ```
-- **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
-  them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **A launch fails on a "hash mismatch"** — the file bytes on GitHub no longer match `pack/index.toml`.
+  That used to happen when Git rewrote line endings (fixed in **0.5.4** by `.gitattributes`). If it
+  happens again, the maintainer likely pushed without `packwiz refresh`. Ping them; once they fix it,
+  just launch again and it re-syncs.
+- **Datapacks** — you do **not** install datapacks manually. This pack ships them under the instance
+  `datapacks/` folder; **Paxi** is configured to load that folder globally. They arrive with the
+  auto-sync.
+- **Dedicated server** — client-only mods (Iris, Sodium, ImmediatelyFast, MapStitch, Mod Menu,
+  Particle Rain, Simple Clouds Iris compat) are marked `side = "client"` and will **not** download
+  on a dedicated server. **JEI** is `side = "both"` and does install on the server.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.
