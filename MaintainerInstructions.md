@@ -9,7 +9,17 @@ committed jars:
 - `pack/pack.toml` — manifest (MC + loader versions, index hash)
 - `pack/index.toml` — file index (auto-managed; do not hand-edit)
 - `pack/mods/*.pw.toml` — one tiny metadata file per mod (download source + hash). **No jars in git.**
-- `pack/config/**`, `pack/resourcepacks/**` — real files shipped as-is (e.g. Paxi compat datapacks)
+- `pack/config/**` — real config files shipped as-is
+- `pack/datapacks/**` — zip datapacks shipped as-is (Big Globe compat, recipe packs, etc.). packwiz
+  installs them into the instance `datapacks/` folder. **Paxi** is set to force-load that folder
+  (`Load from base 'datapacks' directory = true` in `pack/config/paxi-neoforge-1_21.toml`). Do **not**
+  put them under `config/paxi/datapacks/`.
+
+Village and glacier behavior for the current pack is documented in [Notes.md](Notes.md). After
+editing a zip under `pack/datapacks/`, run `packwiz refresh` before committing.
+
+Do not drop **Villager API** (`villagerapi`) when pruning village-reskin mods: **Numismatic Overhaul**
+still depends on it (0.5.1 hotfix). Better Village itself stays out.
 
 ## Common operations (run from `pack/`)
 ```bash
