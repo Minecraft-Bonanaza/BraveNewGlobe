@@ -3,11 +3,6 @@ filename = "foodspoil-neoforge-1.21.1-1.1.7.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "a8b047d9d6050f1626b8582765503ad73978063f"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 8618230
-project-id = 1467201
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/foodspoil-neoforge-1.21.1-1.1.7.jar"
+hash-format = "sha256"
+hash = "cf3cfcdc1f2af9b6251e18e5de712c5c12f38218daf5ac807d5fba64c38b54f0"

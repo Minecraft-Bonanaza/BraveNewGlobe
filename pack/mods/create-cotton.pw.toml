@@ -3,11 +3,11 @@ filename = "createcotton-1.21.1-1.0.4.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "00444df185842fc4d7fc5261ca6e6eafd2247a50"
-mode = "metadata:curseforge"
+url = "https://cdn.modrinth.com/data/qER4Zbxh/versions/5LNzOwfD/createcotton-1.21.1-1.0.4.1.jar"
+hash-format = "sha512"
+hash = "dcc51737bc3e99e87e1592b8a18f572710ebb2bf0f30c80d67bbd18fc942ab2503393e5dedf1bb6d0a428ae9f52e289dc53e5ada8190389b63f74805dc63cf84"
 
 [update]
-[update.curseforge]
-file-id = 8063129
-project-id = 1527115
+[update.modrinth]
+mod-id = "qER4Zbxh"
+version = "5LNzOwfD"

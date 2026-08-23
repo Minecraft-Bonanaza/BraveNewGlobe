@@ -3,11 +3,6 @@ filename = "seaeater-2.0.0+mc1.21.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "8d16bc7d0248da9040087e348a242b8349e2606f"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 8650184
-project-id = 1394035
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/seaeater-2.0.0%2Bmc1.21.1.jar"
+hash-format = "sha256"
+hash = "129a86db722f9ecd2ce9a7206621c6c01ccb3433815be0fa90d42eba803b896a"

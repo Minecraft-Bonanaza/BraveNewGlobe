@@ -805,8 +805,8 @@ hash = "b409d65197fad62eacb7bccd27555a4763ec93be4d8c5e5230eca5f0405edc7f"
 metafile = true
 
 [[files]]
-file = "mods/better-village-neoforge.pw.toml"
-hash = "14fc298432c296bfd4fbfd542290d305e9f58c8281310e681009de49f20f8c75"
+file = "mods/better-village.pw.toml"
+hash = "70d6a7931439fe0fe8d517e89fcdc67d038affabbe3968fba9a95b4ac1f19da7"
 metafile = true
 
 [[files]]
@@ -836,7 +836,7 @@ metafile = true
 
 [[files]]
 file = "mods/burnt-basic.pw.toml"
-hash = "e3b686854e983b629ea1d333c72289ddbe79d1bb41144d48b0f733e9970294d7"
+hash = "aae752b937aabe6e7e6edb8e11e6ee35722ab8ad1fc37baf43b1638d515afc82"
 metafile = true
 
 [[files]]
@@ -891,12 +891,12 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics-gyroscope-stabilizers.pw.toml"
-hash = "516e15291b98bc41be9da35ed4108baf0b20defe424b12e36904c6a184c6769c"
+hash = "845db39ab8c05bcd2f047d7bd810ea0d27f027ebbaf7f8db872126e8bc89ee2d"
 metafile = true
 
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
-hash = "18b3bb82c19b94650320ad735ed4c033c9831e42ebf5abebca58d12f638807a8"
+hash = "d438d05c61167c95de2b282bb3839a290f819f70c9d313c5e61177d69a29c704"
 metafile = true
 
 [[files]]
@@ -906,7 +906,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-better-high-seas.pw.toml"
-hash = "5206a845aa3cdc8594ce8afaccf7c68eb48932c3e3992713167ea894a243b049"
+hash = "5e25adb54d610c708b1b5f40bf07172f93b0c643799a9a2e0f00be01ed01443d"
 metafile = true
 
 [[files]]
@@ -931,7 +931,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-cotton.pw.toml"
-hash = "1d3e6324d94c33e8ede396064fe662cd9a4609010191b296f8ba23942d2b1fdb"
+hash = "8b63b0e29b75bda7dbb79779929b4095bd9eee2c21a6ef5276f7ad495a2aabb4"
 metafile = true
 
 [[files]]
@@ -947,11 +947,6 @@ metafile = true
 [[files]]
 file = "mods/create-enchantment-industry.pw.toml"
 hash = "c0ad1113a9e301fc8bef016ac5677686029d02da3c37f9d75723d05d329900d6"
-metafile = true
-
-[[files]]
-file = "mods/create-factory-logistics.pw.toml"
-hash = "15bff954b1c08b0787598562c27e9005eaa4a543ecef60dfdef5b5433e27a682"
 metafile = true
 
 [[files]]
@@ -986,7 +981,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-storage-neo-forge.pw.toml"
-hash = "03a7198983deedc2a6510a048e7e216dfdbe2c52378ac5c252d8733a6c8f599f"
+hash = "96c8bd414ae9e2c450384d2e3fc207bf51f60b89e49b3e3e4d391e850c9230f6"
 metafile = true
 
 [[files]]
@@ -1012,6 +1007,11 @@ metafile = true
 [[files]]
 file = "mods/create.pw.toml"
 hash = "4b0ca63279620ec9ba4c63820a9d4f9ceea9b717227137ea19e5c420c820f858"
+metafile = true
+
+[[files]]
+file = "mods/create_factory_logistics.pw.toml"
+hash = "5b9c2ce4c14ae1d3bce7e2b02f617596947e8f3b978a3f30e1dee4ea782777fa"
 metafile = true
 
 [[files]]
@@ -1051,7 +1051,7 @@ metafile = true
 
 [[files]]
 file = "mods/food-spoilage.pw.toml"
-hash = "76425a46bc8b58e81306bbd07b599d19e683547a4151e59cc8c61df414b7725f"
+hash = "798b98b4d674d46d19be5ac61777569d2473bcaf837d56b0e51e7df8c736b56c"
 metafile = true
 
 [[files]]
@@ -1071,7 +1071,7 @@ metafile = true
 
 [[files]]
 file = "mods/gears-n-kinetics.pw.toml"
-hash = "ce35bf5e845d46c98e22131cb8e04e147aafe62d3492da97a1a3090621af0281"
+hash = "ca9a6e860a062bf02cdc222775e8adaa2c0d9a38891464eeb55a12eecef69ce4"
 metafile = true
 
 [[files]]
@@ -1140,8 +1140,8 @@ hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
 
 [[files]]
-file = "mods/library-ferret-neoforge.pw.toml"
-hash = "6568975091d861763aac4c0fe03863e9659f9944308b2ab941472b887b023a05"
+file = "mods/library-ferret.pw.toml"
+hash = "599c8c37e60b9f1fbfb29d10eb9ede3d174b72287b9fbe407e90b6417a27a441"
 metafile = true
 
 [[files]]
@@ -1181,7 +1181,7 @@ metafile = true
 
 [[files]]
 file = "mods/more-diseases-and-treatments.pw.toml"
-hash = "d565806020a42ff9ab1810e1f7fd574dc2bf6be88d4be9999fca36224df1d461"
+hash = "e2b12944928d6c27ce1f850da3f8595588de9c4a5ec9511aea0e87dac596e309"
 metafile = true
 
 [[files]]
@@ -1201,7 +1201,7 @@ metafile = true
 
 [[files]]
 file = "mods/numismatic-bounties.pw.toml"
-hash = "adcc173e205a9a1b3b10335bc40d7ad565b98e9d0e03e28ac1f93b6c6df889fb"
+hash = "a4be563914db38937d8c2e558f91e13b9b187a5e062c64064d63af07a74eef1a"
 metafile = true
 
 [[files]]
@@ -1261,7 +1261,7 @@ metafile = true
 
 [[files]]
 file = "mods/realistic-farmland.pw.toml"
-hash = "0f3e42a0f176cc9f180a5679da67a02fb195fb3d6d7daedd6419073878590dfe"
+hash = "b7fb98cef3098331f079a3038d09c1636fdb22f22a35c79dc2b6c320930cadd7"
 metafile = true
 
 [[files]]
@@ -1291,7 +1291,7 @@ metafile = true
 
 [[files]]
 file = "mods/sea-myths.pw.toml"
-hash = "7364a4a7a0eb5b5ccace5ead6e1177b27c0fa87fc635e5c50aae76db8b845400"
+hash = "2db88d159c750fd7db1fcac76918f567876d3bc519f531171e941ac5dfd7df6b"
 metafile = true
 
 [[files]]

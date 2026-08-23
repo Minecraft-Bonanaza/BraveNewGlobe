@@ -3,6 +3,24 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.4] — 2026-08-23
+
+Fix: 15 mods failed to auto-install ("excluded from the CurseForge API" — the authors'
+`allowModDistribution:false` flag). Re-sourced them so packwiz auto-install works again.
+
+### Changed — source moved CurseForge → Modrinth (11)
+- Better Villages, Burnt Basic, Create Aeronautics, Create Aeronautics: Gyroscope Stabilizers,
+  Create: Cotton, Create Factory Logistics, Create: Storage [Neo/Forge], Create: Gears n' Kinetics,
+  Library Ferret, More Diseases & Treatments, Numismatic Bounties.
+
+### Changed — source moved CurseForge → self-hosted in-repo (4)
+- No compatible Modrinth release exists, so these are bundled in `bundled-jars/` and referenced by
+  raw-GitHub URL (sha256-pinned) in packwiz: Create: Better High Seas, Food Spoilage,
+  Realistic Farmland (NeoForge build), Sea Myths (`seaeater` jar).
+
+### Config / pack
+- Added `bundled-jars/` (4 jars). `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.3] — 2026-08-23
 
 Village overhaul, two new dimensions, new mobs, and Big Globe worldgen-compatibility datapacks.

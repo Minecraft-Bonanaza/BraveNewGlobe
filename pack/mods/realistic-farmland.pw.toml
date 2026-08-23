@@ -3,11 +3,6 @@ filename = "realistic-farmland-1.0+1.21.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "4f5a99fac909f2f6478f4fe44e9aaa671778d9bd"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 5847437
-project-id = 1128448
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/realistic-farmland-1.0%2B1.21.jar"
+hash-format = "sha256"
+hash = "6c1b145d4af7b0c41c9118dfac7ed2e70338a3855081a0de8164c5014c8a415e"
