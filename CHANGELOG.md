@@ -3,6 +3,46 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5] — 2026-08-23
+
+Village overhaul + glacier tuning. CTOV becomes the sole village system (biased toward large walled
+villages, walls extended across more biomes; vanilla villages and Better Village removed), and glacier
+ice is made smaller and sparser.
+
+### Removed (mods)
+- **Better Villages** + its dependency **Villager API** — Better Village only reskins *vanilla*
+  village jigsaw pools, which are now disabled (below), so it produced nothing under Big Globe.
+
+### Changed — CTOV village generation (`bigglobe_ctov_compat`)
+- **Vanilla villages disabled** — `bigglobe:villages` structure_set emptied (placement kept as an
+  override so Big Globe's built-in 5-village default doesn't resurrect). CTOV is now the only village
+  system, and denser since it no longer shares the placement grid with vanilla.
+- **Small villages removed** — dropped the 21 `small/*` entries from `bigglobe_ctov:villages`.
+- **Size/style weight ladder** — per-cell lottery weights: large-fortified **8**, medium-fortified
+  **5**, large **3**, medium **2**. Large walled villages are the most common outcome (~72% of
+  villages walled in fortified-capable biomes; large-walled the single likeliest result).
+- **Fortified (walled) villages extended to more biomes** — each fortified structure given its own
+  broadened biome list:
+  - `plains_fortified` → + warm_plains, warm light/dense forest
+  - `mesa_fortified` → + hot_plains, beaches (beach + overgrown_beach)
+  - `taiga_fortified` → + glacier
+
+### Changed — Big Globe worldgen (glacier)
+- **Rivers no longer get glacier ice** — added an `!in_river` guard to the glacier feature dispatcher
+  (`glaciers.json`), aligning the feature with the biome (which already excludes rivers). Fixes the
+  "mini glacier spots dotted through rivers."
+- **Ocean glacier ice made small & sparse** — feature-only `0.4×` fill scale applied inside the
+  dispatcher (so the glacier *biome* extent is untouched), plus `glacier_cell` Voronoi `distance`
+  32 → 48 (fewer, more-spaced patches).
+- Glacier *biome* extent and **Aquamirae's Sea-of-Shivers are unaffected** — the scale is feature-only;
+  no `glacier_crack_threshold` override.
+
+### Config / pack
+- Removed `pack/mods/better-village.pw.toml`, `pack/mods/villagerapi.pw.toml`; rebuilt
+  `pack/datapacks/bigglobe_ctov_compat.zip`.
+- Added `pack/datapacks/bigglobe_less_glacier.zip`.
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.4] — 2026-08-23
 
 Fix: 15 mods failed to auto-install ("excluded from the CurseForge API" — the authors'

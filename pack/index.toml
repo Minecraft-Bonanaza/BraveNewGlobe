@@ -726,7 +726,11 @@ hash = "41b82f8c59d5388beb66ae355a5f25bed85c9c9dba28fb68703da67e41a0f222"
 
 [[files]]
 file = "datapacks/bigglobe_ctov_compat.zip"
-hash = "70a111f466ec09ab80d035ff0e8779c11a8fe0b9d661837d8b028da42a71fd53"
+hash = "5da8b82a762acc686a553d2a4f14ef128ce7974b309bdc02a5855e7847fb198c"
+
+[[files]]
+file = "datapacks/bigglobe_less_glacier.zip"
+hash = "2f81cd55d3800f71620899638d5aed9ca644cf9e89ecffcb506a60161bdd20d2"
 
 [[files]]
 file = "datapacks/bigglobe_mowziesmobs.zip"
@@ -802,11 +806,6 @@ metafile = true
 [[files]]
 file = "mods/better-respawn.pw.toml"
 hash = "b409d65197fad62eacb7bccd27555a4763ec93be4d8c5e5230eca5f0405edc7f"
-metafile = true
-
-[[files]]
-file = "mods/better-village.pw.toml"
-hash = "70d6a7931439fe0fe8d517e89fcdc67d038affabbe3968fba9a95b4ac1f19da7"
 metafile = true
 
 [[files]]
@@ -1347,11 +1346,6 @@ metafile = true
 [[files]]
 file = "mods/trotting-wagons.pw.toml"
 hash = "c0b6adc03be5c19aef44474e14fa31bc8e578a60cbb43cabbaaef24f622c95b8"
-metafile = true
-
-[[files]]
-file = "mods/villagerapi.pw.toml"
-hash = "c048a9c57424f85a39a8ed14e2fd72a3bdfdd1e734133e73ca075f9ed29fc4ad"
 metafile = true
 
 [[files]]
