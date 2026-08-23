@@ -16,6 +16,13 @@ but **Numismatic Overhaul (Numismatic Bounties) also requires it** — its absen
 ### Config / pack
 - Restored `pack/mods/villagerapi.pw.toml`. `pack/index.toml` + `pack/pack.toml` re-indexed.
 
+### Documentation
+- **Notes** — Villager API stays in the pack (Numismatic Overhaul dependency); Better Village stays
+  removed. Village weights/biomes and `bigglobe_less_glacier` rules recorded as living notes.
+- **README** — CTOV is the sole village system; glacier ice is noted as smaller/sparser.
+- **Maintainer + client install** — datapacks live in `pack/datapacks/` → instance `datapacks/`
+  (Paxi loads that folder); not `config/paxi/datapacks/`.
+
 ## [0.5] — 2026-08-23
 
 Village overhaul + glacier tuning. CTOV becomes the sole village system (biased toward large walled
@@ -25,6 +32,7 @@ ice is made smaller and sparser.
 ### Removed (mods)
 - **Better Villages** + its dependency **Villager API** — Better Village only reskins *vanilla*
   village jigsaw pools, which are now disabled (below), so it produced nothing under Big Globe.
+  *(Villager API restored in 0.5.1 — Numismatic Overhaul still needs it.)*
 
 ### Changed — CTOV village generation (`bigglobe_ctov_compat`)
 - **Vanilla villages disabled** — `bigglobe:villages` structure_set emptied (placement kept as an

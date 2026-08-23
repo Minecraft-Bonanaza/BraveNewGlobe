@@ -13,18 +13,22 @@ world/spawn compatibility.
 - **Create ecosystem** — Create plus a large stack of add-ons (aeronautics, cannons, logistics,
   diesel generators, trains, and more).
 - **Big Globe world generation** — with hand-authored compatibility datapacks for spawns, structures,
-  and cross-mod integration (shipped via Paxi).
-- **Survival & QoL** — seasons, thirst/diseases, farming and food, villager overhauls, and supporting
-  libraries.
+  and cross-mod integration (shipped via Paxi). Glacier *ice* is tuned smaller and sparser than the
+  stock Big Globe feature; the glacier biome itself is unchanged.
+- **Survival & QoL** — seasons, thirst/diseases, farming and food, **ChoiceTheorem's Overhauled
+  Village (CTOV)** as the sole village system (vanilla villages disabled; biased toward large walled
+  villages), and supporting libraries. **Villager API** stays as a Numismatic Overhaul dependency;
+  Better Village is not in the pack.
 - **Optional visuals** — Iris shaders, Distant Horizons, Simple Clouds, and other client-side eye-candy
   that can be toggled off on low-spec machines.
 
 ## Documentation
+- **[Changelog](CHANGELOG.md)** — version-by-version pack changes.
 - **[Client Installation Instructions](ClientInstallationInstructions.md)** — how to install and
   auto-update the pack as a player (start here if you just want to play).
 - **[Maintainer Instructions](MaintainerInstructions.md)** — how the pack is built and how to add/update
   mods with packwiz.
-- **[Notes](Notes.md)** — misc config/maintenance notes and gotchas.
+- **[Notes](Notes.md)** — current village/glacier rules, plus misc config notes and gotchas.
 
 ## Quick start (players)
 Full steps are in **[Client Installation Instructions](ClientInstallationInstructions.md)**. In short:
