@@ -43,6 +43,12 @@ ice is made smaller and sparser.
 - Added `pack/datapacks/bigglobe_less_glacier.zip`.
 - `pack/index.toml` + `pack/pack.toml` re-indexed.
 
+### Documentation
+- **README** — CTOV is the sole village system; glacier ice is noted as smaller/sparser.
+- **Notes** — current village weights/biomes and the `bigglobe_less_glacier` feature rules.
+- **Maintainer + client install** — datapacks live in `pack/datapacks/` → instance `datapacks/`
+  (Paxi loads that folder); not `config/paxi/datapacks/`.
+
 ## [0.4] — 2026-08-23
 
 Fix: 15 mods failed to auto-install ("excluded from the CurseForge API" — the authors'
