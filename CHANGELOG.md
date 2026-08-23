@@ -3,7 +3,40 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
-## [Unreleased] — 2026-08-22
+## [0.3] — 2026-08-23
+
+Village overhaul, two new dimensions, new mobs, and Big Globe worldgen-compatibility datapacks.
+
+### Added (mods)
+- **ChoiceTheorem's Overhauled Village (CTOV)** `3.6.3` — village overhaul (23 village + 14 outpost variants)
+- **Lithostitched** `1.8.0+beta4` (library — CTOV dependency)
+- **The Aether** `1.5.10` — sky dimension
+- **Aquamirae** `7.2.1` (+ **Fragmentum** `2.4.4` dependency) — frozen "Sea of Shivers" content
+- **Mowzie's Mobs** `1.8.2` — mini-bosses + structures (Frostmaw, Ferrous Wroughtnaut, Umvuthi)
+- **Mutant Monsters** `21.1.1`
+- **The Twilight Forest** `4.8.3345` — dimension
+- **Xaero's Minimap** `26.4.2`
+- **Xaero's World Map** `1.45.0`
+
+### Added (datapacks — Big Globe compatibility)
+- **`bigglobe_ctov_compat.zip`** — integrates CTOV villages/outposts into Big Globe terrain (based on
+  Spooner's *Big Globe – CTOV Compat* 1.1.1; verified against BG 5.3.2 + CTOV 3.6.3). All village/outpost
+  `structure_set` spacings set to **30**; `bigglobe:villages` and `bigglobe_ctov:villages` share salt +
+  separation for coordinated placement. Underground village variant left disabled; stray `.bak` files removed.
+- **`bigglobe_aquamirae.zip`** — *(authored)* adds `bigglobe:glacier` to `#aquamirae:ice_maze`, activating
+  Aquamirae's ice-maze mobs, structures, and the Shipbreaker under Big Globe.
+- **`bigglobe_mowziesmobs.zip`** — *(authored)* adds 22 Big Globe land biomes to
+  `#mowziesmobs:has_structure/has_mowzie_structure` so Mowzie's structures (and their mobs) generate.
+- **`bigglobe_remove_obelisk.zip`** — empties `#bigglobe:has_structure/obelisk` to stop Big Globe obelisks generating.
+
+### Reverted
+- **Big Globe** `6.1.2` → `5.3.2` — the `6.1.2-MC26.1.2` entry was an erroneous version bump (not a valid
+  MC 1.21.1 build); restored the correct 5.3.2 release.
+
+### Config / pack
+- `pack/index.toml` and `pack/pack.toml` re-indexed (`packwiz refresh`).
+
+## [0.2] — 2026-08-22
 
 Changes relative to the last commit (`52d1af5`, merge of `Modpack-Recompile`).
 
