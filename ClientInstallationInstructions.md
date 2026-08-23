@@ -5,9 +5,14 @@ How to set up the **Brave New Globe** modpack as a player. You do this setup **o
 
 - **Minecraft:** `1.21.1`
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
+- **Pack version:** `0.6-beta`
 - **Delivery:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**; after that,
   **every time you launch, the pack pulls the latest mods automatically** — new mods are added, updated
   mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
+
+> **Fresh world required (0.6-beta).** The overworld height changed (floor **-464**, ceiling
+> **+896**). Worlds created before this version will not match the new dimension bounds. Create a
+> new world after the pack updates.
 
 ---
 
@@ -49,11 +54,14 @@ downloads anything that changed.
 Hit **Launch**. The **first** launch downloads all the mods (you'll see a small progress window — this
 is normal and only happens once). When it finishes, Minecraft starts.
 
-That's it — you're set up. ✅
+That's it — you're set up. ✅ Create a **new** world (do not reuse a pre-0.6-beta save).
 
 ## Getting updates later
 **Do nothing.** Just launch the instance. The pre-launch command re-syncs against the repo every time,
 so you always get the latest mods, configs, and datapacks. Updates are usually a few seconds.
+
+If a changelog or the pack version says **fresh world required**, start a new world after that update.
+0.6-beta is one of those.
 
 ## Troubleshooting
 - **"Unable to access jarfile packwiz-installer-bootstrap.jar"** — the jar isn't in `.minecraft`, or is
@@ -61,9 +69,20 @@ so you always get the latest mods, configs, and datapacks. Updates are usually a
   ```
   "$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
   ```
-- **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
-  them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **A launch fails on a "hash mismatch"** — the file bytes on GitHub no longer match `pack/index.toml`.
+  That used to happen when Git rewrote line endings (fixed in **0.5.4** by `.gitattributes`). If it
+  happens again, the maintainer likely pushed without `packwiz refresh`. Ping them; once they fix it,
+  just launch again and it re-syncs.
+- **Datapacks** — you do **not** install datapacks manually. This pack ships them under the instance
+  `datapacks/` folder; **Paxi** is configured to load that folder globally. They arrive with the
+  auto-sync.
+- **Old world looks broken / won't load after 0.6-beta** — the overworld floor and ceiling changed.
+  Create a new world. Existing saves from before 0.6-beta are not compatible.
+- **Dedicated server** — client-only mods (Iris, Sodium, ImmediatelyFast, Mod Menu,
+  Particle Rain, Simple Clouds Iris compat) are marked `side = "client"` and will **not** download
+  on a dedicated server. **JEI** is `side = "both"` and does install on the server. **Vertigo** is
+  `side = "both"` and installs on both sides (chunk-section syncing). **Too Fast** is
+  `side = "server"` and **does** install on the server (it is skipped by the default client
+  pre-launch command above). MapStitch is not in the pack.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.
