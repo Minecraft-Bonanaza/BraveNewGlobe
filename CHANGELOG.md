@@ -3,6 +3,63 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5.4] — 2026-08-23
+
+Moved **MapStitch** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; MapStitch should install on dedicated servers as well
+as clients (same reason as JEI in 0.5.3).
+
+Also includes the immediately preceding **Fix packwiz file hashes** commit (author did
+not give it its own version number). Git was rewriting line endings (CRLF ↔ LF) on
+checkout, which changed file bytes under `pack/` so `index.toml` hashes no longer
+matched. Players then failed the packwiz installer hash check on launch. No mods,
+configs, or datapack *content* changed in that hash-fix commit.
+
+### Changed
+- **MapStitch** `side = "client"` → `side = "both"`.
+
+### Changed — packwiz hashes / Git line endings
+- Added `.gitattributes` with `* -text` so Git stores and checks out every file as-is
+  (no end-of-line conversion). Do not remove this; it is what keeps packwiz hashes stable.
+
+### Config / pack
+- `pack/mods/mapstitch.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+### Documentation
+- **Maintainer + Notes** — MapStitch stays `both` with JEI; line-ending / `.gitattributes`
+  gotcha; `packwiz refresh` is still required after real file changes.
+- **README / client install** — client-only list no longer includes MapStitch;
+  hash-mismatch troubleshooting points at the 0.5.4 line-ending fix.
+
+## [0.5.3] — 2026-08-23
+
+Moved **Just Enough Items (JEI)** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; JEI should install on dedicated servers as well as clients.
+
+### Changed
+- **JEI** `side = "client"` → `side = "both"`.
+
+### Config / pack
+- `pack/mods/jei.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+### Documentation
+- **Maintainer + Notes** — packwiz `side` (`client` vs `both`) documented; JEI stays `both`.
+- **README / client install** — client-only mods are skipped on dedicated servers; JEI is not.
+
+## [0.5.2] — 2026-08-23
+
+Sorted client-side-only mods: packwiz `side = "client"` so dedicated servers skip them. Player
+(PrismLauncher) installs are unchanged.
+
+### Changed — packwiz side (client-only)
+- **ImmediatelyFast**, **Iris Shaders**, **Iris & Oculus Flywheel Compat**,
+  **Iris/Oculus For Simple Clouds**, **MapStitch**, **Mod Menu**, **Particle Rain**, **Sodium**,
+  and (briefly) **JEI**: `side = "both"` → `side = "client"`.
+- JEI was reverted in **0.5.3**. MapStitch was reverted in **0.5.4**.
+
+### Config / pack
+- Updated the listed `pack/mods/*.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.5.1] — 2026-08-23
 
 Hotfix: restore **Villager API**. In 0.5 it was removed as an assumed Better-Village-only dependency,
@@ -16,6 +73,13 @@ but **Numismatic Overhaul (Numismatic Bounties) also requires it** — its absen
 ### Config / pack
 - Restored `pack/mods/villagerapi.pw.toml`. `pack/index.toml` + `pack/pack.toml` re-indexed.
 
+### Documentation
+- **Notes** — Villager API stays in the pack (Numismatic Overhaul dependency); Better Village stays
+  removed. Village weights/biomes and `bigglobe_less_glacier` rules recorded as living notes.
+- **README** — CTOV is the sole village system; glacier ice is noted as smaller/sparser.
+- **Maintainer + client install** — datapacks live in `pack/datapacks/` → instance `datapacks/`
+  (Paxi loads that folder); not `config/paxi/datapacks/`.
+
 ## [0.5] — 2026-08-23
 
 Village overhaul + glacier tuning. CTOV becomes the sole village system (biased toward large walled
@@ -25,6 +89,7 @@ ice is made smaller and sparser.
 ### Removed (mods)
 - **Better Villages** + its dependency **Villager API** — Better Village only reskins *vanilla*
   village jigsaw pools, which are now disabled (below), so it produced nothing under Big Globe.
+  *(Villager API restored in 0.5.1 — Numismatic Overhaul still needs it.)*
 
 ### Changed — CTOV village generation (`bigglobe_ctov_compat`)
 - **Vanilla villages disabled** — `bigglobe:villages` structure_set emptied (placement kept as an
