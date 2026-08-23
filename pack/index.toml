@@ -1334,6 +1334,11 @@ hash = "1e9f7845167a3f273cb9d0bd14672f9a7cdbd053c5c22b9a3e5426a9a43c7bf7"
 metafile = true
 
 [[files]]
+file = "mods/too-fast.pw.toml"
+hash = "63da0a2850babdf37f9511b17d2962fbaa9ce980d4c8478299767954df4efc19"
+metafile = true
+
+[[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "318b2826182182ff4acd58ffe985c58fe2b403941ec36f41303217bed275feea"
 metafile = true
