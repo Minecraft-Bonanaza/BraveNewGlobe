@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.3] — 2026-08-24
+
+Glacier tuning: shrink the main ice sheet. Capped the per-cell fill so cells can't fully merge into
+one seamless mega-sheet — the big mass breaks into large floes while the small satellites (below the
+cap) are untouched.
+- `glaciers.json` fill: `1.4 × (crack_threshold − 0.25)` → `min(1.4 × (crack_threshold − 0.25), 0.75)`.
+- Knob: the `0.75` cap = max sheet size (lower → smaller / more-broken main sheet).
+
 ## [0.6.2] — 2026-08-24
 
 Glacier rework **v2** — fixes 0.6.1 producing **no ice at all**. The v1 `glacier_field` noise loaded
