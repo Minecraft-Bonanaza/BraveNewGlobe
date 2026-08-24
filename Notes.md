@@ -2,6 +2,198 @@
 
 Miscellaneous maintainer/config notes for the pack.
 
+## Packwiz hashes and line endings (as of 0.5.4)
+packwiz pins a sha256 of every file under `pack/` in `pack/index.toml`. If Git rewrites
+line endings (CRLF ↔ LF) on checkout, those bytes change and **every player's launch fails
+the hash check** even though the pack content is the same.
+
+The repo has `.gitattributes` with `* -text` so Git **does not** convert end-of-line. Do not
+delete that file, and do not turn on `core.autocrlf` / `core.eol` conversion for this clone.
+After real edits under `pack/`, still run `packwiz refresh` before committing.
+
+## Overworld depth — height-patched Big Globe (as of 0.6, still in 0.6.1)
+`pack.toml` version is **0.6.1**. Overworld bounds are **floor −608**, **ceiling +896**, sea
+level 0. That height lives inside a patched Big Globe 5.3.2 jar
+(`bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar`, `pack/mods/big-globe.pw.toml`).
+
+**Fresh world required** when upgrading from any pack version before **0.6**. Old saves used
+either default −1024…+1024 or the brief 0.6-beta datapack compact (−464…+896). Verify F3 min Y
+= **−608** and Distant Horizons LODs align with real terrain. **0.6.1 does not change height**
+(glacier datapack only) — players already on a 0.6 world can keep it.
+
+Why a jar, not a datapack: Big Globe's `reload_dimension` reads the world-preset generator
+(including `height`) from **its own jar every load** and ignores datapack / `level.dat`
+overrides. DH anchors LODs to that same `generator.height.min_y`. The 0.6-beta
+`bigglobe_shallow_overworld.zip` therefore produced LODs offset by exactly 560 blocks
+(−1024 vs −464). Do **not** re-add that datapack.
+
+Current underground layout (from the 0.5.9 / 0.6 jar):
+
+| Layer | Y range | Thickness |
+|---|---|---|
+| Cave zone | surface → −320 | caves held 32 above the deep dark |
+| Stone cap | −352 → −320 | 32 (buffer, no caves/sculk) |
+| Deep Dark | −480 → −352 | 128 (full) |
+| Gap | −496 → −480 | 16 |
+| Core / Molten | −592 → −496 | 96 (75% of default 128) |
+| Lava Sea | −592 → −576 | ~16 |
+| Base stone | −608 → −592 | 16 |
+
+Deep-ore curves are rescaled ~×0.63 to the shorter stone column (new core-top −496 vs
+default −784): diamond ramp `256→512` → `160→320`, gold/redstone `128→256` → `80→160`,
+iron/copper exp delay `512` → `320`, emerald `/−192` → `/−128`. Lapis and coal unchanged.
+Net: diamonds reach ~full richness above the core; ~41% less underground storage/gen than
+default −1024.
+
+Re-patch on any Big Globe update (`build_patched_jar.py` in `bigGlobeAero` asserts all 14
+edited strings). The metafile has **no `[update]` block** so `packwiz update` cannot revert
+to the stock Modrinth jar. The jar is served from public `raw.githubusercontent.com` —
+move it to a no-login host before making this repo private. CC BY-NC 4.0, personal-server use.
+
+## Chunk performance — C2ME + Vertigo (as of 0.5.7, still in 0.6.1)
+Two independently removable performance mods targeting Big Globe's tall-world chunk-streaming
+cost.
+
+- **C2ME** `0.4.0-alpha.0.120+1.21.1` (Modrinth `COlSi5iR`, `pack/mods/c2me.pw.toml`) —
+  native NeoForge, no extra deps, `side = "both"`. Parallel chunk gen/load + chunk I/O.
+  **Alpha** (normal for C2ME on 1.21.1). Worldgen opts target vanilla `NoiseChunkGenerator`,
+  which Big Globe's `bigglobe:scripted` generator bypasses — those modules are largely inert.
+  Generic chunk-system rewrite still wraps BG; if worldgen races or hangs, disable
+  worldgen-threading / chunk-system in `config/c2me.toml` (generated at runtime, not shipped).
+- **Vertigo** `1.2.4` (Modrinth `4LzgJp1j`, `pack/mods/vertigo.pw.toml`) — Fabric via Sinytra
+  Connector + FFAPI, `side = "both"`. Strips empty vertical sections from ChunkData packets.
+  Re-added in 0.5.7 **without** `bigglobe_shallow_overworld.zip`. The 0.6-beta Distant Horizons
+  "600-block" offset was that datapack's floor mismatch, not Vertigo.
+
+Highest-risk overlap is **lighting**: Vertigo syncs skylight while C2ME `threading-lighting`
+threads the server lighting provider. If lighting glitches, disable C2ME `threading-lighting`
+first. Neither declares hard incompatibilities; C2ME only discourages `dynview` and
+`betterchunkloading` (both absent). C2ME bundles MixinSquared.
+
+## Creating Space (added while pack.toml said 0.6-beta)
+**Creating Space** `1.7.18` (Modrinth `8VQksBiY`, `pack/mods/creating-space.pw.toml`) is
+Create-based rocket / space travel. `side = "both"`. Depends on **Create** `6.0.10` (already
+in the pack). Not published on CurseForge.
+
+It adds its **own planet dimensions**, so no Big Globe compat datapack is required. Author
+confirmed another 1.21.1 pack runs this exact `1.7.18` + Create `6.0.10` combo.
+
+## Project Atmosphere biome temperatures (as of 0.5.6)
+`pack/config/projectatmosphere/biome_temps.json` must define a Celsius range for every biome
+the overworld actually uses. Stock only had `minecraft:plains`; without ranges, PA's per-tick
+`WeatherMgr` spams *"No temperature range defined for biome bigglobe:…"*.
+
+Current file covers `minecraft:plains` plus all **52** Big Globe biomes (seasonal
+spring/summer/autumn/winter for surface climate tiers; stable `all` ranges for oceans, caves,
+nether, end, and special biomes). If a new Big Globe biome is added, add a matching entry
+here or the log spam returns.
+
+## CTOV integration fallbacks (as of 0.5.6)
+`pack/datapacks/ctov_integration_fallbacks.zip` defines 7 empty template pools that CTOV 3.6.3
+buildings reference for optional mods this pack does **not** install:
+
+- `ctov:village/waystone/{sand,normal,mossy}`
+- `ctov:village/vampirism/totem`
+- `ctov:village/bounty/{bounty_board,plains,swamp}`
+
+Without them, Lithostitched logs *"Couldn't find template pool reference"* for every village
+piece. Villages generate the same either way. **Delete this datapack before adding Waystones,
+Vampirism, or a bounty mod**, or the empty pools would shadow the real ones.
+
+## Villages (CTOV only, as of 0.5 / 0.5.1)
+**ChoiceTheorem's Overhauled Village** is the only village system. Vanilla / Big Globe villages are
+disabled, and **Better Villages** was removed (it only reskinned vanilla jigsaw pools, which no
+longer generate).
+
+**Villager API** is still in the pack. 0.5 removed it as an assumed Better-Village-only dependency,
+but **Numismatic Overhaul** also requires it (mod loading crashed without it). Restored in **0.5.1**.
+Better Village stays out.
+
+Current rules live in `pack/datapacks/bigglobe_ctov_compat.zip`:
+
+- `bigglobe:villages` is an empty structure set. Placement (salt / spacing / separation) is kept as
+  an override so Big Globe's built-in 5-village default does not come back.
+- The 21 `small/*` variants are not in `bigglobe_ctov:villages` (the JSON files may still be in the
+  zip; they are unused).
+- Per-cell lottery weights: large-fortified **8**, medium-fortified **5**, large **3**, medium **2**.
+- Fortified (walled) biome extras:
+  - `plains_fortified` → + `warm_plains`, `warm_light_forest`, `warm_dense_forest`
+  - `mesa_fortified` → + `hot_plains`, `#bigglobe:beach`
+  - `taiga_fortified` → + `bigglobe:glacier`
+
+`pack/config/bettervillage_1.properties` is leftover from Better Villages and is unused.
+
+## Glacier ice (`bigglobe_less_glacier`, as of 0.6.1 — experimental)
+`pack/datapacks/bigglobe_less_glacier.zip` retunes the glacier *feature* only. The glacier
+*biome* extent, Aquamirae's Sea of Shivers, and `glacier_crack_threshold` are not overridden.
+
+0.6.1 (**v1, experimental**) replaces the 0.5 uniform grid of identical floes with sparse ice
+**sheets that thin into satellite floes and fade to open water**, so a glacier ocean covers
+only part of its surface.
+
+Current rules:
+
+- **`glacier_field`** (`bigglobe_column_value/overworld/glacier_field.json`) — large-scale
+  smooth noise (scales 256 + 128) with sparse peaks. This is what concentrates ice.
+- **`glaciers.json` dispatcher** — a Voronoi cell fills out to
+  `2.0 × (glacier_field − 0.5)` instead of the old `0.4 × glacier_crack_threshold`. At a
+  field peak, cells fully fill and merge into **one sheet**; around it, fill shrinks into
+  **satellite floes**; past the peak (`glacier_field` ≤ 0.5) it is **open water**.
+- Still gated to **cold, deep, non-river ocean**: `!in_river`, surface below sea level, and
+  `glacier_crack_threshold > 0.0`.
+- **`glacier_cell`** Voronoi `distance` stays **48** (from 0.5); `variation` 24 → **40** so
+  floes scatter instead of lining up on a grid.
+
+Tunable knobs (for the next look):
+
+- Coverage: the `0.5` cutoff in `glaciers.json` (raise → less ice).
+- Sheet size / falloff: `glacier_field` scales (smaller → tighter peaks) and the `2.0` fill
+  multiplier (higher → bigger sheets).
+
+Caveats:
+
+- **Unverified worldgen scripting** — authored against Big Globe's script/noise DSL but not
+  compile-tested. On first load, watch the log for `bigglobe` column-value/script errors. If
+  the glacier feature errors or `glacier_field` does not resolve, revert this datapack.
+- Only **newly generated** cold-ocean chunks pick it up. No jar or world reset. Explore
+  fresh ocean (or delete those chunks) to see the new pattern.
+
+## Client-only / server-only mods (packwiz `side`, as of 0.5.2–0.6.1)
+These mods are `side = "client"` so a dedicated-server install skips them. Player (PrismLauncher)
+installs still get them:
+
+- ImmediatelyFast
+- Iris Shaders
+- Iris & Oculus Flywheel Compat
+- Iris/Oculus For Simple Clouds
+- Mod Menu
+- Particle Rain
+- Sodium
+
+**JEI is `side = "both"`.** 0.5.2 briefly marked it client-only; **0.5.3** restored it so
+dedicated servers still install it. Do not lump JEI in with the rendering/QoL client-only list.
+
+**Creating Space, C2ME, Vertigo, and the patched Big Globe jar are `side = "both"`.** Dedicated
+servers and clients both install them.
+
+**Too Fast is `side = "server"`** (unversioned add after 0.5.5). Dedicated-server packwiz syncs
+install it; the default PrismLauncher pre-launch command (`--side client`) skips it. Singleplayer
+only gets the rubber-band fix if the jar is actually in the instance.
+
+**MapStitch was removed in 0.5.5** (it had been `side = "both"` as of 0.5.4). Leftover
+`pack/config/mapstitch.json` and `pack/config/mapstitch_state` are unused. Xaero's Minimap
+and World Map stay.
+
+`side` is independent of `[option]` (optional vs required). Distant Horizons and Simple Clouds are
+still `side = "both"` even though they are client-oriented.
+
+## Too Fast (as of unversioned add after 0.5.5)
+**Too Fast** `0.4.3.5` (Modrinth `w6JSkKSH`) raises the server-side player movement speed
+limit so high-speed travel (Create aeronautics, etc.) does not trip vanilla
+`moved too quickly` kicks / rubber-banding. Server-side only; no client assets.
+
+Conflicts with Random Patches (not in this pack). Do not also install Random Patches.
+
 ## Derek's Notes
 Under config, need to enable hyperspeed generation in Big Globe's config to support DH API usage when
 generating LODs. Otherwise DH doesn't recognize the renderer and will memory leak.
@@ -19,3 +211,8 @@ Fixes:
 - **Permanent:** disable the bottom 3 settings under **Visual** in the Simple Clouds config, **or** let
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
+
+## Known / open — invalid empty item on load (as of 0.5.6)
+`ItemStack: Tried to load invalid item: 'No key id in MapLike[{}]'` (observed near 51, 228, -4860)
+is a malformed empty item during load. Non-fatal (vanilla drops it and continues). Source not yet
+identified.
