@@ -1057,11 +1057,6 @@ hash = "989957cafbfd4801afd0a8b74fa519e933625a254635ddbfa006e1c2c135e745"
 metafile = true
 
 [[files]]
-file = "mods/drive-by-wire-with-sable.pw.toml"
-hash = "9cae535d0e517933a95ce8819a52f0bc603dab6924de89f65de22d180fa5d6fe"
-metafile = true
-
-[[files]]
 file = "mods/explosion-overhaul-a-new-level-of-destruction.pw.toml"
 hash = "9c0093c600ffa2e51804e15079de11e328e976a07048596e1f9d564898619fe2"
 metafile = true
