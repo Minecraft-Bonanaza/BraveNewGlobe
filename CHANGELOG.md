@@ -3,6 +3,12 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.7] — 2026-08-24
+
+Glaciers: nudge the temperature bar colder for a few fewer glacier oceans — `unmixLinear(-0.35, -0.6)`
+→ **`unmixLinear(-0.4, -0.65)`** (glacier now only where temp < −0.40). Size (C=0.4) and the solid-sheet
+look unchanged.
+
 ## [0.6.6] — 2026-08-24
 
 Glaciers: **fewer + smaller.** Two independent dials, plus keeping the biome and ice footprints matched.
