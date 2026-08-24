@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.4] — 2026-08-24
+
+Glacier tuning: shrink the glacier's **footprint** (v3's cap broke it into floes but it still covered
+the whole cold ocean). Raised the coverage cutoff so BG ice only forms over the **deep/cold core**.
+- `glaciers.json`: `min(1.4×(crack_threshold − 0.25), 0.75)` → `min(1.4×(crack_threshold − 0.60), 0.75)`.
+- **The `0.60` cutoff is the glacier-size dial:** higher → smaller footprint (deeper core only); lower
+  (toward 0.25) → larger, back toward continent-sized; ~1.0+ → essentially off (like v1).
+- Cap stays `0.75` (broken floes, not one seamless sheet).
+
 ## [0.6.3] — 2026-08-24
 
 Glacier tuning: shrink the main ice sheet. Capped the per-cell fill so cells can't fully merge into
