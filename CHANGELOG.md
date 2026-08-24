@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.5] — 2026-08-24
+
+Glacier: reverted to the **solid-sheet** look (v2). Dropped the `0.75` fill cap and the `0.6` footprint
+cutoff, back to `1.4 × (glacier_crack_threshold − 0.25)` (no cap) so deep/cold cells merge into a
+continuous sheet again (preferred over the broken-floe look). Size to be reduced via the **biome**
+next, not the feature cap.
+
 ## [0.6.4] — 2026-08-24
 
 Glacier tuning: shrink the glacier's **footprint** (v3's cap broke it into floes but it still covered
