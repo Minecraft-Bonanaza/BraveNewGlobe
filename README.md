@@ -11,20 +11,34 @@ world/spawn compatibility.
 
 ## What's in the pack
 - **Create ecosystem** — Create plus a large stack of add-ons (aeronautics, cannons, logistics,
-  diesel generators, trains, and more).
+  diesel generators, trains, and more). **Creating Space** adds Create-based rockets and travel
+  to other planets (its own dimensions; no Big Globe compat datapack).
 - **Big Globe world generation** — with hand-authored compatibility datapacks for spawns, structures,
-  and cross-mod integration (shipped via Paxi).
-- **Survival & QoL** — seasons, thirst/diseases, farming and food, villager overhauls, and supporting
-  libraries.
+  and cross-mod integration (shipped via Paxi). Overworld depth is the Big Globe default
+  (`-1024`…`+1024`). Glacier *ice* is tuned smaller and sparser than the stock Big Globe feature;
+  the glacier biome itself is unchanged. The 0.6-beta shallow-overworld experiment is parked on
+  branch `0.6-beta` and is **not** on main.
+- **Chunk performance** — **C2ME** (native NeoForge; parallel chunk gen/load/IO) and **Vertigo**
+  (Fabric via Connector; strips empty vertical sections from chunk packets). No fresh world
+  required. Vertigo is back without the shallow-world datapack.
+- **Survival & QoL** — seasons, thirst/diseases, farming and food, **ChoiceTheorem's Overhauled
+  Village (CTOV)** as the sole village system (vanilla villages disabled; biased toward large walled
+  villages), and supporting libraries. **Villager API** stays as a Numismatic Overhaul dependency;
+  Better Village is not in the pack.
 - **Optional visuals** — Iris shaders, Distant Horizons, Simple Clouds, and other client-side eye-candy
-  that can be toggled off on low-spec machines.
+  that can be toggled off on low-spec machines. Several of those (Iris, Sodium, ImmediatelyFast, etc.)
+  are packwiz `side = "client"` so dedicated servers skip them; **JEI stays `both`**. MapStitch is not in the pack.
+- **Server movement** — **Too Fast** (`side = "server"`) lifts the vanilla `moved too quickly`
+  speed cap on dedicated servers so high-speed travel does not rubber-band.
 
 ## Documentation
+- **[Changelog](CHANGELOG.md)** — version-by-version pack changes.
 - **[Client Installation Instructions](ClientInstallationInstructions.md)** — how to install and
   auto-update the pack as a player (start here if you just want to play).
 - **[Maintainer Instructions](MaintainerInstructions.md)** — how the pack is built and how to add/update
   mods with packwiz.
-- **[Notes](Notes.md)** — misc config/maintenance notes and gotchas.
+- **[Notes](Notes.md)** — current overworld-depth / village / glacier rules, C2ME + Vertigo,
+  Creating Space, packwiz `side` flags, line-ending/hash gotcha, plus misc config notes.
 
 ## Quick start (players)
 Full steps are in **[Client Installation Instructions](ClientInstallationInstructions.md)**. In short:
