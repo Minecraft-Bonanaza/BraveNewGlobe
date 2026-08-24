@@ -3,6 +3,44 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5.8] — 2026-08-24
+
+Shallow overworld, done properly — via a height-patched Big Globe jar. This revives the parked
+shallow-world work in a way that's actually **Distant Horizons-compatible** (no more vertical
+"wall of chunks" offset).
+
+### Why a patched jar (and not a datapack)
+Big Globe reads its world-preset generator — including `height` — **directly from its own jar on
+every load** (the `reload_dimension` feature; it logs *"Reading … chunk generator from mod jar"*),
+ignoring both datapack overrides and the value baked into `level.dat`. Its DH LOD integration
+anchors to that same `generator.height.min_y`. So a datapack/companion mod **cannot** change the
+generator height — the only thing that works is editing the files **inside** BG's jar. That's why
+the earlier datapack approach produced DH LODs offset by exactly 560 blocks (−1024 vs −464).
+
+### Changed (mods)
+- **Big Globe** → **height-patched 5.3.2 jar** (`bigglobe-5.3.2-mc1.21.1-shallow464.jar`, self-hosted
+  in `bundled-jars/`). Overworld floor −1024 → **−464**, ceiling +1024 → **+896**; deep tiers
+  compacted (core 80-thick, deep dark 64-thick, lava sea, base trimmed). ~55% less underground
+  storage/gen. Built from the official jar by `bigGlobeAero/build_patched_jar.py` (5 files swapped:
+  dimension_type, world_preset generator height, world_trait_impl tiers, the_core gradient,
+  test_core threshold). Metafile pinned (no `[update]` block) so `packwiz update` can't revert it to
+  the unpatched Modrinth jar. The separate `bigglobe_shallow_overworld` datapack is now **obsolete**
+  (the jar does everything natively).
+  - Big Globe by builderb0y (CC BY-NC 4.0); modified for **personal-server use**.
+
+### Requirements / caveats
+- **Fresh world required** (dimension bounds change).
+- Now that BG's generator + dimension + DH all agree at −464, DH LODs align — no offset.
+- **Repo-privacy caveat:** the jar is served via a public `raw.githubusercontent.com` URL. If the
+  repo is made private, that URL (and the pack manifest itself) will 403 for packwiz-installer
+  (anonymous download) and break syncing — switch to a no-login host before going private.
+- Re-patch on any future Big Globe update (`build_patched_jar.py` asserts the 5 paths still exist).
+
+### Config / pack
+- Added `bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow464.jar`; repointed `pack/mods/big-globe.pw.toml`
+  (Modrinth → raw-GitHub, sha256, no update block). `pack/index.toml` + `pack/pack.toml` re-indexed;
+  version → 0.5.8.
+
 ## [0.5.7] — 2026-08-24
 
 Chunk-performance mods. Adds **C2ME** (parallel chunk gen/load/IO) and re-adds **Vertigo** (vertical

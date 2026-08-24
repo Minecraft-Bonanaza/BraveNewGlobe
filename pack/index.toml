@@ -819,7 +819,7 @@ metafile = true
 
 [[files]]
 file = "mods/big-globe.pw.toml"
-hash = "32b4c142a7e1af175234b13c973f655a4fbcf3425b01b1cb2d30f6477e34998f"
+hash = "5aa8fdfdd61d4169491d7c48d918753777c134de8523dc538bbd0d9dc1b49a1d"
 metafile = true
 
 [[files]]
