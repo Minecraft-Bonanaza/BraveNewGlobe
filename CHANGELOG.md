@@ -3,6 +3,27 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6] — 2026-08-24
+
+**Release** — the performance + shallow-world overhaul the earlier `0.6-beta` aimed at, now done
+properly. Consolidates the 0.5.6–0.5.9 work (detailed entries below). Highlights:
+
+- **Shallow overworld via a height-patched Big Globe jar** — floor −1024 → **−608**, ceiling +896;
+  core/molten 96-thick + a 32-block stone cap above the deep dark; full 128 deep dark; deep-ore
+  curves rescaled to fit. **DH-compatible** (the earlier offset is gone — the height now lives inside
+  BG's own jar, the only place it reads it from). **~41% less** underground storage/gen.
+- **Chunk-streaming performance** — **C2ME** (parallel chunk gen/load/IO, native NeoForge) + **Vertigo**
+  (vertical chunk-section sync). Jar/mixin deep-dive found no hard conflicts; watch the Vertigo↔C2ME
+  lighting overlap on first run.
+- **Log-spam fixes** — Project Atmosphere temperatures for all 52 Big Globe biomes; CTOV
+  integration-pool fallbacks (Waystones/Vampirism/bounty).
+
+⚠️ **Fresh world required** (Big Globe's height changed). Verify F3 floor = −608 and DH LODs align.
+Big Globe jar modified for personal-server use (CC BY-NC 4.0); served via public raw-GitHub — move to
+a no-login host before making the repo private.
+
+---
+
 ## [0.5.9] — 2026-08-24
 
 Deeper, better-balanced shallow world. Moves the floor −464 → **−608** (more room), restores the
