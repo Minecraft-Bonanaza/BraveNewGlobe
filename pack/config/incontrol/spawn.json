@@ -1,6 +1,6 @@
 [
   {
-    "mob": "seaeater:leviathan",
+    "mob": ["seaeater:leviathan", "seaeater:kraken", "seaeater:sea_eater"],
     "minheight": -49,
     "result": "deny"
   }

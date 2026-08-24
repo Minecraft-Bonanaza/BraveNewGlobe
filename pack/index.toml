@@ -366,7 +366,7 @@ hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "ea55124d350aa60c77d2f66bdb694270cddf6c29944be7fafc592f45dc7108be"
+hash = "c247af1dc4c5972a6b6fa23055ec925badf96ea58221c7a4deb24fb453b76519"
 
 [[files]]
 file = "config/iris-excluded.json"
@@ -770,7 +770,7 @@ hash = "0c0f9c9c6b184803dbf3af5b82d94139eb01954050a843b69f98f8b64780da0c"
 
 [[files]]
 file = "datapacks/stattinkerer_bigglobe_compat.zip"
-hash = "3675a72c8449a6f01557b629390596834329d2d2640ce173d7c0dd6474ffcdda"
+hash = "bdf57573be145b30502971c696de329f0a0d94266d640b9993d561e0745ec604"
 
 [[files]]
 file = "defaultconfigs/biolith/general.json"

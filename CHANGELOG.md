@@ -3,6 +3,23 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.9] — 2026-08-24
+
+Large Sea Myths creatures: deep-only + rarer. Extends 0.6.8's Leviathan clamp to all three large
+`seaeater` mobs and halves their spawn weight.
+
+### Changed — In Control (`config/incontrol/spawn.json`)
+- Clamp **kraken, leviathan, sea_eater** to **Y ≤ −50** (deny at Y ≥ −49) — was Leviathan-only.
+
+### Changed — spawn weights (`stattinkerer_bigglobe_compat`)
+- Halved natural spawn weight **4 → 2** for `seaeater:kraken`, `seaeater:leviathan`,
+  `seaeater:sea_eater` (files renamed `..._4_1_1` → `..._2_1_1`) — rarer big-creature spawns within
+  the ocean mob pool.
+
+### Config / pack
+- `pack/config/incontrol/spawn.json` + `pack/datapacks/stattinkerer_bigglobe_compat.zip` updated;
+  `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.6.8] — 2026-08-24
 
 Deep-water Leviathan. Sea Myths' Leviathan was spawning at the surface (Big Globe's spawn format has
