@@ -1,15 +1,17 @@
-name = "Big Globe (shallow-464 patched)"
-filename = "bigglobe-5.3.2-mc1.21.1-shallow464.jar"
+name = "Big Globe (shallow-608 patched)"
+filename = "bigglobe-5.3.2-mc1.21.1-shallow608.jar"
 side = "both"
 
-# Height-patched Big Globe 5.3.2: overworld floor -1024 -> -464, ceiling +896, deep tiers
-# compacted. BG reads its generator from its own jar every load (reload_dimension), so the
-# height change MUST live inside the jar — datapacks/companion mods can't override it.
-# Built from the official 5.3.2 jar via bigGlobeAero/build_patched_jar.py (5 files swapped).
+# Height-patched Big Globe 5.3.2: overworld floor -1024 -> -608, ceiling +896. Core/molten 96-thick
+# (75% of default), 32-block stone cap between deep dark and caves, deep dark 128, and deep-ore
+# curves rescaled ~x0.63 to fit the shallower stone column (diamonds reach full richness above the
+# core again). BG reads its generator + terrain scripts from its own jar every load
+# (reload_dimension), so these MUST live inside the jar — datapacks/companion mods can't override it.
+# Built from the official 5.3.2 jar via bigGlobeAero/build_patched_jar.py (14 files edited).
 # Big Globe by builderb0y (CC BY-NC 4.0); modified for personal-server use, not the vanilla jar.
 # No [update] block on purpose: prevents `packwiz update` reverting to the unpatched Modrinth jar.
 
 [download]
-url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow464.jar"
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar"
 hash-format = "sha256"
-hash = "bcee9a49e0a904d79244942cf2c0ac2598edcb20396138058dd08e1aea60cec8"
+hash = "965e65502f3dbb06b42eba5185fbaddeab74edae81e465206ccec597e1404e61"

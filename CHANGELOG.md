@@ -3,6 +3,51 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5.9] — 2026-08-24
+
+Deeper, better-balanced shallow world. Moves the floor −464 → **−608** (more room), restores the
+deep tiers toward full size, adds a stone buffer above the deep dark, and **rescales the deep-ore
+curves** so diamonds/gold/redstone actually reach their intended richness in the shallower stone.
+Supersedes the 0.5.8 −464 patch. Still a single height-patched Big Globe jar (the only mechanism
+BG respects — it reads its generator + terrain scripts from its own jar every load).
+
+### Changed — Big Globe patched jar (`bigglobe-5.3.2-mc1.21.1-shallow608.jar`)
+New overworld layout (sea 0, ceiling +896, floor **−608**):
+
+| Layer | Y range | Thickness |
+|---|---|---|
+| Cave zone | surface → −320 | (caves held 32 above the deep dark) |
+| **Stone cap** | −352 → −320 | 32 (buffer, no caves/sculk) |
+| Deep Dark | −480 → −352 | 128 (full) |
+| Gap | −496 → −480 | 16 |
+| Core / Molten | −592 → −496 | **96** (75% of default 128) |
+| Lava Sea | −592 → −576 | ~16 |
+| Base stone | −608 → −592 | 16 |
+
+- **Core/molten → 96-thick** (75% of default); the freed 32 becomes a **solid-stone cap** between the
+  deep dark and the cave zone (caves no longer open straight into the sculk). Implemented by holding
+  cave depth 32 above `deep_dark_max_y` (`easy/medium/hard_depth.json`).
+- **Ore curves rescaled ~×0.63** (new core-top −496 vs default −784) so ores keep their distribution
+  but fit the shorter stone column: diamond ramp `256→512` → **`160→320`**, gold/redstone `128→256` →
+  **`80→160`**, iron/copper exp `delay 512` → **320**, emerald `/−192` → **`/−128`**; lapis (surface→
+  sea-level) and coal (uniform) unchanged. Net: diamonds now reach ~full richness above the core on
+  all terrain (previously the molten core cut off the deep, richest band).
+- **~41% less** underground storage/gen vs default (−608 keeps more than the −464 build's ~55%, in
+  exchange for full-thickness tiers + full diamonds).
+- 14 files edited in-jar by `build_patched_jar.py` (5 layout + 3 cave-depth + 6 ore); metafile pinned
+  (no `[update]`). Big Globe by builderb0y (CC BY-NC 4.0), modified for personal-server use.
+
+### Requirements / caveats
+- **Fresh world required** (bounds changed again). Verify F3 floor = −608 and DH LODs align.
+- **Repo-privacy caveat still applies:** jar served via public `raw.githubusercontent.com`; making the
+  repo private breaks packwiz's anonymous download — move to a no-login host first.
+- Re-patch on any Big Globe update (`build_patched_jar.py` asserts all 14 strings still exist).
+
+### Config / pack
+- Replaced `bundled-jars/bigglobe-…-shallow464.jar` → `…-shallow608.jar`; repointed
+  `pack/mods/big-globe.pw.toml` (new filename/URL/sha256). `pack/index.toml` + `pack/pack.toml`
+  re-indexed; version → 0.5.9.
+
 ## [0.5.8] — 2026-08-24
 
 Shallow overworld, done properly — via a height-patched Big Globe jar. This revives the parked
@@ -27,14 +72,6 @@ the earlier datapack approach produced DH LODs offset by exactly 560 blocks (−
   the unpatched Modrinth jar. The separate `bigglobe_shallow_overworld` datapack is now **obsolete**
   (the jar does everything natively).
   - Big Globe by builderb0y (CC BY-NC 4.0); modified for **personal-server use**.
-
-### Requirements / caveats
-- **Fresh world required** (dimension bounds change).
-- Now that BG's generator + dimension + DH all agree at −464, DH LODs align — no offset.
-- **Repo-privacy caveat:** the jar is served via a public `raw.githubusercontent.com` URL. If the
-  repo is made private, that URL (and the pack manifest itself) will 403 for packwiz-installer
-  (anonymous download) and break syncing — switch to a no-login host before going private.
-- Re-patch on any future Big Globe update (`build_patched_jar.py` asserts the 5 paths still exist).
 
 ### Config / pack
 - Added `bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow464.jar`; repointed `pack/mods/big-globe.pw.toml`
