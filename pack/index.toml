@@ -365,6 +365,10 @@ file = "config/immediatelyfast.json"
 hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
 
 [[files]]
+file = "config/incontrol/spawn.json"
+hash = "ea55124d350aa60c77d2f66bdb694270cddf6c29944be7fafc592f45dc7108be"
+
+[[files]]
 file = "config/iris-excluded.json"
 hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
@@ -1110,6 +1114,11 @@ metafile = true
 [[files]]
 file = "mods/immediatelyfast.pw.toml"
 hash = "96c488556336d9ae44a0f17182d4c2bf2dc8414c29f9006d334ff97e6a14ca2a"
+metafile = true
+
+[[files]]
+file = "mods/in-control.pw.toml"
+hash = "313ec73e545755e5cb1ea72dd38b632587e32a9e0d5e73b714d00fe4feb9a0d4"
 metafile = true
 
 [[files]]

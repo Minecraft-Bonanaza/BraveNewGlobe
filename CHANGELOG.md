@@ -3,6 +3,22 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.8] — 2026-08-24
+
+Deep-water Leviathan. Sea Myths' Leviathan was spawning at the surface (Big Globe's spawn format has
+no Y field, so biome was the only prior lever). Added **In Control!** to hard-clamp its spawn height.
+
+### Added (mods)
+- **In Control!** `10.2.7` (CurseForge, NeoForge 1.21) — spawn-rule engine. No McJtyLib dependency in
+  this build (only an optional Lost Cities dep, absent). Governs BG-world spawns because Big Globe
+  uses vanilla `SpawnHelper`, so the NeoForge spawn events In Control hooks still fire.
+
+### Config / pack
+- `pack/config/incontrol/spawn.json` — deny `seaeater:leviathan` at Y ≥ −49, so it only spawns at
+  **Y ≤ −50** (deep). Ocean floor is the natural lower bound; no hard −100 floor (that would exclude
+  the deepest trenches). All other mobs unaffected.
+- Added `pack/mods/in-control.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
 ## [0.6.7] — 2026-08-24
 
 Glaciers: nudge the temperature bar colder for a few fewer glacier oceans — `unmixLinear(-0.35, -0.6)`
