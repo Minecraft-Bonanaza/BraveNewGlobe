@@ -39,6 +39,15 @@ performance-only and independently removable.
 - Added `pack/mods/c2me.pw.toml` + `pack/mods/vertigo.pw.toml`. `pack/index.toml` + `pack/pack.toml`
   re-indexed; version → 0.5.7.
 
+### Documentation
+- **Notes** — living C2ME / Vertigo notes (no shallow-world datapack; lighting-overlap lever is
+  disable C2ME `threading-lighting`). Overworld stays Big Globe default depth.
+- **README / client install** — chunk-performance mods are in the pack; no fresh world required.
+  Dedicated servers install both (`side = "both"`). The 0.6-beta shallow-overworld datapack stays
+  gone; Vertigo is back without it.
+- **Maintainer** — C2ME is native NeoForge (Modrinth `COlSi5iR`); Vertigo is Fabric via Connector
+  (Modrinth `4LzgJp1j`). Do not re-add `bigglobe_shallow_overworld.zip`.
+
 ## [0.5.6] — 2026-08-24
 
 Log-noise / console-spam fixes. Two systems were flooding the server log every tick / during
@@ -69,10 +78,161 @@ data for Big Globe biomes, and CTOV referenced village integration pools for mod
   `pack/datapacks/ctov_integration_fallbacks.zip`. `pack/index.toml` + `pack/pack.toml` re-indexed;
   version → 0.5.6.
 
-### Note — changelog gap
-- Versions 0.5.2–0.5.5 were never recorded here. Per commit history, `main` since 0.5.1 also received:
-  MapStitch removed, **Too Fast** and **Creating Space** added, and the **0.6-beta** work (Vertigo +
-  shallow-overworld datapack) reverted and parked on the `0.6-beta` branch.
+### Documentation
+- **Notes / Maintainer** — PA biome temps for all 52 Big Globe biomes (extend `biome_temps.json`
+  if new BG biomes are added). `ctov_integration_fallbacks.zip` is a silent empty-pool stub;
+  delete it before adding Waystones, Vampirism, or a bounty mod.
+- Earlier unnumbered commits (0.5.2–0.5.5, Too Fast, Creating Space, 0.6-beta) are filled in
+  below. They landed on main *before* this pack version.
+
+## [0.6] — 2026-08-24
+
+Docs label for two unversioned commits that landed while `pack.toml` still said `0.6-beta`,
+**before** the author numbered the next pack versions 0.5.6 / 0.5.7.
+
+**Creating Space** added (Create-based rocket / space travel). The 0.6-beta performance
+experiment (**Vertigo** + **`bigglobe_shallow_overworld`**) was **parked on branch
+`0.6-beta`** and removed from main so it could finish later. Overworld returned to Big Globe
+default depth. Creating Space stayed. Vertigo later returned in **0.5.7** without the
+shallow-world datapack.
+
+### Added (mods)
+- **Creating Space** `1.7.18` (`creatingspace-1.21.1-1.7.18.jar`, Modrinth `8VQksBiY` /
+  version `WKHiRq8M`) — Create-based rockets and travel to other planets. Depends on
+  **Create** `6.0.10` (already in the pack). Not on CurseForge. Adds its own planet
+  dimensions, so no Big Globe compat datapack is needed. Author confirmed another 1.21.1
+  pack runs this exact `1.7.18` + Create `6.0.10` combo. `side = "both"`.
+
+### Reverted (parked on branch `0.6-beta`)
+- **Vertigo** `1.2.4` — deleted `pack/mods/vertigo.pw.toml` (re-added later in 0.5.7).
+- **`bigglobe_shallow_overworld.zip`** — deleted; overworld floor/ceiling return to Big
+  Globe defaults (`-1024` / `+1024`). Still absent on main.
+- The author also dropped the [0.6-beta] changelog section from main; it is restored
+  below as history.
+
+### Config / pack
+- Added `pack/mods/creating-space.pw.toml` (Creating Space commit).
+- Removed `pack/mods/vertigo.pw.toml` and `pack/datapacks/bigglobe_shallow_overworld.zip`.
+- `pack.toml` version left at **0.6-beta** at the time (later bumped to 0.5.6, then 0.5.7).
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.6-beta] — 2026-08-23
+
+Performance beta (parked on branch `0.6-beta`): shrink Big Globe's oversized overworld and
+add vertical-section syncing, targeting on-disk world size and slow chunk streaming ahead of
+the player (gaps between loaded chunks and Distant Horizons).
+
+Removed from main in the preceding [0.6] commit. Vertigo returned in 0.5.7 **without** the
+shallow-world datapack. Kept here as history.
+
+### Added (mods)
+- **Vertigo** `1.2.4` (Modrinth `4LzgJp1j`) — "vertical chunk section syncing"; skips sending
+  empty vertical sections, complementing the shallower world for tall-world chunk streaming.
+  Fabric mod running via the pack's **Sinytra Connector + Forgified Fabric API** (its only
+  dependency, Fabric API, is covered by FFAPI). **Beta: needs in-game verification** that
+  Connector applies its networking mixins cleanly alongside Distant Horizons.
+
+### Added (datapacks — Big Globe worldgen)
+- **`bigglobe_shallow_overworld.zip`** — *(authored)* compresses the overworld's vertical extent
+  to cut ~55% of underground storage and per-chunk gen work. Overworld floor `-1024 → -464`,
+  ceiling `+1024 → +896` (sea level unchanged at 0). Deep tiers kept but compacted: core 128 →
+  **80** thick (`-448…-368`), deep dark 128 → **64** (`-352…-288`), lava sea at `-432`, base stone
+  trimmed 112 → 16. Surface, caves, ores (all surface-relative) and biomes unchanged. Overrides 5
+  BG files (`dimension_type`, `world_preset` generator height, overworld `world_trait_impl` tier
+  constants, `the_core` molten gradient, `test_core` biome interface), verified against BG 5.3.2.
+  **FRESH WORLD REQUIRED** (dimension bounds change). This datapack caused the 0.6-beta Distant
+  Horizons offset; it is **not** on current main.
+
+### Config / pack
+- Added `pack/mods/vertigo.pw.toml` and `pack/datapacks/bigglobe_shallow_overworld.zip`.
+- Pack version → **0.6-beta**.
+- `pack/index.toml` + `pack/pack.toml` re-indexed (`packwiz refresh`).
+
+## Unversioned (after 0.5.5) — Too Fast — 2026-08-23
+
+Added **Too Fast**. The author commit (`added too fast mod`) did not give this its own
+version number. (Earlier docs PRs labeled this 0.5.6 before the author used that number
+for the 2026-08-24 log-spam fix.)
+
+**Too Fast** (`toofast-1.21.0-0.4.3.5.jar`, Modrinth `w6JSkKSH` / version `pDkjMI8q`)
+removes the server-side player speed cap that produces `moved too quickly` console
+warnings and rubber-banding. It is the pack's first `side = "server"` mod: packwiz
+installs it on dedicated-server syncs and skips it on the default PrismLauncher
+client install (`--side client`). The integrated singleplayer server only gets the
+fix if the jar is actually present.
+
+### Added (mods)
+- **Too Fast** `0.4.3.5` — `pack/mods/too-fast.pw.toml`, `side = "server"`.
+
+### Config / pack
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.5] — 2026-08-23
+
+Removed **MapStitch**. The author commit (`Removed MapStitch`) did not give this its own
+version number; documented here as 0.5.5.
+
+MapStitch (`mapstitch-1.0.12+1.21.1-neoforge.jar`, CurseForge project 1595069 / file 8501263)
+is no longer in the pack. It had been `side = "both"` as of 0.5.4. **Xaero's Minimap** and
+**Xaero's World Map** stay. packwiz will delete the MapStitch jar on the next player launch.
+
+### Removed (mods)
+- **MapStitch** `1.0.12+1.21.1` — deleted `pack/mods/mapstitch.pw.toml`.
+
+### Leftover (unused)
+- `pack/config/mapstitch.json` and `pack/config/mapstitch_state` are still shipped and
+  indexed; they do nothing without the mod. JEI's `ingredient-list-mod-sort-order.ini`
+  still lists MapStitch.
+
+### Config / pack
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.4] — 2026-08-23
+
+Moved **MapStitch** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; MapStitch should install on dedicated servers as well
+as clients (same reason as JEI in 0.5.3).
+
+Also includes the immediately preceding **Fix packwiz file hashes** commit (author did
+not give it its own version number). Git was rewriting line endings (CRLF ↔ LF) on
+checkout, which changed file bytes under `pack/` so `index.toml` hashes no longer
+matched. Players then failed the packwiz installer hash check on launch. No mods,
+configs, or datapack *content* changed in that hash-fix commit.
+
+### Changed
+- **MapStitch** `side = "client"` → `side = "both"`.
+
+### Changed — packwiz hashes / Git line endings
+- Added `.gitattributes` with `* -text` so Git stores and checks out every file as-is
+  (no end-of-line conversion). Do not remove this; it is what keeps packwiz hashes stable.
+
+### Config / pack
+- `pack/mods/mapstitch.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.3] — 2026-08-23
+
+Moved **Just Enough Items (JEI)** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; JEI should install on dedicated servers as well as clients.
+
+### Changed
+- **JEI** `side = "client"` → `side = "both"`.
+
+### Config / pack
+- `pack/mods/jei.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.2] — 2026-08-23
+
+Sorted client-side-only mods: packwiz `side = "client"` so dedicated servers skip them. Player
+(PrismLauncher) installs are unchanged.
+
+### Changed — packwiz side (client-only)
+- **ImmediatelyFast**, **Iris Shaders**, **Iris & Oculus Flywheel Compat**,
+  **Iris/Oculus For Simple Clouds**, **MapStitch**, **Mod Menu**, **Particle Rain**, **Sodium**,
+  and (briefly) **JEI**: `side = "both"` → `side = "client"`.
+- JEI was reverted in **0.5.3**. MapStitch was reverted in **0.5.4**.
+
+### Config / pack
+- Updated the listed `pack/mods/*.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
 
 ## [0.5.1] — 2026-08-23
 
@@ -87,6 +247,13 @@ but **Numismatic Overhaul (Numismatic Bounties) also requires it** — its absen
 ### Config / pack
 - Restored `pack/mods/villagerapi.pw.toml`. `pack/index.toml` + `pack/pack.toml` re-indexed.
 
+### Documentation
+- **Notes** — Villager API stays in the pack (Numismatic Overhaul dependency); Better Village stays
+  removed. Village weights/biomes and `bigglobe_less_glacier` rules recorded as living notes.
+- **README** — CTOV is the sole village system; glacier ice is noted as smaller/sparser.
+- **Maintainer + client install** — datapacks live in `pack/datapacks/` → instance `datapacks/`
+  (Paxi loads that folder); not `config/paxi/datapacks/`.
+
 ## [0.5] — 2026-08-23
 
 Village overhaul + glacier tuning. CTOV becomes the sole village system (biased toward large walled
@@ -96,6 +263,7 @@ ice is made smaller and sparser.
 ### Removed (mods)
 - **Better Villages** + its dependency **Villager API** — Better Village only reskins *vanilla*
   village jigsaw pools, which are now disabled (below), so it produced nothing under Big Globe.
+  *(Villager API restored in 0.5.1 — Numismatic Overhaul still needs it.)*
 
 ### Changed — CTOV village generation (`bigglobe_ctov_compat`)
 - **Vanilla villages disabled** — `bigglobe:villages` structure_set emptied (placement kept as an
