@@ -3,6 +3,34 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.1] — 2026-08-24
+
+Ocean-glacier rework (**v1 — experimental, needs an in-game look**). Replaces the uniform grid of
+identical ice floes with sparse ice **sheets that thin out into satellite floes and fade to open
+water**, so a glacier ocean covers only part of its surface.
+
+### Changed — `bigglobe_less_glacier`
+- **New `glacier_field` noise** (`bigglobe_column_value/overworld/glacier_field.json`) — large-scale
+  smooth field (scales 256 + 128) with sparse peaks. Drives where ice concentrates.
+- **`glaciers.json` dispatcher** — ice now fills each Voronoi cell out to `2.0 × (glacier_field − 0.5)`
+  instead of `0.4 × glacier_crack_threshold`. At a field peak cells fully fill and merge into **one
+  sheet**; around it fill shrinks into **satellite floes**; past the peak (field ≤ 0.5) it's **open
+  water**. Still gated to cold, deep, non-river ocean.
+- **`glacier_cell.json`** — Voronoi `variation` 24 → **40** to break the grid so floes scatter
+  organically.
+
+### Tunable knobs (for iteration)
+- Coverage: the `0.5` cutoff in `glaciers.json` (raise → less ice).
+- Sheet size / falloff radius: `glacier_field` scales (smaller scale → tighter peaks / smaller radius)
+  and the `2.0` fill multiplier (higher → bigger sheets).
+
+### ⚠️ Caveats
+- **Unverified worldgen scripting** — authored against BG's script/noise DSL but not compile-tested.
+  On first load, watch the log for `bigglobe` column-value/script errors; if the glacier feature errors
+  or `glacier_field` doesn't resolve, revert this datapack and ping for a fix.
+- Only affects **newly generated** cold-ocean chunks. This is a **datapack** change (no jar/world reset
+  needed) — but explore fresh ocean to see it.
+
 ## [0.6] — 2026-08-24
 
 **Release** — the performance + shallow-world overhaul the earlier `0.6-beta` aimed at, now done
