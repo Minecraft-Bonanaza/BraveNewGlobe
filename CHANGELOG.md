@@ -3,34 +3,6 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
-## [0.6-beta] — 2026-08-23
-
-Performance beta: shrink Big Globe's oversized overworld and add vertical-section syncing,
-targeting on-disk world size and slow chunk streaming ahead of the player (gaps between
-loaded chunks and Distant Horizons).
-
-### Added (mods)
-- **Vertigo** `1.2.4` (Modrinth `4LzgJp1j`) — "vertical chunk section syncing"; skips sending
-  empty vertical sections, complementing the shallower world for tall-world chunk streaming.
-  Fabric mod running via the pack's **Sinytra Connector + Forgified Fabric API** (its only
-  dependency, Fabric API, is covered by FFAPI). **Beta: needs in-game verification** that
-  Connector applies its networking mixins cleanly alongside Distant Horizons.
-
-### Added (datapacks — Big Globe worldgen)
-- **`bigglobe_shallow_overworld.zip`** — *(authored)* compresses the overworld's vertical extent
-  to cut ~55% of underground storage and per-chunk gen work. Overworld floor `-1024 → -464`,
-  ceiling `+1024 → +896` (sea level unchanged at 0). Deep tiers kept but compacted: core 128 →
-  **80** thick (`-448…-368`), deep dark 128 → **64** (`-352…-288`), lava sea at `-432`, base stone
-  trimmed 112 → 16. Surface, caves, ores (all surface-relative) and biomes unchanged. Overrides 5
-  BG files (`dimension_type`, `world_preset` generator height, overworld `world_trait_impl` tier
-  constants, `the_core` molten gradient, `test_core` biome interface), verified against BG 5.3.2.
-  **FRESH WORLD REQUIRED** (dimension bounds change).
-
-### Config / pack
-- Added `pack/mods/vertigo.pw.toml` and `pack/datapacks/bigglobe_shallow_overworld.zip`.
-- Pack version → **0.6-beta**.
-- `pack/index.toml` + `pack/pack.toml` re-indexed (`packwiz refresh`).
-
 ## [0.5.1] — 2026-08-23
 
 Hotfix: restore **Villager API**. In 0.5 it was removed as an assumed Better-Village-only dependency,

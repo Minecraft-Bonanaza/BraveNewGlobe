@@ -745,10 +745,6 @@ file = "datapacks/bigglobe_remove_skylands.zip"
 hash = "e88997ffea150f3cfe8c9b01d855f2d22f011780cdefaff2fbae3b5c4f8ef866"
 
 [[files]]
-file = "datapacks/bigglobe_shallow_overworld.zip"
-hash = "4b7704fe8f5955ddbd24e61c3fecf71029ffe046555b63556d3284e8b2abf195"
-
-[[files]]
 file = "datapacks/bigglobe_tags.zip"
 hash = "52cb3d3c32dc4653c9d9643aeacf5f1b24ccf4583e4da439e138ea5b71e5fb99"
 
@@ -1355,11 +1351,6 @@ metafile = true
 [[files]]
 file = "mods/trotting-wagons.pw.toml"
 hash = "c0b6adc03be5c19aef44474e14fa31bc8e578a60cbb43cabbaaef24f622c95b8"
-metafile = true
-
-[[files]]
-file = "mods/vertigo.pw.toml"
-hash = "f49660144484e5bb61be21e175a60c55b87b20d40d2ffb3634f2129d2d880cef"
 metafile = true
 
 [[files]]
