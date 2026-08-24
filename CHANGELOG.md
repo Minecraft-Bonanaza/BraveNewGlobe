@@ -3,6 +3,29 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.2] — 2026-08-24
+
+Glacier rework **v2** — fixes 0.6.1 producing **no ice at all**. The v1 `glacier_field` noise loaded
+fine (no log error) but its value range never cleared the `0.5` cutoff, so the fill term was ≤ 0
+everywhere → zero ice (biome still showed, since biome ≠ feature).
+
+### Changed — `bigglobe_less_glacier`
+- **Dropped the `glacier_field` noise** and drive ice off the **existing, proven `glacier_crack_threshold`**
+  (the field the pre-0.6 datapack already used to place ice — no unknown noise range, guaranteed to
+  generate). New fill: `hard_distance <= 1.4 × (glacier_crack_threshold − 0.25)`.
+  - threshold ≤ 0.25 → open water · rising threshold → floes grow · deep/cold cores (threshold ≈ 1) →
+    cells fully fill → **sheet**. Concentration + thinning + partial coverage come from
+    `crack_threshold`'s natural cold/depth gradient (dense over deep cold water, fading toward shallows).
+- Kept Voronoi `variation 40` (de-grid).
+
+### Tunable
+- Coverage: the `0.25` cutoff (raise → less ice).
+- Sheet size: the `1.4` multiplier (raise → bigger sheets).
+
+Datapack-only; affects newly generated cold-ocean chunks. Note: this is a "dense core → thinning to
+shallows" look rather than discrete islands; if you want discrete sheets we can re-introduce a
+peak-noise modulation now that we know the column value loads (v1 confirmed it registers).
+
 ## [0.6.1] — 2026-08-24
 
 Ocean-glacier rework (**v1 — experimental, needs an in-game look**). Replaces the uniform grid of
