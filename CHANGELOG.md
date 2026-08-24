@@ -22,6 +22,16 @@ properly. Consolidates the 0.5.6–0.5.9 work (detailed entries below). Highligh
 Big Globe jar modified for personal-server use (CC BY-NC 4.0); served via public raw-GitHub — move to
 a no-login host before making the repo private.
 
+### Documentation
+- **Notes** — living 0.6 overworld layout (floor −608 / ceiling +896 via the height-patched
+  Big Globe jar, not a datapack). Fresh world required. C2ME + Vertigo lighting-overlap lever
+  unchanged (disable C2ME `threading-lighting`).
+- **README / client install** — pack version is 0.6; start a new world; verify F3 min Y = −608
+  and Distant Horizons LODs align. The 0.6-beta shallow *datapack* stays gone.
+- **Maintainer** — Big Globe is the pinned `bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar`
+  (no `[update]` block — do not `packwiz update` it). Re-patch with `build_patched_jar.py` on any
+  Big Globe bump. Move the jar off public raw-GitHub before making the repo private.
+
 ---
 
 ## [0.5.9] — 2026-08-24
@@ -165,10 +175,146 @@ data for Big Globe biomes, and CTOV referenced village integration pools for mod
   `pack/datapacks/ctov_integration_fallbacks.zip`. `pack/index.toml` + `pack/pack.toml` re-indexed;
   version → 0.5.6.
 
-### Note — changelog gap
-- Versions 0.5.2–0.5.5 were never recorded here. Per commit history, `main` since 0.5.1 also received:
-  MapStitch removed, **Too Fast** and **Creating Space** added, and the **0.6-beta** work (Vertigo +
-  shallow-overworld datapack) reverted and parked on the `0.6-beta` branch.
+### Note — changelog gap (filled below)
+- The author commit for 0.5.6 did not record 0.5.2–0.5.5. Those versions, plus the unversioned
+  **Too Fast** add, **Creating Space**, and the parked **0.6-beta** (datapack approach), are
+  documented in the sections that follow. Do not confuse that parked beta with the real **[0.6]**
+  release above (height-patched jar, not a datapack).
+
+## Unversioned (while pack.toml said 0.6-beta) — Creating Space + revert — 2026-08-23
+
+Two unversioned commits that landed while `pack.toml` still said `0.6-beta`, **before** the author
+numbered the next pack versions 0.5.6 / 0.5.7. **Creating Space** stayed. The 0.6-beta performance
+experiment (**Vertigo** + **`bigglobe_shallow_overworld` datapack**) was parked on branch
+`0.6-beta` and removed from main. Vertigo later returned in **0.5.7** without the datapack; the
+shallow world later returned in **0.5.8–0.5.9 / 0.6** as a height-patched jar (DH-safe).
+
+### Added (mods)
+- **Creating Space** `1.7.18` (`creatingspace-1.21.1-1.7.18.jar`, Modrinth `8VQksBiY` /
+  version `WKHiRq8M`) — Create-based rockets and travel to other planets. Depends on
+  **Create** `6.0.10` (already in the pack). Not on CurseForge. Adds its own planet
+  dimensions, so no Big Globe compat datapack is needed. Author confirmed another 1.21.1
+  pack runs this exact `1.7.18` + Create `6.0.10` combo. `side = "both"`.
+
+### Reverted (parked on branch `0.6-beta`)
+- **Vertigo** `1.2.4` — deleted `pack/mods/vertigo.pw.toml` (re-added later in 0.5.7).
+- **`bigglobe_shallow_overworld.zip`** — deleted. That *datapack* is still absent on main
+  (the 0.6 height change is an in-jar patch instead).
+
+### Config / pack
+- Added `pack/mods/creating-space.pw.toml` (Creating Space commit).
+- Removed `pack/mods/vertigo.pw.toml` and `pack/datapacks/bigglobe_shallow_overworld.zip`.
+- `pack.toml` version left at **0.6-beta** at the time (later 0.5.6 → 0.5.9, then **0.6**).
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.6-beta] — 2026-08-23
+
+Performance beta (parked on branch `0.6-beta`): shrink Big Globe's oversized overworld via a
+**datapack** and add vertical-section syncing. Removed from main in the preceding revert.
+Kept here as history. **Do not re-add `bigglobe_shallow_overworld.zip`.** The working 0.6
+shallow world is the height-patched jar (0.5.8–0.5.9), not this datapack — Big Globe reads
+generator height from its own jar, so the datapack produced the Distant Horizons offset.
+
+### Added (mods)
+- **Vertigo** `1.2.4` (Modrinth `4LzgJp1j`) — "vertical chunk section syncing"; skips sending
+  empty vertical sections. Fabric via **Sinytra Connector + Forgified Fabric API**. Later
+  re-added on main in 0.5.7 without the datapack.
+
+### Added (datapacks — Big Globe worldgen)
+- **`bigglobe_shallow_overworld.zip`** — *(authored)* compressed overworld vertical extent
+  (floor `-1024 → -464`, ceiling `+1024 → +896`). **FRESH WORLD REQUIRED.** This datapack
+  caused the 0.6-beta Distant Horizons offset and is **not** on current main.
+
+### Config / pack
+- Added `pack/mods/vertigo.pw.toml` and `pack/datapacks/bigglobe_shallow_overworld.zip`.
+- Pack version → **0.6-beta**.
+- `pack/index.toml` + `pack/pack.toml` re-indexed (`packwiz refresh`).
+
+## Unversioned (after 0.5.5) — Too Fast — 2026-08-23
+
+Added **Too Fast**. The author commit (`added too fast mod`) did not give this its own
+version number. (Earlier docs PRs labeled this 0.5.6 before the author used that number
+for the 2026-08-24 log-spam fix.)
+
+**Too Fast** (`toofast-1.21.0-0.4.3.5.jar`, Modrinth `w6JSkKSH` / version `pDkjMI8q`)
+removes the server-side player speed cap that produces `moved too quickly` console
+warnings and rubber-banding. It is the pack's first `side = "server"` mod: packwiz
+installs it on dedicated-server syncs and skips it on the default PrismLauncher
+client install (`--side client`). The integrated singleplayer server only gets the
+fix if the jar is actually present.
+
+### Added (mods)
+- **Too Fast** `0.4.3.5` — `pack/mods/too-fast.pw.toml`, `side = "server"`.
+
+### Config / pack
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.5] — 2026-08-23
+
+Removed **MapStitch**. The author commit (`Removed MapStitch`) did not give this its own
+version number; documented here as 0.5.5.
+
+MapStitch (`mapstitch-1.0.12+1.21.1-neoforge.jar`, CurseForge project 1595069 / file 8501263)
+is no longer in the pack. It had been `side = "both"` as of 0.5.4. **Xaero's Minimap** and
+**Xaero's World Map** stay. packwiz will delete the MapStitch jar on the next player launch.
+
+### Removed (mods)
+- **MapStitch** `1.0.12+1.21.1` — deleted `pack/mods/mapstitch.pw.toml`.
+
+### Leftover (unused)
+- `pack/config/mapstitch.json` and `pack/config/mapstitch_state` are still shipped and
+  indexed; they do nothing without the mod. JEI's `ingredient-list-mod-sort-order.ini`
+  still lists MapStitch.
+
+### Config / pack
+- `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.4] — 2026-08-23
+
+Moved **MapStitch** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; MapStitch should install on dedicated servers as well
+as clients (same reason as JEI in 0.5.3).
+
+Also includes the immediately preceding **Fix packwiz file hashes** commit (author did
+not give it its own version number). Git was rewriting line endings (CRLF ↔ LF) on
+checkout, which changed file bytes under `pack/` so `index.toml` hashes no longer
+matched. Players then failed the packwiz installer hash check on launch. No mods,
+configs, or datapack *content* changed in that hash-fix commit.
+
+### Changed
+- **MapStitch** `side = "client"` → `side = "both"`.
+
+### Changed — packwiz hashes / Git line endings
+- Added `.gitattributes` with `* -text` so Git stores and checks out every file as-is
+  (no end-of-line conversion). Do not remove this; it is what keeps packwiz hashes stable.
+
+### Config / pack
+- `pack/mods/mapstitch.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.3] — 2026-08-23
+
+Moved **Just Enough Items (JEI)** back to packwiz `side = "both"`. 0.5.2 had marked it client-only
+with the other client-only mods; JEI should install on dedicated servers as well as clients.
+
+### Changed
+- **JEI** `side = "client"` → `side = "both"`.
+
+### Config / pack
+- `pack/mods/jei.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
+
+## [0.5.2] — 2026-08-23
+
+Sorted client-side-only mods: packwiz `side = "client"` so dedicated servers skip them. Player
+(PrismLauncher) installs are unchanged.
+
+### Changed — packwiz side (client-only)
+- **ImmediatelyFast**, **Iris Shaders**, **Iris & Oculus Flywheel Compat**,
+  **Iris/Oculus For Simple Clouds**, **MapStitch**, **Mod Menu**, **Particle Rain**, **Sodium**,
+  and (briefly) **JEI**: `side = "both"` → `side = "client"`.
+- JEI was reverted in **0.5.3**. MapStitch was reverted in **0.5.4**.
+
+### Config / pack
+- Updated the listed `pack/mods/*.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed.
 
 ## [0.5.1] — 2026-08-23
 

@@ -5,6 +5,7 @@ How to set up the **Brave New Globe** modpack as a player. You do this setup **o
 
 - **Minecraft:** `1.21.1`
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
+- **Pack version:** `0.6`
 - **Delivery:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**; after that,
   **every time you launch, the pack pulls the latest mods automatically** — new mods are added, updated
   mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
@@ -55,15 +56,36 @@ That's it — you're set up. ✅
 **Do nothing.** Just launch the instance. The pre-launch command re-syncs against the repo every time,
 so you always get the latest mods, configs, and datapacks. Updates are usually a few seconds.
 
+## 0.6 — start a new world
+0.6 changes Big Globe's overworld height (floor **−608**, ceiling **+896**) via a patched jar.
+**Existing worlds from earlier pack versions will not line up.** Create a new world.
+
+After the first chunks generate, press F3 and confirm the world-floor / min Y is **−608**. Distant
+Horizons LODs should sit on the real terrain (no vertical "wall of chunks"). If they don't, you are
+still on an old save or an old Big Globe jar — start fresh and relaunch so packwiz can pull
+`bigglobe-5.3.2-mc1.21.1-shallow608.jar`.
+
 ## Troubleshooting
 - **"Unable to access jarfile packwiz-installer-bootstrap.jar"** — the jar isn't in `.minecraft`, or is
   in the wrong folder. Either move it there, or use the absolute-path form of the command instead:
   ```
   "$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
   ```
-- **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
-  them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **A launch fails on a "hash mismatch"** — the file bytes on GitHub no longer match `pack/index.toml`.
+  That used to happen when Git rewrote line endings (fixed in **0.5.4** by `.gitattributes`). If it
+  happens again, the maintainer likely pushed without `packwiz refresh`. Ping them; once they fix it,
+  just launch again and it re-syncs.
+- **Datapacks** — you do **not** install datapacks manually. This pack ships them under the instance
+  `datapacks/` folder; **Paxi** is configured to load that folder globally. They arrive with the
+  auto-sync.
+- **Dedicated server** — client-only mods (Iris, Sodium, ImmediatelyFast, Mod Menu,
+  Particle Rain, Simple Clouds Iris compat) are marked `side = "client"` and will **not** download
+  on a dedicated server. **JEI**, **Creating Space**, **C2ME**, **Vertigo**, and the patched
+  **Big Globe** jar are `side = "both"` and do install on the server. **Too Fast** is
+  `side = "server"` and **does** install on the server (it is skipped by the default client
+  pre-launch command above). MapStitch is not in the pack.
+- **You briefly had 0.6-beta (shallow-overworld datapack)** — that datapack stays gone (it, not
+  Vertigo, caused the Distant Horizons offset). 0.6 ships a height-patched Big Globe jar instead.
+  Start a new world either way.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.
