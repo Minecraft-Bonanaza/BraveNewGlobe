@@ -3,6 +3,22 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.6] — 2026-08-24
+
+Glaciers: **fewer + smaller.** Two independent dials, plus keeping the biome and ice footprints matched.
+- **Frequency (rarer glacier oceans)** — `glacier_crack_threshold.json` temperature bar
+  `unmixLinear(-0.25, -0.5, temp)` → **`unmixLinear(-0.35, -0.6, temp)`** (glacier only where colder).
+- **Size (smaller glaciers)** — cutoff **C = 0.4** applied to *both*:
+  - feature `glaciers.json`: `1.4 × (crack_threshold − 0.4)` (solid sheet, no cap)
+  - biome `shallow_ocean_test_glacier.json`: `hard_distance < 1.4 × (crack_threshold − 0.4)`
+  So the glacier **biome** and the **ice** shrink together — and since Aquamirae is keyed to the glacier
+  biome, its cracked ice / arcs / spirals shrink to the same smaller footprint.
+- Kept: de-grid (variation 40), solid-sheet look (0.6.5).
+
+Tuning: temp bar colder → rarer; C higher → smaller (they compound, so nudge gently). ⚠️ The biome
+file is a decision-tree override — if the *biome* doesn't shrink in-game (only the ice does), it needs
+to move into the patched jar; the temp bar + ice size will apply via datapack regardless.
+
 ## [0.6.5] — 2026-08-24
 
 Glacier: reverted to the **solid-sheet** look (v2). Dropped the `0.75` fill cap and the `0.6` footprint
