@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.10] — 2026-08-24
+
+Remove **C2ME** — it was causing chunk-loading bugs (the predicted C2ME × Vertigo lighting /
+chunk-system mixin overlap). Removing it eliminates the conflict.
+
+### Removed (mods)
+- **C2ME** (`c2me`, NeoForge alpha, added in 0.5.7). Leaf mod — nothing depends on it. **Vertigo
+  remains** (lower-risk on its own); if chunk-loading issues persist, Vertigo is the next suspect.
+
+### Config / pack
+- Removed `pack/mods/c2me.pw.toml`; `pack/index.toml` + `pack/pack.toml` re-indexed. (Any runtime
+  `config/c2me.toml` on a player's machine becomes an inert orphan — harmless.)
+
 ## [0.6.9] — 2026-08-24
 
 Large Sea Myths creatures: deep-only + rarer. Extends 0.6.8's Leviathan clamp to all three large

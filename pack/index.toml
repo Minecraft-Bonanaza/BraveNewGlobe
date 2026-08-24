@@ -847,11 +847,6 @@ hash = "3fb98e975075663859e3eb504aa769125bbac93e07aa7e053bd624eacecbe2d7"
 metafile = true
 
 [[files]]
-file = "mods/c2me.pw.toml"
-hash = "8eeaf5023a8c5978f68ecd71d09ac46516167111ab2f46ab2c3909b8f9283f92"
-metafile = true
-
-[[files]]
 file = "mods/cbc-terminal-ballistics.pw.toml"
 hash = "c68f977d3b1af3a2e075e1c5af80533db934bcad1f85c5ff01fd4102eead9ef5"
 metafile = true
