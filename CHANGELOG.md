@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.6.11] — 2026-08-24
+
+Added **Corpse** (henkelmax) `neoforge-1.21.1-1.1.13` from CurseForge (project 316582 / file 7018307).
+On death, spawns a lootable model of your body at the death spot — right-click to recover items, with a
+death-history list + optional death waypoint. Standalone (Jade/OpenHUD deps are optional; Jade already
+in pack). `side = both`.
+
 ## [0.6.10] — 2026-08-24
 
 Remove **C2ME** — it was causing chunk-loading bugs (the predicted C2ME × Vertigo lighting /

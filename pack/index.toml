@@ -882,6 +882,11 @@ hash = "945d25438f4692fbb8493cfd85d2e1ff4cf7d73ba775c886cc55be2f8aab2566"
 metafile = true
 
 [[files]]
+file = "mods/corpse.pw.toml"
+hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
+metafile = true
+
+[[files]]
 file = "mods/create-aero-radars.pw.toml"
 hash = "97283f14352e610f997bcd3dc59e0c7eb59c86e4cca78a20909fd7809a970d02"
 metafile = true
@@ -899,6 +904,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics-gyroscope-stabilizers.pw.toml"
 hash = "33f433d96bb78e1d3dd2ced7429c143b428c6dfd344278c49134e6d76c2a583c"
+metafile = true
+
+[[files]]
+file = "mods/create-aeronautics-throwable-rope-connector.pw.toml"
+hash = "7c5aa4687ff34e1ffe62e0e2570e38d40dbedc8f0d45fadcb8f9c3252f9cf677"
 metafile = true
 
 [[files]]
@@ -1044,6 +1054,11 @@ metafile = true
 [[files]]
 file = "mods/doped-horses.pw.toml"
 hash = "989957cafbfd4801afd0a8b74fa519e933625a254635ddbfa006e1c2c135e745"
+metafile = true
+
+[[files]]
+file = "mods/drive-by-wire-with-sable.pw.toml"
+hash = "9cae535d0e517933a95ce8819a52f0bc603dab6924de89f65de22d180fa5d6fe"
 metafile = true
 
 [[files]]
