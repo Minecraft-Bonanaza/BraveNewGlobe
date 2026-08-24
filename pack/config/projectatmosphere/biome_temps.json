@@ -2,28 +2,646 @@
   "biomes": {
     "minecraft:plains": {
       "spring": {
-        "min": 0.0,
-        "max": 15.0
-      },
-      "winter": {
-        "min": -10.0,
-        "max": 5.0
-      },
-      "autumn": {
-        "min": 0.0,
-        "max": 15.0
+        "min": 0,
+        "max": 15
       },
       "summer": {
-        "min": 10.0,
-        "max": 25.0
+        "min": 10,
+        "max": 25
+      },
+      "autumn": {
+        "min": 0,
+        "max": 15
+      },
+      "winter": {
+        "min": -10,
+        "max": 5
       }
     },
-    "examplemod:hot_biome": {
+    "bigglobe:hot_plains": {
+      "spring": {
+        "min": 18,
+        "max": 32
+      },
+      "summer": {
+        "min": 28,
+        "max": 42
+      },
+      "autumn": {
+        "min": 18,
+        "max": 32
+      },
+      "winter": {
+        "min": 8,
+        "max": 22
+      }
+    },
+    "bigglobe:hot_light_forest": {
+      "spring": {
+        "min": 18,
+        "max": 32
+      },
+      "summer": {
+        "min": 28,
+        "max": 42
+      },
+      "autumn": {
+        "min": 18,
+        "max": 32
+      },
+      "winter": {
+        "min": 8,
+        "max": 22
+      }
+    },
+    "bigglobe:hot_dense_forest": {
+      "spring": {
+        "min": 18,
+        "max": 32
+      },
+      "summer": {
+        "min": 28,
+        "max": 42
+      },
+      "autumn": {
+        "min": 18,
+        "max": 32
+      },
+      "winter": {
+        "min": 8,
+        "max": 22
+      }
+    },
+    "bigglobe:hot_wasteland": {
+      "spring": {
+        "min": 18,
+        "max": 32
+      },
+      "summer": {
+        "min": 28,
+        "max": 42
+      },
+      "autumn": {
+        "min": 18,
+        "max": 32
+      },
+      "winter": {
+        "min": 8,
+        "max": 22
+      }
+    },
+    "bigglobe:volcano": {
+      "spring": {
+        "min": 18,
+        "max": 32
+      },
+      "summer": {
+        "min": 28,
+        "max": 42
+      },
+      "autumn": {
+        "min": 18,
+        "max": 32
+      },
+      "winter": {
+        "min": 8,
+        "max": 22
+      }
+    },
+    "bigglobe:warm_plains": {
+      "spring": {
+        "min": 14,
+        "max": 26
+      },
+      "summer": {
+        "min": 24,
+        "max": 36
+      },
+      "autumn": {
+        "min": 14,
+        "max": 26
+      },
+      "winter": {
+        "min": 4,
+        "max": 16
+      }
+    },
+    "bigglobe:warm_light_forest": {
+      "spring": {
+        "min": 14,
+        "max": 26
+      },
+      "summer": {
+        "min": 24,
+        "max": 36
+      },
+      "autumn": {
+        "min": 14,
+        "max": 26
+      },
+      "winter": {
+        "min": 4,
+        "max": 16
+      }
+    },
+    "bigglobe:warm_dense_forest": {
+      "spring": {
+        "min": 14,
+        "max": 26
+      },
+      "summer": {
+        "min": 24,
+        "max": 36
+      },
+      "autumn": {
+        "min": 14,
+        "max": 26
+      },
+      "winter": {
+        "min": 4,
+        "max": 16
+      }
+    },
+    "bigglobe:warm_wasteland": {
+      "spring": {
+        "min": 14,
+        "max": 26
+      },
+      "summer": {
+        "min": 24,
+        "max": 36
+      },
+      "autumn": {
+        "min": 14,
+        "max": 26
+      },
+      "winter": {
+        "min": 4,
+        "max": 16
+      }
+    },
+    "bigglobe:temperate_plains": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:temperate_light_forest": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:temperate_dense_forest": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:temperate_wasteland": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:cherry_plains": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:cherry_forest": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:beach": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:overgrown_beach": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:river": {
+      "spring": {
+        "min": 8,
+        "max": 18
+      },
+      "summer": {
+        "min": 18,
+        "max": 28
+      },
+      "autumn": {
+        "min": 8,
+        "max": 18
+      },
+      "winter": {
+        "min": -6,
+        "max": 6
+      }
+    },
+    "bigglobe:cold_plains": {
+      "spring": {
+        "min": 0,
+        "max": 10
+      },
+      "summer": {
+        "min": 8,
+        "max": 18
+      },
+      "autumn": {
+        "min": 0,
+        "max": 10
+      },
+      "winter": {
+        "min": -18,
+        "max": -2
+      }
+    },
+    "bigglobe:cold_light_forest": {
+      "spring": {
+        "min": 0,
+        "max": 10
+      },
+      "summer": {
+        "min": 8,
+        "max": 18
+      },
+      "autumn": {
+        "min": 0,
+        "max": 10
+      },
+      "winter": {
+        "min": -18,
+        "max": -2
+      }
+    },
+    "bigglobe:cold_dense_forest": {
+      "spring": {
+        "min": 0,
+        "max": 10
+      },
+      "summer": {
+        "min": 8,
+        "max": 18
+      },
+      "autumn": {
+        "min": 0,
+        "max": 10
+      },
+      "winter": {
+        "min": -18,
+        "max": -2
+      }
+    },
+    "bigglobe:cold_wasteland": {
+      "spring": {
+        "min": 0,
+        "max": 10
+      },
+      "summer": {
+        "min": 8,
+        "max": 18
+      },
+      "autumn": {
+        "min": 0,
+        "max": 10
+      },
+      "winter": {
+        "min": -18,
+        "max": -2
+      }
+    },
+    "bigglobe:glacier": {
+      "spring": {
+        "min": -12,
+        "max": 0
+      },
+      "summer": {
+        "min": -4,
+        "max": 6
+      },
+      "autumn": {
+        "min": -12,
+        "max": 0
+      },
+      "winter": {
+        "min": -32,
+        "max": -12
+      }
+    },
+    "bigglobe:swamp_plains": {
+      "spring": {
+        "min": 12,
+        "max": 22
+      },
+      "summer": {
+        "min": 22,
+        "max": 32
+      },
+      "autumn": {
+        "min": 12,
+        "max": 22
+      },
+      "winter": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "bigglobe:swamp_forest": {
+      "spring": {
+        "min": 12,
+        "max": 22
+      },
+      "summer": {
+        "min": 22,
+        "max": 32
+      },
+      "autumn": {
+        "min": 12,
+        "max": 22
+      },
+      "winter": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "bigglobe:swamp_wasteland": {
+      "spring": {
+        "min": 12,
+        "max": 22
+      },
+      "summer": {
+        "min": 22,
+        "max": 32
+      },
+      "autumn": {
+        "min": 12,
+        "max": 22
+      },
+      "winter": {
+        "min": 2,
+        "max": 12
+      }
+    },
+    "bigglobe:ocean": {
       "all": {
-        "min": 20.0,
-        "max": 30.0
+        "min": 8.0,
+        "max": 18.0
+      }
+    },
+    "bigglobe:shallow_ocean": {
+      "all": {
+        "min": 8.0,
+        "max": 18.0
+      }
+    },
+    "bigglobe:deep_ocean": {
+      "all": {
+        "min": 8.0,
+        "max": 18.0
+      }
+    },
+    "bigglobe:generic_cave": {
+      "all": {
+        "min": 10.0,
+        "max": 15.0
+      }
+    },
+    "bigglobe:lush_cave": {
+      "all": {
+        "min": 10.0,
+        "max": 15.0
+      }
+    },
+    "bigglobe:dripping_cave": {
+      "all": {
+        "min": 10.0,
+        "max": 15.0
+      }
+    },
+    "bigglobe:mushroom_cave": {
+      "all": {
+        "min": 10.0,
+        "max": 15.0
+      }
+    },
+    "bigglobe:sandy_cave": {
+      "all": {
+        "min": 10.0,
+        "max": 15.0
+      }
+    },
+    "bigglobe:frozen_cave": {
+      "all": {
+        "min": -4.0,
+        "max": 6.0
+      }
+    },
+    "bigglobe:molten_cave": {
+      "all": {
+        "min": 30.0,
+        "max": 50.0
+      }
+    },
+    "bigglobe:deep_dark": {
+      "all": {
+        "min": 6.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:nether_wastes": {
+      "all": {
+        "min": 45.0,
+        "max": 65.0
+      }
+    },
+    "bigglobe:crimson_forest": {
+      "all": {
+        "min": 45.0,
+        "max": 65.0
+      }
+    },
+    "bigglobe:warped_forest": {
+      "all": {
+        "min": 45.0,
+        "max": 65.0
+      }
+    },
+    "bigglobe:inferno": {
+      "all": {
+        "min": 45.0,
+        "max": 65.0
+      }
+    },
+    "bigglobe:ashen_wastes": {
+      "all": {
+        "min": 45.0,
+        "max": 65.0
+      }
+    },
+    "bigglobe:valley_of_souls": {
+      "all": {
+        "min": 45.0,
+        "max": 65.0
+      }
+    },
+    "bigglobe:the_core": {
+      "all": {
+        "min": 60.0,
+        "max": 90.0
+      }
+    },
+    "bigglobe:end_barrens": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:end_mountain": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:end_plains": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:overgrown_end": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:chorus_forest": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:dragons_nest": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:the_void": {
+      "all": {
+        "min": 0.0,
+        "max": 12.0
+      }
+    },
+    "bigglobe:hyperspace": {
+      "all": {
+        "min": 10.0,
+        "max": 20.0
       }
     }
   },
-  "_note": "Add your biome ids under \u0027biomes\u0027. Provide either per-season min/max or an \u0027all\u0027 min/max to apply to all seasons. Temperatures are in Celsius."
+  "_note": "Add your biome ids under 'biomes'. Provide either per-season min/max or an 'all' min/max to apply to all seasons. Temperatures are in Celsius. BG biomes auto-generated by build_biome_temps.py."
 }

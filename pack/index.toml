@@ -570,7 +570,7 @@ hash = "90ba1c9cdf19460067bc47456231a63fbac543e8ae513ccf79783a41e64dbf61"
 
 [[files]]
 file = "config/projectatmosphere/biome_temps.json"
-hash = "7bc72d0c15c4a9ba940571f549992d53b7fe398e12ec34f5d809b82e10626351"
+hash = "8bd55867e9c904e5e65a85ebc0cab06e9362b63132adae4a3a31a9139e1ef6b3"
 
 [[files]]
 file = "config/puddleflood.json"
@@ -755,6 +755,10 @@ hash = "595e1ebc3c8fc2068c06b03ceffe711affc15680ec6248caefd2fe0fe6141269"
 [[files]]
 file = "datapacks/bigglobe_towns_and_towers_compatibility.zip"
 hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
+
+[[files]]
+file = "datapacks/ctov_integration_fallbacks.zip"
+hash = "c6fe96af054f7bb6dd9459f2ac2468fd92252428422b50ed686bbe6e71d30cff"
 
 [[files]]
 file = "datapacks/large-ore-veins-create_compat-v1.zip"

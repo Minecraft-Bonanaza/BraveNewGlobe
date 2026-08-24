@@ -3,6 +3,41 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5.6] — 2026-08-24
+
+Log-noise / console-spam fixes. Two systems were flooding the server log every tick / during
+worldgen (wasting CPU + disk I/O and bloating `latest.log`): Project Atmosphere had no temperature
+data for Big Globe biomes, and CTOV referenced village integration pools for mods that aren't installed.
+
+### Fixed
+- **Project Atmosphere biome temperatures** — `config/projectatmosphere/biome_temps.json` only defined
+  `minecraft:plains`, so PA's per-tick `WeatherMgr` warned *"No temperature range defined for biome
+  bigglobe:…"* for the entire (all-BG-biome) overworld, endlessly. Added Celsius ranges for all **52**
+  BG biomes: seasonal (spring/summer/autumn/winter) for surface biomes by climate tier
+  (hot/warm/temperate/cold/frozen/swamp), and stable `all` ranges for oceans, caves, nether, end, and
+  special biomes.
+- **CTOV missing template-pool spam** — CTOV 3.6.3 buildings reference optional cross-mod integration
+  pools (Waystones, Vampirism, bounty board) that aren't installed, so Lithostitched logged *"Couldn't
+  find template pool reference"* for every village piece during generation. Added
+  `pack/datapacks/ctov_integration_fallbacks.zip` defining the 7 referenced pools
+  (`ctov:village/` `waystone/{sand,normal,mossy}`, `vampirism/totem`, `bounty/{bounty_board,plains,swamp}`)
+  as empty pools so they resolve silently. Villages generate identically. **Remove this datapack if
+  Waystones/Vampirism/a bounty mod is ever added**, or the empty pools would shadow theirs.
+
+### Known / open
+- `ItemStack: Tried to load invalid item: 'No key id in MapLike[{}]'` (near 51, 228, -4860) — a
+  malformed empty item during load; non-fatal (MC drops it and continues). Source not yet identified.
+
+### Config / pack
+- Modified `pack/config/projectatmosphere/biome_temps.json`; added
+  `pack/datapacks/ctov_integration_fallbacks.zip`. `pack/index.toml` + `pack/pack.toml` re-indexed;
+  version → 0.5.6.
+
+### Note — changelog gap
+- Versions 0.5.2–0.5.5 were never recorded here. Per commit history, `main` since 0.5.1 also received:
+  MapStitch removed, **Too Fast** and **Creating Space** added, and the **0.6-beta** work (Vertigo +
+  shallow-overworld datapack) reverted and parked on the `0.6-beta` branch.
+
 ## [0.5.1] — 2026-08-23
 
 Hotfix: restore **Villager API**. In 0.5 it was removed as an assumed Better-Village-only dependency,
