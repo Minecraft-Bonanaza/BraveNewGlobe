@@ -3,6 +3,42 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.5.7] — 2026-08-24
+
+Chunk-performance mods. Adds **C2ME** (parallel chunk gen/load/IO) and re-adds **Vertigo** (vertical
+chunk-section network sync), targeting the tall Big Globe world's chunk-streaming cost. Both are
+performance-only and independently removable.
+
+### Added (mods)
+- **Concurrent Chunk Management Engine (C2ME)** `0.4.0-alpha.0.120+1.21.1` (Modrinth `COlSi5iR`,
+  **native NeoForge**, no deps). Multi-threads chunk generation/loading + optimizes chunk I/O.
+  Modular (20 submodules incl. `rewrites-chunk-system`, `threading-lighting`, worldgen-threading).
+  `server: required`, `client: optional` (shipped `both`). **Alpha** (C2ME's normal state on 1.21.1).
+- **Vertigo** `1.2.4` (Modrinth `4LzgJp1j`, Fabric via Sinytra Connector + FFAPI). Strips empty
+  vertical sections from the ChunkData packet. Was in the reverted 0.6-beta; re-added here **without**
+  the shallow-world datapack (that datapack, not Vertigo, caused the 0.6-beta DH offset).
+
+### Compatibility — deep-dive (jar + mixin analysis)
+- **No hard/declared incompatibilities.** Neither declares `breaks`/`conflicts`; C2ME only discourages
+  `dynview` + `betterchunkloading` (both **absent**). C2ME bundles **MixinSquared** (mixin-coexistence
+  lib); pack already runs Lithium/Sodium/ModernFix/FerriteCore, which C2ME coexists with by design.
+- **C2ME × Big Globe — low.** C2ME's worldgen opts target vanilla `NoiseChunkGenerator`/density
+  functions, which BG's custom `bigglobe:scripted` generator **bypasses** → those modules are largely
+  inert (little benefit, little conflict). C2ME's generic chunk-system rewrite still wraps BG's
+  generator with threaded scheduling; BG has its own thread pool, so watch for worldgen races/hangs.
+  Lever: disable worldgen-threading / chunk-system in `config/c2me.toml`.
+- **Vertigo × C2ME — real overlaps, TEST before relying.** Both mixin `ChunkDataSender`, `ChunkHolder`,
+  `WorldChunk`. Highest-risk overlap is **lighting**: Vertigo syncs skylight (`WorldChunk_SyncSkylight`,
+  `ChunkSkyLight_Accessors`) while C2ME's `threading-lighting` threads `ServerLightingProvider`/
+  `LightStorage` → possible lighting glitches / races. First lever if it misbehaves: disable C2ME
+  `threading-lighting`.
+- **× Distant Horizons.** Both touch chunk gen / view distance; C2ME is Sodium/VD-aware. The earlier
+  "600-block" DH glitch was the shallow-world floor mismatch, **not** these mods.
+
+### Config / pack
+- Added `pack/mods/c2me.pw.toml` + `pack/mods/vertigo.pw.toml`. `pack/index.toml` + `pack/pack.toml`
+  re-indexed; version → 0.5.7.
+
 ## [0.5.6] — 2026-08-24
 
 Log-noise / console-spam fixes. Two systems were flooding the server log every tick / during

@@ -843,6 +843,11 @@ hash = "3fb98e975075663859e3eb504aa769125bbac93e07aa7e053bd624eacecbe2d7"
 metafile = true
 
 [[files]]
+file = "mods/c2me.pw.toml"
+hash = "8eeaf5023a8c5978f68ecd71d09ac46516167111ab2f46ab2c3909b8f9283f92"
+metafile = true
+
+[[files]]
 file = "mods/cbc-terminal-ballistics.pw.toml"
 hash = "c68f977d3b1af3a2e075e1c5af80533db934bcad1f85c5ff01fd4102eead9ef5"
 metafile = true
@@ -1355,6 +1360,11 @@ metafile = true
 [[files]]
 file = "mods/trotting-wagons.pw.toml"
 hash = "c0b6adc03be5c19aef44474e14fa31bc8e578a60cbb43cabbaaef24f622c95b8"
+metafile = true
+
+[[files]]
+file = "mods/vertigo.pw.toml"
+hash = "f49660144484e5bb61be21e175a60c55b87b20d40d2ffb3634f2129d2d880cef"
 metafile = true
 
 [[files]]
