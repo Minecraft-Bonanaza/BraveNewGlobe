@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.8] — 2026-08-25
+
+### Changed — seat the 3 land dungeons 15 blocks into the ground
+- **infested_temple**, **kisegi_sanctuary**, **keep_kayra**: `start_height` surface offset → **−15**
+  (was 0), keeping `WORLD_SURFACE_WG` + `#bigglobe:land`. −15 sits just **above** Big Globe's
+  `surface−16` cave threshold, so the biome check stays in a land biome and they keep generating
+  (−16 or deeper would flip to an underground biome and stop them — the 0.7.2 failure mode).
+- All three use **`beard_box`** terrain adaptation to build a foundation down to the ground and fill
+  any exposed gap under the seated structure. (keep_kayra was `beard_thin` → now `beard_box` too.)
+
 ## [0.7.7] — 2026-08-25
 
 ### Fixed — infested_temple & kisegi_sanctuary weren't generating (regression from 0.7.2)
