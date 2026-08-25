@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.3] — 2026-08-25
+
+Structure spacing/exclusion tuning (from post-0.7.2 testing).
+
+### Changed — structure placement (`bigGlobeAero/patch_wda_compat.py`)
+- **Villages ↔ large dungeons:** widened the buffer — `large_dungeon`'s exclusion_zone vs
+  `bigglobe_ctov:villages` **6 → 12 chunks** (~192 blocks).
+- **Sky ↔ large dungeons:** air structures were spawning on/near large dungeons. Added a
+  `sky` exclusion_zone vs `stattinkerer:large_dungeon` at **12 chunks** (sky won't place within 12
+  chunks of a large dungeon), and widened sky's jitter (`separation 56 → 44`, spacing 64 unchanged)
+  for placement variation. A set allows one exclusion_zone, so it lives on sky
+  (`sky → large_dungeon → villages`, no cycle).
+
 ## [0.7.2] — 2026-08-25
 
 Structure placement tuning (from post-0.7.1 world testing).
