@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.12] — 2026-08-25
+
+### Changed — mechanical_nest split into its own set
+- **mechanical_nest** moved out of `large_dungeon` into a new **`stattinkerer:nest`** set
+  (spacing/separation **96/80**, ~1536 blk, salt sqrt(3)·1e8). It's the aerial nest (flies Y700–750),
+  so grouping it with ground dungeons was diluting them: `large_dungeon` now holds only the **3 ground
+  dungeons** (infested_temple, keep_kayra, kisegi_sanctuary), which tightens a *specific* one from
+  ~9000 blk to ~7800 blk apart. mechanical_nest's frequency is now its own independent knob (spacing
+  = frequency, single member).
+
 ## [0.7.11] — 2026-08-25
 
 ### Changed — spawn frequency
