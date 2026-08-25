@@ -3,6 +3,18 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.16] — 2026-08-25
+
+### Added — Better Combat
+- **Better Combat** (ZsoltMolnarrr / "by Daedelus"), NeoForge **2.4.0+1.21.1**. Player-side melee
+  overhaul: attack animations, weapon-arc collision hits, combos, dual-wielding. It does **not** modify
+  mob/villager AI, so it doesn't affect MCA Reborn villager behavior or add per-entity tick cost.
+- Both required libraries were **already in the pack** (playerAnimator, Cloth Config) — no new deps.
+  packwiz re-pointed those two from CurseForge to Modrinth at the **same versions** (cloth-config
+  15.0.140, playerAnimator 2.0.4) — identical jars, just a more installer-friendly source.
+- Gameplay note: arc-hits can strike multiple entities at once, which near a village could anger
+  several MCA villagers with one swing (reputation). Tunable in Better Combat's settings.
+
 ## [0.7.15] — 2026-08-25
 
 ### Fixed
