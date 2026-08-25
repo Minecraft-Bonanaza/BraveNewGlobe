@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.11] — 2026-08-25
+
+### Changed — spawn frequency
+- **sky** set spacing/separation **64/44 → 48/42** (now identical to `sea`) — airships slightly more
+  common, on the same grid density as the sea structures.
+- **large_dungeon** spacing/separation **64/56 → 280/250** — a **4000-block minimum separation**
+  (250 chunks) with a 280-chunk grid (~4480 blk average). Big land dungeons are now rare and guaranteed
+  well spread out. Note: with 4 equal-weight members, a *specific* dungeon type averages ~9000 blocks
+  apart. Salts and exclusion zones unchanged.
+
 ## [0.7.10] — 2026-08-25
 
 ### Changed — land dungeons use `bury` to kill steep-terrain gaps
