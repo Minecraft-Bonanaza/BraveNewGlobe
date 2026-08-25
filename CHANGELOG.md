@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.10] — 2026-08-25
+
+### Changed — land dungeons use `bury` to kill steep-terrain gaps
+- **infested_temple**, **kisegi_sanctuary**, **keep_kayra**: `terrain_adaptation` beard_box → **`bury`**.
+  beard_box only reaches ~12 blocks below the footprint (fixed engine kernel), so on steep slopes the
+  downhill side floated. `bury` fills all air inside the bounding box with terrain (structure carves its
+  walls/rooms back out) → no gaps on any terrain, at the cost of a terrain embankment on steep downhill
+  sides. bury is stock WDA's own choice for infested_temple. Anchor unchanged (start 0 / #bigglobe:land).
+
 ## [0.7.9] — 2026-08-25
 
 ### Reverted — put the 3 land dungeons back on the proven `start 0` anchor
