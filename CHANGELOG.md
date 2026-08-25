@@ -3,6 +3,20 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.9] — 2026-08-25
+
+### Reverted — put the 3 land dungeons back on the proven `start 0` anchor
+- **infested_temple**, **kisegi_sanctuary**, **keep_kayra**: `start_height` → **0** (was −15 in 0.7.8),
+  keeping `WORLD_SURFACE_WG` + `beard_box` + `#bigglobe:land`. `start 0` is the config from 0.7.0/0.7.1
+  (and 0.7.7) under which the structures were set to generate — it puts the biome check right at the
+  surface, a **full 16-block margin** above Big Globe's `surface−16` cave threshold, so `#bigglobe:land`
+  reliably matches. 0.7.8's −15 left only a 1-block margin (fragile).
+- Root cause of the missing temples/sanctuaries: **0.7.2** sank infested/kisegi to −45/−25, pushing the
+  biome check into BG's underground zone where `#bigglobe:land` never matches → **zero generation** from
+  0.7.2 through 0.7.6. keep_kayra stayed at 0 the whole time, which is why keeps kept appearing.
+- NOTE: structures only generate in **newly-generated chunks** — already-explored terrain will not gain
+  them retroactively. Test in a new world or unexplored terrain.
+
 ## [0.7.8] — 2026-08-25
 
 ### Changed — seat the 3 land dungeons 15 blocks into the ground
