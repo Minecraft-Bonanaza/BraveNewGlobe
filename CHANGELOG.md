@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.7] — 2026-08-25
+
+### Fixed — infested_temple & kisegi_sanctuary weren't generating (regression from 0.7.2)
+- 0.7.2 lowered their anchors (infested −45, kisegi −25) to seat them, but Big Globe switches to
+  cave/underground biomes below **surface−16** (`test_cave`), and both are gated to `#bigglobe:land`
+  (surface biomes) → biome mismatch → **zero spawns**. Reverted their anchors to **surface (0)** so
+  `#bigglobe:land` matches again, and switched `terrain_adaptation` to **`beard_box`** (builds a solid
+  foundation down to the ground to fill the float gap, instead of sinking the anchor). A structure
+  can't be both *sunk* and *land-gated* in BG — sinking moves the biome check underground.
+
+### Changed
+- **foundry** −520 → **−540**.
+
 ## [0.7.6] — 2026-08-25
 
 ### Changed
