@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.2] — 2026-08-25
+
+Structure placement tuning (from post-0.7.1 world testing).
+
+### Changed — WDA structure placement (`bigGlobeAero/patch_wda_compat.py`)
+- **`infested_temple`** and **`kisegi_sanctuary`** generated **floating above the ground** — their
+  jigsaw start-anchor sits above the build's base, so surface-projecting `start_height 0` left an air
+  gap. Dropped the anchor to seat them: **infested_temple 0 → −45**, **kisegi_sanctuary 0 → −25**
+  (both still `WORLD_SURFACE_WG` + `beard_thin`). `keep_kayra` left at 0 (its anchor≈base, sat fine).
+  (On steep slopes a residual gap can remain; `beard_box` is the stronger option if needed.)
+- Moved **`heavenly_challenger`** from `large_dungeon` → **`sky`**, so all heavenly/aerial builds live
+  in the sky set. `sky` now 5 (Σweight 7), `large_dungeon` now 4.
+
 ## [0.7.1] — 2026-08-25
 
 Hotfix: crash on "Create New World" — the BG×WDA compat pack (v1.1, built for an older WDA) ships a
