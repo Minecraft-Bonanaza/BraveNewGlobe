@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.13] — 2026-08-25
+
+### Changed — nest rarity + sky density
+- **nest** (mechanical_nest): added `frequency` **0.0065** (0.65% roll per grid-selected chunk, stacked
+  on the 96 spacing) → **ultra-rare, ~19,000 blocks apart** on average. Also added an `exclusion_zone`
+  → `stattinkerer:sky` (12 chunks) so a nest won't generate right next to other sky structures.
+- **sky** spacing/separation **48/42 → 32/28** (now matches `common`) — airships/blimps notably more
+  common. Sky keeps its existing exclusion vs `large_dungeon`.
+
 ## [0.7.12] — 2026-08-25
 
 ### Changed — mechanical_nest split into its own set
