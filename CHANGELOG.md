@@ -16,6 +16,21 @@ the compat datapack via `bigGlobeAero/patch_wda_compat.py`.
   biome tag (missing template_pool in WDA 2.1.68). Verified: no remaining structure def references a
   missing pool.
 
+### Documentation
+- **Notes** — current pack is **0.7.1**. The BG×WDA compat datapack no longer ships
+  `dungeons_arise:small_prairie_house` (orphaned structure def + biome tag). Minecraft loads
+  every structure definition even when it is in no set, so that leftover crashed
+  "Create New World" on 0.7.0. Height (−608 → +1024), WDA set split (24 of 38), aerial
+  Y 700–750, village buffers, glaciers, C2ME-out / Vertigo, In Control Y ≤ −50, Corpse /
+  Throwable, Creating Space, Too Fast, and packwiz `side` flags are unchanged from 0.7.0.
+  `pack.toml` version is **0.7.1**.
+- **README / client install** — pack version is **0.7.1**. The hotfix is datapack-only:
+  relaunch so packwiz pulls the updated `bigglobe_whendungeonsarise.zip`. New worlds can
+  be created again. Upgrading from 0.6.x still needs a fresh world (or top regen + DH
+  clear) for the 0.7.0 ceiling.
+- **Maintainer** — do not restore `small_prairie_house` in `patch_wda_compat.py` / the
+  compat zip. After editing that zip, `packwiz refresh`. Do not `packwiz update` Big Globe.
+
 ## [0.7.0] — 2026-08-24
 
 Sky content for airships: raised the world ceiling back to stock and added **When Dungeons Arise**
