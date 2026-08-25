@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.1] — 2026-08-25
+
+Hotfix: crash on "Create New World" — the BG×WDA compat pack (v1.1, built for an older WDA) ships a
+`small_prairie_house` structure def whose `start_pool` was removed/renamed in WDA 2.1.68. Even though
+it's in none of our sets, MC loads every structure definition, hits the missing pool → `Unbound
+values in registry template_pool` → registry-load crash. Dropped the orphaned def + biome tag from
+the compat datapack via `bigGlobeAero/patch_wda_compat.py`.
+
+### Fixed
+- `bigglobe_whendungeonsarise.zip` — remove `dungeons_arise:small_prairie_house` structure def and its
+  biome tag (missing template_pool in WDA 2.1.68). Verified: no remaining structure def references a
+  missing pool.
+
 ## [0.7.0] — 2026-08-24
 
 Sky content for airships: raised the world ceiling back to stock and added **When Dungeons Arise**
