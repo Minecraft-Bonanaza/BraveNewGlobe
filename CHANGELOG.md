@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.15] — 2026-08-25
+
+### Fixed
+- **nest** frequency corrected **0.0065 → 0.65** (65%, not 0.65%). 0.7.13 read the value too literally
+  and made the nest ~19,000 blocks apart (locate-only). At 0.65 on the 96 grid it's **~1,900 blocks
+  apart** — a modest ~24% rarer than the grid alone, findable as intended.
+
 ## [0.7.14] — 2026-08-25
 
 ### Changed
