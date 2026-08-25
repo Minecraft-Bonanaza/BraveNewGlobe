@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.5] — 2026-08-25
+
+### Changed
+- **foundry** −560 → **−540** (floor safety). The −608 world floor sat only 48 blocks below −560
+  (= foundry's tallest piece), so a downward build could clip at the floor. −540 clears the floor by
+  ~20 blocks even in the worst case, still within the core/molten layer (−592..−496).
+
 ## [0.7.4] — 2026-08-25
 
 Underground dungeon depths (all in `common`, all still `#bigglobe:underground`).
