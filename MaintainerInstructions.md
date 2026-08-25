@@ -4,12 +4,134 @@ How the pack is built and how to make changes. If you just want to *play*, see
 [ClientInstallationInstructions.md](ClientInstallationInstructions.md) instead.
 
 The pack is defined by [packwiz](https://packwiz.infra.link/) metadata in [`pack/`](pack/), **not** by
-committed jars:
+committed jars (except the pinned files in `bundled-jars/`):
 
 - `pack/pack.toml` — manifest (MC + loader versions, index hash)
 - `pack/index.toml` — file index (auto-managed; do not hand-edit)
-- `pack/mods/*.pw.toml` — one tiny metadata file per mod (download source + hash). **No jars in git.**
-- `pack/config/**`, `pack/resourcepacks/**` — real files shipped as-is (e.g. Paxi compat datapacks)
+- `pack/mods/*.pw.toml` — one tiny metadata file per mod (download source + hash)
+- `bundled-jars/` — jars with no usable Modrinth/CurseForge distribution (or the height-patched
+  Big Globe jar). packwiz downloads them by raw-GitHub URL, sha256-pinned.
+- `pack/config/**` — real config files shipped as-is
+- `pack/datapacks/**` — zip datapacks shipped as-is (Big Globe compat, recipe packs, etc.). packwiz
+  installs them into the instance `datapacks/` folder. **Paxi** is set to force-load that folder
+  (`Load from base 'datapacks' directory = true` in `pack/config/paxi-neoforge-1_21.toml`). Do **not**
+  put them under `config/paxi/datapacks/`.
+
+Village, glacier, overworld-depth, WDA, spawn-clamp, and chunk-performance behavior for the
+current pack is documented in [Notes.md](Notes.md). After editing a zip under `pack/datapacks/`,
+run `packwiz refresh` before committing.
+
+Current pack version is **0.7.0** (`pack.toml` matches). **Fresh world required** for players
+upgrading from **0.6.x** (ceiling +896 → +1024; or regenerate the top + clear DH) and from any
+version before **0.6** (floor −608).
+
+## Height-patched Big Globe (as of 0.7.0)
+**Big Globe** is **not** the stock Modrinth jar. `pack/mods/big-globe.pw.toml` points at
+`bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar` (raw-GitHub, sha256-pinned, **no
+`[update]` block**). The height, deep-tier layout, and rescaled ore curves live **inside**
+that jar because BG's `reload_dimension` reads the generator from its own jar every load —
+datapacks and companion mods cannot change it. That is why the old
+`bigglobe_shallow_overworld.zip` produced the Distant Horizons offset.
+
+**0.7.0 rebuilt the jar** so the ceiling is **+1024** (stock) while the floor stays **−608**.
+Filename still says `shallow608` because "608" is the floor. Current sha256 starts
+`df683d31…`. Underground layers + ore curves are unchanged from 0.6. DH tracks the new
+bounds (`min_y` −608, LODs up to +1024). `cloud_height` is already 1024.
+
+- Do **not** run `packwiz update` on Big Globe (there is no `[update]` block on purpose; adding
+  one would revert players to the unpatched Modrinth jar).
+- Do **not** re-add `bigglobe_shallow_overworld.zip`.
+- Do **not** drop the ceiling back to +896 — aerial WDA / airship content needs the stock sky.
+- On any Big Globe version bump, re-run `build_patched_jar.py` (lives in the `bigGlobeAero`
+  tooling, not this repo). The script asserts all 14 edited strings still exist. Then replace
+  the jar in `bundled-jars/`, update filename / URL / sha256 in `big-globe.pw.toml`, and
+  `packwiz refresh`. Keep ceiling **+1024** and floor **−608**.
+- **Repo-privacy:** packwiz clients download the jar anonymously from
+  `raw.githubusercontent.com`. Making this repo private breaks that. Move the jar to a
+  no-login host before the repo goes private.
+- Big Globe by builderb0y (CC BY-NC 4.0); this jar is modified for personal-server use.
+
+## When Dungeons Arise (as of 0.7.0)
+**When Dungeons Arise** (`pack/mods/when-dungeons-arise.pw.toml`) is Modrinth `8DfbfASn`
+version `XIRJSFQ0` (`2.1.68`). Keep `side = "both"`. Only NeoForge + Minecraft deps.
+
+Placement is **not** WDA's own sets. `pack/datapacks/bigglobe_whendungeonsarise.zip` is the
+Modrinth BG compat pack `5obAEsYh` v1.1, **patched** via `bigGlobeAero/patch_wda_compat.py`:
+
+- WDA `major`/`minor` structure sets are **emptied** (do not restore them — structures would
+  double-place).
+- 24 of 38 structures live in four `stattinkerer` sets: `:sky` (4, spacing 64/56), `:sea`
+  (4, 48/42), `:common` (11, 32/28), `:large_dungeon` (5, 64/56). 14 are in no set (removed).
+- Aerial structures: fixed **Y 700–750**, no heightmap, **`terrain_adaptation: none`**. Do
+  **not** re-apply `bury` at altitude (that encases them in stone).
+- Aquatic ships stay at sea level.
+- Compat fixes for WDA 2.1.68 + this shallow world (foundry underground, mining_complex /
+  kisegi_sanctuary biome bridges, scorched_mines re-gate+deepen, bandit_village /
+  ceryneian_hind, grounded giant towers, flew mechanical_nest) are in CHANGELOG [0.7.0].
+
+Village buffers (0.7.0): `bigglobe_ctov:pillager_outposts` and `stattinkerer:large_dungeon`
+each have a 6-chunk `exclusion_zone` vs `bigglobe_ctov:villages`. Edits
+`pack/datapacks/bigglobe_ctov_compat.zip` via `bigGlobeAero/patch_ctov_compat.py`. A set
+allows only one exclusion_zone; it is applied on the avoiders so villages stay the priority.
+
+**Ocean glaciers** (`pack/datapacks/bigglobe_less_glacier.zip`, as of **0.6.7**, still in
+**0.7.0**) are fewer and smaller solid sheets. Frequency: `glacier_crack_threshold` temp bar
+`unmixLinear(-0.4, -0.65)` (nudged from 0.6.6's `-0.35/-0.6`; size/sheet unchanged).
+Size: cutoff **C = 0.4** on *both* `glaciers.json` (ice,
+`hard_distance <= 1.4 × (threshold − 0.4)`, no cap) and
+`shallow_ocean_test_glacier.json` (biome). Keep those two files on the same C or ice and
+biome diverge. Aquamirae follows the biome. Do **not** re-add `glacier_field.json` —
+0.6.1's new noise loaded but never cleared the `0.5` cutoff, so ice fill was zero
+everywhere. Do **not** restore the `0.75` cap or the 0.6.4 `0.60`-only feature cutoff as
+current. If the *biome* does not shrink in-game, move `shallow_ocean_test_glacier.json`
+into the patched jar (it is a decision-tree override). Details in [Notes.md](Notes.md).
+Only new cold-ocean chunks pick up glacier changes.
+
+**C2ME is not in the pack** (removed **0.6.10** after chunk-loading bugs from the C2ME ×
+Vertigo mixin overlap). Do **not** re-add `pack/mods/c2me.pw.toml` unless that overlap is
+resolved or Vertigo is also dropped. packwiz-installer deletes the jar on next player
+launch; leftover `config/c2me.toml` is inert.
+
+**Vertigo** (`pack/mods/vertigo.pw.toml`) is Fabric via Sinytra Connector + FFAPI
+(Modrinth `4LzgJp1j`, `1.2.4`). Keep `side = "both"`. It is in the pack **without**
+`bigglobe_shallow_overworld.zip`. The 0.6-beta DH offset was that datapack, not Vertigo.
+If chunk-loading issues persist after dropping C2ME, Vertigo is the next suspect.
+
+**In Control!** (`pack/mods/in-control.pw.toml`) is CurseForge NeoForge `10.2.7` (project
+257356). Keep `side = "both"`. No McJtyLib dep in this build. Spawn clamp lives in
+`pack/config/incontrol/spawn.json`: deny `seaeater:kraken` / `leviathan` / `sea_eater` at
+Y ≥ −49 (deep-only, **Y ≤ −50**). Stattinkerer weights for those three are **2**
+(`pack/datapacks/stattinkerer_bigglobe_compat.zip`, files `..._2_1_1`). Do not drop In
+Control if you still want the Y clamp — Big Globe spawn JSON has no height field.
+
+**Creating Space** (`pack/mods/creating-space.pw.toml`) is Modrinth-only (`8VQksBiY`,
+`1.7.18`). Keep `side = "both"`. It ships its own planet dimensions — do not add a Big Globe
+compat datapack for it unless worldgen actually overlaps.
+
+**Corpse** (`pack/mods/corpse.pw.toml`) is CurseForge NeoForge `1.1.13` (project 316582).
+Keep `side = "both"`. Optional Jade is already in the pack; OpenHUD is not required.
+
+**Create Aeronautics: Throwable Rope Connector**
+(`pack/mods/create-aeronautics-throwable-rope-connector.pw.toml`) is CurseForge `0.4.3`
+(project 1529882). Keep `side = "both"`. Deps (Create 6.0.10, `aeronautics_bundled` 1.3.1)
+are already in the pack.
+
+**Drive-By-Wire With Sable is not in the pack** (removed in 0.6.11). Do **not** re-add
+`pack/mods/drive-by-wire-with-sable.pw.toml` — `drivebywire` is only an optional Aeroworks
+dep; Aeroworks and the Throwable Rope Connector both run without it. **Keep Sable**
+(`pack/mods/sable.pw.toml`) — Aeroworks requires it.
+
+**Project Atmosphere** biome temps live in `pack/config/projectatmosphere/biome_temps.json`.
+If you add a Big Globe biome, add a matching Celsius range or PA will spam the log every tick.
+
+**`ctov_integration_fallbacks.zip`** is empty stubs for Waystones / Vampirism / bounty village
+pools. **Delete it** before adding any of those mods, or the empty pools shadow theirs.
+
+Do not drop **Villager API** (`villagerapi`) when pruning village-reskin mods: **Numismatic Overhaul**
+still depends on it (0.5.1 hotfix). Better Village itself stays out.
+
+The other `bundled-jars/` entries (Create: Better High Seas, Food Spoilage, Realistic Farmland,
+Sea Myths) are still the 0.4 CurseForge-distribution workaround.
 
 ## Common operations (run from `pack/`)
 ```bash
@@ -28,6 +150,16 @@ git add -A && git commit -m "update: ..." && git push
 > ⚠️ Always `packwiz refresh` before committing, or `index.toml` won't match the tree and every player's
 > launch will fail the hash check.
 
+## Line endings (required for hash stability)
+This repo's `.gitattributes` is `* -text`: Git must **not** convert CRLF/LF. packwiz hashes the
+raw bytes of every file under `pack/`. If Git or an editor rewrites line endings, hashes break
+even when the text looks the same (this is what the 0.5.4 hash-fix commit addressed).
+
+- Do **not** delete `.gitattributes`.
+- Do **not** enable `core.autocrlf` / `core.eol` conversion on this clone.
+- After any real change under `pack/`, run `packwiz refresh` so `index.toml` matches the bytes
+  you are about to commit.
+
 ## Optional / client-side mods
 Mods can be marked optional with an `[option]` block in their `pack/mods/*.pw.toml` file:
 
@@ -41,3 +173,30 @@ description = "Shown to players in the packwiz installer selection screen."
 The rendering trio — **Iris Shaders**, **Iris & Oculus Flywheel Compat**, and **Distant Horizons** —
 must be toggled together (all ON or all OFF). See the comments in those `.pw.toml` files and
 [Notes.md](Notes.md) for why.
+
+### packwiz `side` (as of 0.5.2–0.7.0)
+`side` in each `*.pw.toml` controls whether packwiz downloads the mod on a given install:
+
+- `side = "both"` — clients and dedicated servers install it (the default for most of the pack).
+- `side = "client"` — **skipped on dedicated servers**; still installed for PrismLauncher / client
+  instances.
+- `side = "server"` — **skipped on the default client install**; still installed for dedicated-server
+  syncs (`--side server`).
+
+Current `side = "client"` mods: **ImmediatelyFast**, **Iris Shaders**, **Iris & Oculus Flywheel
+Compat**, **Iris/Oculus For Simple Clouds**, **Mod Menu**, **Particle Rain**, **Sodium**.
+
+**JEI must stay `side = "both"`.** 0.5.2 briefly marked it client-only; **0.5.3** reverted that
+so dedicated servers still get it. Do not lump JEI in with the rendering/QoL client-only list.
+
+**Creating Space, Vertigo, In Control!, Corpse, Throwable Rope Connector, Sable, When
+Dungeons Arise, and the patched Big Globe jar are `side = "both"`.** Do not mark them
+client-only. **C2ME is not in the pack** (removed 0.6.10). **Drive-By-Wire With Sable is
+not in the pack.**
+
+**Too Fast is `side = "server"`.** Do not change it to `client`. If singleplayer also
+needs the rubber-band fix, use `--side both` on that instance or change the `.pw.toml` to
+`side = "both"` and `packwiz refresh`.
+
+**MapStitch is not in the pack** (removed in 0.5.5). Do not re-add its leftover
+`pack/config/mapstitch.json` / `mapstitch_state` as if they were a live mod.
