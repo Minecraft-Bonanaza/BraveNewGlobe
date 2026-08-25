@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.4] — 2026-08-25
+
+Underground dungeon depths (all in `common`, all still `#bigglobe:underground`).
+
+### Changed — depths (`bigGlobeAero/patch_wda_compat.py`)
+- **scorched_mines** −200 → **−150** and **plague_asylum** −133 → **−300** (both in the cave zone).
+- **foundry** −100 → **−560** — seated in the **core/molten rock layer** (core −592..−496; lava sea
+  tops at −576, so the forge sits ~16 above the lava). `#bigglobe:underground` includes `the_core`
+  and `molten_cave`, so the biome matches at that depth.
+
 ## [0.7.3] — 2026-08-25
 
 Structure spacing/exclusion tuning (from post-0.7.2 testing).
