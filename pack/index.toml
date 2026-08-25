@@ -730,7 +730,7 @@ hash = "41b82f8c59d5388beb66ae355a5f25bed85c9c9dba28fb68703da67e41a0f222"
 
 [[files]]
 file = "datapacks/bigglobe_ctov_compat.zip"
-hash = "5da8b82a762acc686a553d2a4f14ef128ce7974b309bdc02a5855e7847fb198c"
+hash = "8ddf96707741910f896f087b8b5195d91d0b9e0651b0146ec81f55351cc30b8e"
 
 [[files]]
 file = "datapacks/bigglobe_less_glacier.zip"
@@ -759,6 +759,10 @@ hash = "595e1ebc3c8fc2068c06b03ceffe711affc15680ec6248caefd2fe0fe6141269"
 [[files]]
 file = "datapacks/bigglobe_towns_and_towers_compatibility.zip"
 hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
+
+[[files]]
+file = "datapacks/bigglobe_whendungeonsarise.zip"
+hash = "4e1f5228a2c79440fca8d1d4acc6ca3aefde44fc0dd1feef7598502c8a10b00f"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
@@ -823,7 +827,7 @@ metafile = true
 
 [[files]]
 file = "mods/big-globe.pw.toml"
-hash = "7cc8a52869d616a8409f471e9dadf9947b5fd2e4e3b983c93071894dbb313f49"
+hash = "a36393d409e11e766fe4d038c05d86be596fab9cd128837c63a97a2de5e4373e"
 metafile = true
 
 [[files]]
@@ -1384,6 +1388,11 @@ metafile = true
 [[files]]
 file = "mods/villagerapi.pw.toml"
 hash = "7da745ec95add00171b96aa7ef75bd9e09284c34edb13c26a8fa6f1c8bd72bd2"
+metafile = true
+
+[[files]]
+file = "mods/when-dungeons-arise.pw.toml"
+hash = "25474a9321f2a3e6a9ab03ad29ba794525fc975e5c2c8f9bbe04c0c327601439"
 metafile = true
 
 [[files]]

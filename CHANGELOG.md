@@ -3,6 +3,82 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.0] — 2026-08-24
+
+Sky content for airships: raised the world ceiling back to stock and added **When Dungeons Arise**
+with its aerial structures re-heighted for airship travel.
+
+### Changed — world height (patched Big Globe jar)
+- Ceiling **+896 → +1024** (stock); floor **stays −608**. New overworld bounds **−608 → +1024**
+  (height 1632). Restores full sky headroom for airship / skyland / aerial-structure content while
+  keeping the deep-floor disk + chunk-loading savings intact. `dimension_type`, `world_preset`
+  generator, and BG world-traits (`max_y`) all set in-jar so **Distant Horizons tracks the new
+  bounds**: DH anchors to generator `min_y` = −608 (unchanged) and now renders LODs up to +1024 —
+  no offset. Underground layers + ore curves unchanged (the floor didn't move). `cloud_height`
+  already 1024, so clouds sit at the ceiling.
+- Rebuilt via `bigGlobeAero/build_patched_jar.py`; `bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar`
+  sha256 `df683d31…`; `big-globe.pw.toml` hash updated. (No filename change — "608" = the floor.)
+
+### Added (mods / datapacks)
+- **When Dungeons Arise** `2.1.68` (Modrinth `8DfbfASn`, NeoForge 1.21.1) — adventure structures
+  including aerial airship targets. Only neoforge + minecraft deps (no libraries). `side = both`.
+- **Big Globe × When Dungeons Arise compatibility** datapack `1.1` (Modrinth `5obAEsYh`) — makes WDA
+  generate in Big Globe terrain (biome `has_structure` tags + per-structure placement). Bundled at
+  `pack/datapacks/bigglobe_whendungeonsarise.zip`, **patched** for airship-altitude aerial structures
+  + a sky/sea/common/land structure-set split (see below).
+
+### Changed — aerial structure heights (in the compat datapack, via `bigGlobeAero/patch_wda_compat.py`)
+- All aerial structures spawn at a **fixed absolute altitude** — `start_height` = uniform **Y 700–750**,
+  with **no** heightmap projection — a terrain-independent open-sky layer that needs an airship to
+  reach. Fixed-Y can't clip the +1024 ceiling (tops out ~Y 878), and BG land rarely nears Y 700 so
+  they won't intersect terrain. Also forced **`terrain_adaptation: none`** (restoring WDA's own
+  setting) so these flying builds get **no terrain base** — the compat pack had set `bury` on the
+  aerial structures, which at altitude would encase each in a stone blob. (Ground structures keep
+  their own adaptation, e.g. `coliseum` → `beard_box`.)
+- Aquatic ships (`illager_galley`, `undead_pirate_ship`, `typhon`, `illager_corsair`) left at sea level — they're naval, not aerial.
+
+### Changed — WDA structures split into 4 custom sets (sky / sea / common / large_dungeon)
+- WDA ships all structures in two sets (`major`/`minor`) with one shared spacing each, so rarity
+  couldn't be tuned per theme/size. Regrouped into four custom sets under the `stattinkerer`
+  namespace — **`:sky`** (4), **`:sea`** (4), **`:common`** (11), **`:large_dungeon`**
+  (5 — massive dungeons + the flying `heavenly_challenger`, grouped here for rarity but still
+  airborne at Y 700–750) — each with its own `placement` (spacing/separation/salt), and **emptied
+  WDA's own `major`/`minor` sets** so nothing double-places. common vs large_dungeon was split by
+  measured build size. **24 of the 38** WDA standalone structures generate; **14 removed** (in no set):
+  illager_windmill, mushroom_village, mushroom_mines, thornborn_towers, coliseum, jungle_tree_house,
+  lighthouse, abandoned_temple, greenwood_pub, monastery, illager_fort, bathhouse, bandit_towers,
+  shiraz_palace. Weights = WDA originals for now; spacings (sky 64/56, sea
+  48/42, common 32/28, large_dungeon 64/56) pending further tuning. Groupings in `bigGlobeAero/patch_wda_compat.py`.
+
+### Fixed — compat pack mismatches with WDA 2.1.68
+- The BG×WDA compat (v1.1) targets an older WDA and assumes stock Big Globe. For the structures we
+  use: **`foundry`** was placed at **Y 900 in `#bigglobe:nether`** (a floating nether forge) → rebuilt
+  as an **overworld underground forge** (Y −100, `#bigglobe:underground`, `bury`); added the missing BG
+  biome bridges for **`mining_complex`** (2.1.68 renamed the compat's `mining_system`) and
+  **`kisegi_sanctuary`** so they generate at all. **`plague_asylum`**, **`foundry`** + **`mining_complex`**
+  moved to `common` (now 11; large_dungeon then 11, later trimmed to 5). All placed structures generate.
+- **`scorched_mines`** re-gated from `bigglobe:molten_cave` (only exists ~Y −496+ in this shallow
+  world, so it never matched at its Y) to `#bigglobe:underground`, and moved to **Y −200** so it generates.
+- **`bandit_village`** re-gated `bigglobe:hot_wasteland` (one biome) → **`#bigglobe:warm`** (whole warm
+  band, far less rare). **`ceryneian_hind`** is a surface shrine (per videos), so moved from a buried
+  `sandy_cave` @ Y −93 to **on the surface** (`start_height 0`, `beard_thin`), gated to `#bigglobe:warm`.
+- **large_dungeon placements**: grounded the 3 giant towers (`keep_kayra` 250-tall, `infested_temple`
+  181, `kisegi_sanctuary` 215 — were floating/sunk → `start_height 0` + projection + `beard_thin`);
+  flew **`mechanical_nest`** (short 48-tall sprawl, was floating at fixed Y 190) to **Y 700–750**. All
+  four re-gated to **`#bigglobe:land`** (spawn in all land biomes).
+- **Village buffers (exclusion zones)**: `bigglobe_ctov:pillager_outposts` and `stattinkerer:large_dungeon`
+  each get an `exclusion_zone` vs **`bigglobe_ctov:villages`** at **6 chunks** — outposts + big dungeons
+  keep clear of villages (villages stay the priority; a set allows only one exclusion_zone, so it's
+  applied on the avoiders). Edits `bigglobe_ctov_compat.zip` (via `bigGlobeAero/patch_ctov_compat.py`).
+- **`mining_complex`** is a ~197-tall tower → **sunk** so only ~10 blocks peek above the surface:
+  surface-projected, `start_height −187`, `terrain_adaptation none` (embeds the buried ~187 in the
+  ground). Now in `common`. Exact poke-out to be confirmed on a test world.
+
+### Notes
+- The world-bounds change requires a **fresh world** (or regenerating the top) + a DH cache clear so
+  the raised ceiling renders cleanly. The floor is unchanged, so existing deep terrain stays aligned.
+- WDA's `neoforge.mods.toml` declares minecraft `[1.21,1.21.1)` (its shipped 1.21.1 release) — loads on NeoForge 21.1.x.
+
 ## [0.6.11] — 2026-08-24
 
 Two mods added:
