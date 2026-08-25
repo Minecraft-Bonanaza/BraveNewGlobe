@@ -79,6 +79,25 @@ with its aerial structures re-heighted for airship travel.
   the raised ceiling renders cleanly. The floor is unchanged, so existing deep terrain stays aligned.
 - WDA's `neoforge.mods.toml` declares minecraft `[1.21,1.21.1)` (its shipped 1.21.1 release) — loads on NeoForge 21.1.x.
 
+### Documentation
+- **Notes** — overworld bounds are now **−608 → +1024** (ceiling restored to stock; floor unchanged).
+  **When Dungeons Arise** `2.1.68` + patched BG compat datapack `bigglobe_whendungeonsarise.zip` are
+  in: aerial structures at fixed **Y 700–750** (no terrain base); four `stattinkerer` structure sets
+  (`sky` / `sea` / `common` / `large_dungeon`); WDA's own `major`/`minor` emptied; 24 of 38
+  structures generate. Village buffers: 6-chunk `exclusion_zone` so pillager outposts +
+  `large_dungeon` avoid CTOV villages. Glaciers, C2ME-out / Vertigo, In Control Y ≤ −50, Corpse /
+  Throwable, Creating Space, Too Fast, and packwiz `side` flags are unchanged from 0.6.11.
+  `pack.toml` version is **0.7.0**.
+- **README / client install** — pack version is **0.7.0**. **Fresh world required** (or regenerate
+  the top + clear the DH cache) when upgrading from 0.6.x: the ceiling moved +896 → +1024. Pre-0.6
+  still needs a new world for the −608 floor. packwiz-installer adds WDA + the rebuilt BG jar on
+  next launch.
+- **Maintainer** — keep WDA `side = "both"`. Do not `packwiz update` Big Globe (pinned patched jar,
+  no `[update]` block; rebuilt sha `df683d31…`). Aerial placement / set split lives in
+  `pack/datapacks/bigglobe_whendungeonsarise.zip` (patched via `bigGlobeAero/patch_wda_compat.py`).
+  Village exclusion zones live in `bigglobe_ctov_compat.zip`. Do not restore WDA's own
+  `major`/`minor` sets.
+
 ## [0.6.11] — 2026-08-24
 
 Two mods added:
