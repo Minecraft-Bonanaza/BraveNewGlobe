@@ -9,6 +9,26 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - **foundry** −540 → **−520** — more clearance (88 above the −608 floor, 56 above the lava sea at
   −576), still within the core/molten layer (−592..−496).
 
+### Documentation
+- **Notes** — current pack is **0.7.6** (`pack.toml` matches). 0.7.2–0.7.6 are datapack-only
+  WDA placement retunes (no jar rebuild, no height change). Current: `sky` **5** (incl.
+  `heavenly_challenger`; spacing 64 / separation **44**; 12-chunk exclusion vs
+  `large_dungeon`), `large_dungeon` **4** (12-chunk exclusion vs villages),
+  `infested_temple` start **−45** / `kisegi_sanctuary` **−25**, underground
+  **scorched_mines −150**, **plague_asylum −300**, **foundry −520** (core/molten,
+  `#bigglobe:underground`). Pillager outposts stay at a **6-chunk** village buffer.
+  Height (−608 → +1024), 24 of 38 generate, aerial Y 700–750, glaciers, C2ME-out /
+  Vertigo, In Control Y ≤ −50, Corpse / Throwable, Creating Space, Too Fast, and
+  packwiz `side` flags are unchanged from 0.7.1. Do not restore `small_prairie_house`.
+- **README / client install** — pack version is **0.7.6**. Relaunch so packwiz pulls
+  the updated `bigglobe_whendungeonsarise.zip`. **No fresh world** for 0.7.1→0.7.6
+  (existing chunks keep old WDA placements until regenerated). Upgrading from 0.6.x
+  still needs a fresh world (or top regen + DH clear) for the 0.7.0 ceiling.
+- **Maintainer** — keep foundry at **−520**, sky 5 / large_dungeon 4, sky jitter
+  64/44, village↔dungeon buffer **12**, sky↔dungeon exclusion **12**. Do not drop
+  foundry back to −560/−540 (floor clip) or −100. After editing the WDA zip,
+  `packwiz refresh`. Do not `packwiz update` Big Globe.
+
 ## [0.7.5] — 2026-08-25
 
 ### Changed
