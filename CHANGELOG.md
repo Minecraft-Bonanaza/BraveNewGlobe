@@ -13,6 +13,30 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - All three use **`beard_box`** terrain adaptation to build a foundation down to the ground and fill
   any exposed gap under the seated structure. (keep_kayra was `beard_thin` → now `beard_box` too.)
 
+### Documentation
+- **Notes** — current pack is **0.7.8** (`pack.toml` matches). 0.7.2–0.7.8 are datapack-only
+  WDA placement retunes (no jar rebuild, no height change). Current: `sky` **5** (incl.
+  `heavenly_challenger`; spacing 64 / separation **44**; 12-chunk exclusion vs
+  `large_dungeon`), `large_dungeon` **4** (12-chunk exclusion vs villages),
+  `infested_temple` / `kisegi_sanctuary` / `keep_kayra` start **−15** + **`beard_box`**
+  (`WORLD_SURFACE_WG`, `#bigglobe:land`; −15 sits above BG's `surface−16` cave
+  threshold so they still generate), underground **scorched_mines −150**,
+  **plague_asylum −300**, **foundry −540** (core/molten, `#bigglobe:underground`).
+  Pillager outposts stay at a **6-chunk** village buffer. Height (−608 → +1024),
+  24 of 38 generate, aerial Y 700–750, glaciers, C2ME-out / Vertigo, In Control
+  Y ≤ −50, Corpse / Throwable, Creating Space, Too Fast, and packwiz `side` flags
+  are unchanged from 0.7.1. Do not restore `small_prairie_house`. Do not sink
+  land-gated dungeons to −16 or deeper (0.7.2 failure mode).
+- **README / client install** — pack version is **0.7.8**. Relaunch so packwiz pulls
+  the updated `bigglobe_whendungeonsarise.zip`. **No fresh world** for 0.7.1→0.7.8
+  (existing chunks keep old WDA placements until regenerated). Upgrading from 0.6.x
+  still needs a fresh world (or top regen + DH clear) for the 0.7.0 ceiling.
+- **Maintainer** — keep the 3 land dungeons at **−15** + `beard_box`; keep foundry
+  at **−540**, sky 5 / large_dungeon 4, sky jitter 64/44, village↔dungeon buffer
+  **12**, sky↔dungeon exclusion **12**. Do not drop foundry to −560 (floor clip)
+  or −100. Do not restore infested/kisegi to −45/−25. After editing the WDA zip,
+  `packwiz refresh`. Do not `packwiz update` Big Globe.
+
 ## [0.7.7] — 2026-08-25
 
 ### Fixed — infested_temple & kisegi_sanctuary weren't generating (regression from 0.7.2)
