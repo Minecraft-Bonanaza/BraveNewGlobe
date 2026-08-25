@@ -3,6 +3,12 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.14] — 2026-08-25
+
+### Changed
+- **common** set: added `exclusion_zone` → `bigglobe_ctov:villages` (**8 chunks**) so the small POIs
+  (camps, huts, wells, mines, etc.) don't generate right on top of villages.
+
 ## [0.7.13] — 2026-08-25
 
 ### Changed — nest rarity + sky density
