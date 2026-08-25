@@ -3,6 +3,12 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.6] — 2026-08-25
+
+### Changed
+- **foundry** −540 → **−520** — more clearance (88 above the −608 floor, 56 above the lava sea at
+  −576), still within the core/molten layer (−592..−496).
+
 ## [0.7.5] — 2026-08-25
 
 ### Changed
