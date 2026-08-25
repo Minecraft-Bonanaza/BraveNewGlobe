@@ -15,6 +15,15 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - Gameplay note: arc-hits can strike multiple entities at once, which near a village could anger
   several MCA villagers with one swing (reputation). Tunable in Better Combat's settings.
 
+### Documentation
+- README / Notes / Maintainer / Client: current pack is **0.7.16** (`pack.toml` matches).
+  **Better Combat** NeoForge `2.4.0+1.21.1` (Modrinth `5sy6g3kz` / `VhIOvcXP`, `side = "both"`)
+  is in. playerAnimator `2.0.4` and Cloth Config `15.0.140` stay at the same versions, now
+  pulled from Modrinth (`gedNE4y2` / `HJZB6bmA`, `9s6osm5g` / `izKINKFg`). **No fresh world** —
+  relaunch so packwiz adds the jar. Height (−608 → +1024), WDA five-set split, glaciers,
+  Vertigo, In Control Y ≤ −50, Corpse / Throwable, and packwiz `side` flags are unchanged
+  from 0.7.15.
+
 ## [0.7.15] — 2026-08-25
 
 ### Fixed
