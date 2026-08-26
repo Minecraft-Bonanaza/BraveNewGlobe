@@ -3,6 +3,37 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## Unversioned (after 0.7.16) — Create: Linear Bearing + VS/Sable Hose Connectors + MODLIST.md — 2026-08-26
+
+`pack.toml` version string is still **0.7.16**. Author commit `00a0f01` ("Added Modlist and 2 more mods")
+did not bump the pack version.
+
+### Added (mods)
+- **Create: Linear Bearing** `1.2.6` (CurseForge 1556708 / file 8181069,
+  `pack/mods/create-linear-bearing.pw.toml`) — Sable physics sliders for Create Aeronautics
+  contraptions (Linear Casing + Linear Bearing: cranes, elevators, sliding parts). `side = both`.
+  Required deps already in the pack: Create, Create Aeronautics (`aeronautics_bundled` 1.3.1),
+  Sable `2.0.5`.
+- **VS / Sable Hose Connectors** `0.1.8-1.21.1` (CurseForge 1426984 / file 8333129,
+  `pack/mods/vs-hose-connectors.pw.toml`) — hose connectors that transfer fluids, items,
+  rotational power, and energy across Sable (Create Aeronautics) physics ships/sublevels.
+  `side = both`. Requires Create; talks to **Sable** already in the pack. Valkyrien Skies is
+  **not** in the pack.
+
+### Added (docs)
+- **`MODLIST.md`** — human-readable list of all **129** mods, grouped by purpose (including the
+  two new ones). Dependency notes are best-effort; packwiz metafiles remain the source of truth.
+
+### Notes
+- No worldgen / height change. **No fresh world.** Relaunch so packwiz adds the two jars.
+
+### Documentation
+- README / Notes / Maintainer / Client: `pack.toml` is still **0.7.16**. Unversioned add after
+  0.7.16: Linear Bearing `1.2.6` + Hose Connectors `0.1.8` (`side = "both"`) + **MODLIST.md**.
+  **No fresh world.** Height (−608 → +1024), WDA five-set split, glaciers, Vertigo, In Control
+  Y ≤ −50, Corpse / Throwable, Better Combat, and packwiz `side` flags otherwise unchanged
+  from 0.7.16.
+
 ## [0.7.16] — 2026-08-25
 
 ### Added — Better Combat
