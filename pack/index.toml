@@ -410,7 +410,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "21ed92b5e5bb19a51a67d7ea9a34214e861824ba317c3dca445b3172b5f818c1"
+hash = "a65dbeb69b03a3d0461117c60427bbdc19d18f63ba2d0fb03dbe46741dd355bc"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -515,14 +515,6 @@ hash = "0d73dbafd6d17e2dd0df44d80fef1e65d7ac781b95ae0fcf5326ee9e8d589332"
 [[files]]
 file = "config/ntgl-server.toml"
 hash = "a8395a9471b6b4499929b2837cd089fe07245c6e1b9f1a0da4ca7a6f3a9d38ee"
-
-[[files]]
-file = "config/numismaticoverhaul-client.toml"
-hash = "ba7e56f17eb6902e56eaaa0d3ad0410e0b1216b7d1b3dfbc3fe0bebea8e2825e"
-
-[[files]]
-file = "config/numismaticoverhaul-common.toml"
-hash = "942bfa6b69c957d3c70433170bdfdb814eb9e6f6199449b7c4515b4b3843b14c"
 
 [[files]]
 file = "config/oculus_for_simpleclouds-client.toml"
@@ -911,6 +903,11 @@ hash = "889d2c573f46e94318761c1e26d84e3c0520425cf12187f4b97ad3d51fd26363"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-delivery-required.pw.toml"
+hash = "688310416b85c161ac8aadf5a3e92eff37f00ac03303368ac4f8399a770003e5"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics-gyroscope-stabilizers.pw.toml"
 hash = "33f433d96bb78e1d3dd2ced7429c143b428c6dfd344278c49134e6d76c2a583c"
 metafile = true
@@ -986,8 +983,28 @@ hash = "386bb916f6ad29a4ccae107ae211ae8af79d589bd9b8c4d3876d997b0f077220"
 metafile = true
 
 [[files]]
+file = "mods/create-marketplace.pw.toml"
+hash = "0ddbdbe1d5f14e6a56c7870e6c60380ebe8ff9ace868599516edba5b905ac783"
+metafile = true
+
+[[files]]
 file = "mods/create-metallurgy.pw.toml"
 hash = "858b90ff3cf78e80725b89f2eeb852843cc38911f5e5eb135268939fcb1ba04a"
+metafile = true
+
+[[files]]
+file = "mods/create-numismatic-bounties.pw.toml"
+hash = "03a3131e8a98563be4a8206f62407fb13b29651e1eb9d3215693cd36c56912ea"
+metafile = true
+
+[[files]]
+file = "mods/create-numismatics-utils.pw.toml"
+hash = "f1e87d7f90897bb2ebf5c34eb8752141195b8c13087b07480dd6b92d079cb0d2"
+metafile = true
+
+[[files]]
+file = "mods/create-numismatics.pw.toml"
+hash = "6abed33806e1fb6beb41b77413cb8a2b056e3a45e6567bd84ea525ed55bef8e3"
 metafile = true
 
 [[files]]
@@ -1008,6 +1025,11 @@ metafile = true
 [[files]]
 file = "mods/create-signalworks.pw.toml"
 hash = "7def72e30fabc8868155cc9f81731448a31baa0f07e10dc3214648efa38a5943"
+metafile = true
+
+[[files]]
+file = "mods/create-stock-market.pw.toml"
+hash = "0c9c5a27fcfa4bf225cf9f8b40b75529a8bf51b34a5c63771700039c6a60a9b8"
 metafile = true
 
 [[files]]
@@ -1236,23 +1258,18 @@ hash = "8b4af86dc4c1846469326cc3fe73350a98a119650be241e499c6bd575c2e2482"
 metafile = true
 
 [[files]]
-file = "mods/numismatic-bounties.pw.toml"
-hash = "4949d9e7d23002613922832a65a0f5feb026171a8c51ac0b370a1458505bbe05"
+file = "mods/numismatics-calculator.pw.toml"
+hash = "a5d19c0a400a6705511cafff9cfbab53fe2b99b7320e1c56d42d73111c96d653"
 metafile = true
 
 [[files]]
-file = "mods/numismatic-overhaul-neoforged.pw.toml"
-hash = "d5227fb94662482f9858127900c1a510836d1a0ee21087a294d62827af5af6ca"
+file = "mods/numismatics-villager-currency.pw.toml"
+hash = "8f98e24eacf317b7bb2715a22afd575c629d4893a22cf7b4d46b71076337ff17"
 metafile = true
 
 [[files]]
 file = "mods/oculus-for-simpleclouds.pw.toml"
 hash = "e8c4f89e6e4b4229f12d034d64924d2ada532738f1ac5c44eaae2aa1a9740bc8"
-metafile = true
-
-[[files]]
-file = "mods/owo-lib.pw.toml"
-hash = "3db5943419e6b6f4e33946266be8797230434573bc68dbe3a77d72f19001ae0c"
 metafile = true
 
 [[files]]
@@ -1383,6 +1400,11 @@ metafile = true
 [[files]]
 file = "mods/towns-and-towers.pw.toml"
 hash = "318b2826182182ff4acd58ffe985c58fe2b403941ec36f41303217bed275feea"
+metafile = true
+
+[[files]]
+file = "mods/tradeworks.pw.toml"
+hash = "1b3f3386392ff88c506a9113b62cf6e4e4aa8bf9bec7b46abf216d11f44ffc45"
 metafile = true
 
 [[files]]

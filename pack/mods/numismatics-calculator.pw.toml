@@ -1,0 +1,13 @@
+name = "Numismatics Calculator"
+filename = "numismaticscalculator-neoforge-1.2.0.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/MI9E0Mar/versions/C0z4oKQX/numismaticscalculator-neoforge-1.2.0.jar"
+hash-format = "sha512"
+hash = "d9112a878f53ea7d7f32d5e82c5f16040de8cd21e96a75ac999961abad7e52b638c0ca50eb1a9894e12337f9fb691af3509258c48498338379585cb24e9d22d6"
+
+[update]
+[update.modrinth]
+mod-id = "MI9E0Mar"
+version = "C0z4oKQX"

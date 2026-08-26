@@ -3,6 +3,35 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.18] — 2026-08-26
+
+### Added — Numismatics economy ecosystem
+- **Create Numismatics: Villager Currency** `1.2.0` — starter coin faucet via in-person villager trades
+  (emerald costs → Numismatics bevels; works with vanilla & modded villagers).
+- **Create: Numismatic Bounties** `2.0` — Bountiful bounty payouts in Numismatics coins (pairs with
+  **Bountiful**, already in pack).
+- **Create: Tradeworks** `1.0.7` — physical barter stalls; integrates with Marketplace & Stock Market.
+- **Create: Marketplace** `0.5.0` — server-wide shop directory (no remote purchasing; trade at the block).
+  Optional Xaero's waypoint integration — **Xaero's Minimap/World Map already in pack**.
+- **Create: Stock Market** `1.1.0` — Market Terminal for shop listings, 24h price history & top sellers.
+- **Create: Numismatics Utils** `2.2` — Bank Meter HUD & account QoL.
+- **Numismatics Calculator** `1.2.0` _(client)_ — coin math helper.
+- No new hard dependencies — **Create**, **Create: Numismatics**, **Bountiful**, and **Villager API**
+  (MCA Reborn) were already present.
+
+## [0.7.17] — 2026-08-26
+
+### Changed — economy mod swap
+- **Removed Numismatic Overhaul: Neoforged** and **Numismatic Bounties** — the pack's previous
+  coin/purse economy (Villager API trade integration via Numismatic Overhaul).
+- **Removed oωo (owo-lib)** — was only required by Numismatic Overhaul.
+- **Added Create: Numismatics** `1.0.20` (Modrinth) — Create-styled currency (coins, bank cards,
+  vendors) required by the new delivery mod.
+- **Added Create Aeronautics: Delivery Required** `1.0.2` (Modrinth) — contract-based delivery
+  logistics for Aeronautics contraptions; payouts use Numismatics currency.
+- Dropped shipped `numismaticoverhaul-*` configs; Numismatics generates its own on first launch.
+- **Villager API** stays in the pack — still required by **MCA Reborn**.
+
 ## [0.7.16] — 2026-08-25
 
 ### Added — Better Combat

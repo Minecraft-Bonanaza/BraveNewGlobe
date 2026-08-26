@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**129 mods**), grouped by purpose.
+Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -54,6 +54,7 @@ Human-readable list of every mod in the pack (**129 mods**), grouped by purpose.
 - **Create Aeronautics: Automated Logistics** — cargo/logistics for aircraft
 - **Create Aeronautics: Gyro Stabilizers** — flight stabilization
 - **Create Aeronautics: Throwable Rope Connector** — rope/connection tool
+- **Create Aeronautics: Delivery Required** — delivery contracts & logistics for aircraft contraptions
 - **Create: Aeroworks** — aeronautics expansion
 - **Create: Warnautics** — military/combat aeronautics
 - **Create: Better High Seas** — ships / naval content
@@ -112,11 +113,16 @@ Human-readable list of every mod in the pack (**129 mods**), grouped by purpose.
 - **Project Atmosphere** — realistic climate & weather
 - **Supplementaries** — decorative & functional blocks
 - **Bountiful** — bounty board quests
+  - **Create: Numismatic Bounties** — pays Bountiful rewards in Numismatics coins
 
 ## Economy
-- **Numismatic Overhaul: Neoforged** — coin-based economy
-  - **oωo (owo-lib)** _(dependency)_
-- **Numismatic Bounties** — bounty add-on for Numismatic Overhaul
+- **Create: Numismatics** — Create-styled coin & bank-card currency
+  - **Create Numismatics: Villager Currency** — villager trades use Numismatics coins instead of emeralds
+  - **Create: Numismatics Utils** — Bank Meter HUD & remote account access
+  - **Numismatics Calculator** — client-side coin denomination calculator _(client)_
+- **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
+- **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
+- **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse
@@ -180,7 +186,7 @@ Core/support mods depended on by multiple mods above.
 - **[NTGL] NukaTeam's Gun Lib** — firearm content library
 
 > Some libraries are listed as _(dependency)_ notes under a single parent mod above rather than here:
-> **Forgified Fabric API** (Sinytra Connector), **owo-lib** (Numismatic Overhaul), **Villager API**
+> **Forgified Fabric API** (Sinytra Connector), **Villager API**
 > (MCA Reborn), **Azimuth API** (Aeronautics Camera Sync), **Ritchie's Projectile Library**
 > (Create Big Cannons), **ShatterLib | OctoLib** (Explosion Overhaul), and **Gabou's Libs**
 > (Trotting Wagons).
