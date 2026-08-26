@@ -1,0 +1,186 @@
+# Brave New Globe — Mod List
+
+Human-readable list of every mod in the pack (**129 mods**), grouped by purpose.
+
+**Conventions**
+- Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
+  they're listed under.
+- Libraries used by **many** mods are collected in **[Shared Libraries & APIs](#shared-libraries--apis)**
+  instead of being repeated. Where a base mod (e.g. **Create**, **Create Aeronautics**) is a shared
+  dependency, its dependents are treated as **add-ons** and listed alongside it — not nested under it.
+- Dependency mappings are best-effort based on the known mod ecosystems; the pack itself doesn't store
+  explicit dependency metadata.
+
+---
+
+## World Generation & Core
+- **Big Globe** _(shallow-608 patched)_ — the pack's core world generator (custom terrain, caves, spawn)
+- **Chunky (Forge/NeoForge)** — world pre-generator utility
+- **Paxi (NeoForge)** — loads the pack's global datapacks/resourcepacks (Big Globe compat)
+
+## Create & Add-ons
+- **Create** — base tech/automation mod
+- **Create: Copycats+** — copycat/decoration blocks
+- **Create: Enchantment Industry** — automated enchanting
+- **Create: Power Chip** — compact power/logic
+- **Create: Power Grid** — electrical power network
+- **Create: Diesel Generators** — fuel-based power
+- **Create: Metallurgy** — metal processing
+- **Create: Cotton** — cotton/textiles
+- **Create: Storage [Neo/Forge]** — storage expansion
+- **Create Factory Logistics** — factory/logistics automation
+- **Create: Ratatouille** — cooking/food processing
+- **Create: Bits 'n' Bobs** — misc machines/parts
+- **Create Cardan Shafts** — drivetrain/shaft additions
+- **Create: Linear Bearing** — linear-motion bearing for contraptions
+- **Create: Gears n' Kinetics** — kinetic additions
+- **Create: Dragons Plus** — dragon-themed content
+- **Creating Space** — rocketry / space content
+- **Strut Your Stuff (Struts)** — structural strut/beam building blocks
+
+### Create — Trains & Rails
+- **Create: Tracks** — track/rail additions
+- **Create: Threaded Trains** — multithreaded train performance
+- **Create Train Physics Reloaded** — train physics overhaul
+- **Create: Signalworks** — advanced rail signaling
+- **Trotting Wagons** — horse-drawn wagons
+  - **Gabou's Libs** _(dependency)_
+
+### Create Aeronautics (airships & flight)
+- **Create Aeronautics** — physics-based aircraft/airships
+  - **Sable** _(dependency — physics engine for Aeronautics)_
+- **VS / Sable Hose Connectors** — hose/fluid connectors across Sable physics contraptions
+- **Create Aeronautics: Compatibility** — cross-mod compat patches
+- **Create Aeronautics: Automated Logistics** — cargo/logistics for aircraft
+- **Create Aeronautics: Gyro Stabilizers** — flight stabilization
+- **Create Aeronautics: Throwable Rope Connector** — rope/connection tool
+- **Create: Aeroworks** — aeronautics expansion
+- **Create: Warnautics** — military/combat aeronautics
+- **Create: Better High Seas** — ships / naval content
+- **Aeronautics Camera Sync** — smooth camera for contraptions
+  - **Azimuth API** _(dependency — camera/keybind library)_
+- **Create Aero Radars** — radar for aircraft
+- **Create: Radars** — general radar blocks
+
+### Create — Cannons & Ballistics
+- **Create Big Cannons** — buildable cannons/artillery
+  - **Ritchie's Projectile Library** _(dependency)_
+- **Create Big Cannons: Going Ballistic** — CBC expansion
+- **CBC Terminal Ballistics** — terminal ballistics/impact mechanics
+- **Create: Gunsmithing** — firearms for Create
+- **Create: Gunpowder [aspctt]** — gunpowder/explosives production
+
+## Combat & Explosions
+- **Better Combat** — animated melee combat overhaul
+- **Explosion Overhaul: A new level of destruction** — enhanced explosions
+  - **ShatterLib | OctoLib** _(dependency)_
+
+## Dimensions, Structures & Exploration
+- **The Aether** — the classic sky dimension
+- **The Twilight Forest** — the forest dimension
+- **Towns and Towers** — expanded villages/pillager outposts
+- **When Dungeons Arise** — large handcrafted structures
+- **ChoiceTheorem's Overhauled Village** — village overhaul
+- **It Takes a Pillage Continuation** — raids/pillager content
+- **Illager Invasion** — new illager variants
+- **Fragmentum** — structures/relic loot
+- **Aquamirae [Neo/Forge Edition]** — ocean structures & atmosphere
+- **Sea Myths** — legendary ocean monsters & bosses
+
+## Mobs & Creatures
+- **Mowzie's Mobs** — bosses & unique creatures
+- **Mutant Monsters** — mutant vanilla-mob variants
+- **Re:Animal** — animal overhaul/additions
+- **Hybrid Aquatic** — ocean creatures
+- **Social Player Mobs** _(Interactive Player Mobs)_ — player-like mobs
+- **Doped Horses** — faster, enchantable, configurable horses
+- **Animal Weights** — weight mechanics for animals
+
+## Villagers & NPCs
+- **MCA Reborn [Fabric/Forge]** — Minecraft Comes Alive villagers/families
+  - **Villager API** _(dependency)_
+- **In Control!** — mob spawning rules/control
+
+## Farming, Food & Survival
+- **Farmer's Delight** — cooking & farming expansion
+- **Brewin' And Chewin'** — food & drink additions
+- **Burnt Basic** — cooking/burning mechanics
+- **Realistic Farmland** — realistic soil/farming
+- **Food Spoilage** — food goes bad over time
+- **More Diseases & Treatments** — illness & medicine
+- **Serene Seasons** — seasonal cycle affecting crops/biomes
+- **Project Atmosphere** — realistic climate & weather
+- **Supplementaries** — decorative & functional blocks
+- **Bountiful** — bounty board quests
+
+## Economy
+- **Numismatic Overhaul: Neoforged** — coin-based economy
+  - **oωo (owo-lib)** _(dependency)_
+- **Numismatic Bounties** — bounty add-on for Numismatic Overhaul
+
+## Utility & Quality of Life
+- **Corpse** — recover items from a death corpse
+- **Reliable Backpacks** — backpack storage
+- **Reliable Requiem** — death/respawn handling
+- **Better Respawn** — improved respawn behavior
+- **Better Days** — day/night length control
+- **Stat Tinkerer** — tweak player/entity stats
+- **Too Fast** — server-side movement/speed-limit fixes _(server-only)_
+
+## Performance
+- **Sodium** — rendering engine optimization _(client)_
+- **Lithium (Fabric/NeoForge)** — game-logic optimization
+- **FerriteCore ((Neo)Forge)** — memory-usage optimization
+- **ModernFix** — performance & memory fixes
+- **ImmediatelyFast** — rendering/text batching optimization _(client)_
+- **Vertigo** — vertical chunk loading (loads only chunks near the player vertically, not the full column)
+
+## Client, Visual & Shaders
+- **Iris Shaders** — shader loader _(client)_
+- **Iris & Oculus Flywheel Compat** — Flywheel-under-Iris compatibility _(client)_
+- **Iris/Oculus For Simple Clouds** — shader + Simple Clouds compatibility _(client)_
+- **Distant Horizons** — LOD "see forever" rendering
+- **Simple Clouds** — cloud visual overhaul
+- **Particle Rain** — enhanced precipitation particles _(client)_
+- **Puddles & Floods** — puddle/flood weather visuals
+- **Xaero's Minimap** — minimap _(client)_
+- **Xaero's World Map** — full-screen world map _(client)_
+- **Jade** — "what am I looking at" tooltip HUD
+- **AppleSkin** — hunger/saturation HUD info
+- **Just Enough Items (JEI)** — recipe/item lookup
+- **Mod Menu** — mod list/config screen _(client)_
+
+> **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled
+> together (all ON or all OFF). See [Notes.md](Notes.md).
+
+---
+
+## Shared Libraries & APIs
+Core/support mods depended on by multiple mods above.
+
+- **Sinytra Connector** — runs Fabric mods on NeoForge _(pack core)_
+  - **Forgified Fabric API** _(dependency — Fabric API for the loaded Fabric mods)_
+- **Architectury API** — cross-loader API
+- **Cloth Config API** — config screens
+- **Kotlin for Forge** — Kotlin runtime for Kotlin-based mods
+- **Kambrik** — Kotlin/Fabric helper library
+- **GeckoLib** — entity animation/rendering library
+- **Curios API** — accessory/equipment slots
+- **Moonlight Lib** _(Selene)_ — library for Supplementaries & related
+- **Puzzles Lib** — library for Fuzs mods (Illager Invasion, etc.)
+- **Resourceful Lib** — shared config/registry helpers
+- **Cristel Lib** — structure/config library (Aquamirae, etc.)
+- **YUNG's API (NeoForge)** — structure library (Towns and Towers, etc.)
+- **Library Ferret** — NeoForge helper library
+- **MidnightLib** — config library (Particle Rain, etc.)
+- **GlitchCore** — biome/worldgen support library
+- **Biolith** — biome injection API
+- **Lithostitched** — worldgen structure/modifier library
+- **playerAnimator** — player animation library (Better Combat, MCA, etc.)
+- **[NTGL] NukaTeam's Gun Lib** — firearm content library
+
+> Some libraries are listed as _(dependency)_ notes under a single parent mod above rather than here:
+> **Forgified Fabric API** (Sinytra Connector), **owo-lib** (Numismatic Overhaul), **Villager API**
+> (MCA Reborn), **Azimuth API** (Aeronautics Camera Sync), **Ritchie's Projectile Library**
+> (Create Big Cannons), **ShatterLib | OctoLib** (Explosion Overhaul), and **Gabou's Libs**
+> (Trotting Wagons).

@@ -981,6 +981,11 @@ hash = "2b039946f357b8a0b67905847bb828e89a8f803fff0eb02fbb580fcbed06eb67"
 metafile = true
 
 [[files]]
+file = "mods/create-linear-bearing.pw.toml"
+hash = "386bb916f6ad29a4ccae107ae211ae8af79d589bd9b8c4d3876d997b0f077220"
+metafile = true
+
+[[files]]
 file = "mods/create-metallurgy.pw.toml"
 hash = "858b90ff3cf78e80725b89f2eeb852843cc38911f5e5eb135268939fcb1ba04a"
 metafile = true
@@ -1393,6 +1398,11 @@ metafile = true
 [[files]]
 file = "mods/villagerapi.pw.toml"
 hash = "7da745ec95add00171b96aa7ef75bd9e09284c34edb13c26a8fa6f1c8bd72bd2"
+metafile = true
+
+[[files]]
+file = "mods/vs-hose-connectors.pw.toml"
+hash = "c0baea5bb063b538875c25a66b6803f32560c353047d66ee1fdeb7ceddd7c9b5"
 metafile = true
 
 [[files]]
