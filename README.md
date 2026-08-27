@@ -24,6 +24,8 @@ world/spawn compatibility.
   auto-update the pack as a player (start here if you just want to play).
 - **[Maintainer Instructions](MaintainerInstructions.md)** — how the pack is built and how to add/update
   mods with packwiz.
+- **[SPECTRUM.md](SPECTRUM.md)** — Special Interest Group framework for FTB Quests (baseline →
+  specialized careers).
 - **[Notes](Notes.md)** — misc config/maintenance notes and gotchas.
 
 ## Quick start (players)
