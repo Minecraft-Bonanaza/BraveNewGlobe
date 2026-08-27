@@ -10,6 +10,8 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
   dependency, its dependents are treated as **add-ons** and listed alongside it — not nested under it.
 - Dependency mappings are best-effort based on the known mod ecosystems; the pack itself doesn't store
   explicit dependency metadata.
+- Career / specialization grouping for a future **FTB Quests** book is in
+  **[SPECTRUM.md](SPECTRUM.md)**. **FTB Quests is not in the pack.**
 
 ---
 
