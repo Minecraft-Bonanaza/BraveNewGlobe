@@ -72,7 +72,7 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Create: Dragons Plus** | — | Thematic Create content; not a grounded trade |
 | **Better Combat** | — | Combat feel overhaul; not a profession tree |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
-| **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
+| **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency; Villager Commerce lets them buy from player stalls |
 
 ---
 
@@ -104,6 +104,7 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 - Create: Numismatics (+ Utils, Calculator, Villager Currency)  
 - Tradeworks, Marketplace, Stock Market  
 - Numismatic Bounties  
+- Create: Villager Commerce (villagers buy from player Merchant Stalls)  
 
 Currency is **earned** (villagers, bounties, deliveries, player trade) — not player-minted. Do not quest “craft coins from ore.”
 
@@ -313,10 +314,10 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Direct player trades; emerald villager trades (converted to coins) |
-| **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Bountiful + Numismatic Bounties as starter income |
-| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties |
+| **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Bountiful + Numismatic Bounties as starter income; **Villager Commerce** Merchant Stalls + Market Ledgers (villagers buy from the shop via a Create stock network) |
+| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties, **Create: Villager Commerce** |
 | **QoL (not chapters)** | Numismatics Utils, Numismatics Calculator |
-| **Adjacent** | Logistics (stock the shelves), Settlement (MCA villagers), Agriculture / Metalworking (goods) |
+| **Adjacent** | Logistics (stock the shelves), Settlement (MCA villagers as customers), Agriculture / Metalworking (goods) |
 
 **Suggested quest beats**
 
@@ -325,7 +326,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 3. Stock a Tradeworks or Numismatics vendor.  
 4. Register on Marketplace; require a customer/player to **travel** to buy.  
 5. Read Stock Market trends; adjust a physical shop.  
-6. Fulfill a delivery-funded sale (cross Logistics).
+6. Fulfill a delivery-funded sale (cross Logistics).  
+7. Bind a Merchant Stall to a Market Ledger and a Create stock network so **villagers buy from the stall** (simulated purchase; payment in Numismatics coins).
 
 **Hard exclusions for quests:** CoinCraft / player minting; auction mailbox delivery; remote checkout.
 
@@ -384,7 +386,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Solo base, ignoring villagers |
 | **Specialized** | MCA Reborn relationships & village life; Bountiful boards as civic jobs; living near CTOV / Towns structures |
 | **Core mods** | MCA Reborn (+ Villager API) |
-| **Supporting** | Bountiful (civic quest faucet), Villager Currency (coin economy in town) |
+| **Supporting** | Bountiful (civic quest faucet), Villager Currency (players buy from villagers), Villager Commerce (villagers buy from player stalls) |
 | **World stage (not SIG)** | CTOV, Towns and Towers, Illager content as threats |
 
 **Suggested quest beats**
@@ -561,7 +563,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics | Aeronautics |
 | Better High Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
-| Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful | Commerce |
+| Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful, Villager Commerce | Commerce |
 | Gunpowder, Gunsmithing, Big Cannons (+ expansions) | Ordnance |
 | More Diseases & Treatments | Medicine |
 | MCA Reborn | Settlement |
