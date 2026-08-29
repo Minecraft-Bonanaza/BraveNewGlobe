@@ -1,0 +1,13 @@
+name = "Create: Villager Commerce"
+filename = "createvillagercommerce-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "8d054c0898d7892eab07e091c7284cdbd4cbb116"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8183116
+project-id = 1557618

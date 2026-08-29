@@ -1053,6 +1053,11 @@ hash = "6e955dad6441dd9a4257d69b22b9e57d8c9b687e395e5a118cd3aa1b1087ffbf"
 metafile = true
 
 [[files]]
+file = "mods/create-villager-commerce.pw.toml"
+hash = "88e94a37618cf064c0e50afeef7754ca22ad99e18e5106a32071a749c40ae001"
+metafile = true
+
+[[files]]
 file = "mods/create-warnautics.pw.toml"
 hash = "0aa7d3442a8addd73e7f6adc7f20811b83143f72ade631f47f3f6731c278fffa"
 metafile = true
