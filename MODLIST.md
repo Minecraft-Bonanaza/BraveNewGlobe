@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
+Human-readable list of every mod in the pack (**136 mods**), grouped by purpose.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -10,6 +10,8 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
   dependency, its dependents are treated as **add-ons** and listed alongside it — not nested under it.
 - Dependency mappings are best-effort based on the known mod ecosystems; the pack itself doesn't store
   explicit dependency metadata.
+- Career / specialization grouping for a future **FTB Quests** book is in
+  **[SPECTRUM.md](SPECTRUM.md)**. **FTB Quests is not in the pack.**
 
 ---
 
@@ -123,6 +125,7 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
 - **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
+- **Create: Villager Commerce** — Merchant Stalls + Market Ledgers; villagers buy from player shops via Create stock networks (Numismatics coins)
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse

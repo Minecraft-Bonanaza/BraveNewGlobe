@@ -1,36 +1,113 @@
 # Changelog
 
 All notable changes to the **Brave New Globe** modpack are documented here.
-This file tracks mod additions/removals, mod version updates, and config/pack changes.
+This file tracks mod additions/removals, mod version updates, config/pack changes,
+and notable documentation.
+
+## Unversioned (after 0.7.18) — Create: Villager Commerce — 2026-08-29
+
+`pack.toml` version string is still **0.7.18**. Author commit `5dce09f` ("Added Villager Commerce")
+did not bump the pack version.
+
+### Added (mods)
+- **Create: Villager Commerce** `1.0.1` (CurseForge 1557618 / file 8183116,
+  `pack/mods/create-villager-commerce.pw.toml`, `side = both`) — Merchant Stalls linked to
+  Create stock networks so **villagers automatically buy from player shops**. Markets are
+  managed with Market Ledgers (daily purchase limits, preset trades, villager registration).
+  Purchases are **simulated** (sold item leaves stock, payment is inserted; villagers do not
+  keep the goods). Optional **Create: Numismatics** currency is already in the pack from
+  [0.7.17] — preset trades pay in coins; without Numismatics the mod falls back to iron
+  ingots. Required dep already present: **Create**. This is the player-shop / villager-customer
+  direction; **Villager Currency** (0.7.18) remains the opposite (players buy from villagers).
+- **`MODLIST.md`** updated (**136** mods). SIG home is Commerce & Markets in
+  [`SPECTRUM.md`](SPECTRUM.md). **No fresh world.** Relaunch so packwiz adds the jar.
+
+## Unversioned (after 0.7.18) — SPECTRUM.md — 2026-08-27
+
+`pack.toml` version string is still **0.7.18**. Author commit `41ec107` ("Spectrum.md")
+did not bump the pack version and did not add mods.
+
+### Added (docs)
+- **`SPECTRUM.md`** — Special Interest Group (SIG) framework for designing **FTB Quests**
+  around player specialization. Fifteen SIGs (Metalworking through Civil Works), each with a
+  baseline → specialized curve, core mods, quest beats, and exclusions. Also: non-SIG layers
+  (world / fauna / QoL / libraries), a copy/paste quest writing template, a cross-SIG map,
+  and a suggested FTB Quests book structure. README links it.
+- **FTB Quests is not in the pack.** This is a design document for quest authors, not a
+  shipped questbook. Currency stays **earned** (villagers, bounties, deliveries, player
+  trade) — do not quest player-minted coins or remote / mailbox checkout.
+- No worldgen / height / mod change. **No fresh world.**
 
 ## [0.7.18] — 2026-08-26
 
 ### Added — Numismatics economy ecosystem
-- **Create Numismatics: Villager Currency** `1.2.0` — starter coin faucet via in-person villager trades
-  (emerald costs → Numismatics bevels; works with vanilla & modded villagers).
-- **Create: Numismatic Bounties** `2.0` — Bountiful bounty payouts in Numismatics coins (pairs with
-  **Bountiful**, already in pack).
-- **Create: Tradeworks** `1.0.7` — physical barter stalls; integrates with Marketplace & Stock Market.
-- **Create: Marketplace** `0.5.0` — server-wide shop directory (no remote purchasing; trade at the block).
-  Optional Xaero's waypoint integration — **Xaero's Minimap/World Map already in pack**.
-- **Create: Stock Market** `1.1.0` — Market Terminal for shop listings, 24h price history & top sellers.
-- **Create: Numismatics Utils** `2.2` — Bank Meter HUD & account QoL.
-- **Numismatics Calculator** `1.2.0` _(client)_ — coin math helper.
-- No new hard dependencies — **Create**, **Create: Numismatics**, **Bountiful**, and **Villager API**
-  (MCA Reborn) were already present.
+- **Create Numismatics: Villager Currency** `1.2.0` (Modrinth `KrXYrtG9` / `AcNxwhOd`,
+  `side = both`) — starter coin faucet via in-person villager trades (emerald costs →
+  Numismatics bevels; works with vanilla & modded villagers).
+- **Create: Numismatic Bounties** `2.0` (Modrinth `gNGxmzHv` / `nTFR56FV`, `side = both`) —
+  Bountiful bounty payouts in Numismatics coins (pairs with **Bountiful**, already in pack).
+- **Create: Tradeworks** `1.0.7` (Modrinth `gnOpd0sq` / `zdkVXpwz`, `side = both`) — physical
+  barter stalls; integrates with Marketplace & Stock Market.
+- **Create: Marketplace** `0.5.0` (Modrinth `O7RTXyyq` / `PJAwbBur`, `side = both`) —
+  server-wide shop directory (no remote purchasing; trade at the block). Optional Xaero's
+  waypoint integration — **Xaero's Minimap/World Map already in pack**.
+- **Create: Stock Market** `1.1.0` (Modrinth `CnrVw3tZ` / `1kv0CE2W`, `side = both`) — Market
+  Terminal for shop listings, 24h price history & top sellers.
+- **Create: Numismatics Utils** `2.2` (Modrinth `8kRKVjUw` / `6c1vcLsi`, `side = both`) —
+  Bank Meter HUD & account QoL.
+- **Numismatics Calculator** `1.2.0` (Modrinth `MI9E0Mar` / `C0z4oKQX`, `side = client`) —
+  coin math helper. Dedicated-server packwiz skips it.
+- No new hard dependencies — **Create**, **Create: Numismatics**, **Bountiful**, and
+  **Villager API** (MCA Reborn) were already present after [0.7.17].
+- **`MODLIST.md`** updated (**135** mods). `pack.toml` version is **0.7.18**. Same author
+  commit as [0.7.17] (`5b385da`). JEI ingredient-list sort order swapped Numismatic Overhaul
+  for Numismatics / Marketplace / Stock Market / Tradeworks. **No fresh world.**
 
 ## [0.7.17] — 2026-08-26
+
+Same author commit as [0.7.18] (`5b385da`). `pack.toml` version string jumps **0.7.16 → 0.7.18**
+in that commit — there is no separate 0.7.17 pack.toml / git tag.
 
 ### Changed — economy mod swap
 - **Removed Numismatic Overhaul: Neoforged** and **Numismatic Bounties** — the pack's previous
   coin/purse economy (Villager API trade integration via Numismatic Overhaul).
-- **Removed oωo (owo-lib)** — was only required by Numismatic Overhaul.
-- **Added Create: Numismatics** `1.0.20` (Modrinth) — Create-styled currency (coins, bank cards,
-  vendors) required by the new delivery mod.
-- **Added Create Aeronautics: Delivery Required** `1.0.2` (Modrinth) — contract-based delivery
-  logistics for Aeronautics contraptions; payouts use Numismatics currency.
+- **Removed oωo (owo-lib)** — was only required by Numismatic Overhaul. packwiz deletes the
+  three jars on next launch.
+- **Added Create: Numismatics** `1.0.20` (Modrinth `Jdbbtt0i` / `guON3qvQ`, `side = both`) —
+  Create-styled currency (coins, bank cards, vendors) required by the new delivery mod.
+- **Added Create Aeronautics: Delivery Required** `1.0.2` (Modrinth `hSTW3jx7` / `NOeDEseI`,
+  `side = both`) — contract-based delivery logistics for Aeronautics contraptions; payouts
+  use Numismatics currency.
 - Dropped shipped `numismaticoverhaul-*` configs; Numismatics generates its own on first launch.
-- **Villager API** stays in the pack — still required by **MCA Reborn**.
+  Leftover runtime `config/numismaticoverhaul-*` on a player's machine is an inert orphan.
+- **Villager API** stays in the pack — still required by **MCA Reborn** (no longer by an
+  Overhaul economy). Do not drop it when pruning the old coin mods.
+- **No fresh world.** Relaunch so packwiz swaps the jars.
+
+## Unversioned (after 0.7.16) — Create: Linear Bearing + VS/Sable Hose Connectors + MODLIST.md — 2026-08-26
+
+`pack.toml` version string was still **0.7.16**. Author commit `00a0f01` ("Added Modlist and 2 more mods")
+did not bump the pack version. Later [0.7.17]/[0.7.18] bumped it to **0.7.18**.
+
+### Added (mods)
+- **Create: Linear Bearing** `1.2.6` (CurseForge 1556708 / file 8181069,
+  `pack/mods/create-linear-bearing.pw.toml`) — Sable physics sliders for Create Aeronautics
+  contraptions (Linear Casing + Linear Bearing: cranes, elevators, sliding parts). `side = both`.
+  Required deps already in the pack: Create, Create Aeronautics (`aeronautics_bundled` 1.3.1),
+  Sable `2.0.5`.
+- **VS / Sable Hose Connectors** `0.1.8-1.21.1` (CurseForge 1426984 / file 8333129,
+  `pack/mods/vs-hose-connectors.pw.toml`) — hose connectors that transfer fluids, items,
+  rotational power, and energy across Sable (Create Aeronautics) physics ships/sublevels.
+  `side = both`. Requires Create; talks to **Sable** already in the pack. Valkyrien Skies is
+  **not** in the pack.
+
+### Added (docs)
+- **`MODLIST.md`** — human-readable list of all mods, grouped by purpose (129 at this commit,
+  including the two new ones; **135** as of 0.7.18). Dependency notes are best-effort; packwiz
+  metafiles remain the source of truth.
+
+### Notes
+- No worldgen / height change. **No fresh world.** Relaunch so packwiz adds the two jars.
 
 ## [0.7.16] — 2026-08-25
 
