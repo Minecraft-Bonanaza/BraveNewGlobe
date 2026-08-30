@@ -1053,7 +1053,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-villager-commerce.pw.toml"
-hash = "88e94a37618cf064c0e50afeef7754ca22ad99e18e5106a32071a749c40ae001"
+hash = "473fbfce710060ae2aafa4441af5f35de800fef4ddc1d6d63b182db4bb72e719"
 metafile = true
 
 [[files]]

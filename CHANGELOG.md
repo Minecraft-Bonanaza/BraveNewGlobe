@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.3] — 2026-08-30
+
+### Fixed
+- **Create: Villager Commerce** self-hosted. CF distribution is disabled and it's not on Modrinth, so the
+  jar (`createvillagercommerce-1.0.1.jar`, sha1 verified against CF) is committed to `bundled-jars/` and
+  the metafile now points at its raw-GitHub URL (sha256) — anonymously downloadable by packwiz-installer,
+  same pattern as the other bundled jars.
+
 ## [0.8.2] — 2026-08-30
 
 ### Fixed — CurseForge distribution-disabled mods

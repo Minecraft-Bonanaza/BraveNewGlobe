@@ -3,11 +3,6 @@ filename = "createvillagercommerce-1.0.1.jar"
 side = "both"
 
 [download]
-hash-format = "sha1"
-hash = "8d054c0898d7892eab07e091c7284cdbd4cbb116"
-mode = "metadata:curseforge"
-
-[update]
-[update.curseforge]
-file-id = 8183116
-project-id = 1557618
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/createvillagercommerce-1.0.1.jar"
+hash-format = "sha256"
+hash = "7bb49495114e314427c3195f855511cf20ca1093b47f4506c1864778b5dad5b3"
