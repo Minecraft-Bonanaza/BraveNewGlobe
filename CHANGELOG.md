@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.5] — 2026-08-30
+
+### Fixed — PonderJS (was a missing REQUIRED dependency, would crash on load)
+- **Create Aeronautics: Delivery Required** declares `ponderjs` as a **required** dependency
+  (`[1.21.1-2.4.0,)`), so the pack couldn't launch without it. PonderJS's 1.21.1 line ships as the
+  project **"Ponder for KubeJS"** under the slug **`ponder`** (modId still `ponderjs`) — the old
+  `ponderjs` slug has no 1.21.1 build, which is why the first search missed it.
+- **Added (CurseForge):** Ponder for KubeJS `ponderjs-neoforge-1.21.1-2.4.0` (modId `ponderjs`, verified),
+  plus its dependency chain that was also missing — **KubeJS** `2101.7.2`, **Rhino** `2101.2.8`,
+  **Better Advanced Tooltips** `2101.1.0`. Supersedes the 0.8.4 "PonderJS dropped" note.
+
 ## [0.8.4] — 2026-08-30
 
 ### Added / restored — missing libraries
