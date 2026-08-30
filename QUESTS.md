@@ -3,6 +3,12 @@
 Guidance-only FTB Quests. **No line is gated behind another** — all attemptable anytime.
 Framework: `SPECTRUM.md` (a SIG = baseline → specialized career curve).
 
+**Create Core** (line 1) has shipped as of **0.8.0** (`pack/config/ftbquests/quests/chapters/create_core.snbt`).
+IDs are deterministic as of **0.8.1** (SHA-1 of stable keys). Other lines are still pending.
+**PonderJS is in** as of **0.8.5** (required by Delivery Required). **0.8.6** is
+a packwiz hash-only fix (no quest changes). Optional: point
+players at in-world Ponder scenes. Do not make KubeJS scripting a quest line.
+
 Two families of lines:
 - **Industry / Career (SIG)** — Create specializations + economy; each is a baseline→specialized curve.
 - **Exploration / World** — dimensions & dungeons. SPECTRUM classifies these as "non-SIG world stage";
@@ -24,7 +30,7 @@ Two families of lines:
 6. **Power & Fuel** — Diesel Generators, Power Grid, Power Chip.
 7. **Logistics & Storage** — Factory Logistics, Aero Automated Logistics, Delivery Required, Create: Storage.
 8. **Industrial Enchanting** — Create: Enchantment Industry (small line: enchant by hand → automate → supply gear).
-9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful/Bounties). Earned currency, physical fulfillment; no minting.
+9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful/Bounties, **Villager Commerce**). Earned currency, physical fulfillment; no minting. Villagers buy from player Merchant Stalls.
 10. **Agriculture & Husbandry** — Farmer's Delight, Brewin' & Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Ratatouille, Animal Weights. (Serene Seasons / Project Atmosphere are environmental rules, not part of the line.)
 11. **Naval / High Seas** — Create: Better High Seas shipbuilding + WDA sea structures + Aquamirae as sea hazards/loot. The sea counterpart to Aeronautics.
 12. **Astronautics** — Creating Space rocketry & space logistics. Late-game capstone after Aeronautics + Power & Fuel; engineering-heavy, no "space magic."
@@ -43,7 +49,7 @@ _(13–15 are exploration/guidance lines — find the dungeon / find the portal 
 ## Fold / skip (v1)
 - **Textiles (Create: Cotton)** — too thin alone; fold into Agriculture or Civil Works, or skip.
 - **Civil Works (Struts, Supplementaries, Copycats+)** — supporting/soft; not its own line for v1.
-- **Industrial Enchanting** — keep as a short chapter under Engineer's, not a standalone line.
+- **Industrial Enchanting** — already a locked standalone line (8); the old "under Engineer's" grouping is dropped.
 
 ---
 
