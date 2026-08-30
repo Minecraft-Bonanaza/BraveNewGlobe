@@ -13,6 +13,13 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - **PonderJS** — requested but **has no 1.21.1 NeoForge build** on CurseForge or Modrinth (upstream
   stalled ~1.20). Not added; pending an upstream release or a self-hosted jar.
 
+### Documentation
+- Living docs (README / Notes / Maintainer / Client / MODLIST / SPECTRUM / QUESTS) now match
+  pack **0.8.4**. **141** mods. **LDLib2** and **owo-lib** are in; **PonderJS is not**.
+  **FTB Quests is in** (Create Core shipped). Linear Bearing is Modrinth `1.3.5`.
+  Villager Commerce is self-hosted in `bundled-jars/`. **No fresh world.** Relaunch so
+  packwiz adds the libraries.
+
 ## [0.8.3] — 2026-08-30
 
 ### Fixed
@@ -60,6 +67,14 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - Foundation for a **guidance-only** quest book: a Create core line + independent specialization lines
   (aero, economy, Aether, Twilight, WDA), none gated by each other. Quest content authored in a later
   pass under `config/ftbquests/`.
+
+## Unversioned (after 0.7.18) — SPECTRUM.md — 2026-08-27
+
+`pack.toml` version string was still **0.7.18**. Author commit `41ec107` ("Spectrum.md")
+did not bump the pack version and did not add mods. **SPECTRUM.md** is the SIG
+framework for FTB Quests (baseline → specialized careers). Later numbered:
+FTB Quests itself landed in [0.7.19]; Create Core + `QUESTS.md` in [0.8.0].
+**No fresh world.**
 
 ## [0.7.18] — 2026-08-26
 

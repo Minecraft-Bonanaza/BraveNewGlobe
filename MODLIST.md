@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
+Human-readable list of every mod in the pack (**141 mods**), grouped by purpose.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -10,6 +10,9 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
   dependency, its dependents are treated as **add-ons** and listed alongside it — not nested under it.
 - Dependency mappings are best-effort based on the known mod ecosystems; the pack itself doesn't store
   explicit dependency metadata.
+- Career / specialization grouping for the **FTB Quests** book is in
+  **[SPECTRUM.md](SPECTRUM.md)**. The locked 15-line roadmap is **[QUESTS.md](QUESTS.md)**.
+  **Create Core** has shipped (0.8.0). **PonderJS is not in the pack** (no 1.21.1 build).
 
 ---
 
@@ -32,7 +35,7 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create: Ratatouille** — cooking/food processing
 - **Create: Bits 'n' Bobs** — misc machines/parts
 - **Create Cardan Shafts** — drivetrain/shaft additions
-- **Create: Linear Bearing** — linear-motion bearing for contraptions
+- **Create: Linear Bearing** — linear-motion bearing for contraptions _(Modrinth 1.3.5)_
 - **Create: Gears n' Kinetics** — kinetic additions
 - **Create: Dragons Plus** — dragon-themed content
 - **Creating Space** — rocketry / space content
@@ -123,6 +126,12 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
 - **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
+- **Create: Villager Commerce** — Merchant Stalls + Market Ledgers; villagers buy from player shops via Create stock networks (Numismatics coins) _(self-hosted in bundled-jars)_
+
+## Quests
+- **FTB Quests (NeoForge)** — guidance quest book (Create Core shipped; more lines pending)
+  - **FTB Library (NeoForge)** _(dependency)_
+  - **FTB Teams (NeoForge)** _(dependency)_
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse
@@ -184,9 +193,11 @@ Core/support mods depended on by multiple mods above.
 - **Lithostitched** — worldgen structure/modifier library
 - **playerAnimator** — player animation library (Better Combat, MCA, etc.)
 - **[NTGL] NukaTeam's Gun Lib** — firearm content library
+- **LDLib2** — KilaBash rendering/GUI library (CF "LDLib" project ships the `ldlib2-neoforge` jar)
+- **oωo (owo-lib)** — library restored in 0.8.4 (removed in 0.7.17 as an Overhaul-only dep; still required)
 
 > Some libraries are listed as _(dependency)_ notes under a single parent mod above rather than here:
 > **Forgified Fabric API** (Sinytra Connector), **Villager API**
 > (MCA Reborn), **Azimuth API** (Aeronautics Camera Sync), **Ritchie's Projectile Library**
-> (Create Big Cannons), **ShatterLib | OctoLib** (Explosion Overhaul), and **Gabou's Libs**
-> (Trotting Wagons).
+> (Create Big Cannons), **ShatterLib | OctoLib** (Explosion Overhaul), **Gabou's Libs**
+> (Trotting Wagons), and **FTB Library** / **FTB Teams** (FTB Quests).
