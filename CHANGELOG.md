@@ -10,6 +10,14 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   updated `index.toml` but not the hash in `pack.toml`), causing packwiz's "index hash file invalid"
   error. Re-refreshed so `pack.toml`'s hash matches `index.toml`. No mod changes.
 
+### Documentation
+- Living docs (README / Notes / Maintainer / Client / MODLIST / SPECTRUM / QUESTS) now match
+  pack **0.8.6**. Same **145** mods as 0.8.5. Hash-only fix — relaunch so packwiz
+  accepts `pack.toml`. **No fresh world.** Distinct from the 0.5.4 line-ending
+  rewrite: `index.toml` was already correct; only the hash *recorded in*
+  `pack.toml` was stale. Always `packwiz refresh` and commit both `index.toml`
+  and `pack.toml`.
+
 ## [0.8.5] — 2026-08-30
 
 ### Fixed — PonderJS (was a missing REQUIRED dependency, would crash on load)
