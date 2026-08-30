@@ -982,11 +982,6 @@ hash = "2b039946f357b8a0b67905847bb828e89a8f803fff0eb02fbb580fcbed06eb67"
 metafile = true
 
 [[files]]
-file = "mods/create-linear-bearing.pw.toml"
-hash = "386bb916f6ad29a4ccae107ae211ae8af79d589bd9b8c4d3876d997b0f077220"
-metafile = true
-
-[[files]]
 file = "mods/create-marketplace.pw.toml"
 hash = "0ddbdbe1d5f14e6a56c7870e6c60380ebe8ff9ace868599516edba5b905ac783"
 metafile = true
@@ -1229,6 +1224,11 @@ metafile = true
 [[files]]
 file = "mods/library-ferret.pw.toml"
 hash = "2d80b71c7f4c789b7596a328ac235f88458bc467dfb203f79f15e4379115887e"
+metafile = true
+
+[[files]]
+file = "mods/linear-bearing.pw.toml"
+hash = "e92248ff7e47d94175ee315550946858967e9f1076653468a1d10a6aa53a4d82"
 metafile = true
 
 [[files]]

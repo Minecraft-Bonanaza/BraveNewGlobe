@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.2] — 2026-08-30
+
+### Fixed — CurseForge distribution-disabled mods
+- **Create: Linear Bearing** re-pointed **CurseForge → Modrinth** (`linear-bearing`, NeoForge 1.21.1,
+  1.2.6 → 1.3.5). CF had `allowModDistribution:false`, so packwiz-installer couldn't download it for
+  clients; Modrinth CDN is anonymous-downloadable.
+- **Create: Villager Commerce** — also CF-distribution-disabled, but **not on Modrinth** (All-Rights-
+  Reserved, no source repo). Must be **self-hosted** in `bundled-jars/` (jar obtained manually from CF);
+  pending the jar.
+
 ## [0.8.1] — 2026-08-30
 
 ### Changed — deterministic quest IDs
