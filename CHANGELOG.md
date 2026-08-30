@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.6] — 2026-08-30
+
+### Fixed
+- **`pack.toml` index hash** — 0.8.5 was committed with a stale `[index]` hash (the PonderJS commit
+  updated `index.toml` but not the hash in `pack.toml`), causing packwiz's "index hash file invalid"
+  error. Re-refreshed so `pack.toml`'s hash matches `index.toml`. No mod changes.
+
 ## [0.8.5] — 2026-08-30
 
 ### Fixed — PonderJS (was a missing REQUIRED dependency, would crash on load)
