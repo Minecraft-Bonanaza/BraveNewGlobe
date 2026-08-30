@@ -14,6 +14,14 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   plus its dependency chain that was also missing — **KubeJS** `2101.7.2`, **Rhino** `2101.2.8`,
   **Better Advanced Tooltips** `2101.1.0`. Supersedes the 0.8.4 "PonderJS dropped" note.
 
+### Documentation
+- Living docs (README / Notes / Maintainer / Client / MODLIST / SPECTRUM / QUESTS) now match
+  pack **0.8.5**. **145** mods. **Ponder for KubeJS** (`ponderjs` 1.21.1-2.4.0, slug
+  **`ponder`**) is in, plus **KubeJS** `2101.7.2`, **Rhino** `2101.2.8`, and **Better
+  Advanced Tooltips** `2101.1.0` (all CurseForge, `side = both`). Required by
+  **Delivery Required** — the pack would crash on load without them. **No fresh
+  world.** Relaunch so packwiz adds the four jars.
+
 ## [0.8.4] — 2026-08-30
 
 ### Added / restored — missing libraries
