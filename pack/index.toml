@@ -1128,6 +1128,21 @@ hash = "e8a1b61649b7b6700f530187a6e02c4cd102e0c353a77b3371a51b7f62737393"
 metafile = true
 
 [[files]]
+file = "mods/ftb-library-forge.pw.toml"
+hash = "276e79d919c3a698ab2881d784544b7e60bef69b43f44808353bb65d38633cb3"
+metafile = true
+
+[[files]]
+file = "mods/ftb-quests-forge.pw.toml"
+hash = "6a451ba7022f1afab59b6884ded7e2c533f7d4279738477030d6de496e3de1a4"
+metafile = true
+
+[[files]]
+file = "mods/ftb-teams-forge.pw.toml"
+hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
+metafile = true
+
+[[files]]
 file = "mods/gabous-libs.pw.toml"
 hash = "4ecf1e9c05d18cb06867f01f73a63e44fba3be697334db909b1259edb454d375"
 metafile = true

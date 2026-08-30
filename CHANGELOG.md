@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.7.19] — 2026-08-30
+
+### Added — FTB Quests (progression scaffolding)
+- **FTB Quests** `2101.1.34`, **FTB Library** `2101.1.35`, **FTB Teams** `2101.1.11` (NeoForge 1.21.1,
+  CurseForge — the official FTB mods aren't on Modrinth). Architectury already present.
+- Foundation for a **guidance-only** quest book: a Create core line + independent specialization lines
+  (aero, economy, Aether, Twilight, WDA), none gated by each other. Quest content authored in a later
+  pass under `config/ftbquests/`.
+
 ## [0.7.18] — 2026-08-26
 
 ### Added — Numismatics economy ecosystem
