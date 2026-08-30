@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.8] — 2026-08-30
+
+### Fixed
+- **Quest title formatting** — titles with a bare `&` ("Sheets & Plating", "Rotation & Ore Doubling",
+  "Belts & Logistics") tripped FTB Quests' "escape whitespace after & with a \&" error (`&` starts a
+  format code). The generator now auto-escapes a bare `&` → `\&` (leaves intentional color codes like
+  `&a` untouched), so titles render the literal "&".
+
 ## [0.8.7] — 2026-08-30
 
 ### Changed — Create Core reworked to purpose-driven quests

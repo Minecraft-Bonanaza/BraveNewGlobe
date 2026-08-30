@@ -43,7 +43,7 @@
 			id: "36B31F20AAFA8FCD"
 		}
 		{
-			title: "Rotation & Ore Doubling"
+			title: "Rotation \\& Ore Doubling"
 			icon: "create:millstone"
 			x: -4.0d
 			y: 2.0d
@@ -107,7 +107,7 @@
 			]
 		}
 		{
-			title: "Sheets & Plating"
+			title: "Sheets \\& Plating"
 			icon: "create:mechanical_press"
 			x: 0.0d
 			y: 2.0d
@@ -274,7 +274,7 @@
 			]
 		}
 		{
-			title: "Belts & Logistics"
+			title: "Belts \\& Logistics"
 			icon: "create:belt_connector"
 			x: 10.0d
 			y: 4.0d
