@@ -1,0 +1,489 @@
+{
+	id: "7440B41BFA6F3E73"
+	group: ""
+	order_index: 0
+	filename: "create_core"
+	title: "Create Core"
+	icon: "create:cogwheel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Andesite Alloy"
+			icon: "create:andesite_alloy"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"The backbone of every Create machine."
+				"Combine andesite with iron or zinc to forge Andesite Alloy — you'll need a lot of it."
+			]
+			tasks: [
+				{
+					id: "792B0DD1FADDF36F"
+					type: "item"
+					item: "create:andesite_alloy"
+				}
+			]
+			rewards: [
+				{
+					id: "A9A60E42B75C5D00"
+					type: "xp"
+					xp: 15
+				}
+				{
+					id: "B8E65AECF01D9A78"
+					type: "item"
+					item: "create:andesite_alloy"
+					count: 4
+				}
+			]
+			id: "03DB081036821DC2"
+		}
+		{
+			title: "Shafts & Cogwheels"
+			icon: "create:cogwheel"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Rotational force is Create's lifeblood."
+				"Shafts carry it in a line; cogwheels turn corners and change speed."
+			]
+			tasks: [
+				{
+					id: "AE223316BDB631D3"
+					type: "item"
+					item: "create:shaft"
+				}
+				{
+					id: "4780930D8DA414F8"
+					type: "item"
+					item: "create:cogwheel"
+				}
+			]
+			rewards: [
+				{
+					id: "F694FC445716A862"
+					type: "xp"
+					xp: 15
+				}
+			]
+			id: "0B5622EBF182E5E7"
+			dependencies: [
+				"03DB081036821DC2"
+			]
+		}
+		{
+			title: "Get It Spinning"
+			icon: "create:hand_crank"
+			x: -4.0d
+			y: 4.0d
+			description: [
+				"A Hand Crank is raw muscle — fine for a quick test, useless for automation."
+				"Time to find a real power source."
+			]
+			tasks: [
+				{
+					id: "A85A4EF87E6C55EF"
+					type: "item"
+					item: "create:hand_crank"
+				}
+			]
+			rewards: [
+				{
+					id: "C4E2DEF9D58A9927"
+					type: "xp"
+					xp: 10
+				}
+			]
+			id: "3AE3DBADB3F34ACB"
+			dependencies: [
+				"0B5622EBF182E5E7"
+			]
+		}
+		{
+			title: "Renewable Rotation"
+			icon: "create:water_wheel"
+			x: -4.0d
+			y: 6.0d
+			description: [
+				"Water Wheels give free, endless rotation from flowing water."
+				"(A Windmill Bearing + sail blocks works too if you're inland.)"
+			]
+			tasks: [
+				{
+					id: "9A22E30228342F0D"
+					type: "item"
+					item: "create:water_wheel"
+				}
+			]
+			rewards: [
+				{
+					id: "56A9E679FE527FD6"
+					type: "xp"
+					xp: 20
+				}
+			]
+			id: "9F0B3AF9E277F20A"
+			dependencies: [
+				"3AE3DBADB3F34ACB"
+			]
+		}
+		{
+			title: "Andesite Casing"
+			icon: "create:andesite_casing"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"Casing turns bare shafts into proper machines."
+				"Nearly everything below needs it — make a stack."
+			]
+			tasks: [
+				{
+					id: "31D7118E2C8FE56E"
+					type: "item"
+					item: "create:andesite_casing"
+				}
+			]
+			rewards: [
+				{
+					id: "0FB0D528FB1791E0"
+					type: "xp"
+					xp: 15
+				}
+			]
+			id: "081C83A18A91A4CC"
+			dependencies: [
+				"0B5622EBF182E5E7"
+			]
+		}
+		{
+			title: "The Mechanical Press"
+			icon: "create:mechanical_press"
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"Presses compact blocks and sheet metals."
+				"Your first real processing machine."
+			]
+			tasks: [
+				{
+					id: "DE901F72F88A8986"
+					type: "item"
+					item: "create:mechanical_press"
+				}
+			]
+			rewards: [
+				{
+					id: "D70AE87CC6AAE2BD"
+					type: "xp"
+					xp: 20
+				}
+			]
+			id: "B8809635113D88BB"
+			dependencies: [
+				"081C83A18A91A4CC"
+			]
+		}
+		{
+			title: "Mixing & Basins"
+			icon: "create:mechanical_mixer"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"A Mixer over a Basin blends ingredients — the heart of Create crafting."
+				"Add a Blaze Burner underneath for heated recipes."
+			]
+			tasks: [
+				{
+					id: "F27804A0DC69D79F"
+					type: "item"
+					item: "create:mechanical_mixer"
+				}
+				{
+					id: "91088CFF5124F6A6"
+					type: "item"
+					item: "create:basin"
+				}
+			]
+			rewards: [
+				{
+					id: "2789FE9201E92711"
+					type: "xp"
+					xp: 20
+				}
+			]
+			id: "BD43C3FE453C2C41"
+			dependencies: [
+				"081C83A18A91A4CC"
+			]
+		}
+		{
+			title: "Encased Fan"
+			icon: "create:encased_fan"
+			x: 2.0d
+			y: 6.0d
+			description: [
+				"Blow air through fire to smelt, water to wash, lava to melt, or soul fire to haunt."
+				"One block, four processing methods."
+			]
+			tasks: [
+				{
+					id: "D6A01BCFAC98167E"
+					type: "item"
+					item: "create:encased_fan"
+				}
+			]
+			rewards: [
+				{
+					id: "D8392D78C6D9FEE7"
+					type: "xp"
+					xp: 20
+				}
+			]
+			id: "91C8753861C8AAA9"
+			dependencies: [
+				"081C83A18A91A4CC"
+			]
+		}
+		{
+			title: "The Deployer"
+			icon: "create:deployer"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"A mechanical hand that uses items and tools on the world for you."
+				"The workhorse of automation."
+			]
+			tasks: [
+				{
+					id: "8848480B11B78454"
+					type: "item"
+					item: "create:deployer"
+				}
+			]
+			rewards: [
+				{
+					id: "EA0AF09730D1DA9E"
+					type: "xp"
+					xp: 20
+				}
+			]
+			id: "0C593982EBCBAA20"
+			dependencies: [
+				"081C83A18A91A4CC"
+			]
+		}
+		{
+			title: "Mechanical Saw"
+			icon: "create:mechanical_saw"
+			x: 6.0d
+			y: 6.0d
+			description: [
+				"Fell trees and cut logs automatically — or process stone."
+			]
+			tasks: [
+				{
+					id: "02B08995354F88D3"
+					type: "item"
+					item: "create:mechanical_saw"
+				}
+			]
+			rewards: [
+				{
+					id: "789EC5E3C7F8CF1C"
+					type: "xp"
+					xp: 15
+				}
+			]
+			id: "AD2DC69D1933C59F"
+			dependencies: [
+				"081C83A18A91A4CC"
+			]
+		}
+		{
+			title: "Belts & Logistics"
+			icon: "create:belt_connector"
+			x: 8.0d
+			y: 6.0d
+			description: [
+				"Move items around: belts carry, chutes drop, funnels insert and extract."
+				"Automation is nothing without transport."
+			]
+			tasks: [
+				{
+					id: "744DEA4C67AA484C"
+					type: "item"
+					item: "create:belt_connector"
+				}
+				{
+					id: "6711FBF7C0DF4D43"
+					type: "item"
+					item: "create:chute"
+				}
+				{
+					id: "4531D800DEB81DE0"
+					type: "item"
+					item: "create:andesite_funnel"
+				}
+			]
+			rewards: [
+				{
+					id: "974AEA064751E786"
+					type: "xp"
+					xp: 20
+				}
+			]
+			id: "D61A91C38C8E7383"
+			dependencies: [
+				"081C83A18A91A4CC"
+			]
+		}
+		{
+			title: "Copper Casing & Fluids"
+			icon: "create:copper_casing"
+			x: -2.0d
+			y: 8.0d
+			description: [
+				"Step up to fluids: pump through pipes and fill items with a Spout."
+				"Copper Casing houses your fluid machinery."
+			]
+			tasks: [
+				{
+					id: "8F21B3A4C7F93B89"
+					type: "item"
+					item: "create:copper_casing"
+				}
+				{
+					id: "ED62798E31902FAA"
+					type: "item"
+					item: "create:mechanical_pump"
+				}
+				{
+					id: "7584A76EB04FD7B1"
+					type: "item"
+					item: "create:fluid_pipe"
+				}
+				{
+					id: "DACF08D31CBCBA24"
+					type: "item"
+					item: "create:spout"
+				}
+			]
+			rewards: [
+				{
+					id: "58A4BA479420C363"
+					type: "xp"
+					xp: 25
+				}
+			]
+			id: "0212E122F7FF7BBE"
+			dependencies: [
+				"B8809635113D88BB"
+			]
+		}
+		{
+			title: "The Brass Age"
+			icon: "create:brass_ingot"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"Mix copper and zinc in a heated Basin to make Brass — Create's second tier."
+				"Unlocks the precision machines."
+			]
+			tasks: [
+				{
+					id: "47531948A886C837"
+					type: "item"
+					item: "create:brass_ingot"
+				}
+			]
+			rewards: [
+				{
+					id: "D040EEF434DFD52E"
+					type: "xp"
+					xp: 25
+				}
+				{
+					id: "F8A3614E99F0727A"
+					type: "item"
+					item: "create:brass_ingot"
+					count: 4
+				}
+			]
+			id: "171F6EC49B80A1C9"
+			dependencies: [
+				"BD43C3FE453C2C41"
+			]
+		}
+		{
+			title: "Precision Mechanism"
+			icon: "create:precision_mechanism"
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"The gateway component for advanced machines."
+				"Assemble one on a Mechanical Crafter setup."
+			]
+			tasks: [
+				{
+					id: "5AD18D29679F9BA4"
+					type: "item"
+					item: "create:precision_mechanism"
+				}
+			]
+			rewards: [
+				{
+					id: "BB30F8FEE971D898"
+					type: "xp"
+					xp: 30
+				}
+			]
+			id: "BE3433878A1EC32F"
+			dependencies: [
+				"171F6EC49B80A1C9"
+			]
+		}
+		{
+			title: "Mechanical Mastery"
+			icon: "create:mechanical_arm"
+			x: 0.0d
+			y: 12.0d
+			description: [
+				"Mechanical Crafters and Arms automate crafting itself."
+				"You've mastered the basics — every specialization line opens from here."
+			]
+			tasks: [
+				{
+					id: "7C3C05DCFB2F9E5B"
+					type: "item"
+					item: "create:mechanical_crafter"
+				}
+				{
+					id: "5B0C01B37D7F422B"
+					type: "item"
+					item: "create:mechanical_arm"
+				}
+			]
+			rewards: [
+				{
+					id: "59FD4B509859F7E0"
+					type: "xp"
+					xp: 50
+				}
+				{
+					id: "737317DD3BBFB83E"
+					type: "item"
+					item: "create:precision_mechanism"
+					count: 1
+				}
+			]
+			id: "DCA4E67B8EA2F2A4"
+			shape: "hexagon"
+			dependencies: [
+				"BE3433878A1EC32F"
+			]
+		}
+	]
+}
