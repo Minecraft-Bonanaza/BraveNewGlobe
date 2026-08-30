@@ -2,6 +2,16 @@
 
 Framework for designing **FTB Quests** around player specialization.
 
+**FTB Quests is in the pack** (0.7.19+). The locked 15-line roadmap is
+**[QUESTS.md](QUESTS.md)**. **Create Core** shipped in 0.8.0 (deterministic IDs
+in 0.8.1) and was reworked in **0.8.7** to **12 purpose-driven quests**
+(use/produce + automate, CAB-style, bootstrap-kit rewards). Other lines are still
+pending. **0.8.6** is a packwiz hash-only fix (no quest changes). **PonderJS is in**
+(0.8.5; required by Delivery Required). Optional: point players at in-world Ponder
+scenes. Do not make KubeJS scripting a quest line. Quest `.snbt` under
+`pack/config/ftbquests/` is the source of truth — regenerate from
+`bigGlobeAero/build_ftbquests.py` rather than overwriting via in-game edit mode.
+
 Brave New Globe is a **reality simulator**: almost everything can be done the simple way, but investing in tools, industry, and knowledge unlocks better yields, safer processes, and larger scale. A **Special Interest Group (SIG)** is a career path shaped like that — not every mod, and not every piece of content.
 
 ---
@@ -53,7 +63,7 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Fauna / threats** | Re:Animal, Mowzie's Mobs, Sea Myths, Hybrid Aquatic, Mutant Monsters | Populate the world; hunting may appear *inside* a SIG, but the mod is not the SIG |
 | **Pure ambiance / client** | Iris, Distant Horizons, Simple Clouds, Particle Rain | Presentation |
 | **QoL / recovery** | Corpse, Backpacks, Better Respawn, Too Fast | Convenience |
-| **Libraries / APIs** | GeckoLib, Cloth Config, Villager API, … | Plumbing |
+| **Libraries / APIs** | GeckoLib, Cloth Config, Villager API, LDLib2, owo-lib, PonderJS / KubeJS / Rhino, … | Plumbing |
 | **Decorative-only** | Copycats+ (unless folded into Civil Works) | Building aesthetics without a yield curve |
 | **Magic / remote commerce** | Auction mailboxes, teleport shops | Conflicts with grounded logistics |
 
@@ -72,7 +82,7 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Create: Dragons Plus** | — | Thematic Create content; not a grounded trade |
 | **Better Combat** | — | Combat feel overhaul; not a profession tree |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
-| **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
+| **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency; Villager Commerce lets them buy from player stalls |
 
 ---
 
@@ -104,6 +114,7 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 - Create: Numismatics (+ Utils, Calculator, Villager Currency)  
 - Tradeworks, Marketplace, Stock Market  
 - Numismatic Bounties  
+- Create: Villager Commerce (villagers buy from player Merchant Stalls)  
 
 Currency is **earned** (villagers, bounties, deliveries, player trade) — not player-minted. Do not quest “craft coins from ore.”
 
@@ -113,9 +124,17 @@ Currency is **earned** (villagers, bounties, deliveries, player trade) — not p
 - Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Vertigo  
 - Iris stack, Distant Horizons, Simple Clouds, maps, Jade, AppleSkin, JEI, Mod Menu  
 
+### Quest scaffolding (not a SIG)
+
+- **FTB Quests** + FTB Library + FTB Teams — guidance book plumbing. Architectury already present.  
+- **Create Core** is the shared industrial onboarding line (see [QUESTS.md](QUESTS.md)), not a SIG. As of **0.8.7** it is **12 purpose-driven quests** (use a machine to produce an output or do a task; checkmarks for ambiguous steps; capstone = a passive Andesite Alloy line).  
+- **PonderJS is in** (0.8.5). Optional: point players at Delivery Required / Create Ponder scenes. Do not make KubeJS scripting a career.
+
 ### Libraries
 
-All Shared Libraries & APIs in [MODLIST.md](MODLIST.md) — never SIG content.
+All Shared Libraries & APIs in [MODLIST.md](MODLIST.md) — never SIG content. Includes
+**LDLib2**, **owo-lib** (restored 0.8.4), and the **PonderJS / KubeJS / Rhino /
+Better Advanced Tooltips** chain (0.8.5; required by Delivery Required).
 
 ---
 
@@ -313,10 +332,10 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Direct player trades; emerald villager trades (converted to coins) |
-| **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Bountiful + Numismatic Bounties as starter income |
-| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties |
+| **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Bountiful + Numismatic Bounties as starter income; **Villager Commerce** Merchant Stalls + Market Ledgers (villagers buy from the shop via a Create stock network) |
+| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties, **Create: Villager Commerce** |
 | **QoL (not chapters)** | Numismatics Utils, Numismatics Calculator |
-| **Adjacent** | Logistics (stock the shelves), Settlement (MCA villagers), Agriculture / Metalworking (goods) |
+| **Adjacent** | Logistics (stock the shelves), Settlement (MCA villagers as customers), Agriculture / Metalworking (goods) |
 
 **Suggested quest beats**
 
@@ -325,7 +344,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 3. Stock a Tradeworks or Numismatics vendor.  
 4. Register on Marketplace; require a customer/player to **travel** to buy.  
 5. Read Stock Market trends; adjust a physical shop.  
-6. Fulfill a delivery-funded sale (cross Logistics).
+6. Fulfill a delivery-funded sale (cross Logistics).  
+7. Bind a Merchant Stall to a Market Ledger and a Create stock network so **villagers buy from the stall** (simulated purchase; payment in Numismatics coins).
 
 **Hard exclusions for quests:** CoinCraft / player minting; auction mailbox delivery; remote checkout.
 
@@ -384,7 +404,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Solo base, ignoring villagers |
 | **Specialized** | MCA Reborn relationships & village life; Bountiful boards as civic jobs; living near CTOV / Towns structures |
 | **Core mods** | MCA Reborn (+ Villager API) |
-| **Supporting** | Bountiful (civic quest faucet), Villager Currency (coin economy in town) |
+| **Supporting** | Bountiful (civic quest faucet), Villager Currency (players buy from villagers), Villager Commerce (villagers buy from player stalls) |
 | **World stage (not SIG)** | CTOV, Towns and Towers, Illager content as threats |
 
 **Suggested quest beats**
@@ -499,6 +519,7 @@ Reward: cosmetic title / monument block
 **Reward philosophy**
 
 - Prefer **tools, site kits, and reputation** over exclusive recipes that delete the baseline.  
+- **Create Core** (0.8.7) uses **bootstrap-kit** item rewards that seed the next step (casings, sheets, brass, precision mechanisms) plus scaling XP. Prefer **use/produce** item tasks for signature outputs; use player-attested **checkmark** tasks when the step is a setup, not a unique item.  
 - Cross-SIG caps should require **physical movement of goods** when Commerce/Logistics are involved.  
 - Do not gate basic survival behind a SIG.
 
@@ -538,14 +559,23 @@ Metalworking ──── Logistics ◄──── Aeronautics
 
 ---
 
-## FTB Quests book structure (suggested)
+## FTB Quests book structure
+
+Shipped / locked lines live in **[QUESTS.md](QUESTS.md)** (15 flat peers; no line gated
+behind another). **Create Core** is in-game as of 0.8.0; **0.8.7** reworked it to
+**12 purpose-driven quests**.
+
+Suggested wrapping around those lines:
 
 1. **Prologue — The World** (non-SIG): Big Globe survival, seasons, climate, first shelter  
-2. **Chapter per SIG** (1–15 as needed; soft SIGs optional)  
+2. **Create Core** (shipped) then one chapter per remaining locked line  
 3. **Interlude — Contracts & Coins** (Logistics + Commerce cross)  
 4. **Epilogue — Capstones** (multi-SIG monuments)
 
-Keep **one questbook** or split **Industry / Society / Transport** volumes — but keep SIG IDs stable so rewards can cross-reference.
+Keep SIG IDs stable so rewards can cross-reference. Quest IDs are SHA-1 of stable keys
+(0.8.1) — regenerating a chapter with the **same keys** does not reset player progress.
+**0.8.7** rewrote Create Core (new keys / fewer quests) — that is a content rewrite,
+not a same-key regen; expect mixed progress if you completed the 0.8.0 / 0.8.1 chapter.
 
 ---
 
@@ -561,7 +591,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics | Aeronautics |
 | Better High Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
-| Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful | Commerce |
+| Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful, Villager Commerce | Commerce |
 | Gunpowder, Gunsmithing, Big Cannons (+ expansions) | Ordnance |
 | More Diseases & Treatments | Medicine |
 | MCA Reborn | Settlement |
@@ -582,6 +612,13 @@ When adding a mod, ask:
 1. Does it create a **baseline → specialized** curve?  
 2. Which existing SIG owns it?  
 3. If none — is it world/fauna/QoL instead?  
-4. Update this file and the questbook chapter list together.
+4. Update this file, [QUESTS.md](QUESTS.md), and the committed `.snbt` together.
 
-See also: [MODLIST.md](MODLIST.md), [CHANGELOG.md](CHANGELOG.md), [Notes.md](Notes.md).
+**FTB Quests is in the pack.** The committed `pack/config/ftbquests/**/*.snbt` is the
+source of truth — regenerate from `bigGlobeAero/build_ftbquests.py`. Do not overwrite
+via in-game edit mode. IDs are deterministic (SHA-1 of stable keys) as of 0.8.1.
+Changing keys (as **0.8.7** did for Create Core) is a content rewrite, not a
+progress-safe regen. **PonderJS is in** — optional scene pointers are fine; do not
+add a KubeJS scripting line.
+
+See also: [QUESTS.md](QUESTS.md), [MODLIST.md](MODLIST.md), [CHANGELOG.md](CHANGELOG.md), [Notes.md](Notes.md).

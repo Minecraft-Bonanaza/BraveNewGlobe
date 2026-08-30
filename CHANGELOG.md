@@ -17,6 +17,13 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
     precision mechanisms). Guidance-only — outputs auto-detect, nothing consumed except the player's choice.
 - Generator (`bigGlobeAero/build_ftbquests.py`) gained checkmark tasks, item-count tasks, and item rewards.
 
+### Documentation
+- Living docs (README / Notes / Maintainer / Client / MODLIST / SPECTRUM / QUESTS) now match
+  pack **0.8.7**. Same **145** mods. Create Core is **12 purpose-driven quests** (use/produce
+  + automate, CAB-style) with bootstrap-kit rewards — not the 0.8.0 15-quest "craft the block"
+  walk. This is a **content rewrite** (new keys / fewer quests), not a same-key regen: expect
+  mixed Create Core progress if you completed the 0.8.0 / 0.8.1 chapter. **No fresh world.**
+
 ## [0.8.6] — 2026-08-30
 
 ### Fixed
