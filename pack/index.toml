@@ -338,7 +338,7 @@ hash = "69437cf244898b5b15a5df8bf8fbe291e6d7f1e880ed9816c532369e5c7d44f4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_core.snbt"
-hash = "40d7f5e1f11738795d22bc5157da7fe14ae2856361e5d7bbec74ffa3fa319e21"
+hash = "1189428935e29626fd2aaa73562bf96894e3ff06af29d6ceca103057545b4e18"
 
 [[files]]
 file = "config/fxntstorage-client.toml"

@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.1] — 2026-08-30
+
+### Changed — deterministic quest IDs
+- Quest generator now derives all FTB Quests IDs (chapter/quest/task/reward) from **stable keys** via
+  SHA-1 instead of random hex. Regenerating a chapter yields identical IDs, so re-runs are
+  **progress-safe** (FTB Quests keys player progress by ID) and cross-chapter reward references stay
+  valid. Create Core's IDs are regenerated once to their stable values.
+
 ## [0.8.0] — 2026-08-30
 
 ### Added — FTB Quests: Create Core line (guidance quest book begins)
