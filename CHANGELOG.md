@@ -3,6 +3,20 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.7] — 2026-08-30
+
+### Changed — Create Core reworked to purpose-driven quests
+- Rebuilt the **Create Core** chapter (15 → **12 quests**) from a "craft the block" walk (Arcane
+  Engineering style) to a **purpose/automation model** (CAB style): each quest has you **use a machine to
+  produce an output or do a task**, with descriptions that explain what it's for and what's next.
+  - Item tasks require signature *outputs* (crushed raw ore, iron sheets, brass, precision mechanism);
+    ambiguous steps (fan, saw, deployer, belts, fluids, capstone automation) use player-attested
+    **checkmark** tasks ("I did it / automated it"). All output IDs verified against Create 6.0.10.
+  - Capstone: build a **passive Andesite Alloy line** — the real Create skill every specialization builds on.
+  - Rewards: scaling XP + **bootstrap-kit items** that seed the next step (casings, sheets, brass,
+    precision mechanisms). Guidance-only — outputs auto-detect, nothing consumed except the player's choice.
+- Generator (`bigGlobeAero/build_ftbquests.py`) gained checkmark tasks, item-count tasks, and item rewards.
+
 ## [0.8.6] — 2026-08-30
 
 ### Fixed
