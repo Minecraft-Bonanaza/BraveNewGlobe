@@ -1222,6 +1222,11 @@ hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
 metafile = true
 
 [[files]]
+file = "mods/ldlib.pw.toml"
+hash = "cae6b61cdfdbfe5c3b4dc3ac48280fef24957bdaa221aa9f94b5f7ff25a3069c"
+metafile = true
+
+[[files]]
 file = "mods/library-ferret.pw.toml"
 hash = "2d80b71c7f4c789b7596a328ac235f88458bc467dfb203f79f15e4379115887e"
 metafile = true
@@ -1294,6 +1299,11 @@ metafile = true
 [[files]]
 file = "mods/oculus-for-simpleclouds.pw.toml"
 hash = "e8c4f89e6e4b4229f12d034d64924d2ada532738f1ac5c44eaae2aa1a9740bc8"
+metafile = true
+
+[[files]]
+file = "mods/owo-lib.pw.toml"
+hash = "3db5943419e6b6f4e33946266be8797230434573bc68dbe3a77d72f19001ae0c"
 metafile = true
 
 [[files]]

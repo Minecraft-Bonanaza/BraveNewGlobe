@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.8.4] — 2026-08-30
+
+### Added / restored — missing libraries
+- **LDLib2** `2.2.37` (CurseForge, NeoForge 1.21.1) — KilaBash rendering/GUI library (CF "LDLib" project
+  ships the `ldlib2-neoforge` jar).
+- **oωo (owo-lib)** `0.12.15.5-beta.1` restored (CurseForge) — was removed in 0.7.18 as a Numismatic
+  Overhaul-only dep, but it's still required by other mods.
+- **PonderJS** — requested but **has no 1.21.1 NeoForge build** on CurseForge or Modrinth (upstream
+  stalled ~1.20). Not added; pending an upstream release or a self-hosted jar.
+
 ## [0.8.3] — 2026-08-30
 
 ### Fixed
