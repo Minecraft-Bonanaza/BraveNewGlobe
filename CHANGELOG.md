@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.2] — 2026-08-31
+
+### Added — Simply Swords + Simply More (combat loot)
+- **Simply Swords** `1.70.2-1.21.1` (NeoForge, CurseForge) — runic/unique weapon set; integrates with
+  the pack's existing Better Combat (listed by Simply Swords as an optional dep).
+- **Simply More** `1.2.3` (NeoForge, CurseForge, file 8228544 — release channel) — addon to Simply Swords
+  adding more weapon types & unique weapons. Pinned to the release NeoForge build (newer `1.3.0_alphaN`
+  builds skipped).
+- New required deps auto-pulled: **Fzzy Config** `0.7.6`, **Simply Tooltips** `0.1.5` (Architectury,
+  Kotlin for Forge, Better Combat already present).
+- No BG compat datapack needed — item/weapon mods, no worldgen/biome-gated content. Candidates to fold
+  into the `LOOT.md` Uncommon/Rare WDA dungeon tiers later.
+
 ## [0.9.1] — 2026-08-31
 
 ### Added — LootJS (dungeon-loot infrastructure)

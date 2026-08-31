@@ -1219,6 +1219,11 @@ hash = "c21c2308684a75cda7dd9d557d129c9f89f49be527da3d5aa675fff444c11f5e"
 metafile = true
 
 [[files]]
+file = "mods/fzzy-config.pw.toml"
+hash = "0b7687a29b0dd4400e6c2db295a81b9543c7275674f8b357f57dc64b9d5f49be"
+metafile = true
+
+[[files]]
 file = "mods/gabous-libs.pw.toml"
 hash = "4ecf1e9c05d18cb06867f01f73a63e44fba3be697334db909b1259edb454d375"
 metafile = true
@@ -1496,6 +1501,21 @@ metafile = true
 [[files]]
 file = "mods/simple-clouds.pw.toml"
 hash = "b5aeca8406e74bb7722b4916dacb304373f64fb38716a70a6976608969ded970"
+metafile = true
+
+[[files]]
+file = "mods/simply-more.pw.toml"
+hash = "fadbaf572d951f9670ffbc5c2157695afc3d40da11626dcbdc6ff105a3f62b20"
+metafile = true
+
+[[files]]
+file = "mods/simply-swords.pw.toml"
+hash = "e963d7f0df4c955e8a96cd9fe716257dd7d6d5ca20a29d52c16fba9ead943f5b"
+metafile = true
+
+[[files]]
+file = "mods/simply-tooltips.pw.toml"
+hash = "891ad3905947e6742a1bf10fbe098457f6cd487641eff26f6da322600fcf1dcd"
 metafile = true
 
 [[files]]
