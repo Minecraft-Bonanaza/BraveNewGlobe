@@ -30,6 +30,15 @@ Currency throughout is **Create: Numismatics** (Spur/Cog/Crown/Sun). Chapters ar
 deterministically from `bigGlobeAero/quest_lines/*.py` via `build_ftbquests.py` (re-runs are
 byte-identical and progress-safe). Includes 3 hand-authored loot-crate reward tables.
 
+### Notes
+- No new mods — still **145**. Quest/config content only (`pack/config/ftbquests/`).
+- **No fresh world** required from 0.7.1 onward.
+- **Create Core is a content rewrite** of the 0.8.7 12-quest checkmark chapter (and the 0.8.0 / 0.8.8
+  titles). Expect mixed or reset Create Core progress. New chapters start empty. Same-key regenerations
+  stay progress-safe; this pass changed keys.
+- Gates are objective task types (item count / mod advancement / dimension / stat). Boss “kills” are
+  advancement-gated — there are no FTB Quests checkmark or kill task types in the book.
+
 ## [0.8.8] — 2026-08-30
 
 ### Fixed

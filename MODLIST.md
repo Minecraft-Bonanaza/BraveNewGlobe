@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
+Human-readable list of every mod in the pack (**145 mods**), grouped by purpose.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -55,6 +55,10 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create Aeronautics: Gyro Stabilizers** — flight stabilization
 - **Create Aeronautics: Throwable Rope Connector** — rope/connection tool
 - **Create Aeronautics: Delivery Required** — delivery contracts & logistics for aircraft contraptions
+  - **Ponder for KubeJS** _(dependency — `ponderjs`; required by Delivery Required)_
+    - **KubeJS** _(dependency)_
+    - **Rhino** _(dependency)_
+    - **Better Advanced Tooltips** _(dependency)_
 - **Create: Aeroworks** — aeronautics expansion
 - **Create: Warnautics** — military/combat aeronautics
 - **Create: Better High Seas** — ships / naval content
@@ -123,6 +127,7 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
 - **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
+- **Create: Villager Commerce** — villagers buy from player shops on Create stock networks (self-hosted jar; CF distribution disabled)
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse
@@ -155,6 +160,9 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **AppleSkin** — hunger/saturation HUD info
 - **Just Enough Items (JEI)** — recipe/item lookup
 - **Mod Menu** — mod list/config screen _(client)_
+- **FTB Quests** — guidance-only quest book (15 chapters / 230 quests as of 0.9.0)
+  - **FTB Library** _(dependency)_
+  - **FTB Teams** _(dependency)_
 
 > **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled
 > together (all ON or all OFF). See [Notes.md](Notes.md).
@@ -184,6 +192,8 @@ Core/support mods depended on by multiple mods above.
 - **Lithostitched** — worldgen structure/modifier library
 - **playerAnimator** — player animation library (Better Combat, MCA, etc.)
 - **[NTGL] NukaTeam's Gun Lib** — firearm content library
+- **LDLib2** — KilaBash rendering/GUI library
+- **oωo (owo-lib)** — library restored in 0.8.4 (still required; was dropped with Numismatic Overhaul)
 
 > Some libraries are listed as _(dependency)_ notes under a single parent mod above rather than here:
 > **Forgified Fabric API** (Sinytra Connector), **Villager API**

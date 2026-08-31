@@ -5,6 +5,8 @@ How to set up the **Brave New Globe** modpack as a player. You do this setup **o
 
 - **Minecraft:** `1.21.1`
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
+- **Pack version:** `0.9.0` (**145** mods) — includes a guidance-only FTB Quests book
+  (15 chapters / 230 quests). Open it in-game from the quests button.
 - **Delivery:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**; after that,
   **every time you launch, the pack pulls the latest mods automatically** — new mods are added, updated
   mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
@@ -63,7 +65,10 @@ so you always get the latest mods, configs, and datapacks. Updates are usually a
   ```
 - **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
   them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **Datapacks** — you do **not** install datapacks manually. packwiz drops them in the instance
+  `datapacks/` folder; **Paxi** is configured to load that base directory. They arrive with the
+  auto-sync.
+- **Upgrading 0.8.x → 0.9.0** — no fresh world. The quest book is new (Create Core was rewritten,
+  so prior Create Core ticks may look mixed or reset). Other chapters start empty.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.
