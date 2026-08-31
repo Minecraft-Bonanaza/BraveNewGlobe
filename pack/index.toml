@@ -845,6 +845,10 @@ file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 
 [[files]]
+file = "kubejs/server_scripts/wda_dungeon_loot.js"
+hash = "024efc72742686f101cfa79227e7ef142eb6eaa4b337ada846da9fdae2214937"
+
+[[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"
 hash = "fee4aee20aa5cce41fbb32ad9b2fa48b123216729e691061970aa54e5f100fc6"
 metafile = true
@@ -1322,6 +1326,11 @@ metafile = true
 [[files]]
 file = "mods/lithostitched.pw.toml"
 hash = "0c52b34fc435e7fe4b2fb6e51897a150d79353e01ab95290387d250e0585950c"
+metafile = true
+
+[[files]]
+file = "mods/lootjs.pw.toml"
+hash = "2bf24ba89ee34b9c0f698a2d3ca2c64eb7676407b56ab311fa91a8dd7a1ad4a9"
 metafile = true
 
 [[files]]

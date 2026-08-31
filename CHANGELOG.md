@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.1] — 2026-08-31
+
+### Added — LootJS (dungeon-loot infrastructure)
+- **LootJS: KubeJS Addon** `3.7.0` (NeoForge 1.21.1, CurseForge) — deps (KubeJS/Rhino/Architectury) already present.
+- Scaffold `kubejs/server_scripts/wda_dungeon_loot.js` for injecting **tiered modpack loot** into When
+  Dungeons Arise chest tables (`dungeons_arise:chests/*`), which are otherwise 100% vanilla. Loot content
+  authored after a modpack-wide item survey.
+
 ## [0.9.0] — 2026-08-31
 
 ### Added
