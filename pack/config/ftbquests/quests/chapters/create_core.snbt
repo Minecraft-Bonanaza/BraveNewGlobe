@@ -16,8 +16,8 @@
 			x: 0.0d
 			y: 0.0d
 			description: [
-				"The base material of everything Create. You'll burn through it — make a stockpile."
-				"Andesite + iron or zinc nuggets in a mixer or by hand."
+				"Andesite Alloy is the base of everything Create -- you'll need stacks of it."
+				"Craft it by hand, or mix andesite + iron/zinc. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
 				{
@@ -43,21 +43,67 @@
 			id: "36B31F20AAFA8FCD"
 		}
 		{
-			title: "Rotation \\& Ore Doubling"
-			icon: "create:millstone"
-			x: -4.0d
+			title: "Get It Spinning"
+			icon: "create:water_wheel"
+			x: -2.0d
 			y: 2.0d
 			description: [
-				"Power a Millstone (or Crushing Wheels) off a Water Wheel and crush RAW ore."
-				"One raw ore yields more than one ingot's worth — this is why you build machines."
-				"Feel the stress: too many machines on too little rotation and it stalls."
+				"Machines run on rotation. Place a Water Wheel in flowing water and connect a shaft."
+				"Watch the Stress meter -- overload a small wheel and everything stalls. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:water_wheel"
+					criterion: ""
+					id: "6A9565A77C1FB9D7"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "41E920C3DB7AFCA0"
+				}
+				{
+					type: "item"
+					item: "create:water_wheel"
+					count: 2
+					id: "BD800999B82763A0"
+				}
+				{
+					type: "item"
+					item: "create:goggles"
+					count: 1
+					id: "EEA4EA39A8D70BAF"
+				}
+			]
+			id: "63131716E238CA91"
+			dependencies: [
+				"36B31F20AAFA8FCD"
+			]
+		}
+		{
+			title: "Ore Doubling"
+			icon: "create:millstone"
+			x: -4.0d
+			y: 4.0d
+			description: [
+				"Build a Millstone and crush RAW ore -- one ore yields more than a single ingot's worth."
+				"Cheap and early. Crushing Wheels (later) do the same job faster and in bulk."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:millstone"
+					criterion: ""
+					id: "64897A5E9426CD36"
+				}
 				{
 					type: "item"
 					item: "create:crushed_raw_iron"
 					count: 8
-					id: "B3C925ABE2CE7D75"
+					id: "08E11DCD07B0E253"
 				}
 			]
 			rewards: [
@@ -75,23 +121,24 @@
 			]
 			id: "4E48BBB9629BC971"
 			dependencies: [
-				"36B31F20AAFA8FCD"
+				"63131716E238CA91"
 			]
 		}
 		{
-			title: "Bulk Processing"
+			title: "Fan Processing"
 			icon: "create:encased_fan"
 			x: -4.0d
-			y: 4.0d
+			y: 6.0d
 			description: [
-				"An Encased Fan blowing through FIRE smelts, through WATER washes, through LAVA melts."
-				"Wash your crushed ore into nuggets, or bulk-smelt for free — no furnace fuel."
+				"An Encased Fan blows through FIRE to smelt, WATER to wash, LAVA to melt, SOUL FIRE to haunt."
+				"Wash your crushed ore into nuggets or bulk-smelt for free. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
 				{
-					type: "checkmark"
-					title: "Smelt or wash in bulk with an Encased Fan"
-					id: "4CEF98551719C0D4"
+					type: "advancement"
+					advancement: "create:fan_processing"
+					criterion: ""
+					id: "E0AC4251ECE77D11"
 				}
 			]
 			rewards: [
@@ -107,54 +154,19 @@
 			]
 		}
 		{
-			title: "Sheets \\& Plating"
-			icon: "create:mechanical_press"
-			x: 0.0d
-			y: 2.0d
-			description: [
-				"Run a Mechanical Press to hammer iron into Sheets."
-				"Sheets feed casings, brass gear, and precision parts — you'll want a steady supply."
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "create:iron_sheet"
-					count: 4
-					id: "9EE3BBEFE3DD4A70"
-				}
-			]
-			rewards: [
-				{
-					type: "xp"
-					xp: 20
-					id: "950F989EC8FF20A4"
-				}
-				{
-					type: "item"
-					item: "create:iron_sheet"
-					count: 4
-					id: "EB067ABF1A67FB53"
-				}
-			]
-			id: "BBBAA0AF347DF928"
-			dependencies: [
-				"36B31F20AAFA8FCD"
-			]
-		}
-		{
-			title: "Casings"
+			title: "Andesite Casing"
 			icon: "create:andesite_casing"
-			x: 4.0d
+			x: 2.0d
 			y: 2.0d
 			description: [
-				"Casing turns bare shafts into real machines — nearly everything ahead needs it."
-				"Strip logs with a Mechanical Saw for the wood, then combine with andesite alloy."
+				"Casing turns bare shafts into real machines -- almost everything ahead needs it."
+				"Strip a log with a Mechanical Saw, then right-click it with Andesite Alloy."
 			]
 			tasks: [
 				{
-					type: "item"
-					item: "create:andesite_casing"
-					count: 4
+					type: "advancement"
+					advancement: "create:andesite_casing"
+					criterion: ""
 					id: "30FAE4AE53DA267E"
 				}
 			]
@@ -177,20 +189,96 @@
 			]
 		}
 		{
-			title: "Alloys — Heated Mixing"
-			icon: "create:mechanical_mixer"
-			x: 4.0d
+			title: "The Mechanical Press"
+			icon: "create:mechanical_press"
+			x: 0.0d
 			y: 4.0d
 			description: [
-				"Put a Blaze Burner under a Basin and mix copper + zinc into Brass."
-				"Brass is Create's second tier — it unlocks the precision machines."
+				"Run a powered Press over a Depot or belt to hammer metal into Sheets."
+				"Sheets feed casings, brass gear and precision parts. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:mechanical_press"
+					criterion: ""
+					id: "D2052FEFFA28268B"
+				}
+				{
+					type: "item"
+					item: "create:iron_sheet"
+					count: 4
+					id: "CCD4947A05AE001A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "950F989EC8FF20A4"
+				}
+				{
+					type: "item"
+					item: "create:iron_sheet"
+					count: 4
+					id: "EB067ABF1A67FB53"
+				}
+			]
+			id: "BBBAA0AF347DF928"
+			dependencies: [
+				"696B345C4624FC2B"
+			]
+		}
+		{
+			title: "Mixing \\& Basins"
+			icon: "create:mechanical_mixer"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"A Mixer over a Basin blends ingredients; add a Blaze Burner beneath for heated recipes."
+				"The heart of Create crafting. (Hold [W] over an item to read its Ponder tutorial.)"
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:mechanical_mixer"
+					criterion: ""
+					id: "34A8EECB5307D147"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "95B5F320E22C502F"
+				}
+			]
+			id: "9FC4ADACF3704A74"
+			dependencies: [
+				"696B345C4624FC2B"
+			]
+		}
+		{
+			title: "The Brass Age"
+			icon: "create:brass_ingot"
+			x: 2.0d
+			y: 6.0d
+			description: [
+				"Mix copper + zinc in a HEATED Basin to make Brass -- Create's second tier."
+				"Brass unlocks precision gear and better machines."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:brass"
+					criterion: ""
+					id: "941F6A3E6F2C22AF"
+				}
 				{
 					type: "item"
 					item: "create:brass_ingot"
 					count: 8
-					id: "828DCFD313601529"
+					id: "CEEB52A17A0DA01F"
 				}
 			]
 			rewards: [
@@ -208,23 +296,24 @@
 			]
 			id: "2FC5EC1D8A945132"
 			dependencies: [
-				"696B345C4624FC2B"
+				"9FC4ADACF3704A74"
 			]
 		}
 		{
 			title: "Sawmilling"
 			icon: "create:mechanical_saw"
-			x: 6.0d
+			x: 4.0d
 			y: 4.0d
 			description: [
-				"A powered Saw cuts logs into extra planks and strips them for casing."
-				"Point it at a tree farm and it fells trees on its own."
+				"A powered Saw cuts logs into more planks and strips them for casing."
+				"Aim it at a tree farm and it fells trees on its own."
 			]
 			tasks: [
 				{
-					type: "checkmark"
-					title: "Cut logs with a Mechanical Saw"
-					id: "CDAA36A85CBDC0DF"
+					type: "advancement"
+					advancement: "create:saw_processing"
+					criterion: ""
+					id: "A3F40AD2D0E45260"
 				}
 			]
 			rewards: [
@@ -242,17 +331,18 @@
 		{
 			title: "The Deployer"
 			icon: "create:deployer"
-			x: 8.0d
+			x: 6.0d
 			y: 4.0d
 			description: [
-				"A Deployer is a mechanical hand — it uses tools and items on the world hands-free."
-				"The workhorse behind most automation you'll build later."
+				"A Deployer is a mechanical hand that uses tools and items on the world for you."
+				"The workhorse behind most automation. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
 				{
-					type: "checkmark"
-					title: "Set up a Deployer to use an item or tool for you"
-					id: "27337B6D74BF1115"
+					type: "advancement"
+					advancement: "create:self_deploying"
+					criterion: ""
+					id: "D8BA5F22B967CDA7"
 				}
 			]
 			rewards: [
@@ -276,45 +366,47 @@
 		{
 			title: "Belts \\& Logistics"
 			icon: "create:belt_connector"
-			x: 10.0d
+			x: 8.0d
 			y: 4.0d
 			description: [
-				"Machines are useless in isolation. Belts carry items; funnels insert and extract."
+				"Belts carry items; funnels insert and extract. Put a funnel on a belt to move goods."
 				"Connect a machine's output straight into storage and let it run."
 			]
 			tasks: [
 				{
-					type: "checkmark"
-					title: "Belt a machine's output into a chest with a Funnel"
-					id: "1906BB296C3542DA"
+					type: "advancement"
+					advancement: "create:belt_funnel_kiss"
+					criterion: ""
+					id: "9763C0C0AF79E6B0"
 				}
 			]
 			rewards: [
 				{
 					type: "xp"
 					xp: 20
-					id: "4FAE6DD9B18F20AC"
+					id: "3C507D0353905932"
 				}
 			]
-			id: "BF9F9C1F4331C001"
+			id: "0DD26C63F9E4228A"
 			dependencies: [
 				"696B345C4624FC2B"
 			]
 		}
 		{
-			title: "Fluids"
+			title: "Fluids \\& Spouts"
 			icon: "create:spout"
 			x: 0.0d
-			y: 4.0d
+			y: 6.0d
 			description: [
-				"Copper-cased fluid gear: a Mechanical Pump pushes fluid through pipes,"
-				"and a Spout fills items (blaze cakes, potions, and more)."
+				"Pump fluids through pipes and fill items with a Spout (blaze cakes, potions, and more)."
+				"Case your fluid machines in Copper. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
 				{
-					type: "checkmark"
-					title: "Pump a fluid through pipes and fill an item with a Spout"
-					id: "700A84B8D49569FE"
+					type: "advancement"
+					advancement: "create:spout"
+					criterion: ""
+					id: "7504BAB729E252E5"
 				}
 			]
 			rewards: [
@@ -336,19 +428,83 @@
 			]
 		}
 		{
-			title: "Precision Mechanism"
-			icon: "create:precision_mechanism"
-			x: 4.0d
-			y: 6.0d
+			title: "Mechanical Crafters"
+			icon: "create:mechanical_crafter"
+			x: 2.0d
+			y: 8.0d
 			description: [
-				"Assemble a Precision Mechanism on Mechanical Crafters (cogwheels + brass + iron sheet)."
-				"It's the gateway component for every advanced Create machine."
+				"Arrange Mechanical Crafters in a grid and feed them to auto-assemble complex items."
+				"This is how you build Precision Mechanisms -- and Crushing Wheels. (Hold [W] over an item to read its Ponder tutorial.)"
 			]
 			tasks: [
 				{
 					type: "item"
-					item: "create:precision_mechanism"
+					item: "create:mechanical_crafter"
+					count: 2
+					id: "23D3FB75A524DC97"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "CB68BF978D31456D"
+				}
+			]
+			id: "8D90BDD2FB1EF407"
+			dependencies: [
+				"2FC5EC1D8A945132"
+			]
+		}
+		{
+			title: "Crushing Wheels"
+			icon: "create:crushing_wheel"
+			x: 4.0d
+			y: 8.0d
+			description: [
+				"A pair of Crushing Wheels out-processes a Millstone -- faster and in bulk."
+				"They're assembled in Mechanical Crafters, so they arrive after them, not before."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:crushing_wheel"
+					criterion: ""
+					id: "580420D2F3A75621"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "3704810AE246F454"
+				}
+			]
+			id: "EE53FCFED4D458DE"
+			dependencies: [
+				"8D90BDD2FB1EF407"
+			]
+		}
+		{
+			title: "Precision Mechanism"
+			icon: "create:precision_mechanism"
+			x: 2.0d
+			y: 10.0d
+			description: [
+				"Assemble a Precision Mechanism in your Mechanical Crafters (cogwheels + brass + iron sheet)."
+				"The gateway component for every advanced Create machine."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:precision_mechanism"
+					criterion: ""
 					id: "5A007C6AD30EF270"
+				}
+				{
+					type: "item"
+					item: "create:precision_mechanism"
+					id: "2E08736EFCEA133D"
 				}
 			]
 			rewards: [
@@ -366,48 +522,7 @@
 			]
 			id: "8C384EC1B510D5E6"
 			dependencies: [
-				"2FC5EC1D8A945132"
-			]
-		}
-		{
-			title: "Automate It"
-			icon: "create:mechanical_arm"
-			x: 4.0d
-			y: 8.0d
-			description: [
-				"The real Create skill isn't crafting a block — it's a line that runs without you."
-				"Build a self-feeding Andesite Alloy factory. Every specialization line builds on this."
-			]
-			tasks: [
-				{
-					type: "item"
-					item: "create:andesite_alloy"
-					count: 64
-					id: "9328F2114E11BB78"
-				}
-				{
-					type: "checkmark"
-					title: "A passive line makes it while you're away"
-					id: "1FA6FED19A03C045"
-				}
-			]
-			rewards: [
-				{
-					type: "xp"
-					xp: 50
-					id: "7147C7849037324B"
-				}
-				{
-					type: "item"
-					item: "create:precision_mechanism"
-					count: 2
-					id: "948083A911F085BF"
-				}
-			]
-			shape: "hexagon"
-			id: "E53E8FCB670277E9"
-			dependencies: [
-				"8C384EC1B510D5E6"
+				"8D90BDD2FB1EF407"
 			]
 		}
 	]

@@ -1,0 +1,595 @@
+{
+	id: "57862512E3EA2849"
+	group: ""
+	order_index: 6
+	filename: "logistics"
+	title: "Logistics \\& Storage"
+	icon: "create:packager"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Cardboard \\& Packages"
+			icon: "create:packager"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Create's logistics run on Cardboard Packages. Craft Cardboard, build a Packager,"
+				"and box up a stack of items into a Package. This is the atom of the whole network."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:packager"
+					criterion: ""
+					id: "0738B8EC10DDFCC4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "D5B68E8714E5DE02"
+				}
+				{
+					type: "item"
+					item: "create:packager"
+					count: 1
+					id: "C875B141777827A8"
+				}
+				{
+					type: "item"
+					item: "create:cardboard"
+					count: 16
+					id: "E7C455FFB51AFF56"
+				}
+			]
+			id: "B52B8BD5D6381841"
+		}
+		{
+			title: "Down the Chute"
+			icon: "create:package"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"Packages ride belts and chutes like any item, and a Packager can throw one down a chute."
+				"Move a package from a Packager into a chute to see parcels flow through your base."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:package_chute_throw"
+					criterion: ""
+					id: "35BA2A1C9D705BCD"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "02CD64924C437185"
+				}
+				{
+					type: "item"
+					item: "create:package_filter"
+					count: 2
+					id: "3DB7EDC82ED000DE"
+				}
+			]
+			id: "A59DDDBB922C1B0B"
+			dependencies: [
+				"B52B8BD5D6381841"
+			]
+		}
+		{
+			title: "Frogport Delivery"
+			icon: "create:package_frogport"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"A Package Frogport and colored Postboxes deliver packages point-to-point by address --"
+				"no belts required. Set an address and the frogs hop your parcels across the base."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:frogport"
+					criterion: ""
+					id: "7E02F9F12F0770C8"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "02A4E8615BB299F9"
+				}
+				{
+					type: "item"
+					item: "create:package_frogport"
+					count: 1
+					id: "79357C02891B112D"
+				}
+			]
+			id: "ED8C21908C94F23D"
+			dependencies: [
+				"B52B8BD5D6381841"
+			]
+		}
+		{
+			title: "The Stock Network"
+			icon: "create:stock_ticker"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Wire inventories together with Stock Links, then read and order from all of them at a"
+				"Stock Ticker -- one searchable requester screen for your entire storage. Place 2+ links."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:stock_ticker"
+					criterion: ""
+					id: "DB0EE7B850C09D63"
+				}
+				{
+					type: "item"
+					item: "create:stock_link"
+					count: 2
+					id: "7AC011C97763738A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "302AFAFB591BCFE9"
+				}
+				{
+					type: "item"
+					item: "create:stock_link"
+					count: 4
+					id: "6F89382777EC240C"
+				}
+			]
+			id: "D446736D1532AC6D"
+			dependencies: [
+				"ED8C21908C94F23D"
+			]
+		}
+		{
+			title: "Auto-Request"
+			icon: "create:redstone_requester"
+			x: -2.0d
+			y: 3.0d
+			description: [
+				"A Redstone Requester pulls a set list of items from the network on a redstone pulse --"
+				"the backbone of keep-stocked automation and remote crafting orders."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:redstone_requester"
+					id: "D283EDA806EDBB90"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "D971731DE28E14ED"
+				}
+			]
+			id: "DE7666CC1F5A5BB6"
+			dependencies: [
+				"D446736D1532AC6D"
+			]
+		}
+		{
+			title: "Factory Gauge Auto-Crafting"
+			icon: "create:factory_gauge"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Factory Gauges chain machines into an auto-crafting factory: request a complex item and"
+				"the network packages and assembles the ingredients on demand. Create's logistics endgame."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:factory_gauge"
+					criterion: ""
+					id: "05108FB0C6397AA2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "CF901648CE51EC2E"
+				}
+				{
+					type: "item"
+					item: "create:factory_gauge"
+					count: 2
+					id: "5135F9AA7BB755A8"
+				}
+			]
+			id: "A9C4DA11F30C9B6C"
+			dependencies: [
+				"D446736D1532AC6D"
+			]
+		}
+		{
+			title: "Beyond Vanilla: Factory Logistics"
+			icon: "create_factory_logistics:network_link"
+			x: -3.0d
+			y: 5.0d
+			description: [
+				"The Factory Logistics addon extends Create's network with addressable Network Links"
+				"for larger, multi-hub setups. Place at least two to bridge distant stock networks."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_factory_logistics:network_link"
+					count: 2
+					id: "1284FD7056102E57"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "279FC3532FC9FEF6"
+				}
+				{
+					type: "item"
+					item: "create_factory_logistics:composite_package"
+					count: 8
+					id: "1139F1D62D80ED1D"
+				}
+			]
+			id: "5C94C5D82FFF1E11"
+			dependencies: [
+				"A9C4DA11F30C9B6C"
+			]
+		}
+		{
+			title: "Fluids in the Pipeline"
+			icon: "create_factory_logistics:fluid_mechanism"
+			x: -4.5d
+			y: 6.0d
+			description: [
+				"Fluids ship too. A Jar Packager bottles liquids into shippable jars and the Factory"
+				"Fluid Gauge tracks network fluid levels -- extend the package network to fluids."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_factory_logistics:fluid_mechanism"
+					id: "B1C5B60241BC5E66"
+				}
+				{
+					type: "item"
+					item: "create_factory_logistics:jar_packager"
+					id: "C5C0BFA9221D0BAF"
+				}
+				{
+					type: "item"
+					item: "create_factory_logistics:factory_fluid_gauge"
+					id: "97263AABC49E68C2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "0ADC5ADB7E001C40"
+				}
+				{
+					type: "item"
+					item: "create_factory_logistics:jar"
+					count: 16
+					id: "9566BB0A885666BF"
+				}
+			]
+			id: "1E3F0B27712B4822"
+			dependencies: [
+				"5C94C5D82FFF1E11"
+			]
+		}
+		{
+			title: "Storage Network"
+			icon: "fxntstorage:storage_controller"
+			x: 3.0d
+			y: 3.0d
+			description: [
+				"Raw chests don't scale. A Storage Controller unifies every linked box into one"
+				"searchable inventory; the Storage Interface is the access/automation port."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "fxntstorage:storage_controller"
+					id: "4F25EE71444700FA"
+				}
+				{
+					type: "item"
+					item: "fxntstorage:storage_interface"
+					id: "92A500991671E001"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "45620FEC8E8E9C05"
+				}
+				{
+					type: "item"
+					item: "fxntstorage:storage_box"
+					count: 4
+					id: "6D2D1DFDE59E9D6D"
+				}
+			]
+			id: "5EDDBA00254E4FCE"
+			dependencies: [
+				"D446736D1532AC6D"
+			]
+		}
+		{
+			title: "More Than It Looks"
+			icon: "fxntstorage:storage_box_capacity_upgrade"
+			x: 4.5d
+			y: 4.0d
+			description: [
+				"Capacity, Compacting and Void upgrades multiply a box's throughput. The Reserve Box"
+				"keeps a minimum on hand and pushes only surplus downstream -- a buffer valve."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "fxntstorage:storage_box_capacity_upgrade"
+					count: 2
+					id: "690E2AC09B8DED95"
+				}
+				{
+					type: "item"
+					item: "fxntstorage:reserve_storage_box"
+					id: "EFE9267C2679773E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "6918531BC9EA9514"
+				}
+			]
+			id: "7BB6B7CF2187ECD8"
+			dependencies: [
+				"5EDDBA00254E4FCE"
+			]
+		}
+		{
+			title: "Carry It With You"
+			icon: "fxntstorage:backpack"
+			x: 2.5d
+			y: 4.0d
+			description: [
+				"Storage isn't only stationary. The Backpack takes upgrades (Magnet, Item Pickup,"
+				"Crafting, Feeder) so your logistics travel with you."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "fxntstorage:backpack"
+					id: "7087D0C36A766734"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "86554965A81810A3"
+				}
+			]
+			id: "9E1A5CDF7F767BC4"
+			dependencies: [
+				"5EDDBA00254E4FCE"
+			]
+		}
+		{
+			title: "Freight by Air \\& Rail"
+			icon: "create_aeronautics_automated_logistics:airship_station"
+			x: 2.0d
+			y: 5.0d
+			description: [
+				"Move packages beyond one base: an Airship Station + Logistics Terminal map your routes,"
+				"and a Ship Transponder records a vehicle's stops so it hauls freight automatically."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:airship_station"
+					id: "23A36FBA8CC9C19F"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:logistics_terminal"
+					id: "B6DB591DCFA50072"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:ship_transponder"
+					id: "6566D0096CEA53A1"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "4ED4A17F9E3BA51E"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:logistics_terminal"
+					count: 1
+					id: "8424056BF6166DF4"
+				}
+			]
+			id: "2EB184E6A5B32345"
+			dependencies: [
+				"D446736D1532AC6D"
+			]
+		}
+		{
+			title: "Advanced Routing"
+			icon: "create_aeronautics_automated_logistics:train_station"
+			x: 3.5d
+			y: 6.0d
+			description: [
+				"Simurail Stations run trains the same way. The Advanced Transponder exposes redstone"
+				"ports for dock + drive intent, so you can sequence a mixed air-and-rail freight web."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:train_station"
+					id: "E955851B4DA3D0D1"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:advanced_transponder"
+					id: "435FC73B6323AD82"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "9F342CC2C9BFF080"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:ship_transponder"
+					count: 2
+					id: "0ABD9D50489AB07F"
+				}
+			]
+			id: "25BE6B9E74BDE00E"
+			dependencies: [
+				"2EB184E6A5B32345"
+			]
+		}
+		{
+			title: "Distribution Center"
+			icon: "create:package"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"A real hub moves parcels by the hundreds. Automate Packagers + Frogports and push"
+				"512 Cardboard Packages through the network. Cheap per unit -- brutal by hand."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:package"
+					count: 512
+					id: "FB1ACFB411E1B635"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "40363497DC1EA241"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "7A790FFB66A25D05"
+				}
+			]
+			id: "7C65DBCB21D29A0A"
+			dependencies: [
+				"A9C4DA11F30C9B6C"
+			]
+		}
+		{
+			title: "The Warehouse"
+			icon: "fxntstorage:hardened_storage_box"
+			x: 4.5d
+			y: 6.0d
+			description: [
+				"Top-tier boxes, wall to wall. Assemble 32 Hardened Storage Boxes -- a warehouse spine"
+				"that only mass iron/brass production and automated packaging make practical."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "fxntstorage:hardened_storage_box"
+					count: 32
+					id: "3A16D0066921DADC"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "2848BC79E1255D13"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "67DAF2A790B06A0A"
+				}
+			]
+			id: "A787961032F2893A"
+			dependencies: [
+				"7BB6B7CF2187ECD8"
+				"9E1A5CDF7F767BC4"
+			]
+		}
+		{
+			title: "Run the Fleet"
+			icon: "create_aeronautics_automated_logistics:advanced_transponder"
+			x: 2.0d
+			y: 7.0d
+			description: [
+				"One vehicle is a demo; a fleet is an economy. Equip 8 Advanced Transponders --"
+				"enough hardware to run eight self-routing freight vehicles across your network."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:advanced_transponder"
+					count: 8
+					id: "5569B9D2CD266925"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "1CC1FBF0C18EFAFB"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "58EE7F9A7CBFB507"
+				}
+			]
+			id: "C55221061520C449"
+			dependencies: [
+				"25BE6B9E74BDE00E"
+			]
+		}
+	]
+}

@@ -1,0 +1,645 @@
+{
+	id: "727F627A5048ACB1"
+	group: ""
+	order_index: 2
+	filename: "aeronautics"
+	title: "Aeronautics"
+	icon: "aeronautics:white_envelope"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Lighter Than Air"
+			icon: "aeronautics:white_envelope"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Airships float on hot air. A **Hot Air Envelope** is your lift bag — craft one to begin."
+				"Any color works (aeronautics:*_envelope). You'll need Create andesite/kinetics running first; see Ponder \\& REI."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "aeronautics:white_envelope"
+					id: "FB1C7F43B724A1A7"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "768B2C06EA7E4544"
+				}
+				{
+					type: "item"
+					item: "aeronautics:levitite_blend"
+					count: 2
+					id: "574B573EDCAAF8C5"
+				}
+			]
+			id: "7BD004CA3CCB5696"
+		}
+		{
+			title: "Light the Burner"
+			icon: "aeronautics:adjustable_burner"
+			x: -1.0d
+			y: 1.0d
+			description: [
+				"A **Hot Air Burner** heats the envelope to generate lift. Mount it under the envelope."
+				"More burners = more lift. Right-click to adjust the flame."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "aeronautics:adjustable_burner"
+					id: "B86D72CA6442C274"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "70DFF3637C1F0A1A"
+				}
+				{
+					type: "item"
+					item: "aeronautics:wooden_propeller"
+					count: 1
+					id: "80CE6F6C92F2FE7D"
+				}
+			]
+			id: "800F51E6D22FCBCB"
+			dependencies: [
+				"7BD004CA3CCB5696"
+			]
+		}
+		{
+			title: "Give It a Spin"
+			icon: "aeronautics:wooden_propeller"
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"Lift gets you up; thrust gets you *somewhere*. A **Propeller** on a **Propeller Bearing** converts rotation into forward push."
+				"Andesite and Smart propellers come later for more power."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "aeronautics:wooden_propeller"
+					id: "C95F20DC6BA9E2B2"
+				}
+				{
+					type: "item"
+					item: "aeronautics:propeller_bearing"
+					id: "D8133D254C432B5B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "DF6DE0730D9BE00A"
+				}
+				{
+					type: "item"
+					item: "aeronautics:propeller_bearing"
+					count: 1
+					id: "CE8C8D74902A882A"
+				}
+			]
+			id: "118C625765B66E4B"
+			dependencies: [
+				"7BD004CA3CCB5696"
+			]
+		}
+		{
+			title: "Assemble the Physics"
+			icon: "simulated:engine_assembly"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"A flying airship is a **physics contraption**, not a static Create contraption. The **Physics Assembler** turns your build into a movable sub-level."
+				"The **Engine Assembly** ties your rotational power into the physics ship; a **Handle** lets you climb aboard and pilot."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:physics_assembler"
+					id: "69EC74C4AD8B2DDA"
+				}
+				{
+					type: "item"
+					item: "simulated:engine_assembly"
+					id: "C7F797A838F291E7"
+				}
+				{
+					type: "item"
+					item: "simulated:iron_handle"
+					id: "9AE5DDD4C86F92B3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "052AB746C6CD4E09"
+				}
+				{
+					type: "item"
+					item: "simulated:contraption_diagram"
+					count: 1
+					id: "A27A75D1012FAFDE"
+				}
+			]
+			id: "C345F4A5F9275CBA"
+			dependencies: [
+				"800F51E6D22FCBCB"
+				"118C625765B66E4B"
+			]
+		}
+		{
+			title: "In Thrust We Trust"
+			icon: "aeronautics:andesite_propeller"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Power your propeller and feel it bite the air. This fires once your propeller actually pushes the ship."
+				"If it won't move, check the bearing axis and that the engine assembly is fed rotation."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aeronautics:in_thrust_we_trust"
+					criterion: ""
+					id: "C96DC8C59B95E662"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "E03B05E34CD4964F"
+				}
+				{
+					type: "item"
+					item: "aeronautics:andesite_propeller"
+					count: 2
+					id: "9E0CB17CE3307B9E"
+				}
+			]
+			id: "6D71BACAB60B090E"
+			dependencies: [
+				"C345F4A5F9275CBA"
+			]
+		}
+		{
+			title: "Must Come Up"
+			icon: "aeronautics:aviators_goggles"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Assemble with the Physics Assembler, board the handle, and light the burner — and rise. **This is your first real flight.**"
+				"Fly safe: physics ships fall if the envelope loses heat."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "simulated:must_come_up"
+					criterion: ""
+					id: "AB46585D885998FA"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "0D3658D910C068C1"
+				}
+				{
+					type: "item"
+					item: "aeronautics:aviators_goggles"
+					count: 1
+					id: "B3FE1FD961D11531"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "3B231ADE48BD0596"
+				}
+			]
+			id: "230DCCC9417DB294"
+			dependencies: [
+				"6D71BACAB60B090E"
+			]
+		}
+		{
+			title: "Take the Wheel"
+			icon: "simulated:steering_wheel"
+			x: -2.0d
+			y: 5.0d
+			description: [
+				"A **Steering Wheel** and **Throttle Lever** give you real pilot controls instead of hoping for the best."
+				"Simulated's unpowered-steering rig lets you turn without spending rotation."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:steering_wheel"
+					id: "11743653225048E0"
+				}
+				{
+					type: "item"
+					item: "simulated:throttle_lever"
+					id: "F5889193E6B5CBDC"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "2E3E08D02341302A"
+				}
+				{
+					type: "item"
+					item: "simulated:throttle_lever"
+					count: 1
+					id: "0BB2C624C576E534"
+				}
+			]
+			id: "853F043F755577CE"
+			dependencies: [
+				"230DCCC9417DB294"
+			]
+		}
+		{
+			title: "Pitch \\& Yaw"
+			icon: "create_aero_radar:mechanical_yaw_controller"
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"**Mechanical Pitch/Yaw Controllers** let the ship hold an angle automatically. Pair with a **Track Controller** to lock a heading."
+				"Auto Pitch/Yaw Controllers (create_radar:*) are the radar-driven upgrade path."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_aero_radar:mechanical_pitch_controller"
+					id: "A9B162E07F01CB09"
+				}
+				{
+					type: "item"
+					item: "create_aero_radar:mechanical_yaw_controller"
+					id: "1C2F048EB694734D"
+				}
+				{
+					type: "item"
+					item: "create_radar:track_controller"
+					id: "1A74136EC464CBC4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "4542E0FEDF7D41E3"
+				}
+				{
+					type: "item"
+					item: "create_radar:track_controller"
+					count: 1
+					id: "9FF6F93E83BBD04C"
+				}
+			]
+			id: "D6C59CD14EB4427E"
+			dependencies: [
+				"853F043F755577CE"
+			]
+		}
+		{
+			title: "Catch the Wind"
+			icon: "simulated:white_symmetric_sail"
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"**Symmetric Sails** add passive lift/drag surfaces to your frame — cheaper than pouring on more burners."
+				"They come in every dye color (simulated:*_symmetric_sail)."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:white_symmetric_sail"
+					count: 4
+					id: "0CDB779BF5C62E27"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "041EAF449D17C58D"
+				}
+				{
+					type: "item"
+					item: "simulated:white_symmetric_sail"
+					count: 4
+					id: "AEED8402439AC3D9"
+				}
+			]
+			id: "1D874022D299E710"
+			dependencies: [
+				"230DCCC9417DB294"
+			]
+		}
+		{
+			title: "Steady As She Goes"
+			icon: "simulated:gyroscopic_mechanism"
+			x: 2.0d
+			y: 5.0d
+			description: [
+				"A **Gyroscopic Mechanism** stabilizes the ship so it stops pitching and rolling on its own."
+				"Also enables the Gyroscopic Propeller Bearing for self-leveling thrust."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:gyroscopic_mechanism"
+					id: "9300B9B977BF6CBD"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "996CEFD21336E41C"
+				}
+				{
+					type: "item"
+					item: "simulated:gyroscopic_mechanism"
+					count: 1
+					id: "99112D9F15DA0735"
+				}
+			]
+			id: "E0EB404AAA95E578"
+			dependencies: [
+				"230DCCC9417DB294"
+			]
+		}
+		{
+			title: "Eyes In The Sky"
+			icon: "create_radar:plane_radar"
+			x: -1.0d
+			y: 7.0d
+			description: [
+				"A **Plane Radar** on a **Radar Bearing** feeds a **Monitor** so you can see terrain and other ships. A **Navigation Table** plots your course."
+				"Navigation only — targeting/fire-control radar belongs to the Cannons line."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_radar:plane_radar"
+					id: "86EE3E4883D1DB5E"
+				}
+				{
+					type: "item"
+					item: "create_radar:monitor"
+					id: "3B034DF303764139"
+				}
+				{
+					type: "item"
+					item: "create_radar:radar_bearing"
+					id: "417317DDEE2B5C9C"
+				}
+				{
+					type: "item"
+					item: "simulated:navigation_table"
+					id: "C15622698D7C24A5"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "36390E739F110FBC"
+				}
+				{
+					type: "item"
+					item: "create_radar:monitor"
+					count: 1
+					id: "847C2003A5B34977"
+				}
+			]
+			id: "414B7A69EA2E3B4D"
+			dependencies: [
+				"D6C59CD14EB4427E"
+			]
+		}
+		{
+			title: "Airship Logistics"
+			icon: "create_aeronautics_automated_logistics:airship_station"
+			x: -1.0d
+			y: 8.0d
+			description: [
+				"Build an **Airship Station** and **Logistics Terminal**, then tag ships with a **Vehicle Transponder** to run automated cargo routes."
+				"This is the airship equivalent of train logistics — schedule ships between stations."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:airship_station"
+					id: "0D10EB2A52A1C501"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:logistics_terminal"
+					id: "A6B171980EBC97EF"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:ship_transponder"
+					id: "A8FAD953C87702F9"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "2982C4B5FB423FE4"
+				}
+				{
+					type: "item"
+					item: "create_aeronautics_automated_logistics:logistics_terminal"
+					count: 1
+					id: "D503CA1CB97B3BAD"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 5
+					id: "3A56DA110D882BB8"
+				}
+			]
+			id: "FB633B3F802ACE69"
+			dependencies: [
+				"414B7A69EA2E3B4D"
+			]
+		}
+		{
+			title: "The Grand Envelope"
+			icon: "aeronautics:white_envelope"
+			x: 1.0d
+			y: 7.0d
+			description: [
+				"A dreadnought of the skies needs a *cathedral* of lift. Amass **48 envelopes**, **24 encased shafts** to drive them,"
+				"and **12 burners** to keep them all hot. Nobody hand-crafts this -- it's a levitite-blend factory's output."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "aeronautics:white_envelope"
+					count: 48
+					id: "181074B470910192"
+				}
+				{
+					type: "item"
+					item: "aeronautics:white_envelope_encased_shaft"
+					count: 24
+					id: "A26F2FD358864EE9"
+				}
+				{
+					type: "item"
+					item: "aeronautics:adjustable_burner"
+					count: 12
+					id: "BD40598C47150E1D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "FEB4543B9CF711A5"
+				}
+				{
+					type: "item"
+					item: "aeronautics:white_envelope"
+					count: 16
+					id: "479A9E48AB1A2117"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "7AD17D43751977AC"
+				}
+			]
+			id: "A98FF9EA51B36198"
+			dependencies: [
+				"1D874022D299E710"
+				"FB633B3F802ACE69"
+			]
+		}
+		{
+			title: "Engine Room"
+			icon: "simulated:engine_assembly"
+			x: 1.0d
+			y: 8.0d
+			description: [
+				"A flagship runs on a real engine room. Line the hull with **16 engine assemblies**, **16 Smart Propellers**,"
+				"**12 gyroscopic bearings**, and **8 gyros** -- a self-leveling powerplant that shrugs off the thin air up high."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:engine_assembly"
+					count: 16
+					id: "1B5BE471027B95E1"
+				}
+				{
+					type: "item"
+					item: "aeronautics:smart_propeller"
+					count: 16
+					id: "F27CC5304745A544"
+				}
+				{
+					type: "item"
+					item: "aeronautics:gyroscopic_propeller_bearing"
+					count: 12
+					id: "2C2D7F5D812E87DB"
+				}
+				{
+					type: "item"
+					item: "simulated:gyroscopic_mechanism"
+					count: 8
+					id: "9B04EAEAD90D3840"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "9A538709FF5CFFE1"
+				}
+				{
+					type: "item"
+					item: "aeronautics:smart_propeller"
+					count: 4
+					id: "A3B2A7E067F1EE38"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 5
+					id: "9C2D44107170CC91"
+				}
+			]
+			id: "8D46B0E50400FAC9"
+			dependencies: [
+				"E0EB404AAA95E578"
+				"A98FF9EA51B36198"
+			]
+		}
+		{
+			title: "Head In The Clouds"
+			icon: "aeronautics:pearlescent_levitite"
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"Take your heavy lifter up past **Y700** and dock at the floating sky structures. **This is the summit of the line.**"
+				"Watch your burners on the way up — thin air is no place to run cold."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aeronautics:head_in_the_clouds"
+					criterion: ""
+					id: "8098B16C380AA27F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "F2B50386B803DC36"
+				}
+				{
+					type: "item"
+					item: "aeronautics:pearlescent_levitite"
+					count: 4
+					id: "035F641F810CDB38"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 5
+					id: "6DA796032B0508B8"
+				}
+			]
+			id: "C8EB4DE8D21C6493"
+			dependencies: [
+				"8D46B0E50400FAC9"
+			]
+		}
+	]
+}

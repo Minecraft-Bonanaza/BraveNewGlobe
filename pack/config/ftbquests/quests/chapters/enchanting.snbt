@@ -1,0 +1,238 @@
+{
+	id: "E3D3C874EDF90134"
+	group: ""
+	order_index: 7
+	filename: "enchanting"
+	title: "Industrial Enchanting"
+	icon: "create_enchantment_industry:blaze_enchanter"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "The Blaze's Handbook"
+			icon: "create_enchantment_industry:blazes_enchanting_handbook"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Enchantment Industry turns XP into a fluid and enchanting into a production line."
+				"Get into the mod (the Blaze's Enchanting Handbook is your guide) to start."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create_enchantment_industry:root"
+					criterion: ""
+					id: "71AB72BC7F9EA701"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "775424E76E9F7FDF"
+				}
+			]
+			id: "D6AE550608EEB376"
+		}
+		{
+			title: "Blaze Enchanter"
+			icon: "create_enchantment_industry:blaze_enchanter"
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"Feed a Blaze Enchanter Liquid Experience and it enchants items automatically —"
+				"no more grinding levels at a table. Build one and enchant your first item with it."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create_enchantment_industry:blazing_enchantment"
+					criterion: ""
+					id: "2AB8724D76D8B692"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "7D6C54CC990636FC"
+				}
+				{
+					type: "item"
+					item: "create_enchantment_industry:blaze_enchanter"
+					count: 1
+					id: "C1E5FE7879BF538A"
+				}
+			]
+			id: "99080684BCC261FF"
+			dependencies: [
+				"D6AE550608EEB376"
+			]
+		}
+		{
+			title: "Bottling Experience"
+			icon: "create_enchantment_industry:experience_bucket"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Liquid Experience is the fuel of the whole line. Produce and store it — an"
+				"Experience Hatch/Lantern and a fluid tank turn mob XP into an automatable resource."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create_enchantment_industry:experienced_engineer"
+					criterion: ""
+					id: "06FFA31697D53144"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "7E483ED49AB819E4"
+				}
+			]
+			id: "EAA666138205FB45"
+			dependencies: [
+				"99080684BCC261FF"
+			]
+		}
+		{
+			title: "Grind It Back"
+			icon: "create_enchantment_industry:mechanical_grindstone"
+			x: -2.0d
+			y: 4.5d
+			description: [
+				"The Mechanical Grindstone + Grindstone Drain disenchant items and recover their"
+				"XP as fluid — a closed loop. Junk enchants become feedstock for good ones."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create_enchantment_industry:magic_unbinding"
+					criterion: ""
+					id: "FF9A513672C13980"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "9CBE0B75EC34317D"
+				}
+				{
+					type: "item"
+					item: "create_enchantment_industry:grindstone_drain"
+					count: 1
+					id: "528F88F31F7D0110"
+				}
+			]
+			id: "CD4C5E5C065D31CC"
+			dependencies: [
+				"EAA666138205FB45"
+			]
+		}
+		{
+			title: "Print to Order"
+			icon: "create_enchantment_industry:printer"
+			x: 2.0d
+			y: 4.5d
+			description: [
+				"The Printer copies written and enchanted books from Liquid Experience, letting you"
+				"duplicate a target enchantment on demand instead of gambling at a table."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create_enchantment_industry:great_publisher"
+					criterion: ""
+					id: "9B6963ACF329E2B0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "08F4FBB1F68A702E"
+				}
+			]
+			id: "DD124BADC55742EB"
+			dependencies: [
+				"EAA666138205FB45"
+			]
+		}
+		{
+			title: "Everchant Assembly"
+			icon: "minecraft:enchanted_book"
+			x: 2.0d
+			y: 6.0d
+			description: [
+				"A publishing house, not a wizard's desk. Automate the Printer to stamp out 64"
+				"enchanted books — a full stack of made-to-order enchantments."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "minecraft:enchanted_book"
+					count: 64
+					id: "AB334DAE165ABB01"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "B976DE00D903E2A6"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "4F9FE645599C199D"
+				}
+			]
+			id: "64DEC0733C53DBAD"
+			dependencies: [
+				"DD124BADC55742EB"
+			]
+		}
+		{
+			title: "Liquid Fortune"
+			icon: "create_enchantment_industry:super_experience_block"
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"Condense your XP economy into 16 Blocks of Super Experience — proof of an"
+				"industrial-scale experience farm feeding the enchanting line."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_enchantment_industry:super_experience_block"
+					count: 16
+					id: "85C1BDD18236CC59"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "B54E04959EF64F79"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "D881CCA0891E56F7"
+				}
+			]
+			id: "7B758FA92023B296"
+			dependencies: [
+				"CD4C5E5C065D31CC"
+			]
+		}
+	]
+}

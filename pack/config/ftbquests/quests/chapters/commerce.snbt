@@ -1,0 +1,515 @@
+{
+	id: "79F8E1EDCD9CB900"
+	group: ""
+	order_index: 8
+	filename: "commerce"
+	title: "Commerce"
+	icon: "numismatics:sun"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Loose Change"
+			icon: "numismatics:spur"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Create: Numismatics money runs on six coins: Spur < Bevel < Sprocket < Cog < Crown < Sun."
+				"Earn your first Spur -- from mob loot, chests, or selling to a villager -- to open the economy."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "numismatics:spur"
+					id: "A7F1DE2E53C8D8B2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "4CD337D5CEFDE0F5"
+				}
+				{
+					type: "item"
+					item: "numismatics:spur"
+					count: 8
+					id: "744C86DADC0B8EDF"
+				}
+			]
+			id: "E27B806169E8C9B1"
+		}
+		{
+			title: "The Cash Register"
+			icon: "numismatics:andesite_depositor"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"A Depositor takes payment: power it and it pays coins into a linked account."
+				"It's how a Create shop charges customers automatically -- the register behind every stall."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "numismatics:andesite_depositor"
+					id: "0F6698F446D848DE"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "1F2B0386FEB8CE44"
+				}
+				{
+					type: "item"
+					item: "numismatics:spur"
+					count: 16
+					id: "0309304C01C1D222"
+				}
+			]
+			id: "629ECA9D89E3D03B"
+			dependencies: [
+				"E27B806169E8C9B1"
+			]
+		}
+		{
+			title: "Open a Vendor"
+			icon: "numismatics:vendor"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"A Vendor is an automated shop block: stock it, set a coin price, and anyone can buy from it."
+				"Your first passive income -- it sells while you're away."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "numismatics:vendor"
+					id: "FFA866AAA19584E2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "FCF5F4D0A8063D64"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 1
+					id: "B7C04B3B682B5599"
+				}
+			]
+			id: "2468513E8135D426"
+			dependencies: [
+				"E27B806169E8C9B1"
+			]
+		}
+		{
+			title: "Post a Notice"
+			icon: "bountiful:bountyboard"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"Craft and place a Bounty Board -- the town's job wall. Villagers post work;"
+				"you take it, deliver, and coins plus rewards follow."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "bountiful:bountyboard"
+					id: "2C8C29C9E303EE5C"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "14D423E3D7B24A1D"
+				}
+				{
+					type: "item"
+					item: "numismatics:spur"
+					count: 16
+					id: "42CC60FB68723955"
+				}
+			]
+			id: "A194009E76529DAC"
+			dependencies: [
+				"E27B806169E8C9B1"
+			]
+		}
+		{
+			title: "Open a Bank"
+			icon: "numismatics:blaze_banker"
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"The Blaze Banker holds your balance; a Bank Terminal plus a Bank Card let you pay from your"
+				"account anywhere -- no coins in your pockets. This is real cashless commerce."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "numismatics:blaze_banker"
+					id: "9CD104BCBB5EE5D5"
+				}
+				{
+					type: "item"
+					item: "numismatics:bank_terminal"
+					id: "5233D0D7F2B5300B"
+				}
+				{
+					type: "item"
+					item: "numismatics:white_card"
+					id: "7A6284B2617D12DF"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "E124CB8CEA776F9C"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 4
+					id: "459AA2261C50EF5D"
+				}
+			]
+			id: "A180E9C6E9491EFA"
+			dependencies: [
+				"629ECA9D89E3D03B"
+			]
+		}
+		{
+			title: "Villager Commerce"
+			icon: "createvillagercommerce:merchant_stall"
+			x: 3.0d
+			y: 2.0d
+			description: [
+				"Assign a villager to a Merchant Stall and it trades for you automatically --"
+				"villager-run storefronts that restock and sell without you standing there."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createvillagercommerce:merchant_stall"
+					id: "01F7FA88780BD302"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "4E9B4A4A2589D2E9"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 2
+					id: "474C2A92F3870E09"
+				}
+			]
+			id: "C528ECD9C92941D1"
+			dependencies: [
+				"2468513E8135D426"
+			]
+		}
+		{
+			title: "Taking the Job"
+			icon: "bountiful:bountyboard"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Right-click a bounty on the board to accept it. The board tracks what you owe"
+				"and what you'll be paid -- deliver before it expires."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "bountiful:bountiful/bounty_taken"
+					criterion: ""
+					id: "51EC50DA67E43327"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "3D6AB6E105DF973D"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 1
+					id: "779AA75CE1C3B164"
+				}
+			]
+			id: "F469983573FB6BA9"
+			dependencies: [
+				"A194009E76529DAC"
+			]
+		}
+		{
+			title: "Contract Fulfilled"
+			icon: "numismatics:cog"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Hand in a completed bounty. This is the core loop: take work, gather what's asked,"
+				"cash out. Repeat it and you'll never be broke."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "bountiful:bountiful/bounty_complete"
+					criterion: ""
+					id: "DF148A3506967853"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "3472119CCD490087"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "DA558DFAB91ABB24"
+				}
+			]
+			id: "FC08BC7476FC06D3"
+			dependencies: [
+				"F469983573FB6BA9"
+			]
+		}
+		{
+			title: "Errand Runner"
+			icon: "minecraft:chest"
+			x: -1.5d
+			y: 4.0d
+			description: [
+				"Complete a fetch-style bounty -- the board wants specific items delivered."
+				"Keep a stocked storage room and these become easy money."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "bountiful:bountiful/fetch_quest"
+					criterion: ""
+					id: "DBB2B0130BD60B2A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "771867A40413FE54"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 2
+					id: "FE1D477700F5BAE4"
+				}
+			]
+			id: "969073CA0DB01802"
+			dependencies: [
+				"FC08BC7476FC06D3"
+			]
+		}
+		{
+			title: "Beat the Clock"
+			icon: "minecraft:clock"
+			x: 1.5d
+			y: 4.0d
+			description: [
+				"Finish a bounty under time pressure. Rush orders pay more but punish the slow --"
+				"line up your materials before you accept one."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "bountiful:bountiful/rush_order"
+					criterion: ""
+					id: "024A223692D3F5D5"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "9C33CC16B88E54F0"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "886423C75D6D3C95"
+				}
+			]
+			id: "4249A1B33F411067"
+			dependencies: [
+				"FC08BC7476FC06D3"
+			]
+		}
+		{
+			title: "Questionable Investment"
+			icon: "numismatics:bank_terminal"
+			x: -3.0d
+			y: 3.0d
+			description: [
+				"The economy rewards the shrewd -- and the shady. Earn Numismatics' Questionable"
+				"Investment advancement by working the banking / market system to your advantage."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "numismatics:questionable_investment"
+					criterion: ""
+					id: "867CD9D3413F7ED6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "E799BBE40F721FB4"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 1
+					id: "4572809AF96F6146"
+				}
+			]
+			id: "BE29566CE137D31F"
+			dependencies: [
+				"A180E9C6E9491EFA"
+			]
+		}
+		{
+			title: "Merchant Tycoon"
+			icon: "numismatics:vendor"
+			x: 3.0d
+			y: 4.0d
+			description: [
+				"A single shop is a hobby; a district is a business. Run 8 Vendors backed by 4 Brass"
+				"Depositors -- a whole automated marketplace taking coin while you sleep."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "numismatics:vendor"
+					count: 8
+					id: "5D403369289A9967"
+				}
+				{
+					type: "item"
+					item: "numismatics:brass_depositor"
+					count: 4
+					id: "379D160C422747A0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "874B3F6D5AA41970"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 8
+					id: "E8401A816F7FD6D6"
+				}
+			]
+			id: "44EFCF216BCA1C40"
+			dependencies: [
+				"C528ECD9C92941D1"
+				"2468513E8135D426"
+			]
+		}
+		{
+			title: "A Fortune Amassed"
+			icon: "numismatics:crown"
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"Hold 16 Crowns at once -- a Crown is worth 512 Spurs, so this is real wealth,"
+				"the compounded product of shops, stalls and bounties over many sessions."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 16
+					id: "C8B63253E2A0C536"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "E765E61E3BD009A7"
+				}
+				{
+					type: "item"
+					item: "numismatics:sun"
+					count: 1
+					id: "6E0843DF224D1659"
+				}
+			]
+			id: "8F83B553DD981F9C"
+			dependencies: [
+				"A180E9C6E9491EFA"
+				"FC08BC7476FC06D3"
+			]
+		}
+		{
+			title: "Ninety-Five Theses"
+			icon: "bountiful:bountyboard"
+			x: -1.5d
+			y: 5.0d
+			description: [
+				"Earn the Ninety-Five Theses advancement -- the prolific-bounty-hunter capstone,"
+				"reached only by completing bounties at serious volume."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "bountiful:bountiful/ninety_five_theses"
+					criterion: ""
+					id: "62F1E86AD3640F45"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "31518B4C6B2B11D9"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 10
+					id: "913DE9B14B299839"
+				}
+			]
+			id: "98CAE0F326750FAA"
+			dependencies: [
+				"FC08BC7476FC06D3"
+				"969073CA0DB01802"
+				"4249A1B33F411067"
+			]
+		}
+	]
+}

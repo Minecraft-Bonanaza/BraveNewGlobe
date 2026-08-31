@@ -3,6 +3,33 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.0] — 2026-08-31
+
+### Added
+Complete FTB Quests book — **15 chapters, 230 quests** (guidance-only; every gate is objective:
+item count, mod advancement, or kill/dimension/stat — no self-attest checkmarks). Three-phase arc per
+industry line (Awareness → Functional → late-stage Achievement); locate-and-progress for exploration.
+
+- **Create Core** (15) — kinetics, stress, first automation; the shared substrate.
+- **Rails & Trains** (15) — track → station → train → schedule → signals; long-train / mass-track / long-travel capstones.
+- **Aeronautics** (15) — assemble & fly a real airship (envelope/burner/propeller, Sable physics); reach the sky structures.
+- **Cannons & Warfare** (11) — gunpowder → CGS firearm → cast-iron → Steel cannon → autocannon → Nethersteel arsenal.
+- **Metalworking & Metallurgy** (17) — foundry/melting/casting/alloys → Steel/Tungsten/Obdurium megafactory.
+- **Power & Fuel** (23) — three parallel tracks: Diesel, Steam (base Create), and Power Grid electricity.
+- **Logistics & Storage** (16) — base Create package-logistics spine (packager→stock→factory gauge) + Factory Logistics / FXNT / Aero.
+- **Industrial Enchanting** (7) — Blaze Enchanter → liquid-XP loop → mass enchanted books.
+- **Commerce** (14) — Create: Numismatics (coins/vendors/bank) + Bountiful bounties + villager commerce.
+- **Agriculture & Husbandry** (16) — Farmer's Delight / Brewin' & Chewin' / Ratatouille / Animal Weights.
+- **Naval & High Seas** (17) — Create-ship building (Sable physics + buoyancy) + Aquamirae + Sea Myths + fishing.
+- **Astronautics** (16) — Creating Space rocketry → reach_earth_orbit → foundry / propellant depot.
+- **The Twilight Forest** (14) — portal → Naga → Lich → … → Final Castle boss ladder.
+- **The Aether** (12) — glowstone portal → Bronze/Silver/Gold dungeon bosses → Phoenix armor.
+- **When Dungeons Arise** (22) — structure-discovery ladder: common → sea → sky (Y700-750) → large dungeons → Coliseum.
+
+Currency throughout is **Create: Numismatics** (Spur/Cog/Crown/Sun). Chapters are generated
+deterministically from `bigGlobeAero/quest_lines/*.py` via `build_ftbquests.py` (re-runs are
+byte-identical and progress-safe). Includes 3 hand-authored loot-crate reward tables.
+
 ## [0.8.8] — 2026-08-30
 
 ### Fixed

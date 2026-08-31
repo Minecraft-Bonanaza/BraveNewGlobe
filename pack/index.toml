@@ -337,8 +337,76 @@ file = "config/foodspoil-common.toml"
 hash = "69437cf244898b5b15a5df8bf8fbe291e6d7f1e880ed9816c532369e5c7d44f4"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/aeronautics.snbt"
+hash = "7bbb4c8587e6024dd285d73648a15b81881efb0a24bc23655a5b31dd7aff72cd"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/aether.snbt"
+hash = "34280898d4f7dcfeee6a72645db9a144a25d7aeb41cc1c47460bf5abfeba6c52"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/agriculture.snbt"
+hash = "40cf533d3e6e72f9bd2dbf714a1df078d0606c1fcdb3491a4da5507ce8dc94f9"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/astronautics.snbt"
+hash = "6a233f59ef6196c65c2fba3cebd59edcdba4088100c9f333b12a338b2b94326e"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/cannons.snbt"
+hash = "57add2f273536a5e88ea68d2e9ab050e1b8bfe3eda79f8384facc7a5b266ac06"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/commerce.snbt"
+hash = "9f356564816375804c0e5dbf881aef30488a4b16ab8f16d7df812cc5de27bf54"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/create_core.snbt"
-hash = "ba22d9ae2b40323ad8be8975238f15bcba1be3f55a78b653024c32c89cc9f071"
+hash = "7a3bb78386ff4fd5240aa2926bf9fa12f473e6baea7b376158ca802acac0de3d"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/enchanting.snbt"
+hash = "6ca36e3b6ee0baa82a34fc761ed8a2f747eeb08dda551a5e2d779486e5273db3"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/logistics.snbt"
+hash = "9f6ee9821c815dd4ed81cbe9efdd789421e74c52f8eb1b16902d48169ceb72a5"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/metallurgy.snbt"
+hash = "4018cd6940b5a46509628d7768fa067300afda28e432367e9106b2f11f1bf2d5"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/naval.snbt"
+hash = "3fd003727b0e09e6f77d41da0b5396b55fc9376c9ee99216a5ab08fab3effb2a"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/power.snbt"
+hash = "ce9dbefc48749b6aa1518dc2a0e1015bf6e7100eef17dc5c7250fe32301a443f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/rails.snbt"
+hash = "5ae27d6075ea3230c6c5a95ab0c53182ae5974dfa9fdd2c91067601514a22efb"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/twilight.snbt"
+hash = "2dfcd4a5c298556b1c370fca2bf9851b8bed9f65612dd7c88fb244d08873e90f"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/wda.snbt"
+hash = "1458aae914d94f7283e0ddc13385959b77e46740baeaeac712b500bd083a6e76"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/A1E1E1F6F632F9B8.snbt"
+hash = "fb96320ddfeb6e9151ee01473c1f15242319a2623b3689013b573092e3f2c2f4"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/BCAB331382ADF7FA.snbt"
+hash = "e92bec3f7fb9dee2b82db03b28261ec21521a3a9d4c5a91d4cadf51210b5c5a3"
+
+[[files]]
+file = "config/ftbquests/quests/reward_tables/E63DC9EDED922EFA.snbt"
+hash = "8f706a5c39924ba1d02c861b102f3bdd9f479e256c7e1ef546eddc1427f37cc1"
 
 [[files]]
 file = "config/fxntstorage-client.toml"

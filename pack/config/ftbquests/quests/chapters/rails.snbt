@@ -1,0 +1,589 @@
+{
+	id: "6192AA335BD4CD16"
+	group: ""
+	order_index: 1
+	filename: "rails"
+	title: "Rails \\& Trains"
+	icon: "create:track"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Lay Your First Track"
+			icon: "create:track"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Craft Train Track and drag-place it to sweep long, curved rails in one motion."
+				"Ponder the Train Track to see how bends, slopes and stations connect."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:track_0"
+					criterion: ""
+					id: "4CD8EF111E2C2925"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "A9C3B24C1EABE843"
+				}
+				{
+					type: "item"
+					item: "create:track"
+					count: 32
+					id: "FD14A96305F9ED0C"
+				}
+			]
+			id: "AD12A086810A9A06"
+		}
+		{
+			title: "Build \\& Name a Station"
+			icon: "create:track_station"
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"Place a Train Station on your track and give it a name -- trains navigate by station name."
+				"The station is where you assemble, board and dispatch."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:track_station"
+					id: "40717C654C0A4345"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "816B42F04E85B860"
+				}
+				{
+					type: "item"
+					item: "create:railway_casing"
+					count: 4
+					id: "4A8C1DD0AEACEE76"
+				}
+				{
+					type: "item"
+					item: "create:small_bogey"
+					count: 4
+					id: "1A3F788BF7240E12"
+				}
+			]
+			id: "49EEF59A458BA418"
+			dependencies: [
+				"AD12A086810A9A06"
+			]
+		}
+		{
+			title: "Assemble a Train"
+			icon: "create:railway_casing"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Set Bogeys on the track, stack Train Casing between them, add a Train Controls seat, then assemble at the station."
+				"Ponder Train Casing and Bogeys to learn carriage layout."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:train"
+					criterion: ""
+					id: "9E08A904813BB36C"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "96CDA4E9B0D0FE3E"
+				}
+				{
+					type: "item"
+					item: "create:schedule"
+					count: 1
+					id: "25CF745EDFCDEE2A"
+				}
+			]
+			id: "F54E6F1872451637"
+			dependencies: [
+				"49EEF59A458BA418"
+			]
+		}
+		{
+			title: "Set a Schedule (Self-Driving)"
+			icon: "create:schedule"
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"Give the train a Train Schedule of station stops -- it now drives itself with no player aboard."
+				"Schedules chain conditions: travel to X, wait 10s, redstone, then loop."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:conductor"
+					criterion: ""
+					id: "4974B5D50AF0B24F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "64088E1C9B31417D"
+				}
+				{
+					type: "item"
+					item: "create:track_signal"
+					count: 4
+					id: "BC0AA8B2A82EF5D5"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 2
+					id: "56C4A1C1A5D64022"
+				}
+			]
+			id: "D2A6FCFD3FBD1674"
+			dependencies: [
+				"F54E6F1872451637"
+			]
+		}
+		{
+			title: "Signals Prevent Crashes"
+			icon: "create:track_signal"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Place Train Signals to split track into blocks -- a signal turns red while a train occupies its block, holding the next train back."
+				"Ponder the Train Signal to see how signal blocks stop two trains colliding."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:red_signal"
+					criterion: ""
+					id: "848224C86875AB7F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "2FFC3751E677C502"
+				}
+				{
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2
+					id: "F4C1BA7B5EB95D43"
+				}
+			]
+			id: "70932B6B527BD089"
+			dependencies: [
+				"D2A6FCFD3FBD1674"
+			]
+		}
+		{
+			title: "Cargo by Rail"
+			icon: "create:portable_storage_interface"
+			x: -4.5d
+			y: 7.5d
+			description: [
+				"Mount Portable Storage Interfaces on a cargo carriage and at the station -- they auto-transfer items on arrival."
+				"Add a schedule 'wait until cargo full/empty' condition to load and unload hands-free."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:portable_storage_interface"
+					count: 2
+					id: "D4D6BB97E428D87E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "2DC9D30E20B7A4C1"
+				}
+				{
+					type: "item"
+					item: "create:item_vault"
+					count: 4
+					id: "3147AC9E326618D7"
+				}
+			]
+			id: "7BABE7A301F210A8"
+			dependencies: [
+				"D2A6FCFD3FBD1674"
+			]
+		}
+		{
+			title: "All Aboard -- Passenger Cars"
+			icon: "create:white_seat"
+			x: -1.5d
+			y: 7.5d
+			description: [
+				"Add Seats so players and villagers ride along; Train Doors and Trapdoors finish the carriage."
+				"A seated passenger travels with the contraption -- perfect for commuter lines."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:white_seat"
+					count: 2
+					id: "73F2DB95D9DA8F53"
+				}
+				{
+					type: "item"
+					item: "create:train_door"
+					id: "9D7A9288AECD28FD"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "50F96705FDDCB908"
+				}
+				{
+					type: "item"
+					item: "create:white_seat"
+					count: 6
+					id: "FC6320064F24BD36"
+				}
+				{
+					type: "item"
+					item: "create:train_door"
+					count: 2
+					id: "4A341CEFE2061853"
+				}
+			]
+			id: "FE6F19622F8391A4"
+			dependencies: [
+				"F54E6F1872451637"
+			]
+		}
+		{
+			title: "Junctions \\& Two-Way Lines"
+			icon: "create:track_observer"
+			x: 1.5d
+			y: 7.5d
+			description: [
+				"Signal both directions of a shared line so trains wait their turn at junctions and passing loops."
+				"Train Observers detect passing trains to fire redstone -- crossings, gates, displays."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:track_signal"
+					count: 4
+					id: "C53E2F8E1E813B66"
+				}
+				{
+					type: "item"
+					item: "create:track_observer"
+					id: "5ED6694DE7B115AC"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "6782EA778AE620F4"
+				}
+				{
+					type: "item"
+					item: "create:track_observer"
+					count: 2
+					id: "BF5AFB79B8F2CE91"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "8ABC9EE4CFB2DD0C"
+				}
+			]
+			id: "39F944B3BC3B0AAF"
+			dependencies: [
+				"70932B6B527BD089"
+			]
+		}
+		{
+			title: "Automated Signal Logic"
+			icon: "signalworks:brass_router"
+			x: 4.5d
+			y: 7.5d
+			description: [
+				"Signalworks Routers, Pulsers and Oscillators build the redstone signal logic that steers trains at complex junctions."
+				"Route trains onto different platforms by schedule state or a lever."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "signalworks:brass_router"
+					id: "E31AF698087CCC1F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "6F8A5762D1D659E4"
+				}
+				{
+					type: "item"
+					item: "signalworks:brass_pulser"
+					count: 2
+					id: "1336472FAE00487E"
+				}
+			]
+			id: "8FA3C4E82E11D18E"
+			dependencies: [
+				"39F944B3BC3B0AAF"
+			]
+		}
+		{
+			title: "Real Train Physics"
+			icon: "create_train_physics:train_engine_block"
+			x: -4.5d
+			y: 9.0d
+			description: [
+				"Train Physics Reloaded adds the Train Engine block: trains now carry momentum and need real pulling power for grade and length."
+				"Heavier, longer trains accelerate slowly and take distance to stop -- plan your track profile."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create_train_physics:train_engine_block"
+					id: "BF41093B9AB7C554"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "B6D615A4196951F4"
+				}
+				{
+					type: "item"
+					item: "create_train_physics:train_engine_block"
+					count: 1
+					id: "B29721EED27BD440"
+				}
+			]
+			id: "BE3890CD61299CB1"
+			dependencies: [
+				"F54E6F1872451637"
+			]
+		}
+		{
+			title: "Off-Grid Suspension Tracks"
+			icon: "tracks:track_drive_wheel"
+			x: -1.5d
+			y: 9.0d
+			description: [
+				"Create: Tracks+ Track Mounts, Suspension Tracks and Drive Wheels roll carriages off the fixed track grid over rough ground."
+				"Tune the ride with the Suspension Key: spring, damping, grip and drive."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "tracks:track_mount"
+					id: "60442677DAFC8B02"
+				}
+				{
+					type: "item"
+					item: "tracks:small_suspension_track"
+					id: "EF418FFD407922ED"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "37BCD635EE342FB0"
+				}
+				{
+					type: "item"
+					item: "tracks:small_suspension_track"
+					count: 8
+					id: "31E33F3C476F08F2"
+				}
+			]
+			id: "C3BB63D09CFDB058"
+			dependencies: [
+				"F54E6F1872451637"
+			]
+		}
+		{
+			title: "Horse-Drawn Wagons"
+			icon: "trotting_wagons:conestoga_wagon"
+			x: 6.0d
+			y: 9.0d
+			description: [
+				"Trotting Wagons hitch cargo wagons to horses for rail-free overland haulage; Doped Horses' shoes boost speed and durability."
+				"A cheap early-game freight option before your network exists."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "trotting_wagons:conestoga_wagon"
+					id: "8478CD10FE252C84"
+				}
+				{
+					type: "item"
+					item: "dopedhorses:iron_horse_shoes"
+					id: "3920C8F2F9E84621"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "3951F4BCE15DFF45"
+				}
+				{
+					type: "item"
+					item: "dopedhorses:iron_horse_shoes"
+					count: 4
+					id: "2639CB4D8DBF8B94"
+				}
+			]
+			id: "E0A63EF6E5DC2000"
+			dependencies: [
+				"AD12A086810A9A06"
+			]
+		}
+		{
+			title: "The Long Haul"
+			icon: "create:large_bogey"
+			x: -3.0d
+			y: 10.5d
+			description: [
+				"Assemble a long multi-carriage train -- multiple bogey pairs, cargo, passengers and an engine in one consist."
+				"Long trains are where physics, signals and scheduling all pay off at once."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:long_train"
+					criterion: ""
+					id: "5721698E2C787D59"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "7D8AEFC4FB806341"
+				}
+				{
+					type: "item"
+					item: "create:railway_casing"
+					count: 8
+					id: "4E7EAA7D3BEBFE0F"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 5
+					id: "8E55594F51EB1A57"
+				}
+			]
+			id: "2CB8A44BBAF86838"
+			dependencies: [
+				"FE6F19622F8391A4"
+				"BE3890CD61299CB1"
+			]
+		}
+		{
+			title: "Rail Empire"
+			icon: "create:track"
+			x: 1.5d
+			y: 10.5d
+			description: [
+				"Automate track production and lay a sprawling network -- 640 Train Track (10 stacks) to link your bases."
+				"The Track Crafting Factory mass-produces track from a saw + deployer line."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:track"
+					count: 640
+					id: "C17F9E78EEF4A445"
+				}
+				{
+					type: "advancement"
+					advancement: "create:track_crafting_factory"
+					criterion: ""
+					id: "740906CCE98A3147"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "71609EFFED036564"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "D75DF5EEB7B6AA36"
+				}
+			]
+			id: "F21F7995EF3731EF"
+			dependencies: [
+				"39F944B3BC3B0AAF"
+				"8FA3C4E82E11D18E"
+			]
+		}
+		{
+			title: "Transcontinental"
+			icon: "create:controls"
+			x: -1.5d
+			y: 13.5d
+			description: [
+				"Ride the rails a great distance in one journey to a far-off destination of your choosing."
+				"The ultimate proof your self-driving, signaled network works end to end."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:long_travel"
+					criterion: ""
+					id: "6560530497784DC6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "568A2FD4952E18CE"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "9EAB45CB70B479CD"
+				}
+			]
+			id: "C918B9CA51845E81"
+			dependencies: [
+				"2CB8A44BBAF86838"
+			]
+		}
+	]
+}

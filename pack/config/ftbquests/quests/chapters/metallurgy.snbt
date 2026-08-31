@@ -1,0 +1,616 @@
+{
+	id: "A1D8DDC64D9EB684"
+	group: ""
+	order_index: 4
+	filename: "metallurgy"
+	title: "Metalworking \\& Metallurgy"
+	icon: "createmetallurgy:foundry_basin"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Create: Metallurgy"
+			icon: "createmetallurgy:foundry_basin"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Ore into ingots is for beginners. Here you melt metal by the tankful and pour it into molds."
+				"Start with fuel: roast coal into Coke — the foundry runs hot and hungry."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createmetallurgy:coke"
+					count: 8
+					id: "26D945CACE92CAD6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "87250DD80D6EFBDB"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:coke"
+					count: 8
+					id: "16CDF0D149F6D971"
+				}
+			]
+			id: "7A28B5D4E75F9583"
+		}
+		{
+			title: "Graphite"
+			icon: "createmetallurgy:graphite"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Superheat Coke to press out Graphite — the material every mold is carved from."
+				"Check Ponder on the block for the recipe chain."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:graphite"
+					criterion: ""
+					id: "8065F62D3A179EE0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "3D540F34DE2F014F"
+				}
+			]
+			id: "5F36E54FF42804D2"
+			dependencies: [
+				"7A28B5D4E75F9583"
+			]
+		}
+		{
+			title: "Carve the Molds"
+			icon: "createmetallurgy:graphite_ingot_mold"
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"Cut Graphite into molds: ingot, nugget, plate, rod, gear. Molten metal takes the shape you give it."
+				"One mold per shape — REI shows which mold makes what."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:graphite_molds"
+					criterion: ""
+					id: "026D08BB1180B5F4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "7DA47360D04EB642"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:graphite_blank_mold"
+					count: 2
+					id: "DC7C025AF5A9FE5E"
+				}
+			]
+			id: "0B8BEE104478F427"
+			dependencies: [
+				"5F36E54FF42804D2"
+			]
+		}
+		{
+			title: "Build the Foundry"
+			icon: "createmetallurgy:foundry_basin"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"A Foundry Basin capped with a Foundry Lid is your melting heart. Line it with Refractory Mortar."
+				"Ponder the Foundry Basin to see the multiblock."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:foundry_basin"
+					criterion: ""
+					id: "791C6EC070AD8980"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "7B8FB3C9E462A8F1"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:refractory_mortar"
+					count: 8
+					id: "CC363861000CA059"
+				}
+			]
+			id: "1EEAF799ACFC6213"
+			dependencies: [
+				"5F36E54FF42804D2"
+			]
+		}
+		{
+			title: "Belt Grinder"
+			icon: "createmetallurgy:mechanical_belt_grinder"
+			x: -4.0d
+			y: 2.0d
+			description: [
+				"The Mechanical Belt Grinder sands ore into dusts for cleaner, higher-yield melting."
+				"Feed it rotational force and mind the Sandpaper Belt wear."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:belt_grinder"
+					criterion: ""
+					id: "B9A44BCEB9049595"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "996AFA1B2AADEB52"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:sandpaper_belt"
+					count: 4
+					id: "C06E1EAA014237F0"
+				}
+			]
+			id: "D24B918CDBE8100E"
+			dependencies: [
+				"7A28B5D4E75F9583"
+			]
+		}
+		{
+			title: "First Pour"
+			icon: "createmetallurgy:molten_iron_bucket"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Drop dusts into the hot Foundry and watch solid metal turn to Molten Iron."
+				"This is the whole point — melt it, then move it."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:melting_dusts"
+					criterion: ""
+					id: "D3D61564D97C971A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "CE8A8537DE141039"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 8
+					id: "44F553E3F362C43E"
+				}
+			]
+			id: "453926B3CB37E8F6"
+			dependencies: [
+				"1EEAF799ACFC6213"
+			]
+		}
+		{
+			title: "Cast It Solid"
+			icon: "createmetallurgy:casting_basin"
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"Pour molten metal over a Casting Basin or Table to cast full blocks and shaped parts."
+				"Faucets move fluid down; the Casting Table takes molds."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:casting_blocks"
+					criterion: ""
+					id: "5E839C78573CE311"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "B55BC1E7520C4BE7"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:casting_table"
+					count: 1
+					id: "F009447584F64335"
+				}
+			]
+			id: "C49DA2FCDE88B66D"
+			dependencies: [
+				"0B8BEE104478F427"
+				"1EEAF799ACFC6213"
+			]
+		}
+		{
+			title: "Transfer Ladle"
+			icon: "createmetallurgy:ladle"
+			x: 2.0d
+			y: 6.0d
+			description: [
+				"The Transfer Ladle is a bucket for molten metal — carry a pour by hand without piping every tank."
+				"Handle with care: it will burn you."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:ladle"
+					criterion: ""
+					id: "F548858FB2DD92BE"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "E52A606D22297C29"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:ladle"
+					count: 1
+					id: "42CD9A4DD7224831"
+				}
+			]
+			id: "4916C7BAA6C37F44"
+			dependencies: [
+				"453926B3CB37E8F6"
+			]
+		}
+		{
+			title: "Instrumentation"
+			icon: "createmetallurgy:gauge_attachment"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"Slap a Gauge Attachment on a machine to read its state, and wire Light Bulbs to signal your line."
+				"Small tools, big quality-of-life on a busy foundry floor."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:gauge"
+					criterion: ""
+					id: "93223FCB755D1CA2"
+				}
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:light_bulb"
+					criterion: ""
+					id: "3BBF6ED0F52FAE91"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "CADA42A9AD060BAF"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:white_light_bulb"
+					count: 4
+					id: "B8FE7BD0A80752F9"
+				}
+			]
+			id: "BF96D3D69FED6A0C"
+			dependencies: [
+				"453926B3CB37E8F6"
+			]
+		}
+		{
+			title: "Foundry Mixer"
+			icon: "createmetallurgy:foundry_mixer"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"The Foundry Mixer blends two molten metals into an alloy — the door to every advanced material."
+				"Ratios matter; Ponder the Mixer for the alloy recipes."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:foundry_mixer"
+					criterion: ""
+					id: "F724AF9062E36180"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "ECEBEDE2DBF57AF7"
+				}
+			]
+			id: "8750411992C853B4"
+			dependencies: [
+				"453926B3CB37E8F6"
+			]
+		}
+		{
+			title: "The Alloy Book"
+			icon: "createmetallurgy:molten_brass_bucket"
+			x: -2.0d
+			y: 8.0d
+			description: [
+				"Prove your Mixer by pouring five alloys: Brass, Bronze, Invar, Electrum, Constantan."
+				"Each is a distinct metal-pair — REI shows the inputs."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createmetallurgy:molten_brass_bucket"
+					id: "15E8DCAFCAA03E33"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:molten_bronze_bucket"
+					id: "0ACECE3278FEA3EF"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:molten_invar_bucket"
+					id: "A1E749B380DC1E61"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:molten_electrum_bucket"
+					id: "6A85EEF18DF98E79"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:molten_constantan_bucket"
+					id: "4723D8611EF6E9D0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "A065A77FB0F95C3B"
+				}
+			]
+			id: "CF4925ADE2319521"
+			dependencies: [
+				"8750411992C853B4"
+			]
+		}
+		{
+			title: "Industrial Crucible"
+			icon: "createmetallurgy:industrial_crucible"
+			x: 2.0d
+			y: 8.0d
+			description: [
+				"The Industrial Crucible pushes temperatures the basic Foundry can't reach — needed for the hardest alloys."
+				"Bigger, hotter, thirstier for fuel."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:industrial_crucible"
+					criterion: ""
+					id: "1EE9917C79FD6D95"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "474097E79CAA7E28"
+				}
+			]
+			id: "83C73DA2D13B8D77"
+			dependencies: [
+				"4916C7BAA6C37F44"
+				"8750411992C853B4"
+			]
+		}
+		{
+			title: "The Steel Age"
+			icon: "createmetallurgy:steel_ingot"
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"Iron plus carbon in the Foundry yields Steel — the backbone of every serious build."
+				"You are now out of the stone age of metalworking."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:steel_age"
+					criterion: ""
+					id: "37275AD10D9FFCDB"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "50A59F186A49C8EC"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:steel_ingot"
+					count: 8
+					id: "38AD39BA1080F89C"
+				}
+			]
+			id: "29E2DD14DCD6F741"
+			dependencies: [
+				"8750411992C853B4"
+			]
+		}
+		{
+			title: "The Tungsten Age"
+			icon: "createmetallurgy:tungsten_ingot"
+			x: 0.0d
+			y: 12.0d
+			description: [
+				"Mine Wolframite, wash it to Tungsten, and melt it in the Crucible — the highest-melting metal in the pack."
+				"Tungsten unlocks wires, sheets, and the endgame alloy."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "createmetallurgy:tungsten_age"
+					criterion: ""
+					id: "28DCFB5782251136"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "F1EFB0DC02D54E57"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 16
+					id: "B938ABA941804F05"
+				}
+			]
+			id: "433811733F5EE1DB"
+			dependencies: [
+				"29E2DD14DCD6F741"
+			]
+		}
+		{
+			title: "Steel by the Ton"
+			icon: "createmetallurgy:steel_block"
+			x: -2.0d
+			y: 12.0d
+			description: [
+				"Automate iron + coke into the Foundry and stack 128 Blocks of Steel — 1,152 ingots of throughput."
+				"This is a heavy production line, not a hand-craft — parallel foundries feeding one vault."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createmetallurgy:steel_block"
+					count: 128
+					id: "B1F79D8773A8DA8E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "3E361D9A5A5E6121"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 8
+					id: "DBC3E47396DA8ED9"
+				}
+			]
+			id: "EA79BCA15577D532"
+			dependencies: [
+				"29E2DD14DCD6F741"
+			]
+		}
+		{
+			title: "Wolframite Works"
+			icon: "createmetallurgy:tungsten_block"
+			x: 0.0d
+			y: 14.0d
+			description: [
+				"Keep the Crucibles running until 64 Blocks of Tungsten sit in storage."
+				"Tungsten is slow to melt — scale means a bank of parallel Crucibles."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createmetallurgy:tungsten_block"
+					count: 64
+					id: "84F5E7E74220CEBC"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "0C1E8BB5B420B09D"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 8
+					id: "FA2A3054BFB765E5"
+				}
+			]
+			id: "CCD04D74C82C7A7C"
+			dependencies: [
+				"433811733F5EE1DB"
+			]
+		}
+		{
+			title: "Obdurium Foundry"
+			icon: "createmetallurgy:obdurium_block"
+			x: 2.0d
+			y: 14.0d
+			description: [
+				"Obdurium is the pack's ultimate alloy — pour 128 ingots to prove your foundry is fully industrial."
+				"Steel, Tungsten and the Industrial Crucible all feed this one — a true metals megafactory."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createmetallurgy:obdurium_ingot"
+					count: 128
+					id: "43A7BECD758D0C0E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "C88F4BF276C39EFC"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 16
+					id: "1F0D7C12F4EBC1F6"
+				}
+				{
+					type: "item"
+					item: "createmetallurgy:obdurium_block"
+					count: 8
+					id: "1A992376F3FBBE48"
+				}
+			]
+			id: "1CDB7041C7ADC576"
+			dependencies: [
+				"433811733F5EE1DB"
+				"83C73DA2D13B8D77"
+			]
+		}
+	]
+}

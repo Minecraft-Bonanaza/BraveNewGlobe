@@ -1,0 +1,512 @@
+{
+	id: "782082F7E1BFE609"
+	group: ""
+	order_index: 20
+	filename: "twilight"
+	title: "The Twilight Forest"
+	icon: "twilightforest:naga_trophy"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Into the Twilight"
+			icon: "twilightforest:twilight_portal"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Dig a 2x2 pool, fill it with water, and ring the rim with flowers or mushrooms."
+				"Toss a single diamond into the water -- lightning strikes and the portal opens."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "minecraft:diamond"
+					id: "BFF49DC2D176CC5E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "794129BCED9B74B8"
+				}
+			]
+			id: "B3E975AF8B42E4F1"
+		}
+		{
+			title: "A Perpetual Dusk"
+			icon: "twilightforest:magic_map"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"Step through. The Twilight Forest never sees full daylight -- stay fed and armored."
+				"Craft a Magic Map focus to chart the boss structures; each labyrinth has its own map."
+			]
+			tasks: [
+				{
+					type: "dimension"
+					dimension: "twilightforest:twilight_forest"
+					id: "7ABF7DA5B0A33144"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "CC3E0DAA65EA3CB0"
+				}
+				{
+					type: "item"
+					item: "twilightforest:magic_map"
+					count: 1
+					id: "10B6EED2864BF822"
+				}
+			]
+			id: "D0A5FCEE33454D3A"
+			dependencies: [
+				"B3E975AF8B42E4F1"
+			]
+		}
+		{
+			title: "The Naga's Courtyard"
+			icon: "twilightforest:naga_trophy"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Find the ring of Nagastone. The Naga circles its courtyard -- bait its charge into the pillars."
+				"Its scales craft the first real armor of this realm."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_naga"
+					criterion: ""
+					id: "DBF13A7CF4CB19C0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "DDB89611B90C9F1E"
+				}
+				{
+					type: "item"
+					item: "twilightforest:naga_scale"
+					count: 4
+					id: "A2B156A60DE016FF"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 6
+					id: "7F2162110ADEF489"
+				}
+			]
+			id: "E32494BC935C40BF"
+			dependencies: [
+				"D0A5FCEE33454D3A"
+			]
+		}
+		{
+			title: "The Lich Tower"
+			icon: "twilightforest:lich_trophy"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"The tall courtyard tower holds the Twilight Lich. Reflect his bolts with any shield to stagger him."
+				"Beating him lifts the protection on the mid-game bosses."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_lich"
+					criterion: ""
+					id: "DB471A88D3DA2507"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "E8AFC08009961EF8"
+				}
+				{
+					type: "item"
+					item: "twilightforest:lifedrain_scepter"
+					count: 1
+					id: "711A7670690365CA"
+				}
+			]
+			id: "0E44775A611C0B9C"
+			dependencies: [
+				"E32494BC935C40BF"
+			]
+		}
+		{
+			title: "The Minotaur Labyrinth"
+			icon: "twilightforest:minoshroom_trophy"
+			x: -1.0d
+			y: 4.0d
+			description: [
+				"Underground maze of mazestone. The Minoshroom guards its lowest level."
+				"Steeleaf gear and the way down to the Knights await inside."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_labyrinth"
+					criterion: ""
+					id: "3AD82575A6ECA4EB"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "AF515C11A148C8A7"
+				}
+				{
+					type: "item"
+					item: "twilightforest:steeleaf_ingot"
+					count: 3
+					id: "6E0D3CCD300EFFD8"
+				}
+			]
+			id: "CB667D01114D4200"
+			dependencies: [
+				"0E44775A611C0B9C"
+			]
+		}
+		{
+			title: "The Fire Swamp Hydra"
+			icon: "twilightforest:hydra_trophy"
+			x: 1.0d
+			y: 4.0d
+			description: [
+				"Cross the Fire Swamp to the Hydra Lair. Three heads -- bite, flame, and mortar; break them one at a time."
+				"Hydra blood is a key reagent for fiery gear."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_hydra"
+					criterion: ""
+					id: "203623B618EEA236"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "EFD4EEE23F9DE5D0"
+				}
+				{
+					type: "item"
+					item: "twilightforest:fiery_blood"
+					count: 4
+					id: "24BD775F4B1B17C8"
+				}
+			]
+			id: "3ECF26F9D183586D"
+			dependencies: [
+				"0E44775A611C0B9C"
+			]
+		}
+		{
+			title: "The Knights' Stronghold"
+			icon: "twilightforest:knight_phantom_trophy"
+			x: -1.0d
+			y: 5.0d
+			description: [
+				"Below the Labyrinth lies the Goblin Knight Stronghold. Clear it to summon the Knight Phantoms."
+				"Their knightmetal is stronger than iron and punishes armored foes."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_knights"
+					criterion: ""
+					id: "C9101A53EE39AF7E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "ABC88C94E64CE420"
+				}
+				{
+					type: "item"
+					item: "twilightforest:knightmetal_ingot"
+					count: 4
+					id: "176E84244CCDC7E2"
+				}
+			]
+			id: "AA92E77803BA056D"
+			dependencies: [
+				"CB667D01114D4200"
+			]
+		}
+		{
+			title: "Deeper Still"
+			icon: "twilightforest:trophy_pedestal"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"With the Hydra and Knights behind you, the Dark Forest opens."
+				"The canopy here is lethal without progression -- the trees themselves will hurt you until now."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_merge"
+					criterion: ""
+					id: "4DB8DA5C5457F98D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "2D5C4FDD0ADD349E"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 10
+					id: "D2CAEF66E94ED31E"
+				}
+			]
+			id: "1BBF8C64D62B456D"
+			dependencies: [
+				"3ECF26F9D183586D"
+				"AA92E77803BA056D"
+			]
+		}
+		{
+			title: "The Dark Tower"
+			icon: "twilightforest:ur_ghast_trophy"
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"Climb the Dark Tower's shifting floors to its roof. The Ur-Ghast rains fire and summons ghastlings."
+				"Ghast traps at the corners are your reset button -- lure it low."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_ur_ghast"
+					criterion: ""
+					id: "63DAC3864B3D99F8"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "4C3EAF433B2F35ED"
+				}
+				{
+					type: "item"
+					item: "twilightforest:fiery_tears"
+					count: 3
+					id: "528AE86C90E05474"
+				}
+			]
+			id: "BE9A4C2FA8E0AF68"
+			dependencies: [
+				"1BBF8C64D62B456D"
+			]
+		}
+		{
+			title: "The Yeti Lair"
+			icon: "twilightforest:alpha_yeti_trophy"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"In the Snowy Forest, the Alpha Yeti hurls you off its cave walls. Corner it."
+				"Its fur is the warmest armor and cushions long falls."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_yeti"
+					criterion: ""
+					id: "796381ED293C5E48"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "DCD6157C7849A36F"
+				}
+				{
+					type: "item"
+					item: "twilightforest:alpha_yeti_fur"
+					count: 3
+					id: "D22F32E529D2B407"
+				}
+			]
+			id: "E5C3E87B32A7EA22"
+			dependencies: [
+				"BE9A4C2FA8E0AF68"
+			]
+		}
+		{
+			title: "The Aurora Palace"
+			icon: "twilightforest:snow_queen_trophy"
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"The Snow Queen waits atop the ice palace in the Glacier. She rides ice-crystal minions -- clear them, then strike."
+				"There is no dedicated 'snow queen' advancement; clearing the Glacier is the gate."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_glacier"
+					criterion: ""
+					id: "192DE6ADC39EA479"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "0ADB0ED45643C116"
+				}
+				{
+					type: "item"
+					item: "twilightforest:triple_bow"
+					count: 1
+					id: "806D185C759C247E"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "794169C5BF620C1C"
+				}
+			]
+			id: "31FB7141A9FBAB29"
+			dependencies: [
+				"E5C3E87B32A7EA22"
+			]
+		}
+		{
+			title: "The Trollcaves \\& Cloud Cottage"
+			icon: "twilightforest:giant_pickaxe"
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"Ur-Ghast tears grow the giant beanstalk. Climb it to the Cloud Cottage above the Trollcaves."
+				"Giant tools and the last resources before the endgame are up here."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_troll"
+					criterion: ""
+					id: "4A9EDC7FE19ED154"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "D83BB73E25B721CC"
+				}
+				{
+					type: "item"
+					item: "twilightforest:giant_pickaxe"
+					count: 1
+					id: "DD7C1EE79226A69C"
+				}
+			]
+			id: "D6EF6105568BD3A1"
+			dependencies: [
+				"31FB7141A9FBAB29"
+			]
+		}
+		{
+			title: "The Final Castle"
+			icon: "twilightforest:mystic_crown"
+			x: 0.0d
+			y: 11.0d
+			description: [
+				"Break into the sealed Final Castle at the edge of the map. Force fields fall as you press inward."
+				"Finish the Twilight Forest -- the realm's endgame is yours."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progression_end"
+					criterion: ""
+					id: "2AB76775B8296F75"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "926C67D963D64543"
+				}
+				{
+					type: "item"
+					item: "twilightforest:mystic_crown"
+					count: 1
+					id: "B6172BECA90D315A"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 5
+					id: "7B06C6BF8A39FE44"
+				}
+			]
+			id: "1247579D389E50B1"
+			dependencies: [
+				"D6EF6105568BD3A1"
+			]
+		}
+		{
+			title: "Trophies on Pedestals"
+			icon: "twilightforest:naga_trophy"
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"Mount any boss trophy on a Trophy Pedestal back at base."
+				"A collector's goal -- one pedestal per fallen boss."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "twilightforest:progress_trophy_pedestal"
+					criterion: ""
+					id: "9EF8688D048FF3A6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "70F3A188B5036770"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 5
+					id: "DA17749354011FB4"
+				}
+			]
+			id: "E71E8B457BDA56A1"
+			dependencies: [
+				"E32494BC935C40BF"
+			]
+		}
+	]
+}

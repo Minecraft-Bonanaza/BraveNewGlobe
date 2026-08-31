@@ -1,0 +1,790 @@
+{
+	id: "1C6E26542D7508E5"
+	group: ""
+	order_index: 5
+	filename: "power"
+	title: "Power \\& Fuel"
+	icon: "createdieselgenerators:diesel_engine"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Create: Diesel Generators"
+			icon: "createdieselgenerators:diesel_engine"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Rotational force by hand is over. Here you burn fuel for raw, sustained power."
+				"Start simple: crush seeds into Plant Oil, the easiest engine fuel."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:plant_oil_bucket"
+					id: "81018F07DAA28A46"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "1E9139E1F1D0672E"
+				}
+				{
+					type: "item"
+					item: "createdieselgenerators:plant_oil_bucket"
+					count: 1
+					id: "35FC505A2C905C12"
+				}
+			]
+			id: "AE5740FD8442F262"
+		}
+		{
+			title: "The Diesel Engine"
+			icon: "createdieselgenerators:diesel_engine"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Build a Diesel Engine — a combustion block that turns liquid fuel into rotational force."
+				"Ponder the engine to see the burner and fuel intake."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:diesel_engine"
+					id: "99AB2B6210F8B3FF"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "DB1A9923F690062C"
+				}
+			]
+			id: "00D7C9120BFE5ECC"
+			dependencies: [
+				"AE5740FD8442F262"
+			]
+		}
+		{
+			title: "Fire It Up"
+			icon: "createdieselgenerators:powered_engine_shaft"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Attach a Powered Engine Shaft and feed the engine fuel — now it drives your whole drivetrain."
+				"Proof you have a running engine, not just a placed block."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:powered_engine_shaft"
+					id: "44B848937DE08BE4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "16AEFCD2B88E8D8B"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 8
+					id: "6C68CEF5F4E424B5"
+				}
+			]
+			id: "2C02F0E3493692EC"
+			dependencies: [
+				"00D7C9120BFE5ECC"
+			]
+		}
+		{
+			title: "Steam Power"
+			icon: "create:steam_engine"
+			x: 8.0d
+			y: 2.0d
+			description: [
+				"The other way to make power: heat, not fuel. Stack Fluid Tanks into a Boiler, set a Blaze Burner beneath, and fill it with water."
+				"Attach a Steam Engine to the boiler and a Flywheel to the engine — a rotation source parallel to the diesel line."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:steam_engine"
+					criterion: ""
+					id: "68FA782EE84464FF"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "19E7853D42D96118"
+				}
+				{
+					type: "item"
+					item: "create:steam_engine"
+					count: 2
+					id: "6ABAD81B4F7F0629"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 6
+					id: "B7074232602A9841"
+				}
+			]
+			id: "DA78FB34F9A2E5BF"
+		}
+		{
+			title: "Superheated Boiler"
+			icon: "create:blaze_cake"
+			x: 8.0d
+			y: 4.0d
+			description: [
+				"A passive boiler is weak. Feed the Blaze Burner Blaze Cakes and grow the boiler toward 18 Fluid Tanks for a superheated, maxed-out engine."
+				"A maxed boiler drives many engines at once — steam's answer to the Huge Diesel Engine."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "create:steam_engine_maxed"
+					criterion: ""
+					id: "DA2636543C2A4839"
+				}
+				{
+					type: "item"
+					item: "create:blaze_cake"
+					count: 8
+					id: "21096AB5C5857673"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "F1DF315078DD5591"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "577A065F248AD885"
+				}
+			]
+			id: "603FC606846B2F69"
+			dependencies: [
+				"DA78FB34F9A2E5BF"
+			]
+		}
+		{
+			title: "A Full Head of Steam"
+			icon: "create:steam_engine"
+			x: 8.0d
+			y: 6.0d
+			description: [
+				"Go big: a full-size boiler is 18 Fluid Tanks, superheated, driving a whole bank of Steam Engines."
+				"Gather 18 Tanks, 12 Steam Engines and 12 Flywheels — a steam powerplant that rivals the Huge Diesel Engine."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "create:fluid_tank"
+					count: 18
+					id: "80FDD7D9D1635606"
+				}
+				{
+					type: "item"
+					item: "create:steam_engine"
+					count: 12
+					id: "4814AA88FF6F2000"
+				}
+				{
+					type: "item"
+					item: "create:flywheel"
+					count: 12
+					id: "09FE8ABBBC9B3A60"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "13246F83B6AD7150"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 6
+					id: "8E81612578F60357"
+				}
+			]
+			id: "7589B7C397F7FF8D"
+			dependencies: [
+				"603FC606846B2F69"
+			]
+		}
+		{
+			title: "Striking Oil"
+			icon: "createdieselgenerators:oil_scanner"
+			x: -4.0d
+			y: 6.0d
+			description: [
+				"Scan for a Crude Oil deposit, then sink a Pumpjack to pull it up."
+				"Crude is worthless raw — it's the feedstock for refining."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:oil_scanner"
+					id: "D861B34A9F58DE9B"
+				}
+				{
+					type: "item"
+					item: "createdieselgenerators:crude_oil_bucket"
+					id: "F7400E1D4827D093"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "88275571B1E0C459"
+				}
+			]
+			id: "52BEFFF9A11F5BCC"
+			dependencies: [
+				"2C02F0E3493692EC"
+			]
+		}
+		{
+			title: "Refining"
+			icon: "createdieselgenerators:distillation_controller"
+			x: -4.0d
+			y: 8.0d
+			description: [
+				"Stack Distillation Tanks under a Controller and crack Crude Oil into Diesel and Gasoline."
+				"Refined fuels burn far longer than Plant Oil."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:distillation_controller"
+					id: "9B35A0B3F37D9D9C"
+				}
+				{
+					type: "item"
+					item: "createdieselgenerators:diesel_bucket"
+					id: "EBFE94128A2D8E18"
+				}
+				{
+					type: "item"
+					item: "createdieselgenerators:gasoline_bucket"
+					id: "7159AF7CB5D3C24D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "4900B95FE08785B0"
+				}
+			]
+			id: "393E263057E4C649"
+			dependencies: [
+				"52BEFFF9A11F5BCC"
+			]
+		}
+		{
+			title: "Biofuel"
+			icon: "createdieselgenerators:bulk_fermenter"
+			x: -6.0d
+			y: 6.0d
+			description: [
+				"The Bulk Fermenter turns biomass into Ethanol and Biodiesel — a renewable fuel route."
+				"No oil field required; grow your fuel instead."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:bulk_fermenter"
+					id: "50A5D8E026DE4D66"
+				}
+				{
+					type: "item"
+					item: "createdieselgenerators:biodiesel_bucket"
+					id: "D56DD927D7F36282"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "DB7532FC025568FC"
+				}
+			]
+			id: "410BE3D1DB86423D"
+			dependencies: [
+				"2C02F0E3493692EC"
+			]
+		}
+		{
+			title: "Engine Tuning"
+			icon: "createdieselgenerators:engine_turbocharger"
+			x: -2.0d
+			y: 6.0d
+			description: [
+				"Right-click a Turbocharger onto an engine to speed it up, or a Silencer to kill the noise."
+				"Quality-of-life for a wall of running engines."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:engine_turbocharger"
+					id: "CE8D3A50BE707E38"
+				}
+				{
+					type: "item"
+					item: "createdieselgenerators:engine_silencer"
+					id: "E44ABC9F319D7486"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "91FAE40AB4B0B943"
+				}
+			]
+			id: "0DD8E9B36C8DA217"
+			dependencies: [
+				"2C02F0E3493692EC"
+			]
+		}
+		{
+			title: "Modular Diesel Engine"
+			icon: "createdieselgenerators:large_diesel_engine"
+			x: -4.0d
+			y: 10.0d
+			description: [
+				"The Modular Diesel Engine scales up — more fuel in, far more rotational force out."
+				"Feed it refined Diesel for the best burn."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:large_diesel_engine"
+					id: "CFE6AF0E6DBF5CF0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "3CF89BF304E81E4C"
+				}
+			]
+			id: "21E2F4CC6CD018B6"
+			dependencies: [
+				"393E263057E4C649"
+			]
+		}
+		{
+			title: "A Spark of Electricity"
+			icon: "powergrid:potato_battery"
+			x: 4.0d
+			y: 0.0d
+			description: [
+				"Power Grid brings real electricity — a third path, independent of any one engine. Start with the humblest source: a Potato Battery."
+				"From here, voltage and current become things you manage. Feed the Generator with diesel OR steam rotation."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:potato_battery"
+					criterion: ""
+					id: "04BF6AEBBD082E7B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "E85F41DE9B3049AD"
+				}
+			]
+			id: "5E8726BBC9E23DCE"
+		}
+		{
+			title: "Solar Power"
+			icon: "powergrid:solar_panel"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"Build a Solar Panel for quiet, fuel-free daytime electricity."
+				"A clean complement to your roaring diesel bank."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:solar_panel"
+					criterion: ""
+					id: "265B1434D00CD260"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "FF4ECF3BC686F537"
+				}
+			]
+			id: "A7949EBFEE5B6D75"
+			dependencies: [
+				"5E8726BBC9E23DCE"
+			]
+		}
+		{
+			title: "The Generator"
+			icon: "powergrid:generator_housing"
+			x: 2.0d
+			y: 8.0d
+			description: [
+				"Assemble a Generator (Housing + Induction Rotor + Commutator) and spin it with rotation from EITHER a diesel engine OR a steam engine."
+				"This is the bridge: fuel/heat -> engine -> rotation -> electricity."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "powergrid:generator_housing"
+					id: "F6235AFC007EAABC"
+				}
+				{
+					type: "item"
+					item: "powergrid:generator_induction_rotor"
+					id: "9B5E037334119FDC"
+				}
+				{
+					type: "item"
+					item: "powergrid:generator_commutator"
+					id: "7673DBD19015250E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "7FA7CC47587BBB78"
+				}
+			]
+			id: "598F68E9BE18748F"
+			dependencies: [
+				"5E8726BBC9E23DCE"
+			]
+		}
+		{
+			title: "Wiring the Grid"
+			icon: "powergrid:transformer_core"
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"Transformers step voltage up for transport and down for devices; Copper Wire carries it between."
+				"Match device voltage or things burn out — the Multimeter tells you."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:transformer"
+					criterion: ""
+					id: "18AD2979454FF9FF"
+				}
+				{
+					type: "item"
+					item: "powergrid:wire"
+					count: 8
+					id: "A728625910CEB3B9"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "2B8238847FE0E513"
+				}
+			]
+			id: "1DCBAAE294F43BBC"
+			dependencies: [
+				"598F68E9BE18748F"
+			]
+		}
+		{
+			title: "Instrumentation"
+			icon: "powergrid:energy_meter"
+			x: 2.0d
+			y: 10.0d
+			description: [
+				"Place an Energy Meter on your grid and carry a Multimeter to probe voltage and current."
+				"You can't scale what you can't measure."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "powergrid:energy_meter"
+					id: "D6B0311027FAB9EC"
+				}
+				{
+					type: "item"
+					item: "powergrid:multimeter"
+					id: "F281AC8A65AB3222"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "8828A3D087698859"
+				}
+			]
+			id: "40F248F7B481BD8F"
+			dependencies: [
+				"598F68E9BE18748F"
+			]
+		}
+		{
+			title: "Circuit Board"
+			icon: "powergrid:circuit_board"
+			x: 4.0d
+			y: 8.0d
+			description: [
+				"Etch a Circuit Board — the foundation of every advanced electrical device."
+				"Use the Circuit Design Table to lay out components."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:circuit_board"
+					criterion: ""
+					id: "15BBCC02FB391CD8"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "FE40B360CD9A34B4"
+				}
+			]
+			id: "6505BE11B99FCBA2"
+			dependencies: [
+				"598F68E9BE18748F"
+			]
+		}
+		{
+			title: "Boosting Chip"
+			icon: "powergrid:integrated_circuit"
+			x: 4.0d
+			y: 10.0d
+			description: [
+				"Assemble an Integrated Circuit and deploy it to boost a machine's performance."
+				"It runs faster but draws twice the power — pay to play."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:boosting_chip"
+					criterion: ""
+					id: "43476EAC8D11ED70"
+				}
+				{
+					type: "item"
+					item: "powergrid:integrated_circuit"
+					id: "DA0E4839147FB79B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "CA5FFE478337FEDB"
+				}
+			]
+			id: "EE555ADBCCDBB947"
+			dependencies: [
+				"6505BE11B99FCBA2"
+			]
+		}
+		{
+			title: "FE Inverter"
+			icon: "powergrid:fe_inverter"
+			x: 6.0d
+			y: 10.0d
+			description: [
+				"The FE Inverter converts Forge Energy from other mods into Power Grid electricity."
+				"Bridge your whole tech stack onto one grid."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:fe_inverter"
+					criterion: ""
+					id: "8F2AD6C336340480"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "1C3DDFE39331FFD9"
+				}
+			]
+			id: "02FD9DD21207D381"
+			dependencies: [
+				"6505BE11B99FCBA2"
+			]
+		}
+		{
+			title: "Huge Diesel Engine"
+			icon: "createdieselgenerators:huge_diesel_engine"
+			x: -4.0d
+			y: 12.0d
+			description: [
+				"The Huge Diesel Engine is the top-tier prime mover — enormous rotational output from one multiblock."
+				"Only worth it once your refinery can keep it fed."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:huge_diesel_engine"
+					id: "8D32FDBA10951F16"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "3AC03FF800504C0F"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "6233D506E4EDE782"
+				}
+			]
+			id: "0E72918F70CD21AE"
+			dependencies: [
+				"21E2F4CC6CD018B6"
+			]
+		}
+		{
+			title: "Fuel Depot"
+			icon: "createdieselgenerators:diesel_bucket"
+			x: -6.0d
+			y: 10.0d
+			description: [
+				"Run your distillation line until 64 buckets of Diesel are in reserve."
+				"Sustained power means never running the tanks dry."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createdieselgenerators:diesel_bucket"
+					count: 64
+					id: "6E704C630E4E49A2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "F7370233A61C1539"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "76F7495B4050694F"
+				}
+			]
+			id: "33363BF767D84490"
+			dependencies: [
+				"393E263057E4C649"
+			]
+		}
+		{
+			title: "Scaling Up"
+			icon: "powergrid:generator_large_induction_rotor"
+			x: 2.0d
+			y: 12.0d
+			description: [
+				"Swap in the Large Induction Rotor to push far more electricity from a single generator."
+				"Bigger rotor, bigger current — feed it more rotation."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "powergrid:generator_large_induction_rotor"
+					id: "60174B7447E2FE4A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "B91D67E053B04E7A"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "ECB59E068F273DBB"
+				}
+			]
+			id: "BD0BE1088EB04B1F"
+			dependencies: [
+				"598F68E9BE18748F"
+			]
+		}
+		{
+			title: "Off the Charts"
+			icon: "powergrid:energy_meter"
+			x: 2.0d
+			y: 14.0d
+			description: [
+				"Generate so much electricity that your Energy Meter rolls over its maximum reading."
+				"The definitive proof of a massive, sustained power grid."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "powergrid:energy_meter_rollover"
+					criterion: ""
+					id: "7CE0C69A079C8448"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "83449AF17E011A2D"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 8
+					id: "773C48A3C7AE0295"
+				}
+			]
+			id: "3EEC8916DD8FBF38"
+			dependencies: [
+				"40F248F7B481BD8F"
+				"BD0BE1088EB04B1F"
+			]
+		}
+	]
+}

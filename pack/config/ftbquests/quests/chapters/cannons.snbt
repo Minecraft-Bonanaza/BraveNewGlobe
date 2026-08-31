@@ -1,0 +1,607 @@
+{
+	id: "76D71A9F065C3484"
+	group: ""
+	order_index: 3
+	filename: "cannons"
+	title: "Cannons \\& Warfare"
+	icon: "createbigcannons:cast_iron_cannon_barrel"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "First, Make Powder"
+			icon: "creategunpowder:volatile_powder"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"No powder, no war. Create Gunpowder lets you mass-make gunpowder with machines instead of grinding creepers."
+				"Mill charcoal, flint and minerals into dusts, then mix into Volatile Powder — that becomes your Gunpowder feedstock. (Hold [W] over an item for its Ponder.)"
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creategunpowder:volatile_powder"
+					count: 8
+					id: "B7C05681D54FE869"
+				}
+				{
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 32
+					id: "2A200746D127C15E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "A112AC3E7F640981"
+				}
+				{
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 8
+					id: "8AD548D3D2A191CB"
+				}
+			]
+			id: "87E51EF6E218C1EF"
+		}
+		{
+			title: "Your First Firearm"
+			icon: "cgs:flintlock"
+			x: -3.0d
+			y: 2.0d
+			description: [
+				"Create Gunsmithing puts a gun in your hand. The Flintlock is the entry piece — assemble a barrel, stock and lock."
+				"Load a Paper Cartridge for propellant and Lead Balls for shot. Slow to reload, but it teaches the loop every CGS gun uses."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "cgs:flintlock"
+					id: "2042257F2D08F02B"
+				}
+				{
+					type: "item"
+					item: "cgs:paper_cartridge"
+					count: 4
+					id: "75F7FAF95E8D4F56"
+				}
+				{
+					type: "item"
+					item: "cgs:lead_balls"
+					count: 8
+					id: "9B6087ECFBAA384D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "DA65C3DA32C35600"
+				}
+				{
+					type: "item"
+					item: "cgs:paper_cartridge"
+					count: 8
+					id: "96DB90A9161A67FD"
+				}
+				{
+					type: "item"
+					item: "cgs:lead_balls"
+					count: 16
+					id: "91D261D16ECF8441"
+				}
+			]
+			id: "368578EB8704F584"
+			dependencies: [
+				"87E51EF6E218C1EF"
+			]
+		}
+		{
+			title: "A Small Cannon"
+			icon: "createbigcannons:cast_iron_cannon_barrel"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"Big Cannons are cast, not crafted. Use the Cannon Builder to cast blocks and the Cannon Drill to bore the barrel."
+				"Stack barrel + chamber + end, drop it on a Fixed Cannon Mount, ram in a Powder Charge and a Solid Shot, then fire with redstone. Cast Iron is cheap and fragile — don't overcharge it."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:cast_iron_cannon_barrel"
+					id: "A626797C3BF65817"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:cast_iron_cannon_chamber"
+					id: "3CF94AC729CFBB0F"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:cast_iron_cannon_end"
+					id: "C6F3F9C8525D9D24"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:fixed_cannon_mount"
+					id: "5399B26D1DAA9512"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 2
+					id: "EB042F9B76270ACE"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:solid_shot"
+					count: 2
+					id: "428979F2F2A83F8F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "98D01A5213273C8C"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 4
+					id: "A20A778EC5A0655D"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:solid_shot"
+					count: 4
+					id: "3A1159868C1B2873"
+				}
+			]
+			id: "B809FF4A4ACC4884"
+			dependencies: [
+				"87E51EF6E218C1EF"
+			]
+		}
+		{
+			title: "The Steel Cannon"
+			icon: "createbigcannons:steel_cannon_barrel"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"Skip the fragile early metals -- build a real cannon in Steel. Cast a Steel Barrel and Chamber plus a rear-loading Screw Breech, then bore them with the Cannon Drill."
+				"Steel holds far more Propellant Stress than Cast Iron, so it takes a full Powder Charge without rupturing. Load a charge + Solid Shot and touch it off."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:steel_cannon_barrel"
+					count: 2
+					id: "06BE8F1A886060F6"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:steel_cannon_chamber"
+					id: "3797E10646DCCE0B"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:steel_screw_breech"
+					id: "8DA525F01E66A58A"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 2
+					id: "B3EE73A9E07EFC9C"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:solid_shot"
+					count: 2
+					id: "96CBFC52B903C854"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "4386FDE4BB797CCB"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:steel_screw_breech"
+					count: 1
+					id: "E5ED8280A9D26131"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 8
+					id: "11394EC5E258A85F"
+				}
+			]
+			id: "1AA86FA51115596A"
+			dependencies: [
+				"B809FF4A4ACC4884"
+			]
+		}
+		{
+			title: "The Autocannon"
+			icon: "createbigcannons:steel_autocannon_barrel"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"The Autocannon rapid-fires cartridges. Build a Steel barrel + breech + recoil spring, then feed it from an Autocannon Ammo Container."
+				"Longer barrels shoot flatter and farther but cut your rate of fire. Fill cartridges ahead of time — you'll burn through them fast."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:steel_autocannon_barrel"
+					id: "EBDA1E9D49FE2A28"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:steel_autocannon_breech"
+					id: "CEAC3EB9494AE09D"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:steel_autocannon_recoil_spring"
+					id: "46821353EA45D48B"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:autocannon_ammo_container"
+					id: "B93E1D368E67DF4A"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:filled_autocannon_cartridge"
+					count: 16
+					id: "919D4AB2F2F03A31"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "F1990CD42145A942"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:autocannon_cartridge"
+					count: 16
+					id: "3B9CFE1B232FDD5B"
+				}
+			]
+			id: "6CAA8B45D46D5B28"
+			dependencies: [
+				"1AA86FA51115596A"
+			]
+		}
+		{
+			title: "Shells and Fuzes"
+			icon: "createbigcannons:he_shell"
+			x: 4.0d
+			y: 6.0d
+			description: [
+				"Now the payloads. HE Shells hit harder than TNT; AP Shells punch through blocks and detonate inside. A shell does nothing without a fuze screwed to its nose."
+				"Impact/Inertia fuzes trigger on contact, Timed/Proximity on a clock or range. Note: Solid Shot and AP Shot are pure kinetic — they cannot be fuzed."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:he_shell"
+					count: 2
+					id: "8D8117F5B4504D84"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:ap_shell"
+					count: 2
+					id: "74363DFD2EDD05F0"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:impact_fuze"
+					count: 2
+					id: "58722C603E673C30"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "6F8B10FA90C7E136"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:impact_fuze"
+					count: 4
+					id: "AE5C41103CFF7F91"
+				}
+			]
+			id: "31F31644F0D390FD"
+			dependencies: [
+				"1AA86FA51115596A"
+			]
+		}
+		{
+			title: "Terminal Ballistics"
+			icon: "cbc_terminal_ballistics:advanced_block_armor_inspection_tool"
+			x: 4.0d
+			y: 8.0d
+			description: [
+				"Every block has Toughness (stops penetration) and Hardness (stops surface damage). The Advanced Inspection Tool reads them when you hover a block."
+				"AP Shot defeats armor that stops normal shells. Defend your own base with Copycat Armor Layers — they wear any texture but soak real punishment."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "cbc_terminal_ballistics:advanced_block_armor_inspection_tool"
+					id: "FF25CAE7EAD528A2"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:ap_shot"
+					count: 4
+					id: "7B1DB5A9E63E28E1"
+				}
+				{
+					type: "item"
+					item: "cbc_terminal_ballistics:copycat_armor_layer"
+					count: 8
+					id: "3D93EC1C97B14413"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "B8961E63E3D74F8D"
+				}
+				{
+					type: "item"
+					item: "cbc_terminal_ballistics:copycat_armor_layer"
+					count: 8
+					id: "4E31DAB6633ACEE1"
+				}
+			]
+			id: "7CCB18851DEA09F9"
+			dependencies: [
+				"31F31644F0D390FD"
+			]
+		}
+		{
+			title: "Airborne Ordnance"
+			icon: "cbc_more_content:large_bomb"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"The Cannon Mount (unlike the carriage) assembles onto a moving contraption — bolt cannons to an airship and take the war to the sky."
+				"Create Warnautics adds droppable ordnance: rain Small/Medium/Large Bombs from altitude, seed Large Mines below, and drop Sea Torpedoes on ships. Build a full aerial arsenal."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:cannon_mount"
+					count: 2
+					id: "F37D32C5D45EC07F"
+				}
+				{
+					type: "item"
+					item: "cbc_more_content:small_bomb"
+					count: 32
+					id: "B46FE2B5E40DA175"
+				}
+				{
+					type: "item"
+					item: "cbc_more_content:medium_bomb"
+					count: 16
+					id: "64E1F005EDADB6B1"
+				}
+				{
+					type: "item"
+					item: "cbc_more_content:large_bomb"
+					count: 8
+					id: "32B7D149C2BFC9CF"
+				}
+				{
+					type: "item"
+					item: "cbc_more_content:large_mine"
+					count: 16
+					id: "2EB9C4CC1A37F121"
+				}
+				{
+					type: "item"
+					item: "cbc_more_content:sea_bomb"
+					count: 8
+					id: "036038570E00841F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "50FC3B3773AF32BC"
+				}
+				{
+					type: "item"
+					item: "cbc_more_content:large_bomb"
+					count: 4
+					id: "B7D03427AF242E64"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "C0EC9C4D26D14818"
+				}
+			]
+			id: "E82D3122D180E236"
+			dependencies: [
+				"6CAA8B45D46D5B28"
+				"7CCB18851DEA09F9"
+			]
+		}
+		{
+			title: "Munitions Factory"
+			icon: "createbigcannons:big_cartridge"
+			x: 2.0d
+			y: 10.0d
+			description: [
+				"A war runs on supply. Hand-casting shells doesn't scale — automate it with Create: deployers to fuze, spouts to fill, presses to form cartridge sheets."
+				"Stockpile a full battle load: 64 HE Shells, 64 Powder Charges, 64 filled Autocannon Cartridges. Let the factory run while you plan the assault."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:he_shell"
+					count: 64
+					id: "949101350AF39F0B"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 64
+					id: "E38A89160A9B4788"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:filled_autocannon_cartridge"
+					count: 64
+					id: "2887AD9440BC48A4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "85748E927A594AF0"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 16
+					id: "07B823064E7E3490"
+				}
+			]
+			id: "8A4F482730C795F2"
+			dependencies: [
+				"6CAA8B45D46D5B28"
+				"31F31644F0D390FD"
+			]
+		}
+		{
+			title: "Powder Works"
+			icon: "creategunpowder:volatile_powder"
+			x: -2.0d
+			y: 10.0d
+			description: [
+				"An army marches on its powder. Hand-milling won't cut it — build a Create line that turns charcoal, flint and minerals into gunpowder by the crate."
+				"Stockpile a war reserve: 256 Gunpowder, 128 Volatile Powder, and 64 Powder Charges ready to load."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "minecraft:gunpowder"
+					count: 256
+					id: "DC7BD10B239E982E"
+				}
+				{
+					type: "item"
+					item: "creategunpowder:volatile_powder"
+					count: 128
+					id: "BD6C15CDBC006E84"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:powder_charge"
+					count: 64
+					id: "CA4A7D85867693B2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "5BC6685C8F948728"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "8DB8E7D00A28A86B"
+				}
+			]
+			id: "DE339E9153901D27"
+			dependencies: [
+				"6CAA8B45D46D5B28"
+			]
+		}
+		{
+			title: "The Great Arsenal"
+			icon: "createbigcannons:nethersteel_cannon_barrel"
+			x: 3.0d
+			y: 12.0d
+			description: [
+				"The endgame guns. Built-Up Steel barrels are layered for extreme Propellant Stress; Nethersteel is the strongest metal in the game and Screw Breeches seal the biggest bores."
+				"Assemble the top-tier line and load Big Cartridges — refillable, high-power propellant. Nothing on the map survives a full-charge Nethersteel salvo."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbigcannons:built_up_steel_cannon_barrel"
+					id: "382FE2C23BAF0E08"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:steel_screw_breech"
+					id: "48AB91F34C1E01E0"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:nethersteel_cannon_barrel"
+					count: 2
+					id: "8A221AE0A4361221"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:big_cartridge"
+					count: 8
+					id: "FF712B44EE2B39C1"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "DAE84F0129F53CAC"
+				}
+				{
+					type: "item"
+					item: "createbigcannons:nethersteel_ingot"
+					count: 8
+					id: "966385560D012ACD"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 8
+					id: "6588620B8DFEDBBA"
+				}
+			]
+			id: "E3A7F5C0FE643DE1"
+			dependencies: [
+				"8A4F482730C795F2"
+				"7CCB18851DEA09F9"
+			]
+		}
+	]
+}

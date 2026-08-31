@@ -1,0 +1,673 @@
+{
+	id: "5E79A76F864583C6"
+	group: ""
+	order_index: 10
+	filename: "naval"
+	title: "Naval \\& High Seas"
+	icon: "hybrid_aquatic:oak_raft"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Cast Off"
+			icon: "hybrid_aquatic:oak_raft"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"The sea is the last open frontier. Get yourself afloat and point the bow at the horizon."
+				"Craft a raft (or larger vessel) and ride it out onto deep water to earn 'Bigger Boat'."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:bigger_boat"
+					criterion: ""
+					id: "73929D9E63DCE1E0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "0D2A18C767B4EA15"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:oak_raft"
+					count: 1
+					id: "3E4D727C3FF0F591"
+				}
+			]
+			id: "7B23E5C7A22E4E5F"
+		}
+		{
+			title: "Lay the Keel"
+			icon: "simulated:physics_assembler"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"A Create ship is a physics contraption, not a boat. Build a watertight hull from any blocks,"
+				"then use the Physics Assembler to make it a movable sub-level -- Create: Better High Seas floats any sealed hull (Archimedes buoyancy). The Handle lets you board it."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:physics_assembler"
+					id: "6D15B023D74F2DC8"
+				}
+				{
+					type: "item"
+					item: "simulated:iron_handle"
+					id: "20DC015B18D6CEE7"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "AA7D8D566EAA03D9"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "77DFFD769E3C81A4"
+				}
+			]
+			id: "C088EDB241B665F4"
+			dependencies: [
+				"7B23E5C7A22E4E5F"
+			]
+		}
+		{
+			title: "Set Sail"
+			icon: "simulated:steering_wheel"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Now move it: an Engine Assembly feeds rotation, a Propeller on its Bearing bites the water for"
+				"thrust, and a Steering Wheel is your helm. Buoyancy holds you up; thrust and rudder do the rest -- same Sable physics engine as the airships."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:engine_assembly"
+					id: "AAD4B8CF66D221C6"
+				}
+				{
+					type: "item"
+					item: "aeronautics:andesite_propeller"
+					id: "48F0E49913BF9B6F"
+				}
+				{
+					type: "item"
+					item: "aeronautics:propeller_bearing"
+					id: "B9040AAAC6433FE4"
+				}
+				{
+					type: "item"
+					item: "simulated:steering_wheel"
+					id: "A133626C8C693AEF"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "8AB7CB806E0DD538"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 4
+					id: "8A4A45AC8648339D"
+				}
+			]
+			id: "53B868D308CC5462"
+			dependencies: [
+				"C088EDB241B665F4"
+			]
+		}
+		{
+			title: "First Breath"
+			icon: "hybrid_aquatic:diving_helmet"
+			x: -1.0d
+			y: 1.0d
+			description: [
+				"You can't explore what you can't reach. A diving suit buys you the minutes the surface won't."
+				"Craft the full Hybrid Aquatic Diving Suit to unlock the deep."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:diving_suit"
+					criterion: ""
+					id: "3F7B9166FF0C86F0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "60798F5698AF9118"
+				}
+				{
+					type: "item"
+					item: "aquamirae:oxygen_tank"
+					count: 1
+					id: "72D9EF3928FBEC4F"
+				}
+			]
+			id: "BEBE74B5FE625098"
+			dependencies: [
+				"7B23E5C7A22E4E5F"
+			]
+		}
+		{
+			title: "Mark the Waters"
+			icon: "hybrid_aquatic:buoy"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"A sailor who can't find their way home isn't a sailor for long."
+				"Place a Buoy to mark a safe channel or a spot worth returning to."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:buoy"
+					criterion: ""
+					id: "2009E24E98BF409D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "F5A888DC1339C7E3"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:buoy"
+					count: 4
+					id: "7080935EED49B9F9"
+				}
+			]
+			id: "B58F8B5D1A5D7312"
+			dependencies: [
+				"7B23E5C7A22E4E5F"
+			]
+		}
+		{
+			title: "Bait and Line"
+			icon: "hybrid_aquatic:barbed_hook"
+			x: -4.0d
+			y: 1.0d
+			description: [
+				"Every voyage runs on what the sea will give you. Start with a proper hook."
+				"Obtain a fishing Hook to begin working Hybrid Aquatic's catch system."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:hook"
+					criterion: ""
+					id: "9393B974256F4AE4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "E94C70DFF831D744"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:magnetic_hook"
+					count: 1
+					id: "9CF1594C110B81AA"
+				}
+			]
+			id: "0BE6FB96C02D585C"
+			dependencies: [
+				"7B23E5C7A22E4E5F"
+			]
+		}
+		{
+			title: "Cast the Net"
+			icon: "hybrid_aquatic:fishing_net"
+			x: -4.0d
+			y: 2.0d
+			description: [
+				"A line takes one fish. A net takes the shoal — and lets you move live catch."
+				"Craft a Fishing Net to scoop and relocate aquatic creatures."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:fishing_net"
+					criterion: ""
+					id: "384F8782017DCC74"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "56A6FF091CE9B583"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:fishing_net"
+					count: 1
+					id: "7BCB8BFCC5C90D7D"
+				}
+			]
+			id: "5B2654B5F73CABB6"
+			dependencies: [
+				"0BE6FB96C02D585C"
+			]
+		}
+		{
+			title: "A Full Haul"
+			icon: "hybrid_aquatic:tuna"
+			x: -4.0d
+			y: 3.0d
+			description: [
+				"A working galley never sails hungry. Bring in enough to stock the hold."
+				"Land 16 Tuna and 16 Mackerel."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "hybrid_aquatic:tuna"
+					count: 16
+					id: "9AF1F0A6F0C30A89"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:mackerel"
+					count: 16
+					id: "36EF8064048D045B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "968BBE63E0606CE9"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:cooked_fish_steak"
+					count: 8
+					id: "E4061F282801E8E4"
+				}
+			]
+			id: "7DD98C0A5E8E5947"
+			dependencies: [
+				"5B2654B5F73CABB6"
+			]
+		}
+		{
+			title: "Deep Diver"
+			icon: "hybrid_aquatic:reinforced_diving_helmet"
+			x: -1.0d
+			y: 2.0d
+			description: [
+				"The good salvage sits below where light reaches. Reinforce the suit and weight yourself down."
+				"Upgrade to the Reinforced Diving Suit and craft a Diving Weight to sink and stay."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:reinforced_diving_suit"
+					criterion: ""
+					id: "86CFCBDCC8A5AE35"
+				}
+				{
+					type: "advancement"
+					advancement: "hybrid_aquatic:diving_weight"
+					criterion: ""
+					id: "67AE49A8800B54E2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "805A8A6C87EE2090"
+				}
+				{
+					type: "item"
+					item: "hybrid_aquatic:glowstick"
+					count: 8
+					id: "83526910703E4FD2"
+				}
+			]
+			id: "904204B915D5300C"
+			dependencies: [
+				"BEBE74B5FE625098"
+			]
+		}
+		{
+			title: "Into the Ice Maze"
+			icon: "aquamirae:maze_rose"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"Aquamirae's frozen seas hide a labyrinth under the floes — cold, dark, and worth the risk."
+				"Find the Ice Maze. Bring your dive gear; the water bites."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aquamirae:adventure/find_ice_maze"
+					criterion: ""
+					id: "6A54178B78B4872A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "6A576E5107417325"
+				}
+				{
+					type: "item"
+					item: "aquamirae:sea_stew"
+					count: 4
+					id: "152F625D0D3A2D1B"
+				}
+			]
+			id: "EA2DE1899CE3CE4B"
+			dependencies: [
+				"BEBE74B5FE625098"
+			]
+		}
+		{
+			title: "The Frozen Key"
+			icon: "aquamirae:frozen_key"
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"The maze keeps its treasure behind a lock only the maze can open."
+				"Obtain the Frozen Key from the ice labyrinth."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aquamirae:adventure/obtain_frozen_key"
+					criterion: ""
+					id: "E458C3BBD571FCD0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "8F0D844F773E64F5"
+				}
+				{
+					type: "item"
+					item: "aquamirae:treasure_pouch"
+					count: 1
+					id: "4D013871FEE3AA52"
+				}
+			]
+			id: "6897E01C76D92057"
+			dependencies: [
+				"EA2DE1899CE3CE4B"
+			]
+		}
+		{
+			title: "Scales of the Deep"
+			icon: "seaeater:sea_eater_scale"
+			x: 5.0d
+			y: 2.0d
+			description: [
+				"The Sea Myths dwell where divers rarely return. Face the smaller beasts and take their measure."
+				"Collect 4 Bloop Scales and 4 Sea Eater Scales — proof you met them and won."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "seaeater:bloop_scale"
+					count: 4
+					id: "F79865A4B7A4E14D"
+				}
+				{
+					type: "item"
+					item: "seaeater:sea_eater_scale"
+					count: 4
+					id: "8AABF1D089CAFE12"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "31E0BF28F03D3120"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 8
+					id: "E666C3955C13BD60"
+				}
+			]
+			id: "762A5298F2A109A5"
+			dependencies: [
+				"904204B915D5300C"
+			]
+		}
+		{
+			title: "Break the Shipbreaker"
+			icon: "aquamirae:tidepiercer"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"The Shipbreaker is why sailors fear the frozen depths. Meet it and come back breathing."
+				"Survive the Shipbreaker to claim the deep's greatest trophy."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aquamirae:adventure/survive_the_shipbreaker"
+					criterion: ""
+					id: "170A5A7EFC628558"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "64A94DB3FBC25BB2"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 10
+					id: "739229B3D860E24C"
+				}
+			]
+			id: "66C27896962BAF7F"
+			dependencies: [
+				"6897E01C76D92057"
+			]
+		}
+		{
+			title: "Abyssal Regalia"
+			icon: "aquamirae:abyssal_heaume"
+			x: 2.0d
+			y: 5.0d
+			description: [
+				"The finest gear the abyss offers is never handed over — it's earned piece by piece."
+				"Assemble the complete Abyssal armor set AND the complete Abyssal weapon set."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aquamirae:adventure/obtain_all_abyssal_armor"
+					criterion: ""
+					id: "2B1774280949A101"
+				}
+				{
+					type: "advancement"
+					advancement: "aquamirae:adventure/obtain_all_abyssal_weapons"
+					criterion: ""
+					id: "A6986AB9418B1E73"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "32CDD223097DCEA0"
+				}
+				{
+					type: "item"
+					item: "aquamirae:abyssal_amethyst"
+					count: 4
+					id: "ACC1E1CEAC3829B5"
+				}
+			]
+			id: "BF27ECEADE7AB5BF"
+			dependencies: [
+				"66C27896962BAF7F"
+			]
+		}
+		{
+			title: "Leviathan's Toll"
+			icon: "seaeater:leviathan_scale"
+			x: 5.0d
+			y: 3.0d
+			description: [
+				"The apex of the Sea Myths — the Leviathan and the Kraken — pay their toll only to the relentless."
+				"Harvest 8 Leviathan Scales and 8 Kraken Scales. This is a hunt, not a dive."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "seaeater:leviathan_scale"
+					count: 8
+					id: "F1EDB627DC8A2067"
+				}
+				{
+					type: "item"
+					item: "seaeater:kraken_scale"
+					count: 8
+					id: "1E739249EDB31D29"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "74584E80AE4F755F"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 10
+					id: "72D17DBF5D2F6931"
+				}
+			]
+			id: "02C6851CC8C95878"
+			dependencies: [
+				"762A5298F2A109A5"
+			]
+		}
+		{
+			title: "Master Angler"
+			icon: "hybrid_aquatic:golden_dorado"
+			x: -4.0d
+			y: 4.0d
+			description: [
+				"Anyone can catch dinner. A Master Angler catches the whole sea, one at a time."
+				"Reel in 100 fish, tracked lifetime."
+			]
+			tasks: [
+				{
+					type: "stat"
+					stat: "minecraft:fish_caught"
+					value: 100
+					id: "FDCC3D9170FD58AC"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "C66F4A3FDFC3EA72"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 5
+					id: "FC127FB4C7A7295C"
+				}
+			]
+			id: "08BDB5A566D8DB98"
+			dependencies: [
+				"7DD98C0A5E8E5947"
+			]
+		}
+		{
+			title: "The Ironclad"
+			icon: "simulated:engine_assembly"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"A warship, not a raft. Build a large seaworthy hull: 4 Engine Assemblies, 6 Propellers,"
+				"8 Sails and 256 planks of armored hull. High Seas floats it; Sable physics sails it into the deep."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "simulated:engine_assembly"
+					count: 4
+					id: "1CD19B7B48A68BD1"
+				}
+				{
+					type: "item"
+					item: "aeronautics:andesite_propeller"
+					count: 6
+					id: "02DBF954BC6D7FF8"
+				}
+				{
+					type: "item"
+					item: "simulated:white_symmetric_sail"
+					count: 8
+					id: "64E62CD6AAB348DE"
+				}
+				{
+					type: "item"
+					item: "minecraft:oak_planks"
+					count: 256
+					id: "77008D104C568937"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "628B330165C0BD72"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 15
+					id: "7B64E48831E12012"
+				}
+			]
+			id: "BC4C2E8FA49826B5"
+			dependencies: [
+				"53B868D308CC5462"
+				"66C27896962BAF7F"
+			]
+		}
+	]
+}

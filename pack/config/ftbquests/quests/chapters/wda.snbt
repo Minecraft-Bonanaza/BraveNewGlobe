@@ -1,0 +1,781 @@
+{
+	id: "F96359BB2471D19F"
+	group: ""
+	order_index: 22
+	filename: "wda"
+	title: "When Dungeons Arise"
+	icon: "minecraft:filled_map"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Ruins on the Horizon"
+			icon: "minecraft:filled_map"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Our world is dotted with hand-built dungeons. Wander until you stumble on your first one."
+				"This root fires the moment you discover any When Dungeons Arise structure."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:wda_root"
+					criterion: ""
+					id: "4F22CE8FA4458A86"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "D420342F4CAA0216"
+				}
+			]
+			id: "5584BB69F44C0CBB"
+		}
+		{
+			title: "Bandit Towers"
+			icon: "minecraft:crossbow"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"Timber-and-stone towers held by bandits, usually on plains and hills."
+				"A gentle first fight -- clear it for loot chests."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_bandit_towers"
+					criterion: ""
+					id: "C35D82754E687987"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "96FB310E0900FFE8"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 4
+					id: "D4B9E9A3A443ABDC"
+				}
+			]
+			id: "7F3A5D782DE82F2A"
+			dependencies: [
+				"5584BB69F44C0CBB"
+			]
+		}
+		{
+			title: "The Monastery"
+			icon: "minecraft:bell"
+			x: -1.0d
+			y: 1.0d
+			description: [
+				"A quiet cloister of monks tucked into forested slopes."
+				"Explore its halls and undercroft."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_monastery"
+					criterion: ""
+					id: "540D9A1560C3A1F5"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "F4C4BAD8AC85E939"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 4
+					id: "EFF53438AB615366"
+				}
+			]
+			id: "967290B3421B9C26"
+			dependencies: [
+				"5584BB69F44C0CBB"
+			]
+		}
+		{
+			title: "The Abandoned Temple"
+			icon: "minecraft:mossy_cobblestone"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"An overgrown temple sunk into the landscape. Watch for traps in the deeper rooms."
+				"A hub landmark -- the path toward the coast opens from here."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_abandoned_temple"
+					criterion: ""
+					id: "CD5712D567F5AEFB"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "73DC5731950AE548"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 5
+					id: "E85A9063301B0739"
+				}
+			]
+			id: "D4CE4524B68C519A"
+			dependencies: [
+				"5584BB69F44C0CBB"
+			]
+		}
+		{
+			title: "Mushroom Mines"
+			icon: "minecraft:red_mushroom_block"
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"Giant-mushroom shafts riddled with tunnels."
+				"Also look for the mushroom village and house nearby."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_mushroom_mines"
+					criterion: ""
+					id: "FD1A99CD52458466"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "0E0E7DA108926FB4"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 4
+					id: "7D88087F8CE6ECC5"
+				}
+			]
+			id: "40CBA67444E19721"
+			dependencies: [
+				"5584BB69F44C0CBB"
+			]
+		}
+		{
+			title: "The Wishing Well"
+			icon: "minecraft:emerald"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"A small structure hiding a drop shaft to something below."
+				"A quick curiosity on the way to bigger things."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_wishing_well"
+					criterion: ""
+					id: "4907FD841DC61DA9"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "E0C5EF5B9296062D"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "065E39C085976D2A"
+				}
+			]
+			id: "903184D9A41D1175"
+			dependencies: [
+				"5584BB69F44C0CBB"
+			]
+		}
+		{
+			title: "Wrecks on the Water"
+			icon: "minecraft:oak_boat"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Head to open ocean. The Undead Pirate Ship drifts crewed by the dead."
+				"Our pack seeds the sea structure set across deep water -- sail out to find them."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_undead_pirate_ship"
+					criterion: ""
+					id: "701AB382C5BF2499"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "74EF11E000FE9945"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 6
+					id: "9C486729F30ED1B8"
+				}
+			]
+			id: "05BBE7ACBD336522"
+			dependencies: [
+				"D4CE4524B68C519A"
+			]
+		}
+		{
+			title: "Illager Corsair"
+			icon: "minecraft:jungle_boat"
+			x: -1.0d
+			y: 3.0d
+			description: [
+				"An illager warship -- corsair or galley -- prowling the seas."
+				"Board it and clear the decks."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_illager_corsair_or_illager_galley"
+					criterion: ""
+					id: "E5779E99CF19559E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "880CAA61D05FACCE"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 6
+					id: "B870A5161E50ECC0"
+				}
+			]
+			id: "0ADBDA14432C5B2D"
+			dependencies: [
+				"05BBE7ACBD336522"
+			]
+		}
+		{
+			title: "The Lighthouse"
+			icon: "minecraft:sea_lantern"
+			x: 1.0d
+			y: 3.0d
+			description: [
+				"A tall coastal beacon. Climb it for a vantage over the water."
+				"From the top you can spot the sky structures drifting far overhead."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_lighthouse"
+					criterion: ""
+					id: "6DEB98DE9219F60E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "E276B515875D5C82"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 6
+					id: "8E2BB14C2E5B714C"
+				}
+			]
+			id: "F6550994B38EB5C3"
+			dependencies: [
+				"05BBE7ACBD336522"
+			]
+		}
+		{
+			title: "Something in the Clouds"
+			icon: "minecraft:phantom_membrane"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Look up. Our pack lifts the sky structure set to roughly Y700-750."
+				"The Small Blimp is the easiest to reach -- build up or fly to it first."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_small_blimp"
+					criterion: ""
+					id: "E137F4C19E25FBAB"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "6CA087028948059F"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 1
+					id: "96FFCCA8AAF35943"
+				}
+			]
+			id: "41D7FE4EDD3ED809"
+			dependencies: [
+				"F6550994B38EB5C3"
+				"0ADBDA14432C5B2D"
+			]
+		}
+		{
+			title: "The Aviary"
+			icon: "minecraft:egg"
+			x: -1.0d
+			y: 5.0d
+			description: [
+				"A roost fortress high in the sky layer."
+				"Bring fall protection -- one misstep is a very long drop."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_aviary"
+					criterion: ""
+					id: "F51EE4818F7DB54C"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "EF3E13C6200EE3A6"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 1
+					id: "D6964A4BFA700722"
+				}
+			]
+			id: "3D9344B1B4405AC7"
+			dependencies: [
+				"41D7FE4EDD3ED809"
+			]
+		}
+		{
+			title: "The Mechanical Nest"
+			icon: "minecraft:lightning_rod"
+			x: 1.0d
+			y: 5.0d
+			description: [
+				"A clockwork stronghold floating at the top of the sky band."
+				"One of the toughest aerial fights in the pack."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_mechanical_nest"
+					criterion: ""
+					id: "27DD416CCD76DA44"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "E090BD5E2FA9F869"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "0CD01B92281F5098"
+				}
+			]
+			id: "885773AEBE3B1881"
+			dependencies: [
+				"41D7FE4EDD3ED809"
+			]
+		}
+		{
+			title: "The Heavenly Rider"
+			icon: "minecraft:saddle"
+			x: -1.0d
+			y: 6.0d
+			description: [
+				"First of the three Heavenly aerial arenas."
+				"Clearing the sky trio is the pack's high-altitude endgame."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_heavenly_rider"
+					criterion: ""
+					id: "99B62F739B008874"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "8A21795E53E39FFD"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "2EA6397C89056E58"
+				}
+			]
+			id: "35F44705D60FC9D9"
+			dependencies: [
+				"3D9344B1B4405AC7"
+			]
+		}
+		{
+			title: "The Heavenly Challenger"
+			icon: "minecraft:iron_sword"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Second Heavenly arena, harder than the Rider."
+				"Fight your way across the platforms in the sky."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_heavenly_challenger"
+					criterion: ""
+					id: "CB029CB69C0A1D20"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "D1BBA5AA09DA69DF"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "CCB4F61378D7FB89"
+				}
+			]
+			id: "F8B67A8CEE159E3C"
+			dependencies: [
+				"41D7FE4EDD3ED809"
+			]
+		}
+		{
+			title: "The Heavenly Conqueror"
+			icon: "minecraft:diamond_sword"
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"The pinnacle of the sky set -- the Conqueror's citadel."
+				"Reach it only after the Rider and Challenger are behind you."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_heavenly_conqueror"
+					criterion: ""
+					id: "35C39AA9146DDBA3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "19E377E1AE186708"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "BD0102F51EF29718"
+				}
+			]
+			id: "278F8124ABBE2939"
+			dependencies: [
+				"35F44705D60FC9D9"
+				"F8B67A8CEE159E3C"
+			]
+		}
+		{
+			title: "Keep Kayra"
+			icon: "minecraft:stone_bricks"
+			x: -2.0d
+			y: 8.0d
+			description: [
+				"A sprawling ground fortress from our large_dungeon set."
+				"Long, dense, and richly stocked -- pace yourself."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_keep_kayra"
+					criterion: ""
+					id: "CEEDCD9AE2997955"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "DF24A61BB426545B"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "8FE0A5F4BEB7BE86"
+				}
+			]
+			id: "E87792C6BA695743"
+			dependencies: [
+				"278F8124ABBE2939"
+			]
+		}
+		{
+			title: "Kisegi Sanctuary"
+			icon: "minecraft:bamboo"
+			x: -1.0d
+			y: 8.0d
+			description: [
+				"An eastern-styled sanctuary sprawl."
+				"Part of the large_dungeon endgame ring."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_kisegi_sanctuary"
+					criterion: ""
+					id: "5B90633BC5AD0655"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "5212D1EC1F63EBD4"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "A1C9379B88EA2273"
+				}
+			]
+			id: "EB896CBA3DE3F64A"
+			dependencies: [
+				"278F8124ABBE2939"
+			]
+		}
+		{
+			title: "Scorched Mines"
+			icon: "minecraft:magma_block"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"A burning mine complex sunk deep -- our pack drops it well below sea level."
+				"Heat and hostile crews throughout."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_scorched_mines"
+					criterion: ""
+					id: "899A7FC46993CBE9"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "FBA293A602AAE05B"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "E0F23FAD81B34B9A"
+				}
+			]
+			id: "C5B1386BA94C14A1"
+			dependencies: [
+				"278F8124ABBE2939"
+			]
+		}
+		{
+			title: "Plague Asylum"
+			icon: "minecraft:wither_rose"
+			x: 1.0d
+			y: 8.0d
+			description: [
+				"A grim asylum buried underground in our large_dungeon set."
+				"Cramped, dark, and dangerous."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_plague_asylum"
+					criterion: ""
+					id: "4335DB359324BEB6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "FBE7AF75A30136C9"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "1195BE955CBEFB62"
+				}
+			]
+			id: "549D9C61AFE2C9DF"
+			dependencies: [
+				"278F8124ABBE2939"
+			]
+		}
+		{
+			title: "Shiraz Palace"
+			icon: "minecraft:gold_block"
+			x: 2.0d
+			y: 8.0d
+			description: [
+				"The grandest large_dungeon -- a sprawling palace of gold and guards."
+				"The richest haul in the pack awaits its throne room."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_shiraz_palace"
+					criterion: ""
+					id: "E589E7E83726491B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "85EFA0732B2D5CAB"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "38ADD9FD08084769"
+				}
+			]
+			id: "3250273D1609BDE1"
+			dependencies: [
+				"278F8124ABBE2939"
+			]
+		}
+		{
+			title: "The Typhon"
+			icon: "minecraft:prismarine"
+			x: 0.0d
+			y: 9.0d
+			description: [
+				"A colossal serpent-ship, largest of the sea giants."
+				"A capstone-scale hunt on the open water."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_typhon"
+					criterion: ""
+					id: "6FE15023A194B552"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "82DF9B7C6FAD1967"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 4
+					id: "8A179D9E391E23B5"
+				}
+			]
+			id: "0AB2BDAC4F636880"
+			dependencies: [
+				"3250273D1609BDE1"
+				"549D9C61AFE2C9DF"
+				"C5B1386BA94C14A1"
+				"EB896CBA3DE3F64A"
+				"E87792C6BA695743"
+			]
+		}
+		{
+			title: "The Coliseum"
+			icon: "minecraft:golden_apple"
+			x: 0.0d
+			y: 10.0d
+			description: [
+				"The grand arena -- find it and you've swept the pack's dungeons top to bottom."
+				"Your explorer's endgame."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "dungeons_arise:find_coliseum"
+					criterion: ""
+					id: "B4B42A7E9427E044"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "1743804FB8C97D1B"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 6
+					id: "01107A1CBFF9CD36"
+				}
+			]
+			id: "D14ACE79515B142A"
+			dependencies: [
+				"0AB2BDAC4F636880"
+			]
+		}
+	]
+}

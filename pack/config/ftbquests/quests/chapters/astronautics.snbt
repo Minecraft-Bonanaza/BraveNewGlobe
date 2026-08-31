@@ -1,0 +1,662 @@
+{
+	id: "7961365AEE5908DC"
+	group: ""
+	order_index: 11
+	filename: "astronautics"
+	title: "Astronautics"
+	icon: "creatingspace:rocket_engineer_table"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "First Steps to the Stars"
+			icon: "creatingspace:rocket_engineer_table"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Every launch begins at a workbench, not a launchpad. Craft the Rocket Engineering Table -- it's where blueprints, engines, and rocket parts come together."
+				"This line is a standalone rocketry track. Strong Create power and some flight experience make the later stages far easier, but nothing here forces them -- you'll feel the need when you hit it."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:rocket_engineer_table"
+					id: "7B0B5E2625D22B6A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "173D4CA7AF452F39"
+				}
+				{
+					type: "item"
+					item: "creatingspace:design_blueprint"
+					count: 1
+					id: "CC9E2C2CFBB51B93"
+				}
+			]
+			id: "67FB2F40A17CF8F4"
+		}
+		{
+			title: "Don't Forget to Breathe"
+			icon: "creatingspace:basic_spacesuit_helmet"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"Vacuum is not forgiving. Weave Basic Spacesuit Fabric and assemble the helmet, leggings, and boots."
+				"Note: there is no suit chestplate -- the chest slot is an oxygen backtank (next quest). Fabric feeds every suit piece, so batch it."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:basic_spacesuit_helmet"
+					id: "4EFA160D3841392E"
+				}
+				{
+					type: "item"
+					item: "creatingspace:basic_spacesuit_leggings"
+					id: "A6ECCFE76484374B"
+				}
+				{
+					type: "item"
+					item: "creatingspace:basic_spacesuit_boots"
+					id: "54FC8CD7C3684E7D"
+				}
+				{
+					type: "item"
+					item: "creatingspace:basic_spacesuit_fabric"
+					count: 4
+					id: "FDD24018D4749EE4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "09BF9E220CBF2740"
+				}
+			]
+			id: "86AD2DD902D777A2"
+			dependencies: [
+				"67FB2F40A17CF8F4"
+			]
+		}
+		{
+			title: "A Breath of Air"
+			icon: "creatingspace:copper_oxygen_backtank"
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"The Copper Oxygen Backtank is your chest slot and your air supply. The Oxygen Sealer pressurizes a room so you can work without the suit indoors."
+				"Together these are your first real life-support loop -- refill the tank before you leave sealed air."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:copper_oxygen_backtank"
+					id: "8B790449903C5002"
+				}
+				{
+					type: "item"
+					item: "creatingspace:oxygen_sealer"
+					id: "3BF407F1F14DA42C"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "769199CC434224E4"
+				}
+			]
+			id: "97E3BE9BA60C1728"
+			dependencies: [
+				"86AD2DD902D777A2"
+			]
+		}
+		{
+			title: "Combustion Basics"
+			icon: "creatingspace:combustion_chamber"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"A rocket engine is a controlled explosion aimed downward. Build a Combustion Chamber (where fuel burns) and a Bell Nozzle (which turns that pressure into thrust)."
+				"These two are the heart of every engine tier you'll make -- learn to mass them early."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:combustion_chamber"
+					id: "17EDEB43FB76DF97"
+				}
+				{
+					type: "item"
+					item: "creatingspace:bell_nozzle"
+					id: "AE9751DD31CBC850"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "D2FD08712B412499"
+				}
+				{
+					type: "item"
+					item: "creatingspace:engine_blueprint"
+					count: 1
+					id: "6B7D3CAFD207FAAE"
+				}
+			]
+			id: "FF8D24C16AE54364"
+			dependencies: [
+				"67FB2F40A17CF8F4"
+			]
+		}
+		{
+			title: "Ignition"
+			icon: "creatingspace:small_rocket_engine"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"Assemble your first Small Rocket Engine. It won't reach orbit, but it proves the fuel-plus-oxidizer principle: an engine needs BOTH a propellant and oxygen to burn it."
+				"Keep this in mind -- half your remaining work is producing those two fluids at scale."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:small_rocket_engine"
+					id: "2BE72B35BD6C1E4D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "AB491A97DD91440D"
+				}
+			]
+			id: "E568E316B3AA78A0"
+			dependencies: [
+				"FF8D24C16AE54364"
+			]
+		}
+		{
+			title: "Pipes \\& Walls"
+			icon: "creatingspace:andesite_engine_pipe"
+			x: 1.0d
+			y: 3.0d
+			description: [
+				"Engines are built up from tiered structural parts. Andesite walls and pipes are the entry tier; copper is a step up in heat tolerance."
+				"Higher tiers (inconel, hastelloy) exist for extreme engines -- you won't need them to reach orbit, but the crafting pattern is identical."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:andesite_engine_pipe"
+					count: 4
+					id: "A31FD606B5E210AB"
+				}
+				{
+					type: "item"
+					item: "creatingspace:andesite_engine_wall"
+					count: 4
+					id: "9D2272CC5440E39E"
+				}
+				{
+					type: "item"
+					item: "creatingspace:copper_engine_pipe"
+					count: 2
+					id: "1484E63BB6E373F0"
+				}
+				{
+					type: "item"
+					item: "creatingspace:copper_engine_wall"
+					count: 2
+					id: "3BD1ADE364E043D1"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "23DE92C42BCE53D5"
+				}
+			]
+			id: "B7BBD57F82106362"
+			dependencies: [
+				"E568E316B3AA78A0"
+			]
+		}
+		{
+			title: "Injectors \\& Turbines"
+			icon: "creatingspace:andesite_injector"
+			x: 3.0d
+			y: 3.0d
+			description: [
+				"Injectors meter fuel into the chamber; turbines pump it under pressure. These are the moving guts of a real engine."
+				"Andesite is the starting tier, brass the next. Match the tier of your injectors/turbines to the engine you're feeding."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:andesite_injector"
+					count: 2
+					id: "B7D800042FF560D8"
+				}
+				{
+					type: "item"
+					item: "creatingspace:andesite_turbine"
+					count: 2
+					id: "9839EFF5AECFB4D1"
+				}
+				{
+					type: "item"
+					item: "creatingspace:brass_injector"
+					id: "8AD5FA7CDB52DB34"
+				}
+				{
+					type: "item"
+					item: "creatingspace:brass_turbine"
+					id: "038F999814943D26"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "50646407046BF353"
+				}
+			]
+			id: "6D4967AF3E6032F5"
+			dependencies: [
+				"E568E316B3AA78A0"
+			]
+		}
+		{
+			title: "The Big Rocket Engine"
+			icon: "creatingspace:big_rocket_engine"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"Combine chambers, nozzles, injectors, and turbines into a Big Rocket Engine -- the powerplant that can actually lift a crewed rocket off the ground."
+				"This is a serious build. Have your engine parts stockpiled before you start."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:big_rocket_engine"
+					id: "A5398858287A88A3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "C16C7993208885B4"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 5
+					id: "9E0B429EE776202F"
+				}
+			]
+			id: "A9CDB16DBC6999AB"
+			dependencies: [
+				"B7BBD57F82106362"
+				"6D4967AF3E6032F5"
+			]
+		}
+		{
+			title: "Liquid Oxygen"
+			icon: "creatingspace:air_liquefier"
+			x: -2.0d
+			y: 3.0d
+			description: [
+				"The Air Liquefier chills air until oxygen condenses out. Liquid Oxygen is your oxidizer -- no engine burns without it."
+				"This machine draws real power. A strong Create rotational or generator setup pays off here."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:air_liquefier"
+					id: "817A0B2B67C70B99"
+				}
+				{
+					type: "item"
+					item: "creatingspace:liquid_oxygen_bucket"
+					id: "17430B413F626FF0"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "9214EE25F848AD1C"
+				}
+			]
+			id: "D394B687E02D48A3"
+			dependencies: [
+				"97E3BE9BA60C1728"
+			]
+		}
+		{
+			title: "Rocket Fuel"
+			icon: "creatingspace:chemical_synthesizer"
+			x: -2.0d
+			y: 4.0d
+			description: [
+				"The Chemical Synthesizer, loaded with a Catalyst in a Catalyst Carrier, produces Liquid Methane -- the propellant that pairs with your liquid oxygen."
+				"Fuel + oxidizer is the whole game. Once both flow reliably, you have a launch-capable supply chain."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:chemical_synthesizer"
+					id: "0187B6EE46F31AB2"
+				}
+				{
+					type: "item"
+					item: "creatingspace:catalyst_carrier"
+					id: "8B20146066B5D923"
+				}
+				{
+					type: "item"
+					item: "creatingspace:basic_catalyst"
+					id: "4217645DC3DF54D2"
+				}
+				{
+					type: "item"
+					item: "creatingspace:liquid_methane_bucket"
+					id: "FA268D233E1D95AF"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "12E4952F064A96C3"
+				}
+			]
+			id: "9D3C75D65760DBF8"
+			dependencies: [
+				"D394B687E02D48A3"
+			]
+		}
+		{
+			title: "Advanced Spacesuit"
+			icon: "creatingspace:advanced_spacesuit_helmet"
+			x: -4.0d
+			y: 3.0d
+			description: [
+				"Orbit and beyond need better protection. Advanced Spacesuit Fabric and a Netherite Oxygen Backtank give you longer air and tougher shielding."
+				"Build this before you attempt a launch -- the basic suit will not keep you alive up there."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:advanced_spacesuit_helmet"
+					id: "EA39E0E094BA9C7E"
+				}
+				{
+					type: "item"
+					item: "creatingspace:advanced_spacesuit_leggings"
+					id: "5A0D64F9C2B55228"
+				}
+				{
+					type: "item"
+					item: "creatingspace:advanced_spacesuit_boots"
+					id: "15A9D4C05B634722"
+				}
+				{
+					type: "item"
+					item: "creatingspace:advanced_spacesuit_fabric"
+					count: 4
+					id: "FA1D42E317782306"
+				}
+				{
+					type: "item"
+					item: "creatingspace:netherite_oxygen_backtank"
+					id: "472A0A131C6F8441"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "F78E2927D8FFB037"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 3
+					id: "561B0C4BE814C26A"
+				}
+			]
+			id: "F997ADA4020A172B"
+			dependencies: [
+				"D394B687E02D48A3"
+			]
+		}
+		{
+			title: "Assembling the Rocket"
+			icon: "creatingspace:rocket_casing"
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"Now the airframe: Rocket Casing for the hull, Rocket Controls to fly it, a Power Pack for onboard energy, an Exhaust Pack and Aerospike Plug for the tail."
+				"Bolt these to your Big Rocket Engine on a launchpad and you have a rocket ready to fuel."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:rocket_casing"
+					count: 4
+					id: "705CB5C46A42FC80"
+				}
+				{
+					type: "item"
+					item: "creatingspace:rocket_controls"
+					id: "B7DB7F3BC0D04075"
+				}
+				{
+					type: "item"
+					item: "creatingspace:power_pack"
+					id: "27A5819E965C97EA"
+				}
+				{
+					type: "item"
+					item: "creatingspace:exhaust_pack"
+					id: "E559A450CAED9BBE"
+				}
+				{
+					type: "item"
+					item: "creatingspace:aerospike_plug"
+					id: "7FA658C0C82BC9C6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "45ABD6B51F85592A"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 5
+					id: "FC5CCA266AE4FACF"
+				}
+			]
+			id: "91B0FD2B8406DB2A"
+			dependencies: [
+				"A9CDB16DBC6999AB"
+			]
+		}
+		{
+			title: "To Earth Orbit"
+			icon: "creatingspace:rocket_controls"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"This is it. Fuel the rocket with liquid methane and liquid oxygen, strap in, and light it. Reaching Earth orbit is the payoff for every part you've built."
+				"The advancement fires only when you actually make orbit -- no shortcuts. Bring a full oxygen backtank and the advanced suit."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "creatingspace:reach_earth_orbit"
+					criterion: ""
+					id: "0B58725548575F5B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "EC2349A36FB7F32B"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "079DDD58EC883C91"
+				}
+			]
+			id: "300BC808129E97A6"
+			dependencies: [
+				"91B0FD2B8406DB2A"
+				"9D3C75D65760DBF8"
+				"F997ADA4020A172B"
+			]
+		}
+		{
+			title: "Airframe Foundry"
+			icon: "creatingspace:aluminum_block"
+			x: -2.0d
+			y: 7.0d
+			description: [
+				"One rocket is a demo. A space program runs on metal. Aluminum is the airframe alloy -- prove you can produce it by the stack."
+				"This is where a Create ore-processing line (crush, wash, smelt, automate) earns its keep."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:aluminum_ingot"
+					count: 256
+					id: "E860BE53BAD4CEBD"
+				}
+				{
+					type: "item"
+					item: "creatingspace:aluminum_block"
+					count: 16
+					id: "9195F720E5B6148F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "83E19E59C7592A51"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "E6D688B11E0DA61E"
+				}
+			]
+			id: "3DF80BE1B9905E8F"
+			dependencies: [
+				"300BC808129E97A6"
+			]
+		}
+		{
+			title: "Propellant Depot"
+			icon: "creatingspace:liquid_oxygen_bucket"
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"Launches burn fuel fast. Stockpile bulk methane, oxygen, and hydrogen to sustain repeat missions -- this is an industrial fuel depot, not a one-off tank."
+				"Automate the Air Liquefier and Chemical Synthesizer into a standing supply; hand-filling buckets does not scale."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "creatingspace:liquid_methane_bucket"
+					count: 8
+					id: "2319A1EB512F0E49"
+				}
+				{
+					type: "item"
+					item: "creatingspace:liquid_oxygen_bucket"
+					count: 8
+					id: "9CE60EAE29250221"
+				}
+				{
+					type: "item"
+					item: "creatingspace:liquid_hydrogen_bucket"
+					count: 8
+					id: "48B6706FEC74E2E9"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "7A3FA2A197137A32"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "3B6CA91BB07238AC"
+				}
+			]
+			id: "8A065D580CCABBD9"
+			dependencies: [
+				"300BC808129E97A6"
+			]
+		}
+		{
+			title: "Where Is the Cheese?"
+			icon: "creatingspace:space_food"
+			x: 2.0d
+			y: 7.0d
+			description: [
+				"A stretch goal for the truly committed: go find out what the Moon is really made of."
+				"Bonus objective -- push past orbit to a landing. Pack extra oxygen and space food."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "creatingspace:where_is_the_cheese"
+					criterion: ""
+					id: "FCB55D1235545008"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "7BB059151AF9A1FC"
+				}
+				{
+					type: "item"
+					item: "creatingspace:space_food"
+					count: 8
+					id: "B377A72D817EAAFA"
+				}
+			]
+			id: "41CA301AC7964FA2"
+			dependencies: [
+				"300BC808129E97A6"
+			]
+		}
+	]
+}

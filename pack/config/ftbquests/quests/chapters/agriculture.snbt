@@ -1,0 +1,653 @@
+{
+	id: "50A52992AAB15364"
+	group: ""
+	order_index: 9
+	filename: "agriculture"
+	title: "Agriculture \\& Husbandry"
+	icon: "farmersdelight:cooking_pot"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Farm to Table"
+			icon: "farmersdelight:cooking_pot"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Farmer's Delight turns raw crops and meat into real meals. It starts with a knife."
+				"Craft any knife (flint works) to unlock cutting boards and the whole kitchen tree."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/craft_knife"
+					criterion: ""
+					id: "002C04A586C831B6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "6A72D200A081E80F"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:cutting_board"
+					count: 1
+					id: "BCBBA1DC4A74434E"
+				}
+			]
+			id: "B0F97DE418062403"
+		}
+		{
+			title: "Light the Stove"
+			icon: "farmersdelight:stove"
+			x: -2.0d
+			y: 1.0d
+			description: [
+				"Place a Cooking Pot on a heat source (campfire or stove) to simmer soups and stews."
+				"The pot cooks multi-ingredient recipes you can't make in a furnace."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/place_cooking_pot"
+					criterion: ""
+					id: "AD3513A11595CE97"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "BDCB4169333BC74B"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:onion"
+					count: 8
+					id: "82F0FD300E513E52"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:cabbage"
+					count: 8
+					id: "A9AD466B961E0FDC"
+				}
+			]
+			id: "D85CD8A7B6EBC5BF"
+			dependencies: [
+				"B0F97DE418062403"
+			]
+		}
+		{
+			title: "A Cook Is Born"
+			icon: "farmersdelight:vegetable_soup"
+			x: -2.0d
+			y: 2.0d
+			description: [
+				"Cook a real dish in the pot, then eat it. Nourishing meals give the Nourishment effect."
+				"This is your first cooked meal -- the foundation of everything that follows."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/eat_nourishing_food"
+					criterion: ""
+					id: "F55D147A46FEA81D"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "39CD0FC80F259D33"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 8
+					id: "A004F283F819E7D8"
+				}
+			]
+			id: "B76B5E59C5AF9301"
+			dependencies: [
+				"D85CD8A7B6EBC5BF"
+			]
+		}
+		{
+			title: "Knife Work"
+			icon: "farmersdelight:flint_knife"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"Place a Cutting Board and use your knife on it to slice ingredients and salvage tools."
+				"Cutting produces prep items (slices, minced beef) that feed better recipes."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/use_cutting_board"
+					criterion: ""
+					id: "411EBD6CD429A74A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "AF1207E775DD0884"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:iron_knife"
+					count: 1
+					id: "E16DF16BAA68D1FF"
+				}
+			]
+			id: "017B4CEC9590571D"
+			dependencies: [
+				"B0F97DE418062403"
+			]
+		}
+		{
+			title: "Work the Soil"
+			icon: "farmersdelight:rich_soil"
+			x: 2.0d
+			y: 1.0d
+			description: [
+				"Rich Soil grows crops faster and needs no hoeing. Compost organic matter to make it."
+				"Realistic Farmland also tracks soil quality -- keep your plots fed and hydrated."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/get_rich_soil"
+					criterion: ""
+					id: "8D9622BEC43D4518"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "AE0404A04737989C"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:rich_soil"
+					count: 8
+					id: "21B44AA852C53D02"
+				}
+			]
+			id: "130A7D7ECDA18595"
+			dependencies: [
+				"B0F97DE418062403"
+			]
+		}
+		{
+			title: "Sear It"
+			icon: "farmersdelight:skillet"
+			x: -4.0d
+			y: 2.0d
+			description: [
+				"The Skillet fries single ingredients fast and can be held to cook on the move."
+				"Great for bacon, eggs, and searing meat cuts you sliced on the board."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/use_skillet"
+					criterion: ""
+					id: "9FF2BCA7B810313B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "4447F5E131B83B90"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:ham"
+					count: 2
+					id: "1E08BF5E16B1428C"
+				}
+			]
+			id: "B7D96AE26032F82F"
+			dependencies: [
+				"D85CD8A7B6EBC5BF"
+			]
+		}
+		{
+			title: "Plant Every Crop"
+			icon: "farmersdelight:rice_panicle"
+			x: 2.0d
+			y: 2.0d
+			description: [
+				"Grow the full FD crop set: cabbage, tomatoes, onions, and rice."
+				"Rice must be planted in shallow water -- build a paddy for it."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/plant_all_crops"
+					criterion: ""
+					id: "4D5EF824F9B6A9AB"
+				}
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/plant_rice"
+					criterion: ""
+					id: "0863182ED10DB335"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:rice_bag"
+					id: "B72D17241E1DFA08"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "FA4BE4A3F25FD0FC"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:tomato_seeds"
+					count: 4
+					id: "C1DC1D39C4C013C7"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:cabbage_seeds"
+					count: 4
+					id: "CD098963F2AD4B73"
+				}
+			]
+			id: "7F3F7EF39F3635D4"
+			dependencies: [
+				"130A7D7ECDA18595"
+			]
+		}
+		{
+			title: "Tap the Keg"
+			icon: "brewinandchewin:keg"
+			x: -2.0d
+			y: 3.0d
+			description: [
+				"Brewin' \\& Chewin' adds the Keg for fermenting drinks and food over time."
+				"Place a heating or cooling block beside it to control fermentation speed."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "brewinandchewin:main/place_keg"
+					criterion: ""
+					id: "388FF65B5AE0ABDC"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "7216CDB04DF51079"
+				}
+				{
+					type: "item"
+					item: "minecraft:wheat"
+					count: 16
+					id: "2AA086EF4E5EFCB2"
+				}
+			]
+			id: "CB3A0152EB736EC0"
+			dependencies: [
+				"B76B5E59C5AF9301"
+			]
+		}
+		{
+			title: "Brew \\& Ferment"
+			icon: "brewinandchewin:flaxen_cheese_wheel"
+			x: -2.0d
+			y: 4.0d
+			description: [
+				"Brew your first drink and ferment a cheese wheel in the keg."
+				"Fermented foods and drinks give strong, longer buffs than raw meals."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "brewinandchewin:main/brew_drink"
+					criterion: ""
+					id: "89DAB59382D89DFC"
+				}
+				{
+					type: "advancement"
+					advancement: "brewinandchewin:main/ferment_cheese"
+					criterion: ""
+					id: "0A013AE7AAF3869F"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "B602320F99A29EE9"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 12
+					id: "29D0F06247BBBF0E"
+				}
+			]
+			id: "48F540BB1DEB575D"
+			dependencies: [
+				"CB3A0152EB736EC0"
+			]
+		}
+		{
+			title: "Keep It Fresh"
+			icon: "ratatouille:salt"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Food Spoilage rots food over time -- watch the Freshness % on tooltips."
+				"Salting and keeping food frozen (near ice) slows or halts the decay."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "ratatouille:salt"
+					count: 8
+					id: "DBD219265E7B8D75"
+				}
+				{
+					type: "item"
+					item: "minecraft:packed_ice"
+					count: 4
+					id: "EE7D4A618D4193E7"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "F1607F9A1EB1B3A8"
+				}
+				{
+					type: "item"
+					item: "ratatouille:salt"
+					count: 8
+					id: "37BFBC82E609DE6A"
+				}
+			]
+			id: "91D765F3204138BE"
+			dependencies: [
+				"B76B5E59C5AF9301"
+			]
+		}
+		{
+			title: "Mechanical Kitchen"
+			icon: "ratatouille:thresher"
+			x: 2.0d
+			y: 3.0d
+			description: [
+				"Create: Ratatouille brings food processing into your Create contraptions."
+				"The Thresher and Oven let rotational power do the cooking for you."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "ratatouille:thresher"
+					id: "95EF7AB773CCA950"
+				}
+				{
+					type: "item"
+					item: "ratatouille:oven"
+					id: "F760F7781CC7A5D6"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "B406531CBBEAB9AA"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 12
+					id: "8B0D48E6F6B1386B"
+				}
+			]
+			id: "82B8BC644943995C"
+			dependencies: [
+				"7F3F7EF39F3635D4"
+			]
+		}
+		{
+			title: "Weigh the Herd"
+			icon: "animalweights:magnifying_glass"
+			x: 4.0d
+			y: 2.0d
+			description: [
+				"Animal Weights gives every animal a weight -- inspect one with the Magnifying Glass."
+				"Breed and fatten livestock; heavier animals mean more meat when you butcher them."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "animalweights:magnifying_glass"
+					id: "81AF344C5D5102F8"
+				}
+				{
+					type: "stat"
+					stat: "minecraft:animals_bred"
+					value: 20
+					id: "97B5833909B85DAA"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "9F1765AF47D6E014"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:horse_feed"
+					count: 2
+					id: "D0DE453BF595D91F"
+				}
+			]
+			id: "8B9934F28A3368DF"
+			dependencies: [
+				"130A7D7ECDA18595"
+			]
+		}
+		{
+			title: "Master Chef"
+			icon: "farmersdelight:golden_knife"
+			x: -1.0d
+			y: 5.0d
+			description: [
+				"Cook and eat a wide variety of Farmer's Delight dishes to earn Master Chef."
+				"Proves you've worked the whole cookbook, not just one recipe."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/master_chef"
+					criterion: ""
+					id: "442CA503F9777E3A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "FE8B5BA29525AFA2"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "DCBB0CFED019B7DF"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:golden_knife"
+					count: 1
+					id: "3B8EF2D094D5225C"
+				}
+			]
+			id: "0C7216280784E02A"
+			dependencies: [
+				"017B4CEC9590571D"
+				"B7D96AE26032F82F"
+			]
+		}
+		{
+			title: "Chef of the Ages"
+			icon: "brewinandchewin:scarlet_cheese_wheel"
+			x: -3.0d
+			y: 5.0d
+			description: [
+				"Brewin' \\& Chewin's mastery advancement -- the pinnacle of fermenting and brewing."
+				"Earned by crafting the full spread of drinks, cheeses, and fermented dishes."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "brewinandchewin:main/chef_of_the_ages"
+					criterion: ""
+					id: "C17F0EF32E7E5A7B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "1B11BD4B0C9692EE"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "7C7A651960C0DEFD"
+				}
+			]
+			id: "9EC87D6D216BEC10"
+			dependencies: [
+				"48F540BB1DEB575D"
+			]
+		}
+		{
+			title: "The Automated Cannery"
+			icon: "ratatouille:sausage"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"Build a self-running Create food factory: mince, stuff, and bake without hand-cooking."
+				"Stockpile 64 sausages and 16 baked cakes straight off the line to prove it runs itself."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "ratatouille:sausage"
+					count: 64
+					id: "BC03D15C1A02BEF1"
+				}
+				{
+					type: "item"
+					item: "ratatouille:cake_mold_baked"
+					count: 16
+					id: "9C150EE246FB020E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "EDA4D72FFD391C3B"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "FB637AD3F9D17DAF"
+				}
+			]
+			id: "664AF051FB1F2EA8"
+			dependencies: [
+				"82B8BC644943995C"
+			]
+		}
+		{
+			title: "Stock the Larder"
+			icon: "farmersdelight:roast_chicken"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Set out a feast and fill your larder with large-batch cooked dishes."
+				"This is production at scale -- only a working farm-to-factory pipeline gets you here."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "farmersdelight:main/place_feast"
+					criterion: ""
+					id: "CCB64D82A85CFE54"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:roast_chicken"
+					count: 16
+					id: "6C723AB67C0D18AD"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:honey_glazed_ham"
+					count: 16
+					id: "6F915A2570F12087"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:shepherds_pie"
+					count: 16
+					id: "E58C589919F64B64"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "384B9E1043D4D8A1"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 5
+					id: "1240320DE07041D4"
+				}
+				{
+					type: "item"
+					item: "farmersdelight:netherite_knife"
+					count: 1
+					id: "BA25F3EC9B49CDE3"
+				}
+			]
+			id: "BE4F698231E22CCF"
+			dependencies: [
+				"0C7216280784E02A"
+				"664AF051FB1F2EA8"
+			]
+		}
+	]
+}

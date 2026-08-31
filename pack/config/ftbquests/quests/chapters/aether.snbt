@@ -1,0 +1,441 @@
+{
+	id: "7BE336560956DEFC"
+	group: ""
+	order_index: 21
+	filename: "aether"
+	title: "The Aether"
+	icon: "aether:aether_portal_frame"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "A Frame of Glowstone"
+			icon: "aether:aether_portal_frame"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Build a nether-portal-shaped frame out of glowstone (about 10 blocks for a minimal frame)."
+				"Activate it with a bucket of water instead of flint -- the surface shimmers into the Aether."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "minecraft:glowstone"
+					count: 10
+					id: "E566E70D6753B1A4"
+				}
+				{
+					type: "item"
+					item: "minecraft:water_bucket"
+					id: "3EDFA5B540A34541"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "6A3AAD8391048F09"
+				}
+			]
+			id: "AF825763596186C6"
+		}
+		{
+			title: "Islands in the Sky"
+			icon: "aether:blue_aercloud"
+			x: 0.0d
+			y: 1.0d
+			description: [
+				"You wake on a floating isle. There is no bedrock -- fall off an edge and you drop back to the Overworld."
+				"Blue aerclouds break your fall. Golden ones bounce you skyward."
+			]
+			tasks: [
+				{
+					type: "dimension"
+					dimension: "aether:the_aether"
+					id: "4D0F3BD07B890571"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "E407E48323BDD564"
+				}
+				{
+					type: "item"
+					item: "aether:blue_aercloud"
+					count: 4
+					id: "DEE59F76C602E90C"
+				}
+			]
+			id: "AC30D3BE897535AA"
+			dependencies: [
+				"AF825763596186C6"
+			]
+		}
+		{
+			title: "Holystone Footing"
+			icon: "aether:holystone_pickaxe"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Holystone is the Aether's cobblestone. Mine a stack and craft a full holystone tool set."
+				"Ambrosium shards double as torches and healing -- grab them as you dig."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "aether:holystone"
+					count: 16
+					id: "AA91F6FC3A8E9EF3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "9C42B16737C31F2B"
+				}
+				{
+					type: "item"
+					item: "aether:ambrosium_shard"
+					count: 8
+					id: "26BF5D65A08720EB"
+				}
+			]
+			id: "6C3A8E23191D8B26"
+			dependencies: [
+				"AC30D3BE897535AA"
+			]
+		}
+		{
+			title: "A Mount with Wings"
+			icon: "aether:blue_moa_egg"
+			x: 1.0d
+			y: 3.0d
+			description: [
+				"Raid a Moa nest for an egg, set it in an Incubator over ambrosium, and raise the chick."
+				"A grown Moa lets you glide between islands -- essential for reaching dungeons."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:incubate_moa"
+					criterion: ""
+					id: "EAA25CA3504C3F6C"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "49BA7589EC3369F1"
+				}
+				{
+					type: "item"
+					item: "aether:blue_moa_egg"
+					count: 1
+					id: "909A2D21DDE69F82"
+				}
+			]
+			id: "C634C4539D480A62"
+			dependencies: [
+				"6C3A8E23191D8B26"
+			]
+		}
+		{
+			title: "Zanite Veins"
+			icon: "aether:zanite_gemstone"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"Zanite ore glitters in the holystone. Zanite tools mine faster as they wear down."
+				"This is your bridge tier before Gravitite."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:zanite"
+					criterion: ""
+					id: "DD077FA0EAFA27B2"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "757E08D45A27C028"
+				}
+				{
+					type: "item"
+					item: "aether:zanite_gemstone"
+					count: 4
+					id: "B47856533E31D9DA"
+				}
+			]
+			id: "836B94404AC8C79C"
+			dependencies: [
+				"6C3A8E23191D8B26"
+			]
+		}
+		{
+			title: "Enchanted Gravitite"
+			icon: "aether:enchanted_gravitite"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"Gravitite ore floats -- mine it before it drifts away. Enchant raw gravitite on an Altar to refine it."
+				"Gravitite gear is the Aether's diamond-tier; you'll want it before the dungeons."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:gravitite_armor"
+					criterion: ""
+					id: "0D0A84CAADA0F8DC"
+				}
+				{
+					type: "advancement"
+					advancement: "aether:enchanted_gravitite"
+					criterion: ""
+					id: "0DB5AA3380E10350"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "2C8847CDC6363542"
+				}
+				{
+					type: "item"
+					item: "aether:enchanted_gravitite"
+					count: 2
+					id: "EB011B1FB2062C16"
+				}
+			]
+			id: "C11FE74A1958161C"
+			dependencies: [
+				"836B94404AC8C79C"
+			]
+		}
+		{
+			title: "The Bronze Dungeon"
+			icon: "aether:bronze_dungeon_key"
+			x: 0.0d
+			y: 5.0d
+			description: [
+				"A Bronze Key unlocks the sealed hill dungeon. Inside waits the Slider -- a cube that rams down its corridors."
+				"Block its charge lanes with pillars, then hit it between rushes."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:bronze_dungeon"
+					criterion: ""
+					id: "EDC265C9197F4AFA"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "AF48216CEB5E0823"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 10
+					id: "505F37675409BAF1"
+				}
+			]
+			id: "CEB172006DDCEE27"
+			dependencies: [
+				"C11FE74A1958161C"
+			]
+		}
+		{
+			title: "Hammer of Kingbdogz"
+			icon: "aether:hammer_of_kingbdogz"
+			x: -1.0d
+			y: 6.0d
+			description: [
+				"The Slider's chest holds the Hammer of Kingbdogz -- it fires gravity shockwaves."
+				"Claim it to arm yourself for the Silver Dungeon."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:hammer_loot"
+					criterion: ""
+					id: "09C836A3FA78F4DF"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "E62193A9C55BEBCF"
+				}
+				{
+					type: "item"
+					item: "aether:hammer_of_kingbdogz"
+					count: 1
+					id: "12660CCC75B24790"
+				}
+			]
+			id: "22DE0C97EF5E7F8F"
+			dependencies: [
+				"CEB172006DDCEE27"
+			]
+		}
+		{
+			title: "The Silver Dungeon"
+			icon: "aether:silver_dungeon_key"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"Silver Keys open the sky fortress. Fight through the Valkyries to reach their Queen."
+				"She teleports and hits hard -- Gravitite armor and the Hammer even the odds."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:silver_dungeon"
+					criterion: ""
+					id: "819DCC7847737793"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "5C405D1A68587ABD"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "0FA0BD1525130F10"
+				}
+			]
+			id: "924F2EBA0125506D"
+			dependencies: [
+				"CEB172006DDCEE27"
+			]
+		}
+		{
+			title: "The Valkyrie's Lance"
+			icon: "aether:valkyrie_lance"
+			x: -1.0d
+			y: 7.0d
+			description: [
+				"The Valkyrie Queen drops her Lance and a Victory Medal."
+				"The Lance is one of the strongest melee weapons in the realm."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:valkyrie_loot"
+					criterion: ""
+					id: "CD0F51CE02398234"
+				}
+				{
+					type: "advancement"
+					advancement: "aether:lance_loot"
+					criterion: ""
+					id: "1AC663CF0EAD8DB9"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "7EAD4729AA6EA152"
+				}
+				{
+					type: "item"
+					item: "aether:victory_medal"
+					count: 3
+					id: "DE94211C4D0E3143"
+				}
+			]
+			id: "AEB836FA85BDBE04"
+			dependencies: [
+				"924F2EBA0125506D"
+			]
+		}
+		{
+			title: "The Gold Dungeon"
+			icon: "aether:gold_dungeon_key"
+			x: 0.0d
+			y: 7.0d
+			description: [
+				"A Gold Key opens the volcanic labyrinth. The Sun Spirit rules it in a ring of fire."
+				"Snowballs and ice weapons cool it -- come stocked."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:gold_dungeon"
+					criterion: ""
+					id: "4A47A79C424A8BF3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "5683BAEC9CAD050E"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 3
+					id: "1617D3A90E161A01"
+				}
+			]
+			id: "8779A29AFDBA9386"
+			dependencies: [
+				"924F2EBA0125506D"
+			]
+		}
+		{
+			title: "Phoenix Ascendant"
+			icon: "aether:phoenix_chestplate"
+			x: 0.0d
+			y: 8.0d
+			description: [
+				"The Sun Spirit's fall lets you forge Phoenix armor -- it turns fire damage into strength."
+				"The Aether's endgame set is yours. The sky is cleared."
+			]
+			tasks: [
+				{
+					type: "advancement"
+					advancement: "aether:phoenix_armor"
+					criterion: ""
+					id: "E2AF1DAE858EB3C7"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "164F99345C56CCC2"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 5
+					id: "1B3EB42747CEBDDD"
+				}
+			]
+			id: "227A869661ACDBEC"
+			dependencies: [
+				"8779A29AFDBA9386"
+			]
+		}
+	]
+}
