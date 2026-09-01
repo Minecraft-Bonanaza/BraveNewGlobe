@@ -5,6 +5,11 @@ How to set up the **Brave New Globe** modpack as a player. You do this setup **o
 
 - **Minecraft:** `1.21.1`
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
+- **Pack version:** `0.9.10` (**156** mods) — includes a guidance-only FTB Quests book
+  (**17 chapters / 242 quests**). Open it in-game from the quests button. 0.9.8–0.9.10 add
+  **L_Ender's Cataclysm** and **Bosses'Rise** (arena bosses + Big Globe biome-tag datapacks +
+  two kill-gated quest chapters). 0.9.7 disables Simply Swords unique / remnant drops (crafted
+  weapon variety stays). WDA dungeon chests are still vanilla.
 - **Delivery:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**; after that,
   **every time you launch, the pack pulls the latest mods automatically** — new mods are added, updated
   mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
@@ -63,7 +68,22 @@ so you always get the latest mods, configs, and datapacks. Updates are usually a
   ```
 - **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
   them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **Datapacks** — you do **not** install datapacks manually. packwiz drops them in the instance
+  `datapacks/` folder; **Paxi** is configured to load that base directory. They arrive with the
+  auto-sync.
+- **Upgrading 0.8.x → 0.9.10** — no fresh overworld. The quest book is new as of 0.9.0 (Create Core
+  was rewritten, so prior Create Core ticks may look mixed or reset). 0.9.10 adds two more
+  chapters (Cataclysm, Bosses' Rise). Relaunch so packwiz pulls LootJS, Simply Swords / Simply
+  More, Incendium, Born in Chaos, Cataclysm, and Bosses'Rise.
+- **Upgrading 0.9.6 → 0.9.10** — no fresh overworld. Relaunch. Unique Simply Swords / remnant
+  drops stop after 0.9.7. **L_Ender's Cataclysm** and **Bosses'Rise** structures appear in
+  **newly generated** overworld (and Cataclysm Cursed Pyramids also in savanna/plains as of
+  0.9.9, not just badlands). Two new quest chapters open empty. WDA chests stay vanilla.
+- **Coming from 0.9.2–0.9.5** — Simply More auto-installs from Modrinth as `1.3.0_alpha5`
+  (release `1.2.3` crashed on Simply Tooltips `0.1.5`). Visit **unexplored Nether** (or
+  regenerate it) for Incendium biomes. Born in Chaos gameplay structures appear in
+  **newly generated overworld** after 0.9.5.
+- **YUNG's Better Nether Fortresses** is marked server-only in the pack, so the default client
+  installer skips it (vanilla fortresses in singleplayer). Dedicated servers get the overhaul.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.
