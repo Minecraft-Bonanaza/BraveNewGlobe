@@ -1,0 +1,4 @@
+# Brave New Globe override (partial — Fzzy Config safe deserializer fills the rest).
+# Keep only Simply Swords' crafted weapon variety; no unique/remnant loot.
+enableLootDrops = false
+enableContainedRemnants = false

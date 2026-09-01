@@ -697,6 +697,14 @@ file = "config/simpleclouds-server.toml"
 hash = "65f0867637e1c6697c0cf4926dd016d943a7519ab4b5fa72551d8f6a179dd77b"
 
 [[files]]
+file = "config/simplyswords/general.toml"
+hash = "002a80d3fa8a46d11fb5feeac372815ac45ca60a253c7ebb7ac8a93c75c932f7"
+
+[[files]]
+file = "config/simplyswords/loot.toml"
+hash = "cf36217f1aa7993ee3fc0fbb4990b705a61ae56bc4da7a7abfd8795e43008972"
+
+[[files]]
 file = "config/simulated-client.toml"
 hash = "aaeeaedb8179a8e2404a468c0b62fee76dd5becb6c87d870f206733e20009991"
 

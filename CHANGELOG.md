@@ -3,6 +3,21 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.7] — 2026-09-01
+
+### Changed — Simply Swords: keep weapon variety, drop the unique/remnant loot layer
+- Reverted the LootJS Simply Swords loot injection (the Born in Chaos remnant script + WDA chest
+  materials from the previous attempt) — `wda_dungeon_loot.js` is back to its no-op scaffold.
+- Shipped a pinned Simply Swords config (`config/simplyswords/`) that disables all "unique sword drops"
+  so only the crafted weapon variety remains:
+  - `loot.toml`: `enableLootDrops = false`, `enableContainedRemnants = false`
+  - `general.toml`: `nonPlayerWeaponAbilityChance = 0.0`
+  Partial TOML overrides — Fzzy Config's safe deserializer merges the rest. Consequence: with remnants
+  off, uniques are also effectively uncraftable (no remnant source), leaving just the weapon-type flavor.
+- **Verify in-game** (can't launch from here): after sync, uniques/remnants should no longer drop from
+  chests or mobs. If they still do, toggle the same fields via Mod Menu → Simply Swords and send me the
+  generated `.toml` to bake in.
+
 ## [0.9.6] — 2026-09-01
 
 ### Fixed — Simply More crash on tooltip render

@@ -1,12 +1,12 @@
 name = "Brave New Globe"
 author = "Minecraft-Bonanaza"
-version = "0.9.6"
+version = "0.9.7"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "0175cd3d0194a5d02b3b1e522708c39bf97a3726e08528a43abf899a6f3c8567"
+hash = "f09d3aa03413086fa0a693e66407f4bf589df0643aa267d1fefbc02df2225af9"
 
 [versions]
 minecraft = "1.21.1"
