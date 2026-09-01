@@ -16,13 +16,15 @@ Brave New Globe is a **reality simulator**: almost everything can be done the si
 | **Quest writing template** | Copy/paste structure per SIG chapter |
 | **Cross-SIG map** | Where careers intentionally overlap |
 
-When writing FTB Quests:
+The v1 book shipped in **0.9.0** (15 chapters / 230 quests; unchanged through **0.9.2**) — see
+[QUESTS.md](QUESTS.md). When editing or adding FTB Quests:
 
-1. Pick a SIG below.
+1. Pick a SIG below (or a shipped exploration line in QUESTS.md).
 2. Open with the **baseline** (anyone can do this).
 3. Gate later chapters behind **specialized infrastructure** (foundries, farms, hangars, mint-free commerce, etc.).
 4. Reward **capability and efficiency**, not exclusive access to the activity.
 5. Prefer **physical logistics** over remote / magic shortcuts (see Economy notes).
+6. Use **objective** gates only (item / advancement / dimension / stat). No self-attest checkmarks.
 
 ---
 
@@ -71,6 +73,7 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Create** (base) | Shared industrial substrate | Kinetics underpin many SIGs; do not make “Create” itself a SIG |
 | **Create: Dragons Plus** | — | Thematic Create content; not a grounded trade |
 | **Better Combat** | — | Combat feel overhaul; not a profession tree |
+| **Simply Swords / Simply More** | — | Unique melee loot (0.9.2); not a profession tree. Fold into dungeon loot, not a SIG |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
 | **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
 
@@ -116,6 +119,8 @@ Currency is **earned** (villagers, bounties, deliveries, player trade) — not p
 ### Libraries
 
 All Shared Libraries & APIs in [MODLIST.md](MODLIST.md) — never SIG content.
+**LootJS** is loot plumbing (WDA chests), not a SIG. **Fzzy Config** / **Simply Tooltips**
+are Simply Swords deps. Do not make KubeJS scripting a quest line.
 
 ---
 
@@ -396,7 +401,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 
 ---
 
-### 13. Industrial Enchanting *(optional chapter)*
+### 13. Industrial Enchanting *(shipped — 7 quests in 0.9.0)*
 
 **Pitch:** Enchanting tables work. Specialists industrialize enchantment production.
 
@@ -405,7 +410,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Vanilla enchanting table / anvil |
 | **Specialized** | Create: Enchantment Industry automation |
 | **Core mods** | Create: Enchantment Industry |
-| **Note** | Vanilla magic exists; this SIG is **industrial process**, not a new magic system. Skip or soft-gate if the modteam wants zero enchant focus. |
+| **Note** | Vanilla magic exists; this SIG is **industrial process**, not a new magic system. Shipped as a short standalone chapter (7 quests). |
 | **Adjacent** | Metalworking (gear), Ordnance (weapon quality) |
 
 **Suggested quest beats**
@@ -416,7 +421,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 
 ---
 
-### 14. Astronautics & Space Industry *(late-game / optional)*
+### 14. Astronautics & Space Industry *(shipped late-game — 16 quests in 0.9.0)*
 
 **Pitch:** The world is enough. Specialists leave the atmosphere.
 
@@ -538,14 +543,21 @@ Metalworking ──── Logistics ◄──── Aeronautics
 
 ---
 
-## FTB Quests book structure (suggested)
+## FTB Quests book structure (shipped in 0.9.0)
 
-1. **Prologue — The World** (non-SIG): Big Globe survival, seasons, climate, first shelter  
-2. **Chapter per SIG** (1–15 as needed; soft SIGs optional)  
-3. **Interlude — Contracts & Coins** (Logistics + Commerce cross)  
-4. **Epilogue — Capstones** (multi-SIG monuments)
+The v1 book is **one volume, 15 flat chapters, 230 quests** — see [QUESTS.md](QUESTS.md) for
+counts, files, and regen rules. There is no Prologue / Interlude / Epilogue wrapper; each
+industry line carries its own Awareness → Functional → Achievement arc, and the three
+exploration lines (WDA, Twilight, Aether) are locate-and-progress.
 
-Keep **one questbook** or split **Industry / Society / Transport** volumes — but keep SIG IDs stable so rewards can cross-reference.
+**In the book:** Create Core, Rails, Aeronautics, Cannons, Metallurgy, Power & Fuel,
+Logistics, Enchanting, Commerce, Agriculture, Naval, Astronautics, Twilight, Aether, WDA.
+
+**Not in the v1 book:** Settlement & Civic, Medicine, Textiles, Civil Works (soft SIGs stay
+here as design notes).
+
+Keep SIG IDs stable so rewards can cross-reference. Do not add self-attest checkmarks.
+Currency is Create: Numismatics only.
 
 ---
 
@@ -565,12 +577,14 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Gunpowder, Gunsmithing, Big Cannons (+ expansions) | Ordnance |
 | More Diseases & Treatments | Medicine |
 | MCA Reborn | Settlement |
-| Enchantment Industry | Industrial Enchanting (optional) |
-| Creating Space | Astronautics (optional) |
+| Enchantment Industry | Industrial Enchanting (shipped) |
+| Creating Space | Astronautics (shipped, late) |
 | Struts, Supplementaries, Copycats+ | Civil Works (soft) |
 | Big Globe, seasons, atmosphere, dimensions, structures | Non-SIG world |
 | Re:Animal, Mowzie's, Mutants, Hybrid Aquatic, Sea Myths, Aquamirae | Non-SIG fauna |
 | Better Combat, Explosion Overhaul | Systems / supporting physics |
+| Simply Swords, Simply More | Combat loot (not a SIG; planned WDA Uncommon/Rare) |
+| LootJS, Fzzy Config, Simply Tooltips | Non-SIG libraries / loot plumbing |
 | QoL, performance, client, libraries | Non-SIG |
 
 ---
@@ -583,5 +597,6 @@ When adding a mod, ask:
 2. Which existing SIG owns it?  
 3. If none — is it world/fauna/QoL instead?  
 4. Update this file and the questbook chapter list together.
+5. If it adds loot-worthy items, also update [LOOT.md](LOOT.md) (WDA chest menu).
 
-See also: [MODLIST.md](MODLIST.md), [CHANGELOG.md](CHANGELOG.md), [Notes.md](Notes.md).
+See also: [QUESTS.md](QUESTS.md) (shipped book), [LOOT.md](LOOT.md) (dungeon loot menu), [MODLIST.md](MODLIST.md), [CHANGELOG.md](CHANGELOG.md), [Notes.md](Notes.md).
