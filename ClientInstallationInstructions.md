@@ -5,6 +5,11 @@ How to set up the **Brave New Globe** modpack as a player. You do this setup **o
 
 - **Minecraft:** `1.21.1`
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
+- **Pack version:** `0.9.5` (**153** mods) — includes a guidance-only FTB Quests book
+  (15 chapters / 230 quests; unchanged since 0.9.0). Open it in-game from the quests button.
+  0.9.4 adds Nether content (Incendium, Born in Chaos, Better Nether Fortresses); 0.9.5 makes
+  Born in Chaos overworld structures generate in Big Globe biomes. WDA dungeon chests are still
+  vanilla.
 - **Delivery:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**; after that,
   **every time you launch, the pack pulls the latest mods automatically** — new mods are added, updated
   mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
@@ -63,7 +68,17 @@ so you always get the latest mods, configs, and datapacks. Updates are usually a
   ```
 - **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
   them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **Datapacks** — you do **not** install datapacks manually. packwiz drops them in the instance
+  `datapacks/` folder; **Paxi** is configured to load that base directory. They arrive with the
+  auto-sync.
+- **Upgrading 0.8.x → 0.9.5** — no fresh overworld. The quest book is new as of 0.9.0 (Create Core
+  was rewritten, so prior Create Core ticks may look mixed or reset). Other chapters start empty.
+  Relaunch so packwiz pulls LootJS, Simply Swords / Simply More, Incendium, and Born in Chaos.
+- **Upgrading 0.9.2 → 0.9.5** — no fresh overworld. Relaunch. Simply More now auto-installs from
+  Modrinth (0.9.3; CurseForge had blocked the download). Visit **unexplored Nether** (or
+  regenerate it) for Incendium biomes. Born in Chaos gameplay structures appear in **newly
+  generated overworld** after 0.9.5. WDA chests stay vanilla until loot injection is wired.
+- **YUNG's Better Nether Fortresses** is marked server-only in the pack, so the default client
+  installer skips it (vanilla fortresses in singleplayer). Dedicated servers get the overhaul.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.

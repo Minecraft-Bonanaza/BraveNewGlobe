@@ -2,7 +2,7 @@
 
 A [Big Globe](https://modrinth.com/mod/big-globe) modpack for **Minecraft 1.21.1** on
 **NeoForge** — Create-ecosystem tech, cannons, aeronautics, and hand-authored Big Globe
-world/spawn compatibility.
+world/spawn compatibility. Current pack version: **0.9.5** (**153** mods).
 
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
 - **How it's delivered:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**;
@@ -11,11 +11,19 @@ world/spawn compatibility.
 
 ## What's in the pack
 - **Create ecosystem** — Create plus a large stack of add-ons (aeronautics, cannons, logistics,
-  diesel generators, trains, and more).
+  diesel generators, trains, and more). Currency is **Create: Numismatics** (Spur / Cog / Crown / Sun).
+- **Guidance quest book** — FTB Quests, **15 chapters / 230 quests** covering every progression
+  line. Guidance-only (no line gates another); every gate is objective. See [QUESTS.md](QUESTS.md).
 - **Big Globe world generation** — with hand-authored compatibility datapacks for spawns, structures,
-  and cross-mod integration (shipped via Paxi).
+  and cross-mod integration (shipped via Paxi). Overworld bounds **−608 → +1024**.
+- **Nether** — **Incendium** biomes/structures, **YUNG's Better Nether Fortresses**, and **Born in
+  Chaos** hostiles. Six Born in Chaos overworld gameplay structures are re-keyed to Big Globe biome
+  tags in `bigglobe_borninchaos.zip`.
 - **Survival & QoL** — seasons, thirst/diseases, farming and food, villager overhauls, and supporting
   libraries.
+- **Melee weapons** — **Simply Swords** + **Simply More** (Better Combat animations; Simply More is
+  Modrinth as of 0.9.3). Dungeon-chest injection is planned via LootJS; WDA chests are still vanilla
+  until that script is wired.
 - **Optional visuals** — Iris shaders, Distant Horizons, Simple Clouds, and other client-side eye-candy
   that can be toggled off on low-spec machines.
 
@@ -24,8 +32,12 @@ world/spawn compatibility.
   auto-update the pack as a player (start here if you just want to play).
 - **[Maintainer Instructions](MaintainerInstructions.md)** — how the pack is built and how to add/update
   mods with packwiz.
+- **[QUESTS.md](QUESTS.md)** — shipped FTB Quests book (15 lines, counts, regen rules).
 - **[SPECTRUM.md](SPECTRUM.md)** — Special Interest Group framework for FTB Quests (baseline →
   specialized careers).
+- **[MODLIST.md](MODLIST.md)** — human-readable list of every mod.
+- **[LOOT.md](LOOT.md)** — planned WDA dungeon-loot tiers (LootJS not wired yet).
+- **[CHANGELOG.md](CHANGELOG.md)** — version history.
 - **[Notes](Notes.md)** — misc config/maintenance notes and gotchas.
 
 ## Quick start (players)
