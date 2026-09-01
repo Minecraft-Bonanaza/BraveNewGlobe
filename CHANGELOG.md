@@ -16,6 +16,19 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - No BG compat datapack needed — item/weapon mods, no worldgen/biome-gated content. Candidates to fold
   into the `LOOT.md` Uncommon/Rare WDA dungeon tiers later.
 
+### Notes
+- **150** mods (145 + LootJS + Simply Swords + Simply More + Fzzy Config + Simply Tooltips).
+  **No fresh world** from 0.7.1 onward — item/script adds only; no worldgen.
+- `wda_dungeon_loot.js` is still a **no-op**. WDA chests stay 100% vanilla until LootJS is
+  wired from [LOOT.md](LOOT.md). Simply Swords / Simply More landed after the 0.9.1 survey.
+
+## Unversioned (after 0.9.1) — LOOT.md
+
+### Added (docs)
+- **[LOOT.md](LOOT.md)** — exhaustive Common / Uncommon / Rare / Epic item tracker from a
+  jar-lang survey of all content mods. Menu for the LootJS WDA-chest work; not wired yet.
+  Author did **not** bump `pack.toml`.
+
 ## [0.9.1] — 2026-08-31
 
 ### Added — LootJS (dungeon-loot infrastructure)
@@ -23,6 +36,11 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - Scaffold `kubejs/server_scripts/wda_dungeon_loot.js` for injecting **tiered modpack loot** into When
   Dungeons Arise chest tables (`dungeons_arise:chests/*`), which are otherwise 100% vanilla. Loot content
   authored after a modpack-wide item survey.
+
+### Notes
+- KubeJS / Rhino / Architectury already present (0.8.5). The scaffold is intentionally empty
+  until the survey (`1e413fb` / [LOOT.md](LOOT.md)).
+- **146** mods after this commit. **No fresh world.**
 
 ## [0.9.0] — 2026-08-31
 
@@ -50,6 +68,15 @@ industry line (Awareness → Functional → late-stage Achievement); locate-and-
 Currency throughout is **Create: Numismatics** (Spur/Cog/Crown/Sun). Chapters are generated
 deterministically from `bigGlobeAero/quest_lines/*.py` via `build_ftbquests.py` (re-runs are
 byte-identical and progress-safe). Includes 3 hand-authored loot-crate reward tables.
+
+### Notes
+- No new mods — still **145**. Quest/config content only (`pack/config/ftbquests/`).
+- **No fresh world** required from 0.7.1 onward.
+- **Create Core is a content rewrite** of the 0.8.7 12-quest checkmark chapter (and the 0.8.0 / 0.8.8
+  titles). Expect mixed or reset Create Core progress. New chapters start empty. Same-key regenerations
+  stay progress-safe; this pass changed keys.
+- Gates are objective task types (item count / mod advancement / dimension / stat). Boss “kills” are
+  advancement-gated — there are no FTB Quests checkmark or kill task types in the book.
 
 ## [0.8.8] — 2026-08-30
 

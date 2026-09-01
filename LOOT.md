@@ -5,6 +5,7 @@ Living tracker for the tiered loot injected into When Dungeons Arise chests via 
 **Common** = small POIs · **Uncommon** = sea/sky & mid dungeons · **Rare** = large dungeons · **Epic** = vaults/boss rooms.
 
 Status: **v2 — exhaustive pass** (all content-mod `en_us.json` lang files scanned; ids jar-verified unless marked ⚠).
+Pack **0.9.2** added **Simply Swords** + **Simply More** after this survey — not listed in the tiers yet.
 Families collapsed with a note (e.g. "16 dye colors", "6 boss scale sets"); every distinct *loot-worthy* item is represented.
 Excluded everywhere: crafting intermediates (nuggets/casts/`incomplete_*`/`unbored_*`/dusts/molten buckets/raw ores),
 creative-only items, spawn eggs, and pure decor. Per-mod full id dumps live in the survey transcripts.
@@ -67,3 +68,4 @@ Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `sh
 - [ ] Verify ⚠ ids (none currently flagged after jar pass — most confirmed) before shipping.
 - [ ] Coin ladder as graded currency: Spur/Bevel→common, Sprocket/Cog→mid, Crown→large, Sun→epic vault.
 - [ ] Note: many adventure mods' gear expects their own progression — consider whether best boss gear (valkyrie, leviathan, sol visage) should be dungeon loot or stay boss-locked.
+- [ ] Fold **Simply Swords** / **Simply More** uniques into Uncommon / Rare (added 0.9.2, after this survey).

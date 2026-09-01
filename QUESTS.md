@@ -1,7 +1,22 @@
-# Brave New Globe — Quest Line Working List
+# Brave New Globe — Quest Book (shipped)
 
 Guidance-only FTB Quests. **No line is gated behind another** — all attemptable anytime.
 Framework: `SPECTRUM.md` (a SIG = baseline → specialized career curve).
+
+**As of 0.9.0** (unchanged through **0.9.2**) the book is complete: **15 chapters, 230 quests**.
+Every gate is objective (item count / mod advancement / dimension / stat) — **no self-attest
+checkmarks**. Industry lines use a three-phase arc (**Awareness → Functional → late-stage
+Achievement**); exploration lines are locate-and-progress. 0.9.1–0.9.2 did not touch quests
+(LootJS / Simply Swords are loot work — see [LOOT.md](LOOT.md)).
+
+Currency throughout is **Create: Numismatics** (Spur / Cog / Crown / Sun). Do not quest
+player-minted coins or remote/mailbox checkout.
+
+Committed `pack/config/ftbquests/**/*.snbt` is the **source of truth**. Generated
+deterministically from `bigGlobeAero/quest_lines/*.py` via `build_ftbquests.py` (IDs are
+SHA-1 of stable keys as of 0.8.1). Re-runs with the same keys are progress-safe; changing
+keys is a content rewrite (Create Core was rewritten in **0.8.7** and again in **0.9.0**).
+Do not overwrite via in-game edit mode.
 
 Two families of lines:
 - **Industry / Career (SIG)** — Create specializations + economy; each is a baseline→specialized curve.
@@ -10,40 +25,40 @@ Two families of lines:
 
 ---
 
-## Locked lines
+## Shipped lines (flat peers, no groups)
 
-> No parent umbrella. Every industry line is a **flat peer** (like Rails, Aero, Cannons). The old
-> "Engineer's/Metalworking" grouping is dropped — Metallurgy, Power, Logistics, and Enchanting each stand alone.
+> No parent umbrella. Every industry line is a **flat peer**. The old "Engineer's/Metalworking"
+> grouping is dropped — Metallurgy, Power, Logistics, and Enchanting each stand alone.
 
-### Lines — all flat peers (no groups)
-1. **Create Core** — onboarding: kinetics, stress, first automation. Shared substrate every other line reuses.
-2. **Rails & Trains** — Tracks, Signalworks, Train Physics Reloaded, Threaded Trains (+ Trotting Wagons, Doped Horses).
-3. **Aeronautics** — Aeronautics, Sable, Aeroworks, Gyro, hose connectors, radars; capstone = reach the sky structures.
-4. **Cannons & Warfare (Ordnance)** — Gunpowder, Gunsmithing (CGS), Big Cannons + Going Ballistic + Terminal Ballistics; Warnautics = aerial-gunnery capstone.
-5. **Metalworking & Metallurgy** — Create: Metallurgy (foundries, alloys, bulk yields).
-6. **Power & Fuel** — Diesel Generators, Power Grid, Power Chip.
-7. **Logistics & Storage** — Factory Logistics, Aero Automated Logistics, Delivery Required, Create: Storage.
-8. **Industrial Enchanting** — Create: Enchantment Industry (small line: enchant by hand → automate → supply gear).
-9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful/Bounties). Earned currency, physical fulfillment; no minting.
-10. **Agriculture & Husbandry** — Farmer's Delight, Brewin' & Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Ratatouille, Animal Weights. (Serene Seasons / Project Atmosphere are environmental rules, not part of the line.)
-11. **Naval / High Seas** — Create: Better High Seas shipbuilding + WDA sea structures + Aquamirae as sea hazards/loot. The sea counterpart to Aeronautics.
-12. **Astronautics** — Creating Space rocketry & space logistics. Late-game capstone after Aeronautics + Power & Fuel; engineering-heavy, no "space magic."
+| # | Chapter | Quests | File | Notes |
+|---|---------|-------:|------|-------|
+| 1 | **Create Core** | 15 | `create_core.snbt` | Kinetics, stress, first automation. Shared substrate. Rewritten in 0.9.0 (was 12 checkmark quests in 0.8.7). |
+| 2 | **Rails & Trains** | 15 | `rails.snbt` | Tracks, Signalworks, Train Physics Reloaded, Threaded Trains (+ Trotting Wagons, Doped Horses). |
+| 3 | **Aeronautics** | 15 | `aeronautics.snbt` | Aeronautics, Sable, Aeroworks, Gyro, hose connectors, radars; capstone = reach the sky structures. |
+| 4 | **Cannons & Warfare** | 11 | `cannons.snbt` | Gunpowder → CGS firearm → cast-iron → Steel cannon → autocannon → Nethersteel. |
+| 5 | **Metalworking & Metallurgy** | 17 | `metallurgy.snbt` | Create: Metallurgy foundries, alloys, bulk yields → Steel / Tungsten / Obdurium. |
+| 6 | **Power & Fuel** | 23 | `power.snbt` | Three parallel tracks: Diesel, Steam (base Create), Power Grid electricity. |
+| 7 | **Logistics & Storage** | 16 | `logistics.snbt` | Create package-logistics spine + Factory Logistics / FXNT / Aero Automated Logistics / Delivery Required. |
+| 8 | **Industrial Enchanting** | 7 | `enchanting.snbt` | Blaze Enchanter → liquid-XP loop → mass enchanted books. Standalone (not under an Engineer's umbrella). |
+| 9 | **Commerce** | 14 | `commerce.snbt` | Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful / Bounties, Villager Commerce). Earned currency; physical fulfillment. |
+| 10 | **Agriculture & Husbandry** | 16 | `agriculture.snbt` | Farmer's Delight, Brewin' & Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Ratatouille, Animal Weights. Seasons / atmosphere are environmental rules, not part of the line. |
+| 11 | **Naval & High Seas** | 17 | `naval.snbt` | Create: Better High Seas shipbuilding + Aquamirae + Sea Myths + fishing. Sea counterpart to Aeronautics. |
+| 12 | **Astronautics** | 16 | `astronautics.snbt` | Creating Space rocketry → `reach_earth_orbit` → foundry / propellant depot. Engineering-heavy, no space magic. |
+| 13 | **When Dungeons Arise** | 22 | `wda.snbt` | Structure-discovery ladder (common → sea → sky Y 700–750 → large dungeons). Some stock WDA advancements (Coliseum, monastery, lighthouse, …) point at structures this pack does **not** generate — see Notes. |
+| 14 | **The Twilight Forest** | 14 | `twilight.snbt` | Diamond-ring portal → Naga → Lich → … → Final Castle boss ladder (advancement-gated). |
+| 15 | **The Aether** | 12 | `aether.snbt` | Glowstone+water portal → Bronze / Silver / Gold dungeon bosses → Phoenix armor. |
 
-_(13–15 are exploration/guidance lines — find the dungeon / find the portal — not career curves.)_
-13. **When Dungeons Arise** — guide toward finding dungeons (locate/exploration hints; ties to our custom sky/sea/large_dungeon sets).
-14. **The Twilight Forest** — diamond-ring portal → boss progression lockstep.
-15. **The Aether** — glowstone+water portal → dungeons/gear.
+Three hand-authored loot-crate reward tables live under `pack/config/ftbquests/quests/reward_tables/`.
 
 ---
 
-## Candidate additions (still deciding)
+## Candidate additions (not in the 0.9.0 / 0.9.2 book)
 - **Settlement & Civic (MCA Reborn)** — optional social line; feeds Commerce.
 - **Medicine (More Diseases & Treatments)** — optional niche survival line.
 
 ## Fold / skip (v1)
 - **Textiles (Create: Cotton)** — too thin alone; fold into Agriculture or Civil Works, or skip.
 - **Civil Works (Struts, Supplementaries, Copycats+)** — supporting/soft; not its own line for v1.
-- **Industrial Enchanting** — keep as a short chapter under Engineer's, not a standalone line.
 
 ---
 
