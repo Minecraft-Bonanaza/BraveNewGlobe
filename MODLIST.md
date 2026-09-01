@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
+Human-readable list of every mod in the pack (**156 mods**), grouped by purpose.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -55,6 +55,10 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create Aeronautics: Gyro Stabilizers** — flight stabilization
 - **Create Aeronautics: Throwable Rope Connector** — rope/connection tool
 - **Create Aeronautics: Delivery Required** — delivery contracts & logistics for aircraft contraptions
+  - **Ponder for KubeJS** _(dependency — `ponderjs`; required by Delivery Required)_
+    - **KubeJS** _(dependency)_
+    - **Rhino** _(dependency)_
+    - **Better Advanced Tooltips** _(dependency)_
 - **Create: Aeroworks** — aeronautics expansion
 - **Create: Warnautics** — military/combat aeronautics
 - **Create: Better High Seas** — ships / naval content
@@ -73,14 +77,23 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 
 ## Combat & Explosions
 - **Better Combat** — animated melee combat overhaul
+- **Simply Swords** — melee weapon variety (Better Combat optional compat). Unique / remnant drops **disabled** as of 0.9.7 (`config/simplyswords/`); crafted types remain.
+  - **Simply More** — extra weapon types (Modrinth `1.3.0_alpha5` as of 0.9.6; matches Simply Tooltips `0.1.5`)
+  - **Simply Tooltips** _(dependency)_
+  - **Fzzy Config** _(dependency)_
 - **Explosion Overhaul: A new level of destruction** — enhanced explosions
   - **ShatterLib | OctoLib** _(dependency)_
 
 ## Dimensions, Structures & Exploration
 - **The Aether** — the classic sky dimension
 - **The Twilight Forest** — the forest dimension
+- **Incendium** — Nether biome/structure overhaul (vanilla Nether biome source; packwiz name Incendium Legacy)
+- **YUNG's Better Nether Fortresses** — fortress overhaul _(server-only; default client installer skips it)_
+- **L_Ender's Cataclysm** — arena / summon bosses (overworld structures via `bigglobe_cataclysm.zip`; Cursed Pyramid on badlands+savanna+plains)
+  - **Lionfish-API** _(dependency)_
+- **Bosses'Rise** — 5 arena/structure bosses (overworld structures via `bigglobe_bossesrise.zip`; modId `block_factorys_bosses`)
 - **Towns and Towers** — expanded villages/pillager outposts
-- **When Dungeons Arise** — large handcrafted structures
+- **When Dungeons Arise** — large handcrafted structures (chest tables still vanilla; LootJS scaffold not wired)
 - **ChoiceTheorem's Overhauled Village** — village overhaul
 - **It Takes a Pillage Continuation** — raids/pillager content
 - **Illager Invasion** — new illager variants
@@ -89,6 +102,7 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Sea Myths** — legendary ocean monsters & bosses
 
 ## Mobs & Creatures
+- **Born in Chaos** — nightmarish hostiles (overworld + Nether); 6 gameplay structures re-keyed via `bigglobe_borninchaos.zip`
 - **Mowzie's Mobs** — bosses & unique creatures
 - **Mutant Monsters** — mutant vanilla-mob variants
 - **Re:Animal** — animal overhaul/additions
@@ -123,8 +137,10 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
 - **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
+- **Create: Villager Commerce** — villagers buy from player shops on Create stock networks (self-hosted jar; CF distribution disabled)
 
 ## Utility & Quality of Life
+- **LootJS: KubeJS Addon** — loot-table scripting (WDA dungeon-loot scaffold; currently a no-op)
 - **Corpse** — recover items from a death corpse
 - **Reliable Backpacks** — backpack storage
 - **Reliable Requiem** — death/respawn handling
@@ -155,6 +171,9 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **AppleSkin** — hunger/saturation HUD info
 - **Just Enough Items (JEI)** — recipe/item lookup
 - **Mod Menu** — mod list/config screen _(client)_
+- **FTB Quests** — guidance-only quest book (17 chapters / 242 quests as of 0.9.10)
+  - **FTB Library** _(dependency)_
+  - **FTB Teams** _(dependency)_
 
 > **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled
 > together (all ON or all OFF). See [Notes.md](Notes.md).
@@ -176,7 +195,7 @@ Core/support mods depended on by multiple mods above.
 - **Puzzles Lib** — library for Fuzs mods (Illager Invasion, etc.)
 - **Resourceful Lib** — shared config/registry helpers
 - **Cristel Lib** — structure/config library (Aquamirae, etc.)
-- **YUNG's API (NeoForge)** — structure library (Towns and Towers, etc.)
+- **YUNG's API (NeoForge)** — structure library (Towns and Towers, Better Nether Fortresses, etc.)
 - **Library Ferret** — NeoForge helper library
 - **MidnightLib** — config library (Particle Rain, etc.)
 - **GlitchCore** — biome/worldgen support library
@@ -184,9 +203,14 @@ Core/support mods depended on by multiple mods above.
 - **Lithostitched** — worldgen structure/modifier library
 - **playerAnimator** — player animation library (Better Combat, MCA, etc.)
 - **[NTGL] NukaTeam's Gun Lib** — firearm content library
+- **LDLib2** — KilaBash rendering/GUI library
+- **oωo (owo-lib)** — library restored in 0.8.4 (still required; was dropped with Numismatic Overhaul)
+- **Fzzy Config** — config library (Simply Swords / Simply More)
 
 > Some libraries are listed as _(dependency)_ notes under a single parent mod above rather than here:
 > **Forgified Fabric API** (Sinytra Connector), **Villager API**
 > (MCA Reborn), **Azimuth API** (Aeronautics Camera Sync), **Ritchie's Projectile Library**
-> (Create Big Cannons), **ShatterLib | OctoLib** (Explosion Overhaul), and **Gabou's Libs**
-> (Trotting Wagons).
+> (Create Big Cannons), **ShatterLib | OctoLib** (Explosion Overhaul), **Gabou's Libs**
+> (Trotting Wagons), **Simply Tooltips** / **Fzzy Config** (Simply Swords), **Lionfish-API**
+> (L_Ender's Cataclysm), and the PonderJS / KubeJS / Rhino / Better Advanced Tooltips chain
+> (Delivery Required).

@@ -20,12 +20,26 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   - Rewards scale in Numismatics coin (cog → crown → sun) + boss materials; generated from
     `bigGlobeAero/quest_lines/{cataclysm,bossesrise}.py`. Pack now has 17 chapters / 242 quests.
 
+### Notes
+- **156** mods (155 + Bosses'Rise). `side = "both"`. No new libraries (GeckoLib already in).
+  Jar `block_factorys_bosses-2.1.2-neo-1.21.1.jar` (Modrinth `q2bV1Tm1` / version `lE9PF6Wp`).
+- Datapack `pack/datapacks/bigglobe_bossesrise.zip`. **No fresh overworld** — existing chunks keep
+  missing Bosses'Rise structures until regenerated. Nether `underworld_arena` needs no override
+  (BG doesn't touch the Nether).
+- Quest book **17 chapters / 242 quests** (was 15 / 230). The two new chapters use FTB **kill**
+  tasks (not advancements, not checkmarks). Twilight / Aether stay advancement-gated. Do **not**
+  reintroduce checkmarks.
+
 ## [0.9.9] — 2026-09-01
 
 ### Changed — widen Cataclysm Cursed Pyramid biomes
 - `bigglobe_cataclysm.zip`: `cursed_pyramid_biomes` widened from `#minecraft:is_badlands` alone to
   `#minecraft:is_badlands` + `#minecraft:is_savanna` + `#minecraft:is_plains` (warm/dry open land) so the
   Pharaoh isn't confined to rare BG badlands. (Biome tag `values` accept a list of tags.)
+
+### Notes
+- Still **155** mods. Datapack-only. **No fresh overworld** — existing cursed-pyramid chunks keep
+  the old `#minecraft:is_badlands`-only gate until regenerated.
 
 ## [0.9.8] — 2026-09-01
 
@@ -44,6 +58,15 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   - Nether/End structures (burning_arena, soul_black_smith, ruined_citadel) need no override — BG doesn't
     touch those dimensions. Biome picks are thematic and tunable.
 
+### Notes
+- **155** mods (153 + L_Ender's Cataclysm + Lionfish-API). Both `side = "both"`. Curios already in.
+  Cataclysm jar `L_Ender's Cataclysm 1.21.1-3.33.jar` (Modrinth `46KJle7n` / version `mYBUDZWl`);
+  Lionfish-API `3.1` (`FoVacERa` / `fTRMVgyZ`).
+- Datapack `pack/datapacks/bigglobe_cataclysm.zip`. **No fresh overworld** — existing chunks keep
+  missing Cataclysm overworld structures until regenerated. Nether/End structures need no override.
+- `cursed_pyramid_biomes` was `#minecraft:is_badlands` only here; **0.9.9** widened it to
+  badlands + savanna + plains. Quest chapters for Cataclysm landed in **0.9.10**.
+
 ## [0.9.7] — 2026-09-01
 
 ### Changed — Simply Swords: keep weapon variety, drop the unique/remnant loot layer
@@ -58,6 +81,14 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - **Verify in-game** (can't launch from here): after sync, uniques/remnants should no longer drop from
   chests or mobs. If they still do, toggle the same fields via Mod Menu → Simply Swords and send me the
   generated `.toml` to bake in.
+
+### Notes
+- Still **153** mods (config-only). **No fresh world.** Do **not** re-add the reverted LootJS
+  remnant injection (`borninchaos_remnant_loot.js`). `wda_dungeon_loot.js` stays a no-op.
+- Unique / remnant Simply Swords drops are **off**. Crafted weapon variety stays. With remnants
+  disabled, uniques are also effectively uncraftable — do **not** fold uniques into [LOOT.md](LOOT.md)
+  while this config holds. Partial overrides live at `pack/config/simplyswords/{loot,general}.toml`
+  (Fzzy Config merges the rest).
 
 ## [0.9.6] — 2026-09-01
 
