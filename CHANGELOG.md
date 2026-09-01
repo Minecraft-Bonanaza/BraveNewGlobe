@@ -3,6 +3,20 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.5] — 2026-09-01
+
+### Added — Big Globe × Born in Chaos structure compat
+- New datapack `datapacks/bigglobe_borninchaos.zip` (Paxi-loaded). Born in Chaos ships ~30 structures;
+  its tag-gated ones (`#is_forest`/`#is_taiga`/`#is_savanna`) already generate because `bigglobe_tags.zip`
+  populates those tags, but 6 **gameplay** structures were gated on bare vanilla biome IDs (`plains`,
+  `desert`, …) that Big Globe never uses, so they never generated. This override re-keys their `biomes`
+  to BG-populated `#minecraft:is_*` tags (all other fields — jigsaw pool, `beard_thin`, surface anchor —
+  unchanged):
+  - `observation_tower_plains`, `dark_tower_plain`, `clown_caravan_plains`, `farm` → `#minecraft:is_plains`
+  - `mound_of_hounds` → `#minecraft:is_badlands`
+  - `infernal_pumpkin` → `#minecraft:is_forest`
+- The ~20 cosmetic `grave_*` memorial structures were intentionally left un-compatted (flavor only).
+
 ## [0.9.4] — 2026-09-01
 
 ### Added — Nether content (make it interesting & dangerous)
