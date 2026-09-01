@@ -13,6 +13,16 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   (e.g. opening the Simply Swords creative tab). `1.3.0_alpha5` (2026-08-26) is the Simply More build
   compiled against the current Simply Tooltips/Simply Swords API. Alpha channel, but the only compatible pairing.
 
+### Notes
+- Still **153** mods (version bump, not an add). **No fresh world.** Jar is
+  `simplymore-neoforge-1.3.0_alpha5+1.21.1.jar` (Modrinth `zhpyD8Y0` / version `ZPX1C3yg`).
+  Still `side = "both"`, still Modrinth (0.9.3).
+- Supersedes the 0.9.2 "skip `1.3.0_alphaN`" pin and the 0.9.3 `1.2.3` / `bVBS14OK` pin.
+  Do **not** roll back to release `1.2.3` — it crashes against Simply Tooltips `0.1.5`.
+  Do **not** `packwiz curseforge add` Simply More (CF `allowModDistribution:false`).
+- When a Simply More *release* that matches Simply Tooltips `0.1.5` exists, prefer that
+  over staying on alpha. Do not bump Simply Tooltips independently of Simply More.
+
 ## [0.9.5] — 2026-09-01
 
 ### Added — Big Globe × Born in Chaos structure compat
@@ -27,6 +37,12 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   - `infernal_pumpkin` → `#minecraft:is_forest`
 - The ~20 cosmetic `grave_*` memorial structures were intentionally left un-compatted (flavor only).
 
+### Notes
+- Still **153** mods. Datapack-only (`pack/datapacks/bigglobe_borninchaos.zip`). **No fresh
+  overworld** — existing chunks keep missing/old Born in Chaos placements until regenerated.
+  Relies on `bigglobe_tags.zip` populating `#minecraft:is_plains` / `is_badlands` / `is_forest`.
+- Overworld **mob** spawns from Born in Chaos are still pending review (0.9.5 is structures only).
+
 ## [0.9.4] — 2026-09-01
 
 ### Added — Nether content (make it interesting & dangerous)
@@ -40,6 +56,18 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   (Big Globe only overhauls the overworld), so these need **no BG worldgen compat datapack**. Born in
   Chaos's *overworld* mob spawns are pending review against Big Globe's biome tags (see below).
 
+### Notes
+- **153** mods (150 + Incendium + YUNG's Better Nether Fortresses + Born in Chaos). No new
+  libraries (YUNG's API and GeckoLib already in). **No fresh overworld.** Existing **Nether**
+  chunks stay vanilla until regenerated (Incendium biomes + Better Fortresses).
+- Incendium / Born in Chaos are `side = "both"`. **YUNG's Better Nether Fortresses is
+  `side = "server"`** (like Too Fast). Default packwiz-installer `--side client` (PrismLauncher)
+  **skips** it — dedicated servers get it; singleplayer clients keep vanilla fortresses unless
+  the metafile is changed to `both` or the installer is run with `--side both`.
+- Nether itself needs no BG datapack (vanilla Nether biome source). Born in Chaos *overworld
+  structures* landed in **0.9.5**; overworld **mob** spawns are still pending.
+- Incendium's packwiz name is **Incendium Legacy** (Modrinth `ZVzW5oNS` / version `7mVvV9Th`).
+
 ## [0.9.3] — 2026-09-01
 
 ### Fixed
@@ -47,6 +75,13 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   `allowModDistribution:false` on this project, so the CurseForge API refuses to serve the download and
   clients can't auto-install it. Modrinth serves the identical jar (`simplymore-forge-1.2.3.jar`, release
   channel) via a direct CDN URL, so auto-install works. No version change (still `1.2.3`).
+
+### Notes
+- Still **150** mods. Same jar (`simplymore-forge-1.2.3.jar`); metafile renamed
+  `simply-more.pw.toml` → `simplymore.pw.toml`. **No fresh world.**
+- Same class of CF `allowModDistribution:false` fix as Linear Bearing (0.8.2). Do **not**
+  `packwiz curseforge add` Simply More back over the Modrinth metafile.
+- The `1.2.3` / `bVBS14OK` pin is superseded by **0.9.6** (`1.3.0_alpha5` / `ZPX1C3yg`).
 
 ## [0.9.2] — 2026-08-31
 
@@ -61,6 +96,22 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - No BG compat datapack needed — item/weapon mods, no worldgen/biome-gated content. Candidates to fold
   into the `LOOT.md` Uncommon/Rare WDA dungeon tiers later.
 
+### Notes
+- **150** mods (145 + LootJS + Simply Swords + Simply More + Fzzy Config + Simply Tooltips).
+  **No fresh world** from 0.7.1 onward — item/script adds only; no worldgen.
+- `wda_dungeon_loot.js` is still a **no-op**. WDA chests stay 100% vanilla until LootJS is
+  wired from [LOOT.md](LOOT.md). Simply Swords / Simply More landed after the 0.9.1 survey.
+- Simply More's CurseForge source here is superseded by **0.9.3** (Modrinth, same `1.2.3` jar).
+  The "skip `1.3.0_alphaN`" pin is superseded by **0.9.6** (`1.3.0_alpha5`, required by
+  Simply Tooltips `0.1.5`).
+
+## Unversioned (after 0.9.1) — LOOT.md
+
+### Added (docs)
+- **[LOOT.md](LOOT.md)** — exhaustive Common / Uncommon / Rare / Epic item tracker from a
+  jar-lang survey of all content mods. Menu for the LootJS WDA-chest work; not wired yet.
+  Author did **not** bump `pack.toml`.
+
 ## [0.9.1] — 2026-08-31
 
 ### Added — LootJS (dungeon-loot infrastructure)
@@ -68,6 +119,11 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - Scaffold `kubejs/server_scripts/wda_dungeon_loot.js` for injecting **tiered modpack loot** into When
   Dungeons Arise chest tables (`dungeons_arise:chests/*`), which are otherwise 100% vanilla. Loot content
   authored after a modpack-wide item survey.
+
+### Notes
+- KubeJS / Rhino / Architectury already present (0.8.5). The scaffold is intentionally empty
+  until the survey (`1e413fb` / [LOOT.md](LOOT.md)).
+- **146** mods after this commit. **No fresh world.**
 
 ## [0.9.0] — 2026-08-31
 
