@@ -801,6 +801,10 @@ file = "datapacks/bigglobe_borninchaos.zip"
 hash = "2705fde9c43bf5cfcf4016f65685dc2fff08d01db5879fb290948899461e6989"
 
 [[files]]
+file = "datapacks/bigglobe_cataclysm.zip"
+hash = "36405d876f945cec853180afb39b609f9999d329bf82c82b37de536760e31a05"
+
+[[files]]
 file = "datapacks/bigglobe_create.zip"
 hash = "41b82f8c59d5388beb66ae355a5f25bed85c9c9dba28fb68703da67e41a0f222"
 
@@ -1331,6 +1335,11 @@ hash = "17b5bef818ac8c504958db422aba2f1cc79979da41a71b0ecb793f85accf30df"
 metafile = true
 
 [[files]]
+file = "mods/l_enders-cataclysm.pw.toml"
+hash = "0a509504c937a398ccabc71d56029690d43806378c7121928776407083c669ef"
+metafile = true
+
+[[files]]
 file = "mods/ldlib.pw.toml"
 hash = "cae6b61cdfdbfe5c3b4dc3ac48280fef24957bdaa221aa9f94b5f7ff25a3069c"
 metafile = true
@@ -1343,6 +1352,11 @@ metafile = true
 [[files]]
 file = "mods/linear-bearing.pw.toml"
 hash = "e92248ff7e47d94175ee315550946858967e9f1076653468a1d10a6aa53a4d82"
+metafile = true
+
+[[files]]
+file = "mods/lionfish-api.pw.toml"
+hash = "64acab1580ca6edd8b1dd185e914aeee7aa551a88a7cd7f0f9370a82aaadfef6"
 metafile = true
 
 [[files]]

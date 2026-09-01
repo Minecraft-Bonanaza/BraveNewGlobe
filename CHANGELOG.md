@@ -3,6 +3,23 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.8] — 2026-09-01
+
+### Added — L_Ender's Cataclysm (arena/summon bosses) + BG compat
+- **L_Ender's Cataclysm** `3.33` (Modrinth) — ~8 big bosses that are **summoned via items or fixed in
+  structures** (never random-spawn, never despawn), with high HP + anti-melee AOE → rewards tech/artillery/
+  airships over 1v1 gear. New dep **Lionfish-API** `3.1` (Curios already in pack).
+- New datapack `datapacks/bigglobe_cataclysm.zip` (Paxi-loaded) — Cataclysm gates each structure via its own
+  `#cataclysm:has_structure/*_biomes` tags, and the **overworld** ones point at bare vanilla biomes Big Globe
+  never uses, so they'd never generate. This overrides those tags to BG-populated ones (`bigglobe_tags.zip`):
+  - `cursed_pyramid_biomes` → `#minecraft:is_badlands` (Pharaoh)
+  - `acropolis_biomes` → `#minecraft:is_ocean`
+  - `frosted_prison_biomes` → `#minecraft:is_mountain` (Maledictus)
+  - `sunken_city_biomes` → `#minecraft:is_deep_ocean` (Leviathan)
+  - `ancient_factory_biomes` → `#minecraft:is_overworld` (Netherite Monstrosity; broad to guarantee gen)
+  - Nether/End structures (burning_arena, soul_black_smith, ruined_citadel) need no override — BG doesn't
+    touch those dimensions. Biome picks are thematic and tunable.
+
 ## [0.9.7] — 2026-09-01
 
 ### Changed — Simply Swords: keep weapon variety, drop the unique/remnant loot layer
