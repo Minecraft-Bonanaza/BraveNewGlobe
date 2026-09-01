@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.9] — 2026-09-01
+
+### Changed — widen Cataclysm Cursed Pyramid biomes
+- `bigglobe_cataclysm.zip`: `cursed_pyramid_biomes` widened from `#minecraft:is_badlands` alone to
+  `#minecraft:is_badlands` + `#minecraft:is_savanna` + `#minecraft:is_plains` (warm/dry open land) so the
+  Pharaoh isn't confined to rare BG badlands. (Biome tag `values` accept a list of tags.)
+
 ## [0.9.8] — 2026-09-01
 
 ### Added — L_Ender's Cataclysm (arena/summon bosses) + BG compat
