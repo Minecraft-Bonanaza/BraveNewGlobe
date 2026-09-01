@@ -1,30 +1,16 @@
 // Brave New Globe — When Dungeons Arise dungeon loot (LootJS)
 // -----------------------------------------------------------------------------
-// WDA's chest tables (dungeons_arise:chests/<structure>/<variant>) are 100%
-// vanilla and never see modded items. This injects modpack loot so raiding a
-// dungeon is worth it.
+// Injects tiered, modpack-flavored loot into WDA's private loot tables
+// (dungeons_arise:chests/<structure>/<variant>) so raiding a dungeon is worth it.
 //
-// STAGE 1 (this file): Simply Swords unique-crafting materials as a rare find,
-// so dungeons feed the uniques progression. Additive — vanilla loot untouched.
+// Strategy (filled in after the loot survey):
+//   - Wildcard the WDA chest tables by regex (auto-covers all + future dungeons).
+//   - Tier by dungeon size:  common POIs  <  sea/sky  <  large dungeons.
+//   - Add a bonus pool per tier; optionally trim vanilla filler on the big ones.
+//   - Pools drawn from item lists (or item tags) chosen from the modpack survey.
 //
-// STAGE 2 (TODO): full tiered spectrum from LOOT.md (Common/Uncommon/Rare/Epic)
-// keyed by dungeon size. Add per-tier bonus pools once the item sets + the
-// add-on-vs-trim decision are locked. See BraveNewGlobe/LOOT.md.
-//
-// API: LootJS 3.7.0 (AlmostReliable), NeoForge 1.21.1.
+// NOTE: LootJS 3.7.0 (NeoForge 1.21.1) API is confirmed at authoring time before
+//       any modifier is written here. This scaffold is intentionally a no-op.
 // -----------------------------------------------------------------------------
 
-LootJS.lootTables((event) => {
-    // Every WDA chest table (current + future dungeons) by namespace.
-    event
-        .modifyLootTables(/^dungeons_arise:chests\/.*/)
-        .createPool((pool) => {
-            // ~40% of WDA chests carry a Simply Swords crafting material.
-            pool.when((c) => c.randomChance(0.4));
-            pool.addEntry(LootEntry.of("simplyswords:empowered_remnant", [1, 2]).withWeight(45));
-            pool.addEntry(LootEntry.of("simplyswords:contained_remnant").withWeight(25));
-            pool.addEntry(LootEntry.of("simplyswords:runefused_gem").withWeight(15));
-            pool.addEntry(LootEntry.of("simplyswords:runic_tablet").withWeight(10));
-            pool.addEntry(LootEntry.of("simplyswords:netherfused_gem").withWeight(5));
-        });
-});
+// TODO (post-survey): LootJS.lootTables(event => { event.modify(/dungeons_arise:chests\/.../) ... })

@@ -3,25 +3,6 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
-## [0.9.7] — 2026-09-01
-
-### Added — LootJS: Simply Swords loot integration (Born in Chaos + WDA)
-Simply Swords only injects its unique-crafting currency (Remnants) into vanilla
-tables (villages / ruined_portal / ender_dragon), so modded mobs and dungeons gave
-nothing toward uniques. Two LootJS scripts fix that:
-- `kubejs/server_scripts/borninchaos_remnant_loot.js` — ~5% of **Born in Chaos** mob
-  kills drop a Simply Swords **Empowered Remnant** (85%) or **Runic Tablet** (15%),
-  matched by regex `^born_in_chaos_v1:entities/*`. The pack's most dangerous mobs now
-  fuel uniques.
-- `kubejs/server_scripts/wda_dungeon_loot.js` — real injection (was a no-op scaffold):
-  ~40% of **When Dungeons Arise** chests (`^dungeons_arise:chests/*`) now carry a
-  Simply Swords material (Empowered/Contained Remnant, Runefused/Netherfused Gem, or
-  Runic Tablet), weighted. Additive — vanilla WDA loot untouched.
-- Both use the LootJS 3.7.0 (AlmostReliable) API: `modifyLootTables(/regex/)` +
-  `createPool` + `when(randomChance)` + `LootEntry.of().withWeight()`.
-- Stage 2 (the full tiered LOOT.md spectrum by dungeon size) is still TODO in the WDA
-  script header.
-
 ## [0.9.6] — 2026-09-01
 
 ### Fixed — Simply More crash on tooltip render

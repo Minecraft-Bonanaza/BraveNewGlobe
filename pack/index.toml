@@ -849,12 +849,8 @@ file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 
 [[files]]
-file = "kubejs/server_scripts/borninchaos_remnant_loot.js"
-hash = "7316c13eee78a8c39d776f5ec225a8f341b5f3aee779c9d2f01cde3408299df8"
-
-[[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "8d9bf32ce875c8248bab70d21acf25e692767c460b4ddbbd57b41586b498b63b"
+hash = "024efc72742686f101cfa79227e7ef142eb6eaa4b337ada846da9fdae2214937"
 
 [[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"
