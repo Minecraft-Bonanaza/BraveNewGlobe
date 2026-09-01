@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.4] — 2026-09-01
+
+### Added — Nether content (make it interesting & dangerous)
+- **Incendium** `5.4.4` (Modrinth) — Nether biome/structure overhaul + the Nether Sovereign boss & mobs.
+  Uses datapack biome modifiers; injects into the vanilla Nether biome source (no extra lib).
+- **YUNG's Better Nether Fortresses** `3.1.5` (Modrinth) — overhauls fortresses into large dangerous
+  complexes. Dep **YUNG's API** already in pack.
+- **Born in Chaos** `1.7.6` (Modrinth) — nightmarish hostile mobs (undead + Nether). Dep **GeckoLib**
+  already in pack.
+- All sourced from Modrinth (auto-install); no new libraries. Nether is vanilla worldgen in this pack
+  (Big Globe only overhauls the overworld), so these need **no BG worldgen compat datapack**. Born in
+  Chaos's *overworld* mob spawns are pending review against Big Globe's biome tags (see below).
+
 ## [0.9.3] — 2026-09-01
 
 ### Fixed

@@ -914,6 +914,11 @@ hash = "f53d98dc09fb5abb52798e5dfd25297d85a290e1e4874d8208b981654799121e"
 metafile = true
 
 [[files]]
+file = "mods/borninchaos.pw.toml"
+hash = "a2c8cf1a4fc5faed55ca1f8d04f7abaa1c8282b9bcd70e1b3e607181923f48d9"
+metafile = true
+
+[[files]]
 file = "mods/bountiful.pw.toml"
 hash = "34a28b6bdea8bacb484ddd5dc124367252d57e8588543df38d0821798dc906a7"
 metafile = true
@@ -1264,6 +1269,11 @@ hash = "313ec73e545755e5cb1ea72dd38b632587e32a9e0d5e73b714d00fe4feb9a0d4"
 metafile = true
 
 [[files]]
+file = "mods/incendium.pw.toml"
+hash = "391f5b0b0fcae3ce77be6ab211435228faec79cb92c50d69471c52ba36b139d6"
+metafile = true
+
+[[files]]
 file = "mods/interactive-player-mobs.pw.toml"
 hash = "977485e145228172aecc47c4106429b67a352ae287cbd29da3a76cd8fac60184"
 metafile = true
@@ -1596,4 +1606,9 @@ metafile = true
 [[files]]
 file = "mods/yungs-api-neoforge.pw.toml"
 hash = "1e326549d08f0f793d3972da239ec81b40c28498f87cf507a8dc7aa2bbea6550"
+metafile = true
+
+[[files]]
+file = "mods/yungs-better-nether-fortresses.pw.toml"
+hash = "c0e40691651465b4eb1037749148c2078123604195e19b582dbef3cd5914e3b1"
 metafile = true
