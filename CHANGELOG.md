@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.3] — 2026-09-01
+
+### Fixed
+- **Simply More** re-pointed from CurseForge → **Modrinth** (`simplymore`, version `bVBS14OK`). CF has
+  `allowModDistribution:false` on this project, so the CurseForge API refuses to serve the download and
+  clients can't auto-install it. Modrinth serves the identical jar (`simplymore-forge-1.2.3.jar`, release
+  channel) via a direct CDN URL, so auto-install works. No version change (still `1.2.3`).
+
 ## [0.9.2] — 2026-08-31
 
 ### Added — Simply Swords + Simply More (combat loot)

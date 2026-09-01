@@ -1504,11 +1504,6 @@ hash = "b5aeca8406e74bb7722b4916dacb304373f64fb38716a70a6976608969ded970"
 metafile = true
 
 [[files]]
-file = "mods/simply-more.pw.toml"
-hash = "fadbaf572d951f9670ffbc5c2157695afc3d40da11626dcbdc6ff105a3f62b20"
-metafile = true
-
-[[files]]
 file = "mods/simply-swords.pw.toml"
 hash = "e963d7f0df4c955e8a96cd9fe716257dd7d6d5ca20a29d52c16fba9ead943f5b"
 metafile = true
@@ -1516,6 +1511,11 @@ metafile = true
 [[files]]
 file = "mods/simply-tooltips.pw.toml"
 hash = "891ad3905947e6742a1bf10fbe098457f6cd487641eff26f6da322600fcf1dcd"
+metafile = true
+
+[[files]]
+file = "mods/simplymore.pw.toml"
+hash = "92ff88d6d763defa12eddfbfce2cf152c95e06148278f5292044f7a84a210c12"
 metafile = true
 
 [[files]]
