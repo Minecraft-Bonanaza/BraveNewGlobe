@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.6] — 2026-09-01
+
+### Fixed — Simply More crash on tooltip render
+- Bumped **Simply More** `1.2.3` → **`1.3.0_alpha5`** (Modrinth). The `1.2.3` release (2026-06-10) was
+  built against an older Simply Tooltips; its `TooltipRendererMixin` `@ModifyReturnValue` targets a method
+  `borderStyleFor` that **Simply Tooltips `0.1.5`** (2026-08-23, pulled by Simply Swords `1.70.2`) renamed,
+  so a `MixinApplyError` crashed the client whenever a Simply Swords/Simply More item tooltip rendered
+  (e.g. opening the Simply Swords creative tab). `1.3.0_alpha5` (2026-08-26) is the Simply More build
+  compiled against the current Simply Tooltips/Simply Swords API. Alpha channel, but the only compatible pairing.
+
 ## [0.9.5] — 2026-09-01
 
 ### Added — Big Globe × Born in Chaos structure compat
