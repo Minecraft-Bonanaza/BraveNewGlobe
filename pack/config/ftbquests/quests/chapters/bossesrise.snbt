@@ -1,0 +1,193 @@
+{
+	id: "6B5A27E0541AD603"
+	group: ""
+	order_index: 25
+	filename: "bossesrise"
+	title: "Bosses' Rise"
+	icon: "block_factorys_bosses:warrior_sword"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "Sirok, the Sandworm"
+			icon: "minecraft:sand"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"A Sandworm Nest churns beneath warm, dry land (badlands / savanna / plains). Sirok bursts from below."
+				"Stay off the sand it can reach -- fight from a raised platform or deck and shell it as it surfaces."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "block_factorys_bosses:sandworm"
+					value: 1
+					id: "4B45EDDD1CEF3207"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "0A1B38E2D0EDC357"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 8
+					id: "4A744F8C26886125"
+				}
+			]
+			id: "908ECC8E3CCA8804"
+		}
+		{
+			title: "Skor, the Yeti"
+			icon: "minecraft:blue_ice"
+			x: -1.0d
+			y: 1.0d
+			description: [
+				"A Yeti Hideout sits high in the mountains. Skor hurls ice and charges through cover."
+				"Range and mobility win here; let cannon fire soften it before it closes."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "block_factorys_bosses:yeti"
+					value: 1
+					id: "91A88E29EC1CE5A3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "65C257D375538F96"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 10
+					id: "30A39C1DA52767C5"
+				}
+			]
+			id: "52DF5ED1758301CB"
+			dependencies: [
+				"908ECC8E3CCA8804"
+			]
+		}
+		{
+			title: "Nerakyss, the Kraken"
+			icon: "minecraft:heart_of_the_sea"
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"A derelict Kraken Ship drifts on the deep ocean. Nerakyss drags down anything on the surface."
+				"Textbook airship work: hover over the wreck, drop anchor lines of cannon fire, stay above the tentacles."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "block_factorys_bosses:kraken"
+					value: 1
+					id: "011E862F10BE4B12"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "E17506757F327FB3"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 1
+					id: "EA8C338840778F8D"
+				}
+			]
+			id: "4268693CA9E0B24B"
+			dependencies: [
+				"908ECC8E3CCA8804"
+			]
+		}
+		{
+			title: "Helvar, the Underworld Knight"
+			icon: "block_factorys_bosses:knight_sword"
+			x: -1.0d
+			y: 2.0d
+			description: [
+				"The Underworld Arena opens in the Nether. Helvar punishes every parry with rift strikes."
+				"Break line-of-sight and answer with ordnance -- his melee is the trap, not the threat."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "block_factorys_bosses:underworld_knight"
+					value: 1
+					id: "371FEF99D10556D3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 55
+					id: "7E2434AF9CF0927D"
+				}
+				{
+					type: "item"
+					item: "block_factorys_bosses:knight_sword"
+					count: 1
+					id: "3CC41B1CAA418812"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "8828FE0BD0DD6353"
+				}
+			]
+			id: "5A039314991E999A"
+			dependencies: [
+				"52DF5ED1758301CB"
+			]
+		}
+		{
+			title: "Ashlord, the Infernal Dragon"
+			icon: "minecraft:dragon_head"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"A Dragon Tower marks Ashlord's roost. It fights in the air and rains fire -- the capstone of the Rise."
+				"This is the airship duel everything led to: altitude, fireproofing, and sustained cannon fire."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "block_factorys_bosses:infernal_dragon"
+					value: 1
+					id: "2A77DB66CB3BCEE4"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 75
+					id: "EA1672DE926DDA6D"
+				}
+				{
+					type: "item"
+					item: "numismatics:sun"
+					count: 1
+					id: "94AE10378A6EB136"
+				}
+			]
+			id: "B1F0E6EF19238C91"
+			dependencies: [
+				"4268693CA9E0B24B"
+				"5A039314991E999A"
+			]
+		}
+	]
+}

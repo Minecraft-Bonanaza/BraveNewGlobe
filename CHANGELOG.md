@@ -3,6 +3,23 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.10] — 2026-09-01
+
+### Added — Bosses'Rise + boss quest lines (Cataclysm & Bosses'Rise)
+- **Bosses'Rise** `2.1.2` (Modrinth, `block_factorys_bosses`) — 5 arena/structure bosses (Sirok the Sandworm,
+  Skor the Yeti, Nerakyss the Kraken, Helvar the Underworld Knight, Ashlord the Infernal Dragon). Dep
+  **GeckoLib** already in pack.
+- New compat datapack `datapacks/bigglobe_bossesrise.zip` (Paxi) — its structures gate on bare vanilla
+  biomes BG lacks; re-keyed to BG-populated tags (sandworm_nest→badlands/savanna/plains, dragon_tower→
+  plains/jungle/savanna/forest, yeti_hideout→mountain, kraken_ship→deep_ocean). underworld_arena (nether)
+  needs none.
+- **Two FTB Quests chapters** (generated, kill-gated, guidance-only — no self-attest):
+  - **L_Ender's Cataclysm** (7) — Wadjet → Maledictus / Leviathan → Netherite Monstrosity → Ignis /
+    Harbinger → Ender Guardian. Each quest points at Create cannons / airships over 1v1 melee.
+  - **Bosses' Rise** (5) — Sandworm → Yeti / Kraken → Underworld Knight → Infernal Dragon capstone.
+  - Rewards scale in Numismatics coin (cog → crown → sun) + boss materials; generated from
+    `bigGlobeAero/quest_lines/{cataclysm,bossesrise}.py`. Pack now has 17 chapters / 242 quests.
+
 ## [0.9.9] — 2026-09-01
 
 ### Changed — widen Cataclysm Cursed Pyramid biomes

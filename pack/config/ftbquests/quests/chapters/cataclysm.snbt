@@ -1,0 +1,324 @@
+{
+	id: "483CCD9C163DDD24"
+	group: ""
+	order_index: 24
+	filename: "cataclysm"
+	title: "L_Ender's Cataclysm"
+	icon: "cataclysm:monstrous_helm"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "The Cursed Pyramid"
+			icon: "cataclysm:cursium_ingot"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"Cursed Pyramids rise from warm, open land (badlands / savanna / plains). Inside coils Wadjet."
+				"Sand-choked halls favour ranged fire -- a mounted potato/pom cannon clears the adds while you focus the boss."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:wadjet"
+					value: 1
+					id: "5DCCF4DF6990C677"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "87D4698F44DED326"
+				}
+				{
+					type: "item"
+					item: "cataclysm:cursium_ingot"
+					count: 3
+					id: "7D191C8AA425FBAA"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 8
+					id: "3A563D366F58B446"
+				}
+			]
+			id: "FF38CF051CB87EED"
+		}
+		{
+			title: "The Frosted Prison"
+			icon: "cataclysm:cursium_helmet"
+			x: -1.0d
+			y: 1.0d
+			description: [
+				"High cold peaks hide the Frosted Prison. Maledictus freezes anyone who stands still."
+				"Keep moving; artillery from range never has to touch the ice."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:maledictus"
+					value: 1
+					id: "D69B3B63DB5687ED"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 35
+					id: "5E20B5A21D02DC02"
+				}
+				{
+					type: "item"
+					item: "cataclysm:cursium_ingot"
+					count: 4
+					id: "79D71965C5428A2B"
+				}
+				{
+					type: "item"
+					item: "numismatics:cog"
+					count: 10
+					id: "057F85F93680DC44"
+				}
+			]
+			id: "1B39F90E727923A0"
+			dependencies: [
+				"FF38CF051CB87EED"
+			]
+		}
+		{
+			title: "The Sunken City"
+			icon: "cataclysm:void_jaw"
+			x: 1.0d
+			y: 1.0d
+			description: [
+				"Deep ocean floors hide the Sunken City and the Leviathan -- invincible outside the water."
+				"An airship holding station over the trench with a Big Cannon is the clean way to break it."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:the_leviathan"
+					value: 1
+					id: "2B38D2E1D0388343"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "D4E0D4483E23A78E"
+				}
+				{
+					type: "item"
+					item: "cataclysm:black_steel_ingot"
+					count: 4
+					id: "CA01C824E6F9D262"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 1
+					id: "744BA90BA750A307"
+				}
+			]
+			id: "2E0B88E10E5722F1"
+			dependencies: [
+				"FF38CF051CB87EED"
+			]
+		}
+		{
+			title: "The Ancient Factory"
+			icon: "cataclysm:ancient_metal_ingot"
+			x: 0.0d
+			y: 2.0d
+			description: [
+				"Deep underground, the Ancient Factory holds the Netherite Monstrosity -- a slow, colossal wrecker."
+				"Its bulk is a perfect cannon target; kite it down a tunnel and let the barrage do the work."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:netherite_monstrosity"
+					value: 1
+					id: "CC9296188B0A564A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 45
+					id: "4B93B4D77F689F8E"
+				}
+				{
+					type: "item"
+					item: "cataclysm:ancient_metal_ingot"
+					count: 4
+					id: "F996E13BC2B703D9"
+				}
+				{
+					type: "item"
+					item: "cataclysm:monstrous_horn"
+					count: 1
+					id: "0FAF330FD6E72569"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 1
+					id: "9C51F6293DA7BEA1"
+				}
+			]
+			id: "ED93C1679C5DADA5"
+			dependencies: [
+				"1B39F90E727923A0"
+				"2E0B88E10E5722F1"
+			]
+		}
+		{
+			title: "The Ruined Citadel"
+			icon: "cataclysm:ignitium_ingot"
+			x: -1.0d
+			y: 3.0d
+			description: [
+				"Ignis waits in the Ruined Citadel of the Nether. His flame arenas melt melee builds."
+				"Fireproof plating + ranged ordnance turns the fight from suicidal to routine."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:ignis"
+					value: 1
+					id: "B1B80B41681EFA2A"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 50
+					id: "4A5CADFFD44CC333"
+				}
+				{
+					type: "item"
+					item: "cataclysm:ignitium_ingot"
+					count: 4
+					id: "352F3CFF1CA7AA4B"
+				}
+				{
+					type: "item"
+					item: "cataclysm:the_incinerator"
+					count: 1
+					id: "D8B2D80F58E8132B"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "99261DC0F9994F88"
+				}
+			]
+			id: "42921DBFD8CC2BE4"
+			dependencies: [
+				"ED93C1679C5DADA5"
+			]
+		}
+		{
+			title: "The Harbinger"
+			icon: "cataclysm:cursed_bow"
+			x: 1.0d
+			y: 3.0d
+			description: [
+				"The Harbinger looses homing wither missiles from the air -- a duel you win from your own deck."
+				"Bring the airship to it: mobile cover, altitude, and cannon fire beat its bombardment."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:the_harbinger"
+					value: 1
+					id: "10431F90ECDFAD4E"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 55
+					id: "74AE37860288B019"
+				}
+				{
+					type: "item"
+					item: "cataclysm:witherite_ingot"
+					count: 3
+					id: "47FC42C2891E14F9"
+				}
+				{
+					type: "item"
+					item: "cataclysm:cursed_bow"
+					count: 1
+					id: "081D8842C5FD7498"
+				}
+				{
+					type: "item"
+					item: "numismatics:crown"
+					count: 2
+					id: "C6C869254C95FC1D"
+				}
+			]
+			id: "6F8F7DA48374F345"
+			dependencies: [
+				"ED93C1679C5DADA5"
+			]
+		}
+		{
+			title: "The Ender Guardian"
+			icon: "cataclysm:gauntlet_of_guard"
+			x: 0.0d
+			y: 4.0d
+			description: [
+				"In the End, the Ender Guardian teleports and counters greedy swings."
+				"The capstone of the Cataclysm -- everything you built to kill the others earns you the Gauntlet."
+			]
+			tasks: [
+				{
+					type: "kill"
+					entity: "cataclysm:ender_guardian"
+					value: 1
+					id: "1F6C8649FFD3268B"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 70
+					id: "4CBD73EFA1F73F18"
+				}
+				{
+					type: "item"
+					item: "cataclysm:enderite_ingot"
+					count: 4
+					id: "8C899A423D5E2BF0"
+				}
+				{
+					type: "item"
+					item: "cataclysm:gauntlet_of_guard"
+					count: 1
+					id: "D5334A9477690025"
+				}
+				{
+					type: "item"
+					item: "numismatics:sun"
+					count: 1
+					id: "716C98F1C88FDAA2"
+				}
+			]
+			id: "B4CB6B3D26D9DCF4"
+			dependencies: [
+				"42921DBFD8CC2BE4"
+				"6F8F7DA48374F345"
+			]
+		}
+	]
+}

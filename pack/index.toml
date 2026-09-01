@@ -353,8 +353,16 @@ file = "config/ftbquests/quests/chapters/astronautics.snbt"
 hash = "6a233f59ef6196c65c2fba3cebd59edcdba4088100c9f333b12a338b2b94326e"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/bossesrise.snbt"
+hash = "2cfa23bde002b4728951b3938bb71777deb04414c48e16c7f5f1d044343091d5"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/cannons.snbt"
 hash = "57add2f273536a5e88ea68d2e9ab050e1b8bfe3eda79f8384facc7a5b266ac06"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/cataclysm.snbt"
+hash = "bece4c45d3ea04ffa81b52abe35489b9edd4e73f37c5cf07978c74f2ba3280f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/commerce.snbt"
@@ -801,6 +809,10 @@ file = "datapacks/bigglobe_borninchaos.zip"
 hash = "2705fde9c43bf5cfcf4016f65685dc2fff08d01db5879fb290948899461e6989"
 
 [[files]]
+file = "datapacks/bigglobe_bossesrise.zip"
+hash = "c8cd97dd318babad3f4477c55a7946dc0cb7652a2360eaa33e4820d7b2fd5d1e"
+
+[[files]]
 file = "datapacks/bigglobe_cataclysm.zip"
 hash = "b28eb828e74e7df0b043ff434b4a399cb5c7926c9dc3403808b33b1b2f9bafab"
 
@@ -932,6 +944,11 @@ metafile = true
 [[files]]
 file = "mods/borninchaos.pw.toml"
 hash = "a2c8cf1a4fc5faed55ca1f8d04f7abaa1c8282b9bcd70e1b3e607181923f48d9"
+metafile = true
+
+[[files]]
+file = "mods/bossesrise.pw.toml"
+hash = "d20e603af6e9156021a1b8db31edd187a089b2b21cd7f70fa7eb7507bf81dbf9"
 metafile = true
 
 [[files]]
