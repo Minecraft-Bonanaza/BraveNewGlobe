@@ -706,7 +706,7 @@ hash = "65f0867637e1c6697c0cf4926dd016d943a7519ab4b5fa72551d8f6a179dd77b"
 
 [[files]]
 file = "config/simplyswords/loot.toml"
-hash = "cf36217f1aa7993ee3fc0fbb4990b705a61ae56bc4da7a7abfd8795e43008972"
+hash = "5a7cfb3255e169bc5faaa26dfb8c8e4c1487ac4e9097d789cff5bdfa4478094a"
 
 [[files]]
 file = "config/simulated-client.toml"
@@ -821,6 +821,10 @@ file = "datapacks/bigglobe_ctov_compat.zip"
 hash = "8ddf96707741910f896f087b8b5195d91d0b9e0651b0146ec81f55351cc30b8e"
 
 [[files]]
+file = "datapacks/bigglobe_integratedvillages.zip"
+hash = "3989b27add98b7ba790a02d078e4fca9dbd4c654a8224ed5ed7d03a299a4b2ca"
+
+[[files]]
 file = "datapacks/bigglobe_less_glacier.zip"
 hash = "6b6f04cf5f719b74798835ffa11c4c75368b1a5cf4f4de24402cc00cd3a5fa84"
 
@@ -835,6 +839,10 @@ hash = "1bc6a801d9d3262486eab68f4ae9351121e5486d158be6fbfd31258256a237ca"
 [[files]]
 file = "datapacks/bigglobe_remove_skylands.zip"
 hash = "e88997ffea150f3cfe8c9b01d855f2d22f011780cdefaff2fbae3b5c4f8ef866"
+
+[[files]]
+file = "datapacks/bigglobe_simplyswords_nouniques.zip"
+hash = "a86f36a4db4249edd47566082c3043fac7e408740c64e263f1eb2d82031f01fa"
 
 [[files]]
 file = "datapacks/bigglobe_tags.zip"
@@ -867,6 +875,10 @@ hash = "bdf57573be145b30502971c696de329f0a0d94266d640b9993d561e0745ec604"
 [[files]]
 file = "defaultconfigs/biolith/general.json"
 hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
+
+[[files]]
+file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"
+hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
@@ -1303,6 +1315,16 @@ hash = "391f5b0b0fcae3ce77be6ab211435228faec79cb92c50d69471c52ba36b139d6"
 metafile = true
 
 [[files]]
+file = "mods/integrated-api.pw.toml"
+hash = "d78071eb244731b62027bb24e0d9bdf5976925ea67972994c261dd1ba4b77832"
+metafile = true
+
+[[files]]
+file = "mods/integrated-villages.pw.toml"
+hash = "6119f4a28b047a9a1b47d5dd505ad43f407ab400dc94eb5d6d3d5189fea24ed3"
+metafile = true
+
+[[files]]
 file = "mods/interactive-player-mobs.pw.toml"
 hash = "977485e145228172aecc47c4106429b67a352ae287cbd29da3a76cd8fac60184"
 metafile = true
@@ -1651,21 +1673,3 @@ metafile = true
 file = "mods/yungs-better-nether-fortresses.pw.toml"
 hash = "c0e40691651465b4eb1037749148c2078123604195e19b582dbef3cd5914e3b1"
 metafile = true
-
-[[files]]
-file = "mods/integrated-api.pw.toml"
-hash = "d78071eb244731b62027bb24e0d9bdf5976925ea67972994c261dd1ba4b77832"
-metafile = true
-
-[[files]]
-file = "mods/integrated-villages.pw.toml"
-hash = "6119f4a28b047a9a1b47d5dd505ad43f407ab400dc94eb5d6d3d5189fea24ed3"
-metafile = true
-
-[[files]]
-file = "datapacks/bigglobe_integratedvillages.zip"
-hash = "55a98d26323dad7a5ec51b370c619393f109c675d53cdaf8a1e063d0ca1b56d7"
-
-[[files]]
-file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"
-hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"

@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.14] — 2026-09-13
+
+### Changed — airship villages now float 300 ABOVE the surface (was fixed Y=300)
+- `airship_village`: restored `project_start_to_heightmap: WORLD_SURFACE_WG` with a
+  constant offset of 300 -> generates at **surface + 300**, tracking terrain instead of a
+  fixed absolute altitude. `terrain_adaptation: none` keeps it floating free. Via `build_iv_compat.py`.
+
 ## [0.9.13] — 2026-09-13
 
 ### Changed — airship villages a touch more frequent
