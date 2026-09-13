@@ -1,4 +1,18 @@
 # Brave New Globe override (partial — Fzzy Config safe deserializer fills the rest).
-# Keep only Simply Swords' crafted weapon variety; no unique/remnant loot.
-enableLootDrops = false
+# Native SS loot injector ON: material (standard) + rare weapon types spawn at mod
+# defaults. RUNIC WEAPONS never drop as loot (weight 0). The Runic Tablet ("runic
+# shard") is a rare weighted drop in WDA chests (kubejs wda_dungeon_loot.js); the
+# native tablet pity is pushed to 400 as a far-back safety net only.
+# UNIQUES fully disabled (weight 0 + pity maxed + empty lootable_uniques tag datapack).
+# Remnants stay off.
+enableLootDrops = true
 enableContainedRemnants = false
+enableLootInVillages = false
+standardLootTableWeight = 0.1
+rareLootTableWeight = 0.4
+runicLootTableWeight = 0.0
+uniqueLootTableWeight = 0.0
+uniqueSoftPityStart = 100000
+uniqueSoftPityIncrement = 0.0
+uniqueHardPity = 100000
+tabletHardPity = 400

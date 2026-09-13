@@ -706,7 +706,7 @@ hash = "65f0867637e1c6697c0cf4926dd016d943a7519ab4b5fa72551d8f6a179dd77b"
 
 [[files]]
 file = "config/simplyswords/loot.toml"
-hash = "5a7cfb3255e169bc5faaa26dfb8c8e4c1487ac4e9097d789cff5bdfa4478094a"
+hash = "77e0c936ad879072c10dc33a43f74a38f565ca6f2a7b141dd4496d79b9831a08"
 
 [[files]]
 file = "config/simulated-client.toml"
@@ -882,7 +882,7 @@ hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "0bb893a0faca151a778acd7fbcccd1327cf76bfe32fac11e1cc5fd3a56fd926c"
+hash = "3b74fda6e8dd6327dd4ae5d076c97219a43c079ef9b085953ece8790dc21a85a"
 
 [[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"

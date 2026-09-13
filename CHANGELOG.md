@@ -3,6 +3,35 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.15] — 2026-09-13
+
+### Changed — combat-dungeon loot overhaul + Simply Swords native loot config
+Two linked changes to how modded loot reaches dungeon chests.
+
+**Simply Swords loot** (`config/simplyswords/loot.toml` + new `datapacks/bigglobe_simplyswords_nouniques.zip`):
+- Re-enabled the mod's **native loot injector** (`enableLootDrops = true`): material + rare
+  weapon *types* now spawn in loot tables globally (all `*:chests/*` tables), pity-paced.
+- **Runic weapons never drop** (`runicLootTableWeight = 0`); the **Runic Tablet** ("shard") is
+  instead a rare weighted drop in our combat-dungeon pool, with native tablet pity pushed to a
+  far backstop (`tabletHardPity = 400`). Runic weapons stay craftable at the Runic Forge.
+- **Uniques fully disabled** — weight 0 + soft/hard pity maxed (100000) + a datapack that empties
+  the `lootable_uniques` tag (all 40 legendaries denylisted). Uniques are loot-only with no recipe,
+  so this removes them from the pack entirely, as intended.
+
+**WDA LootJS loot rebuilt + broadened** (`kubejs/server_scripts/wda_dungeon_loot.js`):
+- Scope extended from WDA-only to the **combat/boss dungeon mods**: `dungeons_arise`, `cataclysm`,
+  `block_factorys_bosses` (Bosses'Rise), `aquamirae`. Vanilla, villages, Towns&Towers, CTOV untouched.
+- **Removed** Create: Metallurgy items entirely (per feedback) and andesite/zinc from filler; **halved**
+  all Numismatics currency weights.
+- **Added** a much wider curated menu across ~15 mods: Create: Gunsmithing guns/ammo/attachments
+  (flintlock/revolver/shotgun in treasure, gatling/blazegun/ballistazooka in flagship), Creating Space
+  + CBC alloys, Twilight Forest (ironwood/torchberries — no boss mats/charms), Born in Chaos mats+elixirs,
+  Re:Animal foods, Reliable Backpacks, Dragons Plus smithing template, Aquamirae/Hybrid aquatic gear,
+  medical consumables, and the Runic Tablet.
+- Four pools: **Filler** (~28%), **Treasure** (~35%) + **Treasure-Gear** (enchanted `5–15`, ~15%,
+  revolver/shotgun/tablet live here), **Jackpot** (flagship, ~38%). No endgame armor anywhere (ingots
+  only); enchants capped at 15; Sun a 1% capstone. Reviewed item-by-item before wiring.
+
 ## [0.9.14] — 2026-09-13
 
 ### Changed — airship villages now float 300 ABOVE the surface (was fixed Y=300)
