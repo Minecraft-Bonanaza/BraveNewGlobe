@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.16] — 2026-09-13
+
+### Fixed — update Create: Warnautics 1.0.3 → 1.0.8 (cruise missile was missing)
+- The 0.9.15 flagship loot pool references `cbc_more_content:cruise_missile`, but the installed
+  Create: Warnautics **1.0.3** predates that item — it doesn't exist in-game, so the loot entry was
+  dead. Updated to **1.0.8** (latest), which registers the Cruise Missile (item + block + recipe),
+  making the flagship drop resolve. Verified the item's assets/recipe are present in the 1.0.8 jar.
+
 ## [0.9.15] — 2026-09-13
 
 ### Changed — combat-dungeon loot overhaul + Simply Swords native loot config

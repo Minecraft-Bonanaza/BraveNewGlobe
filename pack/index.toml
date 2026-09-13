@@ -1181,7 +1181,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-warnautics.pw.toml"
-hash = "0aa7d3442a8addd73e7f6adc7f20811b83143f72ade631f47f3f6731c278fffa"
+hash = "26baee1958ebc207ae406ba3ee1331c7420a0d5dd1187ae6c9a585b00c70c16c"
 metafile = true
 
 [[files]]
