@@ -32,6 +32,17 @@ Two linked changes to how modded loot reaches dungeon chests.
   revolver/shotgun/tablet live here), **Jackpot** (flagship, ~38%). No endgame armor anywhere (ingots
   only); enchants capped at 15; Sun a 1% capstone. Reviewed item-by-item before wiring.
 
+### Notes
+- **No fresh world.** LootJS + the pinned `loot.toml` + `bigglobe_simplyswords_nouniques.zip` apply
+  on next launch. Already-opened chests keep their contents; unopened chests roll the new pools.
+- The native Simply Swords injector is **global** (`*:chests/*`). LootJS stays **combat-dungeon only**
+  (`dungeons_arise` / `cataclysm` / `block_factorys_bosses` / `aquamirae`). Vanilla, villages,
+  Towns&Towers, and CTOV are untouched.
+- Pack is **0.9.15 / 158 mods** (Integrated Villages + Integrated API landed in 0.9.12; no new jars
+  here). **Uniques are gone** (not craftable, not lootable). Remnants stay off. Runic weapons stay
+  craftable at the Runic Forge. Do **not** re-add `borninchaos_remnant_loot.js` or fold uniques into
+  `LOOT.md`. Living menu: `LOOT.md`.
+
 ## [0.9.14] — 2026-09-13
 
 ### Changed — airship villages now float 300 ABOVE the surface (was fixed Y=300)
@@ -39,12 +50,20 @@ Two linked changes to how modded loot reaches dungeon chests.
   constant offset of 300 -> generates at **surface + 300**, tracking terrain instead of a
   fixed absolute altitude. `terrain_adaptation: none` keeps it floating free. Via `build_iv_compat.py`.
 
+### Notes
+- Datapack-only (`bigglobe_integratedvillages.zip`). Already-generated chunks keep the old fixed
+  **Y=300** airships; **new land chunks** get surface+300. No fresh overworld required.
+
 ## [0.9.13] — 2026-09-13
 
 ### Changed — airship villages a touch more frequent
 - `air_villages` spacing `115/90 → 75/59` via `bigGlobeAero/build_iv_compat.py`:
   ~1,840 → **~1,200 blocks** average between floating airship villages. salt and the
   `air_village_avoid` (8-chunk CTOV/vanilla-village) exclusion unchanged.
+
+### Notes
+- Datapack-only. Spacing change is **new chunks only**. salt + 8-chunk CTOV avoid unchanged.
+  No fresh overworld required.
 
 ## [0.9.12] — 2026-09-13
 
@@ -72,6 +91,10 @@ _Consolidated entry — collapses the prior 0.9.12–0.9.17 dungeon/loot iterati
 ### Notes
 - Squashed onto the `0.9.10` baseline as one commit, consolidating the `.meshclaw` and `.kiro/crew` working
   copies. Kirocrew (`~/.kiro/crew/workspace`) is the canonical clone going forward.
+- Adds **Integrated Villages** `1.3.3` + **Integrated API** `1.8.2` (`side = both`) → pack **158** mods.
+  No fresh overworld. New airship villages and the tighter WDA spacings need **unexplored chunks**.
+- 0.9.12 loot was WDA-only (superseded by the 0.9.15 combat-dungeon rebuild). 0.9.12 airships were
+  fixed **Y=300** (superseded by 0.9.14 surface+300).
 
 ## [0.9.11] — 2026-09-01
 

@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
+Human-readable list of every mod in the pack (**158 mods**), grouped by purpose. Current pack **0.9.15**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -73,6 +73,16 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 
 ## Combat & Explosions
 - **Better Combat** — animated melee combat overhaul
+- **Simply Swords** — runic/standard weapon types (Better Combat optional dep). Uniques disabled;
+  native chest injector on for material/rare types only; Runic Tablet is a rare LootJS drop.
+  - **Simply More** — extra weapon types. Pinned **Modrinth `1.3.0_alpha5`** (release `1.2.3`
+    crashes on Simply Tooltips `0.1.5`).
+  - **Fzzy Config** _(dependency)_
+  - **Simply Tooltips** _(dependency)_
+- **L_Ender's Cataclysm** — summoned/structure arena bosses (never random-spawn).
+  - **Lionfish-API** _(dependency)_
+- **Bosses'Rise** — 5 arena/structure bosses (`block_factorys_bosses`).
+- **Born in Chaos** — nightmarish hostile mobs (overworld + Nether).
 - **Explosion Overhaul: A new level of destruction** — enhanced explosions
   - **ShatterLib | OctoLib** _(dependency)_
 
@@ -80,8 +90,12 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **The Aether** — the classic sky dimension
 - **The Twilight Forest** — the forest dimension
 - **Towns and Towers** — expanded villages/pillager outposts
-- **When Dungeons Arise** — large handcrafted structures
-- **ChoiceTheorem's Overhauled Village** — village overhaul
+- **When Dungeons Arise** — large handcrafted structures (sky/sea/common/large_dungeon/nest sets)
+- **Integrated Villages** — **airship village only** (ground IV villages emptied; floats surface+300)
+  - **Integrated API** _(dependency)_
+- **Incendium Legacy** — Nether biome/structure overhaul + Nether Sovereign
+- **YUNG's Better Nether Fortresses** — fortress overhaul _(server-only)_
+- **ChoiceTheorem's Overhauled Village** — village overhaul (sole ground village system)
 - **It Takes a Pillage Continuation** — raids/pillager content
 - **Illager Invasion** — new illager variants
 - **Fragmentum** — structures/relic loot
@@ -123,6 +137,8 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
 - **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
+- **Create: Villager Commerce** — villagers buy from player shops via Create stock networks
+  (self-hosted jar; CF distribution disabled)
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse
@@ -132,6 +148,14 @@ Human-readable list of every mod in the pack (**135 mods**), grouped by purpose.
 - **Better Days** — day/night length control
 - **Stat Tinkerer** — tweak player/entity stats
 - **Too Fast** — server-side movement/speed-limit fixes _(server-only)_
+- **FTB Quests** — guidance-only quest book (17 chapters / 242 quests)
+  - **FTB Library** _(dependency)_
+  - **FTB Teams** _(dependency)_
+- **LootJS: KubeJS Addon** — combat-dungeon chest injection (`wda_dungeon_loot.js`)
+  - **KubeJS** _(dependency)_
+  - **Rhino** _(dependency)_
+  - **Ponder for KubeJS** (`ponderjs`) — required by Delivery Required
+  - **Better Advanced Tooltips** _(dependency)_
 
 ## Performance
 - **Sodium** — rendering engine optimization _(client)_
@@ -184,6 +208,11 @@ Core/support mods depended on by multiple mods above.
 - **Lithostitched** — worldgen structure/modifier library
 - **playerAnimator** — player animation library (Better Combat, MCA, etc.)
 - **[NTGL] NukaTeam's Gun Lib** — firearm content library
+- **LDLib2** — KilaBash rendering/GUI library (FTB / KubeJS stack)
+- **oωo (owo-lib)** — library (required; do not drop)
+- **Integrated API** — also listed under Integrated Villages
+- **Lionfish-API** — also listed under Cataclysm
+- **Fzzy Config** / **Simply Tooltips** — also listed under Simply Swords
 
 > Some libraries are listed as _(dependency)_ notes under a single parent mod above rather than here:
 > **Forgified Fabric API** (Sinytra Connector), **Villager API**

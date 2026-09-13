@@ -1,17 +1,47 @@
 # Brave New Globe — Dungeon Loot Tiers (running doc)
 
-Living tracker for the tiered loot injected into When Dungeons Arise chests via **LootJS**
-(`kubejs/server_scripts/wda_dungeon_loot.js`). Tiers → dungeon size:
-**Common** = small POIs · **Uncommon** = sea/sky & mid dungeons · **Rare** = large dungeons · **Epic** = vaults/boss rooms.
+Living tracker for combat/boss-dungeon loot.
 
-Status: **v2 — exhaustive pass** (all content-mod `en_us.json` lang files scanned; ids jar-verified unless marked ⚠).
-Families collapsed with a note (e.g. "16 dye colors", "6 boss scale sets"); every distinct *loot-worthy* item is represented.
-Excluded everywhere: crafting intermediates (nuggets/casts/`incomplete_*`/`unbored_*`/dusts/molten buckets/raw ores),
-creative-only items, spawn eggs, and pure decor. Per-mod full id dumps live in the survey transcripts.
+**LootJS** (`kubejs/server_scripts/wda_dungeon_loot.js`) injects four **additive** pools into
+**combat/boss dungeon** chest tables only: `dungeons_arise`, `cataclysm`,
+`block_factorys_bosses` (Bosses'Rise), `aquamirae`. Vanilla, villages, Towns&Towers, and CTOV
+are untouched. Each pool rolls once; the `empty` weight is the miss chance (weights sum to 100).
 
-Mods that add **no unique loot**: WDA, Towns&Towers, CTOV, Fragmentum, Biolith, Better High Seas, Re-Animal,
-Bountiful (bounty-board mechanic only), Numismatics Calculator (client), Realistic Farmland, Food Spoilage, Betterdays, Copycats, Strut Your Stuff.
-Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `shadow_steel`, `chromatic_compound`.
+Routing is by **chest-id keyword**, not dungeon size:
+
+| Pool | When | Hit rate |
+|---|---|---|
+| **FILLER** | no treasure keyword | ~28% |
+| **TREASURE** | `treasure` / `vault` / `ominous` / `elite` / `enchants` / `rare` / `top` | ~35% |
+| **TREASURE_GEAR** | same chests as TREASURE; `enchantWithLevels(5–15)` (tablet drops plain) | ~15% |
+| **JACKPOT** | flagship/boss premium chests (stacks on TREASURE + TREASURE_GEAR) | ~38% |
+
+Flagship ids: WDA `infested_temple` / `keep_kayra` / `kisegi_sanctuary` treasure|vault|ominous|top;
+Cataclysm `acropolis` / `frosted_prison` / `desert` `_treasure`; Bosses'Rise `underworld_arena_vault`
+and `dragon_tower`.
+
+**Simply Swords** is **not** injected here. Native injector is **on** (`enableLootDrops=true`) and
+global (`*:chests/*`): material + rare weapon *types* only, pity-paced. Runic weapons never drop
+(`runicLootTableWeight=0`; still craftable at the Runic Forge). The **Runic Tablet** is a rare
+TREASURE_GEAR entry (native `tabletHardPity=400` is a far backstop). **Uniques are out of the pack**
+(weight 0 + pity 100000 + empty `lootable_uniques` tag in `bigglobe_simplyswords_nouniques.zip`).
+Remnants stay off. Do **not** fold uniques into this menu.
+
+Status: **v3 wired (0.9.15)** — curated subset in **What's wired** below. The Common/Uncommon/Rare/Epic
+lists are the **survey catalog** (all content-mod `en_us.json` scanned; ids jar-verified unless marked ⚠),
+not what actually drops. Create: Metallurgy + andesite/zinc are catalog-only (dropped from the wired
+pools in 0.9.15). Families collapsed with a note (e.g. "16 dye colors"); every distinct
+*loot-worthy* item is represented.
+
+Excluded everywhere: crafting intermediates (nuggets/casts/`incomplete_*`/`unbored_*`/dusts/molten
+buckets/raw ores), creative-only items, spawn eggs, and pure decor. Per-mod full id dumps live in
+the survey transcripts.
+
+Mods that add **no unique loot**: WDA, Towns&Towers, CTOV, Fragmentum, Biolith, Better High Seas,
+Re-Animal (foods are used as filler), Bountiful (bounty-board mechanic only), Numismatics
+Calculator (client), Realistic Farmland, Food Spoilage, Betterdays, Copycats, Strut Your Stuff.
+Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `shadow_steel`,
+`chromatic_compound`.
 
 ---
 
@@ -61,11 +91,46 @@ Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `sh
 
 ---
 
+## What's wired (0.9.15)
+
+Halved Numismatics ladder. **No endgame armor** (ingots only). Guns are ammo-gated. Sun = 1% capstone.
+
+### FILLER (~28% — non-treasure combat-dungeon chests)
+Spur [2–6], Bevel [1–3], Supplementaries rope, cast-iron / nickel / lead ingots, revolver rounds,
+beef stew, Re:Animal cooked ostrich/crocodile, beer, torchberries, spelunking rope, MDT splint,
+Aether blueberries, Hybrid Aquatic pearl, Power Grid capacitor, Born in Chaos monster flesh,
+paper cartridge.
+
+### TREASURE (~35% — treasure-class chests)
+Sprocket [2–6], Cog [1–3], brass / rose quartz / precision mechanism / electron tube,
+copronickel / steel / black steel, experience nugget, experience cake, hallowed gem / platinum chunk,
+ironwood / dark metal, wither-resistance elixir, **flintlock**, shotgun rounds, **scope**,
+small/medium bombs, quiver, golden feather, Aquamirae oxygen tank + echo compass, MDT syringe.
+
+### TREASURE_GEAR (~15% — same chests, enchant 5–15)
+Enchanted book, Hybrid Aquatic diving pieces + coral blade, Aquamirae salvager helmet + shatterblade,
+platinum-infused hatchet, Aether iron ring/pendant, **revolver**, **shotgun**, **Runic Tablet**.
+
+### JACKPOT (~38% — flagship/boss chests)
+Ignitium / witherite / enderite / cursium / ancient metal, voidmetal ingot + upgrade,
+inconel, Crown [1–2], **Sun** (1%), netherite backtank, precision mechanism, experience bucket,
+super-experience nugget, Reliable Backpacks backpack, Dragons Plus blaze-upgrade template,
+**gatling / blazegun / ballistazooka** + gatling rounds, large bomb, cruise missile, ravager horn,
+Aether healing stone + agility cape.
+
+---
+
 ## To do
-- [x] **v1 WIRED (0.9.14):** add-on-top. `wda_dungeon_loot.js` injects 4 additive tiers over
-  `dungeons_arise:chests/*` — T1 all chests, T2 treasure/supply/elite, T3 treasure/vault/elite,
-  T4 large-dungeon vault/ominous/top. Coin ladder + Create/Cataclysm/voidmetal materials; no boss-signature gear.
-- [x] Coin ladder as graded currency: Spur/Bevel→T1, Sprocket/Cog→T2, Crown→T3, Sun→T4. (done)
-- [x] Boss gear (valkyrie, leviathan, sol visage) stays **boss-locked** — not in dungeon loot (modest-hero design).
-- [ ] Layer in more verified items (Twilight/Aether/Metallurgy/etc.) — v1 uses a verified subset of the menu.
+- [x] **v1 WIRED (0.9.12):** add-on-top over `dungeons_arise:chests/*` only — coin ladder +
+  Create/Cataclysm/voidmetal materials; no boss-signature gear. (Superseded by v3.)
+- [x] **v3 WIRED (0.9.15):** broaden to Cataclysm / Bosses'Rise / Aquamirae; drop Metallurgy +
+  andesite/zinc filler; halve currency weights; curated guns/ammo/attachments + ~15-mod menu;
+  Runic Tablet in TREASURE_GEAR; no endgame armor.
+- [x] Coin ladder as graded currency: Spur/Bevel→FILLER, Sprocket/Cog→TREASURE, Crown→JACKPOT,
+  Sun→JACKPOT 1% capstone. Weights halved in 0.9.15.
+- [x] Boss gear (valkyrie, leviathan, sol visage, ignitium *armor*) stays **boss-locked** —
+  chests drop crafting ingots only (modest-hero design).
+- [x] Simply Swords: native material/rare types on (global); runic weapons off; tablet rare;
+  uniques denylisted (config + empty-tag datapack). Remnants stay off.
+- [ ] Optional: more survey-catalog items if raids feel thin (not Metallurgy; not uniques).
 - [ ] Optional: trim-vanilla on the biggest chests if raids feel too padded.
