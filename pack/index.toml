@@ -1664,7 +1664,7 @@ metafile = true
 
 [[files]]
 file = "datapacks/bigglobe_integratedvillages.zip"
-hash = "b4b2b6170a18f6d2eb78e346866b6785366163895542b90c3d5a21c5df5799f2"
+hash = "55a98d26323dad7a5ec51b370c619393f109c675d53cdaf8a1e063d0ca1b56d7"
 
 [[files]]
 file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"

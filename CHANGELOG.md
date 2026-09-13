@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.13] — 2026-09-13
+
+### Changed — airship villages a touch more frequent
+- `air_villages` spacing `115/90 → 75/59` via `bigGlobeAero/build_iv_compat.py`:
+  ~1,840 → **~1,200 blocks** average between floating airship villages. salt and the
+  `air_village_avoid` (8-chunk CTOV/vanilla-village) exclusion unchanged.
+
 ## [0.9.12] — 2026-09-13
 
 _Consolidated entry — collapses the prior 0.9.12–0.9.17 dungeon/loot iterations and adds Integrated Villages into one squashed release, to end the version sprawl._
