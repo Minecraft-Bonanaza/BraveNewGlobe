@@ -858,7 +858,7 @@ hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
 
 [[files]]
 file = "datapacks/bigglobe_whendungeonsarise.zip"
-hash = "3d35bad3e67cc3bcc90e3081c5dc0cd6323a927fde616ac136cc6eab07aad098"
+hash = "b955305970478da4ae11418e1c75837044eebaaf76fbc78fc9a52467b9df778b"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
@@ -882,7 +882,7 @@ hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "3b74fda6e8dd6327dd4ae5d076c97219a43c079ef9b085953ece8790dc21a85a"
+hash = "7dfd2a17375390913ab71aba7b9447929d48bb4889a071e18e919b617c1aad45"
 
 [[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"

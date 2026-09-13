@@ -3,6 +3,13 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.15] — 2026-09-13
+
+### Fixed — LootJS injection aborting on an invalid item id
+- Removed `aquamirae:oxygen_tank` from `wda_dungeon_loot.js` — the item does not exist in
+  Aquamirae 7.2.1, and one bad id makes LootJS abort the ENTIRE script, so all WDA/Cataclysm/
+  Aquamirae chests were silently falling back to vanilla loot. Modded loot should now inject.
+
 ## [0.9.16] — 2026-09-13
 
 ### Fixed — update Create: Warnautics 1.0.3 → 1.0.8 (cruise missile was missing)

@@ -76,7 +76,6 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("cbc_more_content:medium_bomb").withWeight(1));
         pool.addEntry(LootEntry.of("supplementaries:quiver").withWeight(1));
         pool.addEntry(LootEntry.of("aether:golden_feather").withWeight(1));
-        pool.addEntry(LootEntry.of("aquamirae:oxygen_tank").withWeight(1));
         pool.addEntry(LootEntry.of("aquamirae:echo_compass").withWeight(1));
         pool.addEntry(LootEntry.of("more_diseases_and_treatments:syringe_2").withWeight(1));
     });
