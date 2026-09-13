@@ -71,6 +71,7 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Create** (base) | Shared industrial substrate | Kinetics underpin many SIGs; do not make “Create” itself a SIG |
 | **Create: Dragons Plus** | — | Thematic Create content; not a grounded trade |
 | **Better Combat** | — | Combat feel overhaul; not a profession tree |
+| **Simply Swords / Simply More** | — | Weapon-type flavor; uniques are disabled (0.9.15). Not a profession tree |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
 | **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
 
@@ -85,11 +86,12 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 - Big Globe, Chunky, Paxi + datapacks  
 - Serene Seasons, Project Atmosphere, Puddles & Floods  
 - The Aether, The Twilight Forest  
-- Towns and Towers, When Dungeons Arise, CTOV, Fragmentum, Illager Invasion, It Takes a Pillage  
+- Towns and Towers, When Dungeons Arise, CTOV, Integrated Villages (airship-only), Fragmentum, Illager Invasion, It Takes a Pillage  
+- Incendium, YUNG's Better Nether Fortresses, L_Ender's Cataclysm, Bosses'Rise  
 
 ### Fauna, bosses & threats
 
-- Re:Animal, Mowzie's Mobs, Mutant Monsters  
+- Re:Animal, Mowzie's Mobs, Mutant Monsters, Born in Chaos  
 - Hybrid Aquatic, Sea Myths, Aquamirae  
 - Social Player Mobs, In Control!  
 
@@ -102,7 +104,7 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 ### Economy plumbing (used by Commerce & Logistics SIGs)
 
 - Create: Numismatics (+ Utils, Calculator, Villager Currency)  
-- Tradeworks, Marketplace, Stock Market  
+- Tradeworks, Marketplace, Stock Market, Create: Villager Commerce  
 - Numismatic Bounties  
 
 Currency is **earned** (villagers, bounties, deliveries, player trade) — not player-minted. Do not quest “craft coins from ore.”
@@ -314,7 +316,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 |--|--|
 | **Baseline** | Direct player trades; emerald villager trades (converted to coins) |
 | **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Bountiful + Numismatic Bounties as starter income |
-| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties |
+| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties, Create: Villager Commerce |
 | **QoL (not chapters)** | Numismatics Utils, Numismatics Calculator |
 | **Adjacent** | Logistics (stock the shelves), Settlement (MCA villagers), Agriculture / Metalworking (goods) |
 
