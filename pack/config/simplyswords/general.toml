@@ -1,3 +1,0 @@
-# Brave New Globe override (partial — Fzzy Config safe deserializer fills the rest).
-# Mobs never spawn wielding / dropping unique weapons.
-nonPlayerWeaponAbilityChance = 0.0

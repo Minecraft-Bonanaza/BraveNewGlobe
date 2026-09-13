@@ -62,8 +62,10 @@ Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `sh
 ---
 
 ## To do
-- [ ] Decide **add-on-top vs trim-vanilla** per tier.
-- [ ] Pick the final per-tier item sets (this doc is the menu) → wire LootJS (`wda_dungeon_loot.js`).
-- [ ] Verify ⚠ ids (none currently flagged after jar pass — most confirmed) before shipping.
-- [ ] Coin ladder as graded currency: Spur/Bevel→common, Sprocket/Cog→mid, Crown→large, Sun→epic vault.
-- [ ] Note: many adventure mods' gear expects their own progression — consider whether best boss gear (valkyrie, leviathan, sol visage) should be dungeon loot or stay boss-locked.
+- [x] **v1 WIRED (0.9.14):** add-on-top. `wda_dungeon_loot.js` injects 4 additive tiers over
+  `dungeons_arise:chests/*` — T1 all chests, T2 treasure/supply/elite, T3 treasure/vault/elite,
+  T4 large-dungeon vault/ominous/top. Coin ladder + Create/Cataclysm/voidmetal materials; no boss-signature gear.
+- [x] Coin ladder as graded currency: Spur/Bevel→T1, Sprocket/Cog→T2, Crown→T3, Sun→T4. (done)
+- [x] Boss gear (valkyrie, leviathan, sol visage) stays **boss-locked** — not in dungeon loot (modest-hero design).
+- [ ] Layer in more verified items (Twilight/Aether/Metallurgy/etc.) — v1 uses a verified subset of the menu.
+- [ ] Optional: trim-vanilla on the biggest chests if raids feel too padded.

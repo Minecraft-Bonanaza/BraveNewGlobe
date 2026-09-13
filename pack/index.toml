@@ -705,10 +705,6 @@ file = "config/simpleclouds-server.toml"
 hash = "65f0867637e1c6697c0cf4926dd016d943a7519ab4b5fa72551d8f6a179dd77b"
 
 [[files]]
-file = "config/simplyswords/general.toml"
-hash = "002a80d3fa8a46d11fb5feeac372815ac45ca60a253c7ebb7ac8a93c75c932f7"
-
-[[files]]
 file = "config/simplyswords/loot.toml"
 hash = "cf36217f1aa7993ee3fc0fbb4990b705a61ae56bc4da7a7abfd8795e43008972"
 
@@ -854,7 +850,7 @@ hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
 
 [[files]]
 file = "datapacks/bigglobe_whendungeonsarise.zip"
-hash = "014f99b15cd6b7e33a6a8c063b8238f7be7347284ed577da3975575927c0964e"
+hash = "3d35bad3e67cc3bcc90e3081c5dc0cd6323a927fde616ac136cc6eab07aad098"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
@@ -874,7 +870,7 @@ hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "024efc72742686f101cfa79227e7ef142eb6eaa4b337ada846da9fdae2214937"
+hash = "0bb893a0faca151a778acd7fbcccd1327cf76bfe32fac11e1cc5fd3a56fd926c"
 
 [[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"
@@ -1655,3 +1651,21 @@ metafile = true
 file = "mods/yungs-better-nether-fortresses.pw.toml"
 hash = "c0e40691651465b4eb1037749148c2078123604195e19b582dbef3cd5914e3b1"
 metafile = true
+
+[[files]]
+file = "mods/integrated-api.pw.toml"
+hash = "d78071eb244731b62027bb24e0d9bdf5976925ea67972994c261dd1ba4b77832"
+metafile = true
+
+[[files]]
+file = "mods/integrated-villages.pw.toml"
+hash = "6119f4a28b047a9a1b47d5dd505ad43f407ab400dc94eb5d6d3d5189fea24ed3"
+metafile = true
+
+[[files]]
+file = "datapacks/bigglobe_integratedvillages.zip"
+hash = "b4b2b6170a18f6d2eb78e346866b6785366163895542b90c3d5a21c5df5799f2"
+
+[[files]]
+file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"
+hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"

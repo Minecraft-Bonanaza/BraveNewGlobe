@@ -1,0 +1,11 @@
+
+#General settings.
+[General]
+	#Whether or not vanilla villages should be disabled.
+	#Default: true
+	#Set to false so the pack's existing vanilla/CTOV villages keep generating.
+	disableVanillaVillages = false
+	#Whether or not create contraptions such as windmills will be activated on world generation. Turning this to false could prevent some lag.
+	#Default: true
+	#Kept true so the airship village's Create propellers/windmills spin.
+	activateCreateContraptions = true

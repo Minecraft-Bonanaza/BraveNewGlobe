@@ -3,6 +3,44 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.12] — 2026-09-13
+
+_Consolidated entry — collapses the prior 0.9.12–0.9.17 dungeon/loot iterations and adds Integrated Villages into one squashed release, to end the version sprawl._
+
+### Added — Integrated Villages (airship-only) + Big Globe compat
+- Add **Integrated Villages 1.3.3** + **Integrated API 1.8.2** (Modrinth, NeoForge 1.21.1).
+- `bigglobe_integratedvillages.zip` (from `bigGlobeAero/build_iv_compat.py`): only the **airship village**
+  generates (`regular_villages` set emptied), placed at fixed sky **Y=300** (`terrain_adaptation: none`,
+  no heightmap projection), biomes re-keyed to `#bigglobe:land`.
+- `air_village_avoid` tag merges `bigglobe_ctov:villages` so airships never generate over a CTOV town.
+- Config `disableVanillaVillages=false` (keeps CTOV/vanilla villages) + `activateCreateContraptions=true`
+  (airship Create propellers spin).
+
+### Changed — WDA dungeon spacing (`patch_wda_compat.py`)
+- `stattinkerer:large_dungeon` `280→125` (~4,480 → **~2,000 blocks** apart).
+- `stattinkerer:sky` `→25/22` (**~400 blocks**); `mechanical_nest` `→41/36` (**~656**, frequency removed).
+
+### Changed — WDA modded loot via LootJS (`wda_dungeon_loot.js`)
+- Additive tiered injection over `dungeons_arise:chests/*` — WDA-native empty-weight pools, 3 coherent tiers.
+- Reward backbone = **Numismatics coin ladder + Create/mod crafting materials**; **no endgame armor as loot**
+  (enchanted ignitium/gravitite sets stay boss-craft-locked; chests drop only the crafting ingots).
+- Jackpot currency kept genuinely rare (Sun ~1%); `create:netherite_backtank` retained (enables Create air tech).
+
+### Notes
+- Squashed onto the `0.9.10` baseline as one commit, consolidating the `.meshclaw` and `.kiro/crew` working
+  copies. Kirocrew (`~/.kiro/crew/workspace`) is the canonical clone going forward.
+
+## [0.9.11] — 2026-09-01
+
+### Fixed — correct the Simply Swords "no unique drops" config
+- Deep-dived Simply Swords' own config descriptions: **`loot.enableLootDrops = false`** is the authoritative
+  switch (*"prevent Simply Swords from generating loot in chests"*) and chest loot is the only way finished
+  uniques enter the world (villages / ruined portal / ender-dragon table; pity-guarantee is downstream). With
+  `loot.enableContainedRemnants = false`, the remnant→tablet path is off too. `loot.toml` fully covers it.
+- Removed `config/simplyswords/general.toml` (`nonPlayerWeaponAbilityChance = 0.0`): per the mod it only
+  controls whether a mob *uses* a held weapon's ability — **not** spawning/dropping — so it was irrelevant to
+  the goal and its comment was misleading. There is no "mobs spawn equipped with uniques" mechanic to disable.
+
 ## [0.9.10] — 2026-09-01
 
 ### Added — Bosses'Rise + boss quest lines (Cataclysm & Bosses'Rise)
