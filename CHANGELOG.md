@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.16] — 2026-09-13
+
+### Fixed — packwiz "hash invalid" on bigglobe_whendungeonsarise.zip
+- The committed datapack zip and its `index.toml` hash had drifted apart in an earlier commit
+  (the hash recorded did not match the zip actually committed), so any client validating the
+  pack against the repo failed with a hash mismatch on this file. Committing the on-disk zip
+  (already hash-verified against the current `index.toml` entry) resolves it. Verified all 379
+  files in `index.toml` against their actual sha256 -- zero other mismatches.
+
 ## [0.9.15] — 2026-09-13
 
 ### Fixed — LootJS injection aborting on an invalid item id
