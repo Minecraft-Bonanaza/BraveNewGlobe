@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**158 mods**), grouped by purpose. Current pack **0.9.17**.
+Human-readable list of every mod in the pack (**159 mods**), grouped by purpose. Current pack **0.9.18**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -49,6 +49,9 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 ### Create Aeronautics (airships & flight)
 - **Create Aeronautics** — physics-based aircraft/airships
   - **Sable** _(dependency — physics engine for Aeronautics)_
+  - **Sable: Destructive** `2.2.0` — collision/explosion destruction for Sable
+    physics objects (airships + Create ships actually break on heavy impact).
+    Distinct from Explosion Overhaul (world-block blasts). `side = both`.
 - **VS / Sable Hose Connectors** — hose/fluid connectors across Sable physics contraptions
 - **Create Aeronautics: Compatibility** — cross-mod compat patches
 - **Create Aeronautics: Automated Logistics** — cargo/logistics for aircraft
@@ -87,6 +90,8 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **Bosses'Rise** — 5 arena/structure bosses (`block_factorys_bosses`).
 - **Born in Chaos** — nightmarish hostile mobs (overworld + Nether).
 - **Explosion Overhaul: A new level of destruction** — enhanced explosions
+  (world-block blasts; complementary to Sable: Destructive, which breaks physics
+  structures)
   - **ShatterLib | OctoLib** _(dependency)_
 
 ## Dimensions, Structures & Exploration

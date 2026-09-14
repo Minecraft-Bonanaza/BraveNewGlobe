@@ -73,6 +73,7 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Better Combat** | — | Combat feel overhaul; not a profession tree |
 | **Simply Swords / Simply More** | — | Weapon-type flavor; uniques stay disabled (0.9.15 denylist + 0.9.17 LootJS). Material-tier weapons drop in combat-dungeon chests; curated Runic on flagship. Not a profession tree |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
+| **Sable: Destructive** | Aeronautics / Naval / Ordnance (supporting) | Collision/explosion destruction for Sable physics objects (airships + Create ships); not a career. Distinct from Explosion Overhaul |
 | **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
 
 ---
@@ -247,7 +248,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Simple Create Aeronautics / Sable craft that flies |
 | **Specialized** | Gyro stabilizers, Aeroworks expansion, hose connectors, camera sync, radar-assisted flight, cargo logistics add-ons |
 | **Core mods** | Create Aeronautics, Sable, Create: Aeroworks, Gyro Stabilizers, Throwable Rope Connector, VS/Sable Hose Connectors, Aeronautics Camera Sync, Create Aeronautics: Compatibility |
-| **Supporting** | Create Aero Radars, Create: Radars |
+| **Supporting** | Create Aero Radars, Create: Radars, Sable: Destructive (physics-structure destruction on impact) |
 | **Military branch** | Create: Warnautics (treat as advanced / combat aviation chapter, not a separate SIG unless the modteam wants Ordnance split) |
 | **Adjacent** | Logistics & Freight (Delivery Required), Naval (seaplanes / coastal), Power, Metalworking |
 
@@ -273,6 +274,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Vanilla boats |
 | **Specialized** | Create: Better High Seas shipbuilding and naval movement |
 | **Core mods** | Create: Better High Seas |
+| **Supporting** | Sable + Sable: Destructive (Create ships are Sable physics objects; crashes/hits now break the hull) |
 | **Adjacent** | Logistics (sea freight), Aeronautics (coastal hubs), Commerce (ports), Ocean fauna as hazard (not SIG) |
 
 **Suggested quest beats**
@@ -342,7 +344,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Vanilla combat, TNT |
 | **Specialized** | Create: Gunpowder production; Create: Gunsmithing; Create Big Cannons + Going Ballistic + Terminal Ballistics; Warnautics for aerial gunnery |
 | **Core mods** | Create: Gunpowder [aspctt], Create: Gunsmithing (CGS), Create Big Cannons, Going Ballistic, CBC Terminal Ballistics |
-| **Supporting** | Explosion Overhaul (blast behavior), NTGL (gun lib), Warnautics |
+| **Supporting** | Explosion Overhaul (world-block blasts), Sable: Destructive (physics-structure destruction), NTGL (gun lib), Warnautics |
 | **Adjacent** | Metalworking (barrels, shells), Power (loaders), Aeronautics (air artillery) |
 
 **Suggested quest beats**
@@ -560,7 +562,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Create: Cotton | Textiles |
 | Diesel Generators, Power Grid, Power Chip | Power & Fuel |
 | Tracks, Signalworks, Train Physics, Threaded Trains, Trotting Wagons, Doped Horses | Land Transport & Rail |
-| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics | Aeronautics |
+| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics, Sable: Destructive | Aeronautics |
 | Better High Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
 | Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful | Commerce |
@@ -572,7 +574,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Struts, Supplementaries, Copycats+ | Civil Works (soft) |
 | Big Globe, seasons, atmosphere, dimensions, structures | Non-SIG world |
 | Re:Animal, Mowzie's, Mutants, Hybrid Aquatic, Sea Myths, Aquamirae | Non-SIG fauna |
-| Better Combat, Explosion Overhaul | Systems / supporting physics |
+| Better Combat, Explosion Overhaul, Sable: Destructive | Systems / supporting physics |
 | QoL, performance, client, libraries | Non-SIG |
 
 ---

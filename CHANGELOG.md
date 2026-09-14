@@ -14,6 +14,22 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - Requirements satisfied: needs Sable 2.0.3+ (have 2.0.5) and NeoForge 21.1.235+ (pack is on 21.1.248).
   Installed `side = "both"`.
 
+### Notes
+- **No fresh world.** Jar add only — no worldgen, no datapack, no loot-script change.
+  Applies on next launch. Quest book still **17 / 242**.
+- Pack is now **0.9.18** / **159** mods (`sable-destructive.pw.toml`).
+- **Sable: Destructive** `2.2.0` (Modrinth `s8kSCCgD` / version `OdjEhksA`,
+  `side = both`). Needs Sable **2.0.3+** (pack has **2.0.5**) and NeoForge
+  **21.1.235+** (pack is **21.1.248**).
+- Makes Sable physics blocks *break* on heavy impact (kinetic-energy collision
+  damage, inertial penetration, density-aware self-damage, flying debris,
+  radial shockwaves/craters). Distinct from **Explosion Overhaul** (world-block
+  blasts). Covers Create Aeronautics airships and Create: Better High Seas ships.
+- Do **not** drop **Sable** (required by Aeronautics + Destructive). Drive-By-Wire
+  With Sable stays **out**. Valkyrien Skies stays **out**.
+- Living docs: `Notes.md`, `MODLIST.md`, `SPECTRUM.md`. Folds the unmerged
+  0.9.17 living-docs run (`cursor/docs-0.9.17-simply-swords-loot`) plus #40 / #41 / #42.
+
 ## [0.9.17] — 2026-09-14
 
 ### Changed — Simply Swords loot in WDA-scope dungeons rebalanced
@@ -42,6 +58,7 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - **No fresh world.** Script-only (`wda_dungeon_loot.js`). Already-opened chests keep
   their contents; unopened combat/boss dungeon chests roll the new pools on next
   launch. No new mods — pack stays **158**. `pack.toml` is **0.9.17**.
+  Current pack is **0.9.18** / **159** (Sable: Destructive).
 - **Named Unique weapons stay out.** They skip the mod's Runic Tablet awakening
   minigame. The 0.9.15 denylist still holds (`uniqueLootTableWeight = 0` + pity
   100000 + empty `lootable_uniques` in `bigglobe_simplyswords_nouniques.zip`).
@@ -84,9 +101,9 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   **zip** was the stale file — `index.toml` already had the correct sha256. Always
   `packwiz refresh` after touching a datapack zip, and commit **the zip + `index.toml` +
   `pack.toml` together**. Do not assume a zip "looks current."
-- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.17** / **158** mods.
-  Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay. 0.9.17 is script-only
-  (Simply Swords WDA-scope rebalance).
+- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.18** / **159** mods
+  (Sable: Destructive). Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay.
+  0.9.17 is script-only (Simply Swords WDA-scope rebalance).
 
 ## [0.9.15] — 2026-09-13
 
