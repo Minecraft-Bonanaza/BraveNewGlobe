@@ -1545,6 +1545,11 @@ hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
 metafile = true
 
 [[files]]
+file = "mods/sable-destructive.pw.toml"
+hash = "5e8111b18d4efd6fb3f73a175de2edf28d92cb958b94e0da4bd572bab61cb20e"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "f21e2db6083eb58ee1b96630cf345c38ee7b93296da7990f27155480f3f2b6e1"
 metafile = true

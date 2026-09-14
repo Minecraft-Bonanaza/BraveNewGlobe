@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.18] — 2026-09-13
+
+### Added — Sable: Destructive (collision/explosion destruction for Sable physics)
+- Added **Sable: Destructive 2.2.0** (Modrinth `s8kSCCgD`, NeoForge 1.21.1), an add-on to the base
+  **Sable** physics engine already in the pack (2.0.5). Sable simulates Create: Aeronautics physics
+  structures; Destructive makes those physics blocks *actually break* on heavy impact — real kinetic-energy
+  collision damage, inertial penetration, density-aware self-damage, flying debris, and radial shockwaves/
+  craters. Crashes now have consequences.
+- Requirements satisfied: needs Sable 2.0.3+ (have 2.0.5) and NeoForge 21.1.235+ (pack is on 21.1.248).
+  Installed `side = "both"`.
+
 ## [0.9.17] — 2026-09-14
 
 ### Changed — Simply Swords loot in WDA-scope dungeons rebalanced
