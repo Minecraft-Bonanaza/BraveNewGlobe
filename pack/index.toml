@@ -882,7 +882,7 @@ hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "7dfd2a17375390913ab71aba7b9447929d48bb4889a071e18e919b617c1aad45"
+hash = "3dfab3290cdbf13a14e1aa7a3630fdffe6707586449342ec156a8192f30ee7cf"
 
 [[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"

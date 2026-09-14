@@ -13,17 +13,45 @@
 //   FILLER   no treasure keyword                     → commons (~28%)
 //   TREASURE treasure/vault/ominous/elite/enchants/rare/top → mats+coins (~35%) AND
 //   TREASURE_GEAR (same chests)                      → enchanted utility gear/guns (~15%)
-//   JACKPOT  boss/flagship premium chests            → epic mats+coins+guns+unique (~38%)
+//   JACKPOT  boss/flagship premium chests             → epic mats+coins+guns (~38%) AND
+//   JACKPOT_RUNIC (same chests)                       → curated Runic-tier weapons (~15%)
+//
+// Exceptions: none of Aquamirae's chests and Bosses'Rise's dragon_tower boss chest
+// contain a routing keyword in their id, so they were falling through to FILLER-only
+// (verified against the mods' own loot_table jars). aquamirae:ship_1/ship_2/frozen_chest
+// and block_factorys_bosses:dragon_tower are explicitly added to TREASURE below so they
+// also get TREASURE + TREASURE_GEAR (dragon_tower already had JACKPOT + JACKPOT_RUNIC via
+// FLAGSHIP, so it now gets the full stack, matching its status as the mod's boss chest).
 //
 // DESIGN: currency ladder (halved) + crafting MATERIALS + consumables + utility, with
 // gear a rare enchanted sub-roll. NO endgame armor (ingots only). Guns are ammo-gated.
-// Sun = 1% capstone. Simply Swords weapons come from that mod's own injector (not here);
-// the Runic Tablet is the rare gateway drop below. All ids jar-verified.
+// Sun = 1% capstone.
+//
+// Simply Swords weapons are injected directly below (the mod's own native loot
+// injector does not reliably reach these WDA-scope tables, so its weapons are added
+// explicitly here instead). The mod's ~50 named/lore weapons (Mjolnir, Stormbringer,
+// The Devourer, Livyatan, Frostfall, Thunderbrand, Wraithfang, etc.) are true "Unique"
+// tier items gated behind its own Runic Tablet awakening minigame — those are
+// deliberately excluded here; we only add the mod's material-tier weapons (Iron/Gold/
+// Diamond/Netherite/Runic × 13 of its 15 weapon types — chakram and scythe omitted for
+// variety's sake) so drops feel like normal loot, not a shortcut around that minigame.
+// All ids jar-verified against assets/simplyswords/lang/en_us.json.
 // -----------------------------------------------------------------------------
 
 const NOTREASURE = /(dungeons_arise|cataclysm|block_factorys_bosses|aquamirae):chests\/(?!.*(treasure|vault|ominous|elite|enchants|rare|top)).*/;
-const TREASURE   = /(dungeons_arise|cataclysm|block_factorys_bosses|aquamirae):chests\/.*(treasure|vault|ominous|elite|enchants|rare|top)/;
+const TREASURE   = /(dungeons_arise|cataclysm|block_factorys_bosses|aquamirae):chests\/.*(treasure|vault|ominous|elite|enchants|rare|top)|aquamirae:chests\/(ship_1|ship_2|frozen_chest)$|block_factorys_bosses:chests\/dragon_tower$/;
 const FLAGSHIP   = /(dungeons_arise:chests\/(infested_temple|keep_kayra|kisegi_sanctuary)\/.*(treasure|vault|ominous|top)|cataclysm:chests\/(acropolis|frosted_prison|desert)_treasure|block_factorys_bosses:chests\/(underworld_arena_vault|dragon_tower)$)/;
+
+// The 13 (of 15) Simply Swords weapon types we use across material tiers.
+// Omitted: chakram, scythe (kept exclusive to the curated Runic pool below for variety).
+const SWORD_TYPES = [
+    "katana", "sai", "rapier", "cutlass", "spear", "longsword", "halberd",
+    "claymore", "glaive", "warglaive", "greataxe", "greathammer", "twinblade",
+];
+// Curated subset for the top (Netherite) material tier — narrower than the lower tiers.
+const NETHERITE_TYPES = ["katana", "warglaive", "glaive", "claymore", "greataxe", "halberd", "twinblade"];
+// Curated, equal-weight subset of the Runic tier for the JACKPOT_RUNIC pool.
+const RUNIC_TYPES = ["katana", "warglaive", "glaive", "greataxe", "scythe"];
 
 LootJS.lootTables((event) => {
     // ── FILLER (Common) — every non-treasure combat-dungeon chest. ~28% something. ──
@@ -48,6 +76,10 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("powergrid:capacitor", [1, 3]).withWeight(1));
         pool.addEntry(LootEntry.of("born_in_chaos_v1:monster_flesh", [2, 4]).withWeight(1));
         pool.addEntry(LootEntry.of("cgs:paper_cartridge", [1, 2]).withWeight(1));
+        // Simply Swords — Iron tier, unenchanted commons.
+        for (const t of SWORD_TYPES) {
+            pool.addEntry(LootEntry.of(`simplyswords:iron_${t}`).withWeight(1));
+        }
     });
 
     // ── TREASURE (Uncommon+Rare mats/coins/utility) — treasure-class chests. ~35%. ──
@@ -78,12 +110,16 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("aether:golden_feather").withWeight(1));
         pool.addEntry(LootEntry.of("aquamirae:echo_compass").withWeight(1));
         pool.addEntry(LootEntry.of("more_diseases_and_treatments:syringe_2").withWeight(1));
+        // Simply Swords — Gold tier, unenchanted.
+        for (const t of SWORD_TYPES) {
+            pool.addEntry(LootEntry.of(`simplyswords:gold_${t}`).withWeight(1));
+        }
     });
 
-    // ── TREASURE_GEAR (rare enchanted utility gear/guns) — same chests. ~15%. ──
+    // ── TREASURE_GEAR (rare enchanted utility gear/guns/weapons) — same chests. ~15%. ──
     event.modifyLootTables(TREASURE).createPool((pool) => {
         pool.rolls(1);
-        pool.apply((f) => f.enchantWithLevels([5, 15]));   // modest enchants; non-enchantable items (tablet) drop plain
+        pool.apply((f) => f.enchantWithLevels([5, 15]));   // modest enchants
         pool.addEntry(LootEntry.empty().withWeight(85));
         pool.addEntry(LootEntry.of("minecraft:enchanted_book").withWeight(3));
         pool.addEntry(LootEntry.of("hybrid_aquatic:diving_helmet").withWeight(1));
@@ -97,10 +133,17 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("aether:iron_pendant").withWeight(1));
         pool.addEntry(LootEntry.of("cgs:revolver").withWeight(1));
         pool.addEntry(LootEntry.of("cgs:shotgun").withWeight(1));
-        pool.addEntry(LootEntry.of("simplyswords:runic_tablet").withWeight(1));
+        // Simply Swords — Diamond tier (enchanted), all 13 types.
+        for (const t of SWORD_TYPES) {
+            pool.addEntry(LootEntry.of(`simplyswords:diamond_${t}`).withWeight(1));
+        }
+        // Simply Swords — Netherite tier (enchanted), curated 7-type subset.
+        for (const t of NETHERITE_TYPES) {
+            pool.addEntry(LootEntry.of(`simplyswords:netherite_${t}`).withWeight(1));
+        }
     });
 
-    // ── JACKPOT (Epic mats/coins/guns/unique) — boss/flagship premium chests. ~38%. ──
+    // ── JACKPOT (Epic mats/coins/guns) — boss/flagship premium chests. ~38%. ──
     event.modifyLootTables(FLAGSHIP).createPool((pool) => {
         pool.addEntry(LootEntry.empty().withWeight(62));
         pool.addEntry(LootEntry.of("cataclysm:ignitium_ingot", [2, 4]).withWeight(5));
@@ -128,5 +171,15 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("aether:healing_stone").withWeight(1));
         pool.addEntry(LootEntry.of("aether:agility_cape").withWeight(1));
         pool.addEntry(LootEntry.of("numismatics:sun").withWeight(1));
+    });
+
+    // ── JACKPOT_RUNIC — curated, equal-weight Runic-tier weapons. ~15% of these chests. ──
+    event.modifyLootTables(FLAGSHIP).createPool((pool) => {
+        pool.rolls(1);
+        pool.apply((f) => f.enchantWithLevels([10, 25]));  // strong enchants, top tier
+        pool.addEntry(LootEntry.empty().withWeight(85));
+        for (const t of RUNIC_TYPES) {
+            pool.addEntry(LootEntry.of(`simplyswords:runic_${t}`).withWeight(3));
+        }
     });
 });

@@ -3,6 +3,30 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.17] — 2026-09-14
+
+### Changed — Simply Swords loot in WDA-scope dungeons rebalanced
+- `wda_dungeon_loot.js`'s comment claimed Simply Swords weapons were injected by "that mod's own
+  injector" — false. Checked every `lootintegrations_*.jar` in the pack; none targets Simply Swords.
+  The mod's own native injector (`pack/config/simplyswords/loot.toml`) *is* enabled and correctly
+  keyed, but in practice its drops aren't showing up in WDA-scope chests, so weapons are injected
+  directly in this script instead.
+- Extracted the mod's real item registry from `assets/simplyswords/lang/en_us.json` to separate its
+  15 weapon *types* × 5 material *tiers* (`<tier>_<type>`, e.g. `runic_warglaive`) from its ~50
+  named/lore "Unique" weapons (Mjolnir, Stormbringer, The Devourer, Livyatan, Frostfall, etc.), which
+  are gated behind the mod's own Runic Tablet awakening minigame.
+- Removed all named Unique weapons from the loot pools — they undercut that minigame as a shortcut.
+- Expanded weapon-type coverage from 2 types to 13 of the mod's 15 types across the Iron (Filler) and
+  Gold (Treasure) tiers, all 13 at Diamond and a curated 7-type subset at Netherite (both enchanted,
+  Treasure-Gear pool), and added a new `JACKPOT_RUNIC` pool with a curated, equal-weight 5-type Runic
+  selection (strongly enchanted) on flagship/boss chests only.
+- Fixed two tier-routing coverage gaps found while auditing all four combat-dungeon mods' native loot
+  tables: Aquamirae's `ship_1`/`ship_2`/`frozen_chest` chests and Bosses'Rise's `dragon_tower` boss
+  chest contain no `TREASURE`-routing keyword in their ids, so they were falling through to
+  Filler-only loot. Added exact-name alternations to the `TREASURE` regex so they now also get the
+  Treasure + Treasure-Gear pools (`dragon_tower` already had Jackpot via the `FLAGSHIP` regex, so it
+  now gets the full tier stack, matching its status as the mod's boss chest).
+
 ## [0.9.16] — 2026-09-13
 
 ### Fixed — packwiz "hash invalid" on bigglobe_whendungeonsarise.zip
