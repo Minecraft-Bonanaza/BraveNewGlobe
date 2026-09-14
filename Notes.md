@@ -19,3 +19,102 @@ Fixes:
 - **Permanent:** disable the bottom 3 settings under **Visual** in the Simple Clouds config, **or** let
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
+
+## Current pack state (0.9.17)
+
+Living rules. CHANGELOG stays historical.
+
+- **Version / count:** `pack.toml` **0.9.17**, **158** mods. Quest book **17 / 242**.
+  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). 0.9.17 is the Simply
+  Swords WDA-scope loot rebalance (script-only; no new jars).
+- **No fresh overworld** from 0.7.1 → 0.9.17. New Cataclysm / Bosses'Rise / Born in Chaos /
+  Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
+  Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
+- **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
+  `packwiz update` Big Globe. Fresh world is only required from pre-0.6 (floor) or 0.6.x
+  (ceiling; or regen the top + clear DH).
+- **Datapacks** live in `pack/datapacks/` and packwiz installs them to the instance
+  `datapacks/` folder. Paxi `Load from base 'datapacks' directory = true`. They are **not**
+  under `config/paxi/datapacks/`. Current BG compat zips include
+  `bigglobe_integratedvillages.zip` (airship-only), `bigglobe_simplyswords_nouniques.zip`
+  (empty `lootable_uniques` tag), and `bigglobe_whendungeonsarise.zip` (hash re-synced in
+  0.9.16 — zip and `index.toml` had drifted apart).
+
+## Villages
+
+- **CTOV** is the only ground village system (vanilla `bigglobe:villages` emptied).
+- **Integrated Villages** `1.3.3` + **Integrated API** `1.8.2` (`side = both`): only the
+  **airship village** generates (`regular_villages` emptied). Placement
+  (`bigglobe_integratedvillages.zip` via `build_iv_compat.py`):
+  - biomes `#bigglobe:land`
+  - **surface + 300** (`WORLD_SURFACE_WG` + constant offset 300; was fixed Y=300 in 0.9.12)
+  - `terrain_adaptation: none` (floats free)
+  - `air_villages` spacing **75/59** (~1,200 blocks)
+  - `air_village_avoid` → `bigglobe_ctov:villages` (8 chunks)
+- Config (`defaultconfigs/integrated_villages-neoforge-1_21.toml`):
+  `disableVanillaVillages=false` (keeps CTOV), `activateCreateContraptions=true`
+  (airship propellers spin).
+
+## When Dungeons Arise placement (current)
+
+`bigglobe_whendungeonsarise.zip` via `patch_wda_compat.py`. WDA `major`/`minor` emptied.
+Five `stattinkerer` sets:
+
+| Set | Count | Spacing / sep | Notes |
+|---|---|---|---|
+| sky | 5 | **25/22** (~400) | aerial Y 700–750; 12-chunk exclusion vs large_dungeon |
+| sea | 4 | 48/42 | ships at sea level |
+| common | 11 | 32/28 | 8-chunk exclusion vs villages |
+| large_dungeon | 3 | **125/111** (~2,000) | infested / kayra / kisegi; start 0 + `bury`; 12 vs villages |
+| nest | 1 | **41/36** (~656) | `mechanical_nest`; frequency removed; 12 vs sky |
+
+Outposts stay 6-chunk vs villages. Underground: scorched_mines **−150**, plague_asylum **−300**,
+foundry **−540**. Do not restore `small_prairie_house` or WDA major/minor.
+
+## Combat-dungeon loot
+
+See **[LOOT.md](LOOT.md)**. LootJS is additive over combat/boss dungeon chests only
+(WDA / Cataclysm / Bosses'Rise / Aquamirae). Five pools: FILLER ~28% / TREASURE ~35% /
+TREASURE_GEAR ~15% (enchant 5–15) / JACKPOT ~38% / **JACKPOT_RUNIC** ~15% (enchant 10–25).
+No endgame armor (ingots only). Metallurgy + andesite/zinc filler are **out** of the
+wired pools. Currencies halved vs 0.9.12.
+
+**Routing exceptions (0.9.17):** Aquamirae `ship_1` / `ship_2` / `frozen_chest` and
+Bosses'Rise `dragon_tower` now also match TREASURE (they have no treasure-keyword in
+the id). `NOTREASURE` is unchanged, so they still roll FILLER too. `dragon_tower`
+already had JACKPOT — it now gets the full stack.
+
+**One bad item id aborts the entire LootJS script** (every combat-dungeon chest silently
+vanilla). The 0.9.15 hotfix dropped `aquamirae:oxygen_tank` — not a real id in Aquamirae
+7.2.1. Jar-verify every id before adding. Echo compass stays.
+
+**Create: Warnautics is `1.0.8`** (0.9.16 jar bump). The JACKPOT
+`cbc_more_content:cruise_missile` drop needs 1.0.8 — do not roll back to 1.0.3.
+
+**Simply Swords (0.9.17):** LootJS injects material-tier weapons into combat-dungeon
+chests (Iron FILLER / Gold TREASURE / Diamond+Netherite TREASURE_GEAR / curated Runic
+on `JACKPOT_RUNIC`). The native injector is still **on** globally but does **not**
+reliably reach those WDA-scope tables. Named Uniques stay **out** (weight 0 + pity
+100000 + empty `lootable_uniques` tag) — they skip the Runic Tablet minigame. Native
+`runicLootTableWeight=0` still applies to the *native* injector. The Runic Tablet
+left TREASURE_GEAR in 0.9.17 (`tabletHardPity=400` remains a far backstop). Remnants
+stay off. Do not re-add `borninchaos_remnant_loot.js`. There is no
+`config/simplyswords/general.toml` (removed in 0.9.11 — mob ability chance is not a
+spawn/drop switch).
+
+## Server-only mods
+
+**Too Fast** and **YUNG's Better Nether Fortresses** are `side = server`. Default PrismLauncher
+`--side client` skips them. Dedicated servers get them.
+
+## packwiz gotchas
+
+- Always `packwiz refresh` and commit **the changed files + `index.toml` + `pack.toml`**
+  together. 0.8.5 forgot the `pack.toml` `[index]` hash ("index hash file invalid").
+  **0.9.16** had the inverse: `index.toml` was correct but the committed
+  `bigglobe_whendungeonsarise.zip` had drifted — clients failed "hash invalid" on that
+  one file. Verified all 379 index entries; only that zip was stale.
+- Do **not** `packwiz curseforge add` Simply More (Modrinth `1.3.0_alpha5`; CF
+  `allowModDistribution:false`) or `ponderjs` (wrong slug — use `ponder`).
+- Do **not** `packwiz update` Big Globe (height-patched jar).
+- Prefer a future Simply More *release* that matches Simply Tooltips `0.1.5` over staying on alpha.

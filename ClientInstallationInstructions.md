@@ -61,9 +61,15 @@ so you always get the latest mods, configs, and datapacks. Updates are usually a
   ```
   "$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
   ```
-- **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing. Ping
-  them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. This pack ships them under
-  `config/paxi/datapacks/` and the **Paxi** mod loads them globally. They arrive with the auto-sync.
+- **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing
+  (or a datapack zip drifted from `index.toml`, as in **0.9.16** on
+  `bigglobe_whendungeonsarise.zip`). Ping them; once they fix it, just launch again and it re-syncs.
+- **Datapacks** — you do **not** install datapacks manually. The pack ships them under
+  `pack/datapacks/`; packwiz installs them into the instance **`datapacks/`** folder. **Paxi** is
+  set to `Load from base 'datapacks' directory = true`, so they load globally with the auto-sync.
+  They are **not** under `config/paxi/datapacks/`.
+- **Missing server-only mods** — PrismLauncher's default `--side client` skips `side = server`
+  jars (**Too Fast**, **YUNG's Better Nether Fortresses**). Dedicated servers get them. That skip
+  is expected on a solo client instance.
 - **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
   moment and relaunch.
