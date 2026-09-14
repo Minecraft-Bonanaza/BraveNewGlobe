@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.25] — 2026-09-14
+
+### Added — Create: Market Maker (custom in-house Create economy mod)
+- **Create: Market Maker V0.5.0** (`marketcoordination-0.5.0.jar`, `side = both`) — the team's own custom
+  Create addon, hosted on the org's GitHub releases
+  (`Minecraft-Bonanaza/Create--Market-Maker` `v0.5.0`), not CurseForge/Modrinth. Re-added to the pack
+  (it had previously been dropped from tracking after the Aug 23 `0.4` build).
+- Custom/in-house mod — maintained in its own project repo; this pack just consumes the released jar.
+
+### Notes
+- **No fresh world.** Jar add only — no worldgen/datapack/loot change. Applies on next launch.
+- Pack is now **0.9.25** / **166** mods (`marketcoordination.pw.toml`).
+
 ## [0.9.24] — 2026-09-13
 
 ### Added — Create Aeronautics: Gadgets & Gizmos (propulsion + flight controls + CC integration)

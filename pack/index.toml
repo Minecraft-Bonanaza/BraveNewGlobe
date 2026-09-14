@@ -1440,6 +1440,11 @@ hash = "2bf24ba89ee34b9c0f698a2d3ca2c64eb7676407b56ab311fa91a8dd7a1ad4a9"
 metafile = true
 
 [[files]]
+file = "mods/marketcoordination.pw.toml"
+hash = "5b8df0a3c0f63cb8ace2966414e8ec4b5e36dcc91730990ff4bb011043ce6270"
+metafile = true
+
+[[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "1e7a69de13ee96b512350358c746a7b3bf67b07bc532fe5b26f7b3b3f7ee8117"
 metafile = true
