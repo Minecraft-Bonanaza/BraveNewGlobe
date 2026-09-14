@@ -3,6 +3,13 @@
 Guidance-only FTB Quests. **No line is gated behind another** — all attemptable anytime.
 Framework: `SPECTRUM.md` (a SIG = baseline → specialized career curve).
 
+**Shipped book (as of 0.9.10, still current in 0.9.16):** **17 chapters / 242 quests**.
+Committed `pack/config/ftbquests/**/*.snbt` is the source of truth
+(`bigGlobeAero/build_ftbquests.py` + `quest_lines/*.py`; IDs are SHA-1 of stable keys).
+Changing keys is a content rewrite, not a progress-safe regen. **No self-attest checkmarks.**
+Twilight / Aether / WDA stay advancement-gated. **Cataclysm** and **Bosses' Rise** are the only
+chapters that use FTB kill tasks.
+
 Two families of lines:
 - **Industry / Career (SIG)** — Create specializations + economy; each is a baseline→specialized curve.
 - **Exploration / World** — dimensions & dungeons. SPECTRUM classifies these as "non-SIG world stage";
@@ -29,10 +36,12 @@ Two families of lines:
 11. **Naval / High Seas** — Create: Better High Seas shipbuilding + WDA sea structures + Aquamirae as sea hazards/loot. The sea counterpart to Aeronautics.
 12. **Astronautics** — Creating Space rocketry & space logistics. Late-game capstone after Aeronautics + Power & Fuel; engineering-heavy, no "space magic."
 
-_(13–15 are exploration/guidance lines — find the dungeon / find the portal — not career curves.)_
-13. **When Dungeons Arise** — guide toward finding dungeons (locate/exploration hints; ties to our custom sky/sea/large_dungeon sets).
+_(13–17 are exploration/guidance lines — find the dungeon / find the portal / kill the named boss — not career curves.)_
+13. **When Dungeons Arise** — guide toward finding dungeons (locate/exploration hints; ties to our custom sky/sea/large_dungeon/nest sets). Combat-dungeon chests also get the 0.9.15 LootJS pools (`LOOT.md`).
 14. **The Twilight Forest** — diamond-ring portal → boss progression lockstep.
 15. **The Aether** — glowstone+water portal → dungeons/gear.
+16. **L_Ender's Cataclysm** (shipped, 7 kill quests) — Wadjet → Maledictus / Leviathan → Netherite Monstrosity → Ignis / Harbinger → Ender Guardian. Points at Create cannons / airships over 1v1 melee.
+17. **Bosses' Rise** (shipped, 5 kill quests) — Sandworm → Yeti / Kraken → Underworld Knight → Infernal Dragon capstone.
 
 ---
 

@@ -12,12 +12,33 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   (already hash-verified against the current `index.toml` entry) resolves it. Verified all 379
   files in `index.toml` against their actual sha256 -- zero other mismatches.
 
+### Notes
+- **No fresh world.** Hash-only / zip-resync. No gameplay change. After sync, the WDA compat
+  zip validates again.
+- Same class of failure as **0.8.6** (stale `pack.toml` `[index]` hash), but this time the
+  **zip** was the stale file — `index.toml` already had the correct sha256. Always
+  `packwiz refresh` after touching a datapack zip, and commit **the zip + `index.toml` +
+  `pack.toml` together**. Do not assume a zip "looks current."
+- `pack.toml` version is **0.9.16**. Pack still **158** mods. Warnautics **1.0.8** and the
+  LootJS oxygen-tank hotfix stay.
+
 ## [0.9.15] — 2026-09-13
 
 ### Fixed — LootJS injection aborting on an invalid item id
 - Removed `aquamirae:oxygen_tank` from `wda_dungeon_loot.js` — the item does not exist in
   Aquamirae 7.2.1, and one bad id makes LootJS abort the ENTIRE script, so all WDA/Cataclysm/
   Aquamirae chests were silently falling back to vanilla loot. Modded loot should now inject.
+
+### Notes
+- **No fresh world.** Script-only. Already-opened chests keep their contents; unopened
+  combat/boss dungeon chests now roll the 0.9.15 pools.
+- `aquamirae:oxygen_tank` is **not a real id** in Aquamirae 7.2.1 (the survey catalog listed
+  "oxygen tank/oxyhelium"; the wired TREASURE drop was wrong). Echo compass stays. Do **not**
+  re-add this id — one unknown item aborts the **entire** LootJS script (every combat-dungeon
+  chest silently vanilla).
+- This commit rolled the version string back to **0.9.15**; the later hash-invalid fix
+  re-bumped `pack.toml` to **0.9.16**. The **Create: Warnautics 1.0.8** jar from the earlier
+  [0.9.16] stays. Pack still **158** mods. Living menu: `LOOT.md`.
 
 ## [0.9.16] — 2026-09-13
 
@@ -26,6 +47,13 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   Create: Warnautics **1.0.3** predates that item — it doesn't exist in-game, so the loot entry was
   dead. Updated to **1.0.8** (latest), which registers the Cruise Missile (item + block + recipe),
   making the flagship drop resolve. Verified the item's assets/recipe are present in the 1.0.8 jar.
+
+### Notes
+- **No new mods** (count stays **158**). No worldgen. Applies on next launch.
+- `cbc_more_content:cruise_missile` is the Warnautics namespace. Do **not** roll Warnautics
+  back to 1.0.3 or the JACKPOT cruise-missile drop dies again.
+- The later [0.9.15] LootJS hotfix rolled `pack.toml` back to **0.9.15**; the subsequent
+  hash-invalid [0.9.16] re-bumped the version string. This jar bump remains.
 
 ## [0.9.15] — 2026-09-13
 
@@ -56,6 +84,20 @@ Two linked changes to how modded loot reaches dungeon chests.
   revolver/shotgun/tablet live here), **Jackpot** (flagship, ~38%). No endgame armor anywhere (ingots
   only); enchants capped at 15; Sun a 1% capstone. Reviewed item-by-item before wiring.
 
+### Notes
+- **No fresh world.** LootJS + the pinned `loot.toml` + `bigglobe_simplyswords_nouniques.zip` apply
+  on next launch. Already-opened chests keep their contents; unopened chests roll the new pools.
+- The native Simply Swords injector is **global** (`*:chests/*`). LootJS stays **combat-dungeon only**
+  (`dungeons_arise` / `cataclysm` / `block_factorys_bosses` / `aquamirae`). Vanilla, villages,
+  Towns&Towers, and CTOV are untouched.
+- Pack is now **0.9.16 / 158 mods** (Integrated Villages + Integrated API landed in 0.9.12; no new
+  jars here). **Uniques are gone** (not craftable, not lootable). Remnants stay off. Runic weapons
+  stay craftable at the Runic Forge. Do **not** re-add `borninchaos_remnant_loot.js` or fold uniques
+  into `LOOT.md`. Living menu: `LOOT.md`.
+- Follow-ups in the headings above: Warnautics **1.0.8** so `cruise_missile` resolves ([0.9.16]);
+  `aquamirae:oxygen_tank` removed so the script actually loads (hotfix [0.9.15]); WDA compat zip
+  re-synced to its `index.toml` hash (later [0.9.16]).
+
 ## [0.9.14] — 2026-09-13
 
 ### Changed — airship villages now float 300 ABOVE the surface (was fixed Y=300)
@@ -63,12 +105,20 @@ Two linked changes to how modded loot reaches dungeon chests.
   constant offset of 300 -> generates at **surface + 300**, tracking terrain instead of a
   fixed absolute altitude. `terrain_adaptation: none` keeps it floating free. Via `build_iv_compat.py`.
 
+### Notes
+- Datapack-only (`bigglobe_integratedvillages.zip`). Already-generated chunks keep the old fixed
+  **Y=300** airships; **new land chunks** get surface+300. No fresh overworld required.
+
 ## [0.9.13] — 2026-09-13
 
 ### Changed — airship villages a touch more frequent
 - `air_villages` spacing `115/90 → 75/59` via `bigGlobeAero/build_iv_compat.py`:
   ~1,840 → **~1,200 blocks** average between floating airship villages. salt and the
   `air_village_avoid` (8-chunk CTOV/vanilla-village) exclusion unchanged.
+
+### Notes
+- Datapack-only. Spacing change is **new chunks only**. salt + 8-chunk CTOV avoid unchanged.
+  No fresh overworld required.
 
 ## [0.9.12] — 2026-09-13
 
@@ -96,6 +146,10 @@ _Consolidated entry — collapses the prior 0.9.12–0.9.17 dungeon/loot iterati
 ### Notes
 - Squashed onto the `0.9.10` baseline as one commit, consolidating the `.meshclaw` and `.kiro/crew` working
   copies. Kirocrew (`~/.kiro/crew/workspace`) is the canonical clone going forward.
+- Adds **Integrated Villages** `1.3.3` + **Integrated API** `1.8.2` (`side = both`) → pack **158** mods.
+  No fresh overworld. New airship villages and the tighter WDA spacings need **unexplored chunks**.
+- 0.9.12 loot was WDA-only (superseded by the 0.9.15 combat-dungeon rebuild). 0.9.12 airships were
+  fixed **Y=300** (superseded by 0.9.14 surface+300).
 
 ## [0.9.11] — 2026-09-01
 

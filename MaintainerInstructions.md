@@ -9,7 +9,10 @@ committed jars:
 - `pack/pack.toml` — manifest (MC + loader versions, index hash)
 - `pack/index.toml` — file index (auto-managed; do not hand-edit)
 - `pack/mods/*.pw.toml` — one tiny metadata file per mod (download source + hash). **No jars in git.**
-- `pack/config/**`, `pack/resourcepacks/**` — real files shipped as-is (e.g. Paxi compat datapacks)
+- `pack/config/**`, `pack/resourcepacks/**`, `pack/kubejs/**` — real files shipped as-is
+- `pack/datapacks/**` — Paxi-loaded compat packs (install to instance `datapacks/`, **not**
+  `config/paxi/datapacks/`). Includes `bigglobe_integratedvillages.zip` and
+  `bigglobe_simplyswords_nouniques.zip`.
 
 ## Common operations (run from `pack/`)
 ```bash
@@ -25,8 +28,28 @@ packwiz refresh          # re-index — ALWAYS run before committing
 git add -A && git commit -m "update: ..." && git push
 ```
 
-> ⚠️ Always `packwiz refresh` before committing, or `index.toml` won't match the tree and every player's
-> launch will fail the hash check.
+> ⚠️ Always `packwiz refresh` before committing, and commit **the changed files + `index.toml`
+> + `pack.toml` together**. 0.8.5 updated the index but left a stale `[index]` hash →
+> "index hash file invalid". **0.9.16** had the inverse: `index.toml` was correct but the
+> committed `bigglobe_whendungeonsarise.zip` had drifted → "hash invalid" on that one file.
+> Every player's launch will fail the hash check if the zip, the index, or `pack.toml` is stale.
+
+## Do not
+- Do **not** `packwiz update` **Big Globe** — the pack ships a height-patched jar (floor −608 /
+  ceiling +1024). Updating would revert it to the unpatched Modrinth build.
+- Do **not** `packwiz curseforge add` **Simply More** (CF `allowModDistribution:false`; use the
+  Modrinth `1.3.0_alpha5` pin) or **`ponderjs`** (wrong slug — the 1.21.1 project is **`ponder`**).
+- Do **not** fold Simply Swords uniques back into loot (`LOOT.md` / `wda_dungeon_loot.js`) while
+  `bigglobe_simplyswords_nouniques.zip` + `uniqueLootTableWeight = 0` are in effect.
+- Do **not** re-add `aquamirae:oxygen_tank` (not a real id in Aquamirae 7.2.1). **One unknown
+  item id aborts the entire LootJS script** — every combat-dungeon chest silently vanilla.
+  Jar-verify every `LootEntry.of(...)` id before committing.
+- Do **not** roll **Create: Warnautics** back to `1.0.3` — JACKPOT `cruise_missile` needs `1.0.8`.
+- After adding datapacks or KubeJS scripts, `packwiz refresh` so they are indexed.
+
+## Related docs
+Combat-dungeon loot: [LOOT.md](LOOT.md). Living pack-state: [Notes.md](Notes.md).
+Quest book: [QUESTS.md](QUESTS.md). SIG design: [SPECTRUM.md](SPECTRUM.md).
 
 ## Optional / client-side mods
 Mods can be marked optional with an `[option]` block in their `pack/mods/*.pw.toml` file:
