@@ -105,7 +105,7 @@ Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `sh
 
 Halved Numismatics ladder. **No endgame armor** (ingots only). Guns are ammo-gated. Sun = 1% capstone.
 `aquamirae:oxygen_tank` was removed (invalid id aborted the whole script). Cruise missile needs
-**Create: Warnautics 1.0.8**. Loot tables unchanged in **0.9.19**. `pack.toml` is **0.9.19** / **158** mods.
+**Create: Warnautics 1.0.8**. Loot tables unchanged through **0.9.25**. `pack.toml` is **0.9.25** / **166** mods.
 
 **13 of 15 Simply Swords types** on the material ladder (`katana`, `sai`, `rapier`, `cutlass`,
 `spear`, `longsword`, `halberd`, `claymore`, `glaive`, `warglaive`, `greataxe`, `greathammer`,

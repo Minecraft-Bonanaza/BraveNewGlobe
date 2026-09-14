@@ -10,11 +10,26 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   Create addon, hosted on the org's GitHub releases
   (`Minecraft-Bonanaza/Create--Market-Maker` `v0.5.0`), not CurseForge/Modrinth. Re-added to the pack
   (it had previously been dropped from tracking after the Aug 23 `0.4` build).
+- Turns **Create: Villager Commerce** Merchant Stalls into a living, server-authoritative market:
+  daily villager budgets, competitive cheapest-stall shopping, a demand curve (price ceiling falls
+  as daily quota fills), growth/decay from budget utilization (with a decay floor), and a Stall
+  Config GUI (empty-hand right-click to set item + Numismatics price). Optional **Create: Stock
+  Market** integration indexes stalls as shops with owner attribution and a per-player **Volume**
+  tab.
 - Custom/in-house mod — maintained in its own project repo; this pack just consumes the released jar.
 
 ### Notes
 - **No fresh world.** Jar add only — no worldgen/datapack/loot change. Applies on next launch.
+  Quest book still **17 / 242**.
 - Pack is now **0.9.25** / **166** mods (`marketcoordination.pw.toml`).
+- **Dependencies already in the pack:** Create + **Numismatics** + **Villager Commerce**
+  (required); **Stock Market** (optional, already present — Volume graph / global price board
+  activate automatically). Do **not** drop Villager Commerce or Numismatics.
+- Added via `packwiz url add` from the GitHub release URL — do **not** `packwiz curseforge add`
+  or `packwiz modrinth add` this jar (it is not published there).
+- Living docs: `Notes.md`, `MODLIST.md`, `SPECTRUM.md`, `QUESTS.md`, `LOOT.md`, README /
+  maintainer docs. Also folds the unmerged 0.9.20–0.9.23 living-docs run (#45) plus 0.9.24
+  Gadgets & Gizmos.
 
 ## [0.9.24] — 2026-09-13
 
@@ -42,6 +57,12 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - **No fresh world.** Jar add + minor dep bump — no worldgen/datapack/loot change. Applies on next launch.
   Quest book still **17 / 242**.
 - Pack is now **0.9.24** / **165** mods (`create-aeronautics-gadgets-and-gizmos.pw.toml`).
+- **Create Aeronautics** stays on **Modrinth** `oWaK0Q19` / version `44pLdPGg` (`1.3.2`). Do
+  **not** let packwiz flip it to CurseForge.
+- Do **not** add **Create: Simulated Jet Engines** or **Create Propulsion: Simulated** — G&G
+  thrusters cover altitude/boost.
+- G&G `1.2.2` is the dedicated-server hotfix of `1.2.0` (CurseForge file `8874329`).
+- Living docs: `Notes.md`, `MODLIST.md`, `SPECTRUM.md`.
 
 ## [0.9.23] — 2026-09-13
 
@@ -67,6 +88,11 @@ Completes the ComputerCraft content pillar started in 0.9.21.
 - With this, the CC line is: **CC: Tweaked** (core) + **NeoPeripherals** (Sable radar) + **CC:CBC**
   (cannon control) + **Advanced Peripherals** (world sensing/HUD). **Create Big Cannons: Peripheral**
   was dropped in favor of CC:CBC.
+- Combined content pass (0.9.20–0.9.23) landed in one `pack.toml` bump **0.9.19 → 0.9.23**
+  (**158 → 164** mods). Sable source unchanged. No missing deps. **Sable: Destructive** stays
+  **out** (reverted 0.9.19). Current pack is **0.9.25** / **166**.
+- Living docs: `Notes.md`, `MODLIST.md`, `SPECTRUM.md`, `QUESTS.md`, `LOOT.md`, README /
+  maintainer docs.
 
 ## [0.9.22] — 2026-09-13
 
@@ -204,7 +230,7 @@ Begins the "programmable warship" content pillar for the aeronautics/naval + Big
 - **No fresh world.** Script-only (`wda_dungeon_loot.js`). Already-opened chests keep
   their contents; unopened combat/boss dungeon chests roll the new pools on next
   launch. No new mods — pack stays **158**. `pack.toml` is **0.9.17**.
-  Current pack is **0.9.19** / **158**.
+  Current pack is **0.9.25** / **166**.
 - **Named Unique weapons stay out.** They skip the mod's Runic Tablet awakening
   minigame. The 0.9.15 denylist still holds (`uniqueLootTableWeight = 0` + pity
   100000 + empty `lootable_uniques` in `bigglobe_simplyswords_nouniques.zip`).
@@ -247,7 +273,7 @@ Begins the "programmable warship" content pillar for the aeronautics/naval + Big
   **zip** was the stale file — `index.toml` already had the correct sha256. Always
   `packwiz refresh` after touching a datapack zip, and commit **the zip + `index.toml` +
   `pack.toml` together**. Do not assume a zip "looks current."
-- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.19** / **158** mods.
+- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.25** / **166** mods.
   Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay.
   0.9.17 is script-only (Simply Swords WDA-scope rebalance).
 

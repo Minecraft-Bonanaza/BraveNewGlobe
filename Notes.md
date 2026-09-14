@@ -20,15 +20,19 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (0.9.18)
+## Current pack state (0.9.25)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **0.9.19**, **158** mods. Quest book **17 / 242**.
-  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **0.9.19** removes
-  **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision). 0.9.17
-  is the Simply Swords WDA-scope loot rebalance (script-only).
-- **No fresh overworld** from 0.7.1 → 0.9.18. New Cataclysm / Bosses'Rise / Born in Chaos /
+- **Version / count:** `pack.toml` **0.9.25**, **166** mods. Quest book **17 / 242**.
+  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **Create Aeronautics**
+  is **1.3.2** (Modrinth). **0.9.19** removes **Sable: Destructive** (reverted the
+  0.9.18 addition per co-curator decision). **0.9.20–0.9.23** (one `pack.toml` bump)
+  add AeroPortals + the ComputerCraft stack + Create: Radiologistics. **0.9.24** adds
+  Gadgets & Gizmos `1.2.2` and bumps Aeronautics 1.3.1 → 1.3.2. **0.9.25** re-adds
+  **Create: Market Maker** `0.5.0`. 0.9.17 is the Simply Swords WDA-scope loot
+  rebalance (script-only).
+- **No fresh overworld** from 0.7.1 → 0.9.25. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
@@ -111,6 +115,61 @@ airships and Create: Better High Seas ships as physics objects. Keep it in the p
 The **Sable: Destructive** add-on was added in 0.9.18 and **reverted in 0.9.19** (co-curator
 decision); do **not** re-add it. Do **not** drop base Sable. Drive-By-Wire With Sable stays
 **out**. Valkyrien Skies stays **out**.
+
+## ComputerCraft, radio comms, and AeroPortals (0.9.20–0.9.23)
+
+Jar adds only — no worldgen, datapack, loot, or quest-book change. No configs shipped
+(they generate on first launch). Sable's download source is unchanged.
+
+- **Create: AeroPortals** `1.3.3` (CurseForge 1549100 / file 8876165, `side = both`) —
+  Sable SubLevels (airships + riding players) transfer through Nether/modded portals.
+  Needs Sable **1.0+** (pack has **2.0.5**) and NeoForge **21.1.219+** (pack is **21.1.248**).
+  Upstream calls it a proof of concept — watch multiplayer playtests.
+- **CC: Tweaked** `1.120.2` (Modrinth `gu7yAYhd` / `1ewzHZYg`, `side = both`) — in-world
+  Lua computers, turtles, monitors, modems. Complements KubeJS (author scripts).
+- **NeoPeripherals** `1.4.1ve` (Modrinth `EFTMlZ95` / `lZevXXk9`, `side = both`) — Sable
+  `neo_radar` peripheral (other SubLevels' position/pose). The broader cannon-mount /
+  NFC suite is **not** confirmed in this build; cannon control is **CC:CBC**.
+- **CC:CBC** `1.1.1` (Modrinth `zA9Klldw` / `naLCoIB4`, `side = both`) — Create Big Cannons
+  `cannon_mount` fire-control. Preferred over **Create Big Cannons: Peripheral** (do not add).
+- **Advanced Peripherals** `0.8.1a` (Modrinth `SOw6jD6x` / `1rbqTjbS`, `side = both`) —
+  Chat Box, scanners, AR goggles, inventory/energy/redstone. **ME Bridge / RS Bridge**
+  need AE2 / Refined Storage, which are **not** in the pack — those two peripherals are
+  inert. Do **not** add AE2/RS just to enable them.
+- **Create: Radiologistics** `1.1.1` (Modrinth `mtA0MjEn` / `nu9mL1zt`, `side = both`) —
+  radio transmitter + stacking antennas (hard cap **3,000** blocks), node Main Computer,
+  CBC Wired Inertia Fuze / Radars / Aeronautics integrations. Chosen over **Create:
+  Radionautics** and the unverified "Wireless Radio Towers Addon". Parallel to the CC
+  Lua stack (Create-native visual nodes), not a replacement.
+
+Do **not** drop **CC: Tweaked** (the three add-ons require it). Do **not** drop **Sable**.
+
+## Gadgets & Gizmos + Aeronautics 1.3.2 (0.9.24)
+
+- **Create Aeronautics: Gadgets & Gizmos** `1.2.2` (CurseForge 1537945 / file 8874329,
+  jar `gadgets-and-gizmos-bundled-V1.2.2.jar`, `side = both`) — propulsion boosters
+  (Thruster / Mini / Beam / RCS, Fuel Oxidizer, Propulsion Upgrade) for hard climbs
+  to the +1024 ceiling, plus flight-control blocks and **CC: Tweaked** peripherals
+  (`/rom/thrusters/docs.lua`). `1.2.2` is the dedicated-server hotfix of `1.2.0`.
+- **Create Aeronautics** bumped **1.3.1 → 1.3.2** (Modrinth `oWaK0Q19` / `44pLdPGg`)
+  as G&G's required dep (JEI/creative-tab + swivel-bearing mass). Keep it on
+  **Modrinth** — packwiz briefly flipped it to CurseForge; restore if that happens.
+- Do **not** add **Create: Simulated Jet Engines** or **Create Propulsion: Simulated**
+  (overlapping thruster systems). Do **not** drop G&G or roll Aeronautics back to 1.3.1.
+
+## Create: Market Maker (0.9.25)
+
+- **Create: Market Maker** `0.5.0` (`marketcoordination-0.5.0.jar`, `side = both`) —
+  in-house Create economy mod from GitHub
+  `Minecraft-Bonanaza/Create--Market-Maker` `v0.5.0`. First public release.
+  Extends **Villager Commerce** stalls: daily villager budgets, cheapest-stall
+  selection, demand curve, growth/decay with a floor, Stall Config GUI.
+  **Stock Market** (already in pack) is optional — stalls index as shops and the
+  Volume tab appears when it is present.
+- Required deps already in pack: Create, **Numismatics**, **Villager Commerce**.
+  Do **not** drop those. Add/update with `packwiz url add` from the GitHub release
+  URL — it is **not** on CurseForge or Modrinth.
+- Jar add only. No worldgen/datapack/loot/quest change. No fresh world.
 
 ## Server-only mods
 

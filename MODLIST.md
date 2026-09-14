@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**158 mods**), grouped by purpose. Current pack **0.9.19**.
+Human-readable list of every mod in the pack (**166 mods**), grouped by purpose. Current pack **0.9.25**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -47,8 +47,10 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Gabou's Libs** _(dependency)_
 
 ### Create Aeronautics (airships & flight)
-- **Create Aeronautics** — physics-based aircraft/airships
+- **Create Aeronautics** `1.3.2` — physics-based aircraft/airships (Modrinth; do not flip to CurseForge)
   - **Sable** _(dependency — physics engine for Aeronautics)_
+- **Create Aeronautics: Gadgets & Gizmos** `1.2.2` — thrusters, Propulsion Upgrade, flight
+  controls, CC: Tweaked peripherals (no jet engines)
 - **VS / Sable Hose Connectors** — hose/fluid connectors across Sable physics contraptions
 - **Create Aeronautics: Compatibility** — cross-mod compat patches
 - **Create Aeronautics: Automated Logistics** — cargo/logistics for aircraft
@@ -63,6 +65,9 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Azimuth API** _(dependency — camera/keybind library)_
 - **Create Aero Radars** — radar for aircraft
 - **Create: Radars** — general radar blocks
+- **Create: AeroPortals** `1.3.3` — Sable airships travel through Nether/modded portals
+- **Create: Radiologistics** `1.1.1` — radio towers / stacking antennas (3,000-block cap)
+  + node computer; CBC / Radars / Aeronautics integrations
 
 ### Create — Cannons & Ballistics
 - **Create Big Cannons** — buildable cannons/artillery
@@ -71,6 +76,12 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **CBC Terminal Ballistics** — terminal ballistics/impact mechanics
 - **Create: Gunsmithing** — firearms for Create
 - **Create: Gunpowder [aspctt]** — gunpowder/explosives production
+
+### ComputerCraft (in-world Lua)
+- **CC: Tweaked** `1.120.2` — computers, turtles, monitors, modems
+- **NeoPeripherals** `1.4.1ve` — Sable SubLevel radar peripheral (`neo_radar`)
+- **CC:CBC** `1.1.1` — Create Big Cannons fire-control peripheral (`cannon_mount`)
+- **Advanced Peripherals** `0.8.1a` — world sensing / HUD (ME/RS bridges inert — no AE2/RS)
 
 ## Combat & Explosions
 - **Better Combat** — animated melee combat overhaul
@@ -143,6 +154,9 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
 - **Create: Villager Commerce** — villagers buy from player shops via Create stock networks
   (self-hosted jar; CF distribution disabled)
+- **Create: Market Maker** `0.5.0` — in-house living economy on Villager Commerce stalls
+  (GitHub `Minecraft-Bonanaza/Create--Market-Maker`; demand curve, villager budgets,
+  Stall Config GUI; Stock Market Volume tab when present)
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse

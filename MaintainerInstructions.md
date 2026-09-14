@@ -48,8 +48,24 @@ git add -A && git commit -m "update: ..." && git push
   item id aborts the entire LootJS script** — every combat-dungeon chest silently vanilla.
   Jar-verify every `LootEntry.of(...)` id before committing.
 - Do **not** roll **Create: Warnautics** back to `1.0.3` — JACKPOT `cruise_missile` needs `1.0.8`.
-- Do **not** drop **Sable** — required by Create Aeronautics. Drive-By-Wire With Sable stays
-  **out**. Valkyrien Skies stays **out**.
+- Do **not** drop **Sable** — required by Create Aeronautics, AeroPortals, NeoPeripherals, and
+  Gadgets & Gizmos. Drive-By-Wire With Sable stays **out**. Valkyrien Skies stays **out**.
+  Do **not** re-add **Sable: Destructive** (reverted 0.9.19).
+- Do **not** drop **CC: Tweaked** — NeoPeripherals, CC:CBC, Advanced Peripherals, and G&G
+  CC peripherals require it.
+- Do **not** add **Applied Energistics 2** or **Refined Storage** just to enable Advanced
+  Peripherals' ME/RS bridges — those two peripherals stay inert.
+- Do **not** add **Create Big Cannons: Peripheral** — **CC:CBC** is the chosen fire-control.
+- Do **not** add **Create: Radionautics** or the unverified "Wireless Radio Towers Addon" —
+  **Create: Radiologistics** fills the tower/comms role.
+- Do **not** add **Create: Simulated Jet Engines** or **Create Propulsion: Simulated** —
+  **Gadgets & Gizmos** thrusters cover altitude/boost.
+- Do **not** let packwiz flip **Create Aeronautics** off Modrinth (`oWaK0Q19` / `1.3.2`).
+  Do **not** roll it back to 1.3.1.
+- Do **not** drop **Create: Villager Commerce** or **Numismatics** — **Create: Market Maker**
+  requires both. Market Maker is GitHub-only (`packwiz url add` from
+  `Minecraft-Bonanaza/Create--Market-Maker` releases) — do **not**
+  `packwiz curseforge add` / `packwiz modrinth add` it.
 - After adding datapacks or KubeJS scripts, `packwiz refresh` so they are indexed.
 
 ## Related docs
