@@ -24,10 +24,10 @@ Fixes:
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **0.9.18**, **159** mods. Quest book **17 / 242**.
-  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **0.9.18** adds
-  **Sable: Destructive** `2.2.0` (`side = both`). 0.9.17 is the Simply Swords
-  WDA-scope loot rebalance (script-only).
+- **Version / count:** `pack.toml` **0.9.19**, **158** mods. Quest book **17 / 242**.
+  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **0.9.19** removes
+  **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision). 0.9.17
+  is the Simply Swords WDA-scope loot rebalance (script-only).
 - **No fresh overworld** from 0.7.1 → 0.9.18. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
@@ -103,17 +103,14 @@ stay off. Do not re-add `borninchaos_remnant_loot.js`. There is no
 `config/simplyswords/general.toml` (removed in 0.9.11 — mob ability chance is not a
 spawn/drop switch).
 
-## Sable physics destruction
+## Sable physics engine
 
-**Sable: Destructive** `2.2.0` (Modrinth `s8kSCCgD` / `OdjEhksA`, `side = both`) is an
-add-on to **Sable** `2.0.5` (already required by Create Aeronautics). Needs Sable
-2.0.3+ and NeoForge 21.1.235+ (pack is 21.1.248). Physics blocks on airships and
-Create: Better High Seas ships now break on heavy impact — kinetic-energy collision
-damage, inertial penetration, density-aware self-damage, flying debris, radial
-shockwaves/craters. Distinct from **Explosion Overhaul** (world-block blasts).
+**Sable** `2.0.5` is the physics engine required by **Create: Aeronautics** — it simulates
+airships and Create: Better High Seas ships as physics objects. Keep it in the pack.
 
-Do **not** drop Sable. Drive-By-Wire With Sable stays **out**. Valkyrien Skies stays
-**out**. No config was shipped for Destructive — it generates its own on first launch.
+The **Sable: Destructive** add-on was added in 0.9.18 and **reverted in 0.9.19** (co-curator
+decision); do **not** re-add it. Do **not** drop base Sable. Drive-By-Wire With Sable stays
+**out**. Valkyrien Skies stays **out**.
 
 ## Server-only mods
 

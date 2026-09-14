@@ -3,6 +3,20 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.19] — 2026-09-13
+
+### Removed — Sable: Destructive (reverted 0.9.18 addition)
+- After discussion with the co-curator, the team decided **against** adding Sable: Destructive.
+  Removed `sabledestructive-2.2.0.jar` via `packwiz remove sable-destructive` (`sable-destructive.pw.toml`
+  deleted, `index.toml` + `pack.toml` `[index]` hash refreshed). Pack is back to **158** mods.
+- Base **Sable 2.0.5** stays — it is still required by **Create: Aeronautics** and is unaffected by this
+  revert. Only the *Destructive* add-on jar is gone; airships and Create ships no longer break on heavy impact.
+
+### Notes
+- **No fresh world.** Jar removal only — no worldgen, no datapack, no loot-script change.
+  Applies on next launch. Quest book still **17 / 242**.
+- Pack is now **0.9.19** / **158** mods.
+
 ## [0.9.18] — 2026-09-13
 
 ### Added — Sable: Destructive (collision/explosion destruction for Sable physics)
@@ -58,7 +72,7 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 - **No fresh world.** Script-only (`wda_dungeon_loot.js`). Already-opened chests keep
   their contents; unopened combat/boss dungeon chests roll the new pools on next
   launch. No new mods — pack stays **158**. `pack.toml` is **0.9.17**.
-  Current pack is **0.9.18** / **159** (Sable: Destructive).
+  Current pack is **0.9.19** / **158**.
 - **Named Unique weapons stay out.** They skip the mod's Runic Tablet awakening
   minigame. The 0.9.15 denylist still holds (`uniqueLootTableWeight = 0` + pity
   100000 + empty `lootable_uniques` in `bigglobe_simplyswords_nouniques.zip`).
@@ -101,8 +115,8 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   **zip** was the stale file — `index.toml` already had the correct sha256. Always
   `packwiz refresh` after touching a datapack zip, and commit **the zip + `index.toml` +
   `pack.toml` together**. Do not assume a zip "looks current."
-- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.18** / **159** mods
-  (Sable: Destructive). Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay.
+- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.19** / **158** mods.
+  Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay.
   0.9.17 is script-only (Simply Swords WDA-scope rebalance).
 
 ## [0.9.15] — 2026-09-13

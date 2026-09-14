@@ -48,9 +48,8 @@ git add -A && git commit -m "update: ..." && git push
   item id aborts the entire LootJS script** — every combat-dungeon chest silently vanilla.
   Jar-verify every `LootEntry.of(...)` id before committing.
 - Do **not** roll **Create: Warnautics** back to `1.0.3` — JACKPOT `cruise_missile` needs `1.0.8`.
-- Do **not** drop **Sable** — required by Create Aeronautics and by **Sable: Destructive**
-  `2.2.0` (Modrinth `s8kSCCgD`, `side = both`). Drive-By-Wire With Sable stays **out**.
-  Valkyrien Skies stays **out**.
+- Do **not** drop **Sable** — required by Create Aeronautics. Drive-By-Wire With Sable stays
+  **out**. Valkyrien Skies stays **out**.
 - After adding datapacks or KubeJS scripts, `packwiz refresh` so they are indexed.
 
 ## Related docs
