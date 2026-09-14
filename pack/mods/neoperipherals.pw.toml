@@ -1,0 +1,13 @@
+name = "NeoPeripherals (CC: Tweaked addon)"
+filename = "neoperipheral-1.4.1ve.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/EFTMlZ95/versions/lZevXXk9/neoperipheral-1.4.1ve.jar"
+hash-format = "sha512"
+hash = "1414a97284e1528b4291c0d27b98090fefe952ecdbf392a5c9ecc4583b46acf197c4679a825801246c8a14df4cf8cf7997948e8feace144346a715f656772fde"
+
+[update]
+[update.modrinth]
+mod-id = "EFTMlZ95"
+version = "lZevXXk9"

@@ -885,6 +885,11 @@ file = "kubejs/server_scripts/wda_dungeon_loot.js"
 hash = "3dfab3290cdbf13a14e1aa7a3630fdffe6707586449342ec156a8192f30ee7cf"
 
 [[files]]
+file = "mods/advancedperipherals.pw.toml"
+hash = "8c0719220dd1ede9910e8bdaec75e2a46e683108eb52729d3bd3530d29a4b06a"
+metafile = true
+
+[[files]]
 file = "mods/aeronautics-camera-sync.pw.toml"
 hash = "fee4aee20aa5cce41fbb32ad9b2fa48b123216729e691061970aa54e5f100fc6"
 metafile = true
@@ -980,6 +985,16 @@ hash = "c68f977d3b1af3a2e075e1c5af80533db934bcad1f85c5ff01fd4102eead9ef5"
 metafile = true
 
 [[files]]
+file = "mods/cc-cbc.pw.toml"
+hash = "df32f867e04ce60dfd13d2c5af9d90b58daccfce7b4c94e5dba2f4666ba38a89"
+metafile = true
+
+[[files]]
+file = "mods/cc-tweaked.pw.toml"
+hash = "e42363c32c9b6323eea977283c928cec373bfc415534ec92e9c3367ee8c54256"
+metafile = true
+
+[[files]]
 file = "mods/cgs.pw.toml"
 hash = "1e35822d7c167184d78651887d9823feca7a128688daedfdb93f0a33a3e2c1cf"
 metafile = true
@@ -1047,6 +1062,11 @@ metafile = true
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
 hash = "2fbf742f1a83bffa367ce2be30312fdb4ab4c08e7a5e966e05bb42b91dace7d3"
+metafile = true
+
+[[files]]
+file = "mods/create-aeroportals.pw.toml"
+hash = "3539244c5363c697e163904c8536e9381aa852f986d14c2f67be4023a5c886fa"
 metafile = true
 
 [[files]]
@@ -1137,6 +1157,11 @@ metafile = true
 [[files]]
 file = "mods/create-radars.pw.toml"
 hash = "035f86b5c4c27664e1bb17d03b14cf19c5a0f540d9f0bfd2645075d6339b7e8b"
+metafile = true
+
+[[files]]
+file = "mods/create-radiologistics.pw.toml"
+hash = "b5efa23680fcc1a9bf545a1fa516e4ae26fb1ca98f4609a0cd7b594947708f61"
 metafile = true
 
 [[files]]
@@ -1442,6 +1467,11 @@ metafile = true
 [[files]]
 file = "mods/mutant-monsters.pw.toml"
 hash = "d693ae8c5fb83ab5a4cba2195e7b77a6da29898a902eadc44fb07647d986a8ce"
+metafile = true
+
+[[files]]
+file = "mods/neoperipherals.pw.toml"
+hash = "455c04eee6543c28846b8c69eb8ab24985ae69a1f339a84ec031a605de0a9c00"
 metafile = true
 
 [[files]]

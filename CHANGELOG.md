@@ -3,6 +3,98 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.23] — 2026-09-13
+
+### Added — CC:CBC + Advanced Peripherals (cannon fire-control + general CC automation)
+Completes the ComputerCraft content pillar started in 0.9.21.
+- **CC:CBC 1.1.1** (Modrinth `zA9Klldw`, NeoForge 1.21.1, `side = both`) — the dedicated CC: Tweaked ↔
+  **Create Big Cannons** peripheral (`cannon_mount`). Proper programmable fire-control: `setComputerControl`
+  (takes over from shaft-driven aiming), `setTargetAngles(yaw,pitch)` / `setTargetYaw` / `setTargetPitch`,
+  `assemble()`, `fire()`, and full telemetry via `getInfo()` (assembled state, current vs target yaw/pitch,
+  yaw/pitch shaft speeds, mount x/y/z). This is the reliable gunnery brain (NeoPeripherals 1.4.1ve ships
+  mainly the Sable radar). Deps CC: Tweaked + CBC — both present.
+- **Advanced Peripherals 0.8.1a** (Modrinth `advancedperipherals`, `side = both`) — general CC automation
+  kit: Chat Box, Player Detector, Environment Detector, Geo Scanner, Block Reader, Inventory Manager,
+  NBT Storage, Redstone Integrator, Energy Detector, AR Goggles/Controller (custom HUD overlays). Dep
+  CC: Tweaked — present.
+
+### Notes
+- **No fresh world.** Jar adds only — no worldgen/datapack/loot change. Applies on next launch.
+  Quest book still **17 / 242**.
+- Pack is now **0.9.23** / **164** mods (adds `cc-cbc.pw.toml`, `advancedperipherals.pw.toml`).
+- Advanced Peripherals' **ME Bridge / RS Bridge** peripherals need Applied Energistics 2 / Refined Storage,
+  which are **not** in the pack — those two peripherals are inert here; the rest are fully usable.
+- With this, the CC line is: **CC: Tweaked** (core) + **NeoPeripherals** (Sable radar) + **CC:CBC**
+  (cannon control) + **Advanced Peripherals** (world sensing/HUD). **Create Big Cannons: Peripheral**
+  was dropped in favor of CC:CBC.
+
+## [0.9.22] — 2026-09-13
+
+### Added — Create: Radiologistics (tower-based wireless comms + node computer)
+- **Create: Radiologistics 1.1.1** (Modrinth `mtA0MjEn`, NeoForge 1.21.1, `side = both`) — a Create-native
+  wireless communication + computation system. Fills the "radio tower / long-range comms" role: a Radio
+  Transmitter plus **vertically-stacking Antennas** (each segment adds range, hard cap **3,000 blocks**),
+  a node-based **Main Computer** (visual math/logic/variable programming), Redstone Link Module, Memory
+  Module, Gyroscope Sensor (pitch/yaw/world coords), Jammer (blocks channels/Redstone Links in 150-block
+  radius), Audio Module, and a Pilot helmet.
+- **Every optional integration is already satisfied by this pack:**
+  - **Create Big Cannons** → Wired Inertia Fuze for remote-controlled cannon launcher rigs.
+  - **Create Radars** → extract/track radar coordinates inside algorithms (pack has Create: Radars + Aero Radars).
+  - **Create Aeronautics** → coordinate projection for moving Sable sub-level grids.
+- Dependency: **Create** (mandatory) — already present. Nothing else needed.
+
+### Notes
+- **No fresh world.** Jar add only — no worldgen/datapack/loot change. Applies on next launch.
+  Quest book still **17 / 242**.
+- Pack is now **0.9.22** / **162** mods (`create-radiologistics.pw.toml`).
+- Chosen over **Create: Radionautics** (simple infinite-range Create radio links) for its tower/antenna
+  gameplay and native CBC/Radars/Aeronautics integration. Note it is a **Create-native** comms/compute
+  layer (visual node programming), parallel to the CC: Tweaked (Lua) stack added in 0.9.21 — both coexist.
+- The original "Wireless Radio Towers Addon" was **not** used: no verified CurseForge/Modrinth source
+  (only a reposting site). Radiologistics fills the tower/comms role from a trusted source instead.
+
+## [0.9.21] — 2026-09-13
+
+### Added — ComputerCraft (CC: Tweaked) stack: programmable computers + Sable/CBC peripherals
+Begins the "programmable warship" content pillar for the aeronautics/naval + Big Cannons stack.
+- **CC: Tweaked 1.120.2** (Modrinth `cc-tweaked`, NeoForge 1.21.1, `side = both`) — the ComputerCraft
+  foundation: in-world Lua computers, turtles, monitors, modems, speakers. Complements KubeJS (author
+  scripts) with player-built in-world automation. No dependencies.
+- **NeoPeripherals 1.4.1ve** (Modrinth `neoperipherals`, `side = both`) — a CC: Tweaked ↔ **Sable**
+  bridge. Adds a radar peripheral (`neo_radar`) that scans Sable physics SubLevels (other airships/ships)
+  for position/pose — the basis for targeting and autopilot scripts. Requires Sable (already in pack, 2.0.5).
+
+### Notes
+- **No fresh world.** Jar adds only — no worldgen/datapack/loot change. Applies on next launch.
+  Quest book still **17 / 242**.
+- Pack is now **0.9.21** / **161** mods (adds `cc-tweaked.pw.toml`, `neoperipherals.pw.toml`).
+- ⚠️ **NeoPeripherals feature scope:** the installed **1.4.1ve** release exposes the Sable **radar**
+  peripheral; the broader cannon-mount / NFC / entity-radar / Sable-engine suite described in some listings
+  is not confirmed present in this build — verify in-game. Dedicated CBC cannon control is being evaluated
+  separately (**CC:CBC**).
+- **Follow-ups:** dedicated cannon peripheral **CC:CBC** and general-automation **Advanced Peripherals**
+  were added in 0.9.23; the tower/comms role was filled by **Create: Radiologistics** in 0.9.22 (the CC-only
+  "Wireless Radio Towers" addon had no verified source). **Create Big Cannons: Peripheral** was dropped from
+  consideration in favor of CC:CBC.
+
+## [0.9.20] — 2026-09-13
+
+### Added — Create: AeroPortals (Sable airships travel through portals)
+- Added **Create: AeroPortals 1.3.3** (CurseForge `create-aeroportals`, project 1549100, NeoForge 1.21.1),
+  a bridge between Create: Aeronautics airships (Sable physics SubLevels) and Minecraft's portal system:
+  when a ship's bounding box overlaps a Nether/modded portal, the whole SubLevel — plus riding players,
+  passengers, and decorations — is serialized and transferred to the destination dimension (respecting
+  dimension coordinate scale), with a per-ship cooldown to prevent bounce-back. Installed `side = "both"`.
+- **No missing dependencies.** Requires Sable 1.0+ (pack has **2.0.5**) and NeoForge 21.1.219+ (pack is
+  **21.1.248**); Create 6.0+ (optional, already present). Nothing else needed to be added.
+
+### Notes
+- **No fresh world.** Jar add only — no worldgen, no datapack, no loot-script change. Applies on next
+  launch. Quest book still **17 / 242**.
+- Pack is now **0.9.20** / **159** mods (`create-aeroportals.pw.toml`).
+- Upstream flags the mod as a **proof of concept** (cross-dimension transfer + rider rebinding implemented,
+  not yet fully battle-tested in multiplayer) — worth watching in playtests.
+
 ## [0.9.19] — 2026-09-13
 
 ### Removed — Sable: Destructive (reverted 0.9.18 addition)
