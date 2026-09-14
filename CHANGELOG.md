@@ -3,6 +3,33 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.24] — 2026-09-13
+
+### Added — Create Aeronautics: Gadgets & Gizmos (propulsion + flight controls + CC integration)
+- **Create Aeronautics: Gadgets & Gizmos V1.2.2** (CurseForge `create-aeronautics-gadgets-and-gizmos`,
+  project 1537945, NeoForge 1.21.1, `side = both`) — the de-facto Aeronautics control/propulsion addon.
+  Adds **propulsion boosters** (Thruster, Mini Thruster, Beam Thruster, Fuel Oxidizer, Propulsion Upgrade)
+  for hard vertical climbs to the world ceiling, plus a full flight-control layer (Contraption Controller,
+  Industrial Motor/Alternator, Smart Gearbox, Variable Transmission, Vector/Servo/Aileron Bearings,
+  Analogue Joystick, Physics Gantry, Powered Zipline, Entity Launcher, Claw, Shipping Manifest, Advanced
+  Data Link, Andesite Cable).
+- 🎯 Ships **CC: Tweaked integration for everything** (thrusters, bearings, gearbox, joystick, controller)
+  with a bundled in-game Lua docs browser (`/rom/thrusters/docs.lua`) + example scripts — pairs directly
+  with the ComputerCraft stack added in 0.9.21/0.9.23 for scripted flight/attitude control.
+- **No jet engines** (Create: Simulated Jet Engines deliberately excluded); G&G thrusters cover the
+  altitude/boost need. Chosen over Create Propulsion: Simulated to avoid overlapping thruster systems.
+
+### Changed — Create Aeronautics 1.3.1 → 1.3.2 (dependency of Gadgets & Gizmos)
+- Adding G&G V1.2.2 pulled its required **Create Aeronautics** dependency up to **1.3.2** (a minor patch
+  bump from the pack's 1.3.1: JEI/creative-tab compat fixes + swivel-bearing mass fix). Kept on the pack's
+  original **Modrinth** source per curator decision (packwiz's resolver had transiently flipped it to
+  CurseForge; restored to Modrinth `oWaK0Q19` version `44pLdPGg`). Same bundled jar either way.
+
+### Notes
+- **No fresh world.** Jar add + minor dep bump — no worldgen/datapack/loot change. Applies on next launch.
+  Quest book still **17 / 242**.
+- Pack is now **0.9.24** / **165** mods (`create-aeronautics-gadgets-and-gizmos.pw.toml`).
+
 ## [0.9.23] — 2026-09-13
 
 ### Added — CC:CBC + Advanced Peripherals (cannon fire-control + general CC automation)

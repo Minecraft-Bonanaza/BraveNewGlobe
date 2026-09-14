@@ -1050,6 +1050,11 @@ hash = "688310416b85c161ac8aadf5a3e92eff37f00ac03303368ac4f8399a770003e5"
 metafile = true
 
 [[files]]
+file = "mods/create-aeronautics-gadgets-and-gizmos.pw.toml"
+hash = "5e6613995ba824ee43d905fd1da2aad3e9c80de9c19a158901e253f46192d1d7"
+metafile = true
+
+[[files]]
 file = "mods/create-aeronautics-gyroscope-stabilizers.pw.toml"
 hash = "33f433d96bb78e1d3dd2ced7429c143b428c6dfd344278c49134e6d76c2a583c"
 metafile = true
@@ -1061,7 +1066,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics.pw.toml"
-hash = "2fbf742f1a83bffa367ce2be30312fdb4ab4c08e7a5e966e05bb42b91dace7d3"
+hash = "3b8895369640b2a52d3e05f7186185ba6798e44d513f11c5427a0fe9c16769e9"
 metafile = true
 
 [[files]]
