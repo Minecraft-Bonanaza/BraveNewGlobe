@@ -48,8 +48,15 @@ git add -A && git commit -m "update: ..." && git push
   item id aborts the entire LootJS script** — every combat-dungeon chest silently vanilla.
   Jar-verify every `LootEntry.of(...)` id before committing.
 - Do **not** roll **Create: Warnautics** back to `1.0.3` — JACKPOT `cruise_missile` needs `1.0.8`.
-- Do **not** drop **Sable** — required by Create Aeronautics. Drive-By-Wire With Sable stays
-  **out**. Valkyrien Skies stays **out**.
+- Do **not** drop **Sable** — required by Create Aeronautics, AeroPortals, and NeoPeripherals.
+  Drive-By-Wire With Sable stays **out**. Valkyrien Skies stays **out**. Do **not**
+  re-add **Sable: Destructive** (reverted 0.9.19).
+- Do **not** drop **CC: Tweaked** — NeoPeripherals, CC:CBC, and Advanced Peripherals require it.
+- Do **not** add **Applied Energistics 2** or **Refined Storage** just to enable Advanced
+  Peripherals' ME/RS bridges — those two peripherals stay inert.
+- Do **not** add **Create Big Cannons: Peripheral** — **CC:CBC** is the chosen fire-control.
+- Do **not** add **Create: Radionautics** or the unverified "Wireless Radio Towers Addon" —
+  **Create: Radiologistics** fills the tower/comms role.
 - After adding datapacks or KubeJS scripts, `packwiz refresh` so they are indexed.
 
 ## Related docs

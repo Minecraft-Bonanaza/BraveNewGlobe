@@ -20,15 +20,17 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (0.9.18)
+## Current pack state (0.9.23)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **0.9.19**, **158** mods. Quest book **17 / 242**.
+- **Version / count:** `pack.toml` **0.9.23**, **164** mods. Quest book **17 / 242**.
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **0.9.19** removes
-  **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision). 0.9.17
-  is the Simply Swords WDA-scope loot rebalance (script-only).
-- **No fresh overworld** from 0.7.1 → 0.9.18. New Cataclysm / Bosses'Rise / Born in Chaos /
+  **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision).
+  **0.9.20–0.9.23** (one `pack.toml` bump) add AeroPortals + the ComputerCraft stack +
+  Create: Radiologistics. 0.9.17 is the Simply Swords WDA-scope loot rebalance
+  (script-only).
+- **No fresh overworld** from 0.7.1 → 0.9.23. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
@@ -111,6 +113,34 @@ airships and Create: Better High Seas ships as physics objects. Keep it in the p
 The **Sable: Destructive** add-on was added in 0.9.18 and **reverted in 0.9.19** (co-curator
 decision); do **not** re-add it. Do **not** drop base Sable. Drive-By-Wire With Sable stays
 **out**. Valkyrien Skies stays **out**.
+
+## ComputerCraft, radio comms, and AeroPortals (0.9.20–0.9.23)
+
+Jar adds only — no worldgen, datapack, loot, or quest-book change. No configs shipped
+(they generate on first launch). Sable's download source is unchanged.
+
+- **Create: AeroPortals** `1.3.3` (CurseForge 1549100 / file 8876165, `side = both`) —
+  Sable SubLevels (airships + riding players) transfer through Nether/modded portals.
+  Needs Sable **1.0+** (pack has **2.0.5**) and NeoForge **21.1.219+** (pack is **21.1.248**).
+  Upstream calls it a proof of concept — watch multiplayer playtests.
+- **CC: Tweaked** `1.120.2` (Modrinth `gu7yAYhd` / `1ewzHZYg`, `side = both`) — in-world
+  Lua computers, turtles, monitors, modems. Complements KubeJS (author scripts).
+- **NeoPeripherals** `1.4.1ve` (Modrinth `EFTMlZ95` / `lZevXXk9`, `side = both`) — Sable
+  `neo_radar` peripheral (other SubLevels' position/pose). The broader cannon-mount /
+  NFC suite is **not** confirmed in this build; cannon control is **CC:CBC**.
+- **CC:CBC** `1.1.1` (Modrinth `zA9Klldw` / `naLCoIB4`, `side = both`) — Create Big Cannons
+  `cannon_mount` fire-control. Preferred over **Create Big Cannons: Peripheral** (do not add).
+- **Advanced Peripherals** `0.8.1a` (Modrinth `SOw6jD6x` / `1rbqTjbS`, `side = both`) —
+  Chat Box, scanners, AR goggles, inventory/energy/redstone. **ME Bridge / RS Bridge**
+  need AE2 / Refined Storage, which are **not** in the pack — those two peripherals are
+  inert. Do **not** add AE2/RS just to enable them.
+- **Create: Radiologistics** `1.1.1` (Modrinth `mtA0MjEn` / `nu9mL1zt`, `side = both`) —
+  radio transmitter + stacking antennas (hard cap **3,000** blocks), node Main Computer,
+  CBC Wired Inertia Fuze / Radars / Aeronautics integrations. Chosen over **Create:
+  Radionautics** and the unverified "Wireless Radio Towers Addon". Parallel to the CC
+  Lua stack (Create-native visual nodes), not a replacement.
+
+Do **not** drop **CC: Tweaked** (the three add-ons require it). Do **not** drop **Sable**.
 
 ## Server-only mods
 

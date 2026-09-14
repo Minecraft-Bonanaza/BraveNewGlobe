@@ -27,6 +27,11 @@ Completes the ComputerCraft content pillar started in 0.9.21.
 - With this, the CC line is: **CC: Tweaked** (core) + **NeoPeripherals** (Sable radar) + **CC:CBC**
   (cannon control) + **Advanced Peripherals** (world sensing/HUD). **Create Big Cannons: Peripheral**
   was dropped in favor of CC:CBC.
+- Combined content pass (0.9.20–0.9.23) landed in one `pack.toml` bump **0.9.19 → 0.9.23**
+  (**158 → 164** mods). Sable source unchanged. No missing deps. **Sable: Destructive** stays
+  **out** (reverted 0.9.19).
+- Living docs: `Notes.md`, `MODLIST.md`, `SPECTRUM.md`, `QUESTS.md`, `LOOT.md`, README /
+  maintainer docs.
 
 ## [0.9.22] — 2026-09-13
 
@@ -164,7 +169,7 @@ Begins the "programmable warship" content pillar for the aeronautics/naval + Big
 - **No fresh world.** Script-only (`wda_dungeon_loot.js`). Already-opened chests keep
   their contents; unopened combat/boss dungeon chests roll the new pools on next
   launch. No new mods — pack stays **158**. `pack.toml` is **0.9.17**.
-  Current pack is **0.9.19** / **158**.
+  Current pack is **0.9.23** / **164**.
 - **Named Unique weapons stay out.** They skip the mod's Runic Tablet awakening
   minigame. The 0.9.15 denylist still holds (`uniqueLootTableWeight = 0` + pity
   100000 + empty `lootable_uniques` in `bigglobe_simplyswords_nouniques.zip`).
@@ -207,7 +212,7 @@ Begins the "programmable warship" content pillar for the aeronautics/naval + Big
   **zip** was the stale file — `index.toml` already had the correct sha256. Always
   `packwiz refresh` after touching a datapack zip, and commit **the zip + `index.toml` +
   `pack.toml` together**. Do not assume a zip "looks current."
-- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.19** / **158** mods.
+- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.23** / **164** mods.
   Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay.
   0.9.17 is script-only (Simply Swords WDA-scope rebalance).
 

@@ -73,6 +73,9 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Better Combat** | — | Combat feel overhaul; not a profession tree |
 | **Simply Swords / Simply More** | — | Weapon-type flavor; uniques stay disabled (0.9.15 denylist + 0.9.17 LootJS). Material-tier weapons drop in combat-dungeon chests; curated Runic on flagship. Not a profession tree |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
+| **Create: AeroPortals** | Aeronautics (supporting) | Sable SubLevels through dimension portals; not a career |
+| **Create: Radiologistics** | Aeronautics (supporting) | Tower/antenna comms + node computer; CBC/Radars integrations; parallel to CC Lua, not a SIG |
+| **CC: Tweaked / NeoPeripherals / CC:CBC / Advanced Peripherals** | Aeronautics / Ordnance (supporting) | In-world Lua computers; not a profession tree. ME/RS bridges inert (no AE2/RS) |
 | **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
 
 ---
@@ -100,6 +103,12 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 - **Create** + Bits 'n' Bobs, Cardan Shafts, Linear Bearing, Gears n' Kinetics, Strut Your Stuff  
 - Create: Storage  
 - These are **tools every SIG may use**, not a single career.
+
+### In-world computers (not a SIG)
+
+- **CC: Tweaked** + **NeoPeripherals** (Sable radar) + **CC:CBC** (cannon mount) + **Advanced Peripherals** (world sensing / HUD; ME/RS bridges inert — no AE2/RS)
+- Parallel Create-native layer: **Create: Radiologistics** (tower/antenna comms, 3,000-block cap, node computer)
+- Player-built Lua / visual-node automation. Do not make “ComputerCraft” itself a SIG; fold into Aeronautics / Ordnance chapters if quested. Complements KubeJS (author scripts).
 
 ### Economy plumbing (used by Commerce & Logistics SIGs)
 
@@ -245,9 +254,9 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Simple Create Aeronautics / Sable craft that flies |
-| **Specialized** | Gyro stabilizers, Aeroworks expansion, hose connectors, camera sync, radar-assisted flight, cargo logistics add-ons |
+| **Specialized** | Gyro stabilizers, Aeroworks expansion, hose connectors, camera sync, radar-assisted flight, cargo logistics add-ons, portal transit, radio-tower comms |
 | **Core mods** | Create Aeronautics, Sable, Create: Aeroworks, Gyro Stabilizers, Throwable Rope Connector, VS/Sable Hose Connectors, Aeronautics Camera Sync, Create Aeronautics: Compatibility |
-| **Supporting** | Create Aero Radars, Create: Radars |
+| **Supporting** | Create Aero Radars, Create: Radars, Create: AeroPortals, Create: Radiologistics, NeoPeripherals (Sable radar) |
 | **Military branch** | Create: Warnautics (treat as advanced / combat aviation chapter, not a separate SIG unless the modteam wants Ordnance split) |
 | **Adjacent** | Logistics & Freight (Delivery Required), Naval (seaplanes / coastal), Power, Metalworking |
 
@@ -258,7 +267,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 3. Add cargo capacity and fluid/hose links.  
 4. Navigate with radar / instruments.  
 5. Complete a Delivery Required contract.  
-6. Optional: Warnautics combat sortie.
+6. Optional: Warnautics combat sortie.  
+7. Optional: portal a Sable craft (AeroPortals); stand up a Radiologistics tower.
 
 **Exclude:** Pure camera/QoL as the career goal; radars alone are tools, not the whole SIG.
 
@@ -341,9 +351,9 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Vanilla combat, TNT |
-| **Specialized** | Create: Gunpowder production; Create: Gunsmithing; Create Big Cannons + Going Ballistic + Terminal Ballistics; Warnautics for aerial gunnery |
+| **Specialized** | Create: Gunpowder production; Create: Gunsmithing; Create Big Cannons + Going Ballistic + Terminal Ballistics; Warnautics for aerial gunnery; CC:CBC programmable fire-control |
 | **Core mods** | Create: Gunpowder [aspctt], Create: Gunsmithing (CGS), Create Big Cannons, Going Ballistic, CBC Terminal Ballistics |
-| **Supporting** | Explosion Overhaul (world-block blasts), NTGL (gun lib), Warnautics |
+| **Supporting** | Explosion Overhaul (world-block blasts), NTGL (gun lib), Warnautics, CC:CBC, Radiologistics (Wired Inertia Fuze) |
 | **Adjacent** | Metalworking (barrels, shells), Power (loaders), Aeronautics (air artillery) |
 
 **Suggested quest beats**
@@ -352,7 +362,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 2. Automate gunpowder production.  
 3. Build and fire a Create Big Cannon.  
 4. Study terminal ballistics / ranging.  
-5. Optional: mount ordnance on a contraption or Warnautics craft.
+5. Optional: mount ordnance on a contraption or Warnautics craft.  
+6. Optional: take over a cannon mount with CC:CBC (`setComputerControl` / `setTargetAngles` / `fire`).
 
 **Not this SIG:** Better Combat (feel), Illager Invasion / raids (threat content).
 
@@ -561,11 +572,12 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Create: Cotton | Textiles |
 | Diesel Generators, Power Grid, Power Chip | Power & Fuel |
 | Tracks, Signalworks, Train Physics, Threaded Trains, Trotting Wagons, Doped Horses | Land Transport & Rail |
-| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics | Aeronautics |
+| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics, AeroPortals, Radiologistics | Aeronautics |
 | Better High Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
 | Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful | Commerce |
-| Gunpowder, Gunsmithing, Big Cannons (+ expansions) | Ordnance |
+| Gunpowder, Gunsmithing, Big Cannons (+ expansions), CC:CBC | Ordnance |
+| CC: Tweaked, NeoPeripherals, Advanced Peripherals | Supporting automation (not a SIG) |
 | More Diseases & Treatments | Medicine |
 | MCA Reborn | Settlement |
 | Enchantment Industry | Industrial Enchanting (optional) |
