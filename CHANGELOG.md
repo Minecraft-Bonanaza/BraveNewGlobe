@@ -3,6 +3,24 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.31] — 2026-09-15
+
+### Fixed — Market Coordination dedicated-server crash (0.5.0 → 0.5.1)
+- **Create: Market Maker / Market Coordination** bumped **0.5.0 → 0.5.1**. The 0.5.0 jar crashed
+  the dedicated server during `RegisterPayloadHandlersEvent` (`MarketNetworking.java:24`):
+  `Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER`
+  (crash log 04.59.22). Play-to-client handlers were bound from common code via
+  `MarketClientNetworking::handleSummary`, which loaded the client-only summary GUI.
+- 0.5.1 registers those handlers only on the physical client; the server still registers the
+  matching payload types with no-op handlers so the protocol stays in sync. Linear Bearing is
+  unrelated (already removed in 0.9.30).
+- Jar is bundled in-repo (`bundled-jars/marketcoordination-0.5.1.jar`) so the next server build
+  does not depend on a GitHub Release existing yet.
+
+### Notes
+- **No fresh world.** Jar bump only. Applies on next launch.
+- Pack is now **0.9.31**.
+
 ## [0.9.30] — 2026-09-15
 
 ### Removed — Create: Linear Bearing (unfixable dedicated-server crash)
