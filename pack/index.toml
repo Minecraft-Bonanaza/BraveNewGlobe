@@ -1451,11 +1451,6 @@ hash = "2d80b71c7f4c789b7596a328ac235f88458bc467dfb203f79f15e4379115887e"
 metafile = true
 
 [[files]]
-file = "mods/linear-bearing.pw.toml"
-hash = "e92248ff7e47d94175ee315550946858967e9f1076653468a1d10a6aa53a4d82"
-metafile = true
-
-[[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "64acab1580ca6edd8b1dd185e914aeee7aa551a88a7cd7f0f9370a82aaadfef6"
 metafile = true
@@ -1477,7 +1472,7 @@ metafile = true
 
 [[files]]
 file = "mods/marketcoordination.pw.toml"
-hash = "5b8df0a3c0f63cb8ace2966414e8ec4b5e36dcc91730990ff4bb011043ce6270"
+hash = "3b50b7e6541ff597a596afdd1681362fc3e61f218757e5ee830bad845c60084a"
 metafile = true
 
 [[files]]

@@ -3,7 +3,7 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
-## [0.9.29] — 2026-09-15
+## [0.9.32] — 2026-09-15
 
 ### Fixed — infested_temple identical-chest bug (baked LootTableSeed)
 WDA's `infested_temple` shipped chests with hardcoded `LootTableSeed` values baked into the structure
@@ -95,6 +95,62 @@ spacing. First spacing pass widening the densest surface grids:
 
 These per-mod spacing/exclusion overrides live in their jars (our BG compat packs only fix biome
 gating), so they are new dedicated `structure_set` override datapacks (pack_format 48).
+## [0.9.31] — 2026-09-15
+
+### Fixed — Market Coordination dedicated-server crash (0.5.0 → 0.5.1)
+- **Create: Market Maker / Market Coordination** bumped **0.5.0 → 0.5.1**. The 0.5.0 jar crashed
+  the dedicated server during `RegisterPayloadHandlersEvent` (`MarketNetworking.java:24`):
+  `Attempted to load class net/minecraft/client/gui/screens/Screen for invalid dist DEDICATED_SERVER`
+  (crash log 04.59.22). Play-to-client handlers were bound from common code via
+  `MarketClientNetworking::handleSummary`, which loaded the client-only summary GUI.
+- 0.5.1 registers those handlers only on the physical client; the server still registers the
+  matching payload types with no-op handlers so the protocol stays in sync. Linear Bearing is
+  unrelated (already removed in 0.9.30).
+- Jar is bundled in-repo (`bundled-jars/marketcoordination-0.5.1.jar`) so the next server build
+  does not depend on a GitHub Release existing yet.
+
+### Notes
+- **No fresh world.** Jar bump only. Applies on next launch.
+- Pack is now **0.9.31**.
+
+## [0.9.30] — 2026-09-15
+
+### Removed — Create: Linear Bearing (unfixable dedicated-server crash)
+- **Removed Create: Linear Bearing entirely** (`linear-bearing.pw.toml` deleted, index + pack hashes
+  refreshed). The 0.9.29 downgrade to 1.3.3 **did not help** — 1.3.3 throws the identical
+  `BakedModel for invalid dist DEDICATED_SERVER` at `LinearBearing.<init>(LinearBearing.java:66)`
+  (crash log 04.37.36). The unguarded client-model reference in the mod's main constructor is
+  **inherent to the mod**, not a 1.3.5 regression, so no available version loads on a dedicated server.
+- Server-side there is **no fix short of removal** (can't be client-only: it registers functional
+  Create blocks). Removed to unblock the server build.
+- **Lost content:** Linear Bearing, Torsional Anchor, and the Magnetic Port "quantum bridge"
+  (cross–Sable-sublevel rotation transfer). If that capability is needed later, look for a
+  server-safe alternative or a patched build.
+
+### Notes
+- **No fresh world.** Jar removal only. Any existing Linear Bearing placements will drop as
+  unknown blocks on next load; the server had never successfully started with them, so impact is nil.
+- Pack drops one mod. `pack.toml` is **0.9.30**.
+
+## [0.9.29] — 2026-09-15
+
+### Fixed — Linear Bearing dedicated-server crash (downgrade 1.3.5 → 1.3.3)
+- **Create: Linear Bearing** rolled back **1.3.5 → 1.3.3** (Modrinth `ZTwCjE7O` version `Ph1Arc6B`).
+- **Why:** `linearbearing-1.3.5.jar` crashed the **dedicated server** during mod construction —
+  `RuntimeException: Attempted to load class net/minecraft/client/resources/model/BakedModel for
+  invalid dist DEDICATED_SERVER` at `LinearBearing.<init>(LinearBearing.java:67)`. The mod's main
+  constructor references a **client-only** rendering class without a dist guard, so NeoForge's
+  RuntimeDistCleaner aborts mod loading on a server (crash logs 04.17.33 and 03.57.26).
+- 1.3.5 was the latest release (no upstream fix available); its changelog added the **Bubble Gum
+  Block**, the likely source of the unguarded client-model reference. 1.3.3 predates that.
+- ⚠️ **Not guaranteed** — if 1.3.3 still trips the same dist bug on the next server build, the
+  fallback is to remove Linear Bearing entirely (per curator direction). Reindexing cannot fix this
+  class of bug; it lives inside the jar.
+
+### Notes
+- **No fresh world.** Jar version rollback only — no worldgen/datapack/loot change. Applies on next
+  server launch. Same block IDs, so existing Linear Bearing placements are unaffected.
+- Pack is now **0.9.29**.
 
 ## [0.9.28] — 2026-09-15
 
