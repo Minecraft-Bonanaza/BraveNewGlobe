@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**158 mods**), grouped by purpose. Current pack **0.9.19**.
+Human-readable list of every mod in the pack (**170 mods**), grouped by purpose. Current pack **0.9.26**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -47,8 +47,14 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Gabou's Libs** _(dependency)_
 
 ### Create Aeronautics (airships & flight)
-- **Create Aeronautics** — physics-based aircraft/airships
+- **Create Aeronautics** `1.3.2` — physics-based aircraft/airships (Modrinth pin)
   - **Sable** _(dependency — physics engine for Aeronautics)_
+- **Create Aeronautics: Gadgets & Gizmos** `V1.2.2` — propulsion thrusters (Thruster, Mini
+  Thruster, Beam Thruster, Fuel Oxidizer) + flight controls (controller, joystick, bearings,
+  gearbox, transmission) + bundled CC: Tweaked Lua docs. Covers hard climbs to the world
+  ceiling; **no** Simulated Jet Engines / Create Propulsion: Simulated.
+- **Create: AeroPortals** `1.3.3` — Sable airship SubLevels travel through Nether/modded
+  portals (upstream flags it as a proof of concept)
 - **VS / Sable Hose Connectors** — hose/fluid connectors across Sable physics contraptions
 - **Create Aeronautics: Compatibility** — cross-mod compat patches
 - **Create Aeronautics: Automated Logistics** — cargo/logistics for aircraft
@@ -63,6 +69,11 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Azimuth API** _(dependency — camera/keybind library)_
 - **Create Aero Radars** — radar for aircraft
 - **Create: Radars** — general radar blocks
+- **Contraption Lights** `1.5.1` — lanterns on Create/Sable builds light the world
+  _(optional, default on; toggle with LambDynamicLights)_
+  - **LambDynamicLights** `4.8.11` — LAMB dynamic-light backend _(client, optional, default on)_
+- **Create: Radiologistics** `1.1.1` — tower/antenna wireless comms (3,000-block cap) +
+  node computer; native CBC / Radars / Aeronautics hooks. Prefer this over Radionautics.
 
 ### Create — Cannons & Ballistics
 - **Create Big Cannons** — buildable cannons/artillery
@@ -72,8 +83,20 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **Create: Gunsmithing** — firearms for Create
 - **Create: Gunpowder [aspctt]** — gunpowder/explosives production
 
+### ComputerCraft & programmable control
+In-world Lua computers plus Create-native comms. Complements KubeJS (author scripts). Not a
+standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
+- **CC: Tweaked** `1.120.2` — computers, turtles, monitors, modems, speakers
+- **NeoPeripherals** `1.4.1ve` — CC ↔ Sable radar peripheral (`neo_radar`)
+- **CC:CBC** `1.1.1` — CC ↔ Create Big Cannons fire-control (`cannon_mount`). Prefer this
+  over Create Big Cannons: Peripheral.
+- **Advanced Peripherals** `0.8.1a` — Chat Box, detectors, scanners, inventory/energy,
+  AR goggles. **ME Bridge / RS Bridge** are inert (no AE2 / Refined Storage in the pack).
+
 ## Combat & Explosions
 - **Better Combat** — animated melee combat overhaul
+- **Combat Traces** `1.0.3` — pixel-art Better Combat weapon trails + hit flashes
+  _(optional, default on; cosmetic)_
 - **Simply Swords** — runic/standard weapon types (Better Combat optional dep). Uniques
   disabled (they skip the Runic Tablet minigame). LootJS injects material-tier weapons
   into combat-dungeon chests (native injector is on but does not reliably reach those
@@ -134,6 +157,8 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Create: Numismatic Bounties** — pays Bountiful rewards in Numismatics coins
 
 ## Economy
+- **Create: Market Maker** `V0.5.0` — **in-house** Create economy addon (`marketcoordination`).
+  GitHub releases (`Minecraft-Bonanaza/Create--Market-Maker`), not CurseForge/Modrinth.
 - **Create: Numismatics** — Create-styled coin & bank-card currency
   - **Create Numismatics: Villager Currency** — villager trades use Numismatics coins instead of emeralds
   - **Create: Numismatics Utils** — Bank Meter HUD & remote account access
@@ -162,7 +187,7 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Better Advanced Tooltips** _(dependency)_
 
 ## Performance
-- **Sodium** — rendering engine optimization _(client)_
+- **Sodium** — rendering engine optimization _(client; also used by Contraption Lights / LambDynamicLights)_
 - **Lithium (Fabric/NeoForge)** — game-logic optimization
 - **FerriteCore ((Neo)Forge)** — memory-usage optimization
 - **ModernFix** — performance & memory fixes
@@ -182,6 +207,7 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **Jade** — "what am I looking at" tooltip HUD
 - **AppleSkin** — hunger/saturation HUD info
 - **Just Enough Items (JEI)** — recipe/item lookup
+- **Animated Inventory** `1.0.6` — items slide between slots _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_
 
 > **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled

@@ -4,7 +4,11 @@ A [Big Globe](https://modrinth.com/mod/big-globe) modpack for **Minecraft 1.21.1
 **NeoForge** — Create-ecosystem tech, cannons, aeronautics, and hand-authored Big Globe
 world/spawn compatibility.
 
-Current pack: **0.9.19** — **158** mods. Quest book **17 chapters / 242 quests**.
+Current pack: **0.9.26** — **170** mods. Quest book **17 chapters / 242 quests**.
+
+The **initial production build is nearing completion**. The content stack is in — including the
+team's in-house **Create: Market Maker** economy mod — and remaining work is **fine-tuning the
+survival experience** (seasons, diseases, farming/food, climate).
 
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
 - **How it's delivered:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**;
@@ -12,12 +16,15 @@ Current pack: **0.9.19** — **158** mods. Quest book **17 chapters / 242 quests
   added, updated mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
 
 ## What's in the pack
-- **Create ecosystem** — Create plus a large stack of add-ons (aeronautics, cannons, logistics,
-  diesel generators, trains, and more).
+- **Create ecosystem** — Create plus a large stack of add-ons (aeronautics and propulsion, cannons,
+  logistics, diesel generators, trains, radio towers, and more), plus the in-house
+  **Create: Market Maker** economy mod.
+- **Programmable control** — CC: Tweaked (in-world Lua) with Sable radar, Big Cannons fire-control,
+  and Advanced Peripherals; Create: Radiologistics as a parallel Create-native comms/compute layer.
 - **Big Globe world generation** — with hand-authored compatibility datapacks for spawns, structures,
   and cross-mod integration (shipped via Paxi).
-- **Survival & QoL** — seasons, thirst/diseases, farming and food, villager overhauls, and supporting
-  libraries.
+- **Survival & QoL** — seasons, diseases, farming and food, villager overhauls, and supporting
+  libraries. This layer is what is being tuned for the production cut.
 - **Optional visuals** — Iris shaders, Distant Horizons, Simple Clouds, and other client-side eye-candy
   that can be toggled off on low-spec machines.
 
@@ -31,7 +38,7 @@ Current pack: **0.9.19** — **158** mods. Quest book **17 chapters / 242 quests
 - **[QUESTS.md](QUESTS.md)** — shipped quest book (17 chapters / 242 quests) and line list.
 - **[LOOT.md](LOOT.md)** — combat-dungeon LootJS pools + Simply Swords loot rules.
 - **[CHANGELOG.md](CHANGELOG.md)** — version history.
-- **[MODLIST.md](MODLIST.md)** — human-readable mod list (158 mods).
+- **[MODLIST.md](MODLIST.md)** — human-readable mod list (170 mods).
 - **[Notes](Notes.md)** — living pack-state notes (villages, WDA, loot, height, gotchas).
 
 ## Quick start (players)

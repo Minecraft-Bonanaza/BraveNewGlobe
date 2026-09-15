@@ -1,0 +1,18 @@
+name = "Animated Inventory"
+filename = "animatedinventory-1.0.6.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "4589028837bf2bc8943dc92678fce321d4d53dd7"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8847422
+project-id = 1688531
+
+[option]
+optional = true
+default = true
+description = "Client visual: items slide between inventory slots. Safe to disable."

@@ -49,7 +49,17 @@ git add -A && git commit -m "update: ..." && git push
   Jar-verify every `LootEntry.of(...)` id before committing.
 - Do **not** roll **Create: Warnautics** back to `1.0.3` — JACKPOT `cruise_missile` needs `1.0.8`.
 - Do **not** drop **Sable** — required by Create Aeronautics. Drive-By-Wire With Sable stays
-  **out**. Valkyrien Skies stays **out**.
+  **out**. Valkyrien Skies stays **out**. Do **not** re-add **Sable: Destructive**.
+- Do **not** re-add `pack/config/thirst/` (dead Thirst Was Taken configs). Do **not** add
+  **Needs, Not Necessities** or **Panels Not Screens** — evaluated as a thirst replacement
+  and dropped.
+- Do **not** `packwiz curseforge add` or `packwiz modrinth add` **Create: Market Maker**
+  (`marketcoordination`). It is the team's in-house mod, consumed from GitHub releases
+  (`Minecraft-Bonanaza/Create--Market-Maker`) via `packwiz url add`.
+- Do **not** add **Create: Simulated Jet Engines** or **Create Propulsion: Simulated** —
+  Gadgets & Gizmos thrusters cover the altitude/boost need. Do **not** add **Create Big
+  Cannons: Peripheral** — **CC:CBC** is the gunnery brain. Do **not** add
+  **Create: Radionautics** — **Radiologistics** fills the tower/comms role.
 - After adding datapacks or KubeJS scripts, `packwiz refresh` so they are indexed.
 
 ## Related docs
@@ -69,3 +79,7 @@ description = "Shown to players in the packwiz installer selection screen."
 The rendering trio — **Iris Shaders**, **Iris & Oculus Flywheel Compat**, and **Distant Horizons** —
 must be toggled together (all ON or all OFF). See the comments in those `.pw.toml` files and
 [Notes.md](Notes.md) for why.
+
+**Contraption Lights** and **LambDynamicLights** are a second linked pair (all ON or all OFF).
+Do **not** add **Veil** or **Sable Ragdolls** for that stack. Do **not** add stock **Fabric API**
+for LambDynamicLights — **Forgified Fabric API** already satisfies it.
