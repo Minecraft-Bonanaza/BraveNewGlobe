@@ -3,6 +3,25 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.30] — 2026-09-15
+
+### Removed — Create: Linear Bearing (unfixable dedicated-server crash)
+- **Removed Create: Linear Bearing entirely** (`linear-bearing.pw.toml` deleted, index + pack hashes
+  refreshed). The 0.9.29 downgrade to 1.3.3 **did not help** — 1.3.3 throws the identical
+  `BakedModel for invalid dist DEDICATED_SERVER` at `LinearBearing.<init>(LinearBearing.java:66)`
+  (crash log 04.37.36). The unguarded client-model reference in the mod's main constructor is
+  **inherent to the mod**, not a 1.3.5 regression, so no available version loads on a dedicated server.
+- Server-side there is **no fix short of removal** (can't be client-only: it registers functional
+  Create blocks). Removed to unblock the server build.
+- **Lost content:** Linear Bearing, Torsional Anchor, and the Magnetic Port "quantum bridge"
+  (cross–Sable-sublevel rotation transfer). If that capability is needed later, look for a
+  server-safe alternative or a patched build.
+
+### Notes
+- **No fresh world.** Jar removal only. Any existing Linear Bearing placements will drop as
+  unknown blocks on next load; the server had never successfully started with them, so impact is nil.
+- Pack drops one mod. `pack.toml` is **0.9.30**.
+
 ## [0.9.29] — 2026-09-15
 
 ### Fixed — Linear Bearing dedicated-server crash (downgrade 1.3.5 → 1.3.3)

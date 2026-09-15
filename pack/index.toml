@@ -1415,11 +1415,6 @@ hash = "2d80b71c7f4c789b7596a328ac235f88458bc467dfb203f79f15e4379115887e"
 metafile = true
 
 [[files]]
-file = "mods/linear-bearing.pw.toml"
-hash = "853035cdde029d46d7a0d8fd889be646796359a856399fd0a161be7c2f5adccc"
-metafile = true
-
-[[files]]
 file = "mods/lionfish-api.pw.toml"
 hash = "64acab1580ca6edd8b1dd185e914aeee7aa551a88a7cd7f0f9370a82aaadfef6"
 metafile = true
