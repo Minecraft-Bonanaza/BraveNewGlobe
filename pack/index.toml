@@ -802,7 +802,7 @@ hash = "b28eb828e74e7df0b043ff434b4a399cb5c7926c9dc3403808b33b1b2f9bafab"
 
 [[files]]
 file = "datapacks/bigglobe_cataclysm_nogear.zip"
-hash = "5c98e1cf4c72d243685cd6207d826893f4c5239470db7e247e41a005b5badbfb"
+hash = "a2ebcd3df38a99ce2bd5a08a5a69a47ef83090fb3c1964373a56ead6e3597ded"
 
 [[files]]
 file = "datapacks/bigglobe_cataclysm_spacing.zip"
@@ -814,11 +814,11 @@ hash = "41b82f8c59d5388beb66ae355a5f25bed85c9c9dba28fb68703da67e41a0f222"
 
 [[files]]
 file = "datapacks/bigglobe_ctov_compat.zip"
-hash = "fc893748440a1d2ea82fbcd54a8c9ed194efe64ac9c38144cae049cf6a9f829d"
+hash = "97ed785082fea7470da9b5bddd6c87d0f0b158b6e3c7d9c368dafc6b8513af1e"
 
 [[files]]
 file = "datapacks/bigglobe_illagerinvasion_spacing.zip"
-hash = "825e05bc4f60e8da3676b6508774649c1d3103df8d2c3ecfed6dabd83f897bf5"
+hash = "ef181b70ffea901c38f6773355fbee4fa68ee557a38781b5d7415367c3c31886"
 
 [[files]]
 file = "datapacks/bigglobe_integratedvillages.zip"
@@ -858,7 +858,7 @@ hash = "595e1ebc3c8fc2068c06b03ceffe711affc15680ec6248caefd2fe0fe6141269"
 
 [[files]]
 file = "datapacks/bigglobe_takespillage_spacing.zip"
-hash = "d9b99942d46cd6d40be2939b186e01e46f491f899e59faec56f09277a30b55d7"
+hash = "731ee6ecfdb291f7a2fe4ea8dedf4ddcc161948649c7b7319361fa34ad8ecaa6"
 
 [[files]]
 file = "datapacks/bigglobe_towns_and_towers_compatibility.zip"
@@ -866,7 +866,7 @@ hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
 
 [[files]]
 file = "datapacks/bigglobe_towns_and_towers_spacing.zip"
-hash = "3f053eb666792d8458ea57c4d26e981fce94309e558c4c0b9de7dbd518d1d971"
+hash = "5d9e4ac52c1ff8254a7012b20710d029c1395ad127460725b39d1fa16146a674"
 
 [[files]]
 file = "datapacks/bigglobe_wda_chestseed_fix.zip"
@@ -874,7 +874,7 @@ hash = "3fdf1cf1453f3b047cb3dd961774150458b368119ecf718157c288de161904e0"
 
 [[files]]
 file = "datapacks/bigglobe_whendungeonsarise.zip"
-hash = "c386b785f6d0df08be8f571ad220f634c8aca32d080ea7f41acab2add7d0f2d6"
+hash = "4da0aa45eb60bc2395b28ec846bcb57b4a4c8d47ea24e075c9bfe0de4326a8b7"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"

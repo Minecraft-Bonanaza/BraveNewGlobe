@@ -3,6 +3,20 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.34] — 2026-09-15
+
+### Fixed — world creation crash from 0.9.29/0.9.33 datapacks
+Two datapack validation errors introduced by the spacing/loot pass crashed world creation
+(datapacks validate on load, before worldgen):
+- **Empty loot pools** — the Cataclysm gear-strip (`bigglobe_cataclysm_nogear.zip`) removed the
+  only entry from 19 pools, leaving `entries: []`, which fails loot-table validation. Rebuilt to
+  **drop** now-empty pools instead of emptying them (17 tables, 19 pools removed); bosses whose only
+  drop was a stripped item now drop nothing or just their music disc.
+- **exclusion_zone chunk_count > 16** — Minecraft caps `exclusion_zone.chunk_count` at **16** (codec
+  range `[1,16]`). The session had set 20/25/30/40 on 13 structure sets (WDA common/sky/nest/
+  large_dungeon/rare, CTOV pillager_outposts, T&T towns/towers, Illager fort/firecaller/illusioner/
+  labyrinth, It Takes a Pillage). All clamped to **16** (~256 blk, the engine max).
+
 ## [0.9.33] — 2026-09-15
 
 ### Added — thornborn_towers restored into the large_dungeon set
