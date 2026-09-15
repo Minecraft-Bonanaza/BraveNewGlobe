@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.33] — 2026-09-15
+
+### Added — thornborn_towers restored into the large_dungeon set
+- `dungeons_arise:thornborn_towers` added to `stattinkerer:large_dungeon` (now 4 structures:
+  infested_temple, keep_kayra, kisegi_sanctuary, thornborn_towers; spacing 219 / ~3,504 blk).
+  Its biome tag was broadened `#bigglobe:forest` → **`#bigglobe:land`** to match the other three
+  flagships (all-land eligibility) instead of forest-only.
+- Fixed its Y placement to match the other flagships: `start_height` absolute 119 → **0**,
+  projection none → **WORLD_SURFACE_WG**, step underground → **surface_structures** (terrain bury kept),
+  so the tower grounds at the surface instead of anchoring at a fixed Y (would bury/float in BG terrain).
+
 ## [0.9.32] — 2026-09-15
 
 ### Fixed — infested_temple identical-chest bug (baked LootTableSeed)
