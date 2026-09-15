@@ -146,14 +146,9 @@ LootJS.lootTables((event) => {
     // ── JACKPOT (Epic mats/coins/guns) — boss/flagship premium chests. ~38%. ──
     event.modifyLootTables(FLAGSHIP).createPool((pool) => {
         pool.addEntry(LootEntry.empty().withWeight(62));
-        pool.addEntry(LootEntry.of("cataclysm:ignitium_ingot", [2, 4]).withWeight(5));
         pool.addEntry(LootEntry.of("numismatics:crown", [1, 2]).withWeight(3));
-        pool.addEntry(LootEntry.of("cataclysm:witherite_ingot", [1, 3]).withWeight(3));
-        pool.addEntry(LootEntry.of("cataclysm:enderite_ingot", [1, 2]).withWeight(3));
-        pool.addEntry(LootEntry.of("cataclysm:cursium_ingot", [2, 4]).withWeight(2));
         pool.addEntry(LootEntry.of("bigglobe:voidmetal_ingot", [1, 2]).withWeight(2));
         pool.addEntry(LootEntry.of("creatingspace:inconel_ingot", [1, 2]).withWeight(2));
-        pool.addEntry(LootEntry.of("cataclysm:ancient_metal_ingot", [1, 2]).withWeight(1));
         pool.addEntry(LootEntry.of("bigglobe:voidmetal_upgrade").withWeight(1));
         pool.addEntry(LootEntry.of("create:netherite_backtank").withWeight(1));
         pool.addEntry(LootEntry.of("create:precision_mechanism").withWeight(1));

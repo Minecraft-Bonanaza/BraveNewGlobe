@@ -3,6 +3,99 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.29] — 2026-09-15
+
+### Fixed — infested_temple identical-chest bug (baked LootTableSeed)
+WDA's `infested_temple` shipped chests with hardcoded `LootTableSeed` values baked into the structure
+NBT, which freezes each chest's loot (no per-world randomness) and made `level_2`/`level_3` — sharing the
+same seed on the same `infested_temple_room_normal` table — permanent clones. New
+`bigglobe_wda_chestseed_fix.zip` overrides the 5 infested_temple `.nbt` pieces with all `LootTableSeed`
+values zeroed → chests are now unseeded and roll fresh loot per world/per chest. (keep_kayra and
+kisegi_sanctuary were already unseeded.) A jar-wide scan found the same baked-seed pattern in many other
+mods (CTOV villages/outposts, Towns & Towers, Illager Invasion fort/labyrinth, Incendium, Cataclysm,
+Aquamirae, etc.) — deferred pending scope decision.
+
+### Changed — Cataclysm powerful gear made unobtainable
+Cataclysm gates its endgame weapons/armor behind boss-dropped **signature materials** crafted at a
+`mechanical_fusion_anvil` (plus one finished drop, `gauntlet_of_guard`). Removed the whole chain at the
+source so the powerful items can no longer be obtained:
+- **New `bigglobe_cataclysm_nogear.zip`** strips the signature materials/finished gear from **15 boss
+  loot tables** (ignitium_ingot←Ignis, cursium_ingot←Maledictus, witherite_block←Harbinger,
+  monstrous_horn/infernal_forge/lava_power_cell←Netherite Monstrosity, essence_of_the_storm←Scylla,
+  void_core←Ender Golem, void_jaw←Endermaptera, gauntlet_of_guard←Ender Guardian, tidal_claws←Leviathan,
+  ancient_metal_ingot/nugget/block←Kobolediator/Koboleton/Wadjet/Ancient Remnant, athame←Deeplings,
+  sandstorm_in_a_bottle←Ancient Remnant) — plus `chests/desert_treasure` (ancient_metal_ingot).
+  Boss-**summon** items (`netherite_effigy`, `abyssal_egg`) and cosmetic music discs are deliberately
+  KEPT so bosses remain fightable.
+- **`wda_dungeon_loot.js` JACKPOT pool** no longer injects the Cataclysm endgame mats
+  (ignitium/witherite/enderite/cursium/ancient_metal) into combat-dungeon chests.
+
+### Changed — structure spacing pass to reduce cross-mod clustering
+Investigated why 4–6 structures from different mods bunch together: it is not a salt
+collision (salts are clean once the phantom Terralith reference jar is excluded) but the
+cumulative overlap of ~25 independent surface structure grids with no engine-level global
+spacing. First spacing pass widening the densest surface grids:
+
+- **`stattinkerer:large_dungeon`** (infested_temple/keep_kayra/kisegi_sanctuary) spacing 156→219
+  (~2,500→~3,500 blk), separation 139→195.
+- **`stattinkerer:common`** (WDA surface POIs) spacing 32→63 (~512→~1000 blk), separation 28→55;
+  exclusion vs `bigglobe_ctov:villages` raised 8→25 chunks (~400 blk). `mining_complex`, `plague_asylum`,
+  `foundry` split out of common into a new group.
+- **New `stattinkerer:rare` group** (spc 94 / ~1500 blk, salt 141592653): mining_complex, plague_asylum,
+  foundry. Avoids `stattinkerer:large_dungeon` @30 chunks. `mining_complex` Y placement moved back to surface (start_height −187 → absolute 0,
+  WORLD_SURFACE_WG projection, terrain_adaptation none → beard_thin) so it generates at ground level
+  instead of buried.
+- **`stattinkerer:nest`** (mechanical_nest) spacing 41→125 (~656→~2000 blk), separation 36→110;
+  exclusion vs `stattinkerer:sky` raised 12→40 chunks.
+- **`stattinkerer:large_dungeon`** exclusion vs `bigglobe_ctov:villages` raised 12→40 chunks.
+- **`stattinkerer:sea`** (WDA pirate ships) spacing 48→75 (~768→~1200 blk), separation 42→66.
+- **`stattinkerer:sky`** (WDA aerial ships) spacing 25→94 (~400→~1500 blk), separation 22→82;
+  exclusion_zone swapped from `stattinkerer:large_dungeon` @12 to `bigglobe_ctov:villages` @30
+  (single exclusion slot; the large_dungeon exclusion was low-impact since sky is aerial Y700-750).
+- **Villages:** `bigglobe_ctov:villages` + `bigglobe:villages` 30→88 (~480→~1400 blk; shared salt, moved
+  together), separation 12→35; `integrated_villages:regular_villages` 26→50 (~800 blk), separation 19→37.
+- **CTOV `pillager_outposts`** 30→88 (~480→~1400 blk), separation 12→35; village exclusion 6→20 chunks.
+  (Air villages left at ~1200 blk; pillager outposts unchanged.)
+- **Mowzie's Mobs ~800 blk** (new `bigglobe_mowziesmobs_spacing.zip`): monasteries / umvuthana_groves /
+  frostmaw_spawns 25→50, separation 8→16.
+- **Cataclysm** (new `bigglobe_cataclysm_spacing.zip`), tiered:
+  - **Boss arenas merged into ONE shared grid** (`bigglobe_cataclysm:boss_arenas`, spc 63 / ~1000 blk):
+    all 8 boss structures (acropolis, burning_arena, cursed_pyramid, frosted_prison, sunken_city,
+    ancient_factory, ruined_citadel, soul_black_smith) now compete for a single grid cell, so at most
+    ONE boss arena per ~1000-block cell — this spaces the *different* bosses apart from each other, not
+    just each from its own kind. Their 8 original per-type structure_sets are emptied so they no longer
+    place on independent grids. Per-cell boss choice is biome-gated by each structure's own definition.
+  - **Biome restriction removed** on `burning_arena`, `ruined_citadel`, `soul_black_smith` (structure-def
+    overrides → `#minecraft:is_overworld`). These were Nether/End bosses whose vanilla biome IDs
+    (`nether_wastes`, `end_highlands`, `crimson_forest`, …) do not exist in a Big Globe world, so they
+    could never spawn; they now place across the overworld with the other merged bosses.
+  - **Explorable ruin clusters → ~1500 blk (spc 94):** abandoned_structures, desert_structures,
+    amethyst_nest — kept more common than the boss arenas.
+- **Illager Invasion** (new `bigglobe_illagerinvasion_spacing.zip`): sorcerer_hut 18→44 (~700 blk, no
+  exclusion); firecaller_hut / illusioner_tower / illager_fort / labyrinth → spc 81 (~1300 blk) each
+  with exclusion → `bigglobe_ctov:villages` @20 chunks. `illager_fort`'s `frequency: 0.2` skip-roll
+  removed so it places on every grid cell like the others. Separations scaled proportionally.
+
+- **Born in Chaos** (new `bigglobe_borninchaos_spacing.zip`): `infernal_pumpkin` 36→94 (~576→~1500 blk),
+  `mound_of_hounds` 50→94 (~800→~1500 blk) — the two tightest non-grave BiC grids. The 19 grave
+  tombstones (all ≥960 blk, cosmetic flavor) left as-is per decision.
+
+- **Towns & Towers** (new `bigglobe_towns_and_towers_spacing.zip`): all three grids → ~1000 blk (spc 63):
+  towns 816→1008, towers 768→1008, other 512→1008. Re-pointed `towns` exclusion_zone from the empty
+  `minecraft:villages` to the active `bigglobe_ctov:villages` and raised both `towns` and `towers`
+  exclusions to 20 chunks (~320 blk), so T&T villages keep real distance from CTOV villages and T&T
+  towers from T&T towns.
+- **Bosses'Rise** (new `bigglobe_bossesrise_spacing.zip`): yeti_hideout 480→720 blk,
+  sandworm_nest 720→1504, kraken_ship 832→1504, dragon_tower 1536→1808. Kept as separate grids.
+  `underworld_arena` left as-is (Nether boss whose vanilla `nether_wastes`/`soul_sand_valley` biomes
+  don't exist in BG's scripted Nether, so it does not spawn — deferred).
+
+- **It Takes a Pillage** (new `bigglobe_takespillage_spacing.zip`): `pillager_structure` 512→1008 blk
+  (spc 63); exclusion re-pointed from empty `minecraft:villages` to `bigglobe_ctov:villages` @20 chunks.
+
+These per-mod spacing/exclusion overrides live in their jars (our BG compat packs only fix biome
+gating), so they are new dedicated `structure_set` override datapacks (pack_format 48).
+
 ## [0.9.28] — 2026-09-15
 
 ### Changed — large dungeon spacing bumped to ~2,500 blocks

@@ -785,12 +785,28 @@ file = "datapacks/bigglobe_borninchaos.zip"
 hash = "2705fde9c43bf5cfcf4016f65685dc2fff08d01db5879fb290948899461e6989"
 
 [[files]]
+file = "datapacks/bigglobe_borninchaos_spacing.zip"
+hash = "ffa1a85191e07d4edabcbe76a0c88c5b3cad11cef7d10f56a0b5ee78dd9156f8"
+
+[[files]]
 file = "datapacks/bigglobe_bossesrise.zip"
 hash = "c8cd97dd318babad3f4477c55a7946dc0cb7652a2360eaa33e4820d7b2fd5d1e"
 
 [[files]]
+file = "datapacks/bigglobe_bossesrise_spacing.zip"
+hash = "6b2129016167b34a88670ad6797b484034fb36694a476d0d0a77b5606e127d7a"
+
+[[files]]
 file = "datapacks/bigglobe_cataclysm.zip"
 hash = "b28eb828e74e7df0b043ff434b4a399cb5c7926c9dc3403808b33b1b2f9bafab"
+
+[[files]]
+file = "datapacks/bigglobe_cataclysm_nogear.zip"
+hash = "5c98e1cf4c72d243685cd6207d826893f4c5239470db7e247e41a005b5badbfb"
+
+[[files]]
+file = "datapacks/bigglobe_cataclysm_spacing.zip"
+hash = "c3f102b20e4dd5015ade57a571b81f17a5823224665eaf2711cc61599a3b04e9"
 
 [[files]]
 file = "datapacks/bigglobe_create.zip"
@@ -798,11 +814,15 @@ hash = "41b82f8c59d5388beb66ae355a5f25bed85c9c9dba28fb68703da67e41a0f222"
 
 [[files]]
 file = "datapacks/bigglobe_ctov_compat.zip"
-hash = "8ddf96707741910f896f087b8b5195d91d0b9e0651b0146ec81f55351cc30b8e"
+hash = "fc893748440a1d2ea82fbcd54a8c9ed194efe64ac9c38144cae049cf6a9f829d"
+
+[[files]]
+file = "datapacks/bigglobe_illagerinvasion_spacing.zip"
+hash = "825e05bc4f60e8da3676b6508774649c1d3103df8d2c3ecfed6dabd83f897bf5"
 
 [[files]]
 file = "datapacks/bigglobe_integratedvillages.zip"
-hash = "3989b27add98b7ba790a02d078e4fca9dbd4c654a8224ed5ed7d03a299a4b2ca"
+hash = "fb85cec3795a7bd2df1e46984e3931df5c977d48de3b51cf10dcea9a88c93e20"
 
 [[files]]
 file = "datapacks/bigglobe_less_glacier.zip"
@@ -811,6 +831,10 @@ hash = "6b6f04cf5f719b74798835ffa11c4c75368b1a5cf4f4de24402cc00cd3a5fa84"
 [[files]]
 file = "datapacks/bigglobe_mowziesmobs.zip"
 hash = "d0db904165639a903f5de5372a936447ab3d37236f16758438f373568ee42001"
+
+[[files]]
+file = "datapacks/bigglobe_mowziesmobs_spacing.zip"
+hash = "4981e3eb3b13e7f2fa3858dff9225a7a6d7ee3849750620a929c19c21f4518a1"
 
 [[files]]
 file = "datapacks/bigglobe_remove_obelisk.zip"
@@ -833,12 +857,24 @@ file = "datapacks/bigglobe_takespillage (1).zip"
 hash = "595e1ebc3c8fc2068c06b03ceffe711affc15680ec6248caefd2fe0fe6141269"
 
 [[files]]
+file = "datapacks/bigglobe_takespillage_spacing.zip"
+hash = "d9b99942d46cd6d40be2939b186e01e46f491f899e59faec56f09277a30b55d7"
+
+[[files]]
 file = "datapacks/bigglobe_towns_and_towers_compatibility.zip"
 hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
 
 [[files]]
+file = "datapacks/bigglobe_towns_and_towers_spacing.zip"
+hash = "3f053eb666792d8458ea57c4d26e981fce94309e558c4c0b9de7dbd518d1d971"
+
+[[files]]
+file = "datapacks/bigglobe_wda_chestseed_fix.zip"
+hash = "3fdf1cf1453f3b047cb3dd961774150458b368119ecf718157c288de161904e0"
+
+[[files]]
 file = "datapacks/bigglobe_whendungeonsarise.zip"
-hash = "1ef1ba75079231cab69d18f0239d3eb1f5ea2cc9a09019ca91433d7848eada22"
+hash = "9309a08aeb9424b10597d3ddee4904faf917b9d291ddbc81aa37565f56f2f713"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
@@ -862,7 +898,7 @@ hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "3dfab3290cdbf13a14e1aa7a3630fdffe6707586449342ec156a8192f30ee7cf"
+hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
