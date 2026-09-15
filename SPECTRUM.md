@@ -4,6 +4,8 @@ Framework for designing **FTB Quests** around player specialization.
 
 Brave New Globe is a **reality simulator**: almost everything can be done the simple way, but investing in tools, industry, and knowledge unlocks better yields, safer processes, and larger scale. A **Special Interest Group (SIG)** is a career path shaped like that — not every mod, and not every piece of content.
 
+As of **0.9.26** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 242**. Remaining pack work is **survival-layer tuning** (seasons, diseases, farming/food, climate), not new SIG chapters.
+
 ---
 
 ## How to use this document
@@ -74,6 +76,9 @@ Specialized (higher yield, throughput, safety, or reach)
 | **Simply Swords / Simply More** | — | Weapon-type flavor; uniques stay disabled (0.9.15 denylist + 0.9.17 LootJS). Material-tier weapons drop in combat-dungeon chests; curated Runic on flagship. Not a profession tree |
 | **Explosion Overhaul** | Ordnance (supporting) | World physics for blasts; not a career by itself |
 | **MCA Reborn** | Settlement & Civic Life | Social layer; trades feed Commerce via Villager Currency |
+| **CC: Tweaked** (+ NeoPeripherals, CC:CBC, Advanced Peripherals) | Shared computing substrate | In-world Lua brains for ships/guns; not a career of its own |
+| **Create: Radiologistics** | Aeronautics (supporting) / Ordnance | Tower/antenna comms + node computer; parallel to CC Lua |
+| **Create: Market Maker** | Commerce | In-house economy addon; physical fulfillment still required |
 
 ---
 
@@ -101,11 +106,23 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 - Create: Storage  
 - These are **tools every SIG may use**, not a single career.
 
+### Computing & control (used by Aeronautics & Ordnance)
+
+Player-built in-world computers. Complements KubeJS (pack-author scripts). Not a SIG of its own —
+it is the programmable brain other SIGs mount on ships and guns.
+
+- **CC: Tweaked** — Lua computers, turtles, monitors, modems  
+- **NeoPeripherals** — Sable radar peripheral (`neo_radar`)  
+- **CC:CBC** — Create Big Cannons fire-control (`cannon_mount`)  
+- **Advanced Peripherals** — world sensing / HUD (ME/RS bridges inert — no AE2/RS in the pack)  
+- **Create: Radiologistics** — Create-native radio towers + node computer (parallel to CC Lua)
+
 ### Economy plumbing (used by Commerce & Logistics SIGs)
 
 - Create: Numismatics (+ Utils, Calculator, Villager Currency)  
 - Tradeworks, Marketplace, Stock Market, Create: Villager Commerce  
 - Numismatic Bounties  
+- **Create: Market Maker** (in-house; GitHub releases, not CurseForge/Modrinth)  
 
 Currency is **earned** (villagers, bounties, deliveries, player trade) — not player-minted. Do not quest “craft coins from ore.”
 
@@ -245,11 +262,11 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Simple Create Aeronautics / Sable craft that flies |
-| **Specialized** | Gyro stabilizers, Aeroworks expansion, hose connectors, camera sync, radar-assisted flight, cargo logistics add-ons |
-| **Core mods** | Create Aeronautics, Sable, Create: Aeroworks, Gyro Stabilizers, Throwable Rope Connector, VS/Sable Hose Connectors, Aeronautics Camera Sync, Create Aeronautics: Compatibility |
-| **Supporting** | Create Aero Radars, Create: Radars |
+| **Specialized** | Gyro stabilizers, Aeroworks expansion, Gadgets & Gizmos propulsion/flight controls, hose connectors, camera sync, radar-assisted flight, cargo logistics add-ons, scripted autopilot |
+| **Core mods** | Create Aeronautics 1.3.2, Sable, Create: Aeroworks, Gyro Stabilizers, Gadgets & Gizmos, Throwable Rope Connector, VS/Sable Hose Connectors, Aeronautics Camera Sync, Create Aeronautics: Compatibility |
+| **Supporting** | Create Aero Radars, Create: Radars, Create: AeroPortals (cross-dimension SubLevels; upstream PoC), Create: Radiologistics, CC: Tweaked + NeoPeripherals, Contraption Lights (+ LambDynamicLights) |
 | **Military branch** | Create: Warnautics (treat as advanced / combat aviation chapter, not a separate SIG unless the modteam wants Ordnance split) |
-| **Adjacent** | Logistics & Freight (Delivery Required), Naval (seaplanes / coastal), Power, Metalworking |
+| **Adjacent** | Logistics & Freight (Delivery Required), Naval (seaplanes / coastal), Power, Metalworking, Ordnance (CC:CBC gunnery) |
 
 **Suggested quest beats**
 
@@ -257,10 +274,11 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 2. Stabilize flight (gyro).  
 3. Add cargo capacity and fluid/hose links.  
 4. Navigate with radar / instruments.  
-5. Complete a Delivery Required contract.  
-6. Optional: Warnautics combat sortie.
+5. Fit Gadgets & Gizmos thrusters for a ceiling climb; optional CC autopilot.  
+6. Complete a Delivery Required contract.  
+7. Optional: Warnautics combat sortie / AeroPortals dimension hop.
 
-**Exclude:** Pure camera/QoL as the career goal; radars alone are tools, not the whole SIG.
+**Exclude:** Pure camera/QoL as the career goal; radars alone are tools, not the whole SIG. Simulated Jet Engines / Create Propulsion: Simulated stay out (G&G covers boost). Contraption Lights is ship lighting, not the career.
 
 ---
 
@@ -316,8 +334,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Direct player trades; emerald villager trades (converted to coins) |
-| **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Bountiful + Numismatic Bounties as starter income |
-| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful, Create: Numismatic Bounties, Create: Villager Commerce |
+| **Specialized** | Numismatics vendors & bank terminals; Tradeworks stalls; Marketplace listings; Stock Market terminals; Create: Market Maker coordination; Bountiful + Numismatic Bounties as starter income |
+| **Core mods** | Create: Numismatics, Villager Currency, Tradeworks, Marketplace, Stock Market, Create: Market Maker, Bountiful, Create: Numismatic Bounties, Create: Villager Commerce |
 | **QoL (not chapters)** | Numismatics Utils, Numismatics Calculator |
 | **Adjacent** | Logistics (stock the shelves), Settlement (MCA villagers), Agriculture / Metalworking (goods) |
 
@@ -327,10 +345,12 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 2. Open a bank account / use a bank card at a physical terminal.  
 3. Stock a Tradeworks or Numismatics vendor.  
 4. Register on Marketplace; require a customer/player to **travel** to buy.  
-5. Read Stock Market trends; adjust a physical shop.  
+5. Read Stock Market / Market Maker signals; adjust a physical shop.  
 6. Fulfill a delivery-funded sale (cross Logistics).
 
 **Hard exclusions for quests:** CoinCraft / player minting; auction mailbox delivery; remote checkout.
+
+**Later (not v1):** leveraged long/short on **real** trade volume (bets do not move price). Bookmark is **ITOWT's Exchange** in `Notes.md` — fold into Market Maker / Stock Market on Numismatics; do not add the ITOWT jar.
 
 ---
 
@@ -341,9 +361,9 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Vanilla combat, TNT |
-| **Specialized** | Create: Gunpowder production; Create: Gunsmithing; Create Big Cannons + Going Ballistic + Terminal Ballistics; Warnautics for aerial gunnery |
+| **Specialized** | Create: Gunpowder production; Create: Gunsmithing; Create Big Cannons + Going Ballistic + Terminal Ballistics; CC:CBC fire-control; Warnautics for aerial gunnery |
 | **Core mods** | Create: Gunpowder [aspctt], Create: Gunsmithing (CGS), Create Big Cannons, Going Ballistic, CBC Terminal Ballistics |
-| **Supporting** | Explosion Overhaul (world-block blasts), NTGL (gun lib), Warnautics |
+| **Supporting** | Explosion Overhaul (world-block blasts), NTGL (gun lib), Warnautics, CC:CBC, Create: Radiologistics (CBC inertia fuze / radar coords) |
 | **Adjacent** | Metalworking (barrels, shells), Power (loaders), Aeronautics (air artillery) |
 
 **Suggested quest beats**
@@ -352,7 +372,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 2. Automate gunpowder production.  
 3. Build and fire a Create Big Cannon.  
 4. Study terminal ballistics / ranging.  
-5. Optional: mount ordnance on a contraption or Warnautics craft.
+5. Optional: mount ordnance on a contraption or Warnautics craft; script fire-control with CC:CBC.
 
 **Not this SIG:** Better Combat (feel), Illager Invasion / raids (threat content).
 
@@ -561,11 +581,12 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Create: Cotton | Textiles |
 | Diesel Generators, Power Grid, Power Chip | Power & Fuel |
 | Tracks, Signalworks, Train Physics, Threaded Trains, Trotting Wagons, Doped Horses | Land Transport & Rail |
-| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics | Aeronautics |
+| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics, Gadgets & Gizmos, AeroPortals, Radiologistics | Aeronautics |
 | Better High Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
-| Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful | Commerce |
-| Gunpowder, Gunsmithing, Big Cannons (+ expansions) | Ordnance |
+| Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful, Create: Market Maker | Commerce |
+| Gunpowder, Gunsmithing, Big Cannons (+ expansions), CC:CBC | Ordnance |
+| CC: Tweaked, NeoPeripherals, Advanced Peripherals | Shared computing (Aeronautics / Ordnance brains) |
 | More Diseases & Treatments | Medicine |
 | MCA Reborn | Settlement |
 | Enchantment Industry | Industrial Enchanting (optional) |

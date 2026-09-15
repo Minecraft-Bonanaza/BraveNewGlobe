@@ -11,6 +11,11 @@ These three optional mods must be enabled or disabled **together** (all ON or al
 without Distant Horizons alongside our mandatory rendering mods (Flywheel/Create) results in buggy
 rendering. They ship as `optional = true, default = false` in their `pack/mods/*.pw.toml` files.
 
+## Lighting toggle (Contraption Lights / LambDynamicLights)
+These two optional mods must be enabled or disabled **together** (all ON or all OFF). They ship as
+`optional = true, default = true`. Contraption Lights without LambDynamicLights has no LAMB backend
+(Iris-safe ship/contraption lights). Do **not** add **Veil** or **Sable Ragdolls** for this pair.
+
 ## Known issue — DH + Simple Clouds artifacting under Iris
 With Distant Horizons and Simple Clouds running under Iris rendering, artifacting will sometimes appear
 across the boundary between the two render zones (the DH/far zone and the near zone).
@@ -20,16 +25,46 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (0.9.18)
+## Current pack state (0.9.28)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **0.9.26**, **166** mods. Quest book **17 / 246**.
-  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **0.9.19** removes
-  **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision). 0.9.17
-  is the Simply Swords WDA-scope loot rebalance (script-only). See `CHANGELOG.md` for
-  everything since (0.9.20–0.9.26: Aeronautics/CC/Radiologistics mod adds + matching quests).
-- **No fresh overworld** from 0.7.1 → 0.9.18. New Cataclysm / Bosses'Rise / Born in Chaos /
+- **Version / count:** `pack.toml` **0.9.28**, **170** mods. Quest book **17 / 246**
+  (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
+  Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
+  **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
+  **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision).
+- **Phase:** the initial production build is **nearing completion**. The custom in-house
+  **Create: Market Maker V0.5.0** is in (`marketcoordination`, GitHub releases — not
+  CurseForge/Modrinth). Remaining work is **fine-tuning the survival experience**
+  (seasons, diseases, farming/food, climate).
+- **0.9.26:** optional **Combat Traces 1.0.3** (Better Combat trails, both, default on),
+  **Animated Inventory 1.0.6** (client, default on), and **Contraption Lights 1.5.1** +
+  **LambDynamicLights 4.8.11** (linked, default on). Dead TWT `pack/config/thirst/` is gone.
+  **Needs, Not Necessities** was evaluated as a thirst replacement and **dropped** (gimmicky
+  meal-driven thirst, not TWT). Do **not** re-add it or **Panels Not Screens**.
+- **0.9.28:** `stattinkerer:large_dungeon` spacing retuned **2,000 → 2,496 blocks** (spacing
+  125→156 / separation 111→139, same ~0.89 jitter ratio). Datapack-only; no fresh world needed.
+- **Content landed 0.9.20–0.9.25 (all no-fresh-world jar adds):**
+  - **0.9.20** Create: AeroPortals 1.3.3 — Sable airships through portals (upstream flags
+    it as a proof of concept).
+  - **0.9.21–0.9.23** ComputerCraft stack: **CC: Tweaked 1.120.2**, **NeoPeripherals 1.4.1ve**
+    (Sable radar), **Create: Radiologistics 1.1.1** (tower/antenna comms, 3,000-block cap),
+    **CC:CBC 1.1.1** (Big Cannons fire-control), **Advanced Peripherals 0.8.1a** (ME/RS
+    bridges inert — AE2/RS are not in the pack).
+  - **0.9.24** **Create Aeronautics: Gadgets & Gizmos V1.2.2** — propulsion thrusters +
+    flight controls + CC integration. Create Aeronautics **1.3.1 → 1.3.2**.
+  - **0.9.25** **Create: Market Maker V0.5.0** — in-house Create economy addon.
+- **Stay out:** **Sable: Destructive** (added 0.9.18, reverted 0.9.19). Drive-By-Wire With
+  Sable. Valkyrien Skies. Create: Simulated Jet Engines / Create Propulsion: Simulated
+  (G&G thrusters cover the altitude/boost need). Create Big Cannons: Peripheral (CC:CBC
+  is the gunnery brain). Create: Radionautics (Radiologistics fills the tower/comms role).
+  **Needs, Not Necessities** / **Panels Not Screens** (evaluated 0.9.26, dropped). **Veil** /
+  **Sable Ragdolls** (Contraption Lights uses LambDynamicLights, not those). **Tessellate**
+  and **Create: Crystal Industry** (evaluated 0.9.26, skipped). **AMBUSH** / **Create:
+  Manned Cannons** (evaluated 0.9.26, skipped). **ITOWT** jar stays out (speculation
+  bookmark only — see Later expansion bookmarks).
+- **No fresh overworld** from 0.7.1 → 0.9.28. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
@@ -112,6 +147,67 @@ airships and Create: Better High Seas ships as physics objects. Keep it in the p
 The **Sable: Destructive** add-on was added in 0.9.18 and **reverted in 0.9.19** (co-curator
 decision); do **not** re-add it. Do **not** drop base Sable. Drive-By-Wire With Sable stays
 **out**. Valkyrien Skies stays **out**.
+
+Aeronautics extras that **are** in (0.9.20–0.9.24): **AeroPortals** (cross-dimension SubLevel
+transfer; upstream PoC), **Gadgets & Gizmos** (thrusters + flight controls + CC),
+**Radiologistics** (tower/antenna comms). Do **not** add Simulated Jet Engines or Create
+Propulsion: Simulated — G&G covers the boost/altitude need.
+
+## ComputerCraft stack
+
+In-world Lua computers plus Create-native comms. Complements KubeJS (author scripts).
+
+- **CC: Tweaked 1.120.2** — computers, turtles, monitors, modems.
+- **NeoPeripherals 1.4.1ve** — Sable `neo_radar` peripheral (airship targeting/autopilot).
+- **CC:CBC 1.1.1** — Create Big Cannons `cannon_mount` fire-control. Prefer this over
+  **Create Big Cannons: Peripheral** (stay out).
+- **Advanced Peripherals 0.8.1a** — Chat Box, detectors, scanners, AR goggles. **ME Bridge /
+  RS Bridge** are inert here (no AE2 / Refined Storage).
+- **Create: Radiologistics 1.1.1** — Create-native radio towers (antenna stack, 3,000-block
+  cap) + node computer. Parallel to CC Lua, not a replacement. Prefer this over
+  **Create: Radionautics**.
+
+## Create: Market Maker (in-house)
+
+**Create: Market Maker V0.5.0** (`marketcoordination-0.5.0.jar`) is the team's own Create
+economy addon. Hosted on GitHub releases (`Minecraft-Bonanaza/Create--Market-Maker`),
+**not** CurseForge/Modrinth. Add/update with `packwiz url add` against the release jar.
+Do **not** `packwiz curseforge add` / `packwiz modrinth add` it. The pack just consumes
+the released jar; the mod is maintained in its own repo.
+
+## Later expansion bookmarks
+
+Not in the pack. Do not `packwiz add` these until the production cut is done and the note
+says what to keep vs strip.
+
+### ITOWT speculation (keep the idea, not the jar)
+- **Source:** [ITOWT – I'm The One Who Trade](https://www.curseforge.com/minecraft/mc-mods/itowt-im-the-one-who-trade)
+  `itowt-im-the-one-who-trade`, NeoForge 1.21.1 **2.1.0** (targets NeoForge `21.1.248`).
+- **Wanted later:** the **Exchange** — candlestick chart per item, long/short with leverage,
+  margin/liquidation. **Bets do not move the price; only real trades do.** That is the
+  speculation layer to fold into **Create: Market Maker** / **Create: Stock Market** on
+  **Numismatics**, at a physical terminal, after hauling still happens.
+- **Do not take from ITOWT:** its own `coins` currency (fights Numismatics), `/shop` GUI,
+  **mailbox delivery**, auction house, server shop (server as buyer / daily farm cap),
+  `/pay` remote checkout. Those are SPECTRUM Commerce hard exclusions (mailbox, remote
+  checkout, player-side minting).
+
+### Ambush / Manned Cannons (evaluated 0.9.26, skipped)
+- **AMBUSH** (`ambush`, TiyunSol) — datapack encounter engine; optional Aeronautics/CBC
+  ship raids. Author warns explosive shells; latest **1.1.6** is beta. Needs authored
+  datapacks, fights **In Control!**, and lists **Simulated** beside Aeronautics/Sable.
+  Illager Invasion / It Takes a Pillage already cover raid PvE.
+- **Create: Manned Cannons** (`create-manned-cannons-an-ambush-addon`) **0.1.3** — villager
+  (incl. **MCA**) gun crew with real CBC ballistics, built for Ambush raider targeting.
+  **CC:CBC** stays the pack gunnery brain. Revisit only as a pair with a curated Ambush
+  datapack, or as MCA-only gun crews with Ambush spawn **off**.
+
+## Optional visuals (0.9.26)
+
+**Combat Traces** (Better Combat trails, `side = both`, optional default on) and
+**Animated Inventory** (client, optional default on). Do **not** re-add **Needs, Not
+Necessities** or **Panels Not Screens** — evaluated as a TWT replacement and dropped.
+Do **not** re-add `pack/config/thirst/` (dead TWT configs, removed in 0.9.26).
 
 ## Server-only mods
 

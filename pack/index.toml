@@ -745,26 +745,6 @@ file = "config/takesapillage.json"
 hash = "7db0f52b6068154e92b7685dd1b3ec2a754bfeb2a523af3eccbc9840dbfe9d6e"
 
 [[files]]
-file = "config/thirst/client.toml"
-hash = "73adc5821b607af041d64bff2cff6f45edd356a7110ab79ea88519a39ffc382a"
-
-[[files]]
-file = "config/thirst/common.toml"
-hash = "0c641054381ba957f06aa923e11f238117e52fee07df8a4217577cd041b97ff4"
-
-[[files]]
-file = "config/thirst/container.toml"
-hash = "f992a91d5ee5546bc82754ccf24189c3b34ac1652adb185da7518daa90f74f7e"
-
-[[files]]
-file = "config/thirst/item_settings.toml"
-hash = "43c0eae5168d93ca72a7159eed0bc99f921d86ac619421ff7e916d5e385c0d2d"
-
-[[files]]
-file = "config/thirst/keyword.toml"
-hash = "cb2bd041bc4e2ae557a4bcce19d736fadf1037abca2ac241ee8a654c3f0a3b3b"
-
-[[files]]
 file = "config/towns_and_towers/structure_enable_or_disable_new.json5"
 hash = "7c70e7df82d014a87dcb2defcf45d9654a22362283c7efe1f81f3b3c04290709"
 
@@ -905,6 +885,11 @@ hash = "f242021cede5b517982508fc308c90005b42b2be444e2bd81921d5eb5754ba02"
 metafile = true
 
 [[files]]
+file = "mods/animated-inventory.pw.toml"
+hash = "7f0428d3c316d92069e4ad59419ca76234d35155aa003eddaa900573d3d52d91"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "3f910a2722d6884203aba5eee8f5c129ea3c2e0b78bc683b2d7b5604fec755f5"
 metafile = true
@@ -1015,8 +1000,18 @@ hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
 
 [[files]]
+file = "mods/combat-traces.pw.toml"
+hash = "38faa66d502640f5909d342dfaec69a8f75a0357747048bd39a046b310abc848"
+metafile = true
+
+[[files]]
 file = "mods/connector.pw.toml"
 hash = "a38d72ca403e9064338be6e0cf69532768b0c1aba8f88703a8ce74c2734da522"
+metafile = true
+
+[[files]]
+file = "mods/contraption-lights.pw.toml"
+hash = "5bdaf8dac8408829a7ed2ebac342530d6918bba86889813df0939dc2efe62f99"
 metafile = true
 
 [[files]]
@@ -1402,6 +1397,11 @@ metafile = true
 [[files]]
 file = "mods/l_enders-cataclysm.pw.toml"
 hash = "0a509504c937a398ccabc71d56029690d43806378c7121928776407083c669ef"
+metafile = true
+
+[[files]]
+file = "mods/lambdynamiclights.pw.toml"
+hash = "ee85e4969a3ed5bac3d0bb2d52f134d64413d8d888497e284becc95a50902744"
 metafile = true
 
 [[files]]

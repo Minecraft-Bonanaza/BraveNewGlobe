@@ -1,0 +1,20 @@
+name = "Contraption Lights (Bi-directional Coloured Dynamic Lights)"
+filename = "contraption-lights-neoforge-1.21.1-1.5.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "39d150bba172c79123415381ddff9c180bf363fd"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8872877
+project-id = 1599108
+
+# LINKED TOGGLE: Contraption Lights + LambDynamicLights (all ON or all OFF).
+# LAMB mode is the Iris-safe backend; Veil / Sable Ragdolls stay out.
+[option]
+optional = true
+default = true
+description = "Lanterns on Create contraptions and Sable ships light the world. Keep LambDynamicLights in sync: both ON or both OFF."

@@ -3,7 +3,7 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
-## [0.9.27] — 2026-09-15
+## [0.9.28] — 2026-09-15
 
 ### Changed — large dungeon spacing bumped to ~2,500 blocks
 `stattinkerer:large_dungeon` (infested_temple/keep_kayra/kisegi_sanctuary) retuned from spacing
@@ -12,7 +12,14 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
 `.meshclaw` path in that script's `SRC`/`OUT`/`JAR` constants, same class of bug as the earlier
 `_common.py` `OUT_DIR` fix) and re-synced the packwiz hash chain.
 
-## [0.9.26] — 2026-09-14
+### Merged
+Reconciled with `origin/main`'s independent 0.9.26 (Contraption Lights, Combat Traces, Animated
+Inventory) — both branches had bumped past 0.9.25 with different content, so this branch's two
+entries were renumbered 0.9.26→0.9.27 (quest coverage, below) and 0.9.27→0.9.28 (this entry) to
+land after the already-published 0.9.26. Mod count carries origin's **170** forward unchanged by
+this branch's work; quest count carries this branch's **246** forward unchanged by origin's.
+
+## [0.9.27] — 2026-09-15
 
 ### Added — quest coverage for the 0.9.20–0.9.25 mod batch (4 new quests, 242 → 246)
 `MODLIST.md` had drifted to "158 mods / 0.9.19" while the pack was actually 166 mods / 0.9.25 —
@@ -46,7 +53,41 @@ to it. Fixed the doc, then went through each of those 8 mods against the quest b
 - **No fresh world needed.** Quest-book-only change (new nodes, no key renames) — progress-safe
   regen. Quest book is now **17 chapters / 246 quests** (was 242).
 - `MODLIST.md`, `QUESTS.md`, `README.md`, and `Notes.md`'s headline pack version/count also
-  brought current (0.9.19/158 → 0.9.25/166 for the modlist backfill, then this entry's 0.9.26).
+  brought current (0.9.19/158 → 0.9.25/166 for the modlist backfill, then this entry's 0.9.27).
+
+## [0.9.26] — 2026-09-14
+
+### Added — optional combat/inventory visuals
+- **Combat Traces 1.0.3** (CurseForge 1688598, `side = both`, **optional default on**) — pixel-art
+  Better Combat weapon trails + hit flashes. Cosmetic. Pack already has Better Combat 2.4.0,
+  Simply Swords 1.70.2, Player Animator (the versions the author tested).
+- **Animated Inventory 1.0.6** (CurseForge 1688531, `side = client`, **optional default on**) —
+  items slide between slots. Presentation only. Dedicated adapters are for Sophisticated / BNS,
+  not Reliable Backpacks / Create; those screens fall back to static rendering.
+
+### Added — Contraption Lights (Sable / Create dynamic lighting)
+- **Contraption Lights 1.5.1** (CurseForge 1599108, `side = both`, **optional default on**) —
+  lanterns/glowstone on Create contraptions and Sable ships light the world (and the other way
+  around). Copycats+ interiors count. Coloured light stays at upstream default **off**.
+- **LambDynamicLights 4.8.11** (CurseForge 393442, `side = client`, **optional default on**) —
+  LAMB backend (Iris-safe). Native Fabric+NeoForge jar; **Forgified Fabric API** already covers
+  the Fabric API dep — do not add stock Fabric API. Toggle with Contraption Lights (both ON or
+  both OFF).
+- **Not added:** Veil (VEIL mode / experimental shadows; disables under Iris) or **Sable
+  Ragdolls** (held-light while limp only).
+
+### Removed — leftover Thirst Was Taken configs
+- Deleted `pack/config/thirst/` (client/common/container/item_settings/keyword). The TWT jar was
+  already gone; these files were dead weight.
+
+### Notes
+- **No fresh world.** Jar adds + config delete. Applies on next launch.
+- Pack is now **0.9.26** / **170** mods (`combat-traces.pw.toml`, `animated-inventory.pw.toml`,
+  `contraption-lights.pw.toml`, `lambdynamiclights.pw.toml`).
+- **Needs, Not Necessities** / **Panels Not Screens** were evaluated as a TWT thirst replacement
+  and dropped — meal-driven thirst without idle drain/purity/kettle did not fit the survival layer.
+- Also evaluated and skipped: **Tessellate** (parallel region ticking vs Sable/Create), **Create:
+  Crystal Industry** (infinite budding ores + ore-spyglass).
 
 ## [0.9.25] — 2026-09-14
 
@@ -60,6 +101,9 @@ to it. Fixed the doc, then went through each of those 8 mods against the quest b
 ### Notes
 - **No fresh world.** Jar add only — no worldgen/datapack/loot change. Applies on next launch.
 - Pack is now **0.9.25** / **166** mods (`marketcoordination.pw.toml`).
+- Living docs brought current to **0.9.25** / **166** (`README.md`, `Notes.md`, `MODLIST.md`,
+  `SPECTRUM.md`, `QUESTS.md`, `LOOT.md`, `MaintainerInstructions.md`). The initial production
+  build is nearing completion; remaining work is fine-tuning the survival experience.
 
 ## [0.9.24] — 2026-09-13
 
@@ -249,7 +293,7 @@ Begins the "programmable warship" content pillar for the aeronautics/naval + Big
 - **No fresh world.** Script-only (`wda_dungeon_loot.js`). Already-opened chests keep
   their contents; unopened combat/boss dungeon chests roll the new pools on next
   launch. No new mods — pack stays **158**. `pack.toml` is **0.9.17**.
-  Current pack is **0.9.19** / **158**.
+  Current pack is **0.9.26** / **170**.
 - **Named Unique weapons stay out.** They skip the mod's Runic Tablet awakening
   minigame. The 0.9.15 denylist still holds (`uniqueLootTableWeight = 0` + pity
   100000 + empty `lootable_uniques` in `bigglobe_simplyswords_nouniques.zip`).
@@ -292,7 +336,7 @@ Begins the "programmable warship" content pillar for the aeronautics/naval + Big
   **zip** was the stale file — `index.toml` already had the correct sha256. Always
   `packwiz refresh` after touching a datapack zip, and commit **the zip + `index.toml` +
   `pack.toml` together**. Do not assume a zip "looks current."
-- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.19** / **158** mods.
+- `pack.toml` was **0.9.16** at this commit. Current pack is **0.9.26** / **170** mods.
   Warnautics **1.0.8** and the LootJS oxygen-tank hotfix stay.
   0.9.17 is script-only (Simply Swords WDA-scope rebalance).
 

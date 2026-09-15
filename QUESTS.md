@@ -3,7 +3,10 @@
 Guidance-only FTB Quests. **No line is gated behind another** — all attemptable anytime.
 Framework: `SPECTRUM.md` (a SIG = baseline → specialized career curve).
 
-**Shipped book (as of 0.9.25):** **17 chapters / 246 quests**.
+**Shipped book (as of 0.9.27):** **17 chapters / 246 quests**.
+The initial production build is nearing completion (content stack including in-house
+**Create: Market Maker** is in). Remaining pack work is **survival-layer tuning**, not new
+quest chapters.
 Committed `pack/config/ftbquests/**/*.snbt` is the source of truth
 (`bigGlobeAero/build_ftbquests.py` + `quest_lines/*.py`; IDs are SHA-1 of stable keys).
 Changing keys is a content rewrite, not a progress-safe regen. **No self-attest checkmarks.**
@@ -25,16 +28,18 @@ Two families of lines:
 ### Lines — all flat peers (no groups)
 1. **Create Core** — onboarding: kinetics, stress, first automation. Shared substrate every other line reuses.
 2. **Rails & Trains** — Tracks, Signalworks, Train Physics Reloaded, Threaded Trains (+ Trotting Wagons, Doped Horses).
-3. **Aeronautics** — Aeronautics, Sable, Aeroworks, Gyro, hose connectors, radars, Gadgets & Gizmos
-   thrusters/flight-control, Radiologistics comms towers, AeroPortals (informational); capstone =
-   reach the sky structures.
-4. **Cannons & Warfare (Ordnance)** — Gunpowder, Gunsmithing (CGS), Big Cannons + Going Ballistic + Terminal Ballistics; Warnautics = aerial-gunnery capstone.
+3. **Aeronautics** — Aeronautics 1.3.2, Sable, Aeroworks, Gyro, hose connectors, radars, Gadgets &
+   Gizmos thrusters/flight-control (real quest gated behind `gyro`), Radiologistics comms towers
+   (real quest gated behind `nav_radar`), AeroPortals (informational); CC: Tweaked scripts the
+   ship's brain; capstone = reach the sky structures.
+4. **Cannons & Warfare (Ordnance)** — Gunpowder, Gunsmithing (CGS), Big Cannons + Going Ballistic + Terminal Ballistics; **CC:CBC** for programmable fire-control; Warnautics = aerial-gunnery capstone.
 5. **Metalworking & Metallurgy** — Create: Metallurgy (foundries, alloys, bulk yields).
 6. **Power & Fuel** — Diesel Generators, Power Grid, Power Chip.
 7. **Logistics & Storage** — Factory Logistics, Aero Automated Logistics, Delivery Required, Create: Storage.
 8. **Industrial Enchanting** — Create: Enchantment Industry (small line: enchant by hand → automate → supply gear).
-9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market, Bountiful/Bounties,
-   Market Maker informational nudge). Earned currency, physical fulfillment; no minting.
+9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market,
+   Bountiful/Bounties) plus in-house **Create: Market Maker** (informational nudge, gated behind
+   `stall`). Earned currency, physical fulfillment; no minting.
 10. **Agriculture & Husbandry** — Farmer's Delight, Brewin' & Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Ratatouille, Animal Weights. (Serene Seasons / Project Atmosphere are environmental rules, not part of the line.)
 11. **Naval / High Seas** — Create: Better High Seas shipbuilding + WDA sea structures + Aquamirae as sea hazards/loot. The sea counterpart to Aeronautics.
 12. **Astronautics** — Creating Space rocketry & space logistics. Late-game capstone after Aeronautics + Power & Fuel; engineering-heavy, no "space magic."
@@ -51,6 +56,7 @@ _(13–17 are exploration/guidance lines — find the dungeon / find the portal 
 ## Candidate additions (still deciding)
 - **Settlement & Civic (MCA Reborn)** — optional social line; feeds Commerce.
 - **Medicine (More Diseases & Treatments)** — optional niche survival line.
+- **Programmable control** — not a standalone v1 line; fold CC: Tweaked / CC:CBC / Radiologistics into Aeronautics and Ordnance as the ship's/gun's brain.
 
 ## Fold / skip (v1)
 - **Textiles (Create: Cotton)** — too thin alone; fold into Agriculture or Civil Works, or skip.

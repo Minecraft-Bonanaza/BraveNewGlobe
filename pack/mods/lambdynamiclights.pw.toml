@@ -1,0 +1,20 @@
+name = "LambDynamicLights"
+filename = "lambdynamiclights-4.8.11+1.21.1.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "7b5afc75a094b4e8a7118f9856eec959b10f2422"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8780227
+project-id = 393442
+
+# LINKED TOGGLE: Contraption Lights + LambDynamicLights (all ON or all OFF).
+# Native NeoForge+Fabric jar; Forgified Fabric API already in the pack (do not add Fabric API).
+[option]
+optional = true
+default = true
+description = "Dynamic-light backend for Contraption Lights (LAMB / Iris-safe). Keep Contraption Lights in sync: both ON or both OFF."
