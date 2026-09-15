@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**158 mods**), grouped by purpose. Current pack **0.9.19**.
+Human-readable list of every mod in the pack (**166 mods**), grouped by purpose. Current pack **0.9.25**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -63,6 +63,15 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
   - **Azimuth API** _(dependency — camera/keybind library)_
 - **Create Aero Radars** — radar for aircraft
 - **Create: Radars** — general radar blocks
+- **Create: AeroPortals** — Sable airship SubLevels transfer through Nether/modded portals with the
+  pack's dimension-scale rules (proof-of-concept upstream; watch in multiplayer playtests)
+- **Create Aeronautics: Gadgets & Gizmos** — propulsion boosters (Thruster, Mini Thruster, Beam
+  Thruster, Fuel Oxidizer, Propulsion Upgrade) + flight-control layer (Contraption Controller,
+  Industrial Motor/Alternator, Smart Gearbox, Variable Transmission, bearings, joystick, Physics
+  Gantry, Powered Zipline, Entity Launcher, Claw); ships CC: Tweaked integration for all of it
+- **Create: Radiologistics** — wireless comms/compute towers (stacking Antennas, 3,000-block cap,
+  node-based Main Computer, Redstone Link Module, Jammer, Pilot helmet); integrates with Big
+  Cannons, Radars, and Aeronautics coordinate projection
 
 ### Create — Cannons & Ballistics
 - **Create Big Cannons** — buildable cannons/artillery
@@ -71,6 +80,19 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **CBC Terminal Ballistics** — terminal ballistics/impact mechanics
 - **Create: Gunsmithing** — firearms for Create
 - **Create: Gunpowder [aspctt]** — gunpowder/explosives production
+- **CC:CBC** — CC: Tweaked ↔ Create Big Cannons peripheral (`cannon_mount`): programmable fire
+  control — target angles, assemble/fire, full aim/speed telemetry
+
+## ComputerCraft
+Programmable computers + peripherals ("programmable warship" content pillar — pairs with the
+Aeronautics and Cannons lines above).
+- **CC: Tweaked** — in-world Lua computers, turtles, monitors, modems, speakers
+- **NeoPeripherals** — CC: Tweaked ↔ Sable bridge; radar peripheral (`neo_radar`) scans other
+  airships/ships for position/pose (targeting/autopilot scripting)
+- **Advanced Peripherals** — general CC automation: Chat Box, Player Detector, Environment
+  Detector, Geo Scanner, Block Reader, Inventory Manager, NBT Storage, Redstone Integrator,
+  Energy Detector, AR Goggles/Controller. _(ME Bridge / RS Bridge peripherals are inert — the
+  pack has no Applied Energistics 2 / Refined Storage.)_
 
 ## Combat & Explosions
 - **Better Combat** — animated melee combat overhaul
@@ -143,6 +165,8 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **Create: Stock Market** — Market Terminal for price history, trends & shop discovery
 - **Create: Villager Commerce** — villagers buy from player shops via Create stock networks
   (self-hosted jar; CF distribution disabled)
+- **Create: Market Maker** — the team's own custom Create economy addon (in-house, hosted on the
+  org's GitHub releases, not CurseForge/Modrinth; maintained in its own project repo)
 
 ## Utility & Quality of Life
 - **Corpse** — recover items from a death corpse
@@ -152,7 +176,7 @@ Human-readable list of every mod in the pack (**158 mods**), grouped by purpose.
 - **Better Days** — day/night length control
 - **Stat Tinkerer** — tweak player/entity stats
 - **Too Fast** — server-side movement/speed-limit fixes _(server-only)_
-- **FTB Quests** — guidance-only quest book (17 chapters / 242 quests)
+- **FTB Quests** — guidance-only quest book (17 chapters / 246 quests)
   - **FTB Library** _(dependency)_
   - **FTB Teams** _(dependency)_
 - **LootJS: KubeJS Addon** — combat-dungeon chest injection (`wda_dungeon_loot.js`)

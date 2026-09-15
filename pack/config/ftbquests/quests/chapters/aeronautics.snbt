@@ -388,6 +388,124 @@
 			]
 		}
 		{
+			title: "Through The Portal"
+			icon: "minecraft:crying_obsidian"
+			x: 2.0d
+			y: 4.0d
+			description: [
+				"**Create: AeroPortals** lets your whole airship carry straight through a Nether or modded portal — ship, riders, and cargo transfer together, no disassembly required."
+				"Just fly the ship's bounding box into the portal. Upstream calls this a proof of concept, so expect rough edges in multiplayer."
+			]
+			tasks: [
+				{
+					type: "dimension"
+					dimension: "minecraft:the_nether"
+					id: "9414743BD372FF79"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "C9B36AC7E50FCCB2"
+				}
+			]
+			id: "0CC5788FAE068245"
+			dependencies: [
+				"230DCCC9417DB294"
+			]
+		}
+		{
+			title: "Real Propulsion"
+			icon: "createthrusters:thruster"
+			x: 3.0d
+			y: 6.0d
+			description: [
+				"**Create Aeronautics: Gadgets \\& Gizmos** adds real propulsion. A **Thruster** burning off a **Fuel Oxidizer** punches straight up for hard vertical climbs no envelope alone can match."
+				"Wire in a **Sable Contraption Controller** to automate the burn — a node-graph flight computer built for exactly this. Smart Gearboxes, Variable Transmissions, and Vector/Servo/Aileron Bearings round out full flight-control rigs."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createthrusters:thruster"
+					count: 2
+					id: "F165F2A64E034E72"
+				}
+				{
+					type: "item"
+					item: "createthrusters:fuel_oxidizer"
+					id: "43083D11A81200AE"
+				}
+				{
+					type: "item"
+					item: "createthrusters:analogue_contraption_controller"
+					id: "E7ADF2525D7372E5"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "3D8FB1829CB6A4BE"
+				}
+				{
+					type: "item"
+					item: "createthrusters:thruster"
+					count: 1
+					id: "77CAE1C338B32948"
+				}
+			]
+			id: "B25CB6C3498D6FDB"
+			dependencies: [
+				"E0EB404AAA95E578"
+			]
+		}
+		{
+			title: "On The Air"
+			icon: "radiologistics:main_computer"
+			x: -3.0d
+			y: 8.0d
+			description: [
+				"**Create: Radiologistics** gives your fleet long-range wireless comms and computation. Stack **Antennas** on a **Radio Transmitter** — each segment adds range, up to a 3,000-block cap — and wire in a **Main Computer** to run node-based logic over the link."
+				"Pairs with a **Wired Inertia Fuze** for remote-controlled Big Cannons rigs, or pull Aero Radar coordinates straight into your programs."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "radiologistics:radio_transmitter"
+					id: "1A59B7D232477855"
+				}
+				{
+					type: "item"
+					item: "radiologistics:antenna"
+					count: 3
+					id: "479ED573F10D1924"
+				}
+				{
+					type: "item"
+					item: "radiologistics:main_computer"
+					id: "522E6293AF89F3B3"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "353A95BE28D6884A"
+				}
+				{
+					type: "item"
+					item: "radiologistics:antenna"
+					count: 3
+					id: "18E85A66B2460EDB"
+				}
+			]
+			id: "10F71637BAB225C8"
+			dependencies: [
+				"414B7A69EA2E3B4D"
+			]
+		}
+		{
 			title: "Eyes In The Sky"
 			icon: "create_radar:plane_radar"
 			x: -1.0d

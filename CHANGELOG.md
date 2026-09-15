@@ -3,6 +3,51 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.27] — 2026-09-15
+
+### Changed — large dungeon spacing bumped to ~2,500 blocks
+`stattinkerer:large_dungeon` (infested_temple/keep_kayra/kisegi_sanctuary) retuned from spacing
+125/separation 111 (~2,000 blk) to spacing 156/separation 139 (~2,496 blk), keeping the same
+~0.89 jitter ratio. Regenerated via `bigGlobeAero/patch_wda_compat.py` (also fixed a stale
+`.meshclaw` path in that script's `SRC`/`OUT`/`JAR` constants, same class of bug as the earlier
+`_common.py` `OUT_DIR` fix) and re-synced the packwiz hash chain.
+
+## [0.9.26] — 2026-09-14
+
+### Added — quest coverage for the 0.9.20–0.9.25 mod batch (4 new quests, 242 → 246)
+`MODLIST.md` had drifted to "158 mods / 0.9.19" while the pack was actually 166 mods / 0.9.25 —
+Create: AeroPortals, CC: Tweaked, NeoPeripherals, Create: Radiologistics, CC:CBC, Advanced
+Peripherals, Create Aeronautics: Gadgets & Gizmos, and Create: Market Maker had never been added
+to it. Fixed the doc, then went through each of those 8 mods against the quest book's own rules
+(guidance-only, no self-attest checkmarks) to decide what needed a quest:
+- **Aeronautics chapter (+3):** added real, item-gated nodes for **Create Aeronautics: Gadgets &
+  Gizmos** (`thrusters` — Thruster + Fuel Oxidizer + Sable Contraption Controller, gated behind
+  `gyro`) and **Create: Radiologistics** (`radio_towers` — Radio Transmitter + 3 Antennas + Main
+  Computer, gated behind `nav_radar`). Registry ids jar-verified (G&G's actual content mod is the
+  bundled `createthrusters` namespace, not `gadgetsngizmos`, which is just its shared library).
+  Also added a light informational node for **Create: AeroPortals** (`portal_hop` — completes on
+  entering the Nether, since the mod has no craftable items of its own) pointing players at the
+  feature; flagged as upstream proof-of-concept in the description.
+- **Commerce chapter (+1):** added an informational node for **Create: Market Maker**
+  (`market_coordination`, gated behind the existing `stall` quest) — checked the mod's own source
+  and confirmed it registers zero items/blocks/advancements (it's a server-side economy layer over
+  the existing Villager Commerce stalls), so there's nothing to gate on; the node just tells
+  players the system exists and reuses the same `merchant_stall` ownership check as `stall`.
+- **CC: Tweaked, NeoPeripherals, CC:CBC, Advanced Peripherals — deliberately skipped.** All four
+  are Lua-scripting power-user tools with no clean objectively-detectable "wrote a working script"
+  task; same treatment as JEI/Sodium/ModernFix, which also carry no quest presence.
+- Fixed `bigGlobeAero/quest_lines/_common.py`'s `OUT_DIR`, which was hardcoded to a stale
+  `~/.meshclaw/workspace/...` path from an old session instead of this repo. Regenerated all 17
+  chapters via `build_ftbquests.py` and diffed: only `aeronautics.snbt` and `commerce.snbt`
+  changed, both pure additions — the other 15 chapters are byte-identical, so no existing player
+  progress is affected.
+
+### Notes
+- **No fresh world needed.** Quest-book-only change (new nodes, no key renames) — progress-safe
+  regen. Quest book is now **17 chapters / 246 quests** (was 242).
+- `MODLIST.md`, `QUESTS.md`, `README.md`, and `Notes.md`'s headline pack version/count also
+  brought current (0.9.19/158 → 0.9.25/166 for the modlist backfill, then this entry's 0.9.26).
+
 ## [0.9.25] — 2026-09-14
 
 ### Added — Create: Market Maker (custom in-house Create economy mod)

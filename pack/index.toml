@@ -338,7 +338,7 @@ hash = "69437cf244898b5b15a5df8bf8fbe291e6d7f1e880ed9816c532369e5c7d44f4"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
-hash = "7bbb4c8587e6024dd285d73648a15b81881efb0a24bc23655a5b31dd7aff72cd"
+hash = "c3b1fa1d3e5725d8e4378ad82ff57502801292b7ee2e855d7c830ff217664d2a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aether.snbt"
@@ -366,7 +366,7 @@ hash = "bece4c45d3ea04ffa81b52abe35489b9edd4e73f37c5cf07978c74f2ba3280f1"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/commerce.snbt"
-hash = "9f356564816375804c0e5dbf881aef30488a4b16ab8f16d7df812cc5de27bf54"
+hash = "2a5b0c1e7095e6b416d7b93cebbb86ee6da2dab629580122e416b49cba0a544e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/create_core.snbt"
@@ -858,7 +858,7 @@ hash = "8fc125b60766c875d079d43a06fbfb0bd09ceb20bae6456d853407706e7d1fb6"
 
 [[files]]
 file = "datapacks/bigglobe_whendungeonsarise.zip"
-hash = "b955305970478da4ae11418e1c75837044eebaaf76fbc78fc9a52467b9df778b"
+hash = "1ef1ba75079231cab69d18f0239d3eb1f5ea2cc9a09019ca91433d7848eada22"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"

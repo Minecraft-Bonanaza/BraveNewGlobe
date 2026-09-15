@@ -222,6 +222,34 @@
 			]
 		}
 		{
+			title: "The Invisible Hand"
+			icon: "createvillagercommerce:merchant_stall"
+			x: 4.0d
+			y: 3.0d
+			description: [
+				"Did you know? **Market Maker** -- this pack's own in-house economy layer -- runs quietly"
+				"behind every stall, tracking daily spend, growth, and regional specialization per market."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createvillagercommerce:merchant_stall"
+					id: "7F3918F1AD5241EB"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 15
+					id: "E95CE59C7EF35DF0"
+				}
+			]
+			id: "7CF876B8B328C38D"
+			dependencies: [
+				"C528ECD9C92941D1"
+			]
+		}
+		{
 			title: "Taking the Job"
 			icon: "bountiful:bountyboard"
 			x: 0.0d

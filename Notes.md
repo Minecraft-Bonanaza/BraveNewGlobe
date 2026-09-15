@@ -24,10 +24,11 @@ Fixes:
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **0.9.19**, **158** mods. Quest book **17 / 242**.
+- **Version / count:** `pack.toml` **0.9.26**, **166** mods. Quest book **17 / 246**.
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). **0.9.19** removes
   **Sable: Destructive** (reverted the 0.9.18 addition per co-curator decision). 0.9.17
-  is the Simply Swords WDA-scope loot rebalance (script-only).
+  is the Simply Swords WDA-scope loot rebalance (script-only). See `CHANGELOG.md` for
+  everything since (0.9.20–0.9.26: Aeronautics/CC/Radiologistics mod adds + matching quests).
 - **No fresh overworld** from 0.7.1 → 0.9.18. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
