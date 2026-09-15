@@ -3,6 +3,26 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.29] — 2026-09-15
+
+### Fixed — Linear Bearing dedicated-server crash (downgrade 1.3.5 → 1.3.3)
+- **Create: Linear Bearing** rolled back **1.3.5 → 1.3.3** (Modrinth `ZTwCjE7O` version `Ph1Arc6B`).
+- **Why:** `linearbearing-1.3.5.jar` crashed the **dedicated server** during mod construction —
+  `RuntimeException: Attempted to load class net/minecraft/client/resources/model/BakedModel for
+  invalid dist DEDICATED_SERVER` at `LinearBearing.<init>(LinearBearing.java:67)`. The mod's main
+  constructor references a **client-only** rendering class without a dist guard, so NeoForge's
+  RuntimeDistCleaner aborts mod loading on a server (crash logs 04.17.33 and 03.57.26).
+- 1.3.5 was the latest release (no upstream fix available); its changelog added the **Bubble Gum
+  Block**, the likely source of the unguarded client-model reference. 1.3.3 predates that.
+- ⚠️ **Not guaranteed** — if 1.3.3 still trips the same dist bug on the next server build, the
+  fallback is to remove Linear Bearing entirely (per curator direction). Reindexing cannot fix this
+  class of bug; it lives inside the jar.
+
+### Notes
+- **No fresh world.** Jar version rollback only — no worldgen/datapack/loot change. Applies on next
+  server launch. Same block IDs, so existing Linear Bearing placements are unaffected.
+- Pack is now **0.9.29**.
+
 ## [0.9.28] — 2026-09-15
 
 ### Changed — large dungeon spacing bumped to ~2,500 blocks
