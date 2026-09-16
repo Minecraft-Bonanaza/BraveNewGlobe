@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.36] — 2026-09-16
+
+### Changed — replaced Create: Tracks with Create: Tracks+ (fixes incompatibility)
+- Removed **Create: Tracks** (`create-tracks`, 1.0.1 — its only release) and added **Create: Tracks+**
+  (`create-tracks+`, `tracks_plus-1.0.6b6.jar`, from Modrinth). Create: Tracks+ is a fork of Create: Tracks
+  styled after Create: Trackwork and is **explicitly incompatible with the original** ("Please replace
+  it"), which is what triggered the incompatibility error. Tracks+ is the variant the newer Create:
+  Aeronautics expects. 1.0.6b6 is its latest (beta) build; nothing higher exists.
+
 ## [0.9.35] — 2026-09-15
 
 ### Added — Aeronautics boarding / signaling
