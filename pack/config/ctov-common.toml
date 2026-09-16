@@ -1,0 +1,8 @@
+#Structure spawning
+[structures]
+	#Should CTOV small village generates?
+	generatesmallVillage = false
+	#Should CTOV medium village generates?
+	generatemediumVillage = false
+	#Should CTOV large village generates?
+	generatelargeVillage = true

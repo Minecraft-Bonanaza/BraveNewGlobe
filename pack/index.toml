@@ -46,7 +46,7 @@ hash = "755e3b359a6da36b05ab004888ab26af7b3c3ddd01c0d29e720b6e0bd5f34e23"
 
 [[files]]
 file = "config/bigglobe/Big Globe.json5"
-hash = "cdd9df02a4fdfc721fca17048297c8ffee2d572380d52f542bf75fd9816fa3aa"
+hash = "a8929e9c3aeed1dfa0f70e9ead06482dd3b2b8170751792700cea55ed805da32"
 
 [[files]]
 file = "config/bigglobe/mixins.properties"
@@ -214,7 +214,7 @@ hash = "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a"
 
 [[files]]
 file = "config/cristellib/bigglobe/structure_placement_config.json5"
-hash = "869d31180b5391169adcd4aaba6a304132ce386ee77fe256a02726442ba2b7fa"
+hash = "9e75800b1c59c83e738dbe942120018fe71c6bc1f03d3550456c3a6cf0aa4b73"
 
 [[files]]
 file = "config/cristellib/bigglobe/structure_toggle_config.json5"
@@ -263,6 +263,10 @@ hash = "1e75d7a43ec8049829f7e757444ff51c6f162780d4eeff3af6e882eda6aee59a"
 [[files]]
 file = "config/cristellib/takesapillage/structure_toggle_config.json5"
 hash = "c7f6abadc1cd9658ac624852d13684784dbf015f5968aeb3a7783dab04784abe"
+
+[[files]]
+file = "config/ctov-common.toml"
+hash = "484fe215d58d3e091222ebe181d7b4cbabeb035bdf0af2a5b4b9b65ec6bba037"
 
 [[files]]
 file = "config/curios-client.toml"
@@ -814,7 +818,7 @@ hash = "41b82f8c59d5388beb66ae355a5f25bed85c9c9dba28fb68703da67e41a0f222"
 
 [[files]]
 file = "datapacks/bigglobe_ctov_compat.zip"
-hash = "7f6e98d55faec37e038b76f5691349b52586e98e68e0f6885363ac1322437e32"
+hash = "ac87d024d1a36b9a58f2db3c743c0c2b61ac9601ee267977592997a707c583fc"
 
 [[files]]
 file = "datapacks/bigglobe_illagerinvasion_spacing.zip"
@@ -850,7 +854,7 @@ hash = "a86f36a4db4249edd47566082c3043fac7e408740c64e263f1eb2d82031f01fa"
 
 [[files]]
 file = "datapacks/bigglobe_tags.zip"
-hash = "52cb3d3c32dc4653c9d9643aeacf5f1b24ccf4583e4da439e138ea5b71e5fb99"
+hash = "ecf5ba2e15b4a5f5fe93a2319605c7eeb295fe55949649d4f9ae895a6b7defd0"
 
 [[files]]
 file = "datapacks/bigglobe_takespillage (1).zip"
