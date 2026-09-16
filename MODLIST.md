@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**171 mods**), grouped by purpose. Current pack **0.9.35**.
+Human-readable list of every mod in the pack (**171 mods**), grouped by purpose. Current pack **1.0.0**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -32,14 +32,13 @@ Human-readable list of every mod in the pack (**171 mods**), grouped by purpose.
 - **Create: Ratatouille** — cooking/food processing
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
 - **Create Cardan Shafts** — drivetrain/shaft additions
-- **Create: Linear Bearing** — linear-motion bearing for contraptions
 - **Create: Gears n' Kinetics** — kinetic additions
 - **Create: Dragons Plus** — dragon-themed content
 - **Creating Space** — rocketry / space content
 - **Strut Your Stuff (Struts)** — structural strut/beam building blocks
 
 ### Create — Trains & Rails
-- **Create: Tracks** — track/rail additions
+- **Create: Tracks+** — track/rail additions (Aeronautics-compatible fork; replaces Create: Tracks)
 - **Create: Threaded Trains** — multithreaded train performance
 - **Create Train Physics Reloaded** — train physics overhaul
 - **Create: Signalworks** — advanced rail signaling

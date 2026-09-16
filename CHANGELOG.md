@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.0] — 2026-09-16
+
+### Added
+- **[CHARTER.md](CHARTER.md)** — in-universe founding charter (player-facing).
+
+### Notes
+- **First production release.** Content stack, quest book (**17 / 246**), and in-house
+  **Create: Market Maker** (`0.5.1`) are in. `0.9.27`–`0.9.37` were the precursor cuts.
+- Pack is **1.0.0** / **171** mods. No jar or datapack change vs `0.9.37`.
+- **No fresh world.**
+
 ## [0.9.37] — 2026-09-16
 
 ### Changed — village pool trims

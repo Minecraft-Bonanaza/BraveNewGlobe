@@ -4,7 +4,7 @@ Framework for designing **FTB Quests** around player specialization.
 
 Brave New Globe is a **reality simulator**: almost everything can be done the simple way, but investing in tools, industry, and knowledge unlocks better yields, safer processes, and larger scale. A **Special Interest Group (SIG)** is a career path shaped like that — not every mod, and not every piece of content.
 
-As of **0.9.35** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Remaining pack work is **survival-layer tuning** (seasons, diseases, farming/food, climate), not new SIG chapters.
+As of **1.0.0** (first production release) the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Survival-layer polish (seasons, diseases, farming/food, climate) may continue in `1.0.x`; not new SIG chapters.
 
 ---
 
@@ -102,7 +102,7 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 
 ### Shared industrial substrate
 
-- **Create** + Bits 'n' Bobs, Cardan Shafts, Linear Bearing, Gears n' Kinetics, Strut Your Stuff  
+- **Create** + Bits 'n' Bobs, Cardan Shafts, Gears n' Kinetics, Strut Your Stuff  
 - Create: Storage  
 - These are **tools every SIG may use**, not a single career.
 
@@ -242,7 +242,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 |--|--|
 | **Baseline** | Walking, boats, minecarts |
 | **Specialized** | Trotting Wagons; Doped Horses; Create train networks with Tracks, Signalworks, Train Physics Reloaded (Threaded Trains = performance support) |
-| **Core mods** | Create: Tracks, Create: Signalworks, Create Train Physics Reloaded, Create: Threaded Trains, Trotting Wagons, Doped Horses |
+| **Core mods** | Create: Tracks+, Create: Signalworks, Create Train Physics Reloaded, Create: Threaded Trains, Trotting Wagons, Doped Horses |
 | **Adjacent** | Logistics & Freight, Commerce (station markets), Metalworking (rails), Animal Husbandry (draft animals via Weights) |
 
 **Suggested quest beats**

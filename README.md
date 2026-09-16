@@ -4,11 +4,11 @@ A [Big Globe](https://modrinth.com/mod/big-globe) modpack for **Minecraft 1.21.1
 **NeoForge** — Create-ecosystem tech, cannons, aeronautics, and hand-authored Big Globe
 world/spawn compatibility.
 
-Current pack: **0.9.35** — **171** mods. Quest book **17 chapters / 246 quests**.
+Current pack: **1.0.0** — **171** mods. Quest book **17 chapters / 246 quests**.
 
-The **initial production build is nearing completion**. The content stack is in — including the
-team's in-house **Create: Market Maker** economy mod — and remaining work is **fine-tuning the
-survival experience** (seasons, diseases, farming/food, climate).
+**1.0.0 is the first production release.** The content stack is in — including the team's
+in-house **Create: Market Maker** economy mod. Survival-layer polish (seasons, diseases,
+farming/food, climate) may continue in `1.0.x`.
 
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
 - **How it's delivered:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**;
@@ -24,7 +24,7 @@ survival experience** (seasons, diseases, farming/food, climate).
 - **Big Globe world generation** — with hand-authored compatibility datapacks for spawns, structures,
   and cross-mod integration (shipped via Paxi).
 - **Survival & QoL** — seasons, diseases, farming and food, villager overhauls, and supporting
-  libraries. This layer is what is being tuned for the production cut.
+  libraries. This layer may still get polish in `1.0.x`.
 - **Optional visuals** — Iris shaders, Distant Horizons, Simple Clouds, and other client-side eye-candy
   that can be toggled off on low-spec machines.
 
@@ -33,6 +33,7 @@ survival experience** (seasons, diseases, farming/food, climate).
   auto-update the pack as a player (start here if you just want to play).
 - **[Maintainer Instructions](MaintainerInstructions.md)** — how the pack is built and how to add/update
   mods with packwiz.
+- **[CHARTER.md](CHARTER.md)** — in-universe founding charter (player-facing lore).
 - **[SPECTRUM.md](SPECTRUM.md)** — Special Interest Group framework for FTB Quests (baseline →
   specialized careers).
 - **[QUESTS.md](QUESTS.md)** — shipped quest book (17 chapters / 246 quests) and line list.
