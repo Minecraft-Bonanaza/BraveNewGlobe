@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.37] — 2026-09-16
+
+### Changed — village pool trims
+- **CTOV villages:** removed all `medium/` size variants, keeping only `large/` (42 → 21 structures).
+  Every CTOV village that spawns is now a large one; spawn frequency (spacing ~1000 blk) is unchanged.
+- **Towns & Towers `towns`:** exclusion vs `bigglobe_ctov:villages` lowered 16 → 8 chunks (~256 → ~128 blk),
+  so T&T villages may sit closer to CTOV villages.
+
 ## [0.9.36] — 2026-09-16
 
 ### Changed — replaced Create: Tracks with Create: Tracks+ (fixes incompatibility)
