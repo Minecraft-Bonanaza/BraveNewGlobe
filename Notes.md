@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.0.0)
+## Current pack state (1.0.1)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.0.0**, **171** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.0.1**, **175** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,12 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.0.x`.
+- **1.0.1:** optional client jars — **Sound Physics Remastered** + **Presence Footsteps**
+  (default off), **3D Skin Layers** + **Traveler's Titles** (default on). CTOV villages
+  retuned (slope/hilliness gate off, climate-band land, large-only; T&T exclusion 8→4).
+  Village grid needs **unexplored chunks**. Do **not** add **Nvidium** (Iris disables it;
+  it is a Sodium terrain renderer, not GPU worldgen). **Terrain Diffusion** would replace
+  Big Globe; do not add it.
 - **1.0.0:** in-universe **[CHARTER.md](CHARTER.md)**. No jar or datapack change vs 0.9.37.
 - **0.9.35:** **Climbable Ropes 2.1.3** (pinned to Aeronautics 1.3.2 / Simulated 1.3.x —
   older Climbable Ropes + Aeronautics 1.2.1 crashed) and **Create: WarHorn 1.0.1**. Jar
@@ -72,8 +78,10 @@ Living rules. CHANGELOG stays historical.
   Manned Cannons** (evaluated 0.9.26, skipped). **ITOWT** jar stays out (speculation
   bookmark only — see Later expansion bookmarks). **Create: Server Optimizer** (Create
   tick-spreading mixins vs Sable/Aeronautics). Do **not** `packwiz update` **Climbable
-  Ropes** without bumping Aeronautics in lockstep.
-- **No fresh overworld** from 0.7.1 → 1.0.0. New Cataclysm / Bosses'Rise / Born in Chaos /
+  Ropes** without bumping Aeronautics in lockstep. **Nvidium** / **Acedium** (Iris
+  disables the mesh-shader backend; it does not generate chunks). **Terrain Diffusion**
+  (would replace Big Globe).
+- **No fresh overworld** from 0.7.1 → 1.0.1. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
@@ -211,10 +219,12 @@ says what to keep vs strip.
   **CC:CBC** stays the pack gunnery brain. Revisit only as a pair with a curated Ambush
   datapack, or as MCA-only gun crews with Ambush spawn **off**.
 
-## Optional visuals (0.9.26)
+## Optional visuals (0.9.26 / 1.0.1)
 
 **Combat Traces** (Better Combat trails, `side = both`, optional default on) and
-**Animated Inventory** (client, optional default on). Do **not** re-add **Needs, Not
+**Animated Inventory** (client, optional default on). **1.0.1** adds **3D Skin Layers**
+and **Traveler's Titles** (client, optional default on) plus **Sound Physics Remastered**
+and **Presence Footsteps** (client, optional default off). Do **not** re-add **Needs, Not
 Necessities** or **Panels Not Screens** — evaluated as a TWT replacement and dropped.
 Do **not** re-add `pack/config/thirst/` (dead TWT configs, removed in 0.9.26).
 

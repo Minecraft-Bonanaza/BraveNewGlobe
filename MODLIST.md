@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**171 mods**), grouped by purpose. Current pack **1.0.0**.
+Human-readable list of every mod in the pack (**175 mods**), grouped by purpose. Current pack **1.0.1**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -214,6 +214,10 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **AppleSkin** — hunger/saturation HUD info
 - **Just Enough Items (JEI)** — recipe/item lookup
 - **Animated Inventory** `1.0.6` — items slide between slots _(client, optional, default on)_
+- **3D Skin Layers** `1.11.2` — 3D outer-skin layers on player models _(client, optional, default on)_
+- **Traveler's Titles** `5.1.3` — biome/dimension title cards _(client, optional, default on)_
+- **Sound Physics Remastered** `1.21.1-1.5.1` — occlusion and reverb _(client, optional, default off)_
+- **Presence Footsteps (NeoForge)** `1.21.1-1.12.0-beta.1` — material-specific footsteps _(client, optional, default off)_
 - **Mod Menu** — mod list/config screen _(client)_
 
 > **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled

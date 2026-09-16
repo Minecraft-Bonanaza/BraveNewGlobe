@@ -3,6 +3,26 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.1] — 2026-09-16
+
+### Added — optional client audio / HUD
+- **Sound Physics Remastered** `1.21.1-1.5.1` (Modrinth `qyVF9oeo`, `side = client`, **optional default off**) — occlusion and reverb. CPU cost around large ships / Big Globe terrain, so default off.
+- **Presence Footsteps (NeoForge)** `1.21.1-1.12.0-beta.1` (Modrinth `JIEwmDVI`, unofficial NeoForge port; `side = client`, **optional default off**) — material-specific footsteps. Pairs with Sound Physics. Official Presence Footsteps is Fabric/Forge.
+- **3D Skin Layers** `1.11.2` (Modrinth `zV5r3pPn`, `side = client`, **optional default on**) — 3D outer-skin layers on player models.
+- **Traveler's Titles** `5.1.3` (Modrinth `JtifUr64`, `side = client`, **optional default on**) — biome/dimension title cards. Uses **YUNG's API** already in the pack. Big Globe biomes may show raw ids until a lang overlay exists; vanilla / Incendium / Twilight Forest still title.
+
+### Changed — CTOV village spawn (co-creator, after 1.0.0)
+- **Hilliness / slope gate off** for large CTOV villages; biome eligibility broadened to climate-band land. Medium/small dropped from the grid and spillover overriders (large-only). Slope-probe overriders keep spawn-log biome vs slope denials readable.
+- **Towns & Towers `towns`** exclusion vs `bigglobe_ctov:villages` **8 → 4** chunks.
+- **Cataclysm** empty-set salts for burning_arena / cursed_pyramid / frosted_prison clamped to valid int32.
+- Big Globe **Log structure spawn attempts** filtered to villages (diagnose CTOV natural-spawn).
+
+### Notes
+- Optional client jars apply on next launch (**no fresh world**).
+- Village / salt datapack changes need **unexplored chunks** (or a fresh overworld) to retile the grid.
+- Pack is now **1.0.1** / **175** mods.
+- Not added: **Nvidium** (Sodium mesh-shader backend; disables under Iris; does not generate chunks). GPU worldgen is **Terrain Diffusion**, which would replace Big Globe — not a Nvidium feature.
+
 ## [1.0.0] — 2026-09-16
 
 ### Added
