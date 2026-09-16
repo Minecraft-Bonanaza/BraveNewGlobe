@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**170 mods**), grouped by purpose. Current pack **0.9.28**.
+Human-readable list of every mod in the pack (**171 mods**), grouped by purpose. Current pack **0.9.35**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -23,14 +23,14 @@ Human-readable list of every mod in the pack (**170 mods**), grouped by purpose.
 - **Create: Copycats+** — copycat/decoration blocks
 - **Create: Enchantment Industry** — automated enchanting
 - **Create: Power Chip** — compact power/logic
-- **Create: Power Grid** — electrical power network
+- **Create: Power Grid** `0.6.1` — electrical power network
 - **Create: Diesel Generators** — fuel-based power
 - **Create: Metallurgy** — metal processing
 - **Create: Cotton** — cotton/textiles
 - **Create: Storage [Neo/Forge]** — storage expansion
 - **Create Factory Logistics** — factory/logistics automation
 - **Create: Ratatouille** — cooking/food processing
-- **Create: Bits 'n' Bobs** — misc machines/parts
+- **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
 - **Create Cardan Shafts** — drivetrain/shaft additions
 - **Create: Linear Bearing** — linear-motion bearing for contraptions
 - **Create: Gears n' Kinetics** — kinetic additions
@@ -59,9 +59,12 @@ Human-readable list of every mod in the pack (**170 mods**), grouped by purpose.
 - **Create Aeronautics: Compatibility** — cross-mod compat patches
 - **Create Aeronautics: Automated Logistics** — cargo/logistics for aircraft
 - **Create Aeronautics: Gyro Stabilizers** — flight stabilization
-- **Create Aeronautics: Throwable Rope Connector** — rope/connection tool
+- **Create Aeronautics: Throwable Rope Connector** — rope/connection tool (places connectors)
+- **Climbable Ropes for Create Aeronautics** `2.1.3` — empty-hand climb on Simulated ropes / plunger
+  lines. Pinned to Aeronautics **1.3.2** (older pair crashed).
+- **Create: WarHorn** `1.0.1` — kinetic long-range horn (stationary or Aeronautics airships)
 - **Create Aeronautics: Delivery Required** — delivery contracts & logistics for aircraft contraptions
-- **Create: Aeroworks** — aeronautics expansion
+- **Create: Aeroworks** `1.5.0` — cockpit Control Stand / modules / Drive-By-Sable wiring
 - **Create: Warnautics** `1.0.8` — military/combat aeronautics (cruise missile; needed by the
   0.9.15 JACKPOT pool). Do not roll back to 1.0.3.
 - **Create: Better High Seas** — ships / naval content
@@ -78,7 +81,7 @@ Human-readable list of every mod in the pack (**170 mods**), grouped by purpose.
 ### Create — Cannons & Ballistics
 - **Create Big Cannons** — buildable cannons/artillery
   - **Ritchie's Projectile Library** _(dependency)_
-- **Create Big Cannons: Going Ballistic** — CBC expansion
+- **Create Big Cannons: Going Ballistic** `0.3.1` — CBC expansion (Terminal Ballistics compat)
 - **CBC Terminal Ballistics** — terminal ballistics/impact mechanics
 - **Create: Gunsmithing** — firearms for Create
 - **Create: Gunpowder [aspctt]** — gunpowder/explosives production
@@ -146,7 +149,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **In Control!** — mob spawning rules/control
 
 ## Farming, Food & Survival
-- **Farmer's Delight** — cooking & farming expansion
+- **Farmer's Delight** `1.3.4` — cooking & farming expansion
 - **Brewin' And Chewin'** — food & drink additions
 - **Burnt Basic** — cooking/burning mechanics
 - **Realistic Farmland** — realistic soil/farming
@@ -161,9 +164,9 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 ## Economy
 - **Create: Market Maker** `V0.5.0` — **in-house** Create economy addon (`marketcoordination`).
   GitHub releases (`Minecraft-Bonanaza/Create--Market-Maker`), not CurseForge/Modrinth.
-- **Create: Numismatics** — Create-styled coin & bank-card currency
+- **Create: Numismatics** `1.1.0` — Create-styled coin & bank-card currency (Sable packet fix; no `/payall`)
   - **Create Numismatics: Villager Currency** — villager trades use Numismatics coins instead of emeralds
-  - **Create: Numismatics Utils** — Bank Meter HUD & remote account access
+  - **Create: Numismatics Utils** `2.3` — Bank Meter HUD & remote account access
   - **Numismatics Calculator** — client-side coin denomination calculator _(client)_
 - **Create: Tradeworks** — physical barter stalls (tablecloths & shelves)
 - **Create: Marketplace** — server-wide shop directory (browse only; trade at the vendor block)
@@ -191,7 +194,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   - **Better Advanced Tooltips** _(dependency)_
 
 ## Performance
-- **Sodium** — rendering engine optimization _(client; also used by Contraption Lights / LambDynamicLights)_
+- **Sodium** `0.8.13` — rendering engine optimization _(client; also used by Contraption Lights / LambDynamicLights)_
 - **Lithium (Fabric/NeoForge)** — game-logic optimization
 - **FerriteCore ((Neo)Forge)** — memory-usage optimization
 - **ModernFix** — performance & memory fixes

@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (0.9.28)
+## Current pack state (0.9.35)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **0.9.28**, **170** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **0.9.35**, **171** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,12 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.0** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Remaining work is **fine-tuning the survival experience**
   (seasons, diseases, farming/food, climate).
+- **0.9.35:** **Climbable Ropes 2.1.3** (pinned to Aeronautics 1.3.2 / Simulated 1.3.x —
+  older Climbable Ropes + Aeronautics 1.2.1 crashed) and **Create: WarHorn 1.0.1**. Jar
+  bumps: Going Ballistic 0.3.1, Sodium 0.8.13, Aeroworks 1.5.0, Numismatics 1.1.0 + Utils
+  2.3, Farmer's Delight 1.3.4, Power Grid 0.6.1, Bits 'n' Bobs 2.3.5 (+ Azimuth 1.4.8,
+  Struts 1.3.1). Do **not** use Numismatics `/payall`. Do **not** add **Create: Server
+  Optimizer**.
 - **0.9.26:** optional **Combat Traces 1.0.3** (Better Combat trails, both, default on),
   **Animated Inventory 1.0.6** (client, default on), and **Contraption Lights 1.5.1** +
   **LambDynamicLights 4.8.11** (linked, default on). Dead TWT `pack/config/thirst/` is gone.
@@ -63,8 +69,10 @@ Living rules. CHANGELOG stays historical.
   **Sable Ragdolls** (Contraption Lights uses LambDynamicLights, not those). **Tessellate**
   and **Create: Crystal Industry** (evaluated 0.9.26, skipped). **AMBUSH** / **Create:
   Manned Cannons** (evaluated 0.9.26, skipped). **ITOWT** jar stays out (speculation
-  bookmark only — see Later expansion bookmarks).
-- **No fresh overworld** from 0.7.1 → 0.9.28. New Cataclysm / Bosses'Rise / Born in Chaos /
+  bookmark only — see Later expansion bookmarks). **Create: Server Optimizer** (Create
+  tick-spreading mixins vs Sable/Aeronautics). Do **not** `packwiz update` **Climbable
+  Ropes** without bumping Aeronautics in lockstep.
+- **No fresh overworld** from 0.7.1 → 0.9.35. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not

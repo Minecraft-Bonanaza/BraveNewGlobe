@@ -3,6 +3,38 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [0.9.35] — 2026-09-15
+
+### Added — Aeronautics boarding / signaling
+- **Climbable Ropes for Create Aeronautics 2.1.3** (CurseForge 1528764, file 8769644) — empty-hand
+  climb on Simulated rope strands and plunger lines (W/S, sneak drop, space mantle; wrench zipline
+  on plunger ropes). Complements Throwable Rope Connector (that one *places* connectors). **Pinned
+  to 2.1.3** because it is compiled against Aeronautics **1.3.2** / Simulated `[1.3.0,1.4.0)`. Older
+  Climbable Ropes + Aeronautics 1.2.1 / Simulated 1.2.1 crashed (`ownedServerStrand` NPE). Do not
+  `packwiz update` this without bumping Aeronautics in lockstep.
+- **Create: WarHorn 1.0.1** (CurseForge 1685437, file 8834274) — kinetic-charged long-range horn;
+  works stationary and on Aeronautics airships (not trains).
+
+### Changed — jar bumps
+- **Going Ballistic** `0.3.0` → `0.3.1` — Terminal Ballistics compat (we already ship TB 2.3.0).
+- **Sodium** `0.8.13-beta.2` → `0.8.13` release (still `side = client`).
+- **Create: Aeroworks** `1.4.2` → `1.5.0` — Control Stand, copper/dyed modules, Drive-By-Sable cockpit
+  wiring (not the Stay-out Drive-By-Wire *mod*).
+- **Create: Numismatics** `1.0.20` → `1.1.0` and **Numismatics Utils** `2.2` → `2.3` (must pair).
+  Sable packet fix (#158), CC vendor/depositor/bank compat, sub-accounts, salepoints. Do **not** use
+  `/payall`. Leave any first-open bank gift at 0 (SPECTRUM: no player minting).
+- **Farmer's Delight** `1.3.3` → `1.3.4`.
+- **Create: Power Grid** `0.6.0.1` → `0.6.1`.
+- **Create: Bits 'n' Bobs** `2.2.7` → `2.3.5` with paired **Azimuth API** `1.4.7` → `1.4.8` and
+  **Strut Your Stuff** `1.3.0` → `1.3.1` (BnB 2.3.5 declared deps).
+
+### Notes
+- **No fresh world.** Jar adds + bumps. Applies on next launch.
+- Pack is now **0.9.35** / **171** mods (`create-aeronautics-climbable-ropes.pw.toml`,
+  `create-warhorn.pw.toml`). Remote already used 0.9.33/0.9.34 for datapack work, so this
+  jar cut is **0.9.35**.
+- Not added: **Create: Server Optimizer** (Create tick-spreading mixins vs Sable/Aeronautics).
+
 ## [0.9.34] — 2026-09-15
 
 ### Fixed — world creation crash from 0.9.29/0.9.33 datapacks

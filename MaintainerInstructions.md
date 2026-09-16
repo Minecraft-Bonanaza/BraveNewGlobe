@@ -60,6 +60,9 @@ git add -A && git commit -m "update: ..." && git push
   Gadgets & Gizmos thrusters cover the altitude/boost need. Do **not** add **Create Big
   Cannons: Peripheral** — **CC:CBC** is the gunnery brain. Do **not** add
   **Create: Radionautics** — **Radiologistics** fills the tower/comms role.
+- Do **not** add **Create: Server Optimizer**. Do **not** `packwiz update` **Climbable
+  Ropes** without bumping Create Aeronautics in lockstep (2.1.3 is built for Aeronautics
+  1.3.2 / Simulated 1.3.x; older pairs crashed).
 - After adding datapacks or KubeJS scripts, `packwiz refresh` so they are indexed.
 
 ## Related docs

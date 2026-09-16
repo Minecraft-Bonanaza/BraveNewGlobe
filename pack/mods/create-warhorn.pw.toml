@@ -1,0 +1,13 @@
+name = "Create: WarHorn"
+filename = "createwarhorn-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "e43a1b3a885fb14779a93e9a7b075a0cd892a9bc"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8834274
+project-id = 1685437

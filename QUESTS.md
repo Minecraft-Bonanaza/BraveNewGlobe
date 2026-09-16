@@ -28,9 +28,9 @@ Two families of lines:
 ### Lines — all flat peers (no groups)
 1. **Create Core** — onboarding: kinetics, stress, first automation. Shared substrate every other line reuses.
 2. **Rails & Trains** — Tracks, Signalworks, Train Physics Reloaded, Threaded Trains (+ Trotting Wagons, Doped Horses).
-3. **Aeronautics** — Aeronautics 1.3.2, Sable, Aeroworks, Gyro, hose connectors, radars, Gadgets &
+3. **Aeronautics** — Aeronautics 1.3.2, Sable, Aeroworks 1.5.0, Gyro, hose connectors, radars, Gadgets &
    Gizmos thrusters/flight-control (real quest gated behind `gyro`), Radiologistics comms towers
-   (real quest gated behind `nav_radar`), AeroPortals (informational); CC: Tweaked scripts the
+   (real quest gated behind `nav_radar`), Climbable Ropes, WarHorn, AeroPortals (informational); CC: Tweaked scripts the
    ship's brain; capstone = reach the sky structures.
 4. **Cannons & Warfare (Ordnance)** — Gunpowder, Gunsmithing (CGS), Big Cannons + Going Ballistic + Terminal Ballistics; **CC:CBC** for programmable fire-control; Warnautics = aerial-gunnery capstone.
 5. **Metalworking & Metallurgy** — Create: Metallurgy (foundries, alloys, bulk yields).

@@ -4,7 +4,7 @@ Framework for designing **FTB Quests** around player specialization.
 
 Brave New Globe is a **reality simulator**: almost everything can be done the simple way, but investing in tools, industry, and knowledge unlocks better yields, safer processes, and larger scale. A **Special Interest Group (SIG)** is a career path shaped like that — not every mod, and not every piece of content.
 
-As of **0.9.26** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 242**. Remaining pack work is **survival-layer tuning** (seasons, diseases, farming/food, climate), not new SIG chapters.
+As of **0.9.35** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Remaining pack work is **survival-layer tuning** (seasons, diseases, farming/food, climate), not new SIG chapters.
 
 ---
 
@@ -263,8 +263,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 |--|--|
 | **Baseline** | Simple Create Aeronautics / Sable craft that flies |
 | **Specialized** | Gyro stabilizers, Aeroworks expansion, Gadgets & Gizmos propulsion/flight controls, hose connectors, camera sync, radar-assisted flight, cargo logistics add-ons, scripted autopilot |
-| **Core mods** | Create Aeronautics 1.3.2, Sable, Create: Aeroworks, Gyro Stabilizers, Gadgets & Gizmos, Throwable Rope Connector, VS/Sable Hose Connectors, Aeronautics Camera Sync, Create Aeronautics: Compatibility |
-| **Supporting** | Create Aero Radars, Create: Radars, Create: AeroPortals (cross-dimension SubLevels; upstream PoC), Create: Radiologistics, CC: Tweaked + NeoPeripherals, Contraption Lights (+ LambDynamicLights) |
+| **Core mods** | Create Aeronautics 1.3.2, Sable, Create: Aeroworks 1.5.0, Gyro Stabilizers, Gadgets & Gizmos, Throwable Rope Connector, Climbable Ropes 2.1.3, VS/Sable Hose Connectors, Aeronautics Camera Sync, Create Aeronautics: Compatibility |
+| **Supporting** | Create Aero Radars, Create: Radars, Create: AeroPortals (cross-dimension SubLevels; upstream PoC), Create: Radiologistics, CC: Tweaked + NeoPeripherals, Contraption Lights (+ LambDynamicLights), Create: WarHorn |
 | **Military branch** | Create: Warnautics (treat as advanced / combat aviation chapter, not a separate SIG unless the modteam wants Ordnance split) |
 | **Adjacent** | Logistics & Freight (Delivery Required), Naval (seaplanes / coastal), Power, Metalworking, Ordnance (CC:CBC gunnery) |
 
@@ -581,7 +581,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Create: Cotton | Textiles |
 | Diesel Generators, Power Grid, Power Chip | Power & Fuel |
 | Tracks, Signalworks, Train Physics, Threaded Trains, Trotting Wagons, Doped Horses | Land Transport & Rail |
-| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics, Gadgets & Gizmos, AeroPortals, Radiologistics | Aeronautics |
+| Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics, Gadgets & Gizmos, AeroPortals, Radiologistics, Climbable Ropes, WarHorn | Aeronautics |
 | Better High Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
 | Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful, Create: Market Maker | Commerce |
