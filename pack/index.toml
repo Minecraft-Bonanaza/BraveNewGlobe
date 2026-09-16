@@ -210,11 +210,11 @@ hash = "3ff7bfbdf8353dffba0809215ab4812f63443843128b3d40ae6b377aeda94855"
 
 [[files]]
 file = "config/cristellib/auto_config_settings.json5"
-hash = "799173b66094a241753f41af672ddf22921ca206cb88f1966d31960c89c3f99a"
+hash = "49b6041a4336c38c24d893d386017479819f0124413c5c5549eb031a5b9f98af"
 
 [[files]]
 file = "config/cristellib/bigglobe/structure_placement_config.json5"
-hash = "9e75800b1c59c83e738dbe942120018fe71c6bc1f03d3550456c3a6cf0aa4b73"
+hash = "7fe840ef6e78e5b5fecbc3da8fe29d0e43c284d3e73169e6158ced2f742a0527"
 
 [[files]]
 file = "config/cristellib/bigglobe/structure_toggle_config.json5"
@@ -821,6 +821,10 @@ file = "datapacks/bigglobe_ctov_compat.zip"
 hash = "ac87d024d1a36b9a58f2db3c743c0c2b61ac9601ee267977592997a707c583fc"
 
 [[files]]
+file = "datapacks/bigglobe_epicvillages.zip"
+hash = "6b0ce390e6248f3e05e1ffcfe1b0650053a4b774b8e13af8c41371a62f866bc4"
+
+[[files]]
 file = "datapacks/bigglobe_illagerinvasion_spacing.zip"
 hash = "ef181b70ffea901c38f6773355fbee4fa68ee557a38781b5d7415367c3c31886"
 
@@ -1297,6 +1301,11 @@ metafile = true
 [[files]]
 file = "mods/doped-horses.pw.toml"
 hash = "989957cafbfd4801afd0a8b74fa519e933625a254635ddbfa006e1c2c135e745"
+metafile = true
+
+[[files]]
+file = "mods/epic-structures-villages-standalone.pw.toml"
+hash = "880629aa48e38c5c926988a65ffdf18fe4ade441a66608fa8faa0f5e60d744c2"
 metafile = true
 
 [[files]]
