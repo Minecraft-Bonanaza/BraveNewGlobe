@@ -61,12 +61,12 @@
 		//If true, Big Globe will log a message to the game console and log file when a structure attempts to spawn somewhere and, if applicable, the reason why it failed to spawn there.
 		//If false, Big Globe will not do that.
 		//This option can be useful for debugging why a specific structure isn't spawning anywhere.
-		"Log structure spawn attempts": false,
+		"Log structure spawn attempts": true,
 
 		//Regex controlling which structures get logged when 'Log structure spawn attempts' is enabled.
 		//This regex will be matched against the name of the structure that's trying to spawn.
 		//Useful for cutting down on log spam and focusing only on the structure(s) you care about.
-		"Structure spawning log filter": "",
+		"Structure spawning log filter": ".*village.*",
 
 		//If true, Big Globe will log a message to the game console and log file when an empty tag is loaded.
 		//If false, Big Globe will not do that.

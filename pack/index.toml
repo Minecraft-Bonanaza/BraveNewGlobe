@@ -46,7 +46,7 @@ hash = "755e3b359a6da36b05ab004888ab26af7b3c3ddd01c0d29e720b6e0bd5f34e23"
 
 [[files]]
 file = "config/bigglobe/Big Globe.json5"
-hash = "a8929e9c3aeed1dfa0f70e9ead06482dd3b2b8170751792700cea55ed805da32"
+hash = "cdd9df02a4fdfc721fca17048297c8ffee2d572380d52f542bf75fd9816fa3aa"
 
 [[files]]
 file = "config/bigglobe/mixins.properties"
@@ -806,7 +806,7 @@ hash = "a2ebcd3df38a99ce2bd5a08a5a69a47ef83090fb3c1964373a56ead6e3597ded"
 
 [[files]]
 file = "datapacks/bigglobe_cataclysm_spacing.zip"
-hash = "c3f102b20e4dd5015ade57a571b81f17a5823224665eaf2711cc61599a3b04e9"
+hash = "d0d483ed741370d4ed87d75cb5996a9c3190c9b2d694eac1936b3b1082a535d0"
 
 [[files]]
 file = "datapacks/bigglobe_create.zip"
