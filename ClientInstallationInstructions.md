@@ -1,75 +1,67 @@
-# Brave New Globe — Client Installation & Auto-Update
+# Client installation
 
-How to set up the **Brave New Globe** modpack as a player. You do this setup **one time**
-(about 10 minutes). After that, just launch and you're always up to date.
+Brave New Globe is a packwiz pack for Minecraft **1.21.1** / NeoForge **21.1.248**. Set it up once in PrismLauncher. After that, launching the instance syncs mods, configs, and datapacks from this repo.
 
-- **Minecraft:** `1.21.1`
-- **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
-- **Delivery:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**; after that,
-  **every time you launch, the pack pulls the latest mods automatically** — new mods are added, updated
-  mods are re-downloaded, and removed mods are deleted. You never drag jars by hand.
+## Requirements
 
----
+- [PrismLauncher](https://prismlauncher.org/)
+- Java (the copy PrismLauncher bundles is enough)
 
-## What you need
-- [PrismLauncher](https://prismlauncher.org/) (free)
-- Java — PrismLauncher's bundled Java is fine; nothing else to install
+## 1. Create the instance
 
-## Step 1 — Create the instance
-1. Open PrismLauncher → **Add Instance**.
-2. Pick **Minecraft version `1.21.1`**.
-3. Click **NeoForge** and choose version **`21.1.248`**.
-4. Name it `Brave New Globe` → **OK**.
+1. Open PrismLauncher and click **Add Instance**.
+2. Set Minecraft to `1.21.1`.
+3. Enable **NeoForge** and select `21.1.248`.
+4. Name the instance `Brave New Globe` and click **OK**.
 
-> The installer will also correct the loader version to match the pack automatically, but creating it
-> right avoids a first-launch prompt.
+The packwiz installer will correct the loader if it does not match the pack. Creating it with `21.1.248` avoids that prompt on first launch.
 
-## Step 2 — Add the installer file
-The pack is pulled by a tiny helper called `packwiz-installer-bootstrap.jar`.
+## 2. Add the packwiz bootstrap
 
-1. Download it from this repo: **[`tools/packwiz-installer-bootstrap.jar`](tools/packwiz-installer-bootstrap.jar)**
-   (or from the [official releases](https://github.com/packwiz/packwiz-installer-bootstrap/releases)).
-2. In PrismLauncher, select your instance → click **Folder** (top toolbar). This opens the instance folder.
-3. Go into the **`.minecraft`** folder inside it.
-4. Put `packwiz-installer-bootstrap.jar` in that `.minecraft` folder.
+1. Download [`tools/packwiz-installer-bootstrap.jar`](tools/packwiz-installer-bootstrap.jar) from this repo, or from the [packwiz-installer-bootstrap releases](https://github.com/packwiz/packwiz-installer-bootstrap/releases).
+2. In PrismLauncher, select the instance and click **Folder**.
+3. Open the `.minecraft` folder inside it.
+4. Place `packwiz-installer-bootstrap.jar` in that folder.
 
-## Step 3 — Turn on auto-sync (one command)
-1. In PrismLauncher, select the instance → **Edit** → **Settings** tab → **Custom commands**.
-2. Tick **Custom commands** to enable it.
-3. In the **Pre-launch command** box, paste **exactly** this:
+## 3. Pre-launch command
 
-   ```
-   "$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
-   ```
+1. Select the instance → **Edit** → **Settings** → **Custom commands**.
+2. Enable **Custom commands**.
+3. Paste this as the **Pre-launch command**:
 
-That's the whole trick: before each launch, PrismLauncher runs this line, which checks the repo and
-downloads anything that changed.
+```
+"$INST_JAVA" -jar packwiz-installer-bootstrap.jar https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
+```
 
-## Step 4 — Launch
-Hit **Launch**. The **first** launch downloads all the mods (you'll see a small progress window — this
-is normal and only happens once). When it finishes, Minecraft starts.
+PrismLauncher runs that line before every launch, so the instance stays in sync with `main`.
 
-That's it — you're set up. ✅
+## 4. Launch
 
-## Getting updates later
-**Do nothing.** Just launch the instance. The pre-launch command re-syncs against the repo every time,
-so you always get the latest mods, configs, and datapacks. Updates are usually a few seconds.
+Click **Launch**. The first run downloads the full pack; a progress window is expected. Later launches only fetch what changed.
+
+## Updates
+
+Do not copy jars or datapacks in by hand. Launch the instance. If a just-pushed update does not appear, wait a few minutes (GitHub raw cache) and launch again.
+
+Optional client mods (shaders, Distant Horizons, connected textures, and similar) can be toggled in the packwiz installer prompt when they are marked optional.
 
 ## Troubleshooting
-- **"Unable to access jarfile packwiz-installer-bootstrap.jar"** — the jar isn't in `.minecraft`, or is
-  in the wrong folder. Either move it there, or use the absolute-path form of the command instead:
-  ```
-  "$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
-  ```
-- **A launch fails on a "hash mismatch"** — the maintainer pushed an update without re-indexing
-  (or a datapack zip drifted from `index.toml`, as in **0.9.16** on
-  `bigglobe_whendungeonsarise.zip`). Ping them; once they fix it, just launch again and it re-syncs.
-- **Datapacks** — you do **not** install datapacks manually. The pack ships them under
-  `pack/datapacks/`; packwiz installs them into the instance **`datapacks/`** folder. **Paxi** is
-  set to `Load from base 'datapacks' directory = true`, so they load globally with the auto-sync.
-  They are **not** under `config/paxi/datapacks/`.
-- **Missing server-only mods** — PrismLauncher's default `--side client` skips `side = server`
-  jars (**Too Fast**, **YUNG's Better Nether Fortresses**). Dedicated servers get them. That skip
-  is expected on a solo client instance.
-- **Changes not showing up** — GitHub's raw file cache can lag a few minutes after a push. Wait a
-  moment and relaunch.
+
+**Unable to access jarfile packwiz-installer-bootstrap.jar**  
+The jar is not in `.minecraft`. Move it there, or use this form so the path is explicit:
+
+```
+"$INST_JAVA" -jar "$INST_MC_DIR/packwiz-installer-bootstrap.jar" https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/pack/pack.toml
+```
+
+**Hash mismatch / index invalid**  
+The pack index on `main` is out of date. Ask a maintainer to run `packwiz refresh` and push. After that, launch again.
+
+**Datapacks**  
+Do not install datapacks yourself. packwiz puts them in the instance `datapacks/` folder. Paxi is configured to load that folder. They do not go under `config/paxi/datapacks/`.
+
+**Missing Too Fast or YUNG's Better Nether Fortresses**  
+Those are `side = server`. A normal PrismLauncher client instance skips them. Dedicated servers still get them.
+
+**Loader / version prompt on first launch**  
+The instance Minecraft/NeoForge versions did not match the pack. Accept the correction, or recreate the instance as `1.21.1` / `21.1.248`.
