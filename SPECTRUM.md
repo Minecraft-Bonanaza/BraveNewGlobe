@@ -4,7 +4,7 @@ Framework for designing **FTB Quests** around player specialization.
 
 Brave New Globe is a **reality simulator**: almost everything can be done the simple way, but investing in tools, industry, and knowledge unlocks better yields, safer processes, and larger scale. A **Special Interest Group (SIG)** is a career path shaped like that — not every mod, and not every piece of content.
 
-As of **1.0.1** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Survival-layer polish (seasons, diseases, farming/food, climate) may continue in `1.0.x`; not new SIG chapters.
+As of **1.0.6** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Survival-layer polish (seasons, diseases, farming/food, climate) may continue in `1.0.x`; not new SIG chapters.
 
 ---
 
@@ -131,7 +131,11 @@ Currency is **earned** (villagers, bounties, deliveries, player trade) — not p
 - Corpse, Reliable Backpacks/Requiem, Better Respawn, Better Days, Stat Tinkerer, Too Fast  
 - Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Vertigo  
 - Iris stack, Distant Horizons, Simple Clouds, maps, Jade, AppleSkin, JEI, Mod Menu
-- Optional client (1.0.1): Sound Physics Remastered, Presence Footsteps, 3D Skin Layers, Traveler's Titles  
+- Optional client (1.0.1): Sound Physics Remastered, Presence Footsteps, Traveler's Titles
+- Optional client (1.0.3): Dynamic FPS, Mouse Tweaks, Controlling + Searchables, Continuity
+- 1.0.4: Polymorph, Amendments, Comforts, Jade Addons, Simple Voice Chat; optional client Crash Assistant, Chat Heads
+- 1.0.5: Visual Workbench, Ping Wheel; optional client Pick Up Notifier
+- 1.0.6: dropped 3D Skin Layers (dense villages); Epic Villages Standalone on its own ~800-block grid  
 
 ### Libraries
 

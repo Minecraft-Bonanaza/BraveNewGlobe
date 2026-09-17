@@ -1,3 +1,5 @@
 {
-  "loadOrder": []
+	"loadOrder": [
+		"bng_titles.zip"
+	]
 }

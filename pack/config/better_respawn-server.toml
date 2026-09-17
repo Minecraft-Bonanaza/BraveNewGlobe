@@ -9,4 +9,5 @@ min_respawn_distance = 128
 #If the player is in this range of its bed/respawn anchor it will respawn there
 # Default: 256
 # Range: > 0
-respawn_block_range = 256
+# Pack: 512 so a hangar/base bed still catches nearby ship/yard deaths (~32 chunks).
+respawn_block_range = 512

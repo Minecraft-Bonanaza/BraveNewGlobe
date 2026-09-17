@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.0.1)
+## Current pack state (1.0.6)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.0.1**, **175** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.0.6**, **190** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,8 +38,28 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.0.x`.
+- **1.0.6:** dropped **3D Skin Layers** (dense villages). **Continuity** stays
+  client optional, default on. Co-creator village work kept as-is: **Epic Villages
+  Standalone** on its own ~800-block grid (exclusion 16 vs CTOV), vanilla
+  `has_structure/village_*` tags filled for Big Globe, CTOV large-only via
+  `ctov-common.toml`, Cristel `minecraft:villages` 50/20. Village grid needs
+  **unexplored chunks**.
+- **1.0.5:** **Visual Workbench** (`side = both`), **Pick Up Notifier** (client, optional
+  default on), **Ping Wheel** `1.12.2` (`side = both`, Sable-compat beta). BetterF3 is
+  **not** in the pack (vanilla F3 / Jade only).
+- **1.0.4:** **Polymorph**, **Amendments**, **Comforts** (`side = both`); **Jade Addons**
+  (`side = both`); **Simple Voice Chat** (`side = both`, UDP **24454**); **Crash Assistant**
+  + **Chat Heads** (client, optional default on). Comforts sleeping bags/hammocks do **not**
+  set spawn by default (hangar bed stays Better Respawn home at 512).
+- **1.0.3:** optional client QoL — **Dynamic FPS**, **Mouse Tweaks**, **Controlling** +
+  **Searchables**, **Continuity** (all `side = client`, default on). Continuity rides
+  Connector + Forgified Fabric API already in the pack. **Simple Clouds stays
+  mandatory** (`side = both`) — Project Atmosphere depends on it.
+- **1.0.2:** Traveler's Titles Big Globe overlay (`config/paxi/resourcepacks/bng_titles.zip`) —
+  titles + climate-band colors for all BG biomes. Jade still uses BG's own biome lang.
 - **1.0.1:** optional client jars — **Sound Physics Remastered** + **Presence Footsteps**
-  (default off), **3D Skin Layers** + **Traveler's Titles** (default on). CTOV villages
+  (default off), **Traveler's Titles** (default on; **3D Skin Layers** added here, dropped
+  in 1.0.6). CTOV villages
   retuned (slope/hilliness gate off, climate-band land, large-only; T&T exclusion 8→4).
   Village grid needs **unexplored chunks**. Do **not** add **Nvidium** (Iris disables it;
   it is a Sodium terrain renderer, not GPU worldgen). **Terrain Diffusion** would replace
@@ -81,7 +101,7 @@ Living rules. CHANGELOG stays historical.
   Ropes** without bumping Aeronautics in lockstep. **Nvidium** / **Acedium** (Iris
   disables the mesh-shader backend; it does not generate chunks). **Terrain Diffusion**
   (would replace Big Globe).
-- **No fresh overworld** from 0.7.1 → 1.0.1. New Cataclysm / Bosses'Rise / Born in Chaos /
+- **No fresh overworld** from 0.7.1 → 1.0.6. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
@@ -90,13 +110,18 @@ Living rules. CHANGELOG stays historical.
 - **Datapacks** live in `pack/datapacks/` and packwiz installs them to the instance
   `datapacks/` folder. Paxi `Load from base 'datapacks' directory = true`. They are **not**
   under `config/paxi/datapacks/`. Current BG compat zips include
-  `bigglobe_integratedvillages.zip` (airship-only), `bigglobe_simplyswords_nouniques.zip`
+  `bigglobe_integratedvillages.zip` (airship-only), `bigglobe_epicvillages.zip` (Epic
+  biome tags + spacing/exclusion), `bigglobe_simplyswords_nouniques.zip`
   (empty `lootable_uniques` tag), and `bigglobe_whendungeonsarise.zip` (hash re-synced in
   0.9.16 — zip and `index.toml` had drifted apart).
 
 ## Villages
 
-- **CTOV** is the only ground village system (vanilla `bigglobe:villages` emptied).
+- **CTOV** and **Epic Villages Standalone** are the ground village systems (vanilla
+  `bigglobe:villages` emptied; CTOV injects into `minecraft:villages`). Separate grids,
+  both ~800 blocks (spacing 50 / sep 20). Epic excludes CTOV by 16 chunks. CTOV is
+  large-only (`ctov-common.toml`). Do **not** remove Epic from Cristel
+  `blacklistedMods` or Cristel will regenerate `epic:villages` and drop the exclusion.
 - **Integrated Villages** `1.3.3` + **Integrated API** `1.8.2` (`side = both`): only the
   **airship village** generates (`regular_villages` emptied). Placement
   (`bigglobe_integratedvillages.zip` via `build_iv_compat.py`):
@@ -219,13 +244,18 @@ says what to keep vs strip.
   **CC:CBC** stays the pack gunnery brain. Revisit only as a pair with a curated Ambush
   datapack, or as MCA-only gun crews with Ambush spawn **off**.
 
-## Optional visuals (0.9.26 / 1.0.1)
+## Optional visuals (0.9.26 / 1.0.1 / 1.0.3 / 1.0.4 / 1.0.6)
 
 **Combat Traces** (Better Combat trails, `side = both`, optional default on) and
-**Animated Inventory** (client, optional default on). **1.0.1** adds **3D Skin Layers**
-and **Traveler's Titles** (client, optional default on) plus **Sound Physics Remastered**
-and **Presence Footsteps** (client, optional default off). Do **not** re-add **Needs, Not
-Necessities** or **Panels Not Screens** — evaluated as a TWT replacement and dropped.
+**Animated Inventory** (client, optional default on). **1.0.1** adds **Traveler's Titles**
+(client, optional default on) plus **Sound Physics Remastered** and **Presence Footsteps**
+(client, optional default off). **3D Skin Layers** was added in 1.0.1 and dropped in 1.0.6
+(dense villages). **1.0.3** adds **Dynamic FPS**, **Mouse Tweaks**, **Controlling** +
+**Searchables**, and **Continuity** (all client, optional default on). Controlling and
+Searchables must be toggled together. **1.0.4** adds **Crash Assistant** and **Chat Heads**
+(client, optional default on).
+**Simple Clouds is not optional** — Project Atmosphere requires it on both sides.
+Do **not** re-add **Needs, Not Necessities** or **Panels Not Screens** — evaluated as a TWT replacement and dropped.
 Do **not** re-add `pack/config/thirst/` (dead TWT configs, removed in 0.9.26).
 
 ## Server-only mods

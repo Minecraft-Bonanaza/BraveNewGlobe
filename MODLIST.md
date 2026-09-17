@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**175 mods**), grouped by purpose. Current pack **1.0.1**.
+Human-readable list of every mod in the pack (**190 mods**), grouped by purpose. Current pack **1.0.6**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -126,7 +126,8 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   - **Integrated API** _(dependency)_
 - **Incendium Legacy** — Nether biome/structure overhaul + Nether Sovereign
 - **YUNG's Better Nether Fortresses** — fortress overhaul _(server-only)_
-- **ChoiceTheorem's Overhauled Village** — village overhaul (sole ground village system)
+- **ChoiceTheorem's Overhauled Village** — village overhaul (ground villages; large-only, ~800 blk)
+- **Epic Structures: Villages Standalone Edition** `1.0.0` — second ground-village theme on its own grid (~800 blk, 16-chunk exclusion vs CTOV)
 - **It Takes a Pillage Continuation** — raids/pillager content
 - **Illager Invasion** — new illager variants
 - **Fragmentum** — structures/relic loot
@@ -157,6 +158,8 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Serene Seasons** — seasonal cycle affecting crops/biomes
 - **Project Atmosphere** — realistic climate & weather
 - **Supplementaries** — decorative & functional blocks
+- **Amendments** `1.21-2.1.10` — vanilla cauldron / lantern / jukebox tweaks (Moonlight)
+- **Comforts** `9.0.5` — sleeping bags & hammocks (do not set spawn by default)
 - **Bountiful** — bounty board quests
   - **Create: Numismatic Bounties** — pays Bountiful rewards in Numismatics coins
 
@@ -180,6 +183,10 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Reliable Backpacks** — backpack storage
 - **Reliable Requiem** — death/respawn handling
 - **Better Respawn** — improved respawn behavior
+- **Polymorph** `1.2.0+1.21.1` — choose among colliding crafting recipes
+- **Visual Workbench** `21.1.2` — items stay on the crafting table
+- **Simple Voice Chat** `2.6.22` — proximity voice (dedicated server: UDP 24454)
+- **Ping Wheel** `1.12.2` — mark a location/entity (Sable / DH / SVC group pings)
 - **Better Days** — day/night length control
 - **Stat Tinkerer** — tweak player/entity stats
 - **Too Fast** — server-side movement/speed-limit fixes _(server-only)_
@@ -198,6 +205,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **FerriteCore ((Neo)Forge)** — memory-usage optimization
 - **ModernFix** — performance & memory fixes
 - **ImmediatelyFast** — rendering/text batching optimization _(client)_
+- **Dynamic FPS** `3.11.4` — lowers FPS when unfocused/idle _(client, optional, default on)_
 - **Vertigo** — vertical chunk loading (loads only chunks near the player vertically, not the full column)
 
 ## Client, Visual & Shaders
@@ -205,19 +213,26 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Iris & Oculus Flywheel Compat** — Flywheel-under-Iris compatibility _(client)_
 - **Iris/Oculus For Simple Clouds** — shader + Simple Clouds compatibility _(client)_
 - **Distant Horizons** — LOD "see forever" rendering
-- **Simple Clouds** — cloud visual overhaul
+- **Simple Clouds** — cloud visual overhaul _(both; Project Atmosphere dependency — not optional)_
 - **Particle Rain** — enhanced precipitation particles _(client)_
 - **Puddles & Floods** — puddle/flood weather visuals
 - **Xaero's Minimap** — minimap _(client)_
 - **Xaero's World Map** — full-screen world map _(client)_
 - **Jade** — "what am I looking at" tooltip HUD
+  - **Jade Addons (Neo/Forge)** `6.1.1` — Create / Aether / Supplementaries extras
 - **AppleSkin** — hunger/saturation HUD info
 - **Just Enough Items (JEI)** — recipe/item lookup
 - **Animated Inventory** `1.0.6` — items slide between slots _(client, optional, default on)_
-- **3D Skin Layers** `1.11.2` — 3D outer-skin layers on player models _(client, optional, default on)_
-- **Traveler's Titles** `5.1.3` — biome/dimension title cards _(client, optional, default on)_
+- **Traveler's Titles** `5.1.3` — biome/dimension title cards; Big Globe names/colors via Paxi `bng_titles.zip` _(client, optional, default on)_
 - **Sound Physics Remastered** `1.21.1-1.5.1` — occlusion and reverb _(client, optional, default off)_
 - **Presence Footsteps (NeoForge)** `1.21.1-1.12.0-beta.1` — material-specific footsteps _(client, optional, default off)_
+- **Continuity** `3.0.0+1.21.neoforge` — OptiFine-style connected textures _(client, optional, default on; Connector + Forgified Fabric API)_
+- **Mouse Tweaks** `2.26.1` — drag / scroll-wheel inventory moves _(client, optional, default on)_
+- **Controlling** `19.0.5` — searchable keybinds _(client, optional, default on)_
+  - **Searchables** `1.0.2` _(dependency — client, optional, default on; toggle with Controlling)_
+- **Crash Assistant** `1.11.12` — post-crash log GUI _(client, optional, default on)_
+- **Chat Heads** `0.15.7` — player faces in chat _(client, optional, default on)_
+- **Pick Up Notifier** `21.1.1` — toast when picking up items _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_
 
 > **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled

@@ -3,6 +3,77 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.6] — 2026-09-16
+
+### Added — co-creator village grid (already on origin, kept as-is)
+- **Epic Structures: Villages Standalone Edition** `1.0.0` (Modrinth `3PvUBn3u`, `side = both`) — own `epic:villages` grid, not CTOV's.
+- Paxi `datapacks/bigglobe_epicvillages.zip` — Big Globe climate biomes in Epic's five biome tags; `epic:villages` spacing **50 / sep 20** (~800 blocks) with `exclusion_zone` vs `minecraft:villages` (`chunk_count` 16, vanilla max).
+- `bigglobe_tags.zip` — populate vanilla `has_structure/village_{plains,savanna,desert,snowy,taiga}` (and ruined-portal swamp / woodland mansion) so those families and pillager outposts can spawn on Big Globe biomes.
+- `ctov-common.toml` — large villages only (`generatesmallVillage` / `generatemediumVillage` = false).
+- Cristel Lib `minecraft:villages` spacing **50 / sep 20** (~800 blocks). Epic mod blacklisted from Cristel auto-config so it cannot strip the Epic spacing/exclusion.
+
+### Removed
+- **3D Skin Layers** — extra 3D geometry on player (and nearby) skins in dense villages.
+
+### Notes
+- **Continuity** stays `side = client`, **optional default on** (already tagged in 1.0.3).
+- Village / tag / Epic datapack changes need **unexplored chunks** (or a fresh overworld). QoL jars do not.
+- Pack is **1.0.6** / **190** mods.
+
+## [1.0.5] — 2026-09-16
+
+### Added — crafting table, loot toasts, pings
+- **Visual Workbench** `21.1.2` (Modrinth `kfqD1JRw`, `side = both`) — items stay on the crafting table. Uses **Puzzles Lib** already in the pack.
+- **Pick Up Notifier** `21.1.1` (Modrinth `ZX66K16c`, `side = client`, **optional default on**) — toast when picking up items.
+- **Ping Wheel** `1.12.2` (Modrinth `QQXAdCzh`, `side = both`) — mark a location/entity. **1.12.2** is a beta pin for **Sable** compat (also has DH / FTB Teams / SVC group pings).
+
+### Notes
+- **No fresh world.** Ping Wheel must be on the dedicated server for pings to sync.
+- Pack is **1.0.5** / **190** mods.
+
+## [1.0.4] — 2026-09-16
+
+### Added — QoL, voice, crash GUI
+- **Polymorph** `1.2.0+1.21.1` (Modrinth `tagwiZkJ`, `side = both`) — pick a result when multiple crafting recipes collide (Farmer's Delight / Ratatouille / Brewin' / Supplementaries). Pin is a **beta** for JEI 19.44's recipe-transfer API.
+- **Amendments** `1.21-2.1.10` (Modrinth `6iTJugQR`, `side = both`) — vanilla tweaks (cauldrons, lanterns, jukebox). Uses **Moonlight Lib** already in the pack.
+- **Comforts** `9.0.5+1.21.1` (Modrinth `SaCpeal4`, `side = both`) — sleeping bags and hammocks. **Do not set spawn** by default, so a hangar bed stays the Better Respawn home (`respawn_block_range` 512).
+- **Jade Addons (Neo/Forge)** `6.1.1` (Modrinth `xuDOzCLy`, `side = both`) — Create / Aether / Supplementaries Jade extras (RPM/SU, etc.).
+- **Crash Assistant** `1.11.12` (Modrinth `ix1qq8Ux`, `side = client`, **optional default on**) — post-crash GUI with logs.
+- **Simple Voice Chat** `2.6.22` (Modrinth `9eGKb6K1`, `side = both`) — proximity voice. Dedicated server needs **UDP 24454** (default) open. Orthogonal to Radiologistics.
+- **Chat Heads** `0.15.7` (Modrinth `Wb5oqrBJ`, `side = client`, **optional default on**) — player faces in chat.
+
+### Notes
+- **No fresh world.** Comforts / Amendments / Polymorph / SVC apply on next launch.
+- Pack is **1.0.4** / **187** mods.
+
+## [1.0.3] — 2026-09-16
+
+### Added — optional client QoL / connected textures
+- **Dynamic FPS** `3.11.4` (Modrinth `LQ3K71Q1`, `side = client`, **optional default on**) — drops FPS when the window is unfocused or idle. No in-game visual change.
+- **Mouse Tweaks** `2.26.1` (Modrinth `aC3cM3Vq`, `side = client`, **optional default on**) — RMB/LMB drag and scroll-wheel item moves. Client inventory only.
+- **Controlling** `19.0.5` (Modrinth `xv94TkTM`, `side = client`, **optional default on**) — searchable keybinds. Requires **Searchables** `1.0.2` (Modrinth `fuuu3xnx`, also `side = client`, optional default on; toggle together).
+- **Continuity** `3.0.0+1.21.neoforge` (Modrinth `1IjD5062`, `side = client`, **optional default on**) — OptiFine-style connected textures. Fabric jar with NeoForge metadata; **Sinytra Connector** + **Forgified Fabric API** already in the pack. Ships a built-in glass/sandstone/bookshelf pack; extra CTM resource packs are optional.
+
+### Changed — Better Respawn
+- **Bed / respawn-anchor snap-back** `256 → 512` blocks (`respawn_block_range`). Die inside that radius and you still wake at the bed; farther deaths stay in the 128–256 ring around the corpse.
+
+### Notes
+- All five jars are **client-only**. Dedicated servers skip them. **No fresh world.**
+- **Simple Clouds stays mandatory** (`side = both`) — Project Atmosphere depends on it. Do not mark it optional.
+- Pack is **1.0.3** / **180** mods.
+
+## [1.0.2] — 2026-09-16
+
+### Added — Traveler's Titles Big Globe names
+- Paxi resource pack `config/paxi/resourcepacks/bng_titles.zip` — `travelerstitles.biome.bigglobe.*`
+  titles and climate-band colors for all **52** Big Globe biomes (plus Hyperspace). Jade still
+  uses Big Globe's own `biome.bigglobe.*` names. Also fills **Dragon's Nest**, which 5.3.2's
+  lang file omits.
+
+### Notes
+- **No fresh world.** Client resource pack. Applies on next launch (F3+T if already in-game).
+- Pack is **1.0.2** / **175** mods.
+
 ## [1.0.1] — 2026-09-16
 
 ### Added — optional client audio / HUD
