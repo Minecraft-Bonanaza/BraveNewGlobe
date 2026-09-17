@@ -11,8 +11,9 @@ committed jars:
 - `pack/mods/*.pw.toml` — one tiny metadata file per mod (download source + hash). **No jars in git.**
 - `pack/config/**`, `pack/resourcepacks/**`, `pack/kubejs/**` — real files shipped as-is
 - `pack/datapacks/**` — Paxi-loaded compat packs (install to instance `datapacks/`, **not**
-  `config/paxi/datapacks/`). Includes `bigglobe_integratedvillages.zip` and
-  `bigglobe_simplyswords_nouniques.zip`.
+  `config/paxi/datapacks/`). Includes `bigglobe_integratedvillages.zip`,
+  `bigglobe_simplyswords_nouniques.zip`, and `bng_sable_pressure.zip` (source under
+  `tools/datapacks/bng_sable_pressure/`).
 
 ## Common operations (run from `pack/`)
 ```bash

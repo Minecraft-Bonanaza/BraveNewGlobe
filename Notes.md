@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.0.6)
+## Current pack state (1.0.7)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.0.6**, **190** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.0.7**, **190** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,11 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.0.x`.
+- **1.0.7:** Sable overworld air pressure datapack (`bng_sable_pressure.zip`).
+  Cruise **Y 300–400**, conventional balloons/props **~Y 500**, steep drop after that,
+  **Y 800** needs Gadgets & Gizmos thrusters (sliver of air, vacuum at **Y 920**).
+  `/reload` or next launch; no fresh world. Rebuild from
+  `tools/datapacks/bng_sable_pressure/`.
 - **1.0.6:** dropped **3D Skin Layers** (dense villages). **Continuity** stays
   client optional, default on. Co-creator village work kept as-is: **Epic Villages
   Standalone** on its own ~800-block grid (exclusion 16 vs CTOV), vanilla
@@ -101,7 +106,7 @@ Living rules. CHANGELOG stays historical.
   Ropes** without bumping Aeronautics in lockstep. **Nvidium** / **Acedium** (Iris
   disables the mesh-shader backend; it does not generate chunks). **Terrain Diffusion**
   (would replace Big Globe).
-- **No fresh overworld** from 0.7.1 → 1.0.6. New Cataclysm / Bosses'Rise / Born in Chaos /
+- **No fresh overworld** from 0.7.1 → 1.0.7. New Cataclysm / Bosses'Rise / Born in Chaos /
   Integrated Villages airships / tighter WDA spacings still need **unexplored chunks**.
   Nether added in 0.9.4 — existing Nether chunks stay vanilla until regenerated.
 - **World height:** patched Big Globe jar, floor **−608**, ceiling **+1024**. Do not
@@ -111,9 +116,30 @@ Living rules. CHANGELOG stays historical.
   `datapacks/` folder. Paxi `Load from base 'datapacks' directory = true`. They are **not**
   under `config/paxi/datapacks/`. Current BG compat zips include
   `bigglobe_integratedvillages.zip` (airship-only), `bigglobe_epicvillages.zip` (Epic
-  biome tags + spacing/exclusion), `bigglobe_simplyswords_nouniques.zip`
+  biome tags + spacing/exclusion), `bng_sable_pressure.zip` (Sable overworld air
+  curve), `bigglobe_simplyswords_nouniques.zip`
   (empty `lootable_uniques` tag), and `bigglobe_whendungeonsarise.zip` (hash re-synced in
   0.9.16 — zip and `index.toml` had drifted apart).
+
+## Sable overworld air pressure (1.0.7)
+
+Sable's built-in overworld curve hits **0% at Y 320** (vanilla build limit). BNG overrides it
+with `datapacks/bng_sable_pressure.zip` (`data/bng/dimension_physics/overworld.json`,
+priority 1000). Balloon lift and propeller thrust scale with this number; Gadgets & Gizmos
+thrusters do not.
+
+| Y | Pressure | Intent |
+|---|---|---|
+| 63 | 1.00 | sea level |
+| 300 | 0.82 | cruise band |
+| 400 | 0.62 | cruise band |
+| 500 | 0.30 | conventional balloons/props can still push here |
+| 620 | 0.06 | steep drop |
+| 800 | 0.022 | sliver; thrusters |
+| 920 | 0 | vacuum |
+
+Nether / End are unchanged. Source lives in `tools/datapacks/bng_sable_pressure/` (not
+shipped). Rebuild the zip with **forward-slash** entry paths, then `packwiz refresh`.
 
 ## Villages
 

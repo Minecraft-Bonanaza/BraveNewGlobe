@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.7] — 2026-09-16
+
+### Added — Sable overworld air pressure
+- `datapacks/bng_sable_pressure.zip` — overrides Sable's vanilla overworld curve (0% at Y 320). Cruise band **Y 300–400**, conventional balloons/propellers can push **~Y 500**, then a steep drop. **Y 800** is a sliver of air (Gadgets & Gizmos thrusters). Vacuum by **Y 920**. Source: `tools/datapacks/bng_sable_pressure/`.
+
+### Notes
+- **No fresh world.** `/reload` or next launch. Does not change Nether/End.
+- Pack is **1.0.7** / **190** mods.
+
 ## [1.0.6] — 2026-09-16
 
 ### Added — co-creator village grid (already on origin, kept as-is)
