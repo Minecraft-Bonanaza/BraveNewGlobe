@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.10] — 2026-09-17
+
+### Changed
+- **Create Aeronautics: Gadgets & Gizmos** `1.2.2-HOTFIX` → `1.2.3` (CurseForge file-id 8899907).
+  Fixes: dedicated-server pickaxe bug, `Physics Gantry` server hang on chunk load, skipped nodes
+  in the `Advanced Contraption Controller`, plus GUI fixes and RCS Thruster CC:Tweaked control.
+  Verified CurseForge/Modrinth builds byte-identical (same sha1, filesize) before repinning.
+  Dependencies unchanged (NeoForge ≥21.1.225, MC 1.21.1 — both satisfied).
+
 ## [1.0.9] — 2026-09-17
 
 ### Fixed — missing bedrock at the world floor (patched Big Globe jar)

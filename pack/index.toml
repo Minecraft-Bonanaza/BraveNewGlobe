@@ -1133,7 +1133,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-aeronautics-gadgets-and-gizmos.pw.toml"
-hash = "5e6613995ba824ee43d905fd1da2aad3e9c80de9c19a158901e253f46192d1d7"
+hash = "51aa5c08de6bb6c774225209b40563132c8b1e933e6df44a9161fd4166fec674"
 metafile = true
 
 [[files]]
