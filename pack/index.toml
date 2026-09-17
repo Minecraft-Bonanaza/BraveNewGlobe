@@ -214,7 +214,7 @@ hash = "49b6041a4336c38c24d893d386017479819f0124413c5c5549eb031a5b9f98af"
 
 [[files]]
 file = "config/cristellib/bigglobe/structure_placement_config.json5"
-hash = "7fe840ef6e78e5b5fecbc3da8fe29d0e43c284d3e73169e6158ced2f742a0527"
+hash = "06e5e3363bc9211c4339e50dcbf6a1cc776ae612f03d3806356ca0e08032faae"
 
 [[files]]
 file = "config/cristellib/bigglobe/structure_toggle_config.json5"
@@ -826,7 +826,7 @@ hash = "ac87d024d1a36b9a58f2db3c743c0c2b61ac9601ee267977592997a707c583fc"
 
 [[files]]
 file = "datapacks/bigglobe_epicvillages.zip"
-hash = "6b0ce390e6248f3e05e1ffcfe1b0650053a4b774b8e13af8c41371a62f866bc4"
+hash = "d0abe7c2d71f305d4d140f41ed14e3eb33149c8600e3d9b98347826412399db6"
 
 [[files]]
 file = "datapacks/bigglobe_illagerinvasion_spacing.zip"
