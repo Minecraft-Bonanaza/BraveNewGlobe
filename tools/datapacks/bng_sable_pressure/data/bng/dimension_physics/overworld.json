@@ -1,0 +1,18 @@
+{
+	"dimension": "minecraft:overworld",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": -38.366277, "value": 1.5, "slope": -0.006 },
+		{ "altitude": 63.0, "value": 1.0, "slope": -0.0012 },
+		{ "altitude": 300.0, "value": 0.82, "slope": -0.0014 },
+		{ "altitude": 400.0, "value": 0.62, "slope": -0.0024 },
+		{ "altitude": 500.0, "value": 0.30, "slope": -0.005 },
+		{ "altitude": 620.0, "value": 0.06, "slope": -0.0008 },
+		{ "altitude": 800.0, "value": 0.022, "slope": -0.0002 },
+		{ "altitude": 920.0, "value": 0.0, "slope": -0.018 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

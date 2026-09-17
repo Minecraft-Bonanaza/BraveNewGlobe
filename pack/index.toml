@@ -889,6 +889,10 @@ file = "datapacks/bigglobe_whendungeonsarise.zip"
 hash = "4cb7b9563693fdce5e2bbc7f0602f39ba243686c8b6ea5afd4f273bf3cd655db"
 
 [[files]]
+file = "datapacks/bng_sable_pressure.zip"
+hash = "05bcf613083593d201698cbe7e454d0c2872dae752e2664fb1519f6c9626a46b"
+
+[[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
 hash = "c6fe96af054f7bb6dd9459f2ac2468fd92252428422b50ed686bbe6e71d30cff"
 

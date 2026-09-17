@@ -3,7 +3,7 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
-## [1.0.7] — 2026-09-17
+## [1.0.8] — 2026-09-17
 
 ### Fixed
 - **JEI** `19.44.0.403` → `19.52.0.422` (CurseForge file-id 8801091). Polymorph `1.2.0+1.21.1`
@@ -12,6 +12,15 @@ This file tracks mod additions/removals, mod version updates, and config/pack ch
   recipe-conflict picker (crafting/smelting/smithing) was silently broken since Polymorph 1.2.0
   landed. Verified the CurseForge and Modrinth builds of this JEI version are byte-identical
   (same sha1/sha512) before repinning.
+
+## [1.0.7] — 2026-09-16
+
+### Added — Sable overworld air pressure
+- `datapacks/bng_sable_pressure.zip` — overrides Sable's vanilla overworld curve (0% at Y 320). Cruise band **Y 300–400**, conventional balloons/propellers can push **~Y 500**, then a steep drop. **Y 800** is a sliver of air (Gadgets & Gizmos thrusters). Vacuum by **Y 920**. Source: `tools/datapacks/bng_sable_pressure/`.
+
+### Notes
+- **No fresh world.** `/reload` or next launch. Does not change Nether/End.
+- Pack is **1.0.7** / **190** mods.
 
 ## [1.0.6] — 2026-09-16
 
