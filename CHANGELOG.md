@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.7] — 2026-09-17
+
+### Fixed
+- **JEI** `19.44.0.403` → `19.52.0.422` (CurseForge file-id 8801091). Polymorph `1.2.0+1.21.1`
+  moved off its old mixin-based JEI hook to JEI's new recipe-transfer-listener API, which only
+  exists from JEI `19.52.0.421` onward — the 1.0.x pin predated that API, so Polymorph's
+  recipe-conflict picker (crafting/smelting/smithing) was silently broken since Polymorph 1.2.0
+  landed. Verified the CurseForge and Modrinth builds of this JEI version are byte-identical
+  (same sha1/sha512) before repinning.
+
 ## [1.0.6] — 2026-09-16
 
 ### Added — co-creator village grid (already on origin, kept as-is)
