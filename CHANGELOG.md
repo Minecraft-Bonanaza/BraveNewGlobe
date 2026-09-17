@@ -3,6 +3,24 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.9] — 2026-09-17
+
+### Fixed — missing bedrock at the world floor (patched Big Globe jar)
+- `bedrock.json`'s `full_y`/`empty_y` are absolute Y coordinates, not derived from `min_y` —
+  unpatched they were `-1024`/`-1008` (the *original* floor). When the floor was raised to
+  `-608`, that whole band ended up below the new world bottom, so `BedrockFeature`'s own min-Y
+  clamp made the placement range empty and **no bedrock generated at all**. Rebased to
+  `-608`/`-592` — same 16-block full→empty taper, now aligned to the base-stone band
+  (`-608..-592`) instead of dead space.
+- Rebuilt via `bigGlobeAero/build_patched_jar.py` (now 15 files edited); `bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar`
+  sha256 `74af74e2…`; `big-globe.pw.toml` hash updated.
+
+### Notes
+- **Only affects newly-generated chunks at the floor.** Existing chunks near `-608` that already
+  generated without bedrock will stay bedrock-less until regenerated (Big Globe worldgen doesn't
+  retroactively backfill placed features). New chunks pick it up immediately — no fresh world
+  needed pack-wide.
+
 ## [1.0.8] — 2026-09-17
 
 ### Fixed

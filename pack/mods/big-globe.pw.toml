@@ -8,11 +8,14 @@ side = "both"
 # curves rescaled ~x0.63 to fit the shallower stone column (diamonds reach full richness above the
 # core again). BG reads its generator + terrain scripts from its own jar every load
 # (reload_dimension), so these MUST live inside the jar — datapacks/companion mods can't override it.
-# Built from the official 5.3.2 jar via bigGlobeAero/build_patched_jar.py (14 files edited).
+# Bedrock layer rebased -1024/-1008 -> -608/-592 (BedrockFeature's full_y/empty_y are absolute
+# Y, not derived from min_y; unpatched they sat below the new floor entirely, so no bedrock
+# generated at all). Built from the official 5.3.2 jar via bigGlobeAero/build_patched_jar.py
+# (15 files edited).
 # Big Globe by builderb0y (CC BY-NC 4.0); modified for personal-server use, not the vanilla jar.
 # No [update] block on purpose: prevents `packwiz update` reverting to the unpatched Modrinth jar.
 
 [download]
 url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/bigglobe-5.3.2-mc1.21.1-shallow608.jar"
 hash-format = "sha256"
-hash = "df683d313a4f66c07fdf56a81bf64acfaa089140bf70d1d8bd80f78ea3624bb1"
+hash = "74af74e28c1c2d9a9046d33c0547004f5a458e4ab13fd12b5e866c7e50ba9a40"
