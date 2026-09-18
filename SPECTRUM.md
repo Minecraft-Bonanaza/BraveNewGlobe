@@ -4,7 +4,7 @@ Framework for designing **FTB Quests** around player specialization.
 
 Brave New Globe is a **reality simulator**: almost everything can be done the simple way, but investing in tools, industry, and knowledge unlocks better yields, safer processes, and larger scale. A **Special Interest Group (SIG)** is a career path shaped like that — not every mod, and not every piece of content.
 
-As of **1.0.7** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Survival-layer polish (seasons, diseases, farming/food, climate) may continue in `1.0.x`; not new SIG chapters.
+As of **1.0.11** the content stack is in (including the in-house **Create: Market Maker**). The shipped quest book is still **17 / 246**. Survival-layer polish (seasons, diseases, farming/food, climate) may continue in `1.0.x`; not new SIG chapters.
 
 ---
 
@@ -67,6 +67,7 @@ Specialized (higher yield, throughput, safety, or reach)
 |-----|----------|-------------------|
 | **Re:Animal** | — | World fauna overhaul |
 | **Animal Weights** | Agriculture & Animal Husbandry | Weight/loadout rules for livestock & transport animals |
+| **Animal Weights Scaling** | Agriculture & Animal Husbandry | Visual size from weight class; hitboxes stay vanilla |
 | **Doped Horses** | Land Transport *or* Husbandry | Specialized mounts (see Land Transport) |
 | **Hybrid Aquatic / Sea Myths / Aquamirae** | — | Ocean content & threats; fishing/boating may reference them |
 | **Bountiful** | Commerce (starter faucet) | Quest board tool, not a full career alone |
@@ -135,7 +136,7 @@ Currency is **earned** (villagers, bounties, deliveries, player trade) — not p
 - Optional client (1.0.3): Dynamic FPS, Mouse Tweaks, Controlling + Searchables, Continuity
 - 1.0.4: Polymorph, Amendments, Comforts, Jade Addons, Simple Voice Chat; optional client Crash Assistant, Chat Heads
 - 1.0.5: Visual Workbench, Ping Wheel; optional client Pick Up Notifier
-- 1.0.7: Sable overworld pressure stretched (cruise 300–400, conventional ~500, thrusters for 800)
+- 1.0.11: Create Deep Seas (submarines); High Seas kept for surface ships; Animal Weights Scaling; NeoForge 21.1.250
 - 1.0.6: dropped 3D Skin Layers (dense villages); Epic Villages Standalone on its own ~800-block grid  
 
 ### Libraries
@@ -182,7 +183,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 |--|--|
 | **Baseline** | Vanilla farming, breeding, campfire/furnace cooking |
 | **Specialized** | Realistic farmland, seasonal planting windows, spoilage management, Farmer's Delight / Ratatouille kitchens, Brewin' & Chewin', Burnt Basic techniques, **Animal Weights** for livestock logistics |
-| **Core mods** | Farmer's Delight, Brewin' And Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Create: Ratatouille, Animal Weights |
+| **Core mods** | Farmer's Delight, Brewin' And Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Create: Ratatouille, Animal Weights (+ Scaling) |
 | **Environmental rules (not SIG mods)** | Serene Seasons, Project Atmosphere |
 | **Adjacent** | Textiles (cotton/fiber), Medicine (diet & disease), Land Transport (draft animals), Commerce (food markets) |
 
@@ -295,9 +296,9 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Vanilla boats |
-| **Specialized** | Create: Better High Seas shipbuilding and naval movement |
-| **Core mods** | Create: Better High Seas |
-| **Supporting** | Sable (Create ships are Sable physics objects) |
+| **Specialized** | Create: Better High Seas surface ships; Create Deep Seas submarines |
+| **Core mods** | Create: Better High Seas, Create Deep Seas |
+| **Supporting** | Sable (Create ships/subs are Sable physics objects) |
 | **Adjacent** | Logistics (sea freight), Aeronautics (coastal hubs), Commerce (ports), Ocean fauna as hazard (not SIG) |
 
 **Suggested quest beats**
@@ -588,7 +589,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Diesel Generators, Power Grid, Power Chip | Power & Fuel |
 | Tracks, Signalworks, Train Physics, Threaded Trains, Trotting Wagons, Doped Horses | Land Transport & Rail |
 | Aeronautics stack, Aeroworks, Gyro, Hose Connectors, Camera Sync, Aero Radars, Radars, Warnautics, Gadgets & Gizmos, AeroPortals, Radiologistics, Climbable Ropes, WarHorn | Aeronautics |
-| Better High Seas | Naval |
+| Better High Seas, Deep Seas | Naval |
 | Factory Logistics, Automated Logistics, Delivery Required, Create Storage | Logistics & Freight |
 | Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful, Create: Market Maker | Commerce |
 | Gunpowder, Gunsmithing, Big Cannons (+ expansions), CC:CBC | Ordnance |

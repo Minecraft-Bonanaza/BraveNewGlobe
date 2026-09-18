@@ -1,0 +1,36 @@
+[gameplay]
+	#Disable all hull implosion damage from pressure.
+	disableImplosion = false
+	#Maximum size, in blocks, of a creation that oxygen diffusers can scan and fill with breathable air.
+	oxygenMaxFillBlocks = 500000
+	#Deepen the ocean floor below vanilla. Requires Lithostitched. Off for Big Globe — do not wrap vanilla overworld offset.
+	enableDeeperOceans = false
+	#How many blocks deeper to push the ocean floor when enableDeeperOceans is on.
+	deeperOceansDepth = 10
+
+[hullStrength]
+	#Cap applied to maxWaterDepth of all non-create_submarine blocks.
+	globalMaxDepthCap = 300
+	#Multiplier on every block's effective maxWaterDepth at runtime.
+	maxDepthMultiplier = 1.0
+	#Multiplier on every block's implosionChance at runtime.
+	implosionChanceMultiplier = 1.0
+
+[mechanics]
+	ballastForceMultiplier = 1.0
+	ballastLiftPerTank = 75.0
+	floaterLift = 25.0
+	ballastVerticalSpeed = 2.0
+	ballastTransferRateMultiplier = 2.0
+	waterThrusterPowerMultiplier = 6.0
+	submarinePropellerPowerMultiplier = 3.0
+	pulleyMaxSlideSpeed = 24.0
+	steelCableMaxLength = 1000
+
+[experimental]
+	#Hide ocean surface inside floating boats (sub-levels without oxygen). Off so High Seas water occlusion stays the surface-ship path.
+	enableBoatWaterCulling = false
+
+[client]
+	#Pack: skip Deep Seas welcome/update popups.
+	disableStartupScreens = true

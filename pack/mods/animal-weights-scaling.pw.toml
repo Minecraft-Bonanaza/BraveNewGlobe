@@ -1,0 +1,10 @@
+name = "Animal Weights Scaling"
+filename = "animalweightsscaling-1.0.0.jar"
+side = "both"
+
+# In-house addon for Animal Weights. GitHub release repo is private, so the jar is
+# vendored like Market Maker / High Seas. Source: Animal-Weights-Scaling v1.0.0.
+[download]
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/1.0.11-DSAWM/bundled-jars/animalweightsscaling-1.0.0.jar"
+hash-format = "sha512"
+hash = "35608d4ceb649e7c79cef154fd21a01da4d2129957f9b8201270c73736e392eff4fe215b4c8448def31bfadfa6a6cf14d0896042d7311d60ea1f0b559ff61a97"

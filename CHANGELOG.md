@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.11] — 2026-09-17
+
+### Added — submarines (keep High Seas)
+- **Create Deep Seas** `2.2.4` (Modrinth `mva5q4qZ`, `side = both`) — Sable submarines (ballast, oxygen, hull pressure, water thrusters). **Create: Better High Seas** stays for surface-ship Archimedes buoyancy.
+- `config/create_submarine-common.toml`: **`enableDeeperOceans = false`** (do not wrap vanilla ocean density on Big Globe), **`enableBoatWaterCulling = false`** (High Seas keeps interior water on surface ships), **`disableStartupScreens = true`**.
+
+### Added — Animal Weights Scaling
+- **Animal Weights Scaling** `1.0.0` (`side = both`) — in-house visual scale from Animal Weights 0–8 (emaciated → plump). Width scales more than height; **hitboxes stay vanilla**. Requires **Animal Weights** `1.1.0` (already in). Release jar declares NeoForge **`[21.1.250,)`**, so the pack loader is **21.1.248 → 21.1.250**. Private GitHub release is vendored in `bundled-jars/` (the public `/releases/download/` URL 404s without auth).
+
+### Notes
+- **No fresh world.** Next launch. Do not turn `enableDeeperOceans` on.
+- Pack is **1.0.11** / **192** mods. NeoForge **21.1.250**.
+
 ## [1.0.10] — 2026-09-17
 
 ### Changed

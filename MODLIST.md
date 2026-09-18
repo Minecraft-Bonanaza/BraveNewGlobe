@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**190 mods**), grouped by purpose. Current pack **1.0.7**.
+Human-readable list of every mod in the pack (**192 mods**), grouped by purpose. Current pack **1.0.11**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -66,7 +66,8 @@ Human-readable list of every mod in the pack (**190 mods**), grouped by purpose.
 - **Create: Aeroworks** `1.5.0` — cockpit Control Stand / modules / Drive-By-Sable wiring
 - **Create: Warnautics** `1.0.8` — military/combat aeronautics (cruise missile; needed by the
   0.9.15 JACKPOT pool). Do not roll back to 1.0.3.
-- **Create: Better High Seas** — ships / naval content
+- **Create: Better High Seas** — surface ships (Archimedes buoyancy + leak flooding on sealed Sable hulls)
+- **Create Deep Seas** `2.2.4` — submarines (ballast / oxygen / hull pressure). Deeper oceans off; boat water-culling off.
 - **Aeronautics Camera Sync** — smooth camera for contraptions
   - **Azimuth API** _(dependency — camera/keybind library)_
 - **Create Aero Radars** — radar for aircraft
@@ -142,6 +143,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Social Player Mobs** _(Interactive Player Mobs)_ — player-like mobs
 - **Doped Horses** — faster, enchantable, configurable horses
 - **Animal Weights** — weight mechanics for animals
+- **Animal Weights Scaling** `1.0.0` — visual size from weight class (both sides; hitboxes stay vanilla)
 
 ## Villagers & NPCs
 - **MCA Reborn [Fabric/Forge]** — Minecraft Comes Alive villagers/families

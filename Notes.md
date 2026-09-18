@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.0.7)
+## Current pack state (1.0.11)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.0.7**, **190** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.0.11**, **192** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,10 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.0.x`.
+- **1.0.11:** **Create Deep Seas** `2.2.4` (submarines). High Seas kept for surface
+  ships. `enableDeeperOceans` and `enableBoatWaterCulling` **off**. **Animal Weights
+  Scaling** `1.0.0` (visual size from weight; hitboxes vanilla). Loader **21.1.250**
+  (AWS jar requires `[21.1.250,)`). No fresh world.
 - **1.0.7:** Sable overworld air pressure datapack (`bng_sable_pressure.zip`).
   Cruise **Y 300–400**, conventional balloons/props **~Y 500**, steep drop after that,
   **Y 800** needs Gadgets & Gizmos thrusters (sliver of air, vacuum at **Y 920**).
@@ -210,7 +214,8 @@ spawn/drop switch).
 ## Sable physics engine
 
 **Sable** `2.0.5` is the physics engine required by **Create: Aeronautics** — it simulates
-airships and Create: Better High Seas ships as physics objects. Keep it in the pack.
+airships, Create: Better High Seas surface ships, and Create Deep Seas submarines as
+physics objects. Keep it in the pack.
 
 The **Sable: Destructive** add-on was added in 0.9.18 and **reverted in 0.9.19** (co-curator
 decision); do **not** re-add it. Do **not** drop base Sable. Drive-By-Wire With Sable stays

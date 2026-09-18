@@ -185,6 +185,10 @@ file = "config/create_radar-server.toml"
 hash = "08f7903eaeb4772392a2253149a97fc485bb2dded1891b29dae5c30cd1943834"
 
 [[files]]
+file = "config/create_submarine-common.toml"
+hash = "1140da5506e22ff46ead3b35b9acf97032e0be27c7afd673e02598cede33114c"
+
+[[files]]
 file = "config/create_train_physics-common.toml"
 hash = "c6f3d843e433138698794b5e185e0560270bed5d18894e5c413b99e12e6ba903"
 
@@ -942,6 +946,11 @@ hash = "f242021cede5b517982508fc308c90005b42b2be444e2bd81921d5eb5754ba02"
 metafile = true
 
 [[files]]
+file = "mods/animal-weights-scaling.pw.toml"
+hash = "b83c4ce2aafcbe42ec40ac49141e4b318ab4cb3136452db1ed04d23012629914"
+metafile = true
+
+[[files]]
 file = "mods/animated-inventory.pw.toml"
 hash = "7f0428d3c316d92069e4ad59419ca76234d35155aa003eddaa900573d3d52d91"
 metafile = true
@@ -1189,6 +1198,11 @@ metafile = true
 [[files]]
 file = "mods/create-cotton.pw.toml"
 hash = "5b80f3cfbd5a430c8771631cde00fd990834b44a356b41f8996248d37ad88add"
+metafile = true
+
+[[files]]
+file = "mods/create-deep-seas.pw.toml"
+hash = "e6adf53634a83d23567f06cca16368aa161d48f1c6424131c516586975e311d9"
 metafile = true
 
 [[files]]

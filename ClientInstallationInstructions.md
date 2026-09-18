@@ -1,6 +1,8 @@
 # Client installation
 
-Brave New Globe is a packwiz pack for Minecraft **1.21.1** / NeoForge **21.1.248**. Set it up once in PrismLauncher. After that, launching the instance syncs mods, configs, and datapacks from this repo.
+Brave New Globe is a packwiz pack for Minecraft **1.21.1** / NeoForge **21.1.250**. Set it up once in PrismLauncher. After that, launching the instance syncs mods, configs, and datapacks from this repo.
+
+This git branch is **`1.0.11-DSAWM`** (Deep Seas and Animal Weights Modification). To test it, point the packwiz pre-launch command at `https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/1.0.11-DSAWM/pack/pack.toml` instead of `main`.
 
 ## Requirements
 
@@ -11,10 +13,10 @@ Brave New Globe is a packwiz pack for Minecraft **1.21.1** / NeoForge **21.1.248
 
 1. Open PrismLauncher and click **Add Instance**.
 2. Set Minecraft to `1.21.1`. **Note that 1.21.1 and 1.21.10 are not the same thing. I'm looking at you Aiden.**
-3. Enable **NeoForge** and select `21.1.248`.
+3. Enable **NeoForge** and select `21.1.250`.
 4. Name the instance `Brave New Globe` and click **OK**.
 
-The packwiz installer will correct the loader if it does not match the pack. Creating it with `21.1.248` avoids that prompt on first launch.
+The packwiz installer will correct the loader if it does not match the pack. Creating it with `21.1.250` avoids that prompt on first launch.
 
 ## 2. Add the packwiz bootstrap
 
@@ -64,4 +66,4 @@ Do not install datapacks yourself. packwiz puts them in the instance `datapacks/
 Those are `side = server`. A normal PrismLauncher client instance skips them. Dedicated servers still get them.
 
 **Loader / version prompt on first launch**  
-The instance Minecraft/NeoForge versions did not match the pack. Accept the correction, or recreate the instance as `1.21.1` / `21.1.248`.
+The instance Minecraft/NeoForge versions did not match the pack. Accept the correction, or recreate the instance as `1.21.1` / `21.1.250`.
