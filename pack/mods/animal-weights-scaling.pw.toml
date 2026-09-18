@@ -1,0 +1,8 @@
+name = "Animal Weights Scaling"
+filename = "animalweightsscaling-1.0.1.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Minecraft-Bonanaza/Animal-Weights-Scaling/releases/download/v1.0.1/animalweightsscaling-1.0.1.jar"
+hash-format = "sha256"
+hash = "2d77bf43495e5143c68163549e4e36d3ff82276e27c4bd183f2d62826cb21420"

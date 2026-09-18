@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**194 mods**), grouped by purpose. Current pack **1.1.0**.
+Human-readable list of every mod in the pack (**195 mods**), grouped by purpose. Current pack **1.1.1**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -146,6 +146,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Social Player Mobs** _(Interactive Player Mobs)_ — player-like mobs
 - **Doped Horses** — faster, enchantable, configurable horses
 - **Animal Weights** — weight mechanics for animals
+  - **Animal Weights Scaling** `1.0.1` — visual skinny/plump scale from weight 0–8 (GitHub)
 
 ## Villagers & NPCs
 - **MCA Reborn [Fabric/Forge]** — Minecraft Comes Alive villagers/families

@@ -3,6 +3,30 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.1] — 2026-09-18
+
+### Added
+- **Animal Weights Scaling** `1.0.1` (GitHub `Minecraft-Bonanaza/Animal-Weights-Scaling`) —
+  scales farm animals from **Animal Weights** 0–8 (skinny → plump). `animalweights` is already
+  in the pack. GitHub release; NeoForge `[21.1.248,)` (loads on pack pin **21.1.248**).
+
+### Changed — survival layer
+- **More Diseases & Treatments** splint (`splinteffect`) lasts **2 minutes** instead of
+  infinite. The mod applies duration `-1` (HUD ∞) plus a hidden `splinttimer` of 96000
+  ticks (~80 minutes). KubeJS recasts the effect to 2400 ticks and clamps the timer.
+
+### Changed — farming
+- **Slice & Dice** water sprinklers hydrate **Realistic Farmland**. RF does not add a new
+  soil block — it mixins vanilla `minecraft:farmland` (`moisture` 0–7). Sprinklers only
+  fake Atmosphere local rain; RF's rain path adds **+1** moisture while crops spend **1**,
+  so beds stayed dry (SliceAndDice#268). KubeJS `sprinkler_hydrate_farmland.js` sets
+  moisture to **7** in the sprinkle AABB while a water sprinkler is running (vanilla rain
+  snap). Fertilizer / potion / lava sprinklers are unchanged.
+
+### Notes
+- **No fresh world.** `/reload` or next launch. Already-applied infinite splints get
+  capped to 2 minutes remaining. Sprinkler farmland hydration is `/reload`.
+
 ## [1.1.0] — 2026-09-18
 
 ### Added

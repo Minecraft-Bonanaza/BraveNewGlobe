@@ -921,12 +921,24 @@ file = "kubejs/server_scripts/powergrid_andesite_generator.js"
 hash = "d256ecbf08caeca497a76c07505f1128c502ba8fb7aceae24f2e157057cdd752"
 
 [[files]]
+file = "kubejs/server_scripts/splint_duration.js"
+hash = "33d0621b3f989628eec86fbc06b48672854509d0089972a05e8ea51195abf99e"
+
+[[files]]
+file = "kubejs/server_scripts/sprinkler_hydrate_farmland.js"
+hash = "97044feffbe70d7568ed83ef8f6b5449e3ce55d72af995df01471a9ffc485477"
+
+[[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
 hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
 
 [[files]]
 file = "kubejs/startup_scripts/disable_severe_bleeding.js"
 hash = "05867527f673d2f0baf359967bdc44fb202107f60c76b7777dde70abae98ebd8"
+
+[[files]]
+file = "kubejs/startup_scripts/splint_duration.js"
+hash = "bcb59ab6941f9ba06c5f61b6999b068f4fa064358db53375fa8b992a085e93c9"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
@@ -951,6 +963,11 @@ metafile = true
 [[files]]
 file = "mods/animal-weight.pw.toml"
 hash = "f242021cede5b517982508fc308c90005b42b2be444e2bd81921d5eb5754ba02"
+metafile = true
+
+[[files]]
+file = "mods/animal-weights-scaling.pw.toml"
+hash = "bc459b5e549a05190c6d766149ce24db46f1e415541cedbf2aa957763ea15a2b"
 metafile = true
 
 [[files]]
