@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.1.1)
+## Current pack state (1.1.2)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.1**, **195** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.1.2**, **195** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,7 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
+- **1.1.2:** sprinkler farmland KubeJS no longer loads FarmlandBlock (Rhino class-not-found).
 - **1.1.1:** **MDT splint** lasts **2 minutes** (was infinite / ~80 min hidden
   timer). KubeJS `splint_duration.js`. **Animal Weights Scaling 1.0.1** (GitHub release;
   visual scale from Animal Weights; NeoForge `[21.1.248,)`, loads on **21.1.248**). **Slice & Dice

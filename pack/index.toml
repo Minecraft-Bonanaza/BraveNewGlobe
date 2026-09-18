@@ -926,7 +926,7 @@ hash = "33d0621b3f989628eec86fbc06b48672854509d0089972a05e8ea51195abf99e"
 
 [[files]]
 file = "kubejs/server_scripts/sprinkler_hydrate_farmland.js"
-hash = "97044feffbe70d7568ed83ef8f6b5449e3ce55d72af995df01471a9ffc485477"
+hash = "d4e7f85a83d5bf12b26606c870656f91fecdbbd74037bc1e458139a09b36778b"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"

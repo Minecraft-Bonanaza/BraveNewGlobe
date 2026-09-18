@@ -27,8 +27,6 @@ const $SprinklerType = Java.loadClass(
 	'com.possible_triangle.sliceanddice.api.sprinkler.SprinklerType'
 )
 const $Configs = Java.loadClass('com.possible_triangle.sliceanddice.config.Configs')
-const $FarmlandBlock = Java.loadClass('net.minecraft.world.level.block.FarmlandBlock')
-const $Blocks = Java.loadClass('net.minecraft.world.level.block.Blocks')
 const $BlockPos = Java.loadClass('net.minecraft.core.BlockPos')
 const $TagKey = Java.loadClass('net.minecraft.tags.TagKey')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
@@ -135,13 +133,32 @@ function isSprinklerState(state) {
 	}
 }
 
+function blockId(state) {
+	if (!state) return ''
+	try {
+		return String(state.getBlock().builtInRegistryHolder().key().location())
+	} catch (e) {
+		try {
+			return String(state.block)
+		} catch (e2) {
+			return ''
+		}
+	}
+}
+
 function hydrateFarmland(mcLevel, x, y, z) {
 	const pos = new $BlockPos(x, y, z)
 	const state = mcLevel.getBlockState(pos)
-	if (!state.is($Blocks.FARMLAND)) return
-	const moisture = state.getValue($FarmlandBlock.MOISTURE)
-	if (moisture >= MAX_MOISTURE) return
-	mcLevel.setBlock(pos, state.setValue($FarmlandBlock.MOISTURE, MAX_MOISTURE), UPDATE_CLIENTS)
+	if (blockId(state) !== 'minecraft:farmland') return
+	const props = state.getProperties()
+	if (!props) return
+	for (const prop of props) {
+		if (String(prop.getName()) !== 'moisture') continue
+		const moisture = state.getValue(prop)
+		if (moisture >= MAX_MOISTURE) return
+		mcLevel.setBlock(pos, state.setValue(prop, MAX_MOISTURE), UPDATE_CLIENTS)
+		return
+	}
 }
 
 function hydrateArea(mcLevel, pos, kind, range) {

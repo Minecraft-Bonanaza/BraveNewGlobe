@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.2] — 2026-09-18
+
+### Fixed
+- Slice & Dice sprinkler farmland script no longer `Java.loadClass`es `FarmlandBlock` /
+  `Blocks` (KubeJS Rhino: "Class could not be found"). Moisture is set by walking the
+  blockstate `moisture` property on `minecraft:farmland`.
+
+### Notes
+- **No fresh world.** `/reload` or next launch.
+
 ## [1.1.1] — 2026-09-18
 
 ### Added
