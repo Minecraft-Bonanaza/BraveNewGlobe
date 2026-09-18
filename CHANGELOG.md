@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.3] — 2026-09-18
+
+### Fixed
+- Slice & Dice sprinklers wet farmland when **Realistic Farmland recalculates moisture**
+  (`BlockEvents.randomTick` on `minecraft:farmland`, one tick after RF). A plot hydrates
+  if a sprinkler is in the sprinkle radius (default ±2, ≤7 above / ≤3 below for floor)
+  and the vertical column on that plot is only **air, crops, or the sprinkler**.
+
+### Notes
+- **No fresh world.** `/reload` or next launch.
+
 ## [1.1.2] — 2026-09-18
 
 ### Fixed
