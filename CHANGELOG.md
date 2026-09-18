@@ -3,6 +3,21 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.4] — 2026-09-18
+
+### Fixed
+- Slice & Dice sprinklers actually wet Realistic Farmland. 1.1.3 hooked
+  `BlockEvents.randomTick` on farmland, but RF **wraps** that method and never
+  calls the original, so KubeJS never ran. Hydration now uses `PlayerEvents.tick`
+  (same path as bleeding/splint). Plots in the sprinkle box wet if the column
+  **between** farmland and sprinkler is air or crops (ceiling beside an offset
+  head is not a blocker).
+
+### Notes
+- **No fresh world.** `/reload` or next launch. Stand near the farm; moisture
+  snaps within about a second. `latest.log` should show
+  `[BNG] sprinkler farmland hydration` on load, then one `wetted` line.
+
 ## [1.1.3] — 2026-09-18
 
 ### Fixed
