@@ -3,6 +3,49 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.0] — 2026-09-18
+
+### Added
+- **Create Slice & Dice** `4.3.3` (Modrinth `N67LJgrN`) — slicer plus **sprinklers** (water / liquid
+  fertilizer / potions / lava; floor variant; works on Sable physics contraptions). Create
+  `[6.0.9,7.0.0)` fits the 6.0.10 pin. Kotlin for Forge 5.12.0 already covers `[5.8,)`. Atmosphere
+  `1.0.17` is jar-in-jar (not a separate packwiz mod). Farmer's Delight stays optional-compat; already
+  in the pack. Create Enchantment Industry liquid-XP sprinkler compat is already in.
+- **Create Deep Seas** `2.2.4` (Modrinth `UcXaPVeD`) — Sable/Aeronautics submarines. Fits Create 6.0.10,
+  Aeronautics 1.3.2 (`aeronautics` `[1.1.3,)`), Sable 2.0.5 (`[1.2,)`), NeoForge `[21.1,)`. Dedicated-server
+  mixin/render crash fixes in this cut. Bundles **Create Abyss** (dimension, same jar). Stub
+  `create_high_seas` is a different modid from **Better High Seas** (`highseas`) — both stay.
+  Sodium incompatibility is only exact `0.6.13`; pack is `0.8.13`.
+- **Create: Deep Seas - Lava Fix** `1.0.1` (Modrinth `9LUKMhCi`, `submarinefix`) — sealed lava-submerged
+  subs no longer apply fire/lava damage or the fire overlay. Optional on `create_submarine` `[2.0,)`.
+- **Cotton to Wool** `1.0.0` (GitHub `Minecraft-Bonanaza/Cotton-to-Wool`, `cotton_to_string`) — craft or
+  mill Create: Cotton, cotton balls, and thread into vanilla string. NeoForge `[21.1.248,)`, MC
+  `[1.21.1]`. `createcotton` / `create` are optional in the jar; Create: Cotton is already in the pack.
+
+### Changed — survival layer
+- Disabled **More Diseases & Treatments** `bleeding` ("Moderate bleeding") and `severebleeding`
+  ("Severe bleeding"). The mod has no per-disease config; KubeJS denies both in
+  `MobEffectEvent.Applicable` (startup) and strips them from anyone who already has them (server).
+
+### Changed — Power Grid first generator (no brass / no blaze)
+- Crafting-table recipes for the **basic commutator**, **induction rotor**, and **basin heater**
+  so a first generator / first heat does not need Mechanical Crafters (brass). Commutator is the
+  mechanical 4-row squeezed to 3×3 with pins left and right of andesite casing
+  (`coal / copper plate / coal`, `pin / casing / pin`, `alloy / shaft / alloy`). Rotor is the
+  mechanical 3×3 minus the two wing coils (top and bottom coils only). Basin heater is the
+  mechanical 5-wide squeezed to 3×3, dropping the two wing resistive coils
+  (`resistive coil ×3` / `copper plate · empty · copper plate` /
+  `copper plate / conductive casing / copper plate`). Mechanical-crafting recipes are unchanged.
+
+### Changed — Born in Chaos
+- Stopped **Lifestealer** natural spawns (`born_in_chaos_v1:lifestealer` and true form) via
+  In Control `spawn.json`. Spawn eggs / `/summon` still work.
+
+### Notes
+- Left pinned: Big Globe (patched jar), Create 6.0.10, Sable, Aeronautics 1.3.2 + Climbable Ropes
+  2.1.3, Sodium/Iris trio, Connector, Tracks+, Simply More, Ping Wheel 1.12.2, Market Maker.
+- **No fresh world.**
+
 ## [1.0.11] — 2026-09-17
 
 ### Fixed — dedicated-server hang on start (FTB loot crates)

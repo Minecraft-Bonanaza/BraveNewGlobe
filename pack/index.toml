@@ -450,7 +450,7 @@ hash = "a6c9d147a51c9e432c5c74c00285cfc5ba8b6fa4a0c6686051a7168b158d0d7a"
 
 [[files]]
 file = "config/incontrol/spawn.json"
-hash = "c247af1dc4c5972a6b6fa23055ec925badf96ea58221c7a4deb24fb453b76519"
+hash = "6e702e2346e6639b0409430243134409df02dbf2c002d01a16d90c3c6e587b64"
 
 [[files]]
 file = "config/iris-excluded.json"
@@ -913,8 +913,20 @@ file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"
 hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
+file = "kubejs/server_scripts/disable_severe_bleeding.js"
+hash = "b8545b617bc825540cdb0f205e640a3c424a09bb688442a3988dccd642ae04b2"
+
+[[files]]
+file = "kubejs/server_scripts/powergrid_andesite_generator.js"
+hash = "d256ecbf08caeca497a76c07505f1128c502ba8fb7aceae24f2e157057cdd752"
+
+[[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
 hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
+
+[[files]]
+file = "kubejs/startup_scripts/disable_severe_bleeding.js"
+hash = "05867527f673d2f0baf359967bdc44fb202107f60c76b7777dde70abae98ebd8"
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
@@ -1102,6 +1114,11 @@ hash = "e2edf339c98dbdcf04f46a15276e9b1b5bbdeee0f1ac8b7d9bddb1ee8e54b9a1"
 metafile = true
 
 [[files]]
+file = "mods/cotton-to-wool.pw.toml"
+hash = "8e5c59c4bd04c1221f37e7557cc23ef93a586b8ae1a57af858d1d334db53a131"
+metafile = true
+
+[[files]]
 file = "mods/crash-assistant.pw.toml"
 hash = "dcf76851bcebaaf30fb4f3c34e4a1626330b2c6111f136bfe2c2e9fff3f58b2e"
 metafile = true
@@ -1189,6 +1206,16 @@ metafile = true
 [[files]]
 file = "mods/create-cotton.pw.toml"
 hash = "5b80f3cfbd5a430c8771631cde00fd990834b44a356b41f8996248d37ad88add"
+metafile = true
+
+[[files]]
+file = "mods/create-deep-seas-lava-fix.pw.toml"
+hash = "cdee1d0e7cdd515fd5f9171ab4f553a127850d5a584685d125495712db0e94e9"
+metafile = true
+
+[[files]]
+file = "mods/create-deep-seas.pw.toml"
+hash = "404db1758af44123b89cbf6e2ffdf4a5cf11b708be665f48657ff40735723152"
 metafile = true
 
 [[files]]
@@ -1764,6 +1791,11 @@ metafile = true
 [[files]]
 file = "mods/simplymore.pw.toml"
 hash = "5ac1c21b88d19ae5b2f021a9aeaaf8f2761e5aac9f1f7a6b6fa59059b65a5e52"
+metafile = true
+
+[[files]]
+file = "mods/slice-and-dice.pw.toml"
+hash = "83a7b840686a417dfe1161ee5cd918989dd2d901c9013bf85e93a30f597260f7"
 metafile = true
 
 [[files]]

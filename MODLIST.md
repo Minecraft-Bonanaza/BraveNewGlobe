@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**190 mods**), grouped by purpose. Current pack **1.0.7**.
+Human-readable list of every mod in the pack (**194 mods**), grouped by purpose. Current pack **1.1.0**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -27,9 +27,11 @@ Human-readable list of every mod in the pack (**190 mods**), grouped by purpose.
 - **Create: Diesel Generators** — fuel-based power
 - **Create: Metallurgy** — metal processing
 - **Create: Cotton** — cotton/textiles
+- **Cotton to Wool** `1.0.0` — Create: Cotton / cotton balls / thread → vanilla string (GitHub)
 - **Create: Storage [Neo/Forge]** — storage expansion
 - **Create Factory Logistics** — factory/logistics automation
 - **Create: Ratatouille** — cooking/food processing
+- **Create Slice & Dice** `4.3.3` — slicer + sprinklers (water / fertilizer / potions; Sable contraptions)
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
 - **Create Cardan Shafts** — drivetrain/shaft additions
 - **Create: Gears n' Kinetics** — kinetic additions
@@ -67,6 +69,8 @@ Human-readable list of every mod in the pack (**190 mods**), grouped by purpose.
 - **Create: Warnautics** `1.0.8` — military/combat aeronautics (cruise missile; needed by the
   0.9.15 JACKPOT pool). Do not roll back to 1.0.3.
 - **Create: Better High Seas** — ships / naval content
+- **Create Deep Seas** `2.2.4` — Sable/Aeronautics submarines (bundles Abyss dimension)
+  - **Create: Deep Seas - Lava Fix** `1.0.1` — no fire/lava damage inside sealed lava-submerged subs
 - **Aeronautics Camera Sync** — smooth camera for contraptions
   - **Azimuth API** _(dependency — camera/keybind library)_
 - **Create Aero Radars** — radar for aircraft

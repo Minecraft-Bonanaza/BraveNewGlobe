@@ -3,5 +3,9 @@
     "mob": ["seaeater:leviathan", "seaeater:kraken", "seaeater:sea_eater"],
     "minheight": -49,
     "result": "deny"
+  },
+  {
+    "mob": ["born_in_chaos_v1:lifestealer", "born_in_chaos_v1:lifestealer_true_form"],
+    "result": "deny"
   }
 ]

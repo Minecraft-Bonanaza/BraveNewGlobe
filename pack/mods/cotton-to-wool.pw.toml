@@ -1,0 +1,8 @@
+name = "Cotton to Wool"
+filename = "cotton_to_string-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Minecraft-Bonanaza/Cotton-to-Wool/releases/download/v1.0.0/cotton_to_string-1.0.0.jar"
+hash-format = "sha256"
+hash = "8dcbce0b7528e90931fb7d966b9d62f829f093356d8cb224e9f43d864127c0bf"

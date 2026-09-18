@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.0.11)
+## Current pack state (1.1.0)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.0.11**, **190** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.1.0**, **194** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -37,13 +37,19 @@ Living rules. CHANGELOG stays historical.
 - **Phase:** **1.0.0 is the first production release.** The custom in-house
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
-  may continue in `1.0.x`.
+  may continue in `1.x`.
+- **1.1.0:** **Create Slice & Dice 4.3.3** (sprinklers). **Create Deep Seas 2.2.4**
+  + **Lava Fix 1.0.1**. **Cotton to Wool 1.0.0** (GitHub; cotton/thread → string). **Moderate and
+  severe bleeding** (`more_diseases_and_treatments:bleeding` / `severebleeding`) are disabled
+  via KubeJS. **Power Grid** basic commutator, induction rotor, and basin heater have
+  crafting-table recipes (no Mechanical Crafter / first-brass loop). **Born in Chaos Lifestealer**
+  natural spawns denied (In Control).
 - **1.0.11:** stripped FTB `loot_crate` from the three Create reward tables (dedicated-server
   start crash via duplicate `ftbquests:lootcrate` in creative tabs). **FTB Quests 2101.1.36** +
   **FTB Library 2101.1.36**. **Distant Horizons 3.3.1** (Modrinth; optional, default off).
   Also: Burnt Basic 1.10.5, FFAPI 2.3.5, Voice Chat 2.6.23, ModernFix 5.27.24, Xaero Mini
-  26.5.0 + World 1.46.0. Delete leftover `config/ftbquests/quests/reward_tables/*.snbt.OLD`
-  on the host if present.
+  26.5.0 + World 1.46.0. Delete leftover
+  `config/ftbquests/quests/reward_tables/*.snbt.OLD` on the host if present.
 - **1.0.7:** Sable overworld air pressure datapack (`bng_sable_pressure.zip`).
   Cruise **Y 300–400**, conventional balloons/props **~Y 500**, steep drop after that,
   **Y 800** needs Gadgets & Gizmos thrusters (sliver of air, vacuum at **Y 920**).

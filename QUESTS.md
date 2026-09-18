@@ -5,7 +5,7 @@ Framework: `SPECTRUM.md` (a SIG = baseline → specialized career curve).
 
 **Shipped book (as of 1.0.0):** **17 chapters / 246 quests**.
 **1.0.0** is the first production release (content stack including in-house
-**Create: Market Maker** is in). Survival-layer polish may continue in `1.0.x`; not new
+**Create: Market Maker** is in). Survival-layer polish may continue in `1.x`; not new
 quest chapters.
 Committed `pack/config/ftbquests/**/*.snbt` is the source of truth
 (`bigGlobeAero/build_ftbquests.py` + `quest_lines/*.py`; IDs are SHA-1 of stable keys).
