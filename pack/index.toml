@@ -1022,6 +1022,11 @@ hash = "f53d98dc09fb5abb52798e5dfd25297d85a290e1e4874d8208b981654799121e"
 metafile = true
 
 [[files]]
+file = "mods/bluemap.pw.toml"
+hash = "f33a4720ef4f315b6d1f778039e9f7bdb8f5ef1b58a57d565c30fd1d8adee207"
+metafile = true
+
+[[files]]
 file = "mods/borninchaos.pw.toml"
 hash = "a2c8cf1a4fc5faed55ca1f8d04f7abaa1c8282b9bcd70e1b3e607181923f48d9"
 metafile = true

@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**196 mods**), grouped by purpose. Current pack **1.1.5**.
+Human-readable list of every mod in the pack (**197 mods**), grouped by purpose. Current pack **1.1.6**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -16,6 +16,7 @@ Human-readable list of every mod in the pack (**196 mods**), grouped by purpose.
 ## World Generation & Core
 - **Big Globe** _(shallow-608 patched)_ — the pack's core world generator (custom terrain, caves, spawn)
 - **Chunky (Forge/NeoForge)** — world pre-generator utility
+- **BlueMap** `5.7` — 3D web world map on port **8100** _(server-only)_
 - **Paxi (NeoForge)** — loads the pack's global datapacks/resourcepacks (Big Globe compat)
 
 ## Create & Add-ons

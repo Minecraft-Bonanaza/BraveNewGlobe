@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.6] — 2026-09-18
+
+### Added
+- **BlueMap** `5.7-neoforge` (Modrinth `swbUV1cr`, last NeoForge build that lists **1.21.1**;
+  later 5.8+ are 1.21.6 / 26.x). **Server-only** — clients do not download the jar. Web map
+  defaults to port **8100** (`http://<server>:8100/`). No pack config shipped, so an existing
+  host `config/bluemap` (already on 8100) is left alone.
+
+### Notes
+- **No fresh world.** Restart the **server**. First map render is a background job (`/bluemap`).
+
 ## [1.1.5] — 2026-09-18
 
 ### Changed
