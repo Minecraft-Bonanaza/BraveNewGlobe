@@ -925,6 +925,10 @@ file = "kubejs/server_scripts/splint_duration.js"
 hash = "33d0621b3f989628eec86fbc06b48672854509d0089972a05e8ea51195abf99e"
 
 [[files]]
+file = "kubejs/server_scripts/sprinkler_hydrate_farmland.js"
+hash = "85f6770f3b2da49c1f79f4d79e6ee9f4e2136e487deb194a479009b6466a3709"
+
+[[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
 hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
 

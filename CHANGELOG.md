@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.7] — 2026-09-18
+
+### Fixed
+- Restored the 1.1.4 KubeJS sprinkler hydrator (`sprinkler_hydrate_farmland.js`, player tick).
+  The Java **Sprinkler Farmland** jar stays, but the dedicated server still let plots dry;
+  the singleplayer world that had been running that script stayed wet. Both paths now ship.
+
+### Notes
+- **No fresh world.** `/reload` is enough for the script; restart if the jar is new.
+
 ## [1.1.6] — 2026-09-18
 
 ### Added
