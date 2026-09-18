@@ -40,6 +40,7 @@ farming/food, climate) may continue in `1.x`.
 - **[LOOT.md](LOOT.md)** — combat-dungeon LootJS pools + Simply Swords loot rules.
 - **[CHANGELOG.md](CHANGELOG.md)** — version history.
 - **[MODLIST.md](MODLIST.md)** — human-readable mod list (197 mods).
+- **[CANDIDATES.md](CANDIDATES.md)** — holding list for mods to add later (not a live pack change).
 - **[Notes](Notes.md)** — living pack-state notes (villages, WDA, loot, height, gotchas).
 
 ## Quick start (players)
