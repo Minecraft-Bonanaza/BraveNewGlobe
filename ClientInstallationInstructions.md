@@ -10,7 +10,7 @@ Brave New Globe is a packwiz pack for Minecraft **1.21.1** / NeoForge **21.1.248
 ## 1. Create the instance
 
 1. Open PrismLauncher and click **Add Instance**.
-2. Set Minecraft to `1.21.1`.
+2. Set Minecraft to `1.21.1`. **Note that 1.21.1 and 1.21.10 are not the same thing. I'm looking at you Aiden.**
 3. Enable **NeoForge** and select `21.1.248`.
 4. Name the instance `Brave New Globe` and click **OK**.
 
