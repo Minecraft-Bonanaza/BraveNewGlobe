@@ -3,6 +3,18 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.5] — 2026-09-18
+
+### Changed
+- Slice & Dice water sprinklers now hydrate Realistic Farmland via **Sprinkler Farmland**
+  `1.0.0` (GitHub `Minecraft-Bonanaza/Slice-and-Dice-Farmland`, Java mixin + sprinkler
+  scan). RF stays: source-block drinking and moisture spread are unchanged. The KubeJS
+  hydrator (`sprinkler_hydrate_farmland.js`) is gone.
+
+### Notes
+- **No fresh world.** Restart the instance or server (not `/reload`) so the new jar
+  loads. Stand near the farm; moisture snaps to wet while a water sprinkler is spraying.
+
 ## [1.1.4] — 2026-09-18
 
 ### Fixed

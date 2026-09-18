@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.1.4)
+## Current pack state (1.1.5)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.4**, **195** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.1.5**, **196** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,8 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
+- **1.1.5:** RF stays; sprinklers now Java compat (`sprinklerfarmland` 1.0.0);
+  KubeJS hydrator gone; no fresh world; restart (not `/reload`).
 - **1.1.4:** sprinklers wet farmland on player tick (RF wrap skips farmland randomTick); LOS is the air/crop column between plot and head.
 - **1.1.3:** sprinklers wet farmland on farmland randomTick (after RF), LOS air/crops in radius.
 - **1.1.2:** sprinkler farmland KubeJS no longer loads FarmlandBlock (Rhino class-not-found).

@@ -1,0 +1,8 @@
+name = "Sprinkler Farmland"
+filename = "sprinklerfarmland-1.0.0.jar"
+side = "both"
+
+[download]
+url = "https://github.com/Minecraft-Bonanaza/Slice-and-Dice-Farmland/releases/download/v1.0.0/sprinklerfarmland-1.0.0.jar"
+hash-format = "sha256"
+hash = "45745a8862e118d942376dc328ed226e06ace0432456c63fc18113d7ac3f37aa"

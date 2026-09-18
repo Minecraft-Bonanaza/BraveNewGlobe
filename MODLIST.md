@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**195 mods**), grouped by purpose. Current pack **1.1.4**.
+Human-readable list of every mod in the pack (**196 mods**), grouped by purpose. Current pack **1.1.5**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -32,6 +32,7 @@ Human-readable list of every mod in the pack (**195 mods**), grouped by purpose.
 - **Create Factory Logistics** — factory/logistics automation
 - **Create: Ratatouille** — cooking/food processing
 - **Create Slice & Dice** `4.3.3` — slicer + sprinklers (water / fertilizer / potions; Sable contraptions)
+- **Sprinkler Farmland** `1.0.0` — S&D water sprinklers snap Realistic Farmland moisture to 7 (GitHub)
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
 - **Create Cardan Shafts** — drivetrain/shaft additions
 - **Create: Gears n' Kinetics** — kinetic additions
