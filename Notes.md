@@ -25,11 +25,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.0.7)
+## Current pack state (1.0.11)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.0.7**, **190** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.0.11**, **190** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +38,12 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.0.x`.
+- **1.0.11:** stripped FTB `loot_crate` from the three Create reward tables (dedicated-server
+  start crash via duplicate `ftbquests:lootcrate` in creative tabs). **FTB Quests 2101.1.36** +
+  **FTB Library 2101.1.36**. **Distant Horizons 3.3.1** (Modrinth; optional, default off).
+  Also: Burnt Basic 1.10.5, FFAPI 2.3.5, Voice Chat 2.6.23, ModernFix 5.27.24, Xaero Mini
+  26.5.0 + World 1.46.0. Delete leftover `config/ftbquests/quests/reward_tables/*.snbt.OLD`
+  on the host if present.
 - **1.0.7:** Sable overworld air pressure datapack (`bng_sable_pressure.zip`).
   Cruise **Y 300–400**, conventional balloons/props **~Y 500**, steep drop after that,
   **Y 800** needs Gadgets & Gizmos thrusters (sliver of air, vacuum at **Y 920**).
@@ -69,7 +75,6 @@ Living rules. CHANGELOG stays historical.
   Village grid needs **unexplored chunks**. Do **not** add **Nvidium** (Iris disables it;
   it is a Sodium terrain renderer, not GPU worldgen). **Terrain Diffusion** would replace
   Big Globe; do not add it.
-- **1.0.0:** in-universe **[CHARTER.md](CHARTER.md)**. No jar or datapack change vs 0.9.37.
 - **0.9.35:** **Climbable Ropes 2.1.3** (pinned to Aeronautics 1.3.2 / Simulated 1.3.x —
   older Climbable Ropes + Aeronautics 1.2.1 crashed) and **Create: WarHorn 1.0.1**. Jar
   bumps: Going Ballistic 0.3.1, Sodium 0.8.13, Aeroworks 1.5.0, Numismatics 1.1.0 + Utils

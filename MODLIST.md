@@ -212,7 +212,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Iris Shaders** — shader loader _(client)_
 - **Iris & Oculus Flywheel Compat** — Flywheel-under-Iris compatibility _(client)_
 - **Iris/Oculus For Simple Clouds** — shader + Simple Clouds compatibility _(client)_
-- **Distant Horizons** — LOD "see forever" rendering
+- **Distant Horizons** `3.3.1` — LOD "see forever" rendering _(optional, default off)_
 - **Simple Clouds** — cloud visual overhaul _(both; Project Atmosphere dependency — not optional)_
 - **Particle Rain** — enhanced precipitation particles _(client)_
 - **Puddles & Floods** — puddle/flood weather visuals

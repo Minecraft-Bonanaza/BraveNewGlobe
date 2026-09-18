@@ -3,6 +3,37 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.0.11] — 2026-09-17
+
+### Fixed — dedicated-server hang on start (FTB loot crates)
+- Stripped `loot_crate` from the three Create reward tables (Basics / Workshop / Precision).
+  CC: Tweaked rebuilds creative tabs on `ServerStarted`; FTB Quests then inserts
+  `ftbquests:lootcrate` once per table; NeoForge treats the un-NBTed stacks as duplicates and
+  throws `IllegalArgumentException`. Architectury turns that into a `ModLoadingException`, the
+  Server thread dies, and the watchdog dump a minute later looks like a hang (no Server thread,
+  `W: 0` chunks). Quest table rolls themselves are unchanged — only the creative-tab crate
+  items are gone.
+- Also bumped **FTB Quests** `2101.1.34` → `2101.1.36` and **FTB Library** `2101.1.35` → `2101.1.36`.
+- **No fresh world.** Hosts: delete leftover `config/ftbquests/quests/reward_tables/*.snbt.OLD`
+  if those files exist (failed migrations were stacking extra tables).
+
+### Changed — jar bumps (1.21.1 NeoForge, no lockstep pins)
+- **Distant Horizons** `3.2.0-b` → **`3.3.1`** (Modrinth `IcOcoekl`; CurseForge was still on 3.2.0-b).
+  3.3.0 adds faster surface gen, Iris shadow/depth fixes, ~50% less disk *work*, and better
+  Chunky/C2ME database queuing; 3.3.1 is the NeoForge config-lang follow-up. Still optional,
+  `default = false`. Dedicated servers that packwiz-install headless still get it (`side = both`)
+  unless the start script deletes the jar after pull.
+- **Burnt Basic** `1.10.4.2` → `1.10.5`.
+- **Forgified Fabric API** `0.116.15+2.3.4` → `0.116.15+2.3.5`.
+- **Simple Voice Chat** `2.6.22` → `2.6.23`.
+- **ModernFix** `5.27.20` → `5.27.24`.
+- **Xaero's Minimap** `26.4.2` → `26.5.0` and **World Map** `1.45.0` → `1.46.0` (paired).
+
+### Notes
+- Left pinned: Big Globe (patched jar), Create 6.0.10, Sable, Aeronautics 1.3.2 + Climbable Ropes
+  2.1.3, Sodium/Iris trio, Connector, Tracks+, Simply More, Ping Wheel 1.12.2, Market Maker.
+- **No fresh world.**
+
 ## [1.0.10] — 2026-09-17
 
 ### Changed

@@ -410,15 +410,15 @@ hash = "1458aae914d94f7283e0ddc13385959b77e46740baeaeac712b500bd083a6e76"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/A1E1E1F6F632F9B8.snbt"
-hash = "fb96320ddfeb6e9151ee01473c1f15242319a2623b3689013b573092e3f2c2f4"
+hash = "447d770b280788e3dc66ef9c7367207d7c00925a1f1604997ddd6c6930fe110b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/BCAB331382ADF7FA.snbt"
-hash = "e92bec3f7fb9dee2b82db03b28261ec21521a3a9d4c5a91d4cadf51210b5c5a3"
+hash = "667b4fea225cc1e04faabd06d04635844b2ba097cc2a1fe7395ee94b1c8b0b83"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/E63DC9EDED922EFA.snbt"
-hash = "8f706a5c39924ba1d02c861b102f3bdd9f479e256c7e1ef546eddc1427f37cc1"
+hash = "e2a2602321888ded7faed2816c17c8a993c98f5bde7322fd03238f22a0d2d5c5"
 
 [[files]]
 file = "config/fxntstorage-client.toml"
@@ -1018,7 +1018,7 @@ metafile = true
 
 [[files]]
 file = "mods/burnt-basic.pw.toml"
-hash = "3fb98e975075663859e3eb504aa769125bbac93e07aa7e053bd624eacecbe2d7"
+hash = "b2455e85c86061aeda7daf08b92e0bb98709428a0c7ab0faf41c810be7e4c69f"
 metafile = true
 
 [[files]]
@@ -1327,8 +1327,8 @@ hash = "6b6683fd8ec53d10d4fbef3b3d53922a1aaa8ef4d2e4b52bb819dc451f5d6b3d"
 metafile = true
 
 [[files]]
-file = "mods/distant-horizons.pw.toml"
-hash = "b8c9e3d222b4fc45b34f8b020233e85cb2b782a2f089f0627d243a3287ba67ba"
+file = "mods/distanthorizons.pw.toml"
+hash = "c65665ef1990eea0f9495aabe7099532bf2706cedecd26331b0ceaed3b2170c4"
 metafile = true
 
 [[files]]
@@ -1368,7 +1368,7 @@ metafile = true
 
 [[files]]
 file = "mods/forgified-fabric-api.pw.toml"
-hash = "e3c62164f1eed254aa04629bce3d62b34a65bf15801d2ffb1bf1373a0b97c544"
+hash = "c490f7b680875f034af39a1556911d6edb1dcdd76a114ee6a4eca0f158cd92b2"
 metafile = true
 
 [[files]]
@@ -1378,12 +1378,12 @@ metafile = true
 
 [[files]]
 file = "mods/ftb-library-forge.pw.toml"
-hash = "276e79d919c3a698ab2881d784544b7e60bef69b43f44808353bb65d38633cb3"
+hash = "2e72d40c6d7b128981b19b71c19d45eb6813f1af87ae1abe1cf92adfa5e8223f"
 metafile = true
 
 [[files]]
 file = "mods/ftb-quests-forge.pw.toml"
-hash = "6a451ba7022f1afab59b6884ded7e2c533f7d4279738477030d6de496e3de1a4"
+hash = "93330f6ec85532067df176c6baee0e0f6d685c78088b1a2217726f6421899148"
 metafile = true
 
 [[files]]
@@ -1558,7 +1558,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "b0364f6b95f6ed837239c232bad0e2d7317e58f0e4c040e66a4f533239d5775e"
+hash = "1813b429f0782edb4d0c428f00da0c760acea32ede566656588af99c6ad10a11"
 metafile = true
 
 [[files]]
@@ -1748,7 +1748,7 @@ metafile = true
 
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
-hash = "80487ebc26dcb0af9013a11c76b7fed9a019e7770ebaf7d82cfaffc2192b950d"
+hash = "4bbb4ff006bf5f27179a47683b2710c92cb3314a1520e95bcd1808a6ea94ec4a"
 metafile = true
 
 [[files]]
@@ -1848,12 +1848,12 @@ metafile = true
 
 [[files]]
 file = "mods/xaeros-minimap.pw.toml"
-hash = "aadbbc9887d7aaa4b7b47e54e253b0b61a22417ebebe5dd4d53cbaaa83da9080"
+hash = "72f10bccb7f9767b2a731dda29aaeacdd4671971e8adaebe8840be9ca0090c31"
 metafile = true
 
 [[files]]
 file = "mods/xaeros-world-map.pw.toml"
-hash = "68790d5f32915da058ef765964054598dadd435b0120bb25c2e9072b5abdc61e"
+hash = "a71c5d8a681bc8d891495e166a75de7715007ae8509b5bb45904763b0eae5224"
 metafile = true
 
 [[files]]

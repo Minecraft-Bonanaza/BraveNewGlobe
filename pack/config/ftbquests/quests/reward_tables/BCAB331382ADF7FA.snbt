@@ -39,14 +39,4 @@
 			count: 2
 		}
 	]
-	loot_crate: {
-		drops: {
-			boss: 0
-			passive: 0
-			monster: 0
-		}
-		color: 13676608
-		item_name: "Precision Parts Crate"
-		string_id: "precision"
-	}
 }

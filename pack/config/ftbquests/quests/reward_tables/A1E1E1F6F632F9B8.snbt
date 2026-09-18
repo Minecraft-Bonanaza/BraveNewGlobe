@@ -44,14 +44,4 @@
 			count: 12
 		}
 	]
-	loot_crate: {
-		drops: {
-			boss: 0
-			passive: 0
-			monster: 0
-		}
-		color: 10526880
-		item_name: "Create Basics Crate"
-		string_id: "basic"
-	}
 }

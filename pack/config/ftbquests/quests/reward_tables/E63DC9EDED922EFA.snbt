@@ -44,14 +44,4 @@
 			count: 4
 		}
 	]
-	loot_crate: {
-		drops: {
-			boss: 0
-			passive: 0
-			monster: 0
-		}
-		color: 12615744
-		item_name: "Workshop Supply Crate"
-		string_id: "workshop"
-	}
 }
