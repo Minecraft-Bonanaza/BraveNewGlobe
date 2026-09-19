@@ -1001,8 +1001,23 @@ hash = "9009bd5cdcdbc6bc47a7fbb203844d9a551accdd796877bdba5233ac14bbd513"
 metafile = true
 
 [[files]]
+file = "mods/better-banners.pw.toml"
+hash = "7a76280a7a428874efa7e783b041812d1b9e0a95d7a34563b2600809b2872767"
+metafile = true
+
+[[files]]
 file = "mods/better-combat.pw.toml"
 hash = "438170e7e704a1b8ed67bf0521dc5d77cdeeaabf6f729dba9f8dfdad75330acf"
+metafile = true
+
+[[files]]
+file = "mods/better-party-x-simple-voice.pw.toml"
+hash = "d5d3cb62126d57293ad1fc5d4c20e4677f159f421374fe22c6a93ab830b09dbf"
+metafile = true
+
+[[files]]
+file = "mods/better-party.pw.toml"
+hash = "4bd1e21bc57edfba22f745900fbb716fae40a5003006973aaa66abd27c926a85"
 metafile = true
 
 [[files]]
@@ -1063,6 +1078,11 @@ metafile = true
 [[files]]
 file = "mods/cc-cbc.pw.toml"
 hash = "df32f867e04ce60dfd13d2c5af9d90b58daccfce7b4c94e5dba2f4666ba38a89"
+metafile = true
+
+[[files]]
+file = "mods/cc-my-peripheral-extender.pw.toml"
+hash = "ef60ad504fd100f4f36686013bc1da30e6c15910050622156c2e38a967a817a9"
 metafile = true
 
 [[files]]
@@ -1226,6 +1246,11 @@ hash = "b6885c1deebb96c592047334c24851f35c9c3308eb2b58babd091fee6d06e8aa"
 metafile = true
 
 [[files]]
+file = "mods/create-central-kitchen.pw.toml"
+hash = "1ee4600e25e9ea0d9c8807148e07649e1ca406a3f457e9fb0e1885a7a900b4d5"
+metafile = true
+
+[[files]]
 file = "mods/create-cotton.pw.toml"
 hash = "5b80f3cfbd5a430c8771631cde00fd990834b44a356b41f8996248d37ad88add"
 metafile = true
@@ -1258,6 +1283,11 @@ metafile = true
 [[files]]
 file = "mods/create-gunpowder-aspctt.pw.toml"
 hash = "2b039946f357b8a0b67905847bb828e89a8f803fff0eb02fbb580fcbed06eb67"
+metafile = true
+
+[[files]]
+file = "mods/create-integrated-farming.pw.toml"
+hash = "f8e10e1364455cdda4d67eef6e0d9b63605e820f107272a5b5925f11e79e308d"
 metafile = true
 
 [[files]]
@@ -1671,8 +1701,23 @@ hash = "358575d66a1c4c83ddbd69d87486535ad587ec5891101e085cda0e0dac34f4e8"
 metafile = true
 
 [[files]]
+file = "mods/patchouli.pw.toml"
+hash = "26943af2fab4bde348a5c680796972672c2b2c717a42dbaa53d6a6ef6ae44738"
+metafile = true
+
+[[files]]
 file = "mods/paxi-neoforge.pw.toml"
 hash = "b195d17d8138d83647b6abb853e25b3b2d6d8defdc76bb345eb93f40c2232019"
+metafile = true
+
+[[files]]
+file = "mods/petrolpark.pw.toml"
+hash = "3ef4380aa453fe6b198111d4908ea1e87575e4a1681786defb7dbcb610edd7da"
+metafile = true
+
+[[files]]
+file = "mods/petrols-parts.pw.toml"
+hash = "21cb66305c5a5a2fb693cfb8633a0e389728fa99f7d34684c6c9afdb226be08f"
 metafile = true
 
 [[files]]
@@ -1713,6 +1758,11 @@ metafile = true
 [[files]]
 file = "mods/project-atmosphere.pw.toml"
 hash = "6565fe421ad219ec6ba25afdc639ef17bf44e4b73b7fed0381b8d5e1295622fc"
+metafile = true
+
+[[files]]
+file = "mods/provisioners-delight.pw.toml"
+hash = "09cac97ff8300c2bd01b77fe42fe931cacfa37b9fc8fa3e0404a94c5605ee638"
 metafile = true
 
 [[files]]
@@ -1763,6 +1813,11 @@ metafile = true
 [[files]]
 file = "mods/sable.pw.toml"
 hash = "f21e2db6083eb58ee1b96630cf345c38ee7b93296da7990f27155480f3f2b6e1"
+metafile = true
+
+[[files]]
+file = "mods/sannounce.pw.toml"
+hash = "eb70ac3d378eef3b4813db0fd9c558c06fe01a47c9b70bb16a22d16ef0d4b6ba"
 metafile = true
 
 [[files]]
@@ -1841,6 +1896,11 @@ hash = "086fed2b206352cce639ec0344e4e96e8e9fed8af5c550d4d4b50771312dc1a7"
 metafile = true
 
 [[files]]
+file = "mods/storage-delight.pw.toml"
+hash = "f596f7d4fe1a918ff78dd337f635939394f0571bd65536e548eb69e6e38fbead"
+metafile = true
+
+[[files]]
 file = "mods/strut-your-stuff.pw.toml"
 hash = "be50160d9d37a186eaf955f39f22a4e1a3d76fb4e61c63aaca25fd5ab2124f9e"
 metafile = true
@@ -1898,6 +1958,11 @@ metafile = true
 [[files]]
 file = "mods/vs-hose-connectors.pw.toml"
 hash = "c0baea5bb063b538875c25a66b6803f32560c353047d66ee1fdeb7ceddd7c9b5"
+metafile = true
+
+[[files]]
+file = "mods/way-better-title-bar.pw.toml"
+hash = "4e98e646ae28fa021d90369786e313060b780c95c917cb0886029d7450e1a986"
 metafile = true
 
 [[files]]

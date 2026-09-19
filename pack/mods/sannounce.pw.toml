@@ -1,0 +1,13 @@
+name = "SAnnounce"
+filename = "SAnnounce-NeoForge-1.21.1-1.0.2.jar"
+side = "server"
+
+[download]
+hash-format = "sha1"
+hash = "16a3f0b12d133d60c8429ba63d558663633dad4f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8904510
+project-id = 1689889

@@ -1,0 +1,13 @@
+name = "Provisioner's Delight"
+filename = "provisionersdelight-0.9.31neoforge.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/AqjSR89O/versions/AQ5tyTVE/provisionersdelight-0.9.31neoforge.jar"
+hash-format = "sha512"
+hash = "a571919dce2159fe76f85314a923f97646ac2369337c166415634467613f7102db48531fb76721d9f97a581616624b7e893aa85bb7a6e2a9d00c1e5bd6f08703"
+
+[update]
+[update.modrinth]
+mod-id = "AqjSR89O"
+version = "AQ5tyTVE"

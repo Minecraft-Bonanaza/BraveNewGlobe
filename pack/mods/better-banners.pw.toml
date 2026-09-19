@@ -1,0 +1,13 @@
+name = "Better Banners"
+filename = "betterbanners-1.4.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7a0637c6e20d8e2dcbfd41ad5dbe428adbc06f4c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8901166
+project-id = 1653140

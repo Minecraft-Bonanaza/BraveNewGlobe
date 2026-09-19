@@ -1,0 +1,13 @@
+name = "CC : My Peripheral Extender"
+filename = "ccpe-1.1.4-1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "dd6e0f258f65fd06daae917fdcb4548ab3b1baca"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8904356
+project-id = 1635726

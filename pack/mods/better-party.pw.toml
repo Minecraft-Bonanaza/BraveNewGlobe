@@ -1,0 +1,13 @@
+name = "Better Party"
+filename = "better-party-neoforge-1.21.1-1.1.7.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/qHdVMcp2/versions/PglVp3OO/better-party-neoforge-1.21.1-1.1.7.jar"
+hash-format = "sha512"
+hash = "2813a027a0e6007c0085a9dc5235e0fb9af4faffa29cd794d884a4b2c123337af847288e114bdcaadb9c08a72c43beed80af94fbf253188595d8433fd338a687"
+
+[update]
+[update.modrinth]
+mod-id = "qHdVMcp2"
+version = "PglVp3OO"

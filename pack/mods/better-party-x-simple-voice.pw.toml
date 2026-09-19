@@ -1,0 +1,13 @@
+name = "Better Party X Simple Voice"
+filename = "Better Party X Simple Voice - NeoForge - 1.21.1 - 1.0.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a959b3b47ee0940a8639e1b34b8f7f64c3e32323"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8905294
+project-id = 1639044

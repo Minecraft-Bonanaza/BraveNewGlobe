@@ -1,0 +1,18 @@
+name = "Way Better Title Bar"
+filename = "way_better_title_bar-1.0.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "2ff049f2471113de61fe4a07765d5f1aa012f2d2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8902332
+project-id = 1699450
+
+[option]
+optional = true
+default = false
+description = "Windows-only dark title bar with optional FPS / ping / RAM / biome / XYZ. Client cosmetic; server does not require it."
