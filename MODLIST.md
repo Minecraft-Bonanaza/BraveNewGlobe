@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**210 mods**), grouped by purpose. Current pack **1.1.8**.
+Human-readable list of every mod in the pack (**209 mods**), grouped by purpose. Current pack **1.1.9**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -203,7 +203,6 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Simple Voice Chat** `2.6.22` — proximity voice (dedicated server: UDP 24454)
 - **Better Party** `1.1.7` — server-authoritative parties, XP share, locator HUD
 - **Better Party X Simple Voice** `1.0.2` — party ↔ SVC group bridge
-- **SAnnounce** `1.0.2` — repeating/one-shot chat/title/hotbar announcements _(server-only)_
 - **Better Banners** `1.4.0` — high-res banner/shield/painting studio
 - **Ping Wheel** `1.12.2` — mark a location/entity (Sable / DH / SVC group pings)
 - **Better Days** — day/night length control

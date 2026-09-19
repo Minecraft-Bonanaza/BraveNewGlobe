@@ -1816,11 +1816,6 @@ hash = "f21e2db6083eb58ee1b96630cf345c38ee7b93296da7990f27155480f3f2b6e1"
 metafile = true
 
 [[files]]
-file = "mods/sannounce.pw.toml"
-hash = "eb70ac3d378eef3b4813db0fd9c558c06fe01a47c9b70bb16a22d16ef0d4b6ba"
-metafile = true
-
-[[files]]
 file = "mods/sea-myths.pw.toml"
 hash = "2cc82b90f37ddc37933e2c1279397ef84f869043d1724d217c4d4818566cc495"
 metafile = true

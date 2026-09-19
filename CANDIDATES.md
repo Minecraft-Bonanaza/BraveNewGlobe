@@ -65,7 +65,18 @@ Do **not** `packwiz update` Big Globe or Climbable Ropes. Do **not** add Create:
 
 ## Pending
 
-_(none)_
+### SAnnounce
+
+**Pending** — pulled in 1.1.9 (2026-09-18). The NeoForge `1.0.2` jar wants **21.1.250+**; pack loader is **21.1.248**. Re-add when the NeoForge pin moves (or a 21.1.248-compatible jar exists).
+
+Server announcement tool: repeating or one-shot chat / title / hotbar messages, `/adminannounce` panel, `&` colors. Client jar optional (vanilla GUI fallback). **No world gen.**
+
+Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 jar, not Fabric.
+
+- **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/sannounce)
+- **Pin:** `SAnnounce-NeoForge-1.21.1-1.0.2.jar`. Prefer `side = server` so Prism clients skip it; admins who want the custom GUI can install the same jar locally.
+- **Also add:** none.
+- **Blocked by:** NeoForge `[21.1.250,)` vs pack `21.1.248`.
 
 ---
 
@@ -141,17 +152,6 @@ Stack match: CC 1.120.2, Create 6.0.10, Aeronautics 1.3.2, Sable 2.0.5. **No wor
 - **Pin:** NeoForge 1.21.1, current `ccpe-1.1.4-1.21.1.jar`. `side = both`. CurseForge-only.
 - **Also add:** none of the listed deps are missing. Do not add Simulated Jet Engines.
 - **After add:** confirm Aeronautics / Climbable Ropes stay on the current lockstep. Check the extender's chunk-loading config.
-
-### ~~SAnnounce~~
-**ACCEPTED** — added in 1.1.8 (2026-09-18)
-
-Server announcement tool: repeating or one-shot chat / title / hotbar messages, `/adminannounce` panel, `&` colors. Client jar optional (vanilla GUI fallback). **No world gen.**
-
-Ops QoL, not gameplay. Very new (1.0.2). Description still talks Fabric; a NeoForge 1.21.1 jar exists — pin that one, not Fabric.
-
-- **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/sannounce)
-- **Pin:** `SAnnounce-NeoForge-1.21.1-1.0.2.jar`. Prefer `side = server` so Prism clients skip it; admins who want the custom GUI can install the same jar locally.
-- **Also add:** none.
 
 ### ~~Create: Central Kitchen~~
 **ACCEPTED** — added in 1.1.8 (2026-09-18)

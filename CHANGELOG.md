@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.9] — 2026-09-18
+
+### Removed
+- **SAnnounce** `1.0.2` — NeoForge jar wants **21.1.250+**; pack stays on **21.1.248**. Queued again in CANDIDATES.
+
+### Notes
+- **No fresh world.** Restart instance and server. Delete leftover `sannounce` jar / config if the installer leaves them.
+
 ## [1.1.8] — 2026-09-18
 
 ### Added
