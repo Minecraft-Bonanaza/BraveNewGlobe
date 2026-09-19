@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**197 mods**), grouped by purpose. Current pack **1.1.7**.
+Human-readable list of every mod in the pack (**210 mods**), grouped by purpose. Current pack **1.1.8**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -32,12 +32,16 @@ Human-readable list of every mod in the pack (**197 mods**), grouped by purpose.
 - **Create: Storage [Neo/Forge]** — storage expansion
 - **Create Factory Logistics** — factory/logistics automation
 - **Create: Ratatouille** — cooking/food processing
+- **Create: Central Kitchen** `2.6.1` — Create arms on Farmer's Delight / Brewin' cookware
+- **Create: Integrated Farming** `1.4.2` — vacuum harvester, fishing nets, FD crop arms
 - **Create Slice & Dice** `4.3.3` — slicer + sprinklers (water / fertilizer / potions; Sable contraptions)
 - **Sprinkler Farmland** `1.0.0` — S&D water sprinklers snap Realistic Farmland moisture to 7 (GitHub); KubeJS player-tick hydrator also ships
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
 - **Create Cardan Shafts** — drivetrain/shaft additions
 - **Create: Gears n' Kinetics** — kinetic additions
-- **Create: Dragons Plus** — dragon-themed content
+- **Petrol's Parts** `1.3.7` — coaxial/bevel/corner kinetics, differentials, horse mill
+  - **Petrolpark's Library** `1.5.11` _(dependency)_
+- **Create: Dragons Plus** `1.11.9` — dragon-themed content (Central Kitchen / Integrated Farming)
 - **Creating Space** — rocketry / space content
 - **Strut Your Stuff (Struts)** — structural strut/beam building blocks
 
@@ -102,6 +106,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   over Create Big Cannons: Peripheral.
 - **Advanced Peripherals** `0.8.1a` — Chat Box, detectors, scanners, inventory/energy,
   AR goggles. **ME Bridge / RS Bridge** are inert (no AE2 / Refined Storage in the pack).
+- **CC : My Peripheral Extender** `1.1.4` — CC ↔ Aeronautics/Sable extender, monitors, sensors
 
 ## Combat & Explosions
 - **Better Combat** — animated melee combat overhaul
@@ -157,6 +162,9 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 
 ## Farming, Food & Survival
 - **Farmer's Delight** `1.3.4` — cooking & farming expansion
+- **Provisioner's Delight** `0.9.31` — canned/bottled expedition food
+  - **Patchouli** `1.21.1-93` _(dependency)_
+- **Storage Delight** `26.09.17` — kitchen drawers and cabinets
 - **Brewin' And Chewin'** — food & drink additions
 - **Burnt Basic** — cooking/burning mechanics
 - **Realistic Farmland** — realistic soil/farming
@@ -164,7 +172,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **More Diseases & Treatments** — illness & medicine
 - **Serene Seasons** — seasonal cycle affecting crops/biomes
 - **Project Atmosphere** — realistic climate & weather
-- **Supplementaries** — decorative & functional blocks
+- **Supplementaries** `3.9.9` — decorative & functional blocks
 - **Amendments** `1.21-2.1.10` — vanilla cauldron / lantern / jukebox tweaks (Moonlight)
 - **Comforts** `9.0.5` — sleeping bags & hammocks (do not set spawn by default)
 - **Bountiful** — bounty board quests
@@ -193,6 +201,10 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Polymorph** `1.2.0+1.21.1` — choose among colliding crafting recipes
 - **Visual Workbench** `21.1.2` — items stay on the crafting table
 - **Simple Voice Chat** `2.6.22` — proximity voice (dedicated server: UDP 24454)
+- **Better Party** `1.1.7` — server-authoritative parties, XP share, locator HUD
+- **Better Party X Simple Voice** `1.0.2` — party ↔ SVC group bridge
+- **SAnnounce** `1.0.2` — repeating/one-shot chat/title/hotbar announcements _(server-only)_
+- **Better Banners** `1.4.0` — high-res banner/shield/painting studio
 - **Ping Wheel** `1.12.2` — mark a location/entity (Sable / DH / SVC group pings)
 - **Better Days** — day/night length control
 - **Stat Tinkerer** — tweak player/entity stats
@@ -228,7 +240,8 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Jade** — "what am I looking at" tooltip HUD
   - **Jade Addons (Neo/Forge)** `6.1.1` — Create / Aether / Supplementaries extras
 - **AppleSkin** — hunger/saturation HUD info
-- **Just Enough Items (JEI)** — recipe/item lookup
+- **Just Enough Items (JEI)** `19.56.0.441` — recipe/item lookup
+- **Way Better Title Bar** `1.0.0` — Windows dark title bar / FPS / XYZ _(client, optional, default off)_
 - **Animated Inventory** `1.0.6` — items slide between slots _(client, optional, default on)_
 - **Traveler's Titles** `5.1.3` — biome/dimension title cards; Big Globe names/colors via Paxi `bng_titles.zip` _(client, optional, default on)_
 - **Sound Physics Remastered** `1.21.1-1.5.1` — occlusion and reverb _(client, optional, default off)_
@@ -258,7 +271,9 @@ Core/support mods depended on by multiple mods above.
 - **Kambrik** — Kotlin/Fabric helper library
 - **GeckoLib** — entity animation/rendering library
 - **Curios API** — accessory/equipment slots
-- **Moonlight Lib** _(Selene)_ — library for Supplementaries & related
+- **Moonlight Lib** _(Selene)_ `3.6.5` — library for Supplementaries & related
+- **Patchouli** — also listed under Provisioner's Delight
+- **Petrolpark's Library** — also listed under Petrol's Parts
 - **Puzzles Lib** — library for Fuzs mods (Illager Invasion, etc.)
 - **Resourceful Lib** — shared config/registry helpers
 - **Cristel Lib** — structure/config library (Aquamirae, etc.)

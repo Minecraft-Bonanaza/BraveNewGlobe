@@ -65,7 +65,14 @@ Do **not** `packwiz update` Big Globe or Climbable Ropes. Do **not** add Create:
 
 ## Pending
 
-### Provisioner's Delight
+_(none)_
+
+---
+
+## Accepted
+
+### ~~Provisioner's Delight~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Farmer's Delight expansion for **preserved food**: canned/bottled goods, rations, hardtack, crackers, instant noodles, beverage cans. Cans need a can opener; empties recycle to iron. Extra-large crates for bulk haul. 0.9.31 adds Create recipes (fluids, jars) on top of the cooking-pot line.
 
@@ -76,7 +83,8 @@ Fits Agriculture (spoilage, expedition food, physical logistics) without new wil
 - **Also add if missing:** **Patchouli** (Modrinth `nU0bVIaL`, required). Farmer's Delight is already in.
 - **After add:** whitelist/blacklist new canned foods in `pack/config/foodspoil-common.toml` if they should not rot (cans) or should rot slowly. Do not enable worldgen you did not find in the jar.
 
-### Petrol's Parts
+### ~~Petrol's Parts~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Create kinetic parts that do not exist in base Create: coaxial/shaftless/bevel cogs, corner shafts, differentials, planetary gearsets, colossal cog, overload clutch, horse mill, etc. Author calls **Hydraulic Transmission** an end-game cheater part (config can disable any recipe).
 
@@ -87,7 +95,8 @@ No world gen. Overlaps **Create Cardan Shafts** / Gears n' Kinetics on corner-tu
 - **Also add if missing:** **Petrolpark's Library** (Modrinth `petrolpark` / `ik2WZkTZ`). Create 6.0.10 is already in.
 - **After add:** disable recipes for **Hydraulic Transmission** (and consider **Pneumatic Tube** / **Friction Heater** — the heater makes Blaze Burner heat with no fuel). Use the mod's per-component recipe config, not a datapack, unless the config is missing.
 
-### Storage Delight
+### ~~Storage Delight~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Farmer's Delight kitchen furniture: drawers, glass cabinets, countertop cabinets, book-drawers. Crafted blocks only.
 
@@ -98,18 +107,20 @@ Farmer's Delight kitchen furniture: drawers, glass cabinets, countertop cabinets
 - **Also add:** none (Farmer's Delight is already in).
 - **After add:** if barrels/cabinets should slow Food Spoilage, add this mod's block ids to `containerMultipliers` in `pack/config/foodspoil-common.toml`. Do not assume vanilla `minecraft:barrel` covers them.
 
-### Better Party
+### ~~Better Party~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 MMORPG-style parties: finder, public/invite/password groups, party chat, XP share, friendly-fire toggle, member locator, HUD. Server-authoritative. Vanilla scoreboard-team sync is on by default (can disable). **No world gen.**
 
-We do not have this yet. Simple Voice Chat is already in. The voice bridge below is useless without this.
+Simple Voice Chat is already in. The voice bridge below ships with it.
 
 - **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/better-party) · [Modrinth](https://modrinth.com/mod/better-party)
 - **Pin:** NeoForge 1.21.1, current `1.1.7` (`better-party-neoforge-1.21.1-1.1.7.jar`). `side = both` (needed on server and clients).
 - **Also add:** **Better Party X Simple Voice** in the same window (next entry). SVC is already in (`2.6.23`).
 - **After add:** review `config/better_party-common.toml` — locator privacy, max party size, XP-share radius, vanilla team integration vs anything else using `/team`.
 
-### Better Party X Simple Voice
+### ~~Better Party X Simple Voice~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Addon: a Better Party is a Simple Voice Chat group (and the reverse). Live member sync, password sync, party-wide voice modes (Normal / Open / Isolated), speaking indicator on the party HUD.
 
@@ -119,7 +130,8 @@ Addon: a Better Party is a Simple Voice Chat group (and the reverse). Live membe
 - **Pin:** NeoForge 1.21.1, current `1.0.2`. `side = both`. CurseForge-only (no Modrinth hit).
 - **Also add:** Better Party (previous entry). SVC already in.
 
-### CC : My Peripheral Extender (CCPE)
+### ~~CC : My Peripheral Extender (CCPE)~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 CC: Tweaked peripherals aimed at Create: Aeronautics / Sable: wireless peripheral extender (NBT, proxy, redstone, nav, physics, chunk-load), modular monitor, Control Desk, redstone transceiver, electronic transmission, aero/servo bearings, Lua engine, pitot/INS sensors. Author says **no Mixins**.
 
@@ -130,7 +142,8 @@ Stack match: CC 1.120.2, Create 6.0.10, Aeronautics 1.3.2, Sable 2.0.5. **No wor
 - **Also add:** none of the listed deps are missing. Do not add Simulated Jet Engines.
 - **After add:** confirm Aeronautics / Climbable Ropes stay on the current lockstep. Check the extender's chunk-loading config.
 
-### SAnnounce
+### ~~SAnnounce~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Server announcement tool: repeating or one-shot chat / title / hotbar messages, `/adminannounce` panel, `&` colors. Client jar optional (vanilla GUI fallback). **No world gen.**
 
@@ -140,7 +153,8 @@ Ops QoL, not gameplay. Very new (1.0.2). Description still talks Fabric; a NeoFo
 - **Pin:** `SAnnounce-NeoForge-1.21.1-1.0.2.jar`. Prefer `side = server` so Prism clients skip it; admins who want the custom GUI can install the same jar locally.
 - **Also add:** none.
 
-### Create: Central Kitchen
+### ~~Create: Central Kitchen~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Create 2.0 cooking automation for Farmer's Delight / Brewin' And Chewin': mechanical arms on pots/skillets/stoves/cutting boards, packager unpack into cooking pots and kegs, feast/pie serving, cutting-board recipes as sawing/deploying, keg pouring as filling/emptying, boiler heat for pots. Farming automation was split out (see Integrated Farming).
 
@@ -151,7 +165,8 @@ Fits Agriculture specialized kitchens. **No world gen.** Complementary to Ratato
 - **Also add:** none. Needs Create + **Create: Dragons Plus** (already in). FD and Brewin' are already in.
 - **After add:** Polymorph already covers colliding recipes; spot-check FD/Brewin JEI. Pair with Integrated Farming in the same window if both are accepted.
 
-### Create: Integrated Farming
+### ~~Create: Integrated Farming~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Create farming appliances + crop compat: Vacuum Harvester (area harvest + replant), Fishing Net (contraption fishing; lava net only if a lava-fish mod is present — we don't have one), mechanical harvester/arm support for FD tomatoes and mushroom colonies, spout-sped organic compost. **Sable sub-level** harvest/spout/net support is built in.
 
@@ -162,7 +177,8 @@ Create farming appliances + crop compat: Vacuum Harvester (area harvest + replan
 - **Also add:** none of the listed deps are missing. Do not add Simulated Jet Engines for the "Simulated Series" auger note.
 - **After add:** confirm vacuum harvester vs Serene Seasons crop rules; fishing nets vs Hybrid Aquatic (small-creature catch).
 
-### Better Banners
+### ~~Better Banners~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 In-game pixel studio for high-res banners/shields/paintings (up to 1080), animation, emissive glow, **import PNG from disk** so everyone else can see it, pattern-provider copy/paste.
 
@@ -173,7 +189,8 @@ In-game pixel studio for high-res banners/shields/paintings (up to 1080), animat
 - **Also add:** none.
 - **After add:** if image import cannot be disabled in config, treat that as a reject reason for public SMP.
 
-### Way Better Title Bar
+### ~~Way Better Title Bar~~
+**ACCEPTED** — added in 1.1.8 (2026-09-18)
 
 Client-only Windows window chrome: dark title bar, optional name / FPS / ping / RAM / biome / XYZ in the OS title. Not Traveler's Titles (those are in-game biome cards; already in).
 
@@ -182,12 +199,6 @@ Client-only Windows window chrome: dark title bar, optional name / FPS / ping / 
 - **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/way-better-title-bar)
 - **Pin:** NeoForge 1.21.1 `way_better_title_bar-1.0.0.jar`. `side = client`, `[option] optional = true`, `default = false`.
 - **Also add:** none. Server must not require it.
-
----
-
-## Accepted
-
-_(none yet)_
 
 ---
 

@@ -3,6 +3,27 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.8] — 2026-09-18
+
+### Added
+- **Provisioner's Delight** `0.9.31` (Modrinth) — canned/bottled expedition food; **Patchouli** `1.21.1-93`.
+- **Petrol's Parts** `1.3.7` + **Petrolpark's Library** `1.5.11` (Modrinth).
+- **Storage Delight** `26.09.17` (Modrinth) — Farmer's Delight kitchen furniture.
+- **Better Party** `1.1.7` (Modrinth) + **Better Party X Simple Voice** `1.0.2` (CurseForge).
+- **CC : My Peripheral Extender** `1.1.4` (CurseForge) — CC ↔ Aeronautics/Sable cockpit peripherals.
+- **SAnnounce** `1.0.2` NeoForge (CurseForge) — server announcements; `side = server`.
+- **Create: Central Kitchen** `2.6.1` + **Create: Integrated Farming** `1.4.2` (Modrinth).
+- **Better Banners** `1.4.0` (CurseForge).
+- **Way Better Title Bar** `1.0.0` (CurseForge) — Windows chrome; client optional, default off.
+
+### Changed
+- **Create: Dragons Plus** `1.11.7b` → `1.11.9` (Central Kitchen floor).
+- **Supplementaries** `3.9.1` → `3.9.9` (Integrated Farming floor); **Moonlight Lib** `3.4.1` → `3.6.5`.
+- **JEI** `19.52.0.422` → `19.56.0.441` (Petrolpark wants `19.53.0.426`–`19.56.x`).
+
+### Notes
+- **No fresh world.** Restart the instance and dedicated server so the new jars load.
+
 ## [1.1.7] — 2026-09-18
 
 ### Fixed

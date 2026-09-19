@@ -1272,7 +1272,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-dragons-plus.pw.toml"
-hash = "87cc67538d60973cf296adf7cd6f198b2aa2ffb5a2a17e3ce9977c0cd05ddcef"
+hash = "dcbb37e828a2f915e64a2ef839a742761a553a2e3b923b000ffba95db7503ac3"
 metafile = true
 
 [[files]]
@@ -1562,7 +1562,7 @@ metafile = true
 
 [[files]]
 file = "mods/jei.pw.toml"
-hash = "1736cc8a4a9e474fa57b15d0f702114bceb9763574df95c3fc14c3bbeb45f62e"
+hash = "58ed8e868a732911b326d45f10478dfd959b2717d720e1a60c8e1230f8bc1da2"
 metafile = true
 
 [[files]]
@@ -1832,7 +1832,7 @@ metafile = true
 
 [[files]]
 file = "mods/selene.pw.toml"
-hash = "8770f5990ed9e37aa0ff2b4bda34dd6036c5ff9ca78d7b5c07d7011471cbca26"
+hash = "d4b0144afd929bafee68f0e0e716f86f91e35dc063063c429f06b5f74eef5971"
 metafile = true
 
 [[files]]
@@ -1907,7 +1907,7 @@ metafile = true
 
 [[files]]
 file = "mods/supplementaries.pw.toml"
-hash = "1cb429276e440bbb9b9b1a0007422e3c4edb9569290ab9a19809ad11f66a6b75"
+hash = "25fdaaf01546f4083aa00f85b6c1c4b67434f6d068d3e1725d4437576ca34a7a"
 metafile = true
 
 [[files]]
