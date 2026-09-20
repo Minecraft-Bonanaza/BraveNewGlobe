@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**209 mods**), grouped by purpose. Current pack **1.1.9.1**.
+Human-readable list of every mod in the pack (**208 mods**), grouped by purpose. Current pack **1.1.10**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -15,7 +15,6 @@ Human-readable list of every mod in the pack (**209 mods**), grouped by purpose.
 
 ## World Generation & Core
 - **Big Globe** _(shallow-608 patched)_ — the pack's core world generator (custom terrain, caves, spawn)
-- **Chunky (Forge/NeoForge)** — world pre-generator utility
 - **BlueMap** `5.7` — 3D web world map on port **8100** _(server-only)_
 - **Paxi (NeoForge)** — loads the pack's global datapacks/resourcepacks (Big Globe compat)
 
@@ -230,7 +229,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Iris Shaders** — shader loader _(client)_
 - **Iris & Oculus Flywheel Compat** — Flywheel-under-Iris compatibility _(client)_
 - **Iris/Oculus For Simple Clouds** — shader + Simple Clouds compatibility _(client)_
-- **Distant Horizons** `3.3.1` — LOD "see forever" rendering _(optional, default off)_
+- **Distant Horizons** `3.2.0-b` — LOD "see forever" rendering _(optional, default off)_
 - **Simple Clouds** — cloud visual overhaul _(both; Project Atmosphere dependency — not optional)_
 - **Particle Rain** — enhanced precipitation particles _(client)_
 - **Puddles & Floods** — puddle/flood weather visuals

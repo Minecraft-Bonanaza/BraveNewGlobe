@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.10] — 2026-09-20
+
+### Removed
+- **Chunky** `1.4.23` — world pre-generator. DH / Big Globe handle distance; leftover `chunky` jar and `config/chunky` can be deleted if the installer leaves them.
+
+### Changed
+- **Distant Horizons** `3.3.1` → **`3.2.0-b`** (Modrinth `ZpKb4kZp`). 3.3.x is a suspect for the server LOD pipeline issues (alongside Big Globe Hyperspeed, already off). DH in-game auto-updater is off so the pin is not overwritten in-session.
+
+### Notes
+- **No fresh world.** Restart instance and server. Delete leftover `Chunky` / `3.3.1` jars if the installer leaves them. Existing LOD databases may still need a regen if they were written by 3.3.x.
+
 ## [1.1.9.1] — 2026-09-20
 
 ### Changed

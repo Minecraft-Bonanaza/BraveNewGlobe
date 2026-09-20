@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "config/DistantHorizons.toml"
-hash = "c9316ca0b08dbcae81646b6d0c48c188cac504795433320dc4b296d6fc0ef05e"
+hash = "11af7d88825bcd63bb1f34de9c1ac538ab985061eeb3c92d679069f7d0afde65"
 
 [[files]]
 file = "config/aeronautics-server.toml"
@@ -87,10 +87,6 @@ hash = "83636aadb3f34309d6b86a323b362524432576a769cdc4165424072207f947d3"
 [[files]]
 file = "config/cbc_terminal_ballistics-server.toml"
 hash = "8509c708db4f2eeed96bf9ce2097a87078ea7e1784c33fced0f854925fe4a782"
-
-[[files]]
-file = "config/chunky/config.json"
-hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
 
 [[files]]
 file = "config/connector.json"
@@ -1110,11 +1106,6 @@ hash = "252db06ae303f2cc0de294671c21296b9922e6c998ba1664225b6cee03198873"
 metafile = true
 
 [[files]]
-file = "mods/chunky-pregenerator-forge.pw.toml"
-hash = "7be63eaec6a70605f2f21cc30f0889fb27978c2e2fe62ee4584210502289e77d"
-metafile = true
-
-[[files]]
 file = "mods/cloth-config.pw.toml"
 hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
@@ -1411,7 +1402,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "c65665ef1990eea0f9495aabe7099532bf2706cedecd26331b0ceaed3b2170c4"
+hash = "23cb40a2241ba5586536c4ef6eba139a9986c423401132568bb7272edf946f2d"
 metafile = true
 
 [[files]]

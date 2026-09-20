@@ -303,7 +303,8 @@ _version = 4
 			updateBranch = "AUTO"
 			#
 			# Automatically check for updates on game launch?
-			enableAutoUpdater = true
+			# Off so the pack pin (3.2.0-b) is not overwritten by a later DH jar in-session.
+			enableAutoUpdater = false
 			#
 			# Should Distant Horizons silently, automatically download and install new versions? 
 			# This setting is force disabled on dedicated servers for stability reasons.

@@ -88,7 +88,7 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 
 ### World & climate
 
-- Big Globe, Chunky, Paxi + datapacks  
+- Big Globe, Paxi + datapacks  
 - Serene Seasons, Project Atmosphere, Puddles & Floods  
 - The Aether, The Twilight Forest  
 - Towns and Towers, When Dungeons Arise, CTOV, Integrated Villages (airship-only), Fragmentum, Illager Invasion, It Takes a Pillage  
