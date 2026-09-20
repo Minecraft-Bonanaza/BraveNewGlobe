@@ -3,6 +3,21 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.9.1] — 2026-09-20
+
+### Changed
+- Big Globe **Hyperspeed Generation** is off. It was writing LODs through the DH API and
+  overriding the dedicated server's generation plan, so high-quality LODs (sometimes any
+  LODs) never loaded.
+
+### Fixed
+- **Broken legs** (`more_diseases_and_treatments:fracture`) only apply on falls **taller
+  than 10 blocks** (`fracture_fall_threshold.js`). KubeJS const names do not collide with
+  the bleeding script.
+
+### Notes
+- **No fresh world.** Restart instance and server (startup KubeJS + Big Globe config).
+
 ## [1.1.9] — 2026-09-18
 
 ### Removed

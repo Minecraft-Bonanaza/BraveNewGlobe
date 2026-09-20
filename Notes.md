@@ -2,9 +2,12 @@
 
 Miscellaneous maintainer/config notes for the pack.
 
-## Derek's Notes
-Under config, need to enable hyperspeed generation in Big Globe's config to support DH API usage when
-generating LODs. Otherwise DH doesn't recognize the renderer and will memory leak.
+## Distant Horizons — Hyperspeed Generation stays off
+Big Globe `"Hyperspeed Generation"` in `pack/config/bigglobe/Big Globe.json5` is **false**. When
+it is true, Big Globe writes LOD terrain through the DH API and **overrides the dedicated
+server's generation plan**. The host then does not load high-quality LODs (sometimes no LODs
+at all). Keep it off so DH wraps Big Globe's normal chunk generator and the server LOD
+pipeline can run. Do **not** re-enable for "faster DH" — that was the bug.
 
 ## Rendering toggle (Iris / Iris Flywheel Compat / Distant Horizons)
 These three optional mods must be enabled or disabled **together** (all ON or all OFF). Running Iris
@@ -25,11 +28,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.1.9)
+## Current pack state (1.1.9.1)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.9**, **209** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.1.9.1**, **209** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -38,6 +41,8 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
+- **1.1.9.1:** Big Globe Hyperspeed Generation **off** (was overriding the server DH LOD
+  plan). Broken legs only on falls **>10 blocks**.
 - **1.1.9:** **SAnnounce** pulled — jar requires NeoForge **21.1.250+**; pack stays **21.1.248**.
 - **1.1.8:** shipped the CANDIDATES pending set (13 mods). Dragons Plus **1.11.9**,
   Supplementaries **3.9.9** + Moonlight **3.6.5**, JEI **19.56.0.441** so Central Kitchen,

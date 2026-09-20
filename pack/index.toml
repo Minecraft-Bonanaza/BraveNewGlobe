@@ -46,7 +46,7 @@ hash = "755e3b359a6da36b05ab004888ab26af7b3c3ddd01c0d29e720b6e0bd5f34e23"
 
 [[files]]
 file = "config/bigglobe/Big Globe.json5"
-hash = "a8929e9c3aeed1dfa0f70e9ead06482dd3b2b8170751792700cea55ed805da32"
+hash = "02468b444681661945be2108ca1aa7f03787629f1f2f06bfaf3debacafba6742"
 
 [[files]]
 file = "config/bigglobe/mixins.properties"
@@ -935,6 +935,10 @@ hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
 [[files]]
 file = "kubejs/startup_scripts/disable_severe_bleeding.js"
 hash = "05867527f673d2f0baf359967bdc44fb202107f60c76b7777dde70abae98ebd8"
+
+[[files]]
+file = "kubejs/startup_scripts/fracture_fall_threshold.js"
+hash = "3ce5c9490d25315f4173c94d8e4b7ddbad2716e8bf8d40548ada04b9e189cd48"
 
 [[files]]
 file = "kubejs/startup_scripts/splint_duration.js"
