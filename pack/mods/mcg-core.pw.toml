@@ -11,3 +11,8 @@ mode = "metadata:curseforge"
 [update.curseforge]
 file-id = 8777782
 project-id = 1673221
+
+[option]
+optional = true
+default = true
+description = "Client: H-key guidebook host. Turn off together with the Aquamirae guidebook."

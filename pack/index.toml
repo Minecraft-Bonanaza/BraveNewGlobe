@@ -1520,7 +1520,7 @@ metafile = true
 
 [[files]]
 file = "mods/healight.pw.toml"
-hash = "58bba13d73c278cc491726d46124d64fc3cc4f7c5fb6e7fc00adc10b37d8133e"
+hash = "db200baaf531e70e266588b461f3f14ecb1885ce118fe328abe7890f6b353708"
 metafile = true
 
 [[files]]
@@ -1655,12 +1655,12 @@ metafile = true
 
 [[files]]
 file = "mods/mcg-core.pw.toml"
-hash = "41cfe62b30c32301324030f41bece2b2ff61138f69501dc8e4e9360290cee09d"
+hash = "78c6930e77cd278ed9bae2b62abbfab4afe263eac3c6dfd20e7e44393d296207"
 metafile = true
 
 [[files]]
 file = "mods/mcgs-guidebook-aquamirae.pw.toml"
-hash = "dc8ece465eee0cc5ec4eb95007b7b8a08d2ec5d783dc67edb0f61d3176f42670"
+hash = "75863a2eb42e209352e4baff0171952ca0a43a088c8113405d6a621c06819247"
 metafile = true
 
 [[files]]
@@ -1725,7 +1725,7 @@ metafile = true
 
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
-hash = "deb644e4bb37c94e649c198124fddbafe10e16072963b0856846fa8197f5629b"
+hash = "ebac998a7fca1e91248ef0461be9470c412cb7e45bc037271223466136db91a3"
 metafile = true
 
 [[files]]

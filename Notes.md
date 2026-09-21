@@ -28,11 +28,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.1.13)
+## Current pack state (1.1.13.1)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.13**, **219** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.1.13.1**, **219** mods. Quest book **17 / 246**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -41,6 +41,7 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
+- **1.1.13.1:** Obscure Tooltips optional, **default off**. Healight and the MCG book pair optional, **default on** (disable both MCG jars together). Accents required on both sides. Tool texture pack stays always on.
 - **1.1.13:** **MCG Core 1.1.0** + **Aquamirae guidebook 1.2.0** (client, H). **Obscure Tooltips 4.2.4** and **Accents 2.0.2** (not the Fragmentum 5 builds). **Healight 1.0.1**. **Obscuria's Tools** Paxi pack. Fragmentum stays **2.4.4**.
 - **1.1.12:** **ParCool 3.4.3.3** + **ParCool+ 1.2.1** (not 4.x). **Counter 0.5** day HUD (disable coords/FPS/time overlays). **Beautified Chat Server 3.2** + **Collective 8.40** (no Client jar). **Simplest Paxels 1.0.6**.
 - **1.1.10:** **Chunky** pulled. **Distant Horizons** rolled back to **3.2.0-b** (was 3.3.1). Auto-updater off.

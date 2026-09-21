@@ -91,19 +91,19 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 ## Accepted
 
 ### ~~MCG Core + Guidebook: Aquamirae~~
-**ACCEPTED** — added in 1.1.13 (2026-09-21). Both `side = client`.
+**ACCEPTED** — added in 1.1.13 (2026-09-21). Both `side = client`, optional, default on. Disable the pair together.
 
 ### ~~Obscuria's Tools~~
 **ACCEPTED** — added in 1.1.13 (2026-09-21) as Paxi `obscurias-tools.zip`.
 
 ### ~~Healight~~
-**ACCEPTED** — added in 1.1.13 (2026-09-21) `1.0.1`, `side = client`.
+**ACCEPTED** — added in 1.1.13 (2026-09-21) `1.0.1`, `side = client`, optional, default on.
 
 ### ~~Obscure Tooltips~~
-**ACCEPTED** — added in 1.1.13 (2026-09-21) **4.2.4**, `side = client`. Not 4.2.5.
+**ACCEPTED** — added in 1.1.13 (2026-09-21) **4.2.4**, `side = client`, optional, **default off**. Not 4.2.5.
 
 ### ~~Accents~~
-**ACCEPTED** — added in 1.1.13 (2026-09-21) **2.0.2**, `side = both`. Not 2.0.3.
+**ACCEPTED** — added in 1.1.13 (2026-09-21) **2.0.2**, `side = both`, required. Not 2.0.3.
 
 ### ~~ParCool!~~
 **ACCEPTED** — added in 1.1.12 (2026-09-21) with ParCool+ Compatibility++ `1.2.1`. Pin is **3.4.3.3-NF**, not 4.x.

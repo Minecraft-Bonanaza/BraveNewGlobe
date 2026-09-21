@@ -3,6 +3,11 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.13.1] — 2026-09-21
+
+### Changed
+- Client option flags on the 1.1.13 additions. **Obscure Tooltips** is optional and **off** unless selected (animated frames, particles, 3D previews). **Healight** and the **MCG** book pair are optional and **on** (cheap; turn the two MCG jars off together). **Accents** stays required on client and server. **Obscuria's Tools** stays an always-on Paxi texture swap.
+
 ## [1.1.13] — 2026-09-21
 
 ### Added

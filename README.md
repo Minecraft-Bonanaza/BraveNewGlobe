@@ -4,7 +4,7 @@ A [Big Globe](https://modrinth.com/mod/big-globe) modpack for **Minecraft 1.21.1
 **NeoForge** — Create-ecosystem tech, cannons, aeronautics, and hand-authored Big Globe
 world/spawn compatibility.
 
-Current pack: **1.1.13** — **219** mods. Quest book **17 chapters / 246 quests**.
+Current pack: **1.1.13.1** — **219** mods. Quest book **17 chapters / 246 quests**.
 
 **1.0.0 is the first production release.** The content stack is in — including the team's
 in-house **Create: Market Maker** economy mod. Survival-layer polish (seasons, diseases,

@@ -11,3 +11,8 @@ hash = "0b0e63f145b065d44683f7693c0288007d1e7dc505dd1c3e1cdb92b13625c0cba6feb81d
 [update.modrinth]
 mod-id = "5vetjDBY"
 version = "f7xkynP2"
+
+[option]
+optional = true
+default = false
+description = "Client: animated tooltip frames, particles, and 3D gear previews. Leave off for better performance."
