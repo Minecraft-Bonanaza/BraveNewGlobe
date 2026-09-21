@@ -3,6 +3,11 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.14] — 2026-09-21
+
+### Added
+- **Field Guide** tab in the H-key book (Paxi `bng_field_guide`). Herds, Hybrid Aquatic shoals, Mowzie's wilds, Mutant Monsters, and the Born in Chaos night. The Deep names the Kraken and the Bloop. The other five sea-myths are rumor pages, with no true names.
+
 ## [1.1.13.1] — 2026-09-21
 
 ### Changed

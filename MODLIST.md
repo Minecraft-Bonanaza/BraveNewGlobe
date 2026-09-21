@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.13**.
+Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.14**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -144,7 +144,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Aquamirae [Neo/Forge Edition]** — ocean structures & atmosphere
   - **MCG's Guidebook: Aquamirae** `1.2.0` — in-game Aquamirae pages _(client, optional, default on; disable with MCG Core)_
     - **MCG Core** `1.1.0` _(dependency — client, optional, default on)_
-- **Sea Myths** — legendary ocean monsters & bosses
+- **Sea Myths** — legendary ocean monsters & bosses. The H-key Field Guide names the Kraken and the Bloop. The other five are rumor pages.
 
 ## Mobs & Creatures
 - **Mowzie's Mobs** — bosses & unique creatures
@@ -261,6 +261,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Obscure Tooltips** `4.2.4` — styled item tooltips and 3D gear preview _(client, optional, default off — particles and 3D previews)_
 - **Healight** `1.0.1` — green flash when an entity heals _(client, optional, default on)_
 - **Obscuria's Tools** — vanilla tool textures via Paxi `obscurias-tools.zip` _(client resource pack, always on; same draw cost as the vanilla textures it replaces)_
+- **Field Guide** — Paxi folder `bng_field_guide`, its own tab in the H-key book. Always on. The Deep names the Kraken and the Bloop only.
 - **Counter** `0.5-1.21.1` — world-day HUD (disable coords/FPS/time overlays; Xaero covers those)
 - **Pick Up Notifier** `21.1.1` — toast when picking up items _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_

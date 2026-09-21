@@ -1,0 +1,735 @@
+{
+  "schema": 3,
+  "version_label": "1",
+  "mod_versions": "",
+  "slug": "bravenewglobe",
+  "namespace": "bravenewglobe",
+  "name": "Field Guide",
+  "guide_url": "",
+  "wiki_url": "",
+  "items_url": "",
+  "intro": "Animals of this world. The quest book teaches the machines, the ships, and the named bosses. The Ice Maze has its own tab. The last section is rumor. A few of those things have names. The rest do not.",
+  "getting_started": [
+    {
+      "n": 1,
+      "title": "This tab",
+      "summary": "Press H, then Field Guide.",
+      "text": "One book, one key. Aquamirae is a different tab. Cataclysm, the Twilight Forest, the Aether, and Bosses' Rise stay in the quest book.",
+      "icon": "",
+      "items": []
+    },
+    {
+      "n": 2,
+      "title": "Faded means you have not held it",
+      "summary": "The book only notices your inventory.",
+      "text": "A picture you have not carried yet sits faded. Seeing a creature is not enough. The note is kept on your own machine.",
+      "icon": "",
+      "items": []
+    },
+    {
+      "n": 3,
+      "title": "Weight of a herd",
+      "summary": "From 0 to 8. Sick at the bottom.",
+      "text": "Adult animals start at weight 1 and can reach 8. At 0 they are sick: a green tint, and their drops and experience shrink. A wild animal is not weighed until you leash it or breed it. Light, open ground, and water nearby help it gain. A filled cauldron counts as water and is drunk down a level when it does. Crowding, a sealed hole, and a poor diet take weight off. The check rests at night.",
+      "icon": "minecraft:lead",
+      "items": []
+    },
+    {
+      "n": 4,
+      "title": "Shoes on a horse",
+      "summary": "Finer metal, quicker horse.",
+      "text": "Iron, gold, diamond, and netherite horseshoes. Each step up is faster, steps higher, and jumps harder.",
+      "icon": "minecraft:iron_horse_armor",
+      "items": []
+    },
+    {
+      "n": 5,
+      "title": "Mind the deep",
+      "summary": "The last section is rumor.",
+      "text": "A few of the things down there have a name people will say aloud. The others are only a scrap: a size, a sound, a place. Read them before you dive past the light. The pages will not fill in after you meet them.",
+      "icon": "",
+      "items": []
+    }
+  ],
+  "sections": [
+    {
+      "title": "Herds and burrows",
+      "pages": [
+        {
+          "title": "Pigeon",
+          "excerpt": "Seeds, anywhere on the surface.",
+          "summary": "Common across the overworld. Feed it wheat seeds, beetroot seeds, melon seeds, pumpkin seeds, or torchflower seeds. The weight list still treats it as a grazer, so a lit pasture fattens it.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Butterfly",
+          "excerpt": "All over the overworld.",
+          "summary": "It shows up across the overworld, not in one biome. The weight list marks it a grazer. It is not stock you pen, but once you leash or breed one, the weight rules apply.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Ostrich",
+          "excerpt": "Savanna. Seeds, and a spider eye.",
+          "summary": "Savanna. Tall. The weight list calls it a grazer. What you actually feed it is seeds, and it will also take a spider eye. A low roof makes a poor pen.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Giraffe",
+          "excerpt": "Savanna. It grazes.",
+          "summary": "Savanna. It lowers its head to graze. Feed it leaves or an apple. Marked a grazer for weight, so it wants grass, light, and open ground, not a sealed stall.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Kiwi",
+          "excerpt": "Jungle. Seeds, and a spider eye.",
+          "summary": "Jungle. Seeds are most of its food, and it will take a spider eye. The weight list still marks it a grazer.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Hedgehog",
+          "excerpt": "Forest. It rolls up.",
+          "summary": "Forest. Feed it a spider eye. Frighten it and it balls up. It picks items up off the ground, it has quills, and spiders keep away from it.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Capybara",
+          "excerpt": "Jungle. Cane, carrot, wheat.",
+          "summary": "Jungle. Feed it sugar cane, carrot, wheat, apple, or melon. It is not on the grazer list, so the weight mod treats it as an omnivore.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Red Panda",
+          "excerpt": "Jungle. Bamboo and berries.",
+          "summary": "Jungle. Bamboo, sweet berries, glow berries, or a spider eye. Treated as an omnivore for weight.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Crocodile",
+          "excerpt": "Swamps. It bites, and it lays eggs.",
+          "summary": "Swamps. It swims, it walks the bank, and it will attack. It lays eggs. Feed it meat. Treated as an omnivore for weight. It is not one of the things in the last section.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Hippopotamus",
+          "excerpt": "Swamps. It lies down, and it will charge.",
+          "summary": "Swamps. It will attack, and it lies down to rest. Feed it sugar cane, kelp, or seagrass. Water nearby helps its weight. Treated as an omnivore.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Penguin",
+          "excerpt": "Cold lands. Fish.",
+          "summary": "The cold overworld. Feed it fish. Treated as an omnivore for weight.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Seal",
+          "excerpt": "Beaches. Fish.",
+          "summary": "Beaches. Feed it fish. Treated as an omnivore for weight. Not a creature from the last section.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Vulture",
+          "excerpt": "Deserts. Rotten flesh.",
+          "summary": "Deserts. Feed it rotten flesh. Treated as an omnivore for weight.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Dragonfly",
+          "excerpt": "Swamps, with the hippos.",
+          "summary": "Swamps, in the same water as the crocodiles and the hippos. Treated as an omnivore for weight.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Starfish",
+          "excerpt": "Beaches and oceans.",
+          "summary": "Beaches and the ocean. The weight list marks it a grazer. This is the Re:Animal starfish. Hybrid Aquatic has another.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Sea Urchin",
+          "excerpt": "Beaches, oceans, kelp.",
+          "summary": "Beaches and the ocean. Feed it kelp or seagrass. Marked a grazer for weight. Hybrid Aquatic has a different urchin in the shoals.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Jellyfish",
+          "excerpt": "The ocean.",
+          "summary": "Open ocean. Not on the grazer list, so the weight mod treats it as an omnivore. The jellies in the shoals section are Hybrid Aquatic, and there are fourteen of those.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Figures shaped like players",
+          "excerpt": "Mobs, not people at the keyboard.",
+          "summary": "Some figures in the world are shaped like players. They are mobs.",
+          "url": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "title": "The shoals",
+      "pages": [
+        {
+          "title": "River fish",
+          "excerpt": "Rivers, jungle, marsh, mangrove.",
+          "summary": "Seventeen kinds, in rivers, tropical rivers, jungle, marsh, mangrove, swamp, and some caves. Among them: carp, tetra, piranha, pleco, betta, cichlid, discus, gourami, and golden dorado. These are Hybrid Aquatic. They are not the last section.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Ocean fish",
+          "excerpt": "Reefs, seagrass, and the trenches.",
+          "summary": "Forty-five kinds. Reefs, seagrass, cold and warm oceans, and the trenches. Among them: clownfish, barracuda, coelacanth, anglerfish, barreleye, fangtooth, and blobfish. Hybrid Aquatic. Not the things the last section refuses to name.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Sharks",
+          "excerpt": "From the beach to the trench.",
+          "summary": "Thirteen kinds, from shallow coasts through the deep oceans and the trenches. Among them: great white, hammerhead, bull, basking, goblin, thresher, frilled, and lantern shark. Large, and still not the last section.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Jellies",
+          "excerpt": "Beaches, reefs, and the deep.",
+          "summary": "Fourteen kinds. Beaches, reefs, mangroves, and the deep water. Among them: moon jelly, lion's mane, box jelly, barrel jelly, and comb jelly.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Squid and octopus",
+          "excerpt": "Reefs, open water, trenches.",
+          "summary": "Six kinds. Cuttlefish and octopus on the reefs and the shallows. Arrow squid and firefly squid in the open water. Giant squid and colossal squid down in the trenches.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Crabs and kin",
+          "excerpt": "Beaches, rivers, reefs, vents.",
+          "summary": "Sixteen kinds. Beaches, rivers, reefs, and the thermal vents. Among them: hermit, fiddler, ghost, horseshoe, coconut crab, lobster, crayfish, and the giant isopod in the cold dark.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Shore mammals",
+          "excerpt": "Rivers, grass, and cold water.",
+          "summary": "Four. The otter keeps to rivers and tropical rivers. Manatee and dugong stay on seagrass and in the mangroves. The orca is the cold one: cold oceans, frozen oceans, and temperate oceans.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Critters",
+          "excerpt": "Beaches, reefs, and the deep.",
+          "summary": "Hybrid Aquatic's own five: starfish, sea urchin, sea slug, sea cucumber, and the scaly-foot snail of the vents. Beaches, reefs, seagrass, and the deep. The starfish and urchin in Herds and burrows are the Re:Animal ones, a different creature with the same common name.",
+          "url": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "title": "Mowzie's wilds",
+      "pages": [
+        {
+          "title": "Where they stand",
+          "excerpt": "Spread across the land.",
+          "summary": "Their structures generate on Big Globe land, on the order of 800 blocks apart. Monasteries and umvuthana groves are part of that spread.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Foliaath",
+          "excerpt": "Plant the seed in grass.",
+          "summary": "The seed grows a baby. It gets hungry twice a day. Toss it meat. It is fully grown after two days.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:foliaath_seed",
+              "name": "Foliaath Seed"
+            }
+          ]
+        },
+        {
+          "title": "Grottol",
+          "excerpt": "What you carry out of the dark.",
+          "summary": "The Captured Grottol is the one this book can record. Luminous Jelly, eaten, gives a short night vision.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:captured_grottol",
+              "name": "Captured Grottol"
+            },
+            {
+              "id": "mowziesmobs:glowing_jelly",
+              "name": "Luminous Jelly"
+            }
+          ]
+        },
+        {
+          "title": "Lantern",
+          "excerpt": "A light with a drop.",
+          "summary": "Luminous Jelly is the thing you bring back and eat.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:glowing_jelly",
+              "name": "Luminous Jelly"
+            }
+          ]
+        },
+        {
+          "title": "Naga",
+          "excerpt": "The fang has three uses.",
+          "summary": "A Naga Fang brews poison resistance, fletches darts, or becomes a Naga Fang Dagger. The dagger poisons, and it hits harder from behind.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:naga_fang",
+              "name": "Naga Fang"
+            },
+            {
+              "id": "mowziesmobs:naga_fang_dagger",
+              "name": "Naga Fang Dagger"
+            }
+          ]
+        },
+        {
+          "title": "Bluff",
+          "excerpt": "The rod starts a challenge.",
+          "summary": "The Bluff Rod repairs geomancy gear. Give it to Tongbi and his test begins.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:bluff_rod",
+              "name": "Bluff Rod"
+            }
+          ]
+        },
+        {
+          "title": "Tongbi, the Sculptor",
+          "excerpt": "A test, not a pasture.",
+          "summary": "His challenge forbids placing blocks, breaking blocks, teleporting, and flying. The Geomancer Staff is his. The beads, robe, belt, and sandals are the rest of that clothing.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:sculptor_staff",
+              "name": "Geomancer Staff"
+            }
+          ]
+        },
+        {
+          "title": "Umvuthana",
+          "excerpt": "Six masks, six effects.",
+          "summary": "Bliss jumps. Faith adds health. Fear is swift. Fury is strong. Misery resists. Rage hastes. Crane and Raptor are the other shapes.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:umvuthana_mask_bliss",
+              "name": "Mask of Bliss"
+            },
+            {
+              "id": "mowziesmobs:umvuthana_mask_faith",
+              "name": "Mask of Faith"
+            },
+            {
+              "id": "mowziesmobs:umvuthana_mask_fear",
+              "name": "Mask of Fear"
+            },
+            {
+              "id": "mowziesmobs:umvuthana_mask_fury",
+              "name": "Mask of Fury"
+            },
+            {
+              "id": "mowziesmobs:umvuthana_mask_misery",
+              "name": "Mask of Misery"
+            },
+            {
+              "id": "mowziesmobs:umvuthana_mask_rage",
+              "name": "Mask of Rage"
+            }
+          ]
+        },
+        {
+          "title": "Umvuthi, the Sunbird",
+          "excerpt": "The mask you bring back.",
+          "summary": "The Sol Visage does not wear out. Equip it.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:sol_visage",
+              "name": "Sol Visage"
+            }
+          ]
+        },
+        {
+          "title": "Frostmaw",
+          "excerpt": "The crystal is the trophy.",
+          "summary": "Hold the Ice Crystal and it calls a whirlwind. It recharges in your inventory.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:ice_crystal",
+              "name": "Ice Crystal"
+            }
+          ]
+        },
+        {
+          "title": "Ferrous Wroughtnaut",
+          "excerpt": "Helm, axe, and gauntlet.",
+          "summary": "The Wrought Helm and the Axe of a Thousand Metals do not wear out. The axe swings in a wide arc and can slam the ground. The Earthrend Gauntlet lifts stone out of the ground.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:wrought_helmet",
+              "name": "Wrought Helm"
+            },
+            {
+              "id": "mowziesmobs:wrought_axe",
+              "name": "Axe of a Thousand Metals"
+            },
+            {
+              "id": "mowziesmobs:earthrend_gauntlet",
+              "name": "Earthrend Gauntlet"
+            }
+          ]
+        },
+        {
+          "title": "Elokosa",
+          "excerpt": "Paws, named for the moon.",
+          "summary": "The Howler is the greater shape. Each paw lays a different effect on whoever is standing nearby.",
+          "url": "",
+          "items": [
+            {
+              "id": "mowziesmobs:elokosa_paw_new",
+              "name": "Paw of the New Moon"
+            },
+            {
+              "id": "mowziesmobs:elokosa_paw_crescent",
+              "name": "Paw of the Crescent Moon"
+            },
+            {
+              "id": "mowziesmobs:elokosa_paw_half",
+              "name": "Paw of the Half Moon"
+            },
+            {
+              "id": "mowziesmobs:elokosa_paw_gibbous",
+              "name": "Paw of the Gibbous Moon"
+            },
+            {
+              "id": "mowziesmobs:elokosa_paw_full",
+              "name": "Paw of the Full Moon"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Larger than they were",
+      "pages": [
+        {
+          "title": "Chemical X",
+          "excerpt": "The potion this mod adds.",
+          "summary": "Obtain a potion of Chemical X. A Mutant Snow Golem is made with it. A Spider Pig is a pig fed a fermented spider eye, then hit with Chemical X.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Mutant Zombie",
+          "excerpt": "The hammer is for this fight.",
+          "summary": "The Hulk Hammer is the weapon the advancements pair with the Mutant Zombie.",
+          "url": "",
+          "items": [
+            {
+              "id": "mutantmonsters:hulk_hammer",
+              "name": "Hulk Hammer"
+            }
+          ]
+        },
+        {
+          "title": "Mutant Creeper",
+          "excerpt": "Shard, minion, egg.",
+          "summary": "The Creeper Shard and the Creeper Minion Tracker are the things this book can record. A minion can be hatched from its egg.",
+          "url": "",
+          "items": [
+            {
+              "id": "mutantmonsters:creeper_shard",
+              "name": "Creeper Shard"
+            },
+            {
+              "id": "mutantmonsters:creeper_minion_tracker",
+              "name": "Creeper Minion Tracker"
+            }
+          ]
+        },
+        {
+          "title": "Mutant Skeleton",
+          "excerpt": "Bones, worn as armor.",
+          "summary": "Arms, ribs, a cage, a pelvis, limbs, and a full set of armor. The advancements ask for the whole set.",
+          "url": "",
+          "items": [
+            {
+              "id": "mutantmonsters:mutant_skeleton_chestplate",
+              "name": "Mutant Skeleton Chestplate"
+            },
+            {
+              "id": "mutantmonsters:mutant_skeleton_leggings",
+              "name": "Mutant Skeleton Leggings"
+            }
+          ]
+        },
+        {
+          "title": "Mutant Enderman",
+          "excerpt": "The hand.",
+          "summary": "The Endersoul Hand is the item tied to this hunt. Clones and fragments are the other shapes.",
+          "url": "",
+          "items": [
+            {
+              "id": "mutantmonsters:endersoul_hand",
+              "name": "Endersoul Hand"
+            }
+          ]
+        },
+        {
+          "title": "Mutant Snow Golem",
+          "excerpt": "Built with Chemical X.",
+          "summary": "The advancements call this one Frosty. Chemical X is how it is made.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Spider Pig",
+          "excerpt": "A pig, an eye, a potion.",
+          "summary": "Feed a pig a fermented spider eye and throw Chemical X at it.",
+          "url": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "title": "What the night adds",
+      "pages": [
+        {
+          "title": "Pumpkins",
+          "excerpt": "A court of them.",
+          "summary": "Pumpkinhead, Sir Pumpkinhead, Lord Pumpkinhead, Mr. Pumpkin, Mrs Pumpkin, Senor Pumpkin, the Pumpkin Bruiser, the Pumpkin Dunce, and the Pumpkin Spirit.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Bone and hound",
+          "excerpt": "Callers, imps, and dogs.",
+          "summary": "Bonescaller and the Supreme Bonescaller. Bone Imp, Decrepit Skeleton, Siamese Skeletons, Baby Skeleton, Skeleton Demoman, Skeleton Thrasher. Dread Hound and the Dire Hound Leader.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Knights and spirits",
+          "excerpt": "Doors, chaos, and fire.",
+          "summary": "Door Knight and Fallen Chaos Knight. Restless Spirit, Seared Spirit, Infernal Spirit, Spirit of Chaos, Spirit Guide, and Firelight. Nightmare Stalker and Scarlet Persecutor walk with them.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "The rest of that night",
+          "excerpt": "Named, and left at the name.",
+          "summary": "Barrel Zombie, Decaying Zombie, Zombie Bruiser, Zombie Clown, Zombie Fisherman, Zombie Lumberjack. Bloody Gadfly, Corpse Fly, Corpse Maggot, Corpse Fish, Glutton Fish. Diamond Termite, Thornshell Crab, Swarmer, Phantom Creeper, Missionary, Spiders Mother, Baby Spider, Krampus and his henchman, Felsteed.",
+          "url": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "title": "The Deep",
+      "pages": [
+        {
+          "title": "The Kraken",
+          "excerpt": "Warm water, after the light is gone.",
+          "summary": "Sailors will say this name. It is the size of a ship stood on end: about twenty-four blocks across and more than forty tall, and it sounds like a squid. It belongs to lukewarm oceans, but in this world it does not rise into the upper sea. It waits where the light has already failed. People who come back talk about a scale. The book will not draw it.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "The Bloop",
+          "excerpt": "The one that takes a saddle.",
+          "summary": "This name is safe to say. It is large for a mount and small for the deep, about fourteen blocks long and ten tall, and its voice is an elder guardian's. It will take a saddle, its own or a horse's, and you can ride it. There is another of its kind. That one is not this page.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Not the One You Saddle",
+          "excerpt": "Same voice. No saddle.",
+          "summary": "About fourteen blocks to a side. The same elder-guardian voice as the one you can ride, and it calls the others when it is angry. Do not offer it a saddle. The book has no better name for it.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Wider Than the Ship",
+          "excerpt": "No chart marks its water.",
+          "summary": "No name worth printing. What gets reported is the width: nearly forty blocks across, and two dozen tall, big enough to shove a hull aside by being there. The sound people bring back is a warden's, from open water. Nobody has agreed where it keeps itself.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "When the Water Stands Up",
+          "excerpt": "Any ocean. Only in the dark.",
+          "summary": "No name. It is about eighteen blocks each way, and it is met in every kind of ocean, but not in the upper sea. When it dies, the water stands up in a column and the impact goes off like a blast. Do not be underneath it for the end.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "It Unbuilds",
+          "excerpt": "It looks for what you made.",
+          "summary": "No name. Deep oceans only, and still only where the light has failed. About fourteen blocks wide and twenty-five tall. It sounds like a warden, and then a boom finds whoever is near, the way a sonic shriek does. It goes looking for things players have built, and then it takes them apart.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Inside the Monument",
+          "excerpt": "The prismarine is occupied.",
+          "summary": "No name. Ocean monuments. About eight blocks tall, which is small only next to the others. Stand near it and your arms go heavy, the way an elder guardian makes them. It hits, and it hits from farther than a diver expects.",
+          "url": "",
+          "items": []
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "title": "From Mowzie's wilds",
+      "items": [
+        {
+          "id": "mowziesmobs:foliaath_seed",
+          "name": "Foliaath Seed",
+          "desc": "Plant in grass. Feed the baby meat. Grown after two days.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Foliaath"
+            }
+          ]
+        },
+        {
+          "id": "mowziesmobs:captured_grottol",
+          "name": "Captured Grottol",
+          "desc": "The grottol you can carry.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Grottol"
+            }
+          ]
+        },
+        {
+          "id": "mowziesmobs:glowing_jelly",
+          "name": "Luminous Jelly",
+          "desc": "Eat for a short night vision.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Lantern"
+            }
+          ]
+        },
+        {
+          "id": "mowziesmobs:naga_fang",
+          "name": "Naga Fang",
+          "desc": "Poison resistance, darts, or a dagger.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Naga"
+            }
+          ]
+        },
+        {
+          "id": "mowziesmobs:sol_visage",
+          "name": "Sol Visage",
+          "desc": "Does not wear out.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Umvuthi"
+            }
+          ]
+        },
+        {
+          "id": "mowziesmobs:ice_crystal",
+          "name": "Ice Crystal",
+          "desc": "Hold it to call a whirlwind.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Frostmaw"
+            }
+          ]
+        },
+        {
+          "id": "mowziesmobs:wrought_axe",
+          "name": "Axe of a Thousand Metals",
+          "desc": "Does not wear out. Wide swing, and a ground slam.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Ferrous Wroughtnaut"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "From the larger mobs",
+      "items": [
+        {
+          "id": "mutantmonsters:hulk_hammer",
+          "name": "Hulk Hammer",
+          "desc": "The weapon paired with the Mutant Zombie.",
+          "facts": [
+            {
+              "label": "For",
+              "value": "Mutant Zombie"
+            }
+          ]
+        },
+        {
+          "id": "mutantmonsters:creeper_shard",
+          "name": "Creeper Shard",
+          "desc": "Recorded beside the Mutant Creeper.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Mutant Creeper"
+            }
+          ]
+        },
+        {
+          "id": "mutantmonsters:endersoul_hand",
+          "name": "Endersoul Hand",
+          "desc": "Tied to the Mutant Enderman.",
+          "facts": [
+            {
+              "label": "From",
+              "value": "Mutant Enderman"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

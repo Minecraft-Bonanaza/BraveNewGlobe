@@ -1,6 +1,7 @@
 {
 	"loadOrder": [
 		"bng_titles.zip",
-		"obscurias-tools.zip"
+		"obscurias-tools.zip",
+		"bng_field_guide"
 	]
 }

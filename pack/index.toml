@@ -618,7 +618,19 @@ hash = "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293"
 
 [[files]]
 file = "config/paxi/resourcepack_load_order.json"
-hash = "8803fa716dd74402b320527e2a28b916076f2c2030941777985a6be61aa7c020"
+hash = "d729632883e19802298491d00a356e829b83f16cc6ceefb132b67acb4b684cea"
+
+[[files]]
+file = "config/paxi/resourcepacks/bng_field_guide/assets/bravenewglobe/mcg_guide/guide.json"
+hash = "d0f69a796349c41b2fc7d4713b4bc78c306fce575fa3741e7c38e61177858beb"
+
+[[files]]
+file = "config/paxi/resourcepacks/bng_field_guide/assets/bravenewglobe/mcg_guide/icon.png"
+hash = "754eb55814c8381e8a50c2c724c609bae1544404f27352c999f6faabdf2f7f5c"
+
+[[files]]
+file = "config/paxi/resourcepacks/bng_field_guide/pack.mcmeta"
+hash = "e5839c9c49ca2efec39fc01cde255468dea6566a0bc0b6a90fd42cbc079fb484"
 
 [[files]]
 file = "config/paxi/resourcepacks/bng_titles.zip"
