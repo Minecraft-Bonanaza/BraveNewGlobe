@@ -3,6 +3,17 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.12] — 2026-09-21
+
+### Added
+- **ParCool!** `3.4.3.3-NF` (Modrinth `Fsvx2bdR`) plus **ParCool+ Compatibility++** `1.2.1` (`YpPfINZw`) — parkour (vault, wall-run, cling). Compat is required here for Better Combat, playerAnimator, and Sable. Not ParCool 4.x (still alpha; addon handlers are 3.4.3.3).
+- **Counter** `0.5-1.21.1` (Modrinth `u43pMIKj`) — day / death HUD. Turn off coords, time, FPS, ping overlays in its config; Xaero already covers those.
+- **Beautified Chat [Server]** `3.2` + **Collective** `8.40` (Serilum) — server-wide chat style. **Client** jar not shipped (would double-format; still on 2.7).
+- **Simplest Paxels** `1.0.6` — vanilla-tier pick+axe+shovel. Not TS: Multi Tools.
+
+### Notes
+- **No fresh world.** Restart instance and server. 214 mods.
+
 ## [1.1.10] — 2026-09-20
 
 ### Removed

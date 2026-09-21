@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**208 mods**), grouped by purpose. Current pack **1.1.10**.
+Human-readable list of every mod in the pack (**214 mods**), grouped by purpose. Current pack **1.1.12**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -193,6 +193,11 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   org's GitHub releases, not CurseForge/Modrinth; maintained in its own project repo)
 
 ## Utility & Quality of Life
+- **ParCool!** `3.4.3.3-NF` — vault / wall-run / cling parkour
+  - **ParCool+ Compatibility++** `1.2.1` _(Better Combat, playerAnimator, Sable)_
+- **Simplest Paxels** `1.0.6` — vanilla-tier pick+axe+shovel
+- **Beautified Chat [Server]** `3.2` — server-wide chat style _(server-only)_
+  - **Collective** `8.40` _(dependency — Serilum)_
 - **Corpse** — recover items from a death corpse
 - **Reliable Backpacks** — backpack storage
 - **Reliable Requiem** — death/respawn handling
@@ -250,6 +255,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   - **Searchables** `1.0.2` _(dependency — client, optional, default on; toggle with Controlling)_
 - **Crash Assistant** `1.11.12` — post-crash log GUI _(client, optional, default on)_
 - **Chat Heads** `0.15.7` — player faces in chat _(client, optional, default on)_
+- **Counter** `0.5-1.21.1` — world-day HUD (disable coords/FPS/time overlays; Xaero covers those)
 - **Pick Up Notifier** `21.1.1` — toast when picking up items _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_
 
@@ -265,6 +271,7 @@ Core/support mods depended on by multiple mods above.
   - **Forgified Fabric API** _(dependency — Fabric API for the loaded Fabric mods)_
 - **Architectury API** — cross-loader API
 - **Cloth Config API** — config screens
+- **Collective** `8.40` — also listed under Beautified Chat Server
 - **Kotlin for Forge** — Kotlin runtime for Kotlin-based mods
 - **Kambrik** — Kotlin/Fabric helper library
 - **GeckoLib** — entity animation/rendering library

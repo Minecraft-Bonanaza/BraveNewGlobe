@@ -1000,6 +1000,11 @@ hash = "adc7d3d3137020676e08b3b79a6ce868d9ab1b099bd09ff7e5acb6c2eaa68c6a"
 metafile = true
 
 [[files]]
+file = "mods/beautified-chat-server.pw.toml"
+hash = "15e3d82223c90f18390b09a2b8fb29062802d707bb56c62e0615bfb4a85dc654"
+metafile = true
+
+[[files]]
 file = "mods/better-advanced-tooltips.pw.toml"
 hash = "9009bd5cdcdbc6bc47a7fbb203844d9a551accdd796877bdba5233ac14bbd513"
 metafile = true
@@ -1115,6 +1120,11 @@ hash = "75181b55e0407d1fca1e2f346c6501f919f5109545990ddfb66db9cd1b771f8a"
 metafile = true
 
 [[files]]
+file = "mods/collective.pw.toml"
+hash = "19e25619973034682592b9f204fb497ecb471940b75045d4c7fcdaad0f53d4ff"
+metafile = true
+
+[[files]]
 file = "mods/combat-traces.pw.toml"
 hash = "38faa66d502640f5909d342dfaec69a8f75a0357747048bd39a046b310abc848"
 metafile = true
@@ -1157,6 +1167,11 @@ metafile = true
 [[files]]
 file = "mods/cotton-to-wool.pw.toml"
 hash = "8e5c59c4bd04c1221f37e7557cc23ef93a586b8ae1a57af858d1d334db53a131"
+metafile = true
+
+[[files]]
+file = "mods/counter.pw.toml"
+hash = "4cb2cb7919973ff4efe4b839fa0e2473817e28bb428156eaea316074bbf1787f"
 metafile = true
 
 [[files]]
@@ -1695,6 +1710,16 @@ hash = "3db5943419e6b6f4e33946266be8797230434573bc68dbe3a77d72f19001ae0c"
 metafile = true
 
 [[files]]
+file = "mods/parcool-compatibility-addon.pw.toml"
+hash = "5f9ddecd52f0d7e5f3c8ef2ff52e38e1769281f4317a89260d64b82c91d6a60c"
+metafile = true
+
+[[files]]
+file = "mods/parcool.pw.toml"
+hash = "be26e2f9113bc0e1f8278a7b0d52d2fe4f2e6de0fcde1d345ec7fd006c483b24"
+metafile = true
+
+[[files]]
 file = "mods/particle-rain.pw.toml"
 hash = "358575d66a1c4c83ddbd69d87486535ad587ec5891101e085cda0e0dac34f4e8"
 metafile = true
@@ -1847,6 +1872,11 @@ metafile = true
 [[files]]
 file = "mods/simple-voice-chat.pw.toml"
 hash = "4bbb4ff006bf5f27179a47683b2710c92cb3314a1520e95bcd1808a6ea94ec4a"
+metafile = true
+
+[[files]]
+file = "mods/simplest-paxels.pw.toml"
+hash = "86f01904a5db34c7af7b92288e9696109d675cb224b71ffb08504dd5afbe559d"
 metafile = true
 
 [[files]]

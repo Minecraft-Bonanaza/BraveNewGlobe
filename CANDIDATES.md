@@ -82,6 +82,18 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 
 ## Accepted
 
+### ~~ParCool!~~
+**ACCEPTED** — added in 1.1.12 (2026-09-21) with ParCool+ Compatibility++ `1.2.1`. Pin is **3.4.3.3-NF**, not 4.x.
+
+### ~~Day Counter (NeoForge)~~
+**ACCEPTED** — added in 1.1.12 (2026-09-21) as **Counter** `0.5-1.21.1`. Disable coords/FPS/time overlays after first launch.
+
+### ~~Beautified Chat (Server + Client)~~
+**ACCEPTED** — added in 1.1.12 (2026-09-21): **Server** `3.2` + **Collective** `8.40`. Client jar not shipped.
+
+### ~~Simplest Paxels~~
+**ACCEPTED** — added in 1.1.12 (2026-09-21) `1.0.6`.
+
 ### ~~Provisioner's Delight~~
 **ACCEPTED** — added in 1.1.8 (2026-09-18)
 

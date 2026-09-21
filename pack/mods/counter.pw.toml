@@ -1,0 +1,13 @@
+name = "Counter"
+filename = "counter-0.5-1.21.1.jar"
+side = "both"
+
+[download]
+url = "https://cdn.modrinth.com/data/u43pMIKj/versions/ViDgGDN2/counter-0.5-1.21.1.jar"
+hash-format = "sha512"
+hash = "562545bb0b8d7c499a48ecef7f2143fba9b5e682e8f064d381efb5fac64c12f4ed145a8001a1c5809a242f9d822a3bf0f253dd6a99b44a05d2e9007dd81d4905"
+
+[update]
+[update.modrinth]
+mod-id = "u43pMIKj"
+version = "ViDgGDN2"
