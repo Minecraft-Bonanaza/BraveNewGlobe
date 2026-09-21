@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**214 mods**), grouped by purpose. Current pack **1.1.12**.
+Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.13**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -142,6 +142,8 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Illager Invasion** — new illager variants
 - **Fragmentum** — structures/relic loot
 - **Aquamirae [Neo/Forge Edition]** — ocean structures & atmosphere
+  - **MCG's Guidebook: Aquamirae** `1.2.0` — in-game Aquamirae pages _(client)_
+    - **MCG Core** `1.1.0` _(dependency — client, H-key book)_
 - **Sea Myths** — legendary ocean monsters & bosses
 
 ## Mobs & Creatures
@@ -193,6 +195,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   org's GitHub releases, not CurseForge/Modrinth; maintained in its own project repo)
 
 ## Utility & Quality of Life
+- **Accents** `2.0.2` — dyeable hats and back items with small bonuses
 - **ParCool!** `3.4.3.3-NF` — vault / wall-run / cling parkour
   - **ParCool+ Compatibility++** `1.2.1` _(Better Combat, playerAnimator, Sable)_
 - **Simplest Paxels** `1.0.6` — vanilla-tier pick+axe+shovel
@@ -255,6 +258,9 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
   - **Searchables** `1.0.2` _(dependency — client, optional, default on; toggle with Controlling)_
 - **Crash Assistant** `1.11.12` — post-crash log GUI _(client, optional, default on)_
 - **Chat Heads** `0.15.7` — player faces in chat _(client, optional, default on)_
+- **Obscure Tooltips** `4.2.4` — styled item tooltips and 3D gear preview _(client)_
+- **Healight** `1.0.1` — green flash when an entity heals _(client)_
+- **Obscuria's Tools** — vanilla tool textures via Paxi `obscurias-tools.zip` _(client resource pack)_
 - **Counter** `0.5-1.21.1` — world-day HUD (disable coords/FPS/time overlays; Xaero covers those)
 - **Pick Up Notifier** `21.1.1` — toast when picking up items _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_

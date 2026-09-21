@@ -1,5 +1,6 @@
 {
 	"loadOrder": [
-		"bng_titles.zip"
+		"bng_titles.zip",
+		"obscurias-tools.zip"
 	]
 }

@@ -78,9 +78,32 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 - **Also add:** none.
 - **Blocked by:** NeoForge `[21.1.250,)` vs pack `21.1.248`.
 
+### Stylized Potions
+
+**Pending — blocked on 1.21.1.** Unique bottle art per potion effect. The zip that lists 1.21.1 still uses **OptiFine CIT** for that version. The native item-model overlay only loads at pack format 55+ (`1.21.5/` folder), which this pack never reaches. Iris / Sodium / Continuity do not read CIT, so the pack would install and potions would stay vanilla.
+
+- **Link:** [CurseForge](https://www.curseforge.com/minecraft/texture-packs/stylized-potions)
+- **Pin:** do not ship until there is a 1.21.1 path that is not OptiFine (or a CIT reader we actually want). File `7243312` is the current zip.
+- **Also add:** none until that path exists.
+
 ---
 
 ## Accepted
+
+### ~~MCG Core + Guidebook: Aquamirae~~
+**ACCEPTED** — added in 1.1.13 (2026-09-21). Both `side = client`.
+
+### ~~Obscuria's Tools~~
+**ACCEPTED** — added in 1.1.13 (2026-09-21) as Paxi `obscurias-tools.zip`.
+
+### ~~Healight~~
+**ACCEPTED** — added in 1.1.13 (2026-09-21) `1.0.1`, `side = client`.
+
+### ~~Obscure Tooltips~~
+**ACCEPTED** — added in 1.1.13 (2026-09-21) **4.2.4**, `side = client`. Not 4.2.5.
+
+### ~~Accents~~
+**ACCEPTED** — added in 1.1.13 (2026-09-21) **2.0.2**, `side = both`. Not 2.0.3.
 
 ### ~~ParCool!~~
 **ACCEPTED** — added in 1.1.12 (2026-09-21) with ParCool+ Compatibility++ `1.2.1`. Pin is **3.4.3.3-NF**, not 4.x.

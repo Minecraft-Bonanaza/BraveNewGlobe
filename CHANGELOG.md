@@ -3,6 +3,18 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.13] — 2026-09-21
+
+### Added
+- **MCG Core** `1.1.0` + **MCG's Guidebook: Aquamirae** `1.2.0` — client H-key book with an Aquamirae tab. Press H. 7.x pages (Maelstrom, Shipbreaker) are still marked WIP by the author.
+- **Obscure Tooltips** `4.2.4` — client tooltip frames and 3D gear preview. Not 4.2.5 (that jar requires Fragmentum 5).
+- **Accents** `2.0.2` — dyeable hats and back items with small bonuses. Not 2.0.3 (Fragmentum 5). On client and server.
+- **Healight** `1.0.1` — client green flash when an entity heals.
+- **Obscuria's Tools** — Paxi resource pack `obscurias-tools.zip`. Vanilla wood-through-netherite tool textures. Modded tools keep their own art.
+
+### Notes
+- **No fresh world.** Restart instance and server. 219 mods. Fragmentum stays **2.4.4**.
+
 ## [1.1.12] — 2026-09-21
 
 ### Added

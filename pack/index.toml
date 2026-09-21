@@ -618,11 +618,15 @@ hash = "d0aaf3172f34275479f0669aa5b0a94b85788ae638f3062b948ec49d31c38293"
 
 [[files]]
 file = "config/paxi/resourcepack_load_order.json"
-hash = "c19d5d6faf1ce89bce72bef978479d2d185ce9a054484d7159ffbce7685a17fd"
+hash = "8803fa716dd74402b320527e2a28b916076f2c2030941777985a6be61aa7c020"
 
 [[files]]
 file = "config/paxi/resourcepacks/bng_titles.zip"
 hash = "a16cdaa90c5ca4999496d87bda5bbf048eb625338eca51fac40f4c326fd1679c"
+
+[[files]]
+file = "config/paxi/resourcepacks/obscurias-tools.zip"
+hash = "e9aa52e4a394482be6b4ea042c864cb4460fb98202bf174e2cffd80e5bd298d4"
 
 [[files]]
 file = "config/playermob.properties"
@@ -943,6 +947,11 @@ hash = "3ce5c9490d25315f4173c94d8e4b7ddbad2716e8bf8d40548ada04b9e189cd48"
 [[files]]
 file = "kubejs/startup_scripts/splint_duration.js"
 hash = "bcb59ab6941f9ba06c5f61b6999b068f4fa064358db53375fa8b992a085e93c9"
+
+[[files]]
+file = "mods/accents.pw.toml"
+hash = "1c8b24dcdc5d171dabb86933ba8662c1f719ad38302f5d32a9d7c187dc7a332a"
+metafile = true
 
 [[files]]
 file = "mods/advancedperipherals.pw.toml"
@@ -1510,6 +1519,11 @@ hash = "fa2d61b9c6b4446bbad9767e20bbd43c8c1e25bf0f7ecc9a237bf995456d02f5"
 metafile = true
 
 [[files]]
+file = "mods/healight.pw.toml"
+hash = "58bba13d73c278cc491726d46124d64fc3cc4f7c5fb6e7fc00adc10b37d8133e"
+metafile = true
+
+[[files]]
 file = "mods/hybrid-aquatic.pw.toml"
 hash = "07f182f33a9590fd17bdbf52652d7d471aa1c4d71d3542b9b9f5dec1ad9e59ab"
 metafile = true
@@ -1640,6 +1654,16 @@ hash = "3b50b7e6541ff597a596afdd1681362fc3e61f218757e5ee830bad845c60084a"
 metafile = true
 
 [[files]]
+file = "mods/mcg-core.pw.toml"
+hash = "41cfe62b30c32301324030f41bece2b2ff61138f69501dc8e4e9360290cee09d"
+metafile = true
+
+[[files]]
+file = "mods/mcgs-guidebook-aquamirae.pw.toml"
+hash = "dc8ece465eee0cc5ec4eb95007b7b8a08d2ec5d783dc67edb0f61d3176f42670"
+metafile = true
+
+[[files]]
 file = "mods/midnightlib.pw.toml"
 hash = "1e7a69de13ee96b512350358c746a7b3bf67b07bc532fe5b26f7b3b3f7ee8117"
 metafile = true
@@ -1697,6 +1721,11 @@ metafile = true
 [[files]]
 file = "mods/numismatics-villager-currency.pw.toml"
 hash = "8f98e24eacf317b7bb2715a22afd575c629d4893a22cf7b4d46b71076337ff17"
+metafile = true
+
+[[files]]
+file = "mods/obscure-tooltips.pw.toml"
+hash = "deb644e4bb37c94e649c198124fddbafe10e16072963b0856846fa8197f5629b"
 metafile = true
 
 [[files]]
