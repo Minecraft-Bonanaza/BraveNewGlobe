@@ -405,15 +405,15 @@ file = "config/ftbquests/quests/chapters/wda.snbt"
 hash = "1458aae914d94f7283e0ddc13385959b77e46740baeaeac712b500bd083a6e76"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/A1E1E1F6F632F9B8.snbt"
+file = "config/ftbquests/quests/reward_tables/a1e1e1f6f632f9b8.snbt"
 hash = "447d770b280788e3dc66ef9c7367207d7c00925a1f1604997ddd6c6930fe110b"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/BCAB331382ADF7FA.snbt"
+file = "config/ftbquests/quests/reward_tables/bcab331382adf7fa.snbt"
 hash = "667b4fea225cc1e04faabd06d04635844b2ba097cc2a1fe7395ee94b1c8b0b83"
 
 [[files]]
-file = "config/ftbquests/quests/reward_tables/E63DC9EDED922EFA.snbt"
+file = "config/ftbquests/quests/reward_tables/e63dc9eded922efa.snbt"
 hash = "e2a2602321888ded7faed2816c17c8a993c98f5bde7322fd03238f22a0d2d5c5"
 
 [[files]]
@@ -907,6 +907,10 @@ hash = "7f1e58be2cf7db18181869804bb09823ee93a4ea863d560036e8a05954bcf806"
 [[files]]
 file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"
 hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
+
+[[files]]
+file = "kubejs/server_scripts/carbon_dust_millstone_fix.js"
+hash = "a98ec649b0b9eff0ebe815b312aa810e5a5cb4969cbe09fcca79fea655c5c7e3"
 
 [[files]]
 file = "kubejs/server_scripts/disable_severe_bleeding.js"
