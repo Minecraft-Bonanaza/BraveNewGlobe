@@ -3,6 +3,19 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.16] — 2026-09-21
+
+### Changed
+- **Wheat** grows in every season (`wheat_year_round.js`). Serene Seasons only listed it in summer and autumn; it is now on `#sereneseasons:year_round_crops`.
+
+### Notes
+- **No fresh world.** `/reload` is enough.
+
+## [1.1.15] — 2026-09-21
+
+### Changed
+- Self-host **MCG Core** + **Aquamirae guidebook** (CurseForge `allowModDistribution:false`; not on Modrinth).
+
 ## [1.1.14] — 2026-09-21
 
 ### Added

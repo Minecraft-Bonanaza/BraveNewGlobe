@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.14**.
+Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.16**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod

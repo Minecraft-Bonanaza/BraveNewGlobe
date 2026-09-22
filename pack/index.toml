@@ -949,6 +949,10 @@ file = "kubejs/server_scripts/wda_dungeon_loot.js"
 hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
 
 [[files]]
+file = "kubejs/server_scripts/wheat_year_round.js"
+hash = "3cd2c49941a32567eb1fa4ca86b35ddb50f61df2d4bda98019074cb499913ffc"
+
+[[files]]
 file = "kubejs/startup_scripts/disable_severe_bleeding.js"
 hash = "05867527f673d2f0baf359967bdc44fb202107f60c76b7777dde70abae98ebd8"
 
