@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.17] — 2026-09-21
+
+### Fixed
+- **Healight** is required on **client and dedicated server**. It injects `DATA_HEAL_TIME` (int) into every `LivingEntity`. Shipping it `side = client` / optional meant the server never defined that field, so player metadata shifted: field 16 was absorption (float 0.0) on the client and score (int) on the host — `Invalid entity data item type for field 16`. Do **not** mark it client-only or optional again.
+
+### Notes
+- **No fresh world.** Restart the **dedicated server** so it pulls the Healight jar. Clients already have it.
+
 ## [1.1.16] — 2026-09-21
 
 ### Changed

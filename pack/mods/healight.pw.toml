@@ -1,6 +1,6 @@
 name = "Healight"
 filename = "healight-neoforge-1.21.1-1.0.1.jar"
-side = "client"
+side = "both"
 
 [download]
 url = "https://cdn.modrinth.com/data/2Je179dC/versions/c959D4Q7/healight-neoforge-1.21.1-1.0.1.jar"
@@ -11,8 +11,3 @@ hash = "a2c51fd0b31ec4a9e5fdd564add53acda0eab4020b154f81921d0fd2eef7e98fddd3d65f
 [update.modrinth]
 mod-id = "2Je179dC"
 version = "c959D4Q7"
-
-[option]
-optional = true
-default = true
-description = "Client: green flash when an entity heals. Cheap. Safe to disable."

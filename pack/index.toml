@@ -1536,7 +1536,7 @@ metafile = true
 
 [[files]]
 file = "mods/healight.pw.toml"
-hash = "db200baaf531e70e266588b461f3f14ecb1885ce118fe328abe7890f6b353708"
+hash = "c139a7301ec6c38947801f6624bc7a57cb584351e307776dd4827c3917d900c5"
 metafile = true
 
 [[files]]

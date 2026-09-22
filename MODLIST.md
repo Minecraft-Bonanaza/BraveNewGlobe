@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.16**.
+Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.17**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -259,7 +259,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Crash Assistant** `1.11.12` — post-crash log GUI _(client, optional, default on)_
 - **Chat Heads** `0.15.7` — player faces in chat _(client, optional, default on)_
 - **Obscure Tooltips** `4.2.4` — styled item tooltips and 3D gear preview _(client, optional, default off — particles and 3D previews)_
-- **Healight** `1.0.1` — green flash when an entity heals _(client, optional, default on)_
+- **Healight** `1.0.1` — green flash when an entity heals _(required on client and server; injects living-entity data)_
 - **Obscuria's Tools** — vanilla tool textures via Paxi `obscurias-tools.zip` _(client resource pack, always on; same draw cost as the vanilla textures it replaces)_
 - **Field Guide** — Paxi folder `bng_field_guide`, its own tab in the H-key book. Always on. The Deep names the Kraken and the Bloop only.
 - **Counter** `0.5-1.21.1` — world-day HUD (disable coords/FPS/time overlays; Xaero covers those)
