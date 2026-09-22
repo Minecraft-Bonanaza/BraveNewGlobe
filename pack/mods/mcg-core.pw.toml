@@ -2,15 +2,16 @@ name = "MCG Core"
 filename = "mcg-core-neoforge-1.21.1-1.1.0.jar"
 side = "client"
 
-[download]
-hash-format = "sha1"
-hash = "1ac012cf13d28c211f0c0291a9688546e03a4b0a"
-mode = "metadata:curseforge"
+# CurseForge-exclusive with third-party API distribution disabled (the CF API
+# returns metadata but no download URL, so packwiz-installer can't fetch it for
+# clients) and not published on Modrinth. Bundled in-repo and served by direct
+# URL instead. No [update] block on purpose: prevents `packwiz update` from
+# reverting to the undownloadable CurseForge metadata source.
 
-[update]
-[update.curseforge]
-file-id = 8777782
-project-id = 1673221
+[download]
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/mcg-core-neoforge-1.21.1-1.1.0.jar"
+hash-format = "sha256"
+hash = "792f9d0ab4b430b15be2c81ef63744a6385d4e1ac608a2e3fc10003072a1ee4c"
 
 [option]
 optional = true

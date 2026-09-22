@@ -1667,12 +1667,12 @@ metafile = true
 
 [[files]]
 file = "mods/mcg-core.pw.toml"
-hash = "78c6930e77cd278ed9bae2b62abbfab4afe263eac3c6dfd20e7e44393d296207"
+hash = "3ed500a42bea6f05ea53c003ba17e3c0b4f96c75826e8bd273dbe2247dfde932"
 metafile = true
 
 [[files]]
 file = "mods/mcgs-guidebook-aquamirae.pw.toml"
-hash = "75863a2eb42e209352e4baff0171952ca0a43a088c8113405d6a621c06819247"
+hash = "a7ee65e3e6418d974bbf441455b432a379060d9c16977ff4bb21ef57800efd00"
 metafile = true
 
 [[files]]

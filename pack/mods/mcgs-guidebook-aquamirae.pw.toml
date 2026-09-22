@@ -2,15 +2,16 @@ name = "MCG's Guidebook: Aquamirae"
 filename = "mcgguide_aquamirae-1.2.0_neoforge.jar"
 side = "client"
 
-[download]
-hash-format = "sha1"
-hash = "86b247559c9b6a19fd94a21320c33d4d113c79f3"
-mode = "metadata:curseforge"
+# CurseForge-exclusive with third-party API distribution disabled (the CF API
+# returns metadata but no download URL, so packwiz-installer can't fetch it for
+# clients) and not published on Modrinth. Bundled in-repo and served by direct
+# URL instead. No [update] block on purpose: prevents `packwiz update` from
+# reverting to the undownloadable CurseForge metadata source.
 
-[update]
-[update.curseforge]
-file-id = 8777821
-project-id = 1674249
+[download]
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/mcgguide_aquamirae-1.2.0_neoforge.jar"
+hash-format = "sha256"
+hash = "bc102d3c8b7ea54d1c3cab770f16fa4adaa749ee52b9125a99ff7c2e733cbcb4"
 
 [option]
 optional = true
