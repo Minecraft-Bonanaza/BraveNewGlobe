@@ -1,0 +1,16 @@
+{
+	"dimension": "twilightforest:twilight_forest",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": -32, "value": 1.20, "slope": -0.003125 },
+		{ "altitude": 32, "value": 1.00, "slope": -0.003718 },
+		{ "altitude": 90, "value": 0.75, "slope": -0.004655 },
+		{ "altitude": 150, "value": 0.45, "slope": -0.005400 },
+		{ "altitude": 200, "value": 0.16, "slope": -0.004567 },
+		{ "altitude": 248, "value": 0.0, "slope": -0.003333 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

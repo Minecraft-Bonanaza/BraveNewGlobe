@@ -1,0 +1,16 @@
+{
+	"dimension": "minecraft:the_nether",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": 0, "value": 1.10, "slope": -0.003125 },
+		{ "altitude": 32, "value": 1.00, "slope": -0.005938 },
+		{ "altitude": 64, "value": 0.72, "slope": -0.009687 },
+		{ "altitude": 96, "value": 0.38, "slope": -0.012313 },
+		{ "altitude": 116, "value": 0.10, "slope": -0.011545 },
+		{ "altitude": 127, "value": 0.0, "slope": -0.009091 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

@@ -1,0 +1,17 @@
+{
+	"dimension": "create_abyss:abyss",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": 0, "value": 1.20, "slope": -0.000250 },
+		{ "altitude": 400, "value": 1.10, "slope": -0.000292 },
+		{ "altitude": 700, "value": 1.00, "slope": -0.007667 },
+		{ "altitude": 720, "value": 0.70, "slope": -0.016250 },
+		{ "altitude": 740, "value": 0.35, "slope": -0.016250 },
+		{ "altitude": 758, "value": 0.08, "slope": -0.012500 },
+		{ "altitude": 766, "value": 0.0, "slope": -0.010000 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

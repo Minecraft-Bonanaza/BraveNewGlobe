@@ -1,6 +1,6 @@
 {
 	"pack": {
 		"pack_format": 48,
-		"description": "BNG Sable overworld air pressure: cruise 300-400, conventional max ~500, thrusters for 800"
+		"description": "BNG Sable air pressure. Overworld cruise 300-400. Other dimensions get a slope across their real height instead of Sable's default cliff."
 	}
 }

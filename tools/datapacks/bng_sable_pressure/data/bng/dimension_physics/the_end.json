@@ -1,0 +1,16 @@
+{
+	"dimension": "minecraft:the_end",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": 0, "value": 1.15, "slope": -0.002344 },
+		{ "altitude": 64, "value": 1.00, "slope": -0.004215 },
+		{ "altitude": 110, "value": 0.72, "slope": -0.006043 },
+		{ "altitude": 160, "value": 0.42, "slope": -0.005800 },
+		{ "altitude": 210, "value": 0.14, "slope": -0.004642 },
+		{ "altitude": 248, "value": 0.0, "slope": -0.003684 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

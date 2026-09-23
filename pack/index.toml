@@ -342,7 +342,7 @@ hash = "c3b1fa1d3e5725d8e4378ad82ff57502801292b7ee2e855d7c830ff217664d2a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/aether.snbt"
-hash = "34280898d4f7dcfeee6a72645db9a144a25d7aeb41cc1c47460bf5abfeba6c52"
+hash = "146b250c546cc95d09e01eede762d9861095663310cc446c2d27bc57bbceb19e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/agriculture.snbt"
@@ -906,7 +906,7 @@ hash = "4cb7b9563693fdce5e2bbc7f0602f39ba243686c8b6ea5afd4f273bf3cd655db"
 
 [[files]]
 file = "datapacks/bng_sable_pressure.zip"
-hash = "05bcf613083593d201698cbe7e454d0c2872dae752e2664fb1519f6c9626a46b"
+hash = "1689d2addbddc014b729530b165d71049b224481cb3ff5f93c5d076967d2cd3c"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
@@ -935,6 +935,10 @@ hash = "3c3949180dcac7d921fb0cdae39eb14fbb0baf15d82ee811560238e71528cca0"
 [[files]]
 file = "kubejs/assets/kubejs/models/item/incomplete_blaze_burner.json"
 hash = "5867b873e37a97a621424a90085ef8867bf0563537ea37866e8bcb5efc430634"
+
+[[files]]
+file = "kubejs/server_scripts/aether_ship_fall.js"
+hash = "b22964b1960af778a80cb15a048eb4cce0007d5c200803f27cd88a4b3fe6e000"
 
 [[files]]
 file = "kubejs/server_scripts/blaze_burner_line.js"

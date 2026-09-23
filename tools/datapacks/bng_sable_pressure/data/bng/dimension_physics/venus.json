@@ -1,0 +1,16 @@
+{
+	"dimension": "creatingspace:venus",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": -64, "value": 1.40, "slope": -0.001562 },
+		{ "altitude": 64, "value": 1.20, "slope": -0.002604 },
+		{ "altitude": 160, "value": 0.85, "slope": -0.004635 },
+		{ "altitude": 240, "value": 0.40, "slope": -0.005479 },
+		{ "altitude": 300, "value": 0.08, "slope": -0.004667 },
+		{ "altitude": 320, "value": 0.0, "slope": -0.004000 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

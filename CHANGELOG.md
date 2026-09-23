@@ -3,6 +3,22 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.21] — 2026-09-23
+
+### Changed
+- An airship that falls through the Aether floor comes home the way a player does: same X/Z, just under the Overworld ceiling, still falling, riders included. AeroPortals was catching that fall and setting the ship back down inside the Aether, so it could not be retrieved. Script: `pack/kubejs/server_scripts/aether_ship_fall.js`.
+
+### Notes
+- **No fresh world.** Restart so the script loads. `/reload` reloads KubeJS server scripts.
+
+## [1.1.20] — 2026-09-23
+
+### Changed
+- Sable air pressure for every dimension that was still on the default curve. That curve stays nearly flat, then drops to vacuum in a short cliff, so a ship only has a thin band of altitude it can hold. **Aether** now thins from the islands (about Y 64) through the sky and hits vacuum at Y 245. Twilight Forest, the Nether, the End, and the Abyss get the same kind of slope across their real height. Creating Space orbits are vacuum. The Moon is thin, Mars is medium, Venus is thick. Overworld curve is unchanged. Source: `tools/datapacks/bng_sable_pressure/`.
+
+### Notes
+- **No fresh world.** `/reload` is enough for the datapack. Restart if the client keeps the old curve.
+
 ## [1.1.19] — 2026-09-22
 
 ### Added

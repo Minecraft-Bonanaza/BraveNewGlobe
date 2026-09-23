@@ -1,0 +1,15 @@
+{
+	"dimension": "creatingspace:mars",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": -64, "value": 0.70, "slope": -0.001172 },
+		{ "altitude": 64, "value": 0.55, "slope": -0.001992 },
+		{ "altitude": 160, "value": 0.28, "slope": -0.002406 },
+		{ "altitude": 260, "value": 0.08, "slope": -0.001667 },
+		{ "altitude": 320, "value": 0.0, "slope": -0.001333 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}

@@ -48,6 +48,7 @@
 			y: 1.0d
 			description: [
 				"You wake on a floating isle. There is no bedrock -- fall off an edge and you drop back to the Overworld."
+				"An airship does the same. Fly it down through the floor and it comes home at the same place on the map, high in the Overworld sky, still falling."
 				"Blue aerclouds break your fall. Golden ones bounce you skyward."
 			]
 			tasks: [

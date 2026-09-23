@@ -1,0 +1,14 @@
+{
+	"dimension": "creatingspace:the_moon",
+	"priority": 1000,
+	"universal_drag": 0.09,
+	"base_gravity": [0.0, -11.0, 0.0],
+	"base_pressure": 1.0,
+	"pressure_function": [
+		{ "altitude": -64, "value": 0.35, "slope": -0.001016 },
+		{ "altitude": 64, "value": 0.22, "slope": -0.001237 },
+		{ "altitude": 160, "value": 0.08, "slope": -0.001129 },
+		{ "altitude": 260, "value": 0.0, "slope": -0.000800 }
+	],
+	"magnetic_north": [0.0, 0.0, 0.0]
+}
