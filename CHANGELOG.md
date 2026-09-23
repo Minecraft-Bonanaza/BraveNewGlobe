@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.19] — 2026-09-22
+
+### Added
+- **Create: Mechanical Companion** `1.9` (Modrinth `6ZRWru4y`). Curios-summoned Mechanical Wolf (head slot) with Create modules. Illager Workshop in pillager-outpost biomes (spacing 40). Accents hats share that one head slot. Create **6.0.10** and Curios **9.5.1** already cover deps. 221 mods.
+
+### Notes
+- **No fresh world.** Restart instance and server. Existing chunks will not grow a workshop; new gen / explorer maps will. No Field Guide or quest node this cut.
+
 ## [1.1.18] — 2026-09-22
 
 ### Added

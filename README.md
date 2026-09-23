@@ -4,7 +4,7 @@ A [Big Globe](https://modrinth.com/mod/big-globe) modpack for **Minecraft 1.21.1
 **NeoForge** — Create-ecosystem tech, cannons, aeronautics, and hand-authored Big Globe
 world/spawn compatibility.
 
-Current pack: **1.1.18** — **220** mods. Quest book **18 chapters / 251 quests**.
+Current pack: **1.1.19** — **221** mods. Quest book **18 chapters / 251 quests**.
 
 **1.0.0 is the first production release.** The content stack is in — including the team's
 in-house **Create: Market Maker** economy mod. Survival-layer polish (seasons, diseases,
@@ -39,7 +39,7 @@ farming/food, climate) may continue in `1.x`.
 - **[QUESTS.md](QUESTS.md)** — shipped quest book (18 chapters / 251 quests) and line list.
 - **[LOOT.md](LOOT.md)** — combat-dungeon LootJS pools + Simply Swords loot rules.
 - **[CHANGELOG.md](CHANGELOG.md)** — version history.
-- **[MODLIST.md](MODLIST.md)** — human-readable mod list (208 mods).
+- **[MODLIST.md](MODLIST.md)** — human-readable mod list (221 mods).
 - **[CANDIDATES.md](CANDIDATES.md)** — holding list for mods to add later (not a live pack change).
 - **[Notes](Notes.md)** — living pack-state notes (villages, WDA, loot, height, gotchas).
 

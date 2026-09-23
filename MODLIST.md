@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**220 mods**), grouped by purpose. Current pack **1.1.18**.
+Human-readable list of every mod in the pack (**221 mods**), grouped by purpose. Current pack **1.1.19**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -34,6 +34,7 @@ Human-readable list of every mod in the pack (**220 mods**), grouped by purpose.
 - **Create: Central Kitchen** `2.6.1` — Create arms on Farmer's Delight / Brewin' cookware
 - **Create: Integrated Farming** `1.4.2` — vacuum harvester, fishing nets, FD crop arms
 - **Create: Bionics** `2.5.0` — five fuel robots (Anole, Matchbox, Seeker, Oxhauler, Replete). Required on client and server. The Seeker digs the ore you show it.
+- **Create: Mechanical Companion** `1.9` — Curios-summoned Mechanical Wolf (head slot) + Illager Workshop
 - **Create Slice & Dice** `4.3.3` — slicer + sprinklers (water / fertilizer / potions; Sable contraptions)
 - **Sprinkler Farmland** `1.0.0` — S&D water sprinklers snap Realistic Farmland moisture to 7 (GitHub); KubeJS player-tick hydrator also ships
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)

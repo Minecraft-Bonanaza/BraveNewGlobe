@@ -90,6 +90,9 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 
 ## Accepted
 
+### ~~Create: Mechanical Companion~~
+**ACCEPTED** — added in 1.1.19 (2026-09-22) Modrinth `1.9` (`6ZRWru4y`), `side = both`. Illager Workshop worldgen kept. Accents hats share Curios head with the Wolf Link.
+
 ### ~~MCG Core + Guidebook: Aquamirae~~
 **ACCEPTED** — added in 1.1.13 (2026-09-21). Both `side = client`, optional, default on. Disable the pair together.
 

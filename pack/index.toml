@@ -1360,6 +1360,11 @@ hash = "0ddbdbe1d5f14e6a56c7870e6c60380ebe8ff9ace868599516edba5b905ac783"
 metafile = true
 
 [[files]]
+file = "mods/create-mechanical-companion.pw.toml"
+hash = "307ae6926d42a1c9f7061ec9683cf5f7d6ebcaa85ed519753919d98f68c23d9b"
+metafile = true
+
+[[files]]
 file = "mods/create-metallurgy.pw.toml"
 hash = "858b90ff3cf78e80725b89f2eeb852843cc38911f5e5eb135268939fcb1ba04a"
 metafile = true
