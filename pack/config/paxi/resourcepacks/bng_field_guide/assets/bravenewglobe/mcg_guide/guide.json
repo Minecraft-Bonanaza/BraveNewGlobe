@@ -8,7 +8,7 @@
   "guide_url": "",
   "wiki_url": "",
   "items_url": "",
-  "intro": "Animals of this world. The quest book teaches the machines, the ships, and the named bosses. The Ice Maze has its own tab. The last section is rumor. A few of those things have names. The rest do not.",
+  "intro": "Animals of this world, and the robots you build. The quest book teaches the machines, the ships, and the named bosses. The Ice Maze has its own tab. The last section is rumor. A few of those things have names. The rest do not.",
   "getting_started": [
     {
       "n": 1,
@@ -552,6 +552,53 @@
           "summary": "Barrel Zombie, Decaying Zombie, Zombie Bruiser, Zombie Clown, Zombie Fisherman, Zombie Lumberjack. Bloody Gadfly, Corpse Fly, Corpse Maggot, Corpse Fish, Glutton Fish. Diamond Termite, Thornshell Crab, Swarmer, Phantom Creeper, Missionary, Spiders Mother, Baby Spider, Krampus and his henchman, Felsteed.",
           "url": "",
           "items": []
+        }
+      ]
+    },
+    {
+      "title": "Robot companions",
+      "pages": [
+        {
+          "title": "Fuel and a wrench",
+          "excerpt": "Coal, charcoal, or a blaze cake.",
+          "summary": "Every robot drinks coal, charcoal, or a blaze cake. The Anole sits idle in your hand or in a seat and does not burn fuel then. Sneak with a wrench to take one apart. Right-click with andesite, brass, or copper for a skin, and take the skin off with a wrench. Empty a hauler or a tank before you dismantle it, and finish building before you fill it.",
+          "url": "",
+          "items": []
+        },
+        {
+          "title": "Anole",
+          "excerpt": "Sits on your shoulder. Spiders leave.",
+          "summary": "Early craft: andesite alloy, copper, an iron sheet, and a transmitter. Right-click the item on the ground to set it down, or hold it and it perches on your shoulder. Spiders and insects keep their distance. Sneak and right-click with copper to repair it. A wet sponge weathers a copper skin. A dry sponge clears that.",
+          "url": "",
+          "items": [{ "id": "createbionics:anole_item", "name": "Anole" }]
+        },
+        {
+          "title": "Matchbox",
+          "excerpt": "Four stacks of torches.",
+          "summary": "A small spider. Give it torches and it places them in the dark, up to four stacks. Sneak and right-click to choose off, caves only, or sun and caves. Leave it wandering and it lights what it walks through. Andesite alloy, while sneaking, repairs it.",
+          "url": "",
+          "items": [{ "id": "createbionics:matchbox_item", "name": "Matchbox" }]
+        },
+        {
+          "title": "Seeker",
+          "excerpt": "Show it an ore. A miss eats the sample.",
+          "summary": "Hand it an ore, a metal, or a mineral. It searches nearby and digs that block out of the ground. If it finds nothing, the sample is gone. A diamond or netherite pickaxe makes the dig faster. Right-click with an ore starts the search, so sneak when you only meant to change its skin.",
+          "url": "",
+          "items": [{ "id": "createbionics:seeker_item", "name": "Seeker" }]
+        },
+        {
+          "title": "Oxhauler",
+          "excerpt": "Six chests, a crafting grid, and a plough.",
+          "summary": "Place the Middle on the ground. Then the Rear, the Front, and the Head, in that order. It holds six chests and a 3x3 grid. A mechanical plough tills. A mechanical harvester cuts crops. Brass, while sneaking, repairs it.",
+          "url": "",
+          "items": [{ "id": "createbionics:oxhauler_middle_item", "name": "Oxhauler Middle" }]
+        },
+        {
+          "title": "Replete",
+          "excerpt": "One hundred and sixty buckets.",
+          "summary": "Craft the Body on a mechanical crafter and place it. Each Leg is the next piece, six in all. The tank holds 160 buckets of any fluid. Right-click with a bucket to fill it or to pour into a tank. If the fluid on the ground matches what is inside, it drinks that up.",
+          "url": "",
+          "items": [{ "id": "createbionics:replete_body_item", "name": "Replete Body" }]
         }
       ]
     },

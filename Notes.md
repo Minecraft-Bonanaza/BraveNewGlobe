@@ -28,11 +28,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.1.17)
+## Current pack state (1.1.18)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.17**, **219** mods. Quest book **17 / 246**
+- **Version / count:** `pack.toml` **1.1.18**, **220** mods. Quest book **18 / 251**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -41,6 +41,8 @@ Living rules. CHANGELOG stays historical.
   **Create: Market Maker V0.5.1** is in (`marketcoordination`, GitHub releases — not
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
+- **Create Nuclear** stays out until its reactor simulates on Sable sublevels. A local pin was pulled the same day: the core does not run on an assembled airship.
+- **1.1.18:** **Create: Bionics 2.5.0**. Five robots. Required both sides. Seeker digs the shown ore. Quest chapter **Robot Companions** and a Field Guide section. Blaze line: cobble + lava → netherrack; costly unheated netherrack + lava → first magma; heated stone + lava → magma; assembly → captured burner; heated cinder flour + magma → blaze powder.
 - **1.1.17:** **Healight** required on both sides (was client optional). It defines living-entity synched data; client-only install desyncs field 16 on dedicated servers.
 - **1.1.16:** vanilla **wheat** is year-round (Serene Seasons `year_round_crops`).
 - **1.1.15:** self-host **MCG Core** + **Aquamirae guidebook**.

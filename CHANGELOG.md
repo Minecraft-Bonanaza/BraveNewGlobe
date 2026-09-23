@@ -3,6 +3,16 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.18] — 2026-09-22
+
+### Added
+- **Create: Bionics** `2.5.0` (Modrinth). Five craftable robots: Anole, Matchbox, Seeker, Oxhauler, Replete. Fuel is coal, charcoal, or blaze cake. Required on client and server. The Seeker removes the ore block it finds. No worldgen. Create range matches **6.0.10**. 220 mods.
+- Quest chapter **Robot Companions** (5) and a Field Guide section for the same five. Quest book is **18 chapters / 251 quests**.
+- Blaze burners and blaze powder no longer need a blaze. Cobblestone and lava mix into netherrack. Eight netherrack and a bucket of lava mix into the first magma block; a heated basin then turns stone and lava into magma. An assembly line (cinder flour, magma, lava, press) turns an empty burner into a captured one. Heated cinder flour and magma make blaze powder.
+
+### Notes
+- **No fresh world.** Restart so the incomplete burner item registers. Create Nuclear stays out until its reactor simulates on Sable sublevels.
+
 ## [1.1.17] — 2026-09-21
 
 ### Fixed

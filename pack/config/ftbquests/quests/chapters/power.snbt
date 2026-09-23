@@ -111,6 +111,7 @@
 			description: [
 				"The other way to make power: heat, not fuel. Stack Fluid Tanks into a Boiler, set a Blaze Burner beneath, and fill it with water."
 				"Attach a Steam Engine to the boiler and a Flywheel to the engine — a rotation source parallel to the diesel line."
+				"No blaze required. Mix cobblestone with lava for netherrack and crush it to cinder flour. Eight netherrack and a bucket of lava make the first magma block. Once a burner is lit, a heated basin turns one stone and lava into magma. Run the empty burner through cinder flour, magma, lava, and a press."
 			]
 			tasks: [
 				{
@@ -188,8 +189,8 @@
 			x: 8.0d
 			y: 6.0d
 			description: [
-				"Go big: a full-size boiler is 18 Fluid Tanks, superheated, driving a whole bank of Steam Engines."
-				"Gather 18 Tanks, 12 Steam Engines and 12 Flywheels — a steam powerplant that rivals the Huge Diesel Engine."
+				"Go big. This list is the shopping trip. The boiler that actually tops out is 72 Fluid Tanks (3×3, eight high), 9 superheated burners, and 18 Steam Engines: about 294,912 SU on one shaft."
+				"Gather 18 Tanks, 12 Steam Engines and 12 Flywheels to start that plant. More boilers shaft together."
 			]
 			tasks: [
 				{

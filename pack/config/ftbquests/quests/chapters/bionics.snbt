@@ -1,0 +1,214 @@
+{
+	id: "A1B10C15D2E3F4A0"
+	group: ""
+	order_index: 12
+	filename: "bionics"
+	title: "Robot Companions"
+	icon: "createbionics:anole_item"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	images: [ ]
+	quest_links: [ ]
+	quests: [
+		{
+			title: "A Shoulder Lizard"
+			icon: "createbionics:anole_item"
+			x: 0.0d
+			y: 0.0d
+			description: [
+				"The Anole is the first robot. Craft it from andesite alloy, copper, an iron sheet, and a transmitter."
+				"Right-click the item on the ground to set it down. Feed it coal, charcoal, or a blaze cake. Hold the item and it sits on your shoulder. Spiders and insects keep away while it is with you."
+				"Sneak and right-click with a copper ingot to repair it. A wrench clears skins. Sneak with the wrench to take it apart. Right-click with andesite, brass, copper, or netherite for a skin. A wet sponge weathers the copper look. A dry sponge takes that off."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbionics:anole_item"
+					count: 1
+					id: "B101000000000011"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 20
+					id: "B101000000000012"
+				}
+				{
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 16
+					id: "B101000000000013"
+				}
+			]
+			id: "B101000000000001"
+		}
+		{
+			title: "Light the Dark"
+			icon: "createbionics:matchbox_item"
+			x: 0.0d
+			y: 1.5d
+			description: [
+				"The Matchbox is a small spider that carries four stacks of torches and sets them down where it is dark."
+				"Give it torches, then sneak and right-click to pick a mode: off, caves only, or sun and caves. Leave it to wander and it lights the dark it walks through."
+				"Same fuel as the Anole. Andesite alloy, while sneaking, repairs it."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbionics:matchbox_item"
+					count: 1
+					id: "B101000000000021"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 25
+					id: "B101000000000022"
+				}
+				{
+					type: "item"
+					item: "minecraft:torch"
+					count: 32
+					id: "B101000000000023"
+				}
+			]
+			id: "B101000000000002"
+			dependencies: [
+				"B101000000000001"
+			]
+		}
+		{
+			title: "Show It an Ore"
+			icon: "createbionics:seeker_item"
+			x: 0.0d
+			y: 3.0d
+			description: [
+				"The Seeker looks underground for the ore you hand it, digs for a few seconds, and brings the block back."
+				"If it finds nothing, it eats the sample. Do not hand it your last diamond. A diamond or netherite pickaxe makes the dig faster."
+				"Right-click with an ore starts the search. Hold sneak when you mean to apply a skin instead."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbionics:seeker_item"
+					count: 1
+					id: "B101000000000031"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 30
+					id: "B101000000000032"
+				}
+				{
+					type: "item"
+					item: "minecraft:coal"
+					count: 16
+					id: "B101000000000033"
+				}
+			]
+			id: "B101000000000003"
+			dependencies: [
+				"B101000000000002"
+			]
+		}
+		{
+			title: "The Ox"
+			icon: "createbionics:oxhauler_middle_item"
+			x: 0.0d
+			y: 4.5d
+			description: [
+				"The Oxhauler carries six chests and a 3x3 crafting grid. Place the Middle on the ground first. Then use the Rear, the Front, and the Head, in that order."
+				"Give it a mechanical plough and it tills. Give it a mechanical harvester and it cuts crops. Empty it before you take it apart, and finish building before you load it."
+				"Brass, while sneaking, repairs it."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbionics:oxhauler_middle_item"
+					count: 1
+					id: "B101000000000041"
+				}
+				{
+					type: "item"
+					item: "createbionics:oxhauler_rear_item"
+					count: 1
+					id: "B101000000000042"
+				}
+				{
+					type: "item"
+					item: "createbionics:oxhauler_front_item"
+					count: 1
+					id: "B101000000000043"
+				}
+				{
+					type: "item"
+					item: "createbionics:oxhauler_head_item"
+					count: 1
+					id: "B101000000000044"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "B101000000000045"
+				}
+				{
+					type: "item"
+					item: "create:brass_ingot"
+					count: 4
+					id: "B101000000000046"
+				}
+			]
+			id: "B101000000000004"
+			dependencies: [
+				"B101000000000003"
+			]
+		}
+		{
+			title: "A Tank on Legs"
+			icon: "createbionics:replete_body_item"
+			x: 0.0d
+			y: 6.0d
+			description: [
+				"The Replete holds 160 buckets of any fluid. Craft the Body on a mechanical crafter and place it. Each Leg is the next piece. You need six."
+				"Right-click with a bucket to fill it, or to pour into a tank. If the fluid around it matches what is inside, it drinks that up. Finish the legs before you fill it. Empty it before you take it apart."
+			]
+			tasks: [
+				{
+					type: "item"
+					item: "createbionics:replete_body_item"
+					count: 1
+					id: "B101000000000051"
+				}
+				{
+					type: "item"
+					item: "createbionics:replete_leg_item"
+					count: 6
+					id: "B101000000000052"
+				}
+			]
+			rewards: [
+				{
+					type: "xp"
+					xp: 40
+					id: "B101000000000053"
+				}
+				{
+					type: "item"
+					item: "minecraft:bucket"
+					count: 2
+					id: "B101000000000054"
+				}
+			]
+			id: "B101000000000005"
+			dependencies: [
+				"B101000000000004"
+			]
+		}
+	]
+}

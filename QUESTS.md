@@ -3,7 +3,7 @@
 Guidance-only FTB Quests. **No line is gated behind another** — all attemptable anytime.
 Framework: `SPECTRUM.md` (a SIG = baseline → specialized career curve).
 
-**Shipped book (as of 1.0.0):** **17 chapters / 246 quests**.
+**Shipped book:** **18 chapters / 251 quests** (1.1.18 added Robot Companions). The 1.0.0 book was 17 / 246.
 **1.0.0** is the first production release (content stack including in-house
 **Create: Market Maker** is in). Survival-layer polish may continue in `1.x`; not new
 quest chapters.
@@ -27,6 +27,7 @@ Two families of lines:
 
 ### Lines — all flat peers (no groups)
 1. **Create Core** — onboarding: kinetics, stress, first automation. Shared substrate every other line reuses.
+1b. **Robot Companions** — Create: Bionics 2.5.0. Anole, Matchbox, Seeker, Oxhauler, Replete. Guidance for new players. Organ and Stalker are not quested (their recipes do not yield items).
 2. **Rails & Trains** — Tracks, Signalworks, Train Physics Reloaded, Threaded Trains (+ Trotting Wagons, Doped Horses).
 3. **Aeronautics** — Aeronautics 1.3.2, Sable, Aeroworks 1.5.0, Gyro, hose connectors, radars, Gadgets &
    Gizmos thrusters/flight-control (real quest gated behind `gyro`), Radiologistics comms towers
@@ -34,7 +35,7 @@ Two families of lines:
    ship's brain; capstone = reach the sky structures.
 4. **Cannons & Warfare (Ordnance)** — Gunpowder, Gunsmithing (CGS), Big Cannons + Going Ballistic + Terminal Ballistics; **CC:CBC** for programmable fire-control; Warnautics = aerial-gunnery capstone.
 5. **Metalworking & Metallurgy** — Create: Metallurgy (foundries, alloys, bulk yields).
-6. **Power & Fuel** — Diesel Generators, Power Grid, Power Chip.
+6. **Power & Fuel** — Diesel Generators, Power Grid, Power Chip. Captured blaze burners and blaze powder are crafted (cobble/lava netherrack, heated stone/lava magma, assembly line, heated cinder flour). The first magma is an unheated netherrack mix so the line can start.
 7. **Logistics & Storage** — Factory Logistics, Aero Automated Logistics, Delivery Required, Create: Storage.
 8. **Industrial Enchanting** — Create: Enchantment Industry (small line: enchant by hand → automate → supply gear).
 9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market,

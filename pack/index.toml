@@ -353,6 +353,10 @@ file = "config/ftbquests/quests/chapters/astronautics.snbt"
 hash = "6a233f59ef6196c65c2fba3cebd59edcdba4088100c9f333b12a338b2b94326e"
 
 [[files]]
+file = "config/ftbquests/quests/chapters/bionics.snbt"
+hash = "b6f5e29dbd69aee36fa6e807ee1ce65e3da0c72d0bc214fce195cedaa0dc5f13"
+
+[[files]]
 file = "config/ftbquests/quests/chapters/bossesrise.snbt"
 hash = "2cfa23bde002b4728951b3938bb71777deb04414c48e16c7f5f1d044343091d5"
 
@@ -390,7 +394,7 @@ hash = "3fd003727b0e09e6f77d41da0b5396b55fc9376c9ee99216a5ab08fab3effb2a"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/power.snbt"
-hash = "ce9dbefc48749b6aa1518dc2a0e1015bf6e7100eef17dc5c7250fe32301a443f"
+hash = "5c265e45278826bb69b001cbe72760ff489d1f42d9ff5757cc5123bef977716f"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/rails.snbt"
@@ -622,7 +626,7 @@ hash = "d729632883e19802298491d00a356e829b83f16cc6ceefb132b67acb4b684cea"
 
 [[files]]
 file = "config/paxi/resourcepacks/bng_field_guide/assets/bravenewglobe/mcg_guide/guide.json"
-hash = "d0f69a796349c41b2fc7d4713b4bc78c306fce575fa3741e7c38e61177858beb"
+hash = "6b11f771b107f89e4e48116b185cfc936f2e26fb51871d05cc9d78788f7d9a8e"
 
 [[files]]
 file = "config/paxi/resourcepacks/bng_field_guide/assets/bravenewglobe/mcg_guide/icon.png"
@@ -925,6 +929,18 @@ file = "defaultconfigs/integrated_villages-neoforge-1_21.toml"
 hash = "878e0d769be388bbe098e9e53bbe76c4334dbd58b0bf2f8a2ef2cd147e7c00b1"
 
 [[files]]
+file = "kubejs/assets/kubejs/lang/en_us.json"
+hash = "3c3949180dcac7d921fb0cdae39eb14fbb0baf15d82ee811560238e71528cca0"
+
+[[files]]
+file = "kubejs/assets/kubejs/models/item/incomplete_blaze_burner.json"
+hash = "5867b873e37a97a621424a90085ef8867bf0563537ea37866e8bcb5efc430634"
+
+[[files]]
+file = "kubejs/server_scripts/blaze_burner_line.js"
+hash = "b167d0670e83e9bc33724b0fa8790e23bdd7a31058265a6146a8de3613342649"
+
+[[files]]
 file = "kubejs/server_scripts/carbon_dust_millstone_fix.js"
 hash = "a98ec649b0b9eff0ebe815b312aa810e5a5cb4969cbe09fcca79fea655c5c7e3"
 
@@ -959,6 +975,10 @@ hash = "05867527f673d2f0baf359967bdc44fb202107f60c76b7777dde70abae98ebd8"
 [[files]]
 file = "kubejs/startup_scripts/fracture_fall_threshold.js"
 hash = "3ce5c9490d25315f4173c94d8e4b7ddbad2716e8bf8d40548ada04b9e189cd48"
+
+[[files]]
+file = "kubejs/startup_scripts/incomplete_blaze_burner.js"
+hash = "25d6b34e1f679d011a01d2c0340c62cfb535ae85c2c2b61ae8eb7e4cb440ab53"
 
 [[files]]
 file = "kubejs/startup_scripts/splint_duration.js"
@@ -1272,6 +1292,11 @@ metafile = true
 [[files]]
 file = "mods/create-big-cannons.pw.toml"
 hash = "b6ac94e91f766466186d350ed45a79fdcf7805f34d9170ccc8612ff47983a5f5"
+metafile = true
+
+[[files]]
+file = "mods/create-bionics.pw.toml"
+hash = "124abaf71e87fc686427821889dcc65ba6b709003c426fbc069aeec5747c5a7a"
 metafile = true
 
 [[files]]

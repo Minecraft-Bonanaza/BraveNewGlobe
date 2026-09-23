@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**219 mods**), grouped by purpose. Current pack **1.1.17**.
+Human-readable list of every mod in the pack (**220 mods**), grouped by purpose. Current pack **1.1.18**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -33,6 +33,7 @@ Human-readable list of every mod in the pack (**219 mods**), grouped by purpose.
 - **Create: Ratatouille** — cooking/food processing
 - **Create: Central Kitchen** `2.6.1` — Create arms on Farmer's Delight / Brewin' cookware
 - **Create: Integrated Farming** `1.4.2` — vacuum harvester, fishing nets, FD crop arms
+- **Create: Bionics** `2.5.0` — five fuel robots (Anole, Matchbox, Seeker, Oxhauler, Replete). Required on client and server. The Seeker digs the ore you show it.
 - **Create Slice & Dice** `4.3.3` — slicer + sprinklers (water / fertilizer / potions; Sable contraptions)
 - **Sprinkler Farmland** `1.0.0` — S&D water sprinklers snap Realistic Farmland moisture to 7 (GitHub); KubeJS player-tick hydrator also ships
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
@@ -215,7 +216,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Better Days** — day/night length control
 - **Stat Tinkerer** — tweak player/entity stats
 - **Too Fast** — server-side movement/speed-limit fixes _(server-only)_
-- **FTB Quests** — guidance-only quest book (17 chapters / 246 quests)
+- **FTB Quests** — guidance-only quest book (18 chapters / 251 quests)
   - **FTB Library** _(dependency)_
   - **FTB Teams** _(dependency)_
 - **LootJS: KubeJS Addon** — combat-dungeon chest injection (`wda_dungeon_loot.js`)
@@ -261,7 +262,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Obscure Tooltips** `4.2.4` — styled item tooltips and 3D gear preview _(client, optional, default off — particles and 3D previews)_
 - **Healight** `1.0.1` — green flash when an entity heals _(required on client and server; injects living-entity data)_
 - **Obscuria's Tools** — vanilla tool textures via Paxi `obscurias-tools.zip` _(client resource pack, always on; same draw cost as the vanilla textures it replaces)_
-- **Field Guide** — Paxi folder `bng_field_guide`, its own tab in the H-key book. Always on. The Deep names the Kraken and the Bloop only.
+- **Field Guide** — Paxi folder `bng_field_guide`, its own tab in the H-key book. Always on. Robot companions are a section. The Deep names the Kraken and the Bloop only.
 - **Counter** `0.5-1.21.1` — world-day HUD (disable coords/FPS/time overlays; Xaero covers those)
 - **Pick Up Notifier** `21.1.1` — toast when picking up items _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_

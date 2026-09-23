@@ -57,6 +57,9 @@ git add -A && git commit -m "update: ..." && git push
 - Do **not** `packwiz curseforge add` or `packwiz modrinth add` **Create: Market Maker**
   (`marketcoordination`). It is the team's in-house mod, consumed from GitHub releases
   (`Minecraft-Bonanaza/Create--Market-Maker`) via `packwiz url add`.
+- Do **not** add **Create Nuclear** until its reactor simulates on Sable sublevels. A local
+  pin (1.3.2-beta.3) was pulled the same day it was added: the core does not run on an
+  assembled airship.
 - Do **not** add **Create: Simulated Jet Engines** or **Create Propulsion: Simulated** —
   Gadgets & Gizmos thrusters cover the altitude/boost need. Do **not** add **Create Big
   Cannons: Peripheral** — **CC:CBC** is the gunnery brain. Do **not** add
