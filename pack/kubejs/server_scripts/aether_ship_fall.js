@@ -9,10 +9,12 @@
 // -----------------------------------------------------------------------------
 
 const $ServerTickPost = Java.loadClass('net.neoforged.neoforge.event.tick.ServerTickEvent$Post')
+const $MinecraftServer = Java.loadClass('net.minecraft.server.MinecraftServer')
 const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
 const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
 const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const $AetherConfig = Java.loadClass('com.aetherteam.aether.AetherConfig')
+const GET_LEVEL = $MinecraftServer.class.getMethod('getLevel', $ResourceKey)
 
 const RETRY_TICKS = 40
 
@@ -24,9 +26,25 @@ function configString(value) {
 	return String(value.get())
 }
 
+function levelOf(server, id) {
+	return GET_LEVEL.invoke(server, dimensionKey(id))
+}
+
 let lastAttempt = {}
+let loggedError = false
 
 NativeEvents.onEvent($ServerTickPost, event => {
+	try {
+		tickShipFall(event)
+	} catch (e) {
+		if (!loggedError) {
+			loggedError = true
+			console.error('[BraveNewGlobe] aether_ship_fall failed: ' + e)
+		}
+	}
+})
+
+function tickShipFall(event) {
 	let server = event.server
 	let cfg = $AetherConfig.SERVER
 	if (cfg.disable_falling_to_overworld.get()) return
@@ -35,8 +53,8 @@ NativeEvents.onEvent($ServerTickPost, event => {
 	let returnId = configString(cfg.portal_return_dimension_ID)
 	if (!destinationId || !returnId || destinationId === returnId) return
 
-	let aether = server.getLevel(dimensionKey(destinationId))
-	let home = server.getLevel(dimensionKey(returnId))
+	let aether = levelOf(server, destinationId)
+	let home = levelOf(server, returnId)
 	if (aether == null || home == null) return
 
 	let ships = AeroPortals.subLevelsIn(aether)
@@ -76,4 +94,4 @@ NativeEvents.onEvent($ServerTickPost, event => {
 		AeroPortals.teleport(ship, returnId, pos.x, destY, pos.z, false)
 		console.info('[BraveNewGlobe] airship ' + shipId + ' fell out of ' + destinationId + ' to ' + returnId + ' at ' + Math.round(pos.x) + ', ' + Math.round(destY) + ', ' + Math.round(pos.z))
 	}
-})
+}

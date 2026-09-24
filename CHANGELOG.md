@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.21.1] — 2026-09-23
+
+### Fixed
+- Dedicated server first-tick crash from `aether_ship_fall.js`. Rhino could not choose between `MinecraftServer.getLevel(ResourceKey)` and `getLevel(ResourceLocation)`, so the Server thread died and the watchdog reported a 60-million-second hang. The script now calls the `ResourceKey` overload through reflection. A later tick error is logged instead of taking the server down.
+
+### Notes
+- **No fresh world.** Restart so the script loads. `/reload` is not enough if NativeEvents already registered the old handler.
+
 ## [1.1.21] — 2026-09-23
 
 ### Changed
