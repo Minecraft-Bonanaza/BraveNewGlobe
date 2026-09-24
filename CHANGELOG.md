@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.21.2] — 2026-09-23
+
+### Fixed
+- `aether_ship_fall.js` no longer uses Java `.class` (Rhino has no such field). Levels are resolved through `Utils.getServer().getLevel(id)`.
+
+### Notes
+- **No fresh world.** Restart so the script loads.
+
 ## [1.1.21.1] — 2026-09-23
 
 ### Fixed

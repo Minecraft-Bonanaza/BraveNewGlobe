@@ -9,25 +9,12 @@
 // -----------------------------------------------------------------------------
 
 const $ServerTickPost = Java.loadClass('net.neoforged.neoforge.event.tick.ServerTickEvent$Post')
-const $MinecraftServer = Java.loadClass('net.minecraft.server.MinecraftServer')
-const $ResourceKey = Java.loadClass('net.minecraft.resources.ResourceKey')
-const $Registries = Java.loadClass('net.minecraft.core.registries.Registries')
-const $ResourceLocation = Java.loadClass('net.minecraft.resources.ResourceLocation')
 const $AetherConfig = Java.loadClass('com.aetherteam.aether.AetherConfig')
-const GET_LEVEL = $MinecraftServer.class.getMethod('getLevel', $ResourceKey)
 
 const RETRY_TICKS = 40
 
-function dimensionKey(id) {
-	return $ResourceKey.create($Registries.DIMENSION, $ResourceLocation.parse(id))
-}
-
 function configString(value) {
 	return String(value.get())
-}
-
-function levelOf(server, id) {
-	return GET_LEVEL.invoke(server, dimensionKey(id))
 }
 
 let lastAttempt = {}
@@ -35,7 +22,7 @@ let loggedError = false
 
 NativeEvents.onEvent($ServerTickPost, event => {
 	try {
-		tickShipFall(event)
+		tickShipFall()
 	} catch (e) {
 		if (!loggedError) {
 			loggedError = true
@@ -44,8 +31,10 @@ NativeEvents.onEvent($ServerTickPost, event => {
 	}
 })
 
-function tickShipFall(event) {
-	let server = event.server
+function tickShipFall() {
+	let server = Utils.getServer()
+	if (server == null) return
+
 	let cfg = $AetherConfig.SERVER
 	if (cfg.disable_falling_to_overworld.get()) return
 
@@ -53,8 +42,8 @@ function tickShipFall(event) {
 	let returnId = configString(cfg.portal_return_dimension_ID)
 	if (!destinationId || !returnId || destinationId === returnId) return
 
-	let aether = levelOf(server, destinationId)
-	let home = levelOf(server, returnId)
+	let aether = server.getLevel(destinationId)
+	let home = server.getLevel(returnId)
 	if (aether == null || home == null) return
 
 	let ships = AeroPortals.subLevelsIn(aether)
