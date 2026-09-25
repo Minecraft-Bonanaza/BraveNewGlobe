@@ -1,0 +1,17 @@
+---
+description: Ship pack changes with packwiz, and bump the pack version only for pack content
+alwaysApply: true
+---
+
+# Packwiz ships and version bumps
+
+Players pull `main` on every launch. Pinning a mod and pushing while people are setting up or playing force-updates them and can desync the client from the dedicated server.
+
+- When the user says to push, ship, or send the work just done, that is the approval to commit and push it.
+- A documentation-only change does not bump the version in `pack/pack.toml`. Say that in the commit message. Mods, configs, datapacks, scripts, and quests ship as the next pack version.
+- From `pack/`, run `packwiz refresh` before a pack commit. Commit the changed files together with `pack/index.toml` and `pack/pack.toml`. A stale index hash or a drifted zip fails every client launch.
+- If `main` moved (including a co-curator's push), pull first and merge other files without discarding them. Recompute `pack.toml` and `index.toml` with packwiz. Do not hand-merge those hashes.
+- Do not `packwiz update` Big Globe. The pack ships a height-patched jar. Do not `packwiz update` Climbable Ropes unless Create Aeronautics moves with it.
+- In-house jars, including Create: Market Maker and other GitHub release jars the user supplies, go in with `packwiz url add`. Do not `packwiz curseforge add` or `packwiz modrinth add` those.
+- `packwiz -y` can overwrite Create, Curios, and playerAnimator. Prefer a hand-written `pack/mods/*.pw.toml`, then `packwiz refresh`.
+- Further bans and pins are in `MaintainerInstructions.md` and `Notes.md`. Follow those. Do not re-add a mod they ban.

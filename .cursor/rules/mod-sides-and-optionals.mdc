@@ -1,0 +1,16 @@
+---
+description: Tag client, server, and both, and keep optional visuals from taxing players who opted out
+alwaysApply: true
+---
+
+# Client, server, and optionals
+
+Give every mod you add an explicit side: client, server, or both.
+
+- Gameplay other players must see is `side = both` and required. Animal Weights Scaling is both. Anything `Notes.md` marks required on both sides stays that way (Healight desyncs living-entity data if it is client-only).
+- A visual mod that not everyone needs is optional.
+- Players who leave optionals off should keep the faster client. Expensive cosmetics default off. Obscure Tooltips stays optional, default off, on the Fragmentum 2.4.4 pin (`4.2.4`). Accents stays on `2.0.2`. Do not add the Fragmentum 5 builds of those mods.
+- Simple Clouds is not optional. Project Atmosphere requires it on both sides.
+- Iris, Iris & Oculus Flywheel Compat, and Distant Horizons toggle together. Contraption Lights and LambDynamicLights toggle together. Defaults are in `Notes.md`. Do not enable one of a pair without the other, and do not add Veil or Sable Ragdolls for the lighting pair.
+- Do not re-add 3D Skin Layers. It was dropped because villages are dense.
+- When recommending mods, leave out mods the user already skipped. WI Zoom stays off those lists. If they say not to bring the rest of the skips up, stop listing them.

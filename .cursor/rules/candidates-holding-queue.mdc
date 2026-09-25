@@ -1,0 +1,14 @@
+---
+description: CANDIDATES.md is a holding queue, not permission to pin a mod
+alwaysApply: true
+---
+
+# Candidates stay queued
+
+`CANDIDATES.md` stores mods until the user has a quiet window to ship them. An entry there is not consent to add it.
+
+- Do not packwiz-add, refresh, version-bump, or push because an entry exists or looks ready.
+- Add a pending mod only when the user names that mod and says to add it now. Then follow `MaintainerInstructions.md`, ship it as a pack version, and mark the entry **ACCEPTED** with that version and date.
+- On a rejection, strikethrough the title, move it under Rejected, note **REJECTED** and a one-line reason, and stop. Do not delete the entry.
+- A new pending entry has the mod name, what it is, and a link, plus pin notes and whether it touches worldgen. The user decides whether it becomes a candidate.
+- Status wording and the add-now steps already live in `CANDIDATES.md`. Follow that section.
