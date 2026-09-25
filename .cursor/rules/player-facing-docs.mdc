@@ -1,0 +1,14 @@
+---
+description: Keep the public README and client install guide player-facing and plain
+alwaysApply: true
+---
+
+# Player-facing docs
+
+`README.md` is public. Do not add developer notes, the candidate queue, maintainer procedures, or a full mod list to it. Some mods are meant to stay a surprise, so do not spoil them in the README or in other player-facing copy.
+
+Maintainer material stays in `MaintainerInstructions.md`, `Notes.md`, `CANDIDATES.md`, and `DEVELOPERS.md` when that hub exists. Do not paste it back onto the README.
+
+`ClientInstallationInstructions.md` is steps. Write plain language. Do not add a product pitch, emoji, or chatbot filler. Leave asides a maintainer wrote in place.
+
+`CHANGELOG.md` is history. Living rules go in `Notes.md`.

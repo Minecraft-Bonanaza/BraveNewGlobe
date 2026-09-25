@@ -1,0 +1,47 @@
+---
+description: Maintainer design decisions later edits must keep
+alwaysApply: true
+---
+
+# Design locks
+
+If the user calls an idea theory, a bookmark, or something they are still thinking about, do not implement it.
+
+## Air
+
+Overworld flying pressure stays a cruise band around Y 300–400. Conventional balloons and propellers can still reach about Y 500. Above that the curve drops hard, and Y 800 is difficult enough to need thrusters. Vacuum is near the top of the globe, not at vanilla Y 320. The numbers live in `Notes.md` under Sable overworld air pressure. Do not retune that overworld curve while editing other dimensions.
+
+The Aether, Twilight Forest, Nether, End, Abyss, and Creating Space keep their own slopes. The Aether thins from the islands to vacuum near Y 245. Do not put a dimension back on Sable's default flat band and short cliff.
+
+Airships enter the Aether through AeroPortals and must be able to fall out the way players do: same X/Z, high in the return dimension, still falling, riders included. Do not drop the ship back inside the Aether.
+
+Do not add AeroWeather. Wind that drifts an airship on its own was rejected. GPUShift stays out.
+
+## Ships and power
+
+An assembled airship has to be able to power itself. Do not add Create Nuclear until its reactor simulates on Sable sublevels. Leave the emerald-to-uranium recipe out with it.
+
+The blaze-free burner line stays. Netherrack and magma are craftable without a blaze mob, and the captured burner does not require catching a blaze.
+
+## Thirst and the Exchange
+
+Do not restore Thirst Was Taken, `pack/config/thirst/`, Needs Not Necessities, or Panels Not Screens.
+
+ITOWT stays a bookmark for a later speculation layer on Market Maker. Do not add the jar. Do not take its coins, `/shop`, mailbox, auction house, or `/pay`.
+
+## World and the Field Guide
+
+The overworld is already generated. New structures and ores belong in unexplored chunks. Do not add a mod that needs a fresh world unless the user accepts that. When you judge a mod, say whether it touches worldgen.
+
+The Field Guide is a client resource pack about the pack's animals. The Deep is ominous scraps of rumor. The Kraken and the Bloop are named. Other sea-myths stay unnamed. Do not restore a Lifestealer page. Edit `pack/config/paxi/resourcepacks/bng_field_guide/assets/bravenewglobe/mcg_guide/guide.json` directly. Do not add a generator script to the repo to rewrite it.
+
+Create: Mechanical Companion may teleport the wolf only. The wolf teleports itself, the same as an organic wolf.
+
+## Quests
+
+Follow `QUESTS.md` and `SPECTRUM.md` when editing the book.
+
+- Quests are guidance. No quest line is gated behind another line. Reward capability and efficiency. Keep a baseline that works without the specialist kit.
+- No self-attest checkmarks. Changing a quest key is a content rewrite, not a progress-safe regen.
+- Fulfillment is physical. Do not reward remote item teleport, an auction mailbox, or player-minted coins.
+- Help for a mod already in the pack (Robot Companions is the example) is guidance for newer players. A SIG is a career in `SPECTRUM.md`, not a new chapter per mod.
