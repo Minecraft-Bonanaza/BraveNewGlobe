@@ -3,6 +3,15 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.22] — 2026-09-29
+
+### Added
+- **Create: Power Loader** `2.0.5` (Modrinth `3Y4r0ItR`, `create_power_loader-2.0.5-mc1.21.1.jar`). Kinetic chunk loaders. Required on client and server. No worldgen. Create **6.0.10** already covers the dependency. Sable Power Loader Compat is not in this pin. 222 mods.
+- A second, costlier overworld craft for the working loaders (`power_loader_overworld.js`). The mod's empty loaders still take a respawn anchor, and a ghast click still fills them. Andesite (crafting table): glass, two mechanical presses, a compass, a shaft, two andesite casings. Brass (mechanical crafting, same frame): glass, an empty map, six precision mechanisms, a shaft, six brass casings. New recipe ids, so the mod recipes stay.
+
+### Notes
+- **No fresh world.** Restart instance and server so the mod and the script load.
+
 ## [1.1.21.2] — 2026-09-23
 
 ### Fixed

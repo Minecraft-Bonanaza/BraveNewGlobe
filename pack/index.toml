@@ -953,6 +953,10 @@ file = "kubejs/server_scripts/disable_severe_bleeding.js"
 hash = "b8545b617bc825540cdb0f205e640a3c424a09bb688442a3988dccd642ae04b2"
 
 [[files]]
+file = "kubejs/server_scripts/power_loader_overworld.js"
+hash = "5e1865ff9443fb847bf0f8f042c867bbdb633265d1cf9c298112da408344266b"
+
+[[files]]
 file = "kubejs/server_scripts/powergrid_andesite_generator.js"
 hash = "d256ecbf08caeca497a76c07505f1128c502ba8fb7aceae24f2e157057cdd752"
 
@@ -1391,6 +1395,11 @@ metafile = true
 [[files]]
 file = "mods/create-power-chip.pw.toml"
 hash = "254c240a66cbf6945e2bf9a8c95413664cba40cc76829b13ed39906cdd774bae"
+metafile = true
+
+[[files]]
+file = "mods/create-power-loader.pw.toml"
+hash = "d1a7402cc94a8a857d380f68bb9a19d8981a2b3223068a53d9054e97232f4167"
 metafile = true
 
 [[files]]

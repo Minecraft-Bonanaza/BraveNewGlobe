@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**221 mods**), grouped by purpose. Current pack **1.1.21.2**.
+Human-readable list of every mod in the pack (**222 mods**), grouped by purpose. Current pack **1.1.22**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -24,6 +24,7 @@ Human-readable list of every mod in the pack (**221 mods**), grouped by purpose.
 - **Create: Enchantment Industry** — automated enchanting
 - **Create: Power Chip** — compact power/logic
 - **Create: Power Grid** `0.6.1` — electrical power network
+- **Create: Power Loader** `2.0.5` — kinetic chunk loaders (andesite and brass). Required on client and server. No worldgen. The mod's anchor-and-ghast craft stays; a costlier overworld craft also makes the working loaders.
 - **Create: Diesel Generators** — fuel-based power
 - **Create: Metallurgy** — metal processing
 - **Create: Cotton** — cotton/textiles
