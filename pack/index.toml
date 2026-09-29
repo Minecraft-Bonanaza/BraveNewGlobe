@@ -1923,6 +1923,11 @@ hash = "c62b51a8248d15e3cb63880ac123a92dd6a67973a1eafc4c4cb09f3f74481f78"
 metafile = true
 
 [[files]]
+file = "mods/sable-power-loader-compat.pw.toml"
+hash = "441a5b516cfd3ba35474f5b00951608e97286f74d4a45b57d80151fac8c177d0"
+metafile = true
+
+[[files]]
 file = "mods/sable.pw.toml"
 hash = "f21e2db6083eb58ee1b96630cf345c38ee7b93296da7990f27155480f3f2b6e1"
 metafile = true

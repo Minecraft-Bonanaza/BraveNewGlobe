@@ -28,11 +28,11 @@ Fixes:
   the LODs fully load.
 - **Temporary:** if artifacting occurs, reload the shaders and it should go away.
 
-## Current pack state (1.1.22)
+## Current pack state (1.1.22.1)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.22**, **222** mods. Quest book **18 / 251**
+- **Version / count:** `pack.toml` **1.1.22.1**, **223** mods. Quest book **18 / 251**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -42,7 +42,8 @@ Living rules. CHANGELOG stays historical.
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
 - **Create Nuclear** stays out until its reactor simulates on Sable sublevels. A local pin was pulled the same day: the core does not run on an assembled airship.
-- **1.1.22:** **Create: Power Loader 2.0.5** (Modrinth `3Y4r0ItR`). Required both sides. No worldgen. Do **not** add Sable Power Loader Compat. The mod's empty-loader recipes stay (respawn anchor, then a ghast click). `power_loader_overworld.js` adds a costlier overworld craft for the working andesite and brass loaders (compass / empty map in the core). Those recipe ids are `bravenewglobe:`, so they do not replace the mod.
+- **1.1.22.1:** **Sable Power Loader Compat 1.0.1** (CurseForge `1645784`). Required both sides, only beside Power Loader **2.0.5**. No worldgen. Do not ship it without that Power Loader pin. Power Loader recipes are unchanged.
+- **1.1.22:** **Create: Power Loader 2.0.5** (Modrinth `3Y4r0ItR`). Required both sides. No worldgen. The mod's empty-loader recipes stay (respawn anchor, then a ghast click). `power_loader_overworld.js` adds a costlier overworld craft for the working andesite and brass loaders (compass / empty map in the core). Those recipe ids are `bravenewglobe:`, so they do not replace the mod.
 - **1.1.21.2:** `aether_ship_fall.js` uses `Utils.getServer().getLevel` (Rhino has no `.class`).
 - **1.1.21.1:** `aether_ship_fall.js` no longer crashes dedicated on first tick (Rhino `getLevel` overload). Restart required.
 - **1.1.21:** Airships fall out of the Aether the way players do (`aether_ship_fall.js`). Same X/Z, high in the return dimension, still falling. This is a dimension change, not a change to the Y 0 pressure (that stays thick so a ship under the islands can still climb).

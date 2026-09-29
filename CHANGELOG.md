@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.22.1] — 2026-09-29
+
+### Added
+- **Sable Power Loader Compat** `1.0.1` (CurseForge `1645784`, file `8962475`, `sablepowerloadercompat-1.0.1.jar`). Required on client and server, only beside Create: Power Loader **2.0.5**. Owner-online gate for loaders on Sable sublevels. No worldgen. Power Loader recipes are unchanged. 223 mods.
+
+### Notes
+- **No fresh world.** Restart instance and server.
+
 ## [1.1.22] — 2026-09-29
 
 ### Added
