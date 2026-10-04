@@ -160,7 +160,6 @@
 			y: 1.0d
 			description: [
 				"Rich Soil grows crops faster and needs no hoeing. Compost organic matter to make it."
-				"Realistic Farmland also tracks soil quality -- keep your plots fed and hydrated."
 			]
 			tasks: [
 				{
@@ -357,8 +356,7 @@
 			x: 0.0d
 			y: 3.0d
 			description: [
-				"Food Spoilage rots food over time -- watch the Freshness % on tooltips."
-				"Salting and keeping food frozen (near ice) slows or halts the decay."
+				"Ratatouille salt is the kitchen staple. Packed ice keeps a cold store."
 			]
 			tasks: [
 				{

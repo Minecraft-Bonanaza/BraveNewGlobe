@@ -3,6 +3,21 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23] — 2026-10-03
+
+### Added
+- **Create: Coasters Simulated** `0.1.5` (Modrinth `W1ZUfWdr`, `simulatedcoasters-0.1.5.jar`). Roller-coaster tracks, carts, rivets, and balloons on Sable. Required on client and server. Create **6.0.10** and Sable **2.0.5** already cover the dependencies. No worldgen. 221 mods.
+
+### Removed
+- **Food Spoilage** `1.1.7` (`foodspoil-neoforge-1.21.1-1.1.7.jar`) and its `foodspoil-*.toml` configs.
+- **Realistic Farmland** `1.0+1.21` (`realistic-farmland-1.0+1.21.jar`).
+- **Sprinkler Farmland** `1.0.0` and `sprinkler_hydrate_farmland.js` — they only existed so Slice & Dice water sprinklers could snap Realistic Farmland moisture. Slice & Dice itself stays.
+
+### Notes
+- **No fresh world.** Restart instance and server. More Diseases & Treatments stays; it is not in this pull.
+- Packwiz-installer deletes jars it previously installed once they leave the index. There is no `pack.toml` force-delete flag. Flipping a pin to optional / default-off keeps the jar for anyone who already had it.
+- Dedicated hosts are not Prism pre-launch: delete leftover `foodspoil`, `realistic-farmland`, and `sprinklerfarmland` jars from the server `mods/` folder if they remain. Clients: leftover `config/foodspoil` can go too.
+
 ## [1.1.22.1] — 2026-09-29
 
 ### Added

@@ -181,19 +181,18 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Vanilla farming, breeding, campfire/furnace cooking |
-| **Specialized** | Realistic farmland, seasonal planting windows, spoilage management, Farmer's Delight / Ratatouille kitchens, Brewin' & Chewin', Burnt Basic techniques, **Animal Weights** for livestock logistics |
-| **Core mods** | Farmer's Delight, Brewin' And Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Create: Ratatouille, Animal Weights |
+| **Specialized** | Seasonal planting windows, Farmer's Delight / Ratatouille kitchens, Brewin' & Chewin', Burnt Basic techniques, **Animal Weights** for livestock logistics |
+| **Core mods** | Farmer's Delight, Brewin' And Chewin', Burnt Basic, Create: Ratatouille, Animal Weights |
 | **Environmental rules (not SIG mods)** | Serene Seasons, Project Atmosphere |
 | **Adjacent** | Textiles (cotton/fiber), Medicine (diet & disease), Land Transport (draft animals), Commerce (food markets) |
 
 **Suggested quest beats**
 
 1. Harvest and cook a meal with vanilla tools.  
-2. Prepare farmland under Realistic Farmland rules.  
-3. Plant for the current season; survive a spoilage event.  
-4. Build a Farmer's Delight / Ratatouille processing line.  
-5. Raise livestock with Animal Weights in mind (transport & yield).  
-6. Supply a contract or market stall with preserved / processed food.
+2. Plant for the current season.  
+3. Build a Farmer's Delight / Ratatouille processing line.  
+4. Raise livestock with Animal Weights in mind (transport & yield).  
+5. Supply a contract or market stall with preserved / processed food.
 
 **Explicitly not this SIG:** **Re:Animal** (world animals), Hybrid Aquatic / Sea Myths (ocean fauna). Doped Horses → prefer Land Transport.
 
@@ -583,7 +582,7 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Mod | SIG / layer |
 |-----|-------------|
 | Create: Metallurgy | Metalworking |
-| Farmer's Delight, Brewin' And Chewin', Burnt Basic, Realistic Farmland, Food Spoilage, Ratatouille, Animal Weights | Agriculture & Husbandry |
+| Farmer's Delight, Brewin' And Chewin', Burnt Basic, Ratatouille, Animal Weights | Agriculture & Husbandry |
 | Create: Cotton | Textiles |
 | Diesel Generators, Power Grid, Power Chip | Power & Fuel |
 | Tracks, Signalworks, Train Physics, Threaded Trains, Trotting Wagons, Doped Horses | Land Transport & Rail |

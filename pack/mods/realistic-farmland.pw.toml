@@ -1,8 +1,0 @@
-name = "Realistic Farmland"
-filename = "realistic-farmland-1.0+1.21.jar"
-side = "both"
-
-[download]
-url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/realistic-farmland-1.0%2B1.21.jar"
-hash-format = "sha256"
-hash = "6c1b145d4af7b0c41c9118dfac7ed2e70338a3855081a0de8164c5014c8a415e"

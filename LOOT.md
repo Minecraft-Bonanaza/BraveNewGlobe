@@ -49,7 +49,7 @@ the survey transcripts.
 
 Mods that add **no unique loot**: WDA, Towns&Towers, CTOV, Fragmentum, Biolith, Better High Seas,
 Re-Animal (foods are used as filler), Bountiful (bounty-board mechanic only), Numismatics
-Calculator (client), Realistic Farmland, Food Spoilage, Betterdays, Copycats, Strut Your Stuff.
+Calculator (client), Betterdays, Copycats, Strut Your Stuff.
 Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `shadow_steel`,
 `chromatic_compound`.
 

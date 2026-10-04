@@ -130,7 +130,7 @@ Fits Agriculture (spoilage, expedition food, physical logistics) without new wil
 - **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/provisioners-delight) · [Modrinth](https://modrinth.com/mod/provisioners-delight) (`AqjSR89O`)
 - **Pin:** Modrinth NeoForge 1.21.1, current `0.9.31` (`provisionersdelight-0.9.31neoforge.jar`). `side = both`.
 - **Also add if missing:** **Patchouli** (Modrinth `nU0bVIaL`, required). Farmer's Delight is already in.
-- **After add:** whitelist/blacklist new canned foods in `pack/config/foodspoil-common.toml` if they should not rot (cans) or should rot slowly. Do not enable worldgen you did not find in the jar.
+- **After add:** Do not enable worldgen you did not find in the jar.
 
 ### ~~Petrol's Parts~~
 **ACCEPTED** — added in 1.1.8 (2026-09-18)
@@ -154,7 +154,7 @@ Farmer's Delight kitchen furniture: drawers, glass cabinets, countertop cabinets
 - **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/storage-delight-forge) · [Modrinth](https://modrinth.com/mod/storage-delight) (`LTTvOp5L`)
 - **Pin:** Modrinth NeoForge 1.21.1 (`storage-delight`, not a Fabric file). `side = both`.
 - **Also add:** none (Farmer's Delight is already in).
-- **After add:** if barrels/cabinets should slow Food Spoilage, add this mod's block ids to `containerMultipliers` in `pack/config/foodspoil-common.toml`. Do not assume vanilla `minecraft:barrel` covers them.
+- **After add:** none. Kitchen furniture only.
 
 ### ~~Better Party~~
 **ACCEPTED** — added in 1.1.8 (2026-09-18)
@@ -208,7 +208,7 @@ Fits Agriculture specialized kitchens. **No world gen.** Complementary to Ratato
 
 Create farming appliances + crop compat: Vacuum Harvester (area harvest + replant), Fishing Net (contraption fishing; lava net only if a lava-fish mod is present — we don't have one), mechanical harvester/arm support for FD tomatoes and mushroom colonies, spout-sped organic compost. **Sable sub-level** harvest/spout/net support is built in.
 
-**No world gen.** Needs Dragons Plus + Farmer's Delight (both in). Slice & Dice sprinklers + Realistic Farmland stay the hydration path; this is harvest/replant/fishing, not soil moisture.
+**No world gen.** Needs Dragons Plus + Farmer's Delight (both in). This is harvest/replant/fishing, not a soil-moisture mod.
 
 - **Link:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/create-integrated-farming) · [Modrinth](https://modrinth.com/mod/create-integrated-farming) (`9k1pAsfR`)
 - **Pin:** NeoForge 1.21.1, current `1.4.2`. `side = both`.
@@ -242,4 +242,11 @@ Client-only Windows window chrome: dark title bar, optional name / FPS / ping / 
 
 ## Rejected
 
-_(none yet — evaluated-and-skipped mods from a round stay in chat until a maintainer files them here)_
+### ~~Food Spoilage~~
+**REJECTED** — pulled in 1.1.23. Rot layer. Do not re-add.
+
+### ~~Realistic Farmland~~
+**REJECTED** — pulled in 1.1.23. Soil moisture/quality layer. Do not re-add.
+
+### ~~Sprinkler Farmland~~
+**REJECTED** — Realistic Farmland-only companion (plus `sprinkler_hydrate_farmland.js`). Pulled with it in 1.1.23. Slice & Dice stays.

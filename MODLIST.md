@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**223 mods**), grouped by purpose. Current pack **1.1.22.1**.
+Human-readable list of every mod in the pack (**221 mods**), grouped by purpose. Current pack **1.1.23**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -38,7 +38,7 @@ Human-readable list of every mod in the pack (**223 mods**), grouped by purpose.
 - **Create: Bionics** `2.5.0` — five fuel robots (Anole, Matchbox, Seeker, Oxhauler, Replete). Required on client and server. The Seeker digs the ore you show it.
 - **Create: Mechanical Companion** `1.9` — Curios-summoned Mechanical Wolf (head slot) + Illager Workshop
 - **Create Slice & Dice** `4.3.3` — slicer + sprinklers (water / fertilizer / potions; Sable contraptions)
-- **Sprinkler Farmland** `1.0.0` — S&D water sprinklers snap Realistic Farmland moisture to 7 (GitHub); KubeJS player-tick hydrator also ships
+- **Create: Coasters Simulated** `0.1.5` — roller-coaster tracks, carts, rivets, balloons (Sable)
 - **Create: Bits 'n' Bobs** `2.3.5` — misc machines/parts (Azimuth API 1.4.8, Struts 1.3.1)
 - **Create Cardan Shafts** — drivetrain/shaft additions
 - **Create: Gears n' Kinetics** — kinetic additions
@@ -172,8 +172,6 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Storage Delight** `26.09.17` — kitchen drawers and cabinets
 - **Brewin' And Chewin'** — food & drink additions
 - **Burnt Basic** — cooking/burning mechanics
-- **Realistic Farmland** — realistic soil/farming
-- **Food Spoilage** — food goes bad over time
 - **More Diseases & Treatments** — illness & medicine
 - **Serene Seasons** — seasonal cycle affecting crops/biomes
 - **Project Atmosphere** — realistic climate & weather

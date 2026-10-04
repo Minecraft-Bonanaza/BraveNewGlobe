@@ -329,14 +329,6 @@ file = "config/fml.toml"
 hash = "cc59fb1039726fda3ab1eb69b06d9b9aebb7496604ea579cfb735bc5377e7825"
 
 [[files]]
-file = "config/foodspoil-client.toml"
-hash = "f1b3239978c94548598d5c097aa927351fc46842761037730337143ce619a036"
-
-[[files]]
-file = "config/foodspoil-common.toml"
-hash = "69437cf244898b5b15a5df8bf8fbe291e6d7f1e880ed9816c532369e5c7d44f4"
-
-[[files]]
 file = "config/ftbquests/quests/chapters/aeronautics.snbt"
 hash = "c3b1fa1d3e5725d8e4378ad82ff57502801292b7ee2e855d7c830ff217664d2a"
 
@@ -346,7 +338,7 @@ hash = "146b250c546cc95d09e01eede762d9861095663310cc446c2d27bc57bbceb19e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/agriculture.snbt"
-hash = "40cf533d3e6e72f9bd2dbf714a1df078d0606c1fcdb3491a4da5507ce8dc94f9"
+hash = "c05bfe9c606e57ea0487a9feb607f757d2cc0948113a4a6939dbe0c01a13ea0b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/astronautics.snbt"
@@ -949,6 +941,10 @@ file = "kubejs/server_scripts/carbon_dust_millstone_fix.js"
 hash = "a98ec649b0b9eff0ebe815b312aa810e5a5cb4969cbe09fcca79fea655c5c7e3"
 
 [[files]]
+file = "kubejs/server_scripts/compost_seeds.js"
+hash = "cb3c6dcd1ed0428a597fd72b2cd0b854ee7fcc3203b04c27f926d52450e6955f"
+
+[[files]]
 file = "kubejs/server_scripts/disable_severe_bleeding.js"
 hash = "b8545b617bc825540cdb0f205e640a3c424a09bb688442a3988dccd642ae04b2"
 
@@ -965,8 +961,8 @@ file = "kubejs/server_scripts/splint_duration.js"
 hash = "33d0621b3f989628eec86fbc06b48672854509d0089972a05e8ea51195abf99e"
 
 [[files]]
-file = "kubejs/server_scripts/sprinkler_hydrate_farmland.js"
-hash = "85f6770f3b2da49c1f79f4d79e6ee9f4e2136e487deb194a479009b6466a3709"
+file = "kubejs/server_scripts/stone_variants.js"
+hash = "48c44586d6ea6a627f834eac00a41665bbf9175b74d56053bb5fe8a4aa6e83e7"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
@@ -1323,6 +1319,11 @@ hash = "1ee4600e25e9ea0d9c8807148e07649e1ca406a3f457e9fb0e1885a7a900b4d5"
 metafile = true
 
 [[files]]
+file = "mods/create-coasters-simulated.pw.toml"
+hash = "3f67293c62a9ac02fecf8795f4d65459abead9269089cde169aea375cfac9f36"
+metafile = true
+
+[[files]]
 file = "mods/create-cotton.pw.toml"
 hash = "5b80f3cfbd5a430c8771631cde00fd990834b44a356b41f8996248d37ad88add"
 metafile = true
@@ -1520,11 +1521,6 @@ metafile = true
 [[files]]
 file = "mods/ferritecore.pw.toml"
 hash = "dff824171060c79b327a4880c2f0546c727a041a489ef3af643ec2dcd9cd0c48"
-metafile = true
-
-[[files]]
-file = "mods/food-spoilage.pw.toml"
-hash = "5cc36e85d7d21d38ec3d0b852d15b9389f4823bbc25fd9495064e01651d9dcf0"
 metafile = true
 
 [[files]]
@@ -1893,11 +1889,6 @@ hash = "4f90db793978fd68d26346271767de42c29549b89e6d5f5266e54b0621e71cb0"
 metafile = true
 
 [[files]]
-file = "mods/realistic-farmland.pw.toml"
-hash = "e56f6af31493db3272bad75495c3d880c3abab9850a1abbebc31d41bd4421365"
-metafile = true
-
-[[files]]
 file = "mods/reliable-backpacks.pw.toml"
 hash = "278dcbf627fdc27517e226e5cf78f17009108ce3adc7c446c4bac1775cb08336"
 metafile = true
@@ -2000,11 +1991,6 @@ metafile = true
 [[files]]
 file = "mods/sound-physics-remastered.pw.toml"
 hash = "d44523599f51dea0a4c404008ff18e1e8447497bac539b022ecdea88b3c90c9d"
-metafile = true
-
-[[files]]
-file = "mods/sprinkler-farmland.pw.toml"
-hash = "42fbad58a983ef5b36e4a2cef7864e4b7b1b70ae8d7af9133141ebc01d8ebe47"
 metafile = true
 
 [[files]]
