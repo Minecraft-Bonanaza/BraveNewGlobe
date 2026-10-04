@@ -4,11 +4,10 @@ A [Big Globe](https://modrinth.com/mod/big-globe) modpack for **Minecraft 1.21.1
 **NeoForge** — Create-ecosystem tech, cannons, aeronautics, and hand-authored Big Globe
 world/spawn compatibility.
 
-Current pack: **1.1.23** — **221** mods. Quest book **18 chapters / 251 quests**.
+Current pack: **1.1.23.1** — **217** mods. Quest book **18 chapters / 251 quests**.
 
 **1.0.0 is the first production release.** The content stack is in — including the team's
-in-house **Create: Market Maker** economy mod. Survival-layer polish (seasons, diseases,
-farming/food, climate) may continue in `1.x`.
+in-house **Create: Market Maker** economy mod. Survival-layer polish (seasons, farming/food) may continue in `1.x`.
 
 - **Loader:** NeoForge `21.1.248` (runs Fabric mods via Sinytra Connector + Forgified Fabric API)
 - **How it's delivered:** [packwiz](https://packwiz.infra.link/). You set your launcher up **once**;
@@ -25,7 +24,7 @@ farming/food, climate) may continue in `1.x`.
   and cross-mod integration (shipped via Paxi).
 - **Survival & QoL** — seasons, diseases, farming and food, villager overhauls, and supporting
   libraries. This layer may still get polish in `1.0.x`.
-- **Optional visuals** — Iris shaders, Distant Horizons, Simple Clouds, and other client-side eye-candy
+- **Optional visuals** — Iris shaders, Distant Horizons, and other client-side eye-candy
   that can be toggled off on low-spec machines.
 
 ## Documentation
@@ -39,7 +38,7 @@ farming/food, climate) may continue in `1.x`.
 - **[QUESTS.md](QUESTS.md)** — shipped quest book (18 chapters / 251 quests) and line list.
 - **[LOOT.md](LOOT.md)** — combat-dungeon LootJS pools + Simply Swords loot rules.
 - **[CHANGELOG.md](CHANGELOG.md)** — version history.
-- **[MODLIST.md](MODLIST.md)** — human-readable mod list (221 mods).
+- **[MODLIST.md](MODLIST.md)** — human-readable mod list (217 mods).
 - **[CANDIDATES.md](CANDIDATES.md)** — holding list for mods to add later (not a live pack change).
 - **[Notes](Notes.md)** — living pack-state notes (villages, WDA, loot, height, gotchas).
 

@@ -70,7 +70,6 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("brewinandchewin:beer").withWeight(1));
         pool.addEntry(LootEntry.of("twilightforest:torchberries", [2, 4]).withWeight(1));
         pool.addEntry(LootEntry.of("bigglobe:spelunking_rope").withWeight(1));
-        pool.addEntry(LootEntry.of("more_diseases_and_treatments:splint").withWeight(1));
         pool.addEntry(LootEntry.of("aether:blue_berry", [2, 4]).withWeight(1));
         pool.addEntry(LootEntry.of("hybrid_aquatic:pearl").withWeight(1));
         pool.addEntry(LootEntry.of("powergrid:capacitor", [1, 3]).withWeight(1));
@@ -109,7 +108,6 @@ LootJS.lootTables((event) => {
         pool.addEntry(LootEntry.of("supplementaries:quiver").withWeight(1));
         pool.addEntry(LootEntry.of("aether:golden_feather").withWeight(1));
         pool.addEntry(LootEntry.of("aquamirae:echo_compass").withWeight(1));
-        pool.addEntry(LootEntry.of("more_diseases_and_treatments:syringe_2").withWeight(1));
         // Simply Swords — Gold tier, unenchanted.
         for (const t of SWORD_TYPES) {
             pool.addEntry(LootEntry.of(`simplyswords:gold_${t}`).withWeight(1));

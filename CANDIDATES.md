@@ -250,3 +250,15 @@ Client-only Windows window chrome: dark title bar, optional name / FPS / ping / 
 
 ### ~~Sprinkler Farmland~~
 **REJECTED** — Realistic Farmland-only companion (plus `sprinkler_hydrate_farmland.js`). Pulled with it in 1.1.23. Slice & Dice stays.
+
+### ~~Project Atmosphere~~
+**REJECTED** — pulled in 1.1.23.1. Climate/weather layer. Do not re-add.
+
+### ~~Simple Clouds~~
+**REJECTED** — pulled in 1.1.23.1 with Project Atmosphere. Do not re-add.
+
+### ~~Iris/Oculus For Simple Clouds~~
+**REJECTED** — Simple Clouds shader compat only. Pulled with Simple Clouds in 1.1.23.1. **Iris Shaders** and **Iris & Oculus Flywheel Compat** stay.
+
+### ~~More Diseases & Treatments~~
+**REJECTED** — pulled in 1.1.23.1. Disease/treatment layer. Do not re-add.

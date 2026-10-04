@@ -3,6 +3,22 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23.1] — 2026-10-04
+
+### Fixed
+- Airships could not fall out of the Aether. Floor air was **1.15** (thicker than the islands), so a ship hovered above the world floor and `aether_ship_fall.js` never fired. Players then left through vanilla fall-out and the hull stayed. Air under the islands is now thin (**0.02 at Y 0**, **0.12 at Y 8**, **0.88 at Y 32**). The script sends the ship home when the keel is 32 above the floor or the crew on it is 24 above the floor, riders included. Island band and vacuum at Y 245 are unchanged. Overworld curve is unchanged.
+- `aether_ship_fall.js` no longer calls `Utils.getServer()` (KubeJS `UtilsWrapper` has no such method). The tick event's `getServer()` is used, and levels are resolved with `getAllLevels()` so Rhino does not hit the `getLevel` overload. Dimension ids are read as fields (`level.dimension.location`); calling `dimension()` throws because it is an object.
+
+### Removed
+- **Project Atmosphere** `0.9.1.2` and `projectatmosphere` configs (including Big Globe biome temps).
+- **Simple Clouds** `0.7.3` and its client/common/server configs. Atmosphere required it on both sides.
+- **Iris/Oculus For Simple Clouds** `1.1.2` — shader compat only. Particle Rain and Puddles & Floods stay.
+- **More Diseases & Treatments** `1.0.1` (`more_diseases_and_treatments-1.0.1-neoforge-1.21.1.jar`) and its KubeJS patches (`disable_severe_bleeding`, `splint_duration`, `fracture_fall_threshold`). Splint and syringe removed from WDA loot pools.
+
+### Notes
+- **No fresh world.** `/reload` picks up the datapack. Restart so the NativeEvents handler loads. Stay on the ship while it drops under the islands; jumping off still sends only you home. Do not thicken Aether Y 0 again.
+- Packwiz-installer deletes jars it previously installed once they leave the index. Dedicated hosts: delete leftover `projectatmosphere`, `simpleclouds`, `oculus_for_simpleclouds`, and `more_diseases_and_treatments` jars if they remain. Clients: leftover `config/projectatmosphere` and `config/simpleclouds` can go too.
+
 ## [1.1.23] — 2026-10-03
 
 ### Added

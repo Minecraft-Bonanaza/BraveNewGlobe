@@ -77,7 +77,7 @@ Dropped as inert (no recipe uses them in Create 6.0.10): `refined_radiance`, `sh
 - **Aether:** zanite gear+armor, obsidian armor, sentry boots, golden feather, healing/regeneration stone, rings & pendants (iron/gold/ice/zanite), capes/gloves, dart shooters, black/white moa eggs, zanite gemstone, golden amber, lightning knife, pig slayer.
 - **Twilight:** steeleaf gear, moonworm queen, peacock feather fan, crumble horn, charm of keeping I–III, traveller's set (gliding wings), magic/maze/ore maps, ore meter/magnet, moon dial, tower key, boss banner patterns, gold minotaur axe.
 - **Mowzie's:** blowgun+dart, spear, naga fang, bluff rod, luminous jelly, foliaath seed, captured grottol. **Mutant:** creeper minion tracker, mutant skeleton parts. **Aquamirae:** salvager set, echo compass, oxyhelium, shell horn, lore items, materials (niveis tear, angler fang). ⚠ `aquamirae:oxygen_tank` is **not a real id** in 7.2.1 (removed from the wired pool; one bad id aborted the whole script). **Hybrid Aquatic:** diving/coral/seashell tool sets, diving armor + upgrade template, turtle chestplate, prismarine rod, fishing hooks, scarves, fishing net, shark tooth/materials. **Illager Invasion:** horn of sight, magical fire charge, lost candle, illusionary/unusual dust.
-- **Supplementaries:** quiver, slingshot, bomb/blue bomb, rope arrow, tipped spikes, flute, lunch basket, cartographer's quill, blast-armor-trim template, dragon banner pattern. **MDT:** penicillin, tinctures, meadowsweet tea, splint, fabric mask. **Ratatouille:** chef hat (+goggles variant). **Doped:** gold/diamond horseshoes. **Trotting Wagons:** armored/royal/conestoga wagon, horse whip. **Sea Myths:** bloop & sea-eater scale sets (sword+armor), bloop saddle.
+- **Supplementaries:** quiver, slingshot, bomb/blue bomb, rope arrow, tipped spikes, flute, lunch basket, cartographer's quill, blast-armor-trim template, dragon banner pattern. **Ratatouille:** chef hat (+goggles variant). **Doped:** gold/diamond horseshoes. **Trotting Wagons:** armored/royal/conestoga wagon, horse whip. **Sea Myths:** bloop & sea-eater scale sets (sword+armor), bloop saddle.
 
 ## 🟧 RARE — dungeon-key gear
 - **Create:** **precision mechanism**, extendo grip, potato cannon, wand of symmetry, netherite backtank, netherite diving helm/boots. **Metallurgy:** tungsten ingot/block, **obdurium ingot/sheet/block**, rare transfer ladle. **Diesel:** chemical sprayer (+flamethrower). **Power Grid:** electro-baton, **electro-zapper**, integrated circuit. **Storage:** hardened backpack, jetpack-flight upgrade, mechanical-heart (health) upgrade. **Enchantment Industry:** bucket/cake o' enchanting, printer templates (super/apotheotic), infused dragon-breath/crystal/apotheotic-essence buckets. **Dragons+:** blaze-upgrade smithing template, dragon's-breath bucket.
@@ -113,7 +113,7 @@ Halved Numismatics ladder. **No endgame armor** (ingots only). Guns are ammo-gat
 
 ### FILLER (~28% — non-treasure combat-dungeon chests)
 Spur [2–6], Bevel [1–3], Supplementaries rope, cast-iron / nickel / lead ingots, revolver rounds,
-beef stew, Re:Animal cooked ostrich/crocodile, beer, torchberries, spelunking rope, MDT splint,
+beef stew, Re:Animal cooked ostrich/crocodile, beer, torchberries, spelunking rope,
 Aether blueberries, Hybrid Aquatic pearl, Power Grid capacitor, Born in Chaos monster flesh,
 paper cartridge, **Simply Swords iron × 13 types** (unenchanted).
 
@@ -121,7 +121,7 @@ paper cartridge, **Simply Swords iron × 13 types** (unenchanted).
 Sprocket [2–6], Cog [1–3], brass / rose quartz / precision mechanism / electron tube,
 copronickel / steel / black steel, experience nugget, experience cake, hallowed gem / platinum chunk,
 ironwood / dark metal, wither-resistance elixir, **flintlock**, shotgun rounds, **scope**,
-small/medium bombs, quiver, golden feather, Aquamirae echo compass, MDT syringe,
+small/medium bombs, quiver, golden feather, Aquamirae echo compass,
 **Simply Swords gold × 13 types** (unenchanted).
 
 ### TREASURE_GEAR (~15% — same chests, enchant 5–15)

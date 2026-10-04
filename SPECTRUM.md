@@ -51,9 +51,9 @@ Specialized (higher yield, throughput, safety, or reach)
 
 | Pattern | Examples | Why |
 |---------|----------|-----|
-| **World stage** | Big Globe, Serene Seasons*, Project Atmosphere*, dimensions, structures | Sets the planet; not a job |
+| **World stage** | Big Globe, Serene Seasons*, dimensions, structures | Sets the planet; not a job |
 | **Fauna / threats** | Re:Animal, Mowzie's Mobs, Sea Myths, Hybrid Aquatic, Mutant Monsters | Populate the world; hunting may appear *inside* a SIG, but the mod is not the SIG |
-| **Pure ambiance / client** | Iris, Distant Horizons, Simple Clouds, Particle Rain | Presentation |
+| **Pure ambiance / client** | Iris, Distant Horizons, Particle Rain | Presentation |
 | **QoL / recovery** | Corpse, Backpacks, Better Respawn, Too Fast | Convenience |
 | **Libraries / APIs** | GeckoLib, Cloth Config, Villager API, … | Plumbing |
 | **Decorative-only** | Copycats+ (unless folded into Civil Works) | Building aesthetics without a yield curve |
@@ -89,7 +89,7 @@ Use these as **prologue / world lore / side notes** in questbooks, not as SIG ro
 ### World & climate
 
 - Big Globe, Paxi + datapacks  
-- Serene Seasons, Project Atmosphere, Puddles & Floods  
+- Serene Seasons, Puddles & Floods  
 - The Aether, The Twilight Forest  
 - Towns and Towers, When Dungeons Arise, CTOV, Integrated Villages (airship-only), Fragmentum, Illager Invasion, It Takes a Pillage  
 - Incendium, YUNG's Better Nether Fortresses, L_Ender's Cataclysm, Bosses'Rise  
@@ -130,7 +130,7 @@ Currency is **earned** (villagers, bounties, deliveries, player trade) — not p
 
 - Corpse, Reliable Backpacks/Requiem, Better Respawn, Better Days, Stat Tinkerer, Too Fast  
 - Sodium, Lithium, FerriteCore, ModernFix, ImmediatelyFast, Vertigo  
-- Iris stack, Distant Horizons, Simple Clouds, maps, Jade, AppleSkin, JEI, Mod Menu
+- Iris stack, Distant Horizons, maps, Jade, AppleSkin, JEI, Mod Menu
 - Optional client (1.0.1): Sound Physics Remastered, Presence Footsteps, Traveler's Titles
 - Optional client (1.0.3): Dynamic FPS, Mouse Tweaks, Controlling + Searchables, Continuity
 - 1.0.4: Polymorph, Amendments, Comforts, Jade Addons, Simple Voice Chat; optional client Crash Assistant, Chat Heads
@@ -183,7 +183,7 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | **Baseline** | Vanilla farming, breeding, campfire/furnace cooking |
 | **Specialized** | Seasonal planting windows, Farmer's Delight / Ratatouille kitchens, Brewin' & Chewin', Burnt Basic techniques, **Animal Weights** for livestock logistics |
 | **Core mods** | Farmer's Delight, Brewin' And Chewin', Burnt Basic, Create: Ratatouille, Animal Weights |
-| **Environmental rules (not SIG mods)** | Serene Seasons, Project Atmosphere |
+| **Environmental rules (not SIG mods)** | Serene Seasons |
 | **Adjacent** | Textiles (cotton/fiber), Medicine (diet & disease), Land Transport (draft animals), Commerce (food markets) |
 
 **Suggested quest beats**
@@ -390,8 +390,8 @@ Each SIG below is written for FTB Quests authors: pitch, baseline → specialize
 | | |
 |--|--|
 | **Baseline** | Vanilla healing, golden apples, potions |
-| **Specialized** | More Diseases & Treatments care loops |
-| **Core mods** | More Diseases & Treatments |
+| **Specialized** | Golden apples, potions, Farmer's Delight meals |
+| **Core mods** | none — More Diseases & Treatments was pulled |
 | **Adjacent** | Agriculture (nutrition, spoilage), Settlement (community health), Exploration (expedition risk) |
 
 **Suggested quest beats**
@@ -592,7 +592,6 @@ Keep **one questbook** or split **Industry / Society / Transport** volumes — b
 | Numismatics (+ bridges), Tradeworks, Marketplace, Stock Market, Bountiful, Create: Market Maker | Commerce |
 | Gunpowder, Gunsmithing, Big Cannons (+ expansions), CC:CBC | Ordnance |
 | CC: Tweaked, NeoPeripherals, Advanced Peripherals | Shared computing (Aeronautics / Ordnance brains) |
-| More Diseases & Treatments | Medicine |
 | MCA Reborn | Settlement |
 | Enchantment Industry | Industrial Enchanting (optional) |
 | Creating Space | Astronautics (optional) |

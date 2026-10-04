@@ -11,7 +11,7 @@ If the user calls an idea theory, a bookmark, or something they are still thinki
 
 Overworld flying pressure stays a cruise band around Y 300–400. Conventional balloons and propellers can still reach about Y 500. Above that the curve drops hard, and Y 800 is difficult enough to need thrusters. Vacuum is near the top of the globe, not at vanilla Y 320. The numbers live in `Notes.md` under Sable overworld air pressure. Do not retune that overworld curve while editing other dimensions.
 
-The Aether, Twilight Forest, Nether, End, Abyss, and Creating Space keep their own slopes. The Aether thins from the islands to vacuum near Y 245. Do not put a dimension back on Sable's default flat band and short cliff.
+The Aether, Twilight Forest, Nether, End, Abyss, and Creating Space keep their own slopes. The Aether thins from the islands to vacuum near Y 245. Air under the islands is thin so a ship can descend and fall out. Do not thicken Y 0 again. Do not put a dimension back on Sable's default flat band and short cliff.
 
 Airships enter the Aether through AeroPortals and must be able to fall out the way players do: same X/Z, high in the return dimension, still falling, riders included. Do not drop the ship back inside the Aether.
 

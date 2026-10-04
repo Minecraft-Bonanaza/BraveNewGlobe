@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**221 mods**), grouped by purpose. Current pack **1.1.23**.
+Human-readable list of every mod in the pack (**217 mods**), grouped by purpose. Current pack **1.1.23.1**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -172,9 +172,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Storage Delight** `26.09.17` — kitchen drawers and cabinets
 - **Brewin' And Chewin'** — food & drink additions
 - **Burnt Basic** — cooking/burning mechanics
-- **More Diseases & Treatments** — illness & medicine
 - **Serene Seasons** — seasonal cycle affecting crops/biomes
-- **Project Atmosphere** — realistic climate & weather
 - **Supplementaries** `3.9.9` — decorative & functional blocks
 - **Amendments** `1.21-2.1.10` — vanilla cauldron / lantern / jukebox tweaks (Moonlight)
 - **Comforts** `9.0.5` — sleeping bags & hammocks (do not set spawn by default)
@@ -238,9 +236,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 ## Client, Visual & Shaders
 - **Iris Shaders** — shader loader _(client)_
 - **Iris & Oculus Flywheel Compat** — Flywheel-under-Iris compatibility _(client)_
-- **Iris/Oculus For Simple Clouds** — shader + Simple Clouds compatibility _(client)_
 - **Distant Horizons** `3.2.0-b` — LOD "see forever" rendering _(optional, default off)_
-- **Simple Clouds** — cloud visual overhaul _(both; Project Atmosphere dependency — not optional)_
 - **Particle Rain** — enhanced precipitation particles _(client)_
 - **Puddles & Floods** — puddle/flood weather visuals
 - **Xaero's Minimap** — minimap _(client)_

@@ -5,7 +5,9 @@
 	"base_gravity": [0.0, -11.0, 0.0],
 	"base_pressure": 1.0,
 	"pressure_function": [
-		{ "altitude": 0, "value": 1.15, "slope": -0.002344 },
+		{ "altitude": 0, "value": 0.02, "slope": 0.01 },
+		{ "altitude": 8, "value": 0.12, "slope": 0.02 },
+		{ "altitude": 32, "value": 0.88, "slope": 0.006 },
 		{ "altitude": 64, "value": 1.00, "slope": -0.003136 },
 		{ "altitude": 120, "value": 0.78, "slope": -0.004964 },
 		{ "altitude": 170, "value": 0.48, "slope": -0.006750 },

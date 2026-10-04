@@ -593,10 +593,6 @@ file = "config/ntgl-server.toml"
 hash = "a8395a9471b6b4499929b2837cd089fe07245c6e1b9f1a0da4ca7a6f3a9d38ee"
 
 [[files]]
-file = "config/oculus_for_simpleclouds-client.toml"
-hash = "ac7a3f40a212d477cd729d2f218961a524964658c54daeebfe8a736815843c1e"
-
-[[files]]
 file = "config/offroad-server.toml"
 hash = "d5f0ed8390618c769d9cb40a77df04779b7bbe636343b753c1ed6f92d325ae2b"
 
@@ -657,14 +653,6 @@ file = "config/powergrid-server.toml"
 hash = "da554a1c90f63ac8c18f61274fbd94e51ef7026368e56004658ff8d3335dfdf3"
 
 [[files]]
-file = "config/projectatmosphere-common.toml"
-hash = "90ba1c9cdf19460067bc47456231a63fbac543e8ae513ccf79783a41e64dbf61"
-
-[[files]]
-file = "config/projectatmosphere/biome_temps.json"
-hash = "8bd55867e9c904e5e65a85ebc0cab06e9362b63132adae4a3a31a9139e1ef6b3"
-
-[[files]]
 file = "config/puddleflood.json"
 hash = "c326956f2c4fc0c6b421d977d723213b2a82362c35593ef7cfacf51110b3eca9"
 
@@ -707,18 +695,6 @@ hash = "f63f94b985285add146c73a8747d278cec3d386807855b25de0e1db9962c153f"
 [[files]]
 file = "config/sereneseasons/seasons.toml"
 hash = "817b1098343a0d818478c1ffba1ffcd55c222a7213bd69e8c3621d61fdbf628c"
-
-[[files]]
-file = "config/simpleclouds-client.toml"
-hash = "88194e65ade2180497c3840c533b5b1da284707bed2ee2a403b5bb446e99ca1c"
-
-[[files]]
-file = "config/simpleclouds-common.toml"
-hash = "d3cf4550cd755e44b0fc5bc54f26933d395e1c646a9b10dca35b7e7987a88818"
-
-[[files]]
-file = "config/simpleclouds-server.toml"
-hash = "65f0867637e1c6697c0cf4926dd016d943a7519ab4b5fa72551d8f6a179dd77b"
 
 [[files]]
 file = "config/simplyswords/loot.toml"
@@ -898,7 +874,7 @@ hash = "4cb7b9563693fdce5e2bbc7f0602f39ba243686c8b6ea5afd4f273bf3cd655db"
 
 [[files]]
 file = "datapacks/bng_sable_pressure.zip"
-hash = "1689d2addbddc014b729530b165d71049b224481cb3ff5f93c5d076967d2cd3c"
+hash = "adf471a1a3fd004dce42731987979ed69ef696330553ffce05b446d17e3999c6"
 
 [[files]]
 file = "datapacks/ctov_integration_fallbacks.zip"
@@ -930,7 +906,7 @@ hash = "5867b873e37a97a621424a90085ef8867bf0563537ea37866e8bcb5efc430634"
 
 [[files]]
 file = "kubejs/server_scripts/aether_ship_fall.js"
-hash = "13f024fb40f0352b7fe79463ed8061bde6fdce3df01a6155336459a27aaf00f0"
+hash = "6ad943efa8aed4c9a9e1a0ff075bbb6869cca05bfb01f0d7a68a587d4cfdab2c"
 
 [[files]]
 file = "kubejs/server_scripts/blaze_burner_line.js"
@@ -945,10 +921,6 @@ file = "kubejs/server_scripts/compost_seeds.js"
 hash = "cb3c6dcd1ed0428a597fd72b2cd0b854ee7fcc3203b04c27f926d52450e6955f"
 
 [[files]]
-file = "kubejs/server_scripts/disable_severe_bleeding.js"
-hash = "b8545b617bc825540cdb0f205e640a3c424a09bb688442a3988dccd642ae04b2"
-
-[[files]]
 file = "kubejs/server_scripts/power_loader_overworld.js"
 hash = "5e1865ff9443fb847bf0f8f042c867bbdb633265d1cf9c298112da408344266b"
 
@@ -957,36 +929,20 @@ file = "kubejs/server_scripts/powergrid_andesite_generator.js"
 hash = "d256ecbf08caeca497a76c07505f1128c502ba8fb7aceae24f2e157057cdd752"
 
 [[files]]
-file = "kubejs/server_scripts/splint_duration.js"
-hash = "33d0621b3f989628eec86fbc06b48672854509d0089972a05e8ea51195abf99e"
-
-[[files]]
 file = "kubejs/server_scripts/stone_variants.js"
 hash = "48c44586d6ea6a627f834eac00a41665bbf9175b74d56053bb5fe8a4aa6e83e7"
 
 [[files]]
 file = "kubejs/server_scripts/wda_dungeon_loot.js"
-hash = "401883b5de06d50d926689527d398e4ef5d8214011739dc549ac2aee38a29cb7"
+hash = "0722ed8a0e43429d945ef8fc11c4c6beafd00a8fde68785311bf4e7e0576ebf4"
 
 [[files]]
 file = "kubejs/server_scripts/wheat_year_round.js"
 hash = "3cd2c49941a32567eb1fa4ca86b35ddb50f61df2d4bda98019074cb499913ffc"
 
 [[files]]
-file = "kubejs/startup_scripts/disable_severe_bleeding.js"
-hash = "05867527f673d2f0baf359967bdc44fb202107f60c76b7777dde70abae98ebd8"
-
-[[files]]
-file = "kubejs/startup_scripts/fracture_fall_threshold.js"
-hash = "3ce5c9490d25315f4173c94d8e4b7ddbad2716e8bf8d40548ada04b9e189cd48"
-
-[[files]]
 file = "kubejs/startup_scripts/incomplete_blaze_burner.js"
 hash = "25d6b34e1f679d011a01d2c0340c62cfb535ae85c2c2b61ae8eb7e4cb440ab53"
-
-[[files]]
-file = "kubejs/startup_scripts/splint_duration.js"
-hash = "bcb59ab6941f9ba06c5f61b6999b068f4fa064358db53375fa8b992a085e93c9"
 
 [[files]]
 file = "mods/accents.pw.toml"
@@ -1739,11 +1695,6 @@ hash = "4c2bd5d76c4d6fb88629e2034cb5206aa1e5d96f102da8cbda67e6b72d70ed3a"
 metafile = true
 
 [[files]]
-file = "mods/more-diseases-and-treatments.pw.toml"
-hash = "1458371a3aaaa8aff2fb8cf0bdc5888d8c30b2e3c221180a8c9ca64b3ff0ba69"
-metafile = true
-
-[[files]]
 file = "mods/mouse-tweaks.pw.toml"
 hash = "8e5168ddef05d259c0532bac5327fec1eaed43f67fded165e8b234f9a007e962"
 metafile = true
@@ -1781,11 +1732,6 @@ metafile = true
 [[files]]
 file = "mods/obscure-tooltips.pw.toml"
 hash = "ebac998a7fca1e91248ef0461be9470c412cb7e45bc037271223466136db91a3"
-metafile = true
-
-[[files]]
-file = "mods/oculus-for-simpleclouds.pw.toml"
-hash = "e8c4f89e6e4b4229f12d034d64924d2ada532738f1ac5c44eaae2aa1a9740bc8"
 metafile = true
 
 [[files]]
@@ -1861,11 +1807,6 @@ metafile = true
 [[files]]
 file = "mods/presence-footsteps.pw.toml"
 hash = "10120f4210ba2d220b82bd313b35040c5cc07597ec8f31cc3eb6718254f91578"
-metafile = true
-
-[[files]]
-file = "mods/project-atmosphere.pw.toml"
-hash = "6565fe421ad219ec6ba25afdc639ef17bf44e4b73b7fed0381b8d5e1295622fc"
 metafile = true
 
 [[files]]
@@ -1946,11 +1887,6 @@ metafile = true
 [[files]]
 file = "mods/shatterbyte-lib.pw.toml"
 hash = "4f38a1932a493c7b100f13356c65bf1cc4d43e4cb3430d428202452d1d5800a0"
-metafile = true
-
-[[files]]
-file = "mods/simple-clouds.pw.toml"
-hash = "b5aeca8406e74bb7722b4916dacb304373f64fb38716a70a6976608969ded970"
 metafile = true
 
 [[files]]

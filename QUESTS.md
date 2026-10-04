@@ -41,7 +41,7 @@ Two families of lines:
 9. **Commerce** — Numismatics (+ Villager Currency, Tradeworks, Marketplace, Stock Market,
    Bountiful/Bounties) plus in-house **Create: Market Maker** (informational nudge, gated behind
    `stall`). Earned currency, physical fulfillment; no minting.
-10. **Agriculture & Husbandry** — Farmer's Delight, Brewin' & Chewin', Burnt Basic, Ratatouille, Animal Weights. (Serene Seasons / Project Atmosphere are environmental rules, not part of the line.)
+10. **Agriculture & Husbandry** — Farmer's Delight, Brewin' & Chewin', Burnt Basic, Ratatouille, Animal Weights. (Serene Seasons is an environmental rule, not part of the line.)
 11. **Naval / High Seas** — Create: Better High Seas shipbuilding + WDA sea structures + Aquamirae as sea hazards/loot. The sea counterpart to Aeronautics.
 12. **Astronautics** — Creating Space rocketry & space logistics. Late-game capstone after Aeronautics + Power & Fuel; engineering-heavy, no "space magic."
 
@@ -56,7 +56,7 @@ _(13–17 are exploration/guidance lines — find the dungeon / find the portal 
 
 ## Candidate additions (still deciding)
 - **Settlement & Civic (MCA Reborn)** — optional social line; feeds Commerce.
-- **Medicine (More Diseases & Treatments)** — optional niche survival line.
+- **Medicine** — no specialist mod. More Diseases & Treatments was pulled.
 - **Programmable control** — not a standalone v1 line; fold CC: Tweaked / CC:CBC / Radiologistics into Aeronautics and Ordnance as the ship's/gun's brain.
 
 ## Fold / skip (v1)
