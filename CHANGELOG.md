@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23.2] — 2026-10-04
+
+### Fixed
+- Dedicated boot aborted at datapack load: `stattinkerer_bigglobe_compat.zip` still registered `bigglobe:overworld/flowers/medicine_herbs`, which names More Diseases herb blocks (`thyme`, meadowsweet, echinacea, santonica). Those blocks left with the 1.1.23.1 pull, so Big Globe failed `minecraft:worldgen/configured_feature`. The herb feature is gone; Farmer's Delight crop flowers stay. Existing planted herbs become unknown/air. No fresh world.
+
+### Notes
+- **No fresh world.** Restart the dedicated host so the rebuilt zip loads. `/reload` is not enough if registry decode already aborted. Leftover `more_diseases_and_treatments`, `projectatmosphere`, and `simpleclouds` jars, plus a missing `crackerslib` warning, are hygiene — they did not abort this boot.
+
 ## [1.1.23.1] — 2026-10-04
 
 ### Fixed

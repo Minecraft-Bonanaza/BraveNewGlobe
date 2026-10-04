@@ -19,11 +19,11 @@ These two optional mods must be enabled or disabled **together** (all ON or all 
 `optional = true, default = true`. Contraption Lights without LambDynamicLights has no LAMB backend
 (Iris-safe ship/contraption lights). Do **not** add **Veil** or **Sable Ragdolls** for this pair.
 
-## Current pack state (1.1.23.1)
+## Current pack state (1.1.23.2)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.23.1**, **217** mods. Quest book **18 / 251**
+- **Version / count:** `pack.toml` **1.1.23.2**, **217** mods. Quest book **18 / 251**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -33,6 +33,7 @@ Living rules. CHANGELOG stays historical.
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
 - **Create Nuclear** stays out until its reactor simulates on Sable sublevels. A local pin was pulled the same day: the core does not run on an assembled airship.
+- **1.1.23.2:** `stattinkerer_bigglobe_compat.zip` no longer registers `bigglobe:overworld/flowers/medicine_herbs`. That feature named More Diseases herb blocks and aborted dedicated datapack load after the 1.1.23.1 pull. Farmer's Delight crop flowers stay. No fresh world.
 - **1.1.23.1:** **Project Atmosphere**, **Simple Clouds**, and **Iris/Oculus For Simple Clouds** pulled (plus their configs). Particle Rain and Puddles & Floods stay. **More Diseases & Treatments** pulled (plus bleeding/splint/fracture KubeJS). Do **not** re-add those four. Aether air under the islands thins (**0.02 at Y 0**, **0.12 at Y 8**, **0.88 at Y 32**) so a ship can descend. `aether_ship_fall.js` sends the ship home when the keel is 32 above the floor **or** the crew on it is 24 above the floor — before vanilla Aether steals the players and before AeroPortals sets the hull back down in the Aether. Island band and vacuum at Y 245 are unchanged. Overworld curve is unchanged.
 - **1.1.23:** **Create: Coasters Simulated 0.1.5** (Modrinth `W1ZUfWdr`). Required both sides. No worldgen. Create 6.0.10 and Sable 2.0.5 already cover it. **Food Spoilage**, **Realistic Farmland**, and **Sprinkler Farmland** pulled (plus `foodspoil-*.toml` and `sprinkler_hydrate_farmland.js`). Slice & Dice stays. Do **not** re-add Food Spoilage, Realistic Farmland, or Sprinkler Farmland. **More Diseases & Treatments** was still in at this version; pulled in 1.1.23.1.
 - **1.1.22.1:** **Sable Power Loader Compat 1.0.1** (CurseForge `1645784`). Required both sides, only beside Power Loader **2.0.5**. No worldgen. Do not ship it without that Power Loader pin. Power Loader recipes are unchanged.
