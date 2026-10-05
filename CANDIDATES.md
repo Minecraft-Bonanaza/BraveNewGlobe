@@ -90,6 +90,9 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 
 ## Accepted
 
+### ~~Aeronautics Hot Air Fix~~
+**ACCEPTED** — added in 1.1.23.5 (2026-10-04) Modrinth `1.1.1` (`Qhi65c7K` / `8ka8XR8j`), `side = client`, optional, default off, with the Iris toggle. No worldgen. Does not require Iris to launch.
+
 ### ~~Aeronautics Iris Fix~~
 **ACCEPTED** — added in 1.1.23.3 (2026-10-04) `2.1.0` (`aero-shadow-fix-2.1.0.jar`), `side = client`, optional, default off, with the Iris toggle. No worldgen. 1.1.23.4 downloads from the ForgeCDN file URL (no CurseForge API; this project is not on Modrinth).
 

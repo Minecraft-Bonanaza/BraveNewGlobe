@@ -960,6 +960,11 @@ hash = "fee4aee20aa5cce41fbb32ad9b2fa48b123216729e691061970aa54e5f100fc6"
 metafile = true
 
 [[files]]
+file = "mods/aeronautics-hot-air-fix.pw.toml"
+hash = "9727b3bfe833a1fb9dd466914a14111ab9a55d13664c46a7a38def05424ebdb4"
+metafile = true
+
+[[files]]
 file = "mods/aeronautics-iris-fix.pw.toml"
 hash = "81c0dd83d8f707db588a536544743f74750eb410b5956fd1875f95111679d474"
 metafile = true

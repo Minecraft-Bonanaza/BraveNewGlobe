@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23.5] — 2026-10-04
+
+### Added
+- **Aeronautics Hot Air Fix** `1.1.1` (Modrinth `Qhi65c7K`, `8ka8XR8j`, `aeronauticshotairfix-1.1.1.jar`). Client-only embedded resource pack that removes the Aeronautics envelope overlay so it does not artifact under shaders. Optional, default off, with the Iris toggle. Does not require Iris to launch. No worldgen. 219 mods.
+
+### Notes
+- **No fresh world.** Restart the client. Dedicated hosts skip the jar (`side = client`). Aeronautics Iris Fix `2.1.0` stays.
+
 ## [1.1.23.4] — 2026-10-04
 
 ### Changed

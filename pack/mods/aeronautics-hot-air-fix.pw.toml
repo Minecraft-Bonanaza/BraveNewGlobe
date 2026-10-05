@@ -1,0 +1,20 @@
+name = "Aeronautics Hot Air Fix"
+filename = "aeronauticshotairfix-1.1.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/Qhi65c7K/versions/8ka8XR8j/aeronauticshotairfix-1.1.1.jar"
+hash-format = "sha512"
+hash = "249cac906da0194948c6c3713f97a40ee83307b2e4de2922e63d7aa19923dea690dfe5744b7be8785e92b85abdfcfff9756f66e2a234f7c417f781c0bd43708d"
+
+[update]
+[update.modrinth]
+mod-id = "Qhi65c7K"
+version = "8ka8XR8j"
+
+# Shader-envelope overlay fix. Does not require Iris to launch; only useful with shaders.
+# Keep it with the Iris / Flywheel / DH / Aeronautics Iris Fix toggle.
+[option]
+optional = true
+default = false
+description = "Removes the Aeronautics hot-air overlay that artifacts under shaders. Keep this in sync with Iris Shaders + Iris Flywheel Compat + Distant Horizons + Aeronautics Iris Fix: all ON or all OFF together."
