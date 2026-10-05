@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23.4] — 2026-10-04
+
+### Changed
+- **Aeronautics Iris Fix** `2.1.0` now downloads from the ForgeCDN file URL (`edge.forgecdn.net/files/8589/529/aero-shadow-fix-2.1.0.jar`) instead of `metadata:curseforge`. The CurseForge API pin failed client launches. Same jar. This project has no Modrinth listing.
+
+### Notes
+- **No fresh world.** Restart the client so packwiz-installer can fetch the jar. Dedicated hosts still skip it.
+
 ## [1.1.23.3] — 2026-10-04
 
 ### Added

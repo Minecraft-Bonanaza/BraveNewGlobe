@@ -961,7 +961,7 @@ metafile = true
 
 [[files]]
 file = "mods/aeronautics-iris-fix.pw.toml"
-hash = "042893eecce017dd6ce38ae3424c01a12e2e3d0bc1f217ceb6f29c0a6833159e"
+hash = "81c0dd83d8f707db588a536544743f74750eb410b5956fd1875f95111679d474"
 metafile = true
 
 [[files]]
