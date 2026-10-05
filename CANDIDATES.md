@@ -90,11 +90,8 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 
 ## Accepted
 
-### ~~Aeronautics Hot Air Fix~~
-**ACCEPTED** — added in 1.1.23.5 (2026-10-04) Modrinth `1.1.1` (`Qhi65c7K` / `8ka8XR8j`), `side = client`, optional, default off, with the Iris toggle. No worldgen. Does not require Iris to launch.
-
 ### ~~Aeronautics Iris Fix~~
-**ACCEPTED** — added in 1.1.23.3 (2026-10-04) `2.1.0` (`aero-shadow-fix-2.1.0.jar`), `side = client`, optional, default off, with the Iris toggle. No worldgen. 1.1.23.4 downloads from the ForgeCDN file URL (no CurseForge API; this project is not on Modrinth).
+**ACCEPTED** — added in 1.1.23.3 (2026-10-04) CurseForge `2.1.0` (`aero-shadow-fix-2.1.0.jar`), `side = client`, optional, default off, with the Iris toggle. No worldgen. 1.1.23.6 self-hosts the jar in `bundled-jars/` (raw GitHub URL).
 
 ### ~~Create: Mechanical Companion~~
 **ACCEPTED** — added in 1.1.19 (2026-09-22) Modrinth `1.9` (`6ZRWru4y`), `side = both`. Illager Workshop worldgen kept. Accents hats share Curios head with the Wolf Link.
@@ -247,6 +244,9 @@ Client-only Windows window chrome: dark title bar, optional name / FPS / ping / 
 ---
 
 ## Rejected
+
+### ~~Aeronautics Hot Air Fix~~
+**REJECTED** — added in 1.1.23.5, pulled in 1.1.23.6. Overlay-disable pack, not the CurseForge envelope mixin. Do not re-add.
 
 ### ~~Food Spoilage~~
 **REJECTED** — pulled in 1.1.23. Rot layer. Do not re-add.

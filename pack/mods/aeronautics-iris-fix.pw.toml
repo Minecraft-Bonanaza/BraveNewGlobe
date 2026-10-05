@@ -3,15 +3,14 @@ filename = "aero-shadow-fix-2.1.0.jar"
 side = "client"
 
 [download]
-url = "https://edge.forgecdn.net/files/8589/529/aero-shadow-fix-2.1.0.jar"
-hash-format = "sha512"
-hash = "a69b4f3830fd4b1f23bdda129f96e9867536c357ae3830e148bded146e67014195e28ccc28b9c958bc0cb05dbffca3a0756f571c24893898786d4f352daba044"
+url = "https://raw.githubusercontent.com/Minecraft-Bonanaza/BraveNewGlobe/main/bundled-jars/aero-shadow-fix-2.1.0.jar"
+hash-format = "sha256"
+hash = "89cd32e7628b9dc2e3e9079d0381d7c80f5b0d193a6522d86232859783d347d2"
 
 # LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, Distant Horizons,
 # and Aeronautics Iris Fix must be enabled/disabled TOGETHER (all ON or all OFF).
 # This jar requires Iris; leaving Iris off and this on fails to launch.
-# Direct ForgeCDN URL — this project is not on Modrinth, and metadata:curseforge
-# needs the CurseForge API.
+# Self-hosted in bundled-jars/ — CurseForge API and ForgeCDN pins failed clients.
 [option]
 optional = true
 default = false

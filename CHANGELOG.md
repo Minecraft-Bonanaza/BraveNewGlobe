@@ -3,6 +3,20 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23.6] — 2026-10-04
+
+### Added
+- Crafting-table recipe: one **dripstone block** → four **pointed dripstone** (`dripstone_uncraft.js`). Vanilla's 2x2 craft stays.
+
+### Removed
+- **Aeronautics Hot Air Fix** `1.1.1` — overlay-disable pack. Not the CurseForge envelope fix.
+
+### Changed
+- **Aeronautics Iris Fix** `2.1.0` is self-hosted: `bundled-jars/aero-shadow-fix-2.1.0.jar`, downloaded from this repo's raw GitHub URL. Same CurseForge `2.1.0` jar. Packwiz no longer hits the CurseForge API or ForgeCDN. 218 mods.
+
+### Notes
+- **No fresh world.** Restart so the recipe loads (`/reload` also works for KubeJS server scripts). Dedicated hosts skip the Iris Fix jar. Packwiz-installer drops Hot Air Fix and fetches the bundled jar.
+
 ## [1.1.23.5] — 2026-10-04
 
 ### Added

@@ -20,11 +20,11 @@ These two optional mods must be enabled or disabled **together** (all ON or all 
 `optional = true, default = true`. Contraption Lights without LambDynamicLights has no LAMB backend
 (Iris-safe ship/contraption lights). Do **not** add **Veil** or **Sable Ragdolls** for this pair.
 
-## Current pack state (1.1.23.5)
+## Current pack state (1.1.23.6)
 
 Living rules. CHANGELOG stays historical.
 
-- **Version / count:** `pack.toml` **1.1.23.5**, **219** mods. Quest book **18 / 251**
+- **Version / count:** `pack.toml` **1.1.23.6**, **218** mods. Quest book **18 / 251**
   (0.9.27 added 4 nodes for the Aeronautics/Radiologistics/AeroPortals/Market Maker batch).
   Warnautics is **1.0.8** (needed for JACKPOT `cruise_missile`). Create Aeronautics is
   **1.3.2** (Modrinth pin; pulled up with Gadgets & Gizmos in 0.9.24). **0.9.19** removed
@@ -34,7 +34,8 @@ Living rules. CHANGELOG stays historical.
   CurseForge/Modrinth). Survival-layer polish (seasons, diseases, farming/food, climate)
   may continue in `1.x`.
 - **Create Nuclear** stays out until its reactor simulates on Sable sublevels. A local pin was pulled the same day: the core does not run on an assembled airship.
-- **1.1.23.5:** **Aeronautics Hot Air Fix 1.1.1** (Modrinth `Qhi65c7K`, `8ka8XR8j`). Client optional, default off, with the Iris toggle. Embedded resource pack; no Iris hard dep; no worldgen. Aeronautics Iris Fix stays.
+- **1.1.23.6:** **Aeronautics Iris Fix 2.1.0** is self-hosted in `bundled-jars/aero-shadow-fix-2.1.0.jar` (raw GitHub URL). Same CurseForge jar. **Aeronautics Hot Air Fix** pulled. Do **not** re-add Hot Air Fix. One dripstone block crafts back into four pointed dripstone (`dripstone_uncraft.js`).
+- **1.1.23.5:** **Aeronautics Hot Air Fix 1.1.1** was added, then pulled in 1.1.23.6.
 - **1.1.23.4:** **Aeronautics Iris Fix 2.1.0** downloads from the ForgeCDN file URL, not `metadata:curseforge`. Same `aero-shadow-fix-2.1.0.jar`. No Modrinth project exists for that jar.
 - **1.1.23.3:** **Aeronautics Iris Fix 2.1.0** added (CurseForge `1641969` / `8589529`). Client optional, default off, with the Iris / Flywheel / DH toggle. Aeronautics **1.3.2** and Iris **1.8.14-beta.1** already cover `[1.3.0,1.4.0)` / `[1.8.0,2.0.0)`. No worldgen. Do not enable it with Iris off — the jar requires Iris.
 - **1.1.23.2:** `stattinkerer_bigglobe_compat.zip` no longer registers `bigglobe:overworld/flowers/medicine_herbs`. That feature named More Diseases herb blocks and aborted dedicated datapack load after the 1.1.23.1 pull. Farmer's Delight crop flowers stay. No fresh world.
@@ -334,6 +335,7 @@ Do **not** re-add `pack/config/thirst/` (dead TWT configs, removed in 0.9.26).
 Do **not** re-add **Food Spoilage**, **Realistic Farmland**, or **Sprinkler Farmland** (pulled in 1.1.23).
 Do **not** re-add **Project Atmosphere**, **Simple Clouds**, or **Iris/Oculus For Simple Clouds** (pulled in 1.1.23.1).
 Do **not** re-add **More Diseases & Treatments** (pulled in 1.1.23.1).
+Do **not** re-add **Aeronautics Hot Air Fix** (pulled in 1.1.23.6). Aeronautics Iris Fix stays, self-hosted in `bundled-jars/`.
 
 ## Server-only mods
 

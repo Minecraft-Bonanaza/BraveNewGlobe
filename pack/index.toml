@@ -921,6 +921,10 @@ file = "kubejs/server_scripts/compost_seeds.js"
 hash = "cb3c6dcd1ed0428a597fd72b2cd0b854ee7fcc3203b04c27f926d52450e6955f"
 
 [[files]]
+file = "kubejs/server_scripts/dripstone_uncraft.js"
+hash = "0462c259d3446859b23d5fa235ffff8ed75db540de7b3493781bc4ab8b810997"
+
+[[files]]
 file = "kubejs/server_scripts/power_loader_overworld.js"
 hash = "5e1865ff9443fb847bf0f8f042c867bbdb633265d1cf9c298112da408344266b"
 
@@ -960,13 +964,8 @@ hash = "fee4aee20aa5cce41fbb32ad9b2fa48b123216729e691061970aa54e5f100fc6"
 metafile = true
 
 [[files]]
-file = "mods/aeronautics-hot-air-fix.pw.toml"
-hash = "9727b3bfe833a1fb9dd466914a14111ab9a55d13664c46a7a38def05424ebdb4"
-metafile = true
-
-[[files]]
 file = "mods/aeronautics-iris-fix.pw.toml"
-hash = "81c0dd83d8f707db588a536544743f74750eb410b5956fd1875f95111679d474"
+hash = "1300e11ce74a4cf050ff0f0e31a8273029edf764e6fa36c4b62061e7d2009901"
 metafile = true
 
 [[files]]
