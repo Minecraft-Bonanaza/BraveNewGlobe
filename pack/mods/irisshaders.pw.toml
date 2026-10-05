@@ -12,10 +12,11 @@ mode = "metadata:curseforge"
 file-id = 8242804
 project-id = 455508
 
-# LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, and Distant Horizons
-# must be enabled/disabled TOGETHER (all ON or all OFF). Running Iris without Distant
-# Horizons alongside our mandatory rendering mods (Flywheel/Create) causes buggy rendering.
+# LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, Distant Horizons,
+# and Aeronautics Iris Fix must be enabled/disabled TOGETHER (all ON or all OFF).
+# Running Iris without Distant Horizons alongside our mandatory rendering mods
+# (Flywheel/Create) causes buggy rendering.
 [option]
 optional = true
 default = false
-description = "Only needed if you want shaders. Keep this in sync with Distant Horizons + Iris Flywheel Compat: all ON or all OFF together."
+description = "Only needed if you want shaders. Keep this in sync with Distant Horizons + Iris Flywheel Compat + Aeronautics Iris Fix: all ON or all OFF together."

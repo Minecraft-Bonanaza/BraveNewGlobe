@@ -90,6 +90,9 @@ Ops QoL, not gameplay. Description still talks Fabric; pin the NeoForge 1.21.1 j
 
 ## Accepted
 
+### ~~Aeronautics Iris Fix~~
+**ACCEPTED** — added in 1.1.23.3 (2026-10-04) CurseForge `2.1.0` (`1641969` / `8589529`), `side = client`, optional, default off, with the Iris toggle. No worldgen.
+
 ### ~~Create: Mechanical Companion~~
 **ACCEPTED** — added in 1.1.19 (2026-09-22) Modrinth `1.9` (`6ZRWru4y`), `side = both`. Illager Workshop worldgen kept. Accents hats share Curios head with the Wolf Link.
 

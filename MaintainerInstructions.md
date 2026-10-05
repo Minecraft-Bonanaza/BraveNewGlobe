@@ -83,9 +83,9 @@ default = false
 description = "Shown to players in the packwiz installer selection screen."
 ```
 
-The rendering trio — **Iris Shaders**, **Iris & Oculus Flywheel Compat**, and **Distant Horizons** —
-must be toggled together (all ON or all OFF). See the comments in those `.pw.toml` files and
-[Notes.md](Notes.md) for why.
+The rendering group — **Iris Shaders**, **Iris & Oculus Flywheel Compat**, **Distant Horizons**,
+and **Aeronautics Iris Fix** — must be toggled together (all ON or all OFF). See the comments
+in those `.pw.toml` files and [Notes.md](Notes.md) for why.
 
 **Contraption Lights** and **LambDynamicLights** are a second linked pair (all ON or all OFF).
 Do **not** add **Veil** or **Sable Ragdolls** for that stack. Do **not** add stock **Fabric API**

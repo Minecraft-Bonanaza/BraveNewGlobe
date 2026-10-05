@@ -3,6 +3,14 @@
 All notable changes to the **Brave New Globe** modpack are documented here.
 This file tracks mod additions/removals, mod version updates, and config/pack changes.
 
+## [1.1.23.3] — 2026-10-04
+
+### Added
+- **Aeronautics Iris Fix** `2.1.0` (CurseForge `1641969`, file `8589529`, `aero-shadow-fix-2.1.0.jar`). Client-only balloon-envelope ghost fix under Iris. Optional, default off, toggled with Iris / Iris Flywheel Compat / Distant Horizons. Aeronautics **1.3.2** and Iris **1.8.14-beta.1** already cover the dependencies. No worldgen. 218 mods.
+
+### Notes
+- **No fresh world.** Restart the client. Dedicated hosts skip the jar (`side = client`). Do not enable this with Iris off — NeoForge will refuse to load.
+
 ## [1.1.23.2] — 2026-10-04
 
 ### Fixed

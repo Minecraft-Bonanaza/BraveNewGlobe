@@ -1,0 +1,21 @@
+name = "Aeronautics Iris Fix"
+filename = "aero-shadow-fix-2.1.0.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "47f48363d9805b9b60fb9a3cf1bb447bb80ad538"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8589529
+project-id = 1641969
+
+# LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, Distant Horizons,
+# and Aeronautics Iris Fix must be enabled/disabled TOGETHER (all ON or all OFF).
+# This jar requires Iris; leaving Iris off and this on fails to launch.
+[option]
+optional = true
+default = false
+description = "Fixes Aeronautics balloon-envelope ghosts under Iris. Keep this in sync with Iris Shaders + Iris Flywheel Compat + Distant Horizons: all ON or all OFF together."

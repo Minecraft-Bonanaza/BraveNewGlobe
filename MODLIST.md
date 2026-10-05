@@ -1,6 +1,6 @@
 # Brave New Globe — Mod List
 
-Human-readable list of every mod in the pack (**217 mods**), grouped by purpose. Current pack **1.1.23.2**.
+Human-readable list of every mod in the pack (**218 mods**), grouped by purpose. Current pack **1.1.23.3**.
 
 **Conventions**
 - Nested bullets marked _(dependency)_ are library/support mods that exist mainly to serve the mod
@@ -236,6 +236,7 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 ## Client, Visual & Shaders
 - **Iris Shaders** — shader loader _(client)_
 - **Iris & Oculus Flywheel Compat** — Flywheel-under-Iris compatibility _(client)_
+- **Aeronautics Iris Fix** `2.1.0` — balloon-envelope ghosts under Iris _(client, optional, default off)_
 - **Distant Horizons** `3.2.0-b` — LOD "see forever" rendering _(optional, default off)_
 - **Particle Rain** — enhanced precipitation particles _(client)_
 - **Puddles & Floods** — puddle/flood weather visuals
@@ -264,8 +265,8 @@ standalone career — the ship's/gun's brain for Aeronautics and Ordnance.
 - **Pick Up Notifier** `21.1.1` — toast when picking up items _(client, optional, default on)_
 - **Mod Menu** — mod list/config screen _(client)_
 
-> **Rendering note:** Iris, Iris & Oculus Flywheel Compat, and Distant Horizons should be toggled
-> together (all ON or all OFF). See [Notes.md](Notes.md).
+> **Rendering note:** Iris, Iris & Oculus Flywheel Compat, Distant Horizons, and Aeronautics Iris
+> Fix should be toggled together (all ON or all OFF). See [Notes.md](Notes.md).
 
 ---
 

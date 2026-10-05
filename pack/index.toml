@@ -960,6 +960,11 @@ hash = "fee4aee20aa5cce41fbb32ad9b2fa48b123216729e691061970aa54e5f100fc6"
 metafile = true
 
 [[files]]
+file = "mods/aeronautics-iris-fix.pw.toml"
+hash = "042893eecce017dd6ce38ae3424c01a12e2e3d0bc1f217ceb6f29c0a6833159e"
+metafile = true
+
+[[files]]
 file = "mods/aether.pw.toml"
 hash = "4da7377c270b879c648585be542690eec36546479e0f7bf25e92244ee97b7735"
 metafile = true
@@ -1446,7 +1451,7 @@ metafile = true
 
 [[files]]
 file = "mods/distanthorizons.pw.toml"
-hash = "23cb40a2241ba5586536c4ef6eba139a9986c423401132568bb7272edf946f2d"
+hash = "8be12e3bd703b2e2ad5f2d3f52d0962ba6817ad1107d4b3b926cb89e3984280f"
 metafile = true
 
 [[files]]
@@ -1576,12 +1581,12 @@ metafile = true
 
 [[files]]
 file = "mods/iris-flywheel-compat.pw.toml"
-hash = "4f9d05049ef7aa03a026799a00bd3e9a8961c41b48077fde65f589a315f13a02"
+hash = "b2bc47a86d9d01447682d9e14fbbb280fd11e834627ed64cf0fd4f72850098b0"
 metafile = true
 
 [[files]]
 file = "mods/irisshaders.pw.toml"
-hash = "822dfb0391a246338be17c14eabe8a6d668d552fb5b5c47118db0c0f0c3b7b9c"
+hash = "979584b0ba65fd06eeb21c6501b8585b0f0e19274ba7d021a6d60cccef82518c"
 metafile = true
 
 [[files]]

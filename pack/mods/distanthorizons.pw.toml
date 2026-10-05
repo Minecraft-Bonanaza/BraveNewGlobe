@@ -12,10 +12,11 @@ hash = "d4199f92f992fbd2c75a3b0e4e81c8a98bee889013f7347f2149ffa62c86748bde22135e
 mod-id = "uCdwusMi"
 version = "ZpKb4kZp"
 
-# LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, and Distant Horizons
-# must be enabled/disabled TOGETHER (all ON or all OFF). Running Iris without Distant
-# Horizons alongside our mandatory rendering mods (Flywheel/Create) causes buggy rendering.
+# LINKED TOGGLE: Iris Shaders, Iris & Oculus Flywheel Compat, Distant Horizons,
+# and Aeronautics Iris Fix must be enabled/disabled TOGETHER (all ON or all OFF).
+# Running Iris without Distant Horizons alongside our mandatory rendering mods
+# (Flywheel/Create) causes buggy rendering.
 [option]
 optional = true
 default = false
-description = "Biggest optional GPU/CPU/RAM cost. Big Globe is fully playable without it. Keep this in sync with Iris Shaders + Iris Flywheel Compat: all ON or all OFF together."
+description = "Biggest optional GPU/CPU/RAM cost. Big Globe is fully playable without it. Keep this in sync with Iris Shaders + Iris Flywheel Compat + Aeronautics Iris Fix: all ON or all OFF together."
